@@ -1,0 +1,70 @@
+.ballon
+  @apply ml-0 md:-ml-7
+
+  .ballon-item
+    @apply flex w-full flex-col items-stretch md:flex-row
+
+    .ballon-prefix
+      @apply w-28 relative hidden justify-center items-center md:flex
+      flex: 0 0 auto
+
+      .ballon-head
+        z-index: 1
+
+        img
+          @apply w-full rounded-full
+
+      .line-group
+        @apply w-full h-full absolute left-0 top-0 flex flex-col
+
+        .line-above
+          @apply pb-3
+
+        .line-below
+          @apply pt-3
+
+        .line-container
+            @apply w-full h-full flex justify-center
+
+            .line
+                @apply bg-gray-800
+                width: 2px
+
+      .dot
+        @apply w-4 h-4 rounded-full border-2 bg-white border-gray-800
+        z-index: 1
+
+    .ballon-content
+      @apply w-full flex items-center
+      flex: 1 1 auto
+
+      a
+        @apply text-blue-600
+
+      article
+        *:first-child
+          @apply mt-0
+
+        *:last-child
+          @apply mb-0
+
+      button
+        @apply w-6 h-6
+
+    .ballon-head-content
+      @apply justify-center md:justify-start
+
+    .ballon-section-title
+      @apply mt-10 font-bold text-gray-800 justify-center md:justify-start
+
+    .ballon-card
+      @apply mt-3 p-5 rounded-md shadow-md text-sm text-left
+
+  .ballon-item.has-head
+    @apply items-center md:items-stretch
+
+    .ballon-prefix
+      @apply flex w-20 md:w-28
+
+    .ballon-head-content
+      @apply mt-6 md:ml-6 md:mt-0

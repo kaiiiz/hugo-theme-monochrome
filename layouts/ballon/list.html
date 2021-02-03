@@ -1,0 +1,15 @@
+{{ define "content" }}
+<div class="ballon">
+    {{ partial "ballon/item.html" (dict "img" .Params.ballon_img "head" .Content "line-above" false "line-below" true) }}
+
+    {{ $max_idx := sub (len .RegularPages) 1 }}
+    {{ range $index, $value := .RegularPages.ByWeight }}
+        {{ with .Title }}
+            {{ partial "ballon/item.html" (dict "title" . "line-above" true "line-below" true "nodot" true) }}
+        {{ end }}
+        {{ with .Content }}
+            {{ partial "ballon/item.html" (dict "content" . "line-above" true "line-below" (ne $index $max_idx)) }}
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}
