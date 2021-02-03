@@ -1,0 +1,118 @@
+.toc
+  @apply my-10 p-4 border-2 rounded
+  line-height: 1.5
+
+  span
+    @apply font-bold mb-2
+
+  #TableOfContents
+    @apply ml-3
+
+    ul ul 
+      @apply ml-3
+
+    li 
+      @apply mt-2
+
+article
+  h1, h2, h3, h4, h5, h6
+    @apply font-bold mt-8 mb-4
+
+  h1
+    @apply text-3xl leading-relaxed
+
+  h2
+    @apply text-2xl
+
+  h3
+    @apply text-xl
+
+  h4
+    @apply text-lg
+
+  h5
+    @apply text-base
+
+  h6
+    @apply text-sm
+
+  hr
+    @apply my-6
+
+  p
+    @apply my-4
+    overflow-wrap: break-word
+
+  li
+    @apply list-disc my-2
+
+    p
+      @apply my-0
+
+  ul
+    @apply pl-5 my-4
+
+    ul, ol
+      @apply my-0
+
+  ol
+    @apply pl-5 my-4
+
+    li
+      @apply list-decimal
+
+    ul, ol
+      @apply my-0
+
+  blockquote
+    @apply px-4 my-6 mx-0 border-l-2 border-gray-300
+
+    p:first-child
+      @apply mt-0
+
+    p:last-child
+      @apply mb-0
+
+    blockquote
+      @apply my-0
+
+  code
+    @apply rounded bg-red-100 text-red-700 font-mono p-1
+
+  pre
+    @apply bg-gray-100 px-3 py-2 rounded overflow-auto my-4
+
+    code
+      @apply bg-transparent text-gray-800 p-0
+
+  .highlight
+    @apply my-4 sm:-mx-6
+
+    > div
+      @apply p-1 rounded-md
+
+    pre
+      @apply pr-0 my-0
+      overflow: unset
+
+    code
+      @apply p-0 text-white
+
+  table
+    @apply my-6 table-auto border-collapse block overflow-x-auto
+
+    td, th
+      @apply border-gray-300 border px-3 py-2
+
+  a
+    @apply text-blue-600
+
+  figure
+    @apply my-4 text-center sm:-mx-6
+
+    figcaption
+      @apply my-2
+
+  img
+    @apply mx-auto
+

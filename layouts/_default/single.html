@@ -1,5 +1,25 @@
 {{- define "content" -}}
-    <div>
-        content
+{{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
+    <div class="toc">
+        <span>目錄</span>
+        {{ .TableOfContents }}
     </div>
+{{ end }}
+<article>
+    <h1>{{ .Title }}</h1>
+    {{ $reAltIn := "<img src=\"([^\"]+)\"( alt=\"([^\"]+)\"|.*)>" }}
+    {{ $reAltOut := "<figure><img src=\"$1\" alt=\"$3\"><figcaption>$3</figcaption></figure>" }}
+    {{ $newContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}
+    {{ $newContent }}
+</article>
+<div class="disqus-comment">
+    {{ template "_internal/disqus.html" . }}
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('article img')
+})
+</script>
 {{- end -}}
