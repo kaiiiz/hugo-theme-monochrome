@@ -1,0 +1,23 @@
+.list-desc
+  @apply my-10 border-2 border-gray-300 p-4 rounded
+
+  @screen sm
+    @apply -mx-4
+
+.list
+  @apply my-10
+
+  .list-year
+    @apply font-bold text-black text-2xl
+
+  .list-item
+    @apply text-base text-gray-800 border-gray-300 border-b-2 hover:border-gray-700
+
+  .list-item-date
+    @apply text-xs text-gray-500
+
+  ul
+    @apply my-2
+
+    li
+      @apply mb-2 leading-relaxed

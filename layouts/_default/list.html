@@ -1,5 +1,18 @@
-{{- define "content" -}}
-    <div>
-        content
+{{ define "content" }}
+{{ with .Content }}
+    <div class="list-desc">{{- . -}}</div>
+{{ end }}
+{{ range .Pages.GroupByPublishDate "2006" }}
+    <div class="list">
+        <h1 class="list-year">{{- .Key -}}</h1>
+        <ul>
+            {{ range .Pages.ByPublishDate.Reverse }}
+                <li>
+                    <a href="{{ .RelPermalink }}" class="list-item">{{- .Title -}}</a>
+                    <span class="list-item-date">{{- .PublishDate.Format "01/02" -}}</span>
+                </li>
+            {{ end }}
+        </ul>
     </div>
-{{- end -}}
+{{ end }}
+{{ end }}

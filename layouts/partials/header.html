@@ -1,28 +1,27 @@
 <header>
     <nav>
-        {{- if .IsHome -}}
+        {{ if .IsHome }}
         <a href="{{ .Site.Home.RelPermalink }}" class="active-color title-size active-title">
-        {{- else -}}
+        {{ else }}
         <a href="{{ .Site.Home.RelPermalink }}" class="inactive-color title-size">
-        {{- end -}}
-            {{- if .Site.Params.nav.title -}}
-                {{- .Site.Params.nav.title -}}
-            {{- else -}}
-                {{- .Site.Title -}}
-            {{- end -}}
+        {{ end }}
+            {{ if .Site.Params.nav.title }}
+                {{ .Site.Params.nav.title }}
+            {{ else }}
+                {{ .Site.Title }}
+            {{ end }}
         </a>
-
         <ul>
             {{ $currentPage := . }}
             {{ $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" }}
             {{ range .Site.Menus.nav }}
                 <li>
                     {{ if $currentPage.IsMenuCurrent "nav" . }}
-                    <a href="{{ .URL }}" class="element-size active-color active-element">{{- .Name -}}</a>
+                    <a href="{{ .URL }}" class="element-size active-color active-element">{{ .Name }}</a>
                     {{ else if eq ($firstUrlElement|lower) (.URL|lower) }}
-                    <a href="{{ .URL }}" class="element-size insection-color insection-element">{{- .Name -}}</a>
+                    <a href="{{ .URL }}" class="element-size insection-color insection-element">{{ .Name }}</a>
                     {{ else }}
-                    <a href="{{ .URL }}" class="element-size inactive-color inactive-element">{{- .Name -}}</a>
+                    <a href="{{ .URL }}" class="element-size inactive-color inactive-element">{{ .Name }}</a>
                     {{ end }}
                 </li>
             {{ end }}

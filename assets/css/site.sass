@@ -1,7 +1,7 @@
 @charset "utf-8"
 
 html
-  @apply h-full w-full
+  @apply h-full w-full font-sans
   font-size: 18px
   line-height: 1.7
 
@@ -11,7 +11,5 @@ body
 #main
   @apply w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6 pt-6
 
-@import "components/nav"
-
-#content
-  @apply py-4 sm:py-8
+@import "components/header"
+@import "components/content"
