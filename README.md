@@ -20,3 +20,17 @@ Check minify & PurgeCSS
 hugo server --environment production
 ```
 
+### Config
+
+```toml
+[menu]
+  [[menu.nav]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+
+[params.nav]
+title = "YK's"
+```
+
