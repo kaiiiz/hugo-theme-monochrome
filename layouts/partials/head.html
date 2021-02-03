@@ -1,0 +1,17 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{ $options := dict "includePaths" (slice "node_modules") }}
+    {{ if hugo.IsProduction }}
+        {{ $options = merge $options (dict "outputStyle" "compressed") }}
+    {{ end }}
+
+    {{ $styles := resources.Get "css/styles.sass" | resources.ToCSS $options | postCSS (dict "config" "./assets/css/postcss.config.js") }}
+
+    {{ if hugo.IsProduction }}
+        {{ $styles = $styles | resources.Minify | resources.Fingerprint "sha512" }}
+    {{ end }}
+
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+</head>
