@@ -1,5 +1,6 @@
 {{ $hasdot := not (index . "nodot") }}
 {{ $img := index . "img" }}
+{{ $img_circle := index . "img-circle" }}
 
 {{ if $img }}
 <div class="ballon-item has-head">
@@ -27,7 +28,11 @@
 
         {{ if $img }}
             <div class="ballon-head">
-                <img src='{{- $img -}}'>
+                {{ if $img_circle }}
+                    <img src='{{- $img -}}' class="circle">
+                {{ else }}
+                    <img src='{{- $img -}}'>
+                {{ end }}
             </div>
         {{ else if $hasdot }}
             <div class="dot"></div>

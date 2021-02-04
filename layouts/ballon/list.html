@@ -1,6 +1,6 @@
 {{ define "content" }}
 <div class="ballon">
-    {{ partial "ballon/item.html" (dict "img" .Params.ballon_img "head" .Content "line-above" false "line-below" true) }}
+    {{ partial "ballon/item.html" (dict "img" .Params.ballon_img "img-circle" .Params.ballon_circle "head" .Content "line-above" false "line-below" true) }}
 
     {{ $res := .Site.GetPage .Params.ballon_resources }}
     {{ $pages := $res.Resources.ByType "page" }}

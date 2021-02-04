@@ -9,10 +9,14 @@
       flex: 0 0 auto
 
       .ballon-head
+        @apply w-24 h-24 bg-white
         z-index: 1
 
         img
-          @apply w-full rounded-full
+          @apply w-full
+
+        img.circle
+          @apply rounded-full
 
       .line-group
         @apply w-full h-full absolute left-0 top-0 flex flex-col
