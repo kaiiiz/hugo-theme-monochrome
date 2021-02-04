@@ -2,8 +2,10 @@
 <div class="ballon">
     {{ partial "ballon/item.html" (dict "img" .Params.ballon_img "head" .Content "line-above" false "line-below" true) }}
 
-    {{ $max_idx := sub (len .RegularPages) 1 }}
-    {{ range $index, $value := .RegularPages.ByWeight }}
+    {{ $pages := .Site.GetPage .Params.ballon_resources }}
+    {{ $max_idx := sub (len $pages.Resources) 1 }}
+
+    {{ range $index, $value := (sort $pages.Resources "Params.weight" "asc") }}
         {{ with .Title }}
             {{ partial "ballon/item.html" (dict "title" . "line-above" true "line-below" true "nodot" true) }}
         {{ end }}

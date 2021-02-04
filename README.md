@@ -34,3 +34,14 @@ hugo server --environment production
 title = "YK's"
 ```
 
+### Layout
+
+#### Ballon
+
+```md
+---
+type: 'ballon'
+ballon_img: "/images/sticker.jpg"
+ballon_resources: "/about"
+---
+```
