@@ -13,12 +13,12 @@
         </a>
         <ul>
             {{ $currentPage := . }}
-            {{ $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" }}
+            {{ $currentUrl := .RelPermalink }}
             {{ range .Site.Menus.nav }}
                 <li>
                     {{ if $currentPage.IsMenuCurrent "nav" . }}
                     <a href="{{ .URL }}" class="element-size active-color active-element">{{ .Name }}</a>
-                    {{ else if eq ($firstUrlElement|lower) (.URL|lower) }}
+                    {{ else if in ($currentUrl|lower) (.URL|lower) }}
                     <a href="{{ .URL }}" class="element-size insection-color insection-element">{{ .Name }}</a>
                     {{ else }}
                     <a href="{{ .URL }}" class="element-size inactive-color inactive-element">{{ .Name }}</a>
