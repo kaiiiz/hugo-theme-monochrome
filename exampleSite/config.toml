@@ -1,0 +1,24 @@
+baseURL = "https://kaiiiz.github.io/hugo-theme-artisan"
+languageCode = "en-us"
+title = "Artisan"
+theme = "hugo-theme-artisan"
+
+author = "kaiiiz"
+copyright = "Copyright © 2021, kaiiiz, all rights reserved."
+
+[build]
+  writeStats = true
+
+[menu]
+  [[menu.nav]]
+    identifier = "ballon"
+    name = "Ballon"
+    url = "/ballon/"
+    weight = 1
+
+[params]
+navTitle = "Artisan"
+footerText = "Copyright © 2021 by kaiiiz"
+
+[markup.goldmark.renderer]
+unsafe= true
