@@ -7,10 +7,12 @@
         {{- $options = merge $options (dict "outputStyle" "compressed") -}}
     {{- end -}}
 
-    {{- $styles := resources.Get "css/styles.sass" | resources.ToCSS $options | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+    {{- $styles := resources.Get "css/styles.sass" | resources.ToCSS $options -}}
 
     {{- if hugo.IsProduction -}}
-        {{- $styles = $styles | resources.Minify | resources.Fingerprint "sha512" -}}
+        {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" | resources.PostProcess -}}
+    {{- else -}}
+        {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.PostProcess -}}
     {{- end -}}
 
     <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
