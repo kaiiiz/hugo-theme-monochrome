@@ -1,6 +1,6 @@
 {{ define "content" }}
 {{ with .Content }}
-    <div class="list-desc">{{- . -}}</div>
+    <article class="list-desc">{{- . -}}</article>
 {{ end }}
 {{ range .Pages.GroupByPublishDate "2006" }}
     <div class="list">

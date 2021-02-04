@@ -1,0 +1,83 @@
+.bookcase
+  .bookcase-layer
+    .bookcase-layer-title
+      @apply font-semibold text-black text-2xl mb-4 mt-4
+
+    .bookcase-layer-items
+      @apply block overflow-x-auto overflow-y-hidden whitespace-nowrap
+
+      .bookcase-item
+        @apply inline-block mr-4 relative
+        width: 10rem
+        height: auto
+
+        img
+          @apply w-full rounded-md shadow-xl
+          height: 17rem
+          object-fit: cover
+
+        figcaption
+          @apply text-center py-2 text-sm
+          height: 2rem
+
+        &:last-child
+          @apply mr-0
+
+      .bookcase-item-overlay
+        @apply w-full rounded-md bg-gray-300 absolute top-0 left-0 opacity-0
+        height: 17rem
+
+        &:hover
+          @apply opacity-25 transition ease-out duration-75
+
+    .bookcase-layer-list
+      @apply border-2 border-gray-300 px-4 py-2 rounded
+
+.overflow-indicator-wrapper
+  @apply relative -mx-1 flex items-center
+
+  .overflow-indicator-content
+    @apply px-1
+
+  .overflow-indicator
+    @apply absolute w-1 h-full z-10 items-center
+
+  .overflow-indicator-overlay-left
+    @apply top-0 left-0
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+
+  .overflow-indicator-overlay-right
+    @apply top-0 right-0
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+
+  .overflow-indicator-btn
+    @apply w-8 h-8 flex items-center justify-center rounded-full bg-white shadow cursor-pointer hidden z-20
+
+    &:hover
+      @apply bg-gray-100 transition-all ease-in-out duration-150
+
+  .overflow-indicator-btn.show
+    @apply flex
+
+  .overflow-indicator-btn-left
+    @apply -left-4
+
+    &::before
+      @apply block absolute top-1/2 left-1/2
+      content: ''
+      border-top: solid 6px transparent
+      border-right: solid 6px #000000
+      border-bottom: solid 6px transparent
+      margin: -6px 0 0 -3px
+
+  .overflow-indicator-btn-right
+    @apply -right-4
+
+    &::before
+      @apply block absolute top-1/2 left-1/2
+      content: ''
+      border-top: solid 6px transparent
+      border-left: solid 6px #000000
+      border-bottom: solid 6px transparent
+      margin: -6px 0 0 -3px
+
