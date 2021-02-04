@@ -1,0 +1,29 @@
+{{ define "content" }}
+<div class="gallery">
+    {{ $res := .Site.GetPage .Params.gallery_resources }}
+    {{ $pages := $res.Resources.ByType "page" }}
+    {{ $max_idx := sub (len $pages) 1 }}
+
+    {{ range $index, $value := (sort $pages "Params.weight" "asc") }}
+        <article class="gallery-item">
+            <figure>
+                <a target="_blank" href="{{ .Params.title_url }}">
+                    <img src="{{ .Params.gallery_img }}" alt="{{ .Title }}">
+                </a>
+            </figure>
+            <div class="gallery-item-title">
+                <a target="_blank" href="{{ .Params.title_url }}">{{- .Title -}}</a>
+            </div>
+            <article>
+                {{ .Content }}
+            </article>
+            <div class="gallery-item-statistic">
+                {{ range $stat := .Params.statistic }}
+                    <div>{{ $stat.key }}</div>
+                    <div>{{ $stat.value }}</div>
+                {{ end }}
+            </div>
+        </article>
+    {{ end }}
+</div>
+{{ end }}
