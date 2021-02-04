@@ -3,6 +3,7 @@ const themeDir = __dirname + '/../../';
 const purgecss = require('@fullhuman/postcss-purgecss')({
     // see https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss
     content: [
+        './exampleSite/hugo_stats.json',
         './hugo_stats.json',
         themeDir + '/hugo_stats.json',
     ],

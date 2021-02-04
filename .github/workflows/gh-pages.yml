@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   deploy:
@@ -11,8 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: master
+          ref: dev
           token: ${{ secrets.ACCESS_TOKEN }}
+          ssh-key: ${{ secrets.SSH_PRIVATE }}
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
@@ -33,17 +34,18 @@ jobs:
         run: npm install
 
       - name: Setup public
-        run: git worktree add -B gh-pages public origin/gh-pages
+        run: git worktree add -B gh-pages ./exampleSite/public origin/gh-pages
 
       - name: Clean public
-        run: rm -rf public/*
+        run: rm -rf ./exampleSite/public/*
 
       - name: Build
-        run: hugo -s exampleSite --themesDir=../.. --minify
+        run: hugo --environment production -s exampleSite --themesDir=../.. --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
-          publish_dir: ./public
+          deploy_key: ${{ secrets.SSH_PRIVATE }}
+          publish_dir: ./exampleSite/public
           publish_branch: gh-pages
