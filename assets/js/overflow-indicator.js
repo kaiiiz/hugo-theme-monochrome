@@ -20,7 +20,7 @@ function scrollHandler(target) {
 }
 
 function resizeHandler() {
-    const layer_items = document.querySelectorAll('.bookcase-layer-items');
+    const layer_items = document.querySelectorAll('.overflow-indicator-content');
     layer_items.forEach(i => scrollHandler(i));
 }
 
@@ -58,7 +58,7 @@ function leftBtnHandler(target) {
 
 function registerListener() {
     window.addEventListener('resize', resizeHandler);
-    document.querySelectorAll('.bookcase-layer-items').forEach(i => {
+    document.querySelectorAll('.overflow-indicator-content').forEach(i => {
         i.addEventListener('scroll', (e) => scrollHandler(e.target));
     });
     document.querySelectorAll('.overflow-indicator-btn-right').forEach(i => {

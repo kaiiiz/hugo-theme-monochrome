@@ -1,40 +1,9 @@
-.bookcase
-  .bookcase-layer
-    .bookcase-layer-title
-      @apply font-semibold text-black text-2xl mb-4 mt-4
-
-    .bookcase-layer-items
-      @apply block overflow-x-auto overflow-y-hidden whitespace-nowrap
-
-      .bookcase-item
-        @apply inline-block mr-4 relative
-        width: 10rem
-        height: auto
-
-        img
-          @apply w-full rounded-md shadow-xl
-          height: 17rem
-          object-fit: cover
-
-        figcaption
-          @apply text-center py-2 text-sm
-          height: 2rem
-
-        &:last-child
-          @apply mr-0
-
-      .bookcase-item-overlay
-        @apply w-full rounded-md bg-gray-300 absolute top-0 left-0 opacity-0
-        height: 17rem
-
-        &:hover
-          @apply opacity-25 transition ease-out duration-75
 
 .overflow-indicator-wrapper
   @apply relative -mx-1 flex items-center
 
   .overflow-indicator-content
-    @apply px-1
+    @apply px-1 block overflow-x-auto overflow-y-hidden whitespace-nowrap
 
   .overflow-indicator
     @apply absolute w-1 h-full z-10 items-center
