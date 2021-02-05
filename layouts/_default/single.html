@@ -1,6 +1,8 @@
 {{- define "content" -}}
 
-{{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
+{{ $toc := .Params.toc | default true }}
+
+{{ if and (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") $toc }}
     <div class="my-10 p-4 border-2 rounded leading-6">
         <span class="font-bold mb-2">Table of contents</span>
         {{ .TableOfContents }}
