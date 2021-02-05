@@ -1,5 +1,6 @@
 {{- define "content" -}}
 <article>
+    <h2>{{ .Title }}</h2>
     {{ .Content | safeHTML }}
 </article>
 {{- end -}}

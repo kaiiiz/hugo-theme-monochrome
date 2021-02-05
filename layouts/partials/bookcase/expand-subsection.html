@@ -3,6 +3,14 @@
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h1>
 
+    {{ with .Content }}
+        <div class="mb-8">
+            <article>
+                {{ . }}
+            </article>
+        </div>
+    {{ end }}
+
     {{ with .Sections }}
         <div class="overflow-indicator-wrapper">
             <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-left"></div>

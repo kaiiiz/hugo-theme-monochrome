@@ -1,10 +1,7 @@
 {{ define "content" }}
 {{- partial "page-desc.html" . -}}
 
-{{ $expand_subsection := .Params.bookcase_expand_subsection }}
-{{ if eq $expand_subsection nil }}
-    {{ $expand_subsection = false }}
-{{ end }}
+{{ $expand_subsection := .Params.bookcase_expand_subsection | default false }}
 
 <div class="bookcase">
     {{ if $expand_subsection }}
