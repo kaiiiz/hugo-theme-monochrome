@@ -1,0 +1,10 @@
+<div class="flex w-full flex-col md:flex-row">
+    <div class="w-28 relative hidden flex-col items-center md:flex">
+        {{ partial "balloon/line.html" false }}
+        {{ partial "balloon/line.html" false }}
+    </div>
+
+    <div class="flex-1 mt-8 font-bold text-gray-800 text-center md:text-left">
+        {{ .Title | safeHTML }}
+    </div>
+</div>

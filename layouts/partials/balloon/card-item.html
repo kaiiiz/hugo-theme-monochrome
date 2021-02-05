@@ -1,0 +1,16 @@
+{{ $context := index . "context" }}
+{{ $last_item := index . "last-item" }}
+
+<div class="flex w-full flex-col md:flex-row">
+    <div class="w-28 relative hidden flex-col items-center md:flex">
+        {{ partial "balloon/line.html" false }}
+        <div class="w-4 h-4 rounded-full border-2 bg-white border-gray-800 my-1"></div>
+        {{ partial "balloon/line.html" $last_item }}
+    </div>
+    
+    <div class="flex-1 my-3 p-5 rounded-md shadow-md text-sm text-left">
+        <article>
+            {{ $context.Content | safeHTML }}
+        </article>
+    </div>
+</div>

@@ -36,12 +36,12 @@ title = "YK's"
 
 ### Layout
 
-#### Ballon
+#### Balloon
 
 ```md
 ---
-type: 'ballon'
-ballon_img: "/images/sticker.jpg"
-ballon_resources: "/about"
+type: 'balloon'
+balloon_img: "/images/sticker.jpg"
+balloon_resources: "/about"
 ---
 ```
