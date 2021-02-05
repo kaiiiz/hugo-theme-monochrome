@@ -2,13 +2,12 @@
 
 {{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
     <div class="my-10 p-4 border-2 rounded leading-6">
-        <span class="font-bold mb-2">目錄</span>
+        <span class="font-bold mb-2">Table of contents</span>
         {{ .TableOfContents }}
     </div>
 {{ end }}
 
 <article>
-    <h1>{{ .Title }}</h1>
     {{ $reAltIn := "<img src=\"([^\"]+)\"( alt=\"([^\"]+)\"|.*)>" }}
     {{ $reAltOut := "<figure><img src=\"$1\" alt=\"$3\"><figcaption>$3</figcaption></figure>" }}
     {{ $newContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}

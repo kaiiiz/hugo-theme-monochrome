@@ -1,12 +1,17 @@
-<div class="md:-ml-7">
-    {{ partial "balloon/head-item.html" . }}
 
-    {{ $res := .Site.GetPage .Params.balloon_resources }}
-    {{ $pages := $res.Resources.ByType "page" }}
-    {{ $max_idx := sub (len $pages) 1 }}
+{{ if .Params.balloon_resources }}
+    <div class="md:-ml-7">
+        {{ partial "balloon/head-item.html" . }}
 
-    {{ range $index, $value := (sort $pages "Params.weight" "asc") }}
-        {{ partial "balloon/title-item.html" . }}
-        {{ partial "balloon/card-item.html" (dict "context" . "last-item" (eq $index $max_idx)) }}
-    {{ end }}
-</div>
+        {{ $res := .Site.GetPage .Params.balloon_resources }}
+        {{ $pages := $res.Resources.ByType "page" }}
+        {{ $max_idx := sub (len $pages) 1 }}
+
+        {{ range $index, $value := (sort $pages "Params.weight" "asc") }}
+            {{ partial "balloon/title-item.html" . }}
+            {{ partial "balloon/card-item.html" (dict "context" . "last-item" (eq $index $max_idx)) }}
+        {{ end }}
+    </div>
+{{ else }}
+    <span>Resouces not found. You need to specify "balloon_resources" in front-matter.</span>
+{{ end }}
