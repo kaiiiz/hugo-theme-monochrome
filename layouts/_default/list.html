@@ -1,7 +1,5 @@
 {{ define "content" }}
-{{ with .Content }}
-    <article class="list-desc">{{- . -}}</article>
-{{ end }}
+{{- partial "page-desc.html" . -}}
 {{ range .Pages.GroupByPublishDate "2006" }}
     <div class="list">
         <h1 class="list-year">{{- .Key -}}</h1>

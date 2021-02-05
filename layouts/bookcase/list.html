@@ -1,50 +1,18 @@
 {{ define "content" }}
+{{- partial "page-desc.html" . -}}
+
+{{ $expand_subsection := .Params.bookcase_expand_subsection }}
+{{ if eq $expand_subsection nil }}
+    {{ $expand_subsection = false }}
+{{ end }}
+
 <div class="bookcase">
-    {{ range .Sections.ByWeight }}
-        <div class="bookcase-layer">
-            <h1 class="bookcase-layer-title">
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h1>
-
-            {{ with .Sections }}
-                <div class="overflow-indicator-wrapper">
-                    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-left">
-                    </div>
-                    <div class="overflow-indicator overflow-indicator-overlay-left"></div>
-                    <div class="overflow-indicator-content bookcase-layer-items no-scrollbar">
-                        {{ range . }}
-                            <figure class="bookcase-item">
-                                <a href="{{ .RelPermalink }}">
-                                    <img src="{{ .Params.cover_url }}">
-                                    <div class="bookcase-item-overlay"></div>
-                                </a>
-                                <figcaption>
-                                    <a href="{{ .RelPermalink }}">
-                                        {{ .Title }}
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        {{ end }}
-                    </div>
-                    <div class="overflow-indicator overflow-indicator-overlay-right"></div>
-                    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-right">
-                    </div>
-                </div>
-            {{ end }}
-
-            {{ with .RegularPages }}
-                <div class="list bookcase-layer-list">
-                    <ul>
-                        {{ range .ByPublishDate.Reverse }}
-                            <li>
-                                <a href="{{ .RelPermalink }}" class="list-item">{{- .Title -}}</a>
-                                <span class="list-item-date">{{- .PublishDate.Format "01/02" -}}</span>
-                            </li>
-                        {{ end }}
-                    </ul>
-                </div>
-            {{ end }}
-        </div>
+    {{ if $expand_subsection }}
+        {{ range .Sections.ByWeight }}
+            {{- partial "bookcase/expand-subsection.html" . -}}
+        {{ end }}
+    {{ else }}
+        {{- partial "bookcase/expand-subsection.html" . -}}
     {{ end }}
 </div>
 

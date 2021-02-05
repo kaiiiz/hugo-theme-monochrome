@@ -1,0 +1,29 @@
+<div class="bookcase-layer">
+    <h1 class="bookcase-layer-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </h1>
+
+    {{ with .Sections }}
+        <div class="overflow-indicator-wrapper">
+            <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-left"></div>
+            <div class="overflow-indicator overflow-indicator-overlay-left"></div>
+            <div class="overflow-indicator-content bookcase-layer-items no-scrollbar">
+                {{ range .ByWeight }}
+                    <figure class="bookcase-item">
+                        <a href="{{ .RelPermalink }}">
+                            <img src="{{ .Params.bookcase_cover }}">
+                            <div class="bookcase-item-overlay"></div>
+                        </a>
+                        <figcaption>
+                            <a href="{{ .RelPermalink }}">
+                                {{ .Title }}
+                            </a>
+                        </figcaption>
+                    </figure>
+                {{ end }}
+            </div>
+            <div class="overflow-indicator overflow-indicator-overlay-right"></div>
+            <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-right"></div>
+        </div>
+    {{ end }}
+</div>
