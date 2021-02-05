@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>
         {{- if eq .Kind "home" -}}
@@ -21,7 +21,7 @@
     {{ end }}
 
     {{ if .Params.Author }}
-    <meta name="author" content="{{ .Params.Author}}" />
+    <meta name="author" content="{{ .Params.Author }}" />
     {{ end }}
 
     {{- $options := dict "includePaths" (slice "node_modules") -}}
