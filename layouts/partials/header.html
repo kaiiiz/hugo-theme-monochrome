@@ -27,10 +27,10 @@
         <ul class="flex flex-row">
             {{ $currentPage := . }}
             {{ $currentUrl := .RelPermalink }}
-            {{ range .Site.Menus.nav }}
+            {{ range .Site.Menus.navbar }}
                 <li class="ml-4">
                     <div class='
-                    {{- if $currentPage.IsMenuCurrent "nav" . -}}
+                    {{- if $currentPage.IsMenuCurrent "navbar" . -}}
                         {{ $nav_element }} {{ $active_color }} {{ $active_nav_element }}
                     {{- else if in ($currentUrl|lower) (.URL|lower) -}}
                         {{ $nav_element }} {{ $insection_color }} {{ $insection_nav_element }}

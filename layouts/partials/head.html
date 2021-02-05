@@ -12,16 +12,16 @@
         {{- end -}}
     </title>
 
-    {{ if .Description }}
-    <meta name="description" content="{{ .Description }}" />
+    {{ with .Description }}
+    <meta name="description" content="{{ . }}" />
     {{ end }}
 
-    {{ if .Keywords }}
-    <meta name="keywords" content="{{ delimit .Keywords "," }}" />
+    {{ with .Keywords }}
+    <meta name="keywords" content="{{ delimit . "," }}" />
     {{ end }}
 
-    {{ if .Params.Author }}
-    <meta name="author" content="{{ .Params.Author }}" />
+    {{ with .Params.Author }}
+    <meta name="author" content="{{ . }}" />
     {{ end }}
 
     {{- $options := dict "includePaths" (slice "node_modules") -}}
