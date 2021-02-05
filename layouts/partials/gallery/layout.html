@@ -1,0 +1,31 @@
+<div>
+    {{ $res := .Site.GetPage .Params.gallery_resources }}
+    {{ $pages := $res.Resources.ByType "page" }}
+    {{ $max_idx := sub (len $pages) 1 }}
+
+    {{ range $index, $value := (sort $pages "Params.weight" "asc") }}
+        <div class="mb-16 last:mb-0">
+            <figure class="sm:-mx-6">
+                <a target="_blank" href="{{ .Params.title_url }}">
+                    <img src="{{ .Params.gallery_img }}" alt="{{ .Title }}">
+                </a>
+            </figure>
+            <div class="mt-8 mb-4">
+                <a target="_blank" href="{{ .Params.title_url }}" class="border-b border-gray-400 hover:border-gray-800 text-black text-2xl font-bold">
+                    {{- .Title -}}
+                </a>
+            </div>
+            <div class="my-4">
+                <article>
+                    {{ .Content }}
+                </article>
+            </div>
+            <div class="grid grid-cols-2 gap-2" style="grid-template-columns: max-content 1fr">
+                {{ range $stat := .Params.statistic }}
+                    <div>{{ $stat.key }}</div>
+                    <div>{{ $stat.value }}</div>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+</div>
