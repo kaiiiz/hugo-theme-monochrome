@@ -2,6 +2,6 @@
 title: 'Layout'
 type: 'bookcase'
 menu:
-  nav:
+  navbar:
     weight: 1
 ---

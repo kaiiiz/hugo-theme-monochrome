@@ -1,7 +1,7 @@
 ---
 title: 'Installation'
 menu:
-  nav:
+  navbar:
     weight: -100
 toc: false
 ---
