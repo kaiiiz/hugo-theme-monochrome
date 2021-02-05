@@ -9,39 +9,50 @@
 {{ $insection_nav_element := "border-gray-600" }}
 {{ $inactive_nav_element := "border-transparent hover:border-gray-800 hover:text-gray-800" }}
 
-<header class="w-full pt-4 overflow-y-hidden overflow-x-auto">
-    <nav class="flex flex-row items-baseline">
-        <a href="{{ .Site.Home.RelPermalink }}" class="
-            {{- if .IsHome -}}
-                text-2xl {{ $active_color }} {{ $active_title }}
-            {{- else -}}
-                text-2xl {{ $inactive_color }}
-            {{- end -}}
-        ">
-            {{- if .Site.Params.navTitle -}}
-                {{- .Site.Params.navTitle -}}
-            {{- else -}}
-                {{- .Site.Title -}}
-            {{- end -}}
-        </a>
-        <ul class="flex flex-row">
-            {{ $currentPage := . }}
-            {{ $currentUrl := .RelPermalink }}
-            {{ range .Site.Menus.navbar }}
-                <li class="ml-4">
-                    <div class='
-                    {{- if $currentPage.IsMenuCurrent "navbar" . -}}
-                        {{ $nav_element }} {{ $active_color }} {{ $active_nav_element }}
-                    {{- else if in ($currentUrl|lower) (.URL|lower) -}}
-                        {{ $nav_element }} {{ $insection_color }} {{ $insection_nav_element }}
+<div class="overflow-indicator-wrapper pt-4">
+    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-left"></div>
+    <div class="overflow-indicator overflow-indicator-overlay-left"></div>
+    <div class="overflow-indicator-content no-scrollbar">
+        <header>
+            <nav class="flex flex-row items-baseline">
+                <a href="{{ .Site.Home.RelPermalink }}" class="
+                    {{- if .IsHome -}}
+                        text-2xl {{ $active_color }} {{ $active_title }}
                     {{- else -}}
-                        {{ $nav_element }} {{ $inactive_color }} {{ $inactive_nav_element }}
+                        text-2xl {{ $inactive_color }}
                     {{- end -}}
-                    '>
-                        <a href="{{ .URL }}">{{- .Name -}}</a>
-                    </div>
-                </li>
-            {{ end }}
-        </ul>
-    </nav>
-</header>
+                ">
+                    {{- if .Site.Params.navTitle -}}
+                        {{- .Site.Params.navTitle -}}
+                    {{- else -}}
+                        {{- .Site.Title -}}
+                    {{- end -}}
+                </a>
+                <ul class="flex flex-row">
+                    {{ $currentPage := . }}
+                    {{ $currentUrl := .RelPermalink }}
+                    {{ range .Site.Menus.navbar }}
+                        <li class="ml-4">
+                            <div class='
+                            {{- if $currentPage.IsMenuCurrent "navbar" . -}}
+                                {{ $nav_element }} {{ $active_color }} {{ $active_nav_element }}
+                            {{- else if in ($currentUrl|lower) (.URL|lower) -}}
+                                {{ $nav_element }} {{ $insection_color }} {{ $insection_nav_element }}
+                            {{- else -}}
+                                {{ $nav_element }} {{ $inactive_color }} {{ $inactive_nav_element }}
+                            {{- end -}}
+                            '>
+                                <a href="{{ .URL }}">{{- .Name -}}</a>
+                            </div>
+                        </li>
+                    {{ end }}
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="overflow-indicator overflow-indicator-overlay-right"></div>
+    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-right"></div>
+</div>
+
+{{ $js := resources.Get "js/overflow-indicator.js" }}
+<script src="{{ $js.RelPermalink }}"></script>

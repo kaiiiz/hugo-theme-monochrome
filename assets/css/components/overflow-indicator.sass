@@ -17,16 +17,13 @@
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
 
   .overflow-indicator-btn
-    @apply w-8 h-8 flex items-center justify-center rounded-full bg-white shadow cursor-pointer hidden z-20
-
-    &:hover
-      @apply bg-gray-100 transition-all ease-in-out duration-150
+    @apply w-8 h-8 items-center justify-center bg-white cursor-pointer hidden z-20
 
   .overflow-indicator-btn.show
     @apply flex
 
   .overflow-indicator-btn-left
-    @apply -left-4
+    @apply left-0 sm:-left-8
 
     &::before
       @apply block absolute top-1/2 left-1/2
@@ -37,7 +34,7 @@
       margin: -6px 0 0 -3px
 
   .overflow-indicator-btn-right
-    @apply -right-4
+    @apply right-0 sm:-right-8
 
     &::before
       @apply block absolute top-1/2 left-1/2
