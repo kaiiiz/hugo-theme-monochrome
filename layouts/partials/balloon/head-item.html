@@ -19,7 +19,7 @@
             </div>
         </div>
     {{ end }}
-    <div class="flex justify-center items-center md:mt-0 {{ if $img }}md:ml-4 mt-8{{ end }}">
+    <div class="flex flex-1 justify-center md:justify-start items-center md:mt-0 {{ if $img }}md:ml-4 mt-8{{ end }}">
         <article class="text-center md:text-left">
             {{ .Content | safeHTML }}
         </article>
