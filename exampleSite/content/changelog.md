@@ -2,5 +2,9 @@
 title: 'Changelog'
 menu:
   nav:
-    weight: -100
+    weight: -1
+toc: false
 ---
+
+## Changelog
+

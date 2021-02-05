@@ -1,6 +1,6 @@
 ---
 title: 'About this theme'
-weight: 1
+weight: 2
 ---
 
-Content
+For flexibility and organize all my need in blog

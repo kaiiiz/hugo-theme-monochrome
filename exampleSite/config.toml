@@ -9,13 +9,6 @@ copyright = "Copyright © 2021, kaiiiz, all rights reserved."
 [build]
   writeStats = true
 
-[menu]
-  [[menu.nav]]
-    identifier = "ballon"
-    name = "Ballon"
-    url = "/ballon/"
-    weight = 1
-
 [params]
 navTitle = "Artisan"
 footerText = "Copyright © 2021 by kaiiiz"
