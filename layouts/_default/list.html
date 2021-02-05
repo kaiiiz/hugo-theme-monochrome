@@ -1,13 +1,17 @@
 {{ define "content" }}
 {{- partial "page-desc.html" . -}}
 {{ range .Pages.GroupByPublishDate "2006" }}
-    <div class="list">
-        <h1 class="list-year">{{- .Key -}}</h1>
-        <ul>
+    <div class="mb-10">
+        <h1 class="font-bold text-black text-2xl">{{- .Key -}}</h1>
+        <ul class="my-2">
             {{ range .Pages.ByPublishDate.Reverse }}
-                <li>
-                    <a href="{{ .RelPermalink }}" class="list-item">{{- .Title -}}</a>
-                    <span class="list-item-date">{{- .PublishDate.Format "01/02" -}}</span>
+                <li class="mb-2 leading-relaxed">
+                    <a href="{{ .RelPermalink }}" class="text-base text-gray-800 border-gray-300 border-b-2 hover:border-gray-700">
+                        {{- .Title -}}
+                    </a>
+                    <span class="text-xs text-gray-500">
+                        {{- .PublishDate.Format "01/02" -}}
+                    </span>
                 </li>
             {{ end }}
         </ul>

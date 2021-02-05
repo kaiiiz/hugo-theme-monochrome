@@ -1,5 +1,11 @@
 
 article
+  *:first-child
+    @apply mt-0
+
+  *:last-child
+    @apply mb-0
+
   h1, h2, h3, h4, h5, h6
     @apply font-bold mt-8 mb-4
 
@@ -65,7 +71,7 @@ article
     @apply rounded bg-red-100 text-red-700 font-mono p-1
 
   pre
-    @apply bg-gray-100 px-3 py-2 rounded overflow-auto my-4
+    @apply bg-gray-50 px-3 py-2 rounded overflow-auto my-4
 
     code
       @apply bg-transparent text-gray-800 p-0

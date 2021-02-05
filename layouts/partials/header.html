@@ -1,28 +1,45 @@
-<header>
-    <nav>
-        {{ if .IsHome }}
-        <a href="{{ .Site.Home.RelPermalink }}" class="active-color title-size active-title">
-        {{ else }}
-        <a href="{{ .Site.Home.RelPermalink }}" class="inactive-color title-size">
-        {{ end }}
-            {{ if .Site.Params.navTitle }}
-                {{ .Site.Params.navTitle }}
-            {{ else }}
-                {{ .Site.Title }}
-            {{ end }}
+{{ $active_color := "text-gray-800" }}
+{{ $insection_color := "text-gray-600" }}
+{{ $inactive_color := "text-gray-400" }}
+
+{{ $active_title := "font-bold" }}
+
+{{ $nav_element := "pb-1 text-sm border-b-2" }}
+{{ $active_nav_element := "border-gray-800" }}
+{{ $insection_nav_element := "border-gray-600" }}
+{{ $inactive_nav_element := "border-transparent hover:border-gray-800 hover:text-gray-800" }}
+
+<header class="w-full pt-4 overflow-y-hidden overflow-x-auto">
+    <nav class="flex flex-row items-baseline">
+        <a href="{{ .Site.Home.RelPermalink }}" class="
+            {{- if .IsHome -}}
+                text-2xl {{ $active_color }} {{ $active_title }}
+            {{- else -}}
+                text-2xl {{ $inactive_color }}
+            {{- end -}}
+        ">
+            {{- if .Site.Params.navTitle -}}
+                {{- .Site.Params.navTitle -}}
+            {{- else -}}
+                {{- .Site.Title -}}
+            {{- end -}}
         </a>
-        <ul>
+        <ul class="flex flex-row">
             {{ $currentPage := . }}
             {{ $currentUrl := .RelPermalink }}
             {{ range .Site.Menus.nav }}
-                <li>
-                    {{ if $currentPage.IsMenuCurrent "nav" . }}
-                    <a href="{{ .URL }}" class="element-size active-color active-element">{{ .Name }}</a>
-                    {{ else if in ($currentUrl|lower) (.URL|lower) }}
-                    <a href="{{ .URL }}" class="element-size insection-color insection-element">{{ .Name }}</a>
-                    {{ else }}
-                    <a href="{{ .URL }}" class="element-size inactive-color inactive-element">{{ .Name }}</a>
-                    {{ end }}
+                <li class="ml-4">
+                    <div class='
+                    {{- if $currentPage.IsMenuCurrent "nav" . -}}
+                        {{ $nav_element }} {{ $active_color }} {{ $active_nav_element }}
+                    {{- else if in ($currentUrl|lower) (.URL|lower) -}}
+                        {{ $nav_element }} {{ $insection_color }} {{ $insection_nav_element }}
+                    {{- else -}}
+                        {{ $nav_element }} {{ $inactive_color }} {{ $inactive_nav_element }}
+                    {{- end -}}
+                    '>
+                        <a href="{{ .URL }}">{{- .Name -}}</a>
+                    </div>
                 </li>
             {{ end }}
         </ul>

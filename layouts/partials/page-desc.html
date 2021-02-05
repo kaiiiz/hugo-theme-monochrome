@@ -1,3 +1,7 @@
 {{ with .Content }}
-    <article class="page-desc">{{- . -}}</article>
+    <div class="border-2 border-gray-300 p-4 rounded my-10">
+        <article>
+            {{- . -}}
+        </article>
+    </div>
 {{ end }}

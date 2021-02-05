@@ -1,10 +1,12 @@
 {{- define "content" -}}
+
 {{ if ne .TableOfContents "<nav id=\"TableOfContents\"></nav>" }}
-    <div class="toc">
-        <span>目錄</span>
+    <div class="my-10 p-4 border-2 rounded leading-6">
+        <span class="font-bold mb-2">目錄</span>
         {{ .TableOfContents }}
     </div>
 {{ end }}
+
 <article>
     <h1>{{ .Title }}</h1>
     {{ $reAltIn := "<img src=\"([^\"]+)\"( alt=\"([^\"]+)\"|.*)>" }}
@@ -12,9 +14,11 @@
     {{ $newContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}
     {{ $newContent }}
 </article>
-<div class="disqus-comment">
+
+<div class="my-10 sm:-mx-6">
     {{ template "_internal/disqus.html" . }}
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {

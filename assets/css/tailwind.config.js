@@ -2,6 +2,10 @@ module.exports = {
     theme: {
         extend: {}
     },
-    variants: {},
+    variants: {
+        extend: {
+            margin: ['last'],
+        }
+    },
     plugins: []
 }
