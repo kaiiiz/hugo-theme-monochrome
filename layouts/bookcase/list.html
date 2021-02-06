@@ -1,18 +1,13 @@
 {{ define "content" }}
 
-{{ $expand_subsection := .Params.bookcase_expand_subsection | default false }}
+{{ $mode := .Params.bookcase_mode | default "list" }}
 
-<div>
-    {{ if $expand_subsection }}
-        {{- partial "bookcase/reveal-content.html" . -}}
-        {{ range .Sections.ByWeight }}
-            {{- partial "bookcase/expand-subsection.html" . -}}
-        {{ end }}
-    {{ else }}
-        {{- partial "bookcase/expand-subsection.html" . -}}
-    {{ end }}
-</div>
+{{ if eq $mode "list" }}
+    {{- partial "bookcase/list-mode.html" . -}}
+{{ else if eq $mode "expand" }}
+    {{- partial "bookcase/expand-mode.html" . -}}
+{{ else }}
+    <span>{{ $mode }} is not available</span>
+{{ end }}
 
-{{ $js := resources.Get "js/overflow-indicator.js" }}
-<script src="{{ $js.RelPermalink }}"></script>
 {{ end }}

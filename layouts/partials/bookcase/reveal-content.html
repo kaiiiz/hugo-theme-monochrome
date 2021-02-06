@@ -1,9 +1,0 @@
-{{ $reveal_content := .Params.bookcase_reveal_content | default true }}
-
-{{ if $reveal_content }}
-    {{ if .Content }}
-        <div class="mb-8">
-            {{- partial "content.html" . -}}
-        </div>
-    {{ end }}
-{{ end }}

@@ -45,5 +45,8 @@
         <script src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
     {{ end }}
 
+    {{ $overflow_indicator_js := resources.Get "js/overflow-indicator.js" | js.Build (dict "minify" true) | resources.Fingerprint "sha512" }}
+    <script defer src="{{ $overflow_indicator_js.RelPermalink }}" integrity="{{- $overflow_indicator_js.Data.Integrity -}}"></script>
+
     {{ template "_internal/google_analytics_async.html" . }}
 </head>
