@@ -1,14 +1,18 @@
-<div>
+<div class="mb-10">
     <h1 class="font-semibold text-black text-2xl mb-4 mt-4">
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h1>
 
-    {{ with .Content }}
-        <div class="mb-8">
-            <article>
-                {{ . }}
-            </article>
-        </div>
+    {{ $reveal_content := .Params.bookcase_reveal_content | default true }}
+
+    {{ if $reveal_content }}
+        {{ with .Content }}
+            <div class="mb-8">
+                <article>
+                    {{ . }}
+                </article>
+            </div>
+        {{ end }}
     {{ end }}
 
     {{ with .Sections }}
@@ -23,7 +27,7 @@
                                 <img src="{{ .Params.bookcase_cover }}" class="w-full rounded-md shadow-xl h-64 object-cover">
                                 <div class="w-full rounded-md bg-gray-300 absolute top-0 left-0 opacity-0 h-64 hover:opacity-25 hover:transition hover:ease-out hover:duration-75"></div>
                             </a>
-                            <figcaption class="text-center py-2 text-sm h-8">
+                            <figcaption class="text-center py-2 text-sm">
                                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                             </figcaption>
                         </figure>

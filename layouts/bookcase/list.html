@@ -2,8 +2,9 @@
 
 {{ $expand_subsection := .Params.bookcase_expand_subsection | default false }}
 
-<div class="bookcase">
+<div>
     {{ if $expand_subsection }}
+        {{- partial "page-desc.html" . -}}
         {{ range .Sections.ByWeight }}
             {{- partial "bookcase/expand-subsection.html" . -}}
         {{ end }}
