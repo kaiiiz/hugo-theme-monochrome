@@ -39,5 +39,11 @@
 
     <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
 
+    {{ $zooming_js := .Params.zooming_js | default true }}
+    {{ if $zooming_js }}
+        {{ $js := resources.Get "js/zooming.js" | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+        <script src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
+    {{ end }}
+
     {{ template "_internal/google_analytics_async.html" . }}
 </head>
