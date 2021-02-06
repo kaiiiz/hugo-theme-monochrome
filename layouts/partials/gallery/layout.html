@@ -1,9 +1,7 @@
-{{ with .Content }}
-    <div class="my-10">
-        <article>
-            {{- . -}}
-        </article>
-    </div>
+{{ if .Content }}
+<div class="my-10">
+    {{- partial "content.html" . -}}
+</div>
 {{ end }}
 
 {{ if .Params.gallery_resources }}
@@ -37,9 +35,7 @@
                         </a>
                     </div>
                     <div class="my-4">
-                        <article>
-                            {{ .Content }}
-                        </article>
+                        {{- partial "content.html" . -}}
                     </div>
                     <div class="grid grid-cols-2 gap-2" style="grid-template-columns: max-content 1fr">
                         {{ range $stat := .Params.gallery_statistic }}

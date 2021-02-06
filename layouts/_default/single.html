@@ -9,22 +9,15 @@
     </div>
 {{ end }}
 
-<article>
-    {{ $reAltIn := "<img src=\"([^\"]+)\"( alt=\"([^\"]+)\"|.*)>" }}
-    {{ $reAltOut := "<figure><img src=\"$1\" alt=\"$3\"><figcaption>$3</figcaption></figure>" }}
-    {{ $newContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}
-    {{ $newContent }}
-</article>
+{{ if .Content }}
+    <div class="my-10">
+        {{- partial "content.html" . -}}
+    </div>
+{{ end }}
 
 <div class="my-10 sm:-mx-6">
     {{ template "_internal/disqus.html" . }}
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const zooming = new Zooming()
-    zooming.listen('article img')
-})
-</script>
 {{- end -}}

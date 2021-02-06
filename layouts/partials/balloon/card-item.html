@@ -9,8 +9,6 @@
     </div>
     
     <div class="flex-1 my-0 p-5 rounded-md shadow-md text-sm text-left md:my-3">
-        <article>
-            {{ $context.Content | safeHTML }}
-        </article>
+        {{- partial "content.html" $context -}}
     </div>
 </div>

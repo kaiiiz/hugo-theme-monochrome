@@ -9,8 +9,8 @@
     </div>
 {{ end }}
 
-<article>
+<article class="my-10">
     <h2>{{ .Title }}</h2>
-    {{ .Content | safeHTML }}
+    {{- partial "content.html" . -}}
 </article>
 {{- end -}}

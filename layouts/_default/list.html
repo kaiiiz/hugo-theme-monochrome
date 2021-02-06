@@ -1,5 +1,11 @@
 {{ define "content" }}
-{{- partial "page-desc.html" . -}}
+
+{{ if .Content }}
+    <div class="my-10">
+        {{- partial "content.html" . -}}
+    </div>
+{{ end }}
+
 {{ range .Pages.GroupByPublishDate "2006" }}
     <div class="mb-10">
         <h1 class="font-bold text-black text-2xl">{{- .Key -}}</h1>

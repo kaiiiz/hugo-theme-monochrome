@@ -4,11 +4,9 @@
 
 <div>
     {{ if $expand_subsection }}
-        {{ with .Content }}
+        {{ if .Content }}
             <div class="my-10">
-                <article>
-                    {{- . -}}
-                </article>
+                {{- partial "content.html" . -}}
             </div>
         {{ end }}
         {{ range .Sections.ByWeight }}
