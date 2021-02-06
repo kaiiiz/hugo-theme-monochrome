@@ -4,11 +4,7 @@
 
 <div>
     {{ if $expand_subsection }}
-        {{ if .Content }}
-            <div class="my-10">
-                {{- partial "content.html" . -}}
-            </div>
-        {{ end }}
+        {{- partial "bookcase/reveal-content.html" . -}}
         {{ range .Sections.ByWeight }}
             {{- partial "bookcase/expand-subsection.html" . -}}
         {{ end }}

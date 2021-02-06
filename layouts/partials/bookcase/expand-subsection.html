@@ -3,15 +3,7 @@
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </h1>
 
-    {{ $reveal_content := .Params.bookcase_reveal_content | default true }}
-
-    {{ if $reveal_content }}
-        {{ if .Content }}
-            <div class="mb-8">
-                {{- partial "content.html" . -}}
-            </div>
-        {{ end }}
-    {{ end }}
+    {{- partial "bookcase/reveal-content.html" . -}}
 
     {{ with .Sections }}
         <div class="overflow-indicator-wrapper">
@@ -22,7 +14,7 @@
                     {{ range .ByWeight }}
                         <figure class="inline-block mr-4 relative w-40 h-auto last:mr-0">
                             <a href="{{ .RelPermalink }}">
-                                <img src="{{ .Params.bookcase_cover }}" class="w-full rounded-md shadow-xl h-64 object-cover">
+                                <img src="{{ .Params.bookcase_cover_url }}" class="w-full rounded-md shadow-xl h-64 object-cover">
                                 <div class="w-full rounded-md bg-gray-300 absolute top-0 left-0 opacity-0 h-64 hover:opacity-25 hover:transition hover:ease-out hover:duration-75"></div>
                             </a>
                             <figcaption class="text-center py-2 text-sm">
