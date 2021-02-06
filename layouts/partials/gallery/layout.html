@@ -1,3 +1,11 @@
+{{ with .Content }}
+    <div class="my-10">
+        <article>
+            {{- . -}}
+        </article>
+    </div>
+{{ end }}
+
 {{ if .Params.gallery_resources }}
     <div>
         {{ $res := .Site.GetPage .Params.gallery_resources }}
