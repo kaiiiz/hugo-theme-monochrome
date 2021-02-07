@@ -10,7 +10,10 @@
 </span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
 <span style=color:#f92672>bookcase_mode</span>: <span style=color:#e6db74>&#39;list&#39;</span>
 ---
-</code></pre></td></tr></table></div></div><blockquote><p>default: &lsquo;list&rsquo;</p></blockquote><h3 id=bookcase_cover_src>bookcase_cover_src</h3><p>The cover image URL. URL can be any resources avaliable on the internet.</p><p>This parameter is located in bookcase item&rsquo;s resource. Take list mode for example:</p><pre><code>.
+</code></pre></td></tr></table></div></div><blockquote><p>default: &lsquo;list&rsquo;</p></blockquote><h3 id=bookcase_cover_src>bookcase_cover_src</h3><p>The cover image URL. URL must be related to base URL. (without /)</p><p>For example:</p><pre><code>https://kaiiiz.github.io/hugo-theme-artisan/thanks.jpg
+        \__________________________________/\________/
+                    base URL              bookcase_cover_src
+</code></pre><p>This parameter is located in bookcase item&rsquo;s resource. Take list mode for example:</p><pre><code>.
 ├── books.md &lt;- bookcase_cover_src is located in here!
 ├── category
 │   └── _index.md &lt;- and here!
@@ -19,7 +22,7 @@
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
 </span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
-<span style=color:#f92672>bookcase_cover_src</span>: <span style=color:#e6db74>&#39;/hugo-theme-artisan/thanks.jpg&#39;</span>
+<span style=color:#f92672>bookcase_cover_src</span>: <span style=color:#e6db74>&#39;thanks.jpg&#39;</span>
 ---
 </code></pre></td></tr></table></div></div><blockquote><p>default: image become empty</p></blockquote><h3 id=weight>weight</h3><p>You can adjust the order of item inside bookcase by explicit specifying weight.</p><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2

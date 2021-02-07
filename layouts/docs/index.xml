@@ -2,8 +2,9 @@
 This layout can be used on both list layout and single layout.
 Configuration In page front-matter
 1 2 3 --- type: &amp;#39;balloon&amp;#39; --- Specify type in front-matter will change the template lookup order.
-balloon_img_src Balloon head image URL. URL can be any resources avaliable on the internet.
-1 2 3 --- balloon_img_src: &amp;#39;/hugo-theme-artisan/thanks.jpg&amp;#39; --- default: image become dot</description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-artisan/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-artisan/layouts/docs/bookcase/</guid><description>Bookcase layout is useful for creating another viewpoint of list contents.
+balloon_img_src Balloon head image URL. URL must be related to base URL. (without /)
+For example:
+https://kaiiiz.github.io/hugo-theme-artisan/thanks.jpg \__________________________________/\________/ base URL balloon_img_src 1 2 3 --- balloon_img_src: &amp;#39;thanks.</description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-artisan/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-artisan/layouts/docs/bookcase/</guid><description>Bookcase layout is useful for creating another viewpoint of list contents.
 This layout can only be used on list layout.
 Configuration In page front-matter
 1 2 3 --- type: &amp;#39;bookcase&amp;#39; --- Specify type in front-matter will change the template lookup order.
@@ -15,6 +16,6 @@ Configuration In page front-matter
 This layout can be used on both list layout and single layout.
 Configuration In page front-matter
 1 2 3 --- type: &amp;#39;gallery&amp;#39; --- Specify type in front-matter will change the template lookup order.
-gallery_resources Content resources. URL must relative to base URL.
+gallery_resources Content resources. URL must relative to base URL. (with /)
 For example:
 https://kaiiiz.github.io/hugo-theme-artisan/about \_________________________________/\____/ base URL gallery_resources 1 2 3 --- gallery_resources: &amp;#39;/about&amp;#39; --- default: error will occur in page</description></item></channel></rss>

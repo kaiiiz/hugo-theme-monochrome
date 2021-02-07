@@ -4,7 +4,7 @@
 </span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
 <span style=color:#f92672>type</span>: <span style=color:#e6db74>&#39;gallery&#39;</span>
 ---
-</code></pre></td></tr></table></div></div><blockquote><p>Specify <code>type</code> in front-matter will change the template lookup order.</p></blockquote><h3 id=gallery_resources>gallery_resources</h3><p>Content resources. URL must relative to base URL.</p><p>For example:</p><pre><code>https://kaiiiz.github.io/hugo-theme-artisan/about
+</code></pre></td></tr></table></div></div><blockquote><p>Specify <code>type</code> in front-matter will change the template lookup order.</p></blockquote><h3 id=gallery_resources>gallery_resources</h3><p>Content resources. URL must relative to base URL. (with /)</p><p>For example:</p><pre><code>https://kaiiiz.github.io/hugo-theme-artisan/about
         \_________________________________/\____/
                     base URL           gallery_resources
 </code></pre><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
@@ -25,11 +25,14 @@
 </span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
 <span style=color:#f92672>gallery_title_link</span>: <span style=color:#e6db74>&#39;https://github.com/kaiiiz&#39;</span>
 ---
-</code></pre></td></tr></table></div></div><blockquote><p>default: no title link</p></blockquote><h3 id=gallery_img_src>gallery_img_src</h3><p>Image URL. URL can be any resources avaliable on the internet.</p><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</code></pre></td></tr></table></div></div><blockquote><p>default: no title link</p></blockquote><h3 id=gallery_img_src>gallery_img_src</h3><p>Image URL. URL must be related to base URL. (without /)</p><p>For example:</p><pre><code>https://kaiiiz.github.io/hugo-theme-artisan/thanks.jpg
+        \__________________________________/\________/
+                    base URL              gallery_img_src
+</code></pre><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
 </span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
-<span style=color:#f92672>gallery_img_src</span>: <span style=color:#e6db74>&#39;/hugo-theme-artisan/thanks.jpg&#39;</span>
+<span style=color:#f92672>gallery_img_src</span>: <span style=color:#e6db74>&#39;thanks.jpg&#39;</span>
 ---
 </code></pre></td></tr></table></div></div><blockquote><p>default: no image</p></blockquote><h3 id=gallery_img_link>gallery_img_link</h3><p>Link of the image.</p><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
