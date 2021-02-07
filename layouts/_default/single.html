@@ -1,23 +1,12 @@
 {{- define "content" -}}
 
-{{ $toc := .Params.toc | default true }}
-
-{{ if and (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") $toc }}
-    <div class="my-10 p-4 border-2 rounded leading-6">
-        <span class="font-bold mb-2">Table of contents</span>
-        {{ .TableOfContents }}
-    </div>
-{{ end }}
+{{- partial "toc.html" . -}}
 
 {{ if .Content }}
     <div class="my-10">
         {{- partial "content.html" . -}}
     </div>
 {{ end }}
-
-<div class="my-10 sm:-mx-6">
-    {{ template "_internal/disqus.html" . }}
-</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>
 {{- end -}}

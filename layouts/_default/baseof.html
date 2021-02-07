@@ -7,6 +7,12 @@
             <div id="content" class="my-10">
                 {{- block "content" . }}{{- end }}
             </div>
+            {{ $disqus := .Params.disqus | default false }}
+            {{ if $disqus }}
+                <div class="my-10 sm:-mx-6">
+                    {{ template "_internal/disqus.html" . }}
+                </div>
+            {{ end }}
             {{- partial "footer.html" . -}}
         </div>
     </body>
