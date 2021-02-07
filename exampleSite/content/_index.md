@@ -1,6 +1,6 @@
 ---
 type: 'balloon'
-balloon_img: "/hugo-theme-artisan/vase.svg"
+balloon_img_src: "/hugo-theme-artisan/vase.svg"
 balloon_circle: false
 balloon_resources: "/about"
 ---

@@ -14,9 +14,9 @@ keywords:
 
 This document shows some customizable values that are used in this theme. By adjusting these values, you can easily change the appearance of your website without touching the source code.
 
-## Basic settings
+## Site settings
 
-This section shows some basic settings that are important for building a website using hugo. You can get more information in [All Configuration Settings](https://gohugo.io/getting-started/configuration/#all-configuration-settings).
+These settings are important for building a website using hugo. You can get more information in [All Configuration Settings](https://gohugo.io/getting-started/configuration/#all-configuration-settings).
 
 ### Site title
 
@@ -48,44 +48,45 @@ baseURL = "https://kaiiiz.github.io/hugo-theme-artisan"
 
 > Hostname (and path) to the root.
 
+## Theme Settings
 
-## Navbar title
-
-In your config.toml
-
-```toml
-[params]
-navTitle = "Artisan"
-```
-
-> [Will fallback to `title` value in config.toml](#site-title) if this value is not set.
-
-## Footer text
+### Navbar title
 
 In your config.toml
 
 ```toml
 [params]
-footerText = "Copyright © 2021 by kaiiiz"
+navbarTitle = "Artisan"
 ```
 
-> If this value is not present, footer section will not be rendered.
+> default: [`title` value in config.toml](#site-title)
 
-## Navbar menu
+### Footer
 
-Artisan uses built-in menu system supported from hugo itself. (Checkout [document](https://gohugo.io/content-management/menus) for more deatil.) By default, artisan uses the menu called `navbar` to decide which item need to be rendered on the navbar.
+In your config.toml. HTML is available.
+
+```toml
+[params]
+footer = "Copyright © 2021 by kaiiiz"
+```
+
+> default: footer section will not be rendered.
+
+### Navbar menu
+
+Artisan uses built-in menu system supported by hugo itself. (Checkout [document](https://gohugo.io/content-management/menus) for more deatil.) By default, artisan uses the menu called `navbar` to decide which item need to be rendered on the navbar.
 
 So you can simply add the following code to your page front-matter, and the menu info will be handled by hugo out of the box. ([simple method mentioned in document](https://gohugo.io/content-management/menus#simple))
 
-```md
+```yaml
 ---
 menu: navbar
 ---
 ```
 
-Also, weighted value is supported out of the box, you can explicit assign the weight of the navbar item, hugo will first sort the menu using weight, if there has two item shared the same weight, the alphabetical order will be applied.
+Also, weighted value is supported out of the box, you can explicit assign the weight of the navbar entry, hugo will first sort the menu using weight, if there has two entries shared the same weight, the alphabetical order will be applied.
 
-```md
+```yaml
 ---
 menu:
   navbar:
@@ -95,39 +96,76 @@ menu:
 
 If you try to put entry that aren't attached to a piece of content, checkout [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu) for more detail.
 
-## Layout
+### Disqus
 
-Artisan support many different types of layout. You can change the layout of section or regular page according to your needs. Checkout [Layout](/hugo-theme-artisan/layout) for more detail.
+In your config.toml
 
-## Page metadata settings
+```toml
+disqusShortname = "xxx"
+```
 
-These configurations may effect the result of SEO.
+Other settings checkout [Disqus - Internal Templates](https://gohugo.io/templates/internal/#disqus) for more details.
 
-### Author
+### Google Analytics
+
+In your config.toml
+
+```toml
+googleAnalytics = "xxx"
+```
+## Page Settings
+
+### Layout
+
+Artisan support many different types of layout. You can change the layout of section or regular page according to your needs. Checkout [Layout](/hugo-theme-artisan/layouts) for more detail.
+
+### Table of Contents
 
 In page front-matter
 
-```md
+```yaml
+---
+toc: false
+---
+```
+
+> This setting will only be used in regular page or catalog layout.
+
+> default: true
+
+### Metadata
+
+These configurations may effect the result of SEO.
+
+#### Author
+
+In page front-matter
+
+```yaml
 ---
 author: "kaiiiz"
 ---
 ```
 
-### Description
+> default: no author metadata
+
+#### Description
 
 In page front-matter
 
-```md
+```yaml
 ---
 description: "Configuration of hugo-theme-artisan"
 ---
 ```
 
-### Keywords
+> default: no description metadata
+
+#### Keywords
 
 In page front-matter
 
-```md
+```yaml
 ---
 keywords:
 - hugo
@@ -135,3 +173,41 @@ keywords:
 - hugo theme artisan
 ---
 ```
+
+> default: no keywords metadata
+
+### Zooming.js
+
+In page front-matter
+
+```yaml
+---
+zooming_js: false
+---
+```
+
+> default: true
+
+### Disqus
+
+In page front-matter
+
+```yaml
+---
+disqus: true
+---
+```
+
+> default: false
+
+### Google Analytics
+
+In page front-matter
+
+```yaml
+---
+google_analytics: false
+---
+```
+
+> default: true

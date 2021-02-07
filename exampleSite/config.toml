@@ -2,13 +2,15 @@ baseURL = "https://kaiiiz.github.io/hugo-theme-artisan"
 languageCode = "en-us"
 title = "Artisan"
 theme = "hugo-theme-artisan"
+disqusShortname = "at881005"
+googleAnalytics = "xxx"
 
 [build]
   writeStats = true
 
 [params]
-navTitle = "Artisan"
-footerText = "Copyright © 2021 by kaiiiz"
+navbarTitle = "Artisan"
+footer = "Copyright © 2021 by kaiiiz"
 
 [markup.goldmark.renderer]
 unsafe= true

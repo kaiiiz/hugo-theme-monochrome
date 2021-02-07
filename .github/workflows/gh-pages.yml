@@ -27,11 +27,11 @@ jobs:
         with:
           node-version: '12'
 
-      - name: Setup PostCSS
-        run: npm install -g postcss && npm install -g postcss-cli && npm install -g autoprefixer
+      - name: Composite package.json
+        run: hugo -s exampleSite --themesDir=../.. mod npm pack
 
-      - name: Setup Theme Dependency
-        run: npm install
+      - name: Setup Dependency
+        run: npm install --prefix exampleSite
 
       - name: Setup public
         run: git worktree add -B gh-pages ./exampleSite/public origin/gh-pages
@@ -40,7 +40,7 @@ jobs:
         run: rm -rf ./exampleSite/public/*
 
       - name: Build
-        run: hugo --environment production -s exampleSite --themesDir=../.. --minify
+        run: hugo -s exampleSite --themesDir=../.. --minify --environment production
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
