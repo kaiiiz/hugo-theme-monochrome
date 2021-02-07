@@ -13,36 +13,49 @@
             {{ $max_idx := sub (len $pages) 1 }}
 
             {{ range $index, $value := (sort $pages "Params.weight" "asc") }}
-                <div class="mb-16 last:mb-0">
-                    {{ $title_url := .Params.gallery_title_url | default .Params.gallery_img_url }}
-                    {{ $img_url := .Params.gallery_img_url | default .Params.gallery_title_url }}
+                <div class="mb-16">
+                    {{ $title_link := .Params.gallery_title_link }}
+                    {{ $img_link := .Params.gallery_img_link }}
 
-                    <figure class="sm:-mx-6">
-                        {{ if $img_url }}<a target="_blank" href="{{ $img_url }}">{{ end }}
-                            <img class="mx-auto" src="{{ .Params.gallery_img }}" alt="{{ .Title }}">
-                        {{ if $img_url }}</a>{{ end }}
-                        {{ with .Params.gallery_img_caption }}
-                            <figcaption class="italic text-center my-2 text-sm">
-                                <article>
-                                    {{ . | safeHTML }}
-                                </article>
-                            </figcaption>
-                        {{ end }}
-                    </figure>
-                    <div class="mt-8 mb-4">
-                        <a target="_blank" href="{{ .Params.title_url }}" class="border-b border-gray-400 hover:border-gray-800 text-black text-2xl font-bold">
-                            {{- .Title -}}
-                        </a>
-                    </div>
-                    <div class="my-4">
-                        {{- partial "content.html" . -}}
-                    </div>
-                    <div class="grid grid-cols-2 gap-2" style="grid-template-columns: max-content 1fr">
-                        {{ range $stat := .Params.gallery_statistic }}
-                            <div>{{ $stat.key }}</div>
-                            <div>{{ $stat.value }}</div>
-                        {{ end }}
-                    </div>
+                    {{ if .Params.gallery_img_src }}
+                        <figure class="sm:-mx-6">
+                            {{ if $img_link }}<a target="_blank" href="{{ $img_link }}">{{ end }}
+                                <img class="mx-auto" src="{{ .Params.gallery_img_src }}" alt="{{ .Title }}">
+                            {{ if $img_link }}</a>{{ end }}
+                            {{ with .Params.gallery_img_caption }}
+                                <figcaption class="italic text-center my-2 text-sm">
+                                    <article>
+                                        {{ . | safeHTML }}
+                                    </article>
+                                </figcaption>
+                            {{ end }}
+                        </figure>
+                    {{ end }}
+
+                    {{ if .Title }}
+                        <div class="mt-8 mb-4">
+                            {{ if $title_link }}<a target="_blank" href="{{ $title_link }}" class="border-b border-gray-400 hover:border-gray-800">{{ end }}
+                                <span class="text-black text-2xl font-bold">
+                                    {{- .Title -}}
+                                </span>
+                            {{ if $title_link }}</a>{{ end }}
+                        </div>
+                    {{ end }}
+
+                    {{ if .Content }}
+                        <div class="my-4">
+                            {{- partial "content.html" . -}}
+                        </div>
+                    {{ end }}
+
+                    {{ if .Params.gallery_statistic }}
+                        <div class="grid grid-cols-2 gap-2" style="grid-template-columns: max-content 1fr">
+                            {{ range $stat := .Params.gallery_statistic }}
+                                <div>{{ $stat.key }}</div>
+                                <div>{{ $stat.value }}</div>
+                            {{ end }}
+                        </div>
+                    {{ end }}
                 </div>
             {{ end }}
         {{ else }}
