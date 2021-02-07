@@ -1,0 +1,46 @@
+
+.overflow-indicator-wrapper
+  @apply relative -mx-1 flex items-center
+
+  .overflow-indicator-content
+    @apply px-1 flex overflow-x-auto overflow-y-hidden
+
+  .overflow-indicator
+    @apply absolute w-1 h-full z-10 items-center
+
+  .overflow-indicator-overlay-left
+    @apply top-0 left-0
+    background: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+
+  .overflow-indicator-overlay-right
+    @apply top-0 right-0
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%)
+
+  .overflow-indicator-btn
+    @apply w-8 h-8 items-center justify-center bg-white opacity-75 cursor-pointer hidden z-20
+
+  .overflow-indicator-btn.show
+    @apply flex
+
+  .overflow-indicator-btn-left
+    @apply left-0 sm:-left-8
+
+    &::before
+      @apply block absolute top-1/2 left-1/2
+      content: ''
+      border-top: solid 6px transparent
+      border-right: solid 6px #000000
+      border-bottom: solid 6px transparent
+      margin: -6px 0 0 -3px
+
+  .overflow-indicator-btn-right
+    @apply right-0 sm:-right-8
+
+    &::before
+      @apply block absolute top-1/2 left-1/2
+      content: ''
+      border-top: solid 6px transparent
+      border-left: solid 6px #000000
+      border-bottom: solid 6px transparent
+      margin: -6px 0 0 -3px
+

@@ -1,30 +1,55 @@
-<header>
-    <nav>
-        {{ if .IsHome }}
-        <a href="{{ .Site.Home.RelPermalink }}" class="active-color title-size active-title">
-        {{ else }}
-        <a href="{{ .Site.Home.RelPermalink }}" class="inactive-color title-size">
-        {{ end }}
-            {{ if .Site.Params.navTitle }}
-                {{ .Site.Params.navTitle }}
-            {{ else }}
-                {{ .Site.Title }}
-            {{ end }}
-        </a>
-        <ul>
-            {{ $currentPage := . }}
-            {{ $firstUrlElement := print "/" (index (split .RelPermalink "/") 1) "/" }}
-            {{ range .Site.Menus.nav }}
-                <li>
-                    {{ if $currentPage.IsMenuCurrent "nav" . }}
-                    <a href="{{ .URL }}" class="element-size active-color active-element">{{ .Name }}</a>
-                    {{ else if eq ($firstUrlElement|lower) (.URL|lower) }}
-                    <a href="{{ .URL }}" class="element-size insection-color insection-element">{{ .Name }}</a>
-                    {{ else }}
-                    <a href="{{ .URL }}" class="element-size inactive-color inactive-element">{{ .Name }}</a>
+{{ $active_color := "text-gray-800" }}
+{{ $insection_color := "text-gray-600" }}
+{{ $inactive_color := "text-gray-400" }}
+
+{{ $active_title := "font-bold" }}
+
+{{ $nav_element := "pb-1 text-sm border-b-2" }}
+{{ $active_nav_element := "border-gray-800" }}
+{{ $insection_nav_element := "border-gray-600" }}
+{{ $inactive_nav_element := "border-transparent hover:border-gray-800 hover:text-gray-800" }}
+
+<div class="overflow-indicator-wrapper pt-4">
+    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-left"></div>
+    <div class="overflow-indicator overflow-indicator-overlay-left"></div>
+    <div class="overflow-indicator-content no-scrollbar">
+        <header>
+            <nav class="flex flex-row items-baseline">
+                <a href="{{ .Site.Home.RelPermalink }}" class="
+                    {{- if .IsHome -}}
+                        text-2xl {{ $active_color }} {{ $active_title }}
+                    {{- else -}}
+                        text-2xl {{ $inactive_color }}
+                    {{- end -}}
+                ">
+                    {{- if .Site.Params.navbarTitle -}}
+                        {{- .Site.Params.navbarTitle -}}
+                    {{- else -}}
+                        {{- .Site.Title -}}
+                    {{- end -}}
+                </a>
+                <ul class="flex flex-row">
+                    {{ $currentPage := . }}
+                    {{ $currentUrl := .RelPermalink }}
+                    {{ range .Site.Menus.navbar }}
+                        <li class="ml-4">
+                            <div class='
+                            {{- if $currentPage.IsMenuCurrent "navbar" . -}}
+                                {{ $nav_element }} {{ $active_color }} {{ $active_nav_element }}
+                            {{- else if in ($currentUrl|lower) (.URL|lower) -}}
+                                {{ $nav_element }} {{ $insection_color }} {{ $insection_nav_element }}
+                            {{- else -}}
+                                {{ $nav_element }} {{ $inactive_color }} {{ $inactive_nav_element }}
+                            {{- end -}}
+                            '>
+                                <a href="{{ .URL }}">{{- .Name -}}</a>
+                            </div>
+                        </li>
                     {{ end }}
-                </li>
-            {{ end }}
-        </ul>
-    </nav>
-</header>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="overflow-indicator overflow-indicator-overlay-right"></div>
+    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-right"></div>
+</div>

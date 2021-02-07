@@ -1,53 +1,13 @@
 {{ define "content" }}
-<div class="bookcase">
-    {{ range .Sections.ByWeight }}
-        <div class="bookcase-layer">
-            <h1 class="bookcase-layer-title">
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h1>
 
-            {{ with .Sections }}
-                <div class="overflow-indicator-wrapper">
-                    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-left">
-                    </div>
-                    <div class="overflow-indicator overflow-indicator-overlay-left"></div>
-                    <div class="overflow-indicator-content bookcase-layer-items no-scrollbar">
-                        {{ range . }}
-                            <figure class="bookcase-item">
-                                <a href="{{ .RelPermalink }}">
-                                    <img src="{{ .Params.cover_url }}">
-                                    <div class="bookcase-item-overlay"></div>
-                                </a>
-                                <figcaption>
-                                    <a href="{{ .RelPermalink }}">
-                                        {{ .Title }}
-                                    </a>
-                                </figcaption>
-                            </figure>
-                        {{ end }}
-                    </div>
-                    <div class="overflow-indicator overflow-indicator-overlay-right"></div>
-                    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-right">
-                    </div>
-                </div>
-            {{ end }}
+{{ $mode := .Params.bookcase_mode | default "list" }}
 
-            {{ with .RegularPages }}
-                <div class="list bookcase-layer-list">
-                    <ul>
-                        {{ range .ByPublishDate.Reverse }}
-                            <li>
-                                <a href="{{ .RelPermalink }}" class="list-item">{{- .Title -}}</a>
-                                <span class="list-item-date">{{- .PublishDate.Format "01/02" -}}</span>
-                            </li>
-                        {{ end }}
-                    </ul>
-                </div>
-            {{ end }}
-        </div>
-    {{ end }}
-</div>
+{{ if eq $mode "list" }}
+    {{- partial "bookcase/list-mode.html" . -}}
+{{ else if eq $mode "expand" }}
+    {{- partial "bookcase/expand-mode.html" . -}}
+{{ else }}
+    <span>{{ $mode }} is not available</span>
+{{ end }}
 
-{{ $js := resources.Get "js/bookcase.js" }}
-<script src="{{ $js.RelPermalink }}"></script>
 {{ end }}

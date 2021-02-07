@@ -1,0 +1,25 @@
+baseURL = "https://kaiiiz.github.io/hugo-theme-artisan/"
+languageCode = "en-us"
+title = "Artisan"
+theme = "hugo-theme-artisan"
+
+[build]
+  writeStats = true
+
+[params]
+navbarTitle = "Artisan"
+footer = "Copyright © 2021 by kaiiiz"
+
+[markup.goldmark.renderer]
+unsafe= true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = true
+noClasses = true
+style = "monokai"
+tabWidth = 4

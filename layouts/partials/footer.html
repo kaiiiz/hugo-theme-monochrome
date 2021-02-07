@@ -1,5 +1,7 @@
-{{ if .Site.Params.footerText }}
-<footer>
-    <p>{{ .Site.Params.footerText }}</p>
+{{ with .Site.Params.footer }}
+<footer class="my-10 w-full text-center text-xs text-gray-400">
+    <article>
+        {{- . | safeHTML -}}
+    </article>
 </footer>
 {{ end }}

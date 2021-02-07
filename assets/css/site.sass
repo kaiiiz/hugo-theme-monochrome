@@ -1,17 +1,13 @@
+/*! purgecss start ignore */
+
 @charset "utf-8"
 
 html
-  @apply h-full w-full font-sans
   font-size: 18px
-  line-height: 1.7
 
-body
-  @apply flex flex-col items-center w-full
-
-#main
-  @apply w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6 pt-6
-
-@import "components/header"
 @import "components/content"
-@import "components/internal"
-@import "components/footer"
+@import "components/article"
+@import "components/util"
+@import "components/overflow-indicator"
+
+/*! purgecss end ignore */

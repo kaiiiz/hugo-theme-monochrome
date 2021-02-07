@@ -4,7 +4,8 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
     // see https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss
     content: [
         './hugo_stats.json',
-        themeDir + '/hugo_stats.json',
+        themeDir + './hugo_stats.json',
+        themeDir + './exampleSite/hugo_stats.json',
     ],
     defaultExtractor: (content) => {
         let els = JSON.parse(content).htmlElements;

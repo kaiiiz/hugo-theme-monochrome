@@ -1,17 +1,54 @@
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href='{{ "favicon.ico" | absURL }}' type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>
+        {{- if eq .Kind "home" -}}
+            {{- print .Site.Title -}}
+        {{- else if eq .Kind "section" -}}
+            {{- print .CurrentSection.Title " - " .Site.Title }}
+        {{- else -}}
+            {{- print .Title " - " .Site.Title -}}
+        {{- end -}}
+    </title>
+
+    {{ with .Description }}
+    <meta name="description" content="{{ . }}" />
+    {{ end }}
+
+    {{ with .Keywords }}
+    <meta name="keywords" content="{{ delimit . "," }}" />
+    {{ end }}
+
+    {{ with .Params.Author }}
+    <meta name="author" content="{{ . }}" />
+    {{ end }}
 
     {{- $options := dict "includePaths" (slice "node_modules") -}}
     {{- if hugo.IsProduction -}}
         {{- $options = merge $options (dict "outputStyle" "compressed") -}}
     {{- end -}}
-
-    {{- $styles := resources.Get "css/styles.sass" | resources.ToCSS $options | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
-
+    {{- $styles := resources.Get "css/styles.sass" | resources.ToCSS $options -}}
     {{- if hugo.IsProduction -}}
-        {{- $styles = $styles | resources.Minify | resources.Fingerprint "sha512" -}}
+        {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" | resources.PostProcess -}}
+    {{- else -}}
+        {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.PostProcess -}}
     {{- end -}}
-
     <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
+
+    {{ $js := slice (resources.Get "js/overflow-indicator.js") }}
+    {{ if (.Params.zooming_js | default true) }}
+        {{ $js = $js | append (resources.Get "js/zooming.js") }}
+    {{ end }}
+    {{ $js = $js | resources.Concat "js/bundle.js" }}
+    {{- if hugo.IsProduction -}}
+        {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+    {{- else -}}
+        {{ $js = $js | js.Build -}}
+    {{- end -}}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
+
+    {{ if (.Params.google_analytics | default true) }}
+        {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
 </head>

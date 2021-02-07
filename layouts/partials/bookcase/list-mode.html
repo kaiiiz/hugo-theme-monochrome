@@ -1,0 +1,37 @@
+{{ $list_sections := .Params.bookcase_list_sections | default true }}
+{{ $list_pages := .Params.bookcase_list_pages | default true }}
+
+{{ $res := default nil }}
+{{ if and $list_sections $list_pages }}
+    {{ $res = .Pages }}
+{{ else if $list_sections }}
+    {{ $res = .Sections }}
+{{ else if $list_pages }}
+    {{ $res = .RegularPages }}
+{{ end }}
+
+<div class="my-10">
+    <h1 class="font-semibold text-black text-2xl mb-6">{{ .Title }}</h1>
+
+    {{ if .Content }}
+    <div class="my-6">
+        {{- partial "content.html" . -}}
+    </div>
+    {{ end }}
+
+    {{ if $res }}
+        <div class="overflow-indicator-wrapper">
+            <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-left"></div>
+            <div class="overflow-indicator overflow-indicator-overlay-left"></div>
+            <div class="overflow-indicator-content no-scrollbar">
+                <div class="flex flex-shrink-0">
+                    {{ range $res.ByWeight }}
+                        {{- partial "bookcase/item.html" . -}}
+                    {{ end }}
+                </div>
+            </div>
+            <div class="overflow-indicator overflow-indicator-overlay-right"></div>
+            <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-right"></div>
+        </div>
+    {{ end }}
+</div>

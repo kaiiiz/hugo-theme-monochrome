@@ -1,0 +1,6 @@
+<article>
+    {{ $reAltIn := "<img src=\"([^\"]+)\"( alt=\"([^\"]+)\"|.*)>" }}
+    {{ $reAltOut := "<figure><img src=\"$1\" alt=\"$3\" class=\"img-zoomable\"><figcaption>$3</figcaption></figure>" }}
+    {{ $newContent := .Content | replaceRE $reAltIn $reAltOut | safeHTML }}
+    {{ $newContent }}
+</article>

@@ -1,47 +1,39 @@
-You need "extended" version of hugo to support SASS. Checkout [Install Hugo](https://gohugo.io/getting-started/installing/) for more detail.
+<p align="center">
+  <a href="https://kaiiiz.github.io/hugo-theme-artisan">
+    <img alt="Artisan" src="https://kaiiiz.github.io/hugo-theme-artisan/icons/vase.svg" width="60">
+  </a>
+</p>
 
-## PostCSS
+<h2 align="center">
+  Artisan
+</h2>
 
-[PostCSS](https://gohugo.io/hugo-pipes/postcss/)
+<p align="center">
+  A clean, responsive and fully-customizable hugo theme
+</p>
 
-```
-yarn install
-```
+## 💿 Installation
 
-### Production
+See [Setup](https://kaiiiz.github.io/hugo-theme-artisan/setup)
 
-```
-hugo server --environment development
-```
+## ⚒ Configuration
 
-Check minify & PurgeCSS
+See [Configuration](https://kaiiiz.github.io/hugo-theme-artisan/configuration/)
 
-```
-hugo server --environment production
-```
+## 🎁 Features
 
-### Config
+**Multiple layouts is available:**
 
-```toml
-[menu]
-  [[menu.nav]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 1
+* [Balloon](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/balloon/)
+* [Bookcase](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/bookcase/)
+* [Catalog](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/catalog/)
+* [Gallery](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/gallery/)
 
-[params.nav]
-title = "YK's"
-```
+**Responsive Layout**
 
-### Layout
+## ❤️ Acknowledgement
 
-#### Ballon
+* [Hugo](https://gohugo.io/) for awesome CMS framework written by [golang](https://golang.org/)
+* [tailwindcss](https://tailwindcss.com/) for awesome utility-first CSS framework
+* Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com) ([Balloon](https://www.flaticon.com/free-icon/balloon_106616?term=ballon&page=1&position=40&page=1&position=40&related_id=106616), [Bookcase](https://www.flaticon.com/free-icon/bookcase_3780918?term=bookcase&page=1&position=8&page=1&position=8&related_id=3780918), [Catalogue](https://www.flaticon.com/free-icon/catalogue_3486568?term=catalogue&page=1&position=1&page=1&position=1&related_id=3486568), [Picture](https://www.flaticon.com/free-icon/picture_870392?term=museum&page=1&position=19&page=1&position=19&related_id=870392), [Vase](https://www.flaticon.com/free-icon/vase_3798619?related_id=3798619&origin=tag#), [List](https://www.flaticon.com/free-icon/list_3923539?term=list&page=1&position=24&page=1&position=24&related_id=3923539&origin=search))
 
-```md
----
-type: 'ballon'
-ballon_img: "/images/sticker.jpg"
-ballon_resources: "/about"
----
-```

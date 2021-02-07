@@ -1,0 +1,27 @@
+{{ $img := .Params.balloon_img_src }}
+{{ $img_circle := .Params.balloon_circle | default true }}
+
+<div class="flex w-full flex-col md:flex-row">
+    <div class="w-28 relative hidden flex-col items-center md:flex">
+        {{ if $img }}
+            <div class="w-24 h-24 bg-white">
+                <img src='{{- $img | absURL -}}' class="w-full {{ if $img_circle }}rounded-full{{ end }}">
+            </div>
+        {{ else }}
+            <div class="w-4 h-4 rounded-full border-2 bg-white border-gray-800"></div>
+        {{ end }}
+        {{ partial "balloon/line.html" false }}
+    </div>
+    {{ if $img }}
+        <div class="w-full flex justify-center md:hidden">
+            <div class="w-20 h-20 bg-white">
+                <img src='{{- $img -}}' class="w-full {{ if $img_circle }}rounded-full{{ end }}">
+            </div>
+        </div>
+    {{ end }}
+    <div class="flex flex-1 justify-center md:justify-start items-center md:mt-0 {{ if $img }}md:ml-4 mt-8{{ end }}">
+        <div class="text-center md:text-left">
+            {{- partial "content.html" . -}}
+        </div>
+    </div>
+</div>
