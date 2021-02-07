@@ -1,0 +1,9 @@
+{{- partial "toc.html" . -}}
+
+{{ if .Content }}
+    <div class="my-10">
+        {{- partial "content.html" . -}}
+    </div>
+{{ end }}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zooming/2.1.1/zooming.min.js"></script>

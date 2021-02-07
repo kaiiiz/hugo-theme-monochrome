@@ -162,7 +162,6 @@
       "xl:w-5/12"
     ],
     "ids": [
-      "13",
       "TableOfContents",
       "add-a-theme",
       "author",
@@ -178,6 +177,7 @@
       "bookcase_list_sections",
       "bookcase_mode",
       "build-static-pages",
+      "catalog",
       "changelog",
       "configuration",
       "content",
@@ -219,9 +219,9 @@
       "theme-settings",
       "title",
       "trick",
-      "v010---20210207",
       "v010---20210208",
       "weight",
+      "why-catalog-layout",
       "zoomingjs"
     ]
   }

@@ -1,13 +1,10 @@
-# theme.toml template for a Hugo theme
-# See https://github.com/gohugoio/hugoThemes#themetoml for an example
-
-name = "Hugo Theme Artisan"
+name = "Artisan"
 license = "MIT"
-licenselink = "https://github.com/kaiiiz/hugo-theme-artisan/blob/master/LICENSE"
+licenselink = "https://github.com/kaiiiz/hugo-theme-artisan/blob/main/LICENSE"
 description = ""
 homepage = "http://example.com/"
-tags = []
-features = []
+tags = ["blog", "simple", "clean", "tailwindcss", "personal", "responsive", "customizable"]
+features = ["multiple layout built-in"]
 min_version = "0.78.0"
 
 [author]

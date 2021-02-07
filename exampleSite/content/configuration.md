@@ -129,7 +129,7 @@ toc: false
 ---
 ```
 
-> This setting will only be used in regular page or catalog layout.
+> This setting will only be used in regular page.
 
 > default: true
 
