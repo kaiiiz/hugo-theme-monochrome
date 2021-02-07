@@ -187,6 +187,7 @@
       "disqus",
       "disqus-1",
       "expand-mode",
+      "favicon",
       "footer",
       "gallery_img_caption",
       "gallery_img_link",
@@ -201,6 +202,7 @@
       "layout",
       "list-mode",
       "metadata",
+      "milestones",
       "multi-layer-bookcase",
       "navbar-menu",
       "navbar-title",
@@ -219,6 +221,7 @@
       "title",
       "trick",
       "v010---20210208",
+      "v020---milestone",
       "weight",
       "why-catalog-layout",
       "zoomingjs"

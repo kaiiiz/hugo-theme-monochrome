@@ -1,7 +1,15 @@
 <p align="center">
-<img height="90" src="https://kaiiiz.github.io/hugo-theme-artisan/icons/vase.svg">
-<br>A clean, responsive and fully-customizable hugo theme
-<br>
+  <a href="https://kaiiiz.github.io/hugo-theme-artisan">
+    <img alt="Artisan" src="https://kaiiiz.github.io/hugo-theme-artisan/icons/vase.svg" width="60">
+  </a>
+</p>
+
+<h2 align="center">
+  Artisan
+</h2>
+
+<p align="center">
+  A clean, responsive and fully-customizable hugo theme
 </p>
 
 ## 💿 Installation
@@ -20,6 +28,8 @@ See [Configuration](https://kaiiiz.github.io/hugo-theme-artisan/configuration/)
 * [Bookcase](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/bookcase/)
 * [Catalog](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/catalog/)
 * [Gallery](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/gallery/)
+
+**Responsive Layout**
 
 ## ❤️ Acknowledgement
 

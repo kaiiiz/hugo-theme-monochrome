@@ -48,6 +48,10 @@ baseURL = "https://kaiiiz.github.io/hugo-theme-artisan"
 
 > Hostname (and path) to the root.
 
+### favicon
+
+Simply add `favicon.ico` to your site's static folder.
+
 ## Theme Settings
 
 ### Navbar title
@@ -129,7 +133,7 @@ toc: false
 ---
 ```
 
-> This setting will only be used in regular page.
+> This setting will only be used in regular page or catalog layout.
 
 > default: true
 

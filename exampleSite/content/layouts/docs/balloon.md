@@ -53,7 +53,7 @@ balloon_circle: true
 
 ### balloon_resources
 
-Content resources. URL must relative to base URL.
+Content resources. URL must relative to base URL. (with /)
 
 Take this page for example:
 
