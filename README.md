@@ -1,47 +1,17 @@
-You need "extended" version of hugo to support SASS. Checkout [Install Hugo](https://gohugo.io/getting-started/installing/) for more detail.
+# hugo-theme-artisan
 
-## PostCSS
+<p align="center">
+<img height="90" src="https://kaiiiz.github.io/hugo-theme-artisan/vase.svg">
+<br>A clean, responsive and fully-customizable hugo theme
+<br>
+</p>
 
-[PostCSS](https://gohugo.io/hugo-pipes/postcss/)
+## 💿 Installation
 
-```
-yarn install
-```
+See [setup](https://kaiiiz.github.io/hugo-theme-artisan/setup)
 
-### Production
+## ⚒ Configuration
 
-```
-hugo server --environment development
-```
+See [configuration](https://kaiiiz.github.io/hugo-theme-artisan/configuration/)
 
-Check minify & PurgeCSS
-
-```
-hugo server --environment production
-```
-
-### Config
-
-```toml
-[menu]
-  [[menu.nav]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 1
-
-[params.nav]
-title = "YK's"
-```
-
-### Layout
-
-#### Balloon
-
-```md
----
-type: 'balloon'
-balloon_img: "/images/sticker.jpg"
-balloon_resources: "/about"
----
-```
+## 🎁 Features
