@@ -1,6 +1,6 @@
 ---
 title: 'List'
-bookcase_cover_src: '/hugo-theme-artisan/list.png'
+bookcase_cover_src: 'list.png'
 ---
 
 List section in bookcase layout.

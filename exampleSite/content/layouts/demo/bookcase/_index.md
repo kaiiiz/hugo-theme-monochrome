@@ -1,7 +1,7 @@
 ---
 title: 'Bookcase'
 type: 'bookcase'
-bookcase_cover_src: '/hugo-theme-artisan/bookcase.png'
+bookcase_cover_src: 'bookcase.png'
 weight: 2
 ---
 

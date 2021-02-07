@@ -1,4 +1,4 @@
 ---
 title: 'Arts & Photography'
-bookcase_cover_src: '/hugo-theme-artisan/catalogue.png'
+bookcase_cover_src: 'catalogue.png'
 ---

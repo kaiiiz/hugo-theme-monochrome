@@ -1,6 +1,6 @@
 ---
 title: 'Balloon'
-bookcase_cover_src: '/hugo-theme-artisan/balloon.png'
+bookcase_cover_src: 'balloon.png'
 ---
 
 Balloon is useful for demonstrating information step-by-step.
@@ -21,11 +21,19 @@ type: 'balloon'
 
 ### balloon_img_src
 
-Balloon head image URL. URL can be any resources avaliable on the internet.
+Balloon head image URL. URL must be related to base URL. (without /)
+
+For example:
+
+```
+https://kaiiiz.github.io/hugo-theme-artisan/thanks.jpg
+        \__________________________________/\________/
+                    base URL              balloon_img_src
+```
 
 ```yaml
 ---
-balloon_img_src: '/hugo-theme-artisan/thanks.jpg'
+balloon_img_src: 'thanks.jpg'
 ---
 ```
 

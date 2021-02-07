@@ -1,6 +1,6 @@
 ---
 title: 'Catalog'
-bookcase_cover_src: '/hugo-theme-artisan/catalogue.png'
+bookcase_cover_src: 'catalogue.png'
 ---
 
 Catalog layout is useful for customizing list contents.

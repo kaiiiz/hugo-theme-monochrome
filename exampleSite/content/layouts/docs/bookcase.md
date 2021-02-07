@@ -1,6 +1,6 @@
 ---
 title: 'Bookcase'
-bookcase_cover_src: '/hugo-theme-artisan/bookcase.png'
+bookcase_cover_src: 'bookcase.png'
 ---
 
 Bookcase layout is useful for creating another viewpoint of list contents.
@@ -38,7 +38,16 @@ bookcase_mode: 'list'
 
 ### bookcase_cover_src
 
-The cover image URL. URL can be any resources avaliable on the internet.
+The cover image URL. URL must be related to base URL. (without /)
+
+For example:
+
+```
+https://kaiiiz.github.io/hugo-theme-artisan/thanks.jpg
+        \__________________________________/\________/
+                    base URL              bookcase_cover_src
+```
+
 
 This parameter is located in bookcase item's resource. Take list mode for example:
 
@@ -52,7 +61,7 @@ This parameter is located in bookcase item's resource. Take list mode for exampl
 
 ```yaml
 ---
-bookcase_cover_src: '/hugo-theme-artisan/thanks.jpg'
+bookcase_cover_src: 'thanks.jpg'
 ---
 ```
 

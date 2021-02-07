@@ -6,15 +6,15 @@
 
 ## 💿 Installation
 
-See [setup](https://kaiiiz.github.io/hugo-theme-artisan/setup)
+See [Setup](https://kaiiiz.github.io/hugo-theme-artisan/setup)
 
 ## ⚒ Configuration
 
-See [configuration](https://kaiiiz.github.io/hugo-theme-artisan/configuration/)
+See [Configuration](https://kaiiiz.github.io/hugo-theme-artisan/configuration/)
 
 ## 🎁 Features
 
-**Multiple layouts available:**
+**Multiple layouts is available:**
 
 * [Balloon](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/balloon/)
 * [Bookcase](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/bookcase/)

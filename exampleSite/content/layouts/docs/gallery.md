@@ -1,6 +1,6 @@
 ---
 title: 'Gallery'
-bookcase_cover_src: '/hugo-theme-artisan/picture.png'
+bookcase_cover_src: 'picture.png'
 ---
 
 Gallery layout is useful for demonstrating pictures and its statistical data.
@@ -21,7 +21,7 @@ type: 'gallery'
 
 ### gallery_resources
 
-Content resources. URL must relative to base URL.
+Content resources. URL must relative to base URL. (with /)
 
 For example:
 
@@ -70,11 +70,19 @@ gallery_title_link: 'https://github.com/kaiiiz'
 
 ### gallery_img_src
 
-Image URL. URL can be any resources avaliable on the internet.
+Image URL. URL must be related to base URL. (without /)
+
+For example:
+
+```
+https://kaiiiz.github.io/hugo-theme-artisan/thanks.jpg
+        \__________________________________/\________/
+                    base URL              gallery_img_src
+```
 
 ```yaml
 ---
-gallery_img_src: '/hugo-theme-artisan/thanks.jpg'
+gallery_img_src: 'thanks.jpg'
 ---
 ```
 

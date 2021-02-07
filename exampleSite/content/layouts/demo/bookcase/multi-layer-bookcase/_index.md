@@ -1,6 +1,6 @@
 ---
 title: 'Multi-Layer Bookcase'
-bookcase_cover_src: '/hugo-theme-artisan/bookcase.png'
+bookcase_cover_src: 'bookcase.png'
 type: 'bookcase'
 bookcase_mode: 'expand'
 weight: -500
