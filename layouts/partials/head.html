@@ -28,28 +28,27 @@
     {{- if hugo.IsProduction -}}
         {{- $options = merge $options (dict "outputStyle" "compressed") -}}
     {{- end -}}
-
     {{- $styles := resources.Get "css/styles.sass" | resources.ToCSS $options -}}
-
     {{- if hugo.IsProduction -}}
         {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" | resources.PostProcess -}}
     {{- else -}}
         {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.PostProcess -}}
     {{- end -}}
-
     <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
 
-    {{ $zooming_js := .Params.zooming_js | default true }}
-    {{ if $zooming_js }}
-        {{ $js := resources.Get "js/zooming.js" | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-        <script src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
+    {{ $js := slice (resources.Get "js/overflow-indicator.js") }}
+    {{ if (.Params.zooming_js | default true) }}
+        {{ $js = $js | append (resources.Get "js/zooming.js") }}
     {{ end }}
+    {{ $js = $js | resources.Concat "js/bundle.js" }}
+    {{- if hugo.IsProduction -}}
+        {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+    {{- else -}}
+        {{ $js = $js | js.Build -}}
+    {{- end -}}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
 
-    {{ $overflow_indicator_js := resources.Get "js/overflow-indicator.js" | js.Build (dict "minify" true) | resources.Fingerprint "sha512" }}
-    <script defer src="{{ $overflow_indicator_js.RelPermalink }}" integrity="{{- $overflow_indicator_js.Data.Integrity -}}"></script>
-
-    {{ $ga := .Params.google_analytics | default true }}
-    {{ if $ga }}
+    {{ if (.Params.google_analytics | default true) }}
         {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
 </head>

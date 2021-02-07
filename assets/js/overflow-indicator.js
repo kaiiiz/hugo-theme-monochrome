@@ -6,13 +6,13 @@ function scrollHandler(target) {
     const rightBtn = indicatorWrapper.getElementsByClassName("overflow-indicator-btn-right")[0];
     const leftBtn = indicatorWrapper.getElementsByClassName("overflow-indicator-btn-left")[0];
 
-    if (rightDistance > 0) {
+    if (rightDistance > 1) {
         rightBtn.classList.add("show");
     } else {
         rightBtn.classList.remove("show");
     }
 
-    if (leftDistance > 0) {
+    if (leftDistance > 1) {
         leftBtn.classList.add("show");
     } else {
         leftBtn.classList.remove("show");
