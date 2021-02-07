@@ -90,7 +90,7 @@ hugo --environment production --minify
 
 ### Deployment
 
-Push `/public` folder to your server. This site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-artisan/.github/workflows/gh-pages.yml).
+Push `/public` folder to your server. This site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-artisan/blob/main/.github/workflows/gh-pages.yml).
 
 ## Run exampleSite
 
