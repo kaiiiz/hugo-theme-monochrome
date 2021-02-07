@@ -1,9 +1,7 @@
-baseURL = "https://kaiiiz.github.io/hugo-theme-artisan"
+baseURL = "https://kaiiiz.github.io/hugo-theme-artisan/"
 languageCode = "en-us"
 title = "Artisan"
 theme = "hugo-theme-artisan"
-disqusShortname = "at881005"
-googleAnalytics = "xxx"
 
 [build]
   writeStats = true

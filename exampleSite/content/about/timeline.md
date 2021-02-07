@@ -1,6 +1,6 @@
 ---
 title: 'Timeline'
-weight: 1
+weight: 2
 gallery_img_src: '/hugo-theme-artisan/clock.jpg'
 gallery_img_caption: '<span>Photo by <a href="https://unsplash.com/@oceanng?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ocean Ng</a> on <a href="https://unsplash.com/s/photos/clock?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
 gallery_statistic:
@@ -12,4 +12,4 @@ gallery_statistic:
   value: value3
 ---
 
-Content
+* 2021/02/08 - v0.1.0 release
