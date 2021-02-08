@@ -9,7 +9,7 @@
             </div>
             {{ $disqus := .Params.disqus | default false }}
             {{ if $disqus }}
-                <div class="my-10 sm:-mx-6">
+                <div class="my-10 sm:-mx-5">
                     {{ template "_internal/disqus.html" . }}
                 </div>
             {{ end }}

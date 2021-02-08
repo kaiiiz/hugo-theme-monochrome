@@ -18,7 +18,7 @@
                     {{ $img_link := .Params.gallery_img_link }}
 
                     {{ if .Params.gallery_img_src }}
-                        <figure class="sm:-mx-6">
+                        <figure class="sm:-mx-5">
                             {{ if $img_link }}<a target="_blank" href="{{ $img_link }}">{{ end }}
                                 <img class="mx-auto" src="{{ .Params.gallery_img_src | absURL }}" alt="{{ .Title }}">
                             {{ if $img_link }}</a>{{ end }}
