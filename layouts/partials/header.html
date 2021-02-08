@@ -2,54 +2,90 @@
 {{ $insection_color := "text-gray-600" }}
 {{ $inactive_color := "text-gray-400" }}
 
+{{ $md_title := "text-2xl mr-auto md:mr-0 hidden md:block" }}
+{{ $sm_title := "text-2xl mr-auto md:mr-0 block md:hidden" }}
 {{ $active_title := "font-bold" }}
 
-{{ $nav_element := "pb-1 text-sm border-b-2" }}
+{{ $nav_element := "text-sm border-b-2 inline-block pb-1 mr-1" }}
 {{ $active_nav_element := "border-gray-800" }}
 {{ $insection_nav_element := "border-gray-600" }}
 {{ $inactive_nav_element := "border-transparent hover:border-gray-800 hover:text-gray-800" }}
 
-<div class="overflow-indicator-wrapper pt-4">
-    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-left"></div>
-    <div class="overflow-indicator overflow-indicator-overlay-left"></div>
-    <div class="overflow-indicator-content no-scrollbar">
-        <header>
-            <nav class="flex flex-row items-baseline">
-                <a href="{{ .Site.Home.RelPermalink }}" class="
-                    {{- if .IsHome -}}
-                        text-2xl {{ $active_color }} {{ $active_title }}
-                    {{- else -}}
-                        text-2xl {{ $inactive_color }}
-                    {{- end -}}
-                ">
-                    {{- if .Site.Params.navbarTitle -}}
-                        {{- .Site.Params.navbarTitle -}}
-                    {{- else -}}
-                        {{- .Site.Title -}}
-                    {{- end -}}
-                </a>
-                <ul class="flex flex-row">
-                    {{ $currentPage := . }}
-                    {{ $currentUrl := .RelPermalink }}
-                    {{ range .Site.Menus.navbar }}
-                        <li class="ml-4">
-                            <div class='
-                            {{- if $currentPage.IsMenuCurrent "navbar" . -}}
-                                {{ $nav_element }} {{ $active_color }} {{ $active_nav_element }}
-                            {{- else if in ($currentUrl|lower) (.URL|lower) -}}
-                                {{ $nav_element }} {{ $insection_color }} {{ $insection_nav_element }}
-                            {{- else -}}
-                                {{ $nav_element }} {{ $inactive_color }} {{ $inactive_nav_element }}
-                            {{- end -}}
-                            '>
-                                <a href="{{ .URL }}">{{- .Name -}}</a>
-                            </div>
-                        </li>
-                    {{ end }}
-                </ul>
-            </nav>
-        </header>
+<header class="my-8">
+    <div class="flex justify-between items-center">
+        <input id="navbar_btn" class="hidden" type="checkbox">
+        <label for="navbar_btn" class="menu-btn block md:hidden">
+            <span class="navicon"></span>
+        </label>
+
+        <a href="{{ .Site.Home.RelPermalink }}" class="
+        {{ $md_title }} {{ $active_color }} {{ $active_title }}
+        ">
+        {{- if .Site.Params.navbarTitle -}}
+            {{- .Site.Params.navbarTitle -}}
+        {{- else -}}
+            {{- .Site.Title -}}
+        {{- end -}}
+        </a>
+
+        <a href="{{ .Site.Home.RelPermalink }}" class="{{ $sm_title }} {{ $active_color }} {{ $active_title }}">
+        {{- if .Site.Params.navbarTitle -}}
+            {{- .Site.Params.navbarTitle -}}
+        {{- else -}}
+            {{- .Site.Title -}}
+        {{- end -}}
+        </a>
+
+        <div class="hidden order-3 md:order-4">
+            <svg class="w-4 h-4 hover:fill-gray-500 cursor-pointer" viewBox="0 0 24 24">
+                {{- partial "svg/moon.html" . -}}
+            </svg>
+            <svg class="w-4 h-4 hover:fill-gray-500 cursor-pointer" viewBox="0 0 24 24">
+                {{- partial "svg/sun.html" . -}}
+            </svg>
+        </div>
     </div>
-    <div class="overflow-indicator overflow-indicator-overlay-right"></div>
-    <div class="overflow-indicator overflow-indicator-btn overflow-indicator-btn-right"></div>
-</div>
+
+    <nav id="navbar" class="mt-2.5 hidden md:block">
+        {{ $currentPage := . }}
+        {{ $currentUrl := .RelPermalink }}
+        {{ $isHome := .IsHome }}
+        {{ range .Site.Menus.navbar }}
+            <div class='
+            {{- if $currentPage.IsMenuCurrent "navbar" . -}}
+                {{ $nav_element }} {{ $active_color }} {{ $active_nav_element }}
+            {{- else if in ($currentUrl|lower) (.URL|lower) -}}
+                {{ $nav_element }} {{ $insection_color }} {{ $insection_nav_element }}
+            {{- else -}}
+                {{ $nav_element }} {{ $inactive_color }} {{ $inactive_nav_element }}
+            {{- end -}}
+            '>
+                <a href="{{ .URL }}">{{- .Name -}}</a>
+            </div>
+        {{ end }}
+    </nav>
+
+    <nav id="navbar_sm" class="mt-2 hidden">
+        <ul>
+            {{ range .Site.Menus.navbar }}
+                <li class="text-sm mt-2">
+                    <a href="{{ .URL }}">{{- .Name -}}</a>
+                </li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>
+
+<script>
+document.getElementById('navbar_btn').addEventListener('click', function () {
+    const navbar_sm = document.getElementById("navbar_sm");
+    if (navbar_sm.classList.contains("hidden")) {
+        navbar_sm.classList.remove("hidden");
+        navbar_sm.classList.add("block");
+    } else if (navbar_sm.classList.contains("block")) {
+        navbar_sm.classList.remove("block");
+        navbar_sm.classList.add("hidden");
+    }
+
+})
+</script>

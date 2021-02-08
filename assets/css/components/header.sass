@@ -1,0 +1,36 @@
+header
+  .menu-btn
+    @apply h-full mr-4
+
+  .navicon
+    @apply bg-gray-800 block relative cursor-pointer
+    height: 2px
+    transition: background 0.2s ease-out
+    width: 18px
+
+    &::before, &::after
+      @apply bg-gray-800 block absolute h-full w-full
+      content: ""
+      transition: all 0.2s ease-out
+
+    &::before
+      top: 7px
+
+    &::after
+      top: -7px
+
+  #navbar_btn:checked ~ .menu-btn .navicon
+    background: transparent
+
+  #navbar_btn:checked ~ .menu-btn .navicon::before, #navbar_btn:checked ~ .menu-btn .navicon::after
+    top: 0
+
+  #navbar_btn:checked ~ .menu-btn .navicon::before
+    transform: rotate(-45deg)
+
+  #navbar_btn:checked ~ .menu-btn .navicon::after
+    transform: rotate(45deg)
+
+  #navbar_sm
+    @screen md
+      display: none !important

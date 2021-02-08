@@ -1,7 +1,7 @@
 {
   "name": "hugo-theme-artisan",
   "version": "0.1.0",
-  "description": "A simple, clean and fully-customizable hugo theme",
+  "description": "A clean, responsive and fully-customizable hugo theme",
   "repository": "https://github.com/kaiiiz/hugo-theme-artisan/tree/dev",
   "author": "kaiiiz <ukaizheng@gmail.com>",
   "license": "MIT",
