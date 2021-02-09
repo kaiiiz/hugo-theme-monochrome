@@ -1,34 +1,23 @@
-{{ $active_color := "text-gray-800" }}
-{{ $insection_color := "text-gray-600" }}
-{{ $inactive_color := "text-gray-400" }}
+{{ $active_text_color := "text-gray-800" }}
+{{ $insection_text_color := "text-gray-600 hover:text-gray-800" }}
+{{ $inactive_text_color := "text-gray-400 hover:text-gray-800" }}
 
-{{ $md_title := "text-2xl mr-auto md:mr-0 hidden md:block" }}
-{{ $sm_title := "text-2xl mr-auto md:mr-0 block md:hidden" }}
-{{ $active_title := "font-bold" }}
+{{ $active_border_color := "border-gray-800" }}
+{{ $insection_border_color := "border-gray-600 hover:border-gray-800" }}
+{{ $inactive_border_color := "border-transparent hover:border-gray-800" }}
 
-{{ $nav_element := "text-sm border-b-2 inline-block pb-1 mr-2" }}
-{{ $active_nav_element := "border-gray-800" }}
-{{ $insection_nav_element := "border-gray-600" }}
-{{ $inactive_nav_element := "border-transparent hover:border-gray-800 hover:text-gray-800" }}
+{{ $active_svg_color := "fill-gray-800" }}
+{{ $insection_svg_color := "fill-gray-600 hover:fill-gray-800" }}
+{{ $inactive_svg_color := "fill-gray-400 hover:fill-gray-800" }}
 
 <header class="my-8">
     <div class="flex justify-between items-center">
         <input id="navbar_btn" class="hidden" type="checkbox">
-        <label for="navbar_btn" class="menu-btn block md:hidden">
+        <label for="navbar_btn" class="menu-btn block xl:hidden">
             <span class="navicon"></span>
         </label>
 
-        <a href="{{ .Site.Home.RelPermalink }}" class="
-        {{ $md_title }} {{ $active_color }} {{ $active_title }}
-        ">
-        {{- if .Site.Params.navbarTitle -}}
-            {{- .Site.Params.navbarTitle -}}
-        {{- else -}}
-            {{- .Site.Title -}}
-        {{- end -}}
-        </a>
-
-        <a href="{{ .Site.Home.RelPermalink }}" class="{{ $sm_title }} {{ $active_color }} {{ $active_title }}">
+        <a href="{{ .Site.Home.RelPermalink }}" class="text-gray-800 font-bold text-2xl mr-auto">
         {{- if .Site.Params.navbarTitle -}}
             {{- .Site.Params.navbarTitle -}}
         {{- else -}}
@@ -38,31 +27,49 @@
 
         <div class="hidden order-3 md:order-4">
             <svg class="w-4 h-4 hover:fill-gray-500 cursor-pointer" viewBox="0 0 24 24">
-                {{- partial "svg/moon.html" . -}}
+                {{- partial "svg/moon.html" -}}
             </svg>
             <svg class="w-4 h-4 hover:fill-gray-500 cursor-pointer" viewBox="0 0 24 24">
-                {{- partial "svg/sun.html" . -}}
+                {{- partial "svg/sun.html" -}}
             </svg>
         </div>
     </div>
 
-    <nav id="navbar" class="mt-2.5 hidden md:block">
+    <nav id="navbar" class="mt-2.5 hidden xl:block">
         {{- $currentPage := . -}}
         {{- $currentUrl := .RelPermalink -}}
         {{- $isHome := .IsHome -}}
-        {{- range .Site.Menus.navbar -}}
-            <div class='
-            {{- if $currentPage.IsMenuCurrent "navbar" . -}}
-                {{ $nav_element }} {{ $active_color }} {{ $active_nav_element }}
-            {{- else if in ($currentUrl|lower) (.URL|lower) -}}
-                {{ $nav_element }} {{ $insection_color }} {{ $insection_nav_element }}
-            {{- else -}}
-                {{ $nav_element }} {{ $inactive_color }} {{ $inactive_nav_element }}
+        <ul class="flex">
+            {{- range .Site.Menus.navbar -}}
+                {{ $navbar_item := "text-sm border-b-2 pb-1 mr-2" }}
+                {{ $item_color := "" }}
+                {{- if $currentPage.IsMenuCurrent "navbar" . -}}
+                    {{ $item_color = delimit (slice $item_color $active_text_color $active_border_color $active_svg_color) " " }}
+                {{- else if in ($currentUrl|lower) (.URL|lower) -}}
+                    {{ $item_color = delimit (slice $item_color $insection_text_color $insection_border_color $insection_svg_color) " " }}
+                {{- else -}}
+                    {{ $item_color = delimit (slice $item_color $inactive_text_color $inactive_border_color $inactive_svg_color) " " }}
+                {{- end -}}
+
+                {{- if .Children -}}
+                    <li class="navbar-item-dropdown {{ $navbar_item }} {{ $item_color }}">
+                        <div class="flex items-center">
+                            <a href="{{ .URL }}">{{- .Name -}}</a>
+                            <svg class="w-4 h-4" viewBox="3 3 18 18">
+                                {{- partial "svg/arrow-down.html" -}}
+                            </svg>
+                        </div>
+                        <ul class="navbar-dropdown mt-1.5 -mx-2">
+                            {{- partial "navbar/nested-desktop.html" . -}}
+                        </ul>
+                    </li>
+                {{- else -}}
+                    <li class="navbar-item {{ $navbar_item }} {{ $item_color }}">
+                        <a href="{{ .URL }}">{{- .Name -}}</a>
+                    </li>
+                {{- end -}}
             {{- end -}}
-            '>
-                <a href="{{ .URL }}">{{- .Name -}}</a>
-            </div>
-        {{- end -}}
+        </ul>
     </nav>
 
     <nav id="navbar_sm" class="mt-2 hidden">
@@ -70,7 +77,7 @@
             {{ range .Site.Menus.navbar }}
                 <li class="text-sm mt-2">
                     <a href="{{ .URL }}">{{- .Name -}}</a>
-                    {{- partial "navbar/nested_sm.html" . -}}
+                    {{- partial "navbar/nested-mobile.html" . -}}
                 </li>
             {{ end }}
         </ul>
