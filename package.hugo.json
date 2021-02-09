@@ -1,12 +1,11 @@
 {
-  "name": "hugo-theme-artisan",
+  "name": "hugo-theme-graytr",
   "version": "0.1.0",
-  "description": "A simple, clean and fully-customizable hugo theme",
-  "repository": "https://github.com/kaiiiz/hugo-theme-artisan/tree/dev",
+  "description": "Garytr is a clean, responsive, and programmer-friendly hugo theme",
+  "repository": "https://github.com/kaiiiz/hugo-theme-graytr/tree/dev",
   "author": "kaiiiz <ukaizheng@gmail.com>",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.0",
     "autoprefixer": "^10.2.4",
     "postcss": "^8.2.5",
@@ -14,5 +13,6 @@
     "postcss-import": "^14.0.0",
     "tailwindcss": "^2.0.2",
     "zooming": "^2.1.1"
-  }
+  },
+  "devDependencies": {}
 }

@@ -26,8 +26,8 @@ Balloon head image URL. URL must be related to base URL. (without /)
 For example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-artisan/thanks.jpg
-        \__________________________________/\________/
+https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+        \_________________________________/\________/
                     base URL              balloon_img_src
 ```
 
@@ -58,8 +58,8 @@ Content resources. URL must relative to base URL. (with /)
 Take this page for example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-artisan/about
-        \_________________________________/\____/
+https://kaiiiz.github.io/hugo-theme-graytr/about
+        \________________________________/\____/
                     base URL           balloon_resources
 ```
 

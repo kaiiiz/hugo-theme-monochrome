@@ -1,13 +1,13 @@
-baseURL = "https://kaiiiz.github.io/hugo-theme-artisan/"
+baseURL = "https://kaiiiz.github.io/hugo-theme-graytr/"
 languageCode = "en-us"
-title = "Artisan"
-theme = "hugo-theme-artisan"
+title = "Graytr"
+theme = "hugo-theme-graytr"
 
 [build]
   writeStats = true
 
 [params]
-navbarTitle = "Artisan"
+navbarTitle = "Graytr"
 footer = "Copyright © 2021 by kaiiiz"
 
 [markup.goldmark.renderer]

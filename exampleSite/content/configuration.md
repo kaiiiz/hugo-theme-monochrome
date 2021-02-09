@@ -5,11 +5,11 @@ menu:
     weight: -99
 toc: true
 author: kaiiiz
-description: Configuration of hugo-theme-artisan
+description: Configuration of hugo-theme-graytr
 keywords:
 - hugo
 - hugo theme
-- hugo theme artisan
+- hugo theme graytr
 ---
 
 This document shows some customizable values that are used in this theme. By adjusting these values, you can easily change the appearance of your website without touching the source code.
@@ -23,7 +23,7 @@ These settings are important for building a website using hugo. You can get more
 In your config.toml
 
 ```toml
-title = "Artisan"
+title = "Graytr"
 ```
 
 > Site title. This value will become the content of `<title>` tag in html.
@@ -33,7 +33,7 @@ title = "Artisan"
 In your config.toml
 
 ```toml
-theme = "hugo-theme-artisan"
+theme = "hugo-theme-graytr"
 ```
 
 > Set this value to the corresponding folder name of your theme. (located by default in /themes/THEMENAME/)
@@ -43,7 +43,7 @@ theme = "hugo-theme-artisan"
 In your config.toml
 
 ```toml
-baseURL = "https://kaiiiz.github.io/hugo-theme-artisan"
+baseURL = "https://kaiiiz.github.io/hugo-theme-graytr"
 ```
 
 > Hostname (and path) to the root.
@@ -60,7 +60,7 @@ In your config.toml
 
 ```toml
 [params]
-navbarTitle = "Artisan"
+navbarTitle = "Graytr"
 ```
 
 > default: [`title` value in config.toml](#site-title)
@@ -78,7 +78,7 @@ footer = "Copyright © 2021 by kaiiiz"
 
 ### Navbar menu
 
-Artisan uses built-in menu system supported by hugo itself. (Checkout [document](https://gohugo.io/content-management/menus) for more deatil.) By default, artisan uses the menu called `navbar` to decide which item need to be rendered on the navbar.
+Graytr uses built-in menu system supported by hugo itself. (Checkout [document](https://gohugo.io/content-management/menus) for more deatil.) By default, the menu called `navbar` is used to decide which item need to be rendered on the navbar.
 
 So you can simply add the following code to your page front-matter, and the menu info will be handled by hugo out of the box. ([simple method mentioned in document](https://gohugo.io/content-management/menus#simple))
 
@@ -121,7 +121,7 @@ googleAnalytics = "xxx"
 
 ### Layout
 
-Artisan support many different types of layout. You can change the layout of section or regular page according to your needs. Checkout [Layout](/hugo-theme-artisan/layouts) for more detail.
+Graytr support many different types of layout. You can change the layout of section or regular page according to your needs. Checkout [Layout](/hugo-theme-graytr/layouts) for more detail.
 
 ### Table of Contents
 
@@ -159,7 +159,7 @@ In page front-matter
 
 ```yaml
 ---
-description: "Configuration of hugo-theme-artisan"
+description: "Configuration of hugo-theme-graytr"
 ---
 ```
 
@@ -174,7 +174,7 @@ In page front-matter
 keywords:
 - hugo
 - hugo theme
-- hugo theme artisan
+- hugo theme graytr
 ---
 ```
 

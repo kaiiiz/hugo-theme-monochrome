@@ -7,4 +7,4 @@ menu:
 bookcase_mode: 'expand'
 ---
 
-Artisan support many different types of layout. You can change the layout of section or regular page according to your needs.
+Graytr support many different types of layout. You can change the layout of section or regular page according to your needs.

@@ -26,7 +26,7 @@ The mode of bookcase layout. Two options are available: 'list' or 'expand'.
 
 List mode will list subsections or pages in current level.
 
-Expand mode will expand the contents of subsection (another subsections or pages) to multi-layer. Checkout [Multi-Layer Bookcase](/hugo-theme-artisan/layouts/demo/bookcase/multi-layer-bookcase/) for demonstration.
+Expand mode will expand the contents of subsection (another subsections or pages) to multi-layer. Checkout [Multi-Layer Bookcase](/hugo-theme-graytr/layouts/demo/bookcase/multi-layer-bookcase/) for demonstration.
 
 ```yaml
 ---
@@ -43,8 +43,8 @@ The cover image URL. URL must be related to base URL. (without /)
 For example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-artisan/thanks.jpg
-        \__________________________________/\________/
+https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+        \_________________________________/\________/
                     base URL              bookcase_cover_src
 ```
 

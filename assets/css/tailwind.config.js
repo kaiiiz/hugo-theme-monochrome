@@ -1,10 +1,14 @@
 module.exports = {
     theme: {
-        extend: {}
+        extend: {},
+        fill: theme => ({
+            'gray-500': theme('colors.gray.500')
+        })
     },
     variants: {
         extend: {
-            margin: ['last'],
+            margin: ['first', 'last'],
+            fill: ['hover'],
         }
     },
     plugins: []

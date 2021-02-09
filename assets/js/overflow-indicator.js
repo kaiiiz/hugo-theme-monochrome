@@ -20,8 +20,8 @@ function scrollHandler(target) {
 }
 
 function resizeHandler() {
-    const layer_items = document.querySelectorAll('.overflow-indicator-content');
-    layer_items.forEach(i => scrollHandler(i));
+    const layerItems = document.querySelectorAll('.overflow-indicator-content');
+    layerItems.forEach(i => scrollHandler(i));
 }
 
 function easeInOutQuad(t) { return t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t }

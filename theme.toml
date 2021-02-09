@@ -1,6 +1,6 @@
-name = "Artisan"
+name = "Graytr"
 license = "MIT"
-licenselink = "https://github.com/kaiiiz/hugo-theme-artisan/blob/main/LICENSE"
+licenselink = "https://github.com/kaiiiz/hugo-theme-graytr/blob/main/LICENSE"
 description = ""
 homepage = "http://example.com/"
 tags = ["blog", "simple", "clean", "tailwindcss", "personal", "responsive", "customizable"]
