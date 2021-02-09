@@ -6,7 +6,7 @@
 {{ $sm_title := "text-2xl mr-auto md:mr-0 block md:hidden" }}
 {{ $active_title := "font-bold" }}
 
-{{ $nav_element := "text-sm border-b-2 inline-block pb-1 mr-1" }}
+{{ $nav_element := "text-sm border-b-2 inline-block pb-1 mr-2" }}
 {{ $active_nav_element := "border-gray-800" }}
 {{ $insection_nav_element := "border-gray-600" }}
 {{ $inactive_nav_element := "border-transparent hover:border-gray-800 hover:text-gray-800" }}
@@ -47,10 +47,10 @@
     </div>
 
     <nav id="navbar" class="mt-2.5 hidden md:block">
-        {{ $currentPage := . }}
-        {{ $currentUrl := .RelPermalink }}
-        {{ $isHome := .IsHome }}
-        {{ range .Site.Menus.navbar }}
+        {{- $currentPage := . -}}
+        {{- $currentUrl := .RelPermalink -}}
+        {{- $isHome := .IsHome -}}
+        {{- range .Site.Menus.navbar -}}
             <div class='
             {{- if $currentPage.IsMenuCurrent "navbar" . -}}
                 {{ $nav_element }} {{ $active_color }} {{ $active_nav_element }}
@@ -62,7 +62,7 @@
             '>
                 <a href="{{ .URL }}">{{- .Name -}}</a>
             </div>
-        {{ end }}
+        {{- end -}}
     </nav>
 
     <nav id="navbar_sm" class="mt-2 hidden">
