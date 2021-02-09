@@ -3,7 +3,6 @@
 {{ $terms := .Data.Terms.ByCount }}
 
 {{ if $terms }}
-    {{ $fontCounter := 0.9 }}
     {{ $fontSmall := .Page.Params.design.font_size_min | default 1 }}
     {{ $fontBig := .Page.Params.design.font_size_max | default 2 }}
 
@@ -22,7 +21,7 @@
 
             <a href="{{ .Page.RelPermalink }}">
                 <span class="text-gray-800" style="font-size:{{ $fontSize }}rem">{{- .Page.Title -}}</span>
-                <span class="text-gray-400" style="font-size:{{ $fontCounter }}rem"> ({{- $term_num -}}) </span>
+                <span class="text-gray-400" style="font-size:{{ $fontSmall }}rem"> ({{- $term_num -}}) </span>
             </a>
         {{ end }}
     </section>
