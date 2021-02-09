@@ -70,6 +70,7 @@
             {{ range .Site.Menus.navbar }}
                 <li class="text-sm mt-2">
                     <a href="{{ .URL }}">{{- .Name -}}</a>
+                    {{- partial "navbar/nested_sm.html" . -}}
                 </li>
             {{ end }}
         </ul>
@@ -88,6 +89,5 @@ document.getElementById('navbar_btn').addEventListener('click', function () {
         navbar_sm.classList.remove("block");
         navbar_sm.classList.add("hidden");
     }
-
 })
 </script>
