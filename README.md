@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://kaiiiz.github.io/hugo-theme-artisan">
-    <img alt="Artisan" src="https://kaiiiz.github.io/hugo-theme-artisan/icons/vase.svg" width="60">
+  <a href="https://kaiiiz.github.io/hugo-theme-graytr">
+    <img alt="Graytr" src="https://kaiiiz.github.io/hugo-theme-graytr/icons/vase.svg" width="60">
   </a>
 </p>
 
 <h2 align="center">
-  Artisan
+  Graytr
 </h2>
 
 <p align="center">
@@ -14,20 +14,20 @@
 
 ## 💿 Installation
 
-See [Setup](https://kaiiiz.github.io/hugo-theme-artisan/setup)
+See [Setup](https://kaiiiz.github.io/hugo-theme-graytr/setup)
 
 ## ⚒ Configuration
 
-See [Configuration](https://kaiiiz.github.io/hugo-theme-artisan/configuration/)
+See [Configuration](https://kaiiiz.github.io/hugo-theme-graytr/configuration/)
 
 ## 🎁 Features
 
 **Multiple layouts is available:**
 
-* [Balloon](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/balloon/)
-* [Bookcase](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/bookcase/)
-* [Catalog](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/catalog/)
-* [Gallery](https://kaiiiz.github.io/hugo-theme-artisan/layouts/demo/gallery/)
+* [Balloon](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/balloon/)
+* [Bookcase](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/bookcase/)
+* [Catalog](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/catalog/)
+* [Gallery](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/gallery/)
 
 **Responsive Layout**
 

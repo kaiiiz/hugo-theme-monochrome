@@ -5,7 +5,7 @@ menu:
     weight: -100
 ---
 
-This document shows a brief guide to setup hugo-theme-artisan in your hugo project.
+This document shows a brief guide to setup hugo-theme-graytr in your hugo project.
 
 ## Quick Start
 
@@ -19,7 +19,7 @@ Take Linux for example:
 snap install hugo --channel=extended
 ```
 
-> The minimum hugo version that hugo-theme-artisan required is `0.78.0`
+> The minimum hugo version that hugo-theme-graytr required is `0.78.0`
 
 ### Create a New Site
 
@@ -32,7 +32,7 @@ hugo new site <project name>
 ```bash
 cd <project name>
 git init
-git submodule add https://github.com/kaiiiz/hugo-theme-artisan.git themes/hugo-theme-artisan
+git submodule add https://github.com/kaiiiz/hugo-theme-graytr.git themes/hugo-theme-graytr
 ```
 
 ### Setup Dependencies
@@ -53,7 +53,7 @@ npm install
 
 ### Setup PostCSS
 
-hugo-theme-artisan is powered by [tailwindcss](https://tailwindcss.com/). For better quality of CSS purging in production, you should add the following config to your `config.toml`, or the default settings generated from demo site will be applied.
+hugo-theme-graytr is powered by [tailwindcss](https://tailwindcss.com/). For better quality of CSS purging in production, you should add the following config to your `config.toml`, or the default settings generated from demo site will be applied.
 
 See [CSS purging with PostCSS](https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss) for more details.
 
@@ -64,7 +64,7 @@ See [CSS purging with PostCSS](https://gohugo.io/hugo-pipes/postprocess/#css-pur
 
 ### Customize the Theme
 
-See [Configuration](/hugo-theme-artisan/configuration/).
+See [Configuration](/hugo-theme-graytr/configuration/).
 
 ### Start the Hugo server
 
@@ -90,13 +90,13 @@ hugo --environment production --minify
 
 ### Deployment
 
-Push `/public` folder to your server. This site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-artisan/blob/main/.github/workflows/gh-pages.yml).
+Push `/public` folder to your server. This site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-graytr/blob/main/.github/workflows/gh-pages.yml).
 
 ## Run exampleSite
 
 ```bash
-git clone https://github.com/kaiiiz/hugo-theme-artisan
-cd hugo-theme-artisan/exampleSite
+git clone https://github.com/kaiiiz/hugo-theme-graytr
+cd hugo-theme-graytr/exampleSite
 hugo --themesDir=../.. mod npm pack
 npm install
 hugo --themesDir=../.. server
