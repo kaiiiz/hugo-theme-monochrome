@@ -7,12 +7,12 @@
 {{ end }}
 
 <div class="my-8">
-    <h1 class="text-xl font-bold my-3">Tags</h1>
+    <h1 class="text-xl font-semibold my-3">Tags</h1>
     {{- partial "tag-cloud.html" .Site.Taxonomies.tags.Alphabetical -}}
 </div>
 
 <div class="my-8">
-    <h1 class="text-xl font-bold my-3">Recent Posts</h1>
+    <h1 class="text-xl font-semibold my-3">Recent Posts</h1>
     {{- partial "list.html" (first 10 .Site.RegularPages) -}}
 </div>
 

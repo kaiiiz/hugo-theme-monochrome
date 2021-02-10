@@ -1,13 +1,33 @@
 {{ define "content" }}
 
-{{ $mode := .Params.bookcase_mode | default "list" }}
+{{ $list_sections := .Params.bookcase_list_sections | default true }}
+{{ $list_pages := .Params.bookcase_list_pages | default true }}
 
-{{ if eq $mode "list" }}
-    {{- partial "bookcase/list-mode.html" . -}}
-{{ else if eq $mode "expand" }}
-    {{- partial "bookcase/expand-mode.html" . -}}
-{{ else }}
-    <span>{{ $mode }} is not available</span>
+{{ $res := default nil }}
+{{ if and $list_sections $list_pages }}
+    {{ $res = .Pages }}
+{{ else if $list_sections }}
+    {{ $res = .Sections }}
+{{ else if $list_pages }}
+    {{ $res = .RegularPages }}
 {{ end }}
+
+<div class="my-8">
+
+    <div class="my-8">
+        <h1 class="font-semibold text-black text-2xl mb-6">{{ .Title }}</h1>
+        {{ if .Content }}
+            {{- partial "content.html" . -}}
+        {{ end }}
+    </div>
+
+    {{ if $res }}
+        <div class="my-8 grid gap-4" style="grid-template-columns: repeat(auto-fill, 8rem);">
+            {{ range $res.ByWeight }}
+                {{- partial "bookcase/item.html" . -}}
+            {{ end }}
+        </div>
+    {{ end }}
+</div>
 
 {{ end }}
