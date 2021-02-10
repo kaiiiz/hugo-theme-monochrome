@@ -8,11 +8,9 @@ https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg \_________________________
 This layout can only be used on list layout.
 Configuration In page front-matter
 1 2 3 --- type: &amp;#39;bookcase&amp;#39; --- Specify type in front-matter will change the template lookup order.
-bookcase_mode The mode of bookcase layout. Two options are available: &amp;lsquo;list&amp;rsquo; or &amp;lsquo;expand&amp;rsquo;.
-List mode will list subsections or pages in current level.</description></item><item><title>Catalog</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/catalog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/catalog/</guid><description>Catalog layout is useful for customizing list contents.
-This layout can only be used on list layout.
-Configuration In page front-matter
-1 2 3 --- type: &amp;#39;catalog&amp;#39; --- Specify type in front-matter will change the template lookup order.</description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</guid><description>Gallery layout is useful for demonstrating pictures and its statistical data.
+bookcase_cover_src The cover image URL. URL must be related to base URL. (without /)
+For example:
+https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg \_________________________________/\________/ base URL bookcase_cover_src This parameter is located in bookcase item&amp;rsquo;s resource.</description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</guid><description>Gallery layout is useful for demonstrating pictures and its statistical data.
 This layout can be used on both list layout and single layout.
 Configuration In page front-matter
 1 2 3 --- type: &amp;#39;gallery&amp;#39; --- Specify type in front-matter will change the template lookup order.
