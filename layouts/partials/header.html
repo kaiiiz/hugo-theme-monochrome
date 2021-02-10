@@ -44,11 +44,11 @@
                 {{ $navbar_item := "text-sm border-b-2 pb-1 mr-2" }}
                 {{ $item_color := "" }}
                 {{- if $currentPage.IsMenuCurrent "navbar" . -}}
-                    {{ $item_color = delimit (slice $item_color $active_text_color $active_border_color $active_svg_color) " " }}
+                    {{ $item_color = delimit (slice $active_text_color $active_border_color $active_svg_color) " " }}
                 {{- else if in ($currentUrl|lower) (.URL|lower) -}}
-                    {{ $item_color = delimit (slice $item_color $insection_text_color $insection_border_color $insection_svg_color) " " }}
+                    {{ $item_color = delimit (slice $insection_text_color $insection_border_color $insection_svg_color) " " }}
                 {{- else -}}
-                    {{ $item_color = delimit (slice $item_color $inactive_text_color $inactive_border_color $inactive_svg_color) " " }}
+                    {{ $item_color = delimit (slice $inactive_text_color $inactive_border_color $inactive_svg_color) " " }}
                 {{- end -}}
 
                 {{- if .Children -}}

@@ -1,0 +1,24 @@
+{{/*  .Data.Terms.Alphabetical  */}}
+{{ if . }}
+    {{ $fontSmall := 1 }}
+    {{ $fontBig := 2 }}
+    {{ $termCount := slice }}
+
+    {{ range . }}
+        {{ $termCount = append .Count $termCount }}
+    {{ end }}
+    {{ $termCount = sort $termCount }}
+    {{ $min := int (index $termCount 0) }}
+
+    <section>
+        {{ range . }}
+            {{ $weight := math.Log (div (float .Count) $min) }}
+            {{ $fontSize := add $fontSmall (mul (sub $fontBig $fontSmall) $weight) }}
+
+            <a class="whitespace-nowrap border-gray-300 border-b-2 mr-1.5 hover:border-gray-700 text-gray-400 hover:text-gray-800" href="{{ .Page.RelPermalink }}">
+                <span class="text-gray-800" style="font-size:{{ $fontSize }}rem">{{- .Page.Title -}}</span>
+                <span style="font-size:{{ sub $fontSmall 0.2 }}rem"> ({{- .Count -}}) </span>
+            </a>
+        {{ end }}
+    </section>
+{{ end }}
