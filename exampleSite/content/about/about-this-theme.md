@@ -14,6 +14,6 @@ gallery_statistic:
 
 At first, I only designed the prototype of the theme based on my personal needs, and then I gradually discovered that hugo's well-designed structure allows me to abstract my personal needs into generic theme and apply it in different scenarios.
 
-After a period of integration and testing, [hugo-theme-graytr](https://github.com/kaiiiz/hugo-theme-graytr) was born. This theme takes clean, responsiveness and highly customizablilty as philosophy. If you have any suggestions or improvements, feel free to open an issue or pull request on [github](https://github.com/kaiiiz/hugo-theme-graytr).
+After a period of integration and testing, [hugo-theme-graytr](https://github.com/kaiiiz/hugo-theme-graytr) was born. This theme takes clean, responsiveness and programmer-friendly as philosophy. If you have any suggestions or improvements, feel free to open an issue or pull request on [github](https://github.com/kaiiiz/hugo-theme-graytr).
 
 Hope this theme can let you experience the beauty of hugo. Enjoy!

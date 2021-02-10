@@ -1,8 +1,5 @@
 ---
 title: 'Configuration'
-menu:
-  navbar:
-    weight: -99
 toc: true
 author: kaiiiz
 description: Configuration of hugo-theme-graytr
@@ -53,6 +50,13 @@ baseURL = "https://kaiiiz.github.io/hugo-theme-graytr"
 Simply add `favicon.ico` to your site's static folder.
 
 ## Theme Settings
+
+### Navbar mode
+
+```toml
+[params]
+navbarMode = "blog"
+```
 
 ### Navbar title
 

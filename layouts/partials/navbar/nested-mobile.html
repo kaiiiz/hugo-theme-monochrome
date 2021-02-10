@@ -1,0 +1,10 @@
+{{ with .Children }}
+    <ul>
+        {{ range . }}
+            <li class="text-sm mt-2">
+                <a href="{{ .URL }}">{{- .Name -}}</a>
+                {{- partial "navbar/nested-mobile.html" . -}}
+            </li>
+        {{ end }}
+    </ul>
+{{ end }}

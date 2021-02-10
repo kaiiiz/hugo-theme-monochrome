@@ -23,3 +23,78 @@ lineNumbersInTable = true
 noClasses = true
 style = "monokai"
 tabWidth = 4
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[menu]
+  [[menu.navbar]]
+    identifier = "setup"
+    name = "Setup"
+    url = "/setup/"
+    weight = 1
+  [[menu.navbar]]
+    identifier = "configuration"
+    name = "Configuration"
+    url = "/configuration/"
+    weight = 2
+  [[menu.navbar]]
+    identifier = "changelog"
+    name = "Changelog"
+    url = "/changelog/"
+    weight = 3
+  [[menu.navbar]]
+    identifier = "layouts"
+    name = "Layouts"
+    url = "/layouts/"
+    weight = 4
+    [[menu.navbar]]
+      identifier = "demo"
+      name = "Demostration"
+      url = "/layouts/demo"
+      parent = "layouts"
+      weight = 1
+      [[menu.navbar]]
+        identifier = "balloon_demo"
+        name = "Balloon"
+        url = "/layouts/demo/balloon"
+        parent = "demo"
+        weight = 1
+      [[menu.navbar]]
+        identifier = "bookcase_demo"
+        name = "Bookcase"
+        url = "/layouts/demo/bookcase"
+        parent = "demo"
+        weight = 2
+      [[menu.navbar]]
+        identifier = "gallery_demo"
+        name = "Gallery"
+        url = "/layouts/demo/gallery"
+        parent = "demo"
+        weight = 3
+    [[menu.navbar]]
+      identifier = "docs"
+      name = "Documents"
+      url = "/layouts/docs"
+      parent = "layouts"
+      weight = 2
+      [[menu.navbar]]
+        identifier = "balloon_docs"
+        name = "Balloon"
+        url = "/layouts/docs/balloon"
+        parent = "docs"
+        weight = 1
+      [[menu.navbar]]
+        identifier = "bookcase_docs"
+        name = "Bookcase"
+        url = "/layouts/docs/bookcase"
+        parent = "docs"
+        weight = 2
+      [[menu.navbar]]
+        identifier = "gallery_docs"
+        name = "Gallery"
+        url = "/layouts/docs/gallery"
+        parent = "docs"
+        weight = 3

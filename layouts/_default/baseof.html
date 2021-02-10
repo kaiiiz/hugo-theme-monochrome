@@ -7,8 +7,7 @@
             <div id="content" class="my-8">
                 {{- block "content" . }}{{- end }}
             </div>
-            {{ $disqus := .Params.disqus | default false }}
-            {{ if $disqus }}
+            {{ if (.Params.disqus | default false) }}
                 <div class="my-8 sm:-mx-5">
                     {{ template "_internal/disqus.html" . }}
                 </div>

@@ -36,7 +36,7 @@
     {{- end -}}
     <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
 
-    {{ $js := slice (resources.Get "js/overflow-indicator.js") }}
+    {{ $js := slice }}
     {{ if (.Params.zooming_js | default true) }}
         {{ $js = $js | append (resources.Get "js/zooming.js") }}
     {{ end }}

@@ -2,26 +2,26 @@
 article
   line-height: 1.7
 
-  *:first-child
+  > *:first-child
     @apply mt-0
 
-  *:last-child
+  > *:last-child
     @apply mb-0
 
   h1, h2, h3, h4, h5, h6
     @apply font-bold mt-8 mb-4
 
   h1
-    @apply text-3xl
-
-  h2
     @apply text-2xl
 
-  h3
+  h2
     @apply text-xl
 
-  h4
+  h3
     @apply text-lg
+
+  h4
+    @apply text-md
 
   h5
     @apply text-base

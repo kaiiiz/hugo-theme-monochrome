@@ -11,8 +11,6 @@ Bookcase layout is useful for creating another viewpoint of list contents.
 .
 ├── balloon
 │   └── _index.md
-├── multi-layer-bookcase
-│   └── _index.md
 ├── regular-page.md
 ├── _index.md <- you are here
 └── normal

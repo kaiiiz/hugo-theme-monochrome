@@ -32,5 +32,24 @@ header
     transform: rotate(45deg)
 
   #navbar_sm
-    @screen md
+    @screen xl
       display: none !important
+
+    ul ul
+      @apply ml-2
+
+  #navbar
+    .navbar-item-dropdown
+      @apply relative
+
+      .navbar-dropdown
+        @apply absolute rounded-sm hidden w-max shadow-xl bg-white z-50
+
+        li
+          @apply px-2.5 py-2 hover:bg-gray-100 hover:shadow-inner
+
+      &:hover > .navbar-dropdown
+        @apply block
+
+      &:hover
+        border-style: none !important
