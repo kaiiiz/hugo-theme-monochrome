@@ -1,8 +1,5 @@
 ---
 title: 'Setup'
-menu:
-  navbar:
-    weight: -100
 ---
 
 This document shows a brief guide to setup hugo-theme-graytr in your hugo project.

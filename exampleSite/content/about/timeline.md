@@ -12,5 +12,6 @@ gallery_statistic:
   value: value3
 ---
 
+* 2021/02/10 - v0.3.0 release
 * 2021/02/09 - v0.2.0 release
 * 2021/02/08 - v0.1.0 release
