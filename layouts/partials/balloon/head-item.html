@@ -1,5 +1,5 @@
-{{ $img := .Params.balloon_img_src }}
-{{ $img_dark := .Params.balloon_img_src_dark }}
+{{ $img := .Params.balloon_img_src | default .Params.balloon_img_src_dark }}
+{{ $img_dark := .Params.balloon_img_src_dark | default .Params.balloon_img_src }}
 
 {{ $img_style := "w-full" }}
 {{ if (.Params.balloon_circle | default true) }}
