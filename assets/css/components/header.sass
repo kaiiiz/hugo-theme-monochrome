@@ -3,13 +3,13 @@ header
     @apply h-full mr-4
 
   .navicon
-    @apply bg-gray-800 block relative cursor-pointer
+    @apply block relative cursor-pointer
     height: 2px
     transition: background 0.2s ease-out
     width: 18px
 
     &::before, &::after
-      @apply bg-gray-800 block absolute h-full w-full
+      @apply block absolute h-full w-full
       content: ""
       transition: all 0.2s ease-out
 
@@ -43,10 +43,10 @@ header
       @apply relative
 
       .navbar-dropdown
-        @apply absolute rounded-sm hidden w-max shadow-xl bg-white z-50
+        @apply absolute rounded-sm hidden w-max shadow-xl z-50
 
         li
-          @apply px-2.5 py-2 hover:bg-gray-100 hover:shadow-inner
+          @apply px-2.5 py-2 hover:shadow-inner
 
       &:hover > .navbar-dropdown
         @apply block

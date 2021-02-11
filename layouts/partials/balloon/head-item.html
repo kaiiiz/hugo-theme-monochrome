@@ -4,17 +4,17 @@
 <div class="flex w-full flex-col md:flex-row">
     <div class="w-28 relative hidden flex-col items-center md:flex">
         {{ if $img }}
-            <div class="w-24 h-24 bg-white">
+            <div class="w-24 h-24">
                 <img src='{{- $img | absURL -}}' class="w-full {{ if $img_circle }}rounded-full{{ end }}">
             </div>
         {{ else }}
-            <div class="w-4 h-4 rounded-full border-2 bg-white border-gray-800"></div>
+            {{ partial "balloon/dot.html" }}
         {{ end }}
         {{ partial "balloon/line.html" false }}
     </div>
     {{ if $img }}
         <div class="w-full flex justify-center md:hidden">
-            <div class="w-20 h-20 bg-white">
+            <div class="w-20 h-20">
                 <img src='{{- $img | absURL -}}' class="w-full {{ if $img_circle }}rounded-full{{ end }}">
             </div>
         </div>

@@ -1,12 +1,31 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
+    darkMode: 'class',
     theme: {
-        extend: {},
-        fill: theme => ({
-            'gray-400': theme('colors.gray.400'),
-            'gray-500': theme('colors.gray.500'),
-            'gray-600': theme('colors.gray.600'),
-            'gray-800': theme('colors.gray.800')
-        }),
+        extend: {
+            colors: {
+                'gray': {
+                    350: '#bdbdbd',
+                    650: '#4b4b4b',
+                    660: '#424242',
+                    750: '#3a3a3a'
+                }
+            },
+            spacing: {
+                0.75: '0.2rem'
+            }
+        },
+        fill: {
+            'gray-100': colors.trueGray[100],
+            'gray-200': colors.trueGray[200],
+            'gray-300': colors.trueGray[300],
+            'gray-400': colors.trueGray[400],
+            'gray-500': colors.trueGray[500],
+            'gray-600': colors.trueGray[600],
+            'gray-700': colors.trueGray[700],
+            'gray-800': colors.trueGray[800]
+        },
         fontSize: {
             'xs': '.75rem',
             'sm': '.875rem',
@@ -19,13 +38,22 @@ module.exports = {
             '4xl': '2.25rem',
             '5xl': '3rem',
             '6xl': '4rem',
-            '7xl': '5rem',     
+            '7xl': '5rem',
+        },
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            black: colors.black,
+            white: colors.white,
+            gray: colors.trueGray,
+            red: colors.rose,
+            blue: colors.blue,
         }
     },
     variants: {
         extend: {
             margin: ['first', 'last'],
-            fill: ['hover'],
+            fill: ['hover', 'dark'],
             borderWidth: ['hover'],
         }
     },

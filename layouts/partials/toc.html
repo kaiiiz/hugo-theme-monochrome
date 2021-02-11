@@ -1,7 +1,7 @@
 {{ $toc := .Params.toc | default true }}
 
 {{ if and (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") $toc }}
-    <div class="my-8 p-4 border-2 rounded leading-6">
+    <div class="toc-wrapper my-8 p-4 border-2 rounded leading-6">
         <span class="font-bold mb-2">Table of contents</span>
         {{ .TableOfContents }}
     </div>

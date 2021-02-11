@@ -4,11 +4,11 @@
 <div class="flex w-full flex-col md:flex-row">
     <div class="w-28 relative hidden flex-col items-center md:flex">
         {{ partial "balloon/line.html" false }}
-        <div class="w-4 h-4 rounded-full border-2 bg-white border-gray-800 my-1"></div>
+        {{ partial "balloon/dot.html" }}
         {{ partial "balloon/line.html" $last_item }}
     </div>
-    
-    <div class="flex-1 my-0 rounded-md shadow-md text-sm text-left md:my-3 overflow-auto">
+
+    <div class="balloon-card flex-1 rounded-md shadow-md text-sm text-left my-3 overflow-auto">
         <div class="m-5">
             {{- partial "content.html" $context -}}
         </div>

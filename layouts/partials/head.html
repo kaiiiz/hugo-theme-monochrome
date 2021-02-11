@@ -36,7 +36,7 @@
     {{- end -}}
     <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
 
-    {{ $js := slice }}
+    {{ $js := slice (resources.Get "js/header.js") }}
     {{ if (.Params.zooming_js | default true) }}
         {{ $js = $js | append (resources.Get "js/zooming.js") }}
     {{ end }}
@@ -51,4 +51,12 @@
     {{ if (.Params.google_analytics | default true) }}
         {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
+
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>

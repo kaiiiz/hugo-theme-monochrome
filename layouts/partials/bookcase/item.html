@@ -1,7 +1,7 @@
 <figure>
     <a class="relative" href="{{ .RelPermalink }}">
         <img src="{{ .Params.bookcase_cover_src | absURL }}" class="w-32 h-48 rounded-md shadow-lg object-cover">
-        <div class="w-32 h-48 rounded-md bg-gray-300 absolute top-0 left-0 opacity-0 hover:opacity-25 hover:transition hover:ease-out hover:duration-75"></div>
+        <div class="bookcase-item-overlay w-32 h-48 rounded-md absolute top-0 left-0 opacity-0 hover:opacity-25 hover:transition hover:ease-out hover:duration-75"></div>
     </a>
     <figcaption class="text-center text-sm mt-3">
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
