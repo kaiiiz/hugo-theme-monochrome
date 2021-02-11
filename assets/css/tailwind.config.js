@@ -75,9 +75,10 @@ module.exports = {
     },
     variants: {
         extend: {
-            margin: ['first', 'last'],
+            margin: ['first', 'last', 'dark'],
             fill: ['hover', 'dark'],
             borderWidth: ['hover'],
+            display: ['dark'],
         }
     },
     plugins: []

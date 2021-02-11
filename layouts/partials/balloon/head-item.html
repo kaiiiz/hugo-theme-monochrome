@@ -1,25 +1,46 @@
 {{ $img := .Params.balloon_img_src }}
-{{ $img_circle := .Params.balloon_circle | default true }}
+{{ $img_dark := .Params.balloon_img_src_dark }}
+
+{{ $img_style := "w-full" }}
+{{ if (.Params.balloon_circle | default true) }}
+    {{ $img_style = printf "%s %s" $img_style "rounded-full" }}
+{{ end }}
+
+{{ $content_style := slice }}
+{{ if $img }}
+    {{ $content_style = $content_style | append "md:ml-4" }}
+{{ else }}
+    {{ $content_style = $content_style | append "md:ml-0" }}
+{{ end }}
+{{ if $img_dark }}
+    {{ $content_style = $content_style | append "md:dark:ml-4" }}
+{{ else }}
+    {{ $content_style = $content_style | append "md:dark:ml-0" }}
+{{ end }}
+{{ $content_style = delimit $content_style " " }}
 
 <div class="flex w-full flex-col md:flex-row">
+    {{/*  For desktop layout  */}}
     <div class="w-28 relative hidden flex-col items-center md:flex">
-        {{ if $img }}
-            <div class="w-24 h-24">
-                <img src='{{- $img | absURL -}}' class="w-full {{ if $img_circle }}rounded-full{{ end }}">
-            </div>
-        {{ else }}
-            {{ partial "balloon/dot.html" }}
-        {{ end }}
+        <div class="dark:hidden">
+            {{ partial "balloon/head/desktop.html" (dict "img" $img "img_style" $img_style) }}
+        </div>
+        <div class="hidden dark:block">
+            {{ partial "balloon/head/desktop.html" (dict "img" $img_dark "img_style" $img_style ) }}
+        </div>
         {{ partial "balloon/line.html" false }}
     </div>
-    {{ if $img }}
-        <div class="w-full flex justify-center md:hidden">
-            <div class="w-20 h-20">
-                <img src='{{- $img | absURL -}}' class="w-full {{ if $img_circle }}rounded-full{{ end }}">
-            </div>
+    {{/*  For mobile layout  */}}
+    <div class="w-full flex justify-center md:hidden">
+        <div class="dark:hidden">
+            {{ partial "balloon/head/mobile.html" (dict "img" $img "img_style" $img_style) }}
         </div>
-    {{ end }}
-    <div class="flex flex-1 justify-center md:justify-start items-center md:mt-0 {{ if $img }}md:ml-4 mt-8{{ end }}">
+        <div class="hidden dark:block">
+            {{ partial "balloon/head/mobile.html" (dict "img" $img_dark "img_style" $img_style ) }}
+        </div>
+    </div>
+
+    <div class="flex flex-1 justify-center md:justify-start items-center {{ $content_style }}">
         <div class="text-center md:text-left">
             {{- partial "content.html" . -}}
         </div>
