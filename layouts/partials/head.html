@@ -28,7 +28,7 @@
     {{- if hugo.IsProduction -}}
         {{- $options = merge $options (dict "outputStyle" "compressed") -}}
     {{- end -}}
-    {{- $styles := resources.Get "css/styles.sass" | resources.ToCSS $options -}}
+    {{- $styles := resources.Get "css/styles.pcss" | resources.ToCSS $options -}}
     {{- if hugo.IsProduction -}}
         {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" | resources.PostProcess -}}
     {{- else -}}

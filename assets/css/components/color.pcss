@@ -18,7 +18,7 @@ body {
     #navbar {
       .navbar-dropdown {
         li {
-          @apply bg-50 bg-100-hover;
+          @apply bg-0 bg-100-hover;
         }
       }
     }
@@ -53,11 +53,11 @@ body {
 
   article {
     blockquote {
-      @apply border-200;
+      @apply border-200 text-800;
     }
 
     code {
-      @apply bg-100 text-600;
+      @apply bg-100 text-800;
     }
 
     pre {
@@ -70,7 +70,7 @@ body {
 
     .highlight {
       code {
-        @apply text-0;
+        @apply text-white dark:text-white;
       }
     }
 
@@ -116,15 +116,15 @@ body {
   }
 
   .balloon-line {
-    @apply bg-800;
+    @apply bg-700;
   }
 
   .balloon-dot {
-    @apply border-800;
+    @apply border-700;
   }
 
   .balloon-card {
-    @apply bg-50;
+    @apply bg-white dark:bg-gray-700;
   }
 
   footer {

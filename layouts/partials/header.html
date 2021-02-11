@@ -29,7 +29,7 @@
         {{- $isHome := .IsHome -}}
         <ul class="flex">
             {{- range .Site.Menus.navbar -}}
-                {{ $navbar_item := "text-sm border-b-2 pb-1 mr-2" }}
+                {{ $navbar_item := "text-sm border-b-2 pb-1 mr-2 font-medium" }}
                 {{- if $currentPage.IsMenuCurrent "navbar" . -}}
                     {{/* default style */}}
                 {{- else if eq $currentUrl .URL -}}

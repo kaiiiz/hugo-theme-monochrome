@@ -4,27 +4,31 @@ module.exports = {
     darkMode: 'class',
     theme: {
         extend: {
-            colors: {
-                'gray': {
-                    350: '#bdbdbd',
-                    650: '#4b4b4b',
-                    660: '#424242',
-                    750: '#3a3a3a'
-                }
-            },
             spacing: {
                 0.75: '0.2rem'
             }
         },
         fill: {
-            'gray-100': colors.trueGray[100],
-            'gray-200': colors.trueGray[200],
-            'gray-300': colors.trueGray[300],
-            'gray-400': colors.trueGray[400],
-            'gray-500': colors.trueGray[500],
-            'gray-600': colors.trueGray[600],
-            'gray-700': colors.trueGray[700],
-            'gray-800': colors.trueGray[800]
+            'gray': {
+                50: '#fafafa',
+                100: '#f5f5f5',
+                150: '#ededed',
+                200: '#e5e5e5',
+                250: '#dddddd',
+                300: '#d4d4d4',
+                350: '#bcbcbc',
+                400: '#a3a3a3',
+                450: '#8b8b8b',
+                500: '#737373',
+                550: '#636363',
+                600: '#525252',
+                650: '#494949',
+                700: '#404040',
+                750: '#333333',
+                800: '#262626',
+                850: '#1f1f1f',
+                900: '#171717',
+            }
         },
         fontSize: {
             'xs': '.75rem',
@@ -45,7 +49,26 @@ module.exports = {
             current: 'currentColor',
             black: colors.black,
             white: colors.white,
-            gray: colors.trueGray,
+            gray: {
+                50: '#fafafa',
+                100: '#f5f5f5',
+                150: '#ededed',
+                200: '#e5e5e5',
+                250: '#dddddd',
+                300: '#d4d4d4',
+                350: '#bcbcbc',
+                400: '#a3a3a3',
+                450: '#8b8b8b',
+                500: '#737373',
+                550: '#636363',
+                600: '#525252',
+                650: '#494949',
+                700: '#404040',
+                750: '#333333',
+                800: '#262626',
+                850: '#1f1f1f',
+                900: '#171717',
+            },
             red: colors.rose,
             blue: colors.blue,
         }
