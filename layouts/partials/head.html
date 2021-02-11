@@ -24,11 +24,11 @@
     <meta name="author" content="{{ . }}" />
     {{ end }}
 
-    {{- $options := dict "includePaths" (slice "node_modules") -}}
+    {{- $tocss_opts := dict "includePaths" (slice "node_modules") -}}
     {{- if hugo.IsProduction -}}
-        {{- $options = merge $options (dict "outputStyle" "compressed") -}}
+        {{- $tocss_opts = merge $tocss_opts (dict "outputStyle" "compressed") -}}
     {{- end -}}
-    {{- $styles := resources.Get "css/styles.pcss" | resources.ToCSS $options -}}
+    {{- $styles := resources.Get "css/styles.pcss" | resources.ToCSS $tocss_opts -}}
     {{- if hugo.IsProduction -}}
         {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" | resources.PostProcess -}}
     {{- else -}}
@@ -47,6 +47,13 @@
         {{ $js = $js | js.Build -}}
     {{- end -}}
     <script defer src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
+
+    {{ if (.Site.Params.usePrism | default false) }}
+        {{ $prism_js := resources.Get "js/prism.js" | resources.Minify | resources.Fingerprint "sha512" }}
+        {{ $prism_css := resources.Get "css/prism.css" | resources.Minify | resources.Fingerprint "sha512" }}
+        <link rel="stylesheet" href="{{- $prism_css.RelPermalink -}}" integrity="{{- $prism_css.Data.Integrity -}}">
+        <script defer src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}"></script>
+    {{ end }}
 
     {{ if (.Params.google_analytics | default true) }}
         {{ template "_internal/google_analytics_async.html" . }}

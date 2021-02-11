@@ -92,11 +92,11 @@ article {
   }
 
   code {
-    @apply text-sm rounded px-1.5 py-0.75;
+    @apply rounded px-1.5 py-0.75;
   }
 
   pre {
-    @apply overflow-auto leading-relaxed px-3 py-2 my-6;
+    @apply overflow-auto leading-relaxed p-4 my-6 rounded;
 
     code {
       @apply p-0;
@@ -104,18 +104,27 @@ article {
   }
 
   .highlight {
-    @apply my-6 sm:-mx-5;
+    @apply my-6;
 
-    > div {
-      @apply p-2 rounded-md;
-    }
-
-    pre {
-      @apply p-0 m-0;
-    }
-
-    code {
+    .code-toolbar {
       @apply p-0;
+
+      pre {
+        @apply py-4;
+      }
+    }
+
+    > div,
+    > pre {
+      @apply p-3 rounded-md;
+
+      pre {
+        @apply p-0 m-0;
+
+        code {
+          @apply p-0;
+        }
+      }
     }
   }
 
