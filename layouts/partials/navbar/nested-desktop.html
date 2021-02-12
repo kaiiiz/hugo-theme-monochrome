@@ -3,9 +3,7 @@
         <li class="navbar-item-dropdown">
             <div class="flex items-center justify-between">
                 <a href="{{ .URL }}">{{- .Name -}}</a>
-                <svg class="w-4 h-4" viewBox="2 2 20 20">
                     {{- partial "svg/arrow-right.html" -}}
-                </svg>
             </div>
             <ul class="navbar-dropdown left-full top-0">
                 {{- partial "navbar/nested-desktop.html" . -}}

@@ -1,13 +1,22 @@
-{{ $icon_link := .Get 0 }}
+{{ $icon_link := .Get "link" }}
+{{ $icon_name := .Get "name" }}
 
-<div class="inline-block w-6">
+<div class="inline-block w-6 h-6">
     {{ if $icon_link }}
         <a class="fill-800 fill-600-hover" target="_blank" href="{{ $icon_link }}">
-            {{ .Inner | safeHTML }}
-        </a>
     {{ else }}
         <div class="fill-800">
-            {{ .Inner | safeHTML }}
+    {{ end }}
+
+            {{ if $icon_name }}
+                {{- partial (printf "svg/%s.html" $icon_name) -}}
+            {{ else }}
+                {{ .Inner | safeHTML }}
+            {{ end }}
+
+    {{ if $icon_link }}
+        </a>
+    {{ else }}
         </div>
     {{ end }}
 </div>
