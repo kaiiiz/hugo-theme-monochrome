@@ -9,14 +9,18 @@ theme = "hugo-theme-graytr"
 [params]
 navbarTitle = "Graytr"
 footer = "Copyright © 2021 by kaiiiz"
+usePrism = false
+copyBtn = true
 
 [markup.goldmark.renderer]
 unsafe= true
 
 [markup.highlight]
+anchorLineNos = false
 codeFences = true
 guessSyntax = false
 hl_Lines = ""
+lineAnchors = ""
 lineNoStart = 1
 lineNos = true
 lineNumbersInTable = true
@@ -98,3 +102,8 @@ series = "series"
         url = "/layouts/docs/gallery"
         parent = "docs"
         weight = 3
+  [[menu.navbar]]
+    identifier = "shortcodes"
+    name = "Shortcodes"
+    url = "/shortcodes/"
+    weight = 5

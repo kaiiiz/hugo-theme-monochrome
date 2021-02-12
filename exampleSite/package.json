@@ -3,6 +3,7 @@
   "dependencies": {
    "@fullhuman/postcss-purgecss": "hugo-theme-graytr",
    "autoprefixer": "hugo-theme-graytr",
+   "clipboard-polyfill": "hugo-theme-graytr",
    "postcss": "hugo-theme-graytr",
    "postcss-cli": "hugo-theme-graytr",
    "postcss-import": "hugo-theme-graytr",
@@ -14,6 +15,7 @@
  "dependencies": {
   "@fullhuman/postcss-purgecss": "^4.0.0",
   "autoprefixer": "^10.2.4",
+  "clipboard-polyfill": "^3.0.2",
   "postcss": "^8.2.5",
   "postcss-cli": "^8.3.1",
   "postcss-import": "^14.0.0",

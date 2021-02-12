@@ -14,5 +14,7 @@ gallery_statistic:
 
 * [Hugo](https://gohugo.io/) for awesome CMS framework written by [golang](https://golang.org/)
 * [tailwindcss](https://tailwindcss.com/) for awesome utility-first CSS framework
+* [Prism.js](https://prismjs.com/index.html)
+* [lgarron/clipboard-polyfill](https://github.com/lgarron/clipboard-polyfill)
 * Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com)
 * Material icons made by Google from [Material Design](https://material.io/resources/icons/)

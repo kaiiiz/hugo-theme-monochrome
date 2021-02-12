@@ -121,6 +121,37 @@ In your config.toml
 ```toml
 googleAnalytics = "xxx"
 ```
+
+### Syntax Highlighting
+
+#### Using Chroma (Hugo built-in)
+
+See [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting) for more details.
+
+Copy button is enabled by default, you can disable it by setting:
+
+```toml
+[params]
+copyBtn = false
+```
+
+#### Using Prism.js
+
+Disable markup highlight features
+
+```toml
+[markup.highlight]
+codeFences = false
+lineNos = false
+```
+
+Enable Prism.js
+
+```toml
+[params]
+usePrism = true
+```
+
 ## Page Settings
 
 ### Layout
