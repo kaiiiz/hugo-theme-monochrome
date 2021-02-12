@@ -1,6 +1,6 @@
 {{ $icon_link := .Get 0 }}
 
-<div class="my-4 w-6">
+<div class="inline-block w-6">
     {{ if $icon_link }}
         <a class="fill-800 fill-600-hover" target="_blank" href="{{ $icon_link }}">
             {{ .Inner | safeHTML }}

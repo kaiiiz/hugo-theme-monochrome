@@ -107,6 +107,7 @@
       "hover:transition",
       "img-zoomable",
       "inactive",
+      "inline-block",
       "insection",
       "italic",
       "items-center",
