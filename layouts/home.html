@@ -6,14 +6,18 @@
     </div>
 {{ end }}
 
-<div class="my-8">
-    <h1 class="text-xl font-semibold my-3">Tags</h1>
-    {{- partial "tag-cloud.html" .Site.Taxonomies.tags.Alphabetical -}}
-</div>
+{{ if .Site.Taxonomies.tags }}
+    <div class="my-8">
+        <h1 class="text-xl font-semibold my-3">Tags</h1>
+        {{- partial "tag-cloud.html" .Site.Taxonomies.tags.Alphabetical -}}
+    </div>
+{{ end }}
 
-<div class="my-8">
-    <h1 class="text-xl font-semibold my-3">Recent Posts</h1>
-    {{- partial "list.html" (first 10 .Site.RegularPages) -}}
-</div>
+{{ if .Site.RegularPages }}
+    <div class="my-8">
+        <h1 class="text-xl font-semibold my-3">Recent Posts</h1>
+        {{- partial "list.html" (first 10 .Site.RegularPages) -}}
+    </div>
+{{ end }}
 
 {{ end }}
