@@ -24,6 +24,14 @@
     <meta name="author" content="{{ . }}" />
     {{ end }}
 
+    {{ if (.Params.open_graph | default true) }}
+        {{ template "_internal/opengraph.html" . }}
+    {{ end }}
+
+    {{ if (.Params.twitter_cards | default true) }}
+        {{ template "_internal/twitter_cards.html" . }}    
+    {{ end }}
+
     {{- partial "resources/css.html" . -}}
 
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
