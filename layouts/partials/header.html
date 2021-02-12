@@ -1,4 +1,4 @@
-<header class="my-8">
+<header class="mt-9 mb-8">
     <div class="flex justify-between items-center">
         <input id="navbar_btn" class="hidden" type="checkbox">
         <label for="navbar_btn" class="menu-btn block xl:hidden">
@@ -13,17 +13,37 @@
         {{- end -}}
         </a>
 
-        <div id="color_scheme_toggle">
-            <svg id="dark_mode_btn" class="hidden w-4 h-4 cursor-pointer" viewBox="0 0 24 24">
+        <div>
+            <svg id="dark_mode_btn" class="hidden w-4 h-4 cursor-pointer fill-800 fill-600-hover" viewBox="0 0 24 24">
                 {{- partial "svg/sun.html" -}}
             </svg>
-            <svg id="light_mode_btn" class="hidden w-4 h-4 cursor-pointer" viewBox="0 0 24 24">
+            <svg id="light_mode_btn" class="hidden w-4 h-4 cursor-pointer fill-800 fill-600-hover" viewBox="0 0 24 24">
                 {{- partial "svg/moon.html" -}}
             </svg>
         </div>
+
+        {{ if .Site.IsMultiLingual }}
+            <span class="mx-1">|</span>
+
+            <div class="relative flex items-center cursor-pointer fill-800 fill-600-hover text-800 text-600-hover text-xs py-2">
+                <svg id="translation_btn" class="w-4 h-4" viewBox="0 0 24 24">
+                    {{- partial "svg/translation.html" -}}
+                </svg>
+                <span class="mx-1">
+                    {{ .Site.Language.LanguageName }}
+                </span>
+                <ul id="translation_menu" class="absolute top-full text-800 right-0 rounded-sm hidden w-max shadow-xl">
+                    {{ range .AllTranslations }}
+                    <li class="px-2 py-1.5 bg-0 bg-100-hover hover:shadow-inner">
+                        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        {{ end }}
     </div>
 
-    <nav id="navbar" class="mt-2.5 hidden xl:block">
+    <nav id="navbar" class="mt-3 hidden xl:block">
         {{- $currentPage := . -}}
         {{- $currentUrl := .RelPermalink -}}
         {{- $isHome := .IsHome -}}
