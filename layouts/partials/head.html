@@ -24,41 +24,9 @@
     <meta name="author" content="{{ . }}" />
     {{ end }}
 
-    {{- $tocss_opts := dict "includePaths" (slice "node_modules") -}}
-    {{- if hugo.IsProduction -}}
-        {{- $tocss_opts = merge $tocss_opts (dict "outputStyle" "compressed") -}}
-    {{- end -}}
-    {{- $styles := resources.Get "css/styles.pcss" | resources.ToCSS $tocss_opts -}}
-    {{- if hugo.IsProduction -}}
-        {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" | resources.PostProcess -}}
-    {{- else -}}
-        {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.PostProcess -}}
-    {{- end -}}
-    <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
+    {{- partial "resources/css.html" . -}}
 
-    {{ $js := slice (resources.Get "js/header.js") }}
-    {{ if (.Params.zooming_js | default true) }}
-        {{ $js = $js | append (resources.Get "js/zooming.js") }}
-    {{ end }}
-    {{ $js = $js | resources.Concat "js/bundle.js" }}
-    {{- if hugo.IsProduction -}}
-        {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-    {{- else -}}
-        {{ $js = $js | js.Build -}}
-    {{- end -}}
-    <script defer src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
-
-    {{ if (.Site.Params.usePrism | default false) }}
-        {{ $prism_js := resources.Get "js/prism.js" | resources.Minify | resources.Fingerprint "sha512" }}
-        {{ $prism_css := resources.Get "css/prism.css" | resources.Minify | resources.Fingerprint "sha512" }}
-        <link rel="stylesheet" href="{{- $prism_css.RelPermalink -}}" integrity="{{- $prism_css.Data.Integrity -}}">
-        <script defer src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}"></script>
-    {{ end }}
-
-    {{ if (.Params.google_analytics | default true) }}
-        {{ template "_internal/google_analytics_async.html" . }}
-    {{ end }}
-
+    {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');

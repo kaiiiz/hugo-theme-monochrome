@@ -104,7 +104,7 @@ article {
   }
 
   .highlight {
-    @apply my-6;
+    @apply my-6 relative;
 
     .code-toolbar {
       @apply p-0;
@@ -126,6 +126,12 @@ article {
         }
       }
     }
+  }
+
+  .copy-code-button {
+    @apply absolute right-0 text-xs px-1.5 rounded;
+    height: 1.5rem;
+    top: -1.5rem;
   }
 
   table {

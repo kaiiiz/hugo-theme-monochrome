@@ -1,0 +1,21 @@
+{{/*  Options  */}}
+{{ $usePrismJS := .Site.Params.usePrism | default false }}
+
+{{/*  Tailwind CSS  */}}
+{{- $styles := resources.Get "css/styles.pcss" -}}
+{{- if hugo.IsProduction -}}
+    {{- $tocss_opts := dict "outputStyle" "compressed" "includePaths" (slice "node_modules") -}}
+    {{- $styles = $styles | resources.ToCSS $tocss_opts | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" | resources.PostProcess -}}
+{{- else -}}
+    {{- $tocss_opts := dict "includePaths" (slice "node_modules") -}}
+    {{- $styles = $styles | resources.ToCSS $tocss_opts | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.PostProcess -}}
+{{- end -}}
+<link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
+
+{{/*  Codeblock  */}}
+{{ if (findRE "<pre" .Content 1) }}
+    {{ if $usePrismJS }}
+        {{ $prism_css := resources.Get "css/prism.css" | resources.Minify | resources.Fingerprint "sha512" }}
+        <link rel="stylesheet" href="{{- $prism_css.RelPermalink -}}" integrity="{{- $prism_css.Data.Integrity -}}">
+    {{ end }}
+{{ end }}
