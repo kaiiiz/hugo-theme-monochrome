@@ -24,31 +24,14 @@
     <meta name="author" content="{{ . }}" />
     {{ end }}
 
-    {{- $options := dict "includePaths" (slice "node_modules") -}}
-    {{- if hugo.IsProduction -}}
-        {{- $options = merge $options (dict "outputStyle" "compressed") -}}
-    {{- end -}}
-    {{- $styles := resources.Get "css/styles.sass" | resources.ToCSS $options -}}
-    {{- if hugo.IsProduction -}}
-        {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.Minify | resources.Fingerprint "sha512" | resources.PostProcess -}}
-    {{- else -}}
-        {{- $styles = $styles | postCSS (dict "config" "./assets/css/postcss.config.js") | resources.PostProcess -}}
-    {{- end -}}
-    <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
+    {{- partial "resources/css.html" . -}}
 
-    {{ $js := slice }}
-    {{ if (.Params.zooming_js | default true) }}
-        {{ $js = $js | append (resources.Get "js/zooming.js") }}
-    {{ end }}
-    {{ $js = $js | resources.Concat "js/bundle.js" }}
-    {{- if hugo.IsProduction -}}
-        {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-    {{- else -}}
-        {{ $js = $js | js.Build -}}
-    {{- end -}}
-    <script defer src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
-
-    {{ if (.Params.google_analytics | default true) }}
-        {{ template "_internal/google_analytics_async.html" . }}
-    {{ end }}
+    {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
+    <script>
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
 </head>

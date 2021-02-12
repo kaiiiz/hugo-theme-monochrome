@@ -1,11 +1,11 @@
 {{- if . -}}
 <ul class="my-2">
     {{ range .ByPublishDate.Reverse }}
-        <li class="mb-2 leading-relaxed">
-            <a href="{{ .RelPermalink }}" class="text-base text-gray-800 border-gray-300 border-b-2 hover:border-gray-700">
+        <li class="mb-2 leading-relaxed list-item">
+            <a href="{{ .RelPermalink }}" class="text-base border-b-2">
                 {{- .Title -}}
             </a>
-            <span class="text-xs text-gray-500">
+            <span class="text-xs">
                 {{- .PublishDate.Format "2006/01/02" -}}
             </span>
         </li>

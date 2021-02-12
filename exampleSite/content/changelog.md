@@ -1,21 +1,32 @@
 ---
 title: 'Changelog'
 toc: false
+tags: '123'
 ---
 
 ## Changelog
 
 ### TODO
 
-* Dark mode supported
 * Multilingual supported
-* Highlight.js integration
 * Advanced SEO (Open Graph, Twitter Card... etc)
 * Google Lighthouse
-* Code copy
 * Better math supported
 * Site Search
 * RSS
+* Post Metadata
+  * List taxonomy
+  * Show date
+  * Show author
+
+### v0.4.0 - 2021/02/12
+
+* Support dark mode
+  * Add `bookcase_cover_src_dark` for bookcase layout
+  * Add `balloon_img_src_dark` for balloon layout
+  * Add shortcode: svg-wrapper
+* Prism.js integration (v1.23.0)
+* Code copy feature for code block
 
 ### v0.3.0 - 2021/02/10
 

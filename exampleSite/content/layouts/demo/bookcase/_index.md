@@ -1,7 +1,8 @@
 ---
 title: 'Bookcase'
 type: 'bookcase'
-bookcase_cover_src: 'bookcase.png'
+bookcase_cover_src: 'cover/bookcase.png'
+bookcase_cover_src_dark: 'cover/bookcase_dark.png'
 weight: 2
 ---
 

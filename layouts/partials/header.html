@@ -1,15 +1,3 @@
-{{ $active_text_color := "text-gray-800" }}
-{{ $insection_text_color := "text-gray-600 hover:text-gray-800" }}
-{{ $inactive_text_color := "text-gray-400 hover:text-gray-800" }}
-
-{{ $active_border_color := "border-gray-800" }}
-{{ $insection_border_color := "border-gray-600 hover:border-gray-800" }}
-{{ $inactive_border_color := "border-transparent hover:border-gray-800" }}
-
-{{ $active_svg_color := "fill-gray-800" }}
-{{ $insection_svg_color := "fill-gray-600 hover:fill-gray-800" }}
-{{ $inactive_svg_color := "fill-gray-400 hover:fill-gray-800" }}
-
 <header class="my-8">
     <div class="flex justify-between items-center">
         <input id="navbar_btn" class="hidden" type="checkbox">
@@ -17,7 +5,7 @@
             <span class="navicon"></span>
         </label>
 
-        <a href="{{ .Site.Home.RelPermalink }}" class="text-gray-800 font-bold text-2xl mr-auto">
+        <a href="{{ .Site.Home.RelPermalink }}" class="font-bold text-2xl mr-auto">
         {{- if .Site.Params.navbarTitle -}}
             {{- .Site.Params.navbarTitle -}}
         {{- else -}}
@@ -25,12 +13,12 @@
         {{- end -}}
         </a>
 
-        <div class="hidden order-3 md:order-4">
-            <svg class="w-4 h-4 hover:fill-gray-500 cursor-pointer" viewBox="0 0 24 24">
-                {{- partial "svg/moon.html" -}}
-            </svg>
-            <svg class="w-4 h-4 hover:fill-gray-500 cursor-pointer" viewBox="0 0 24 24">
+        <div id="color_scheme_toggle">
+            <svg id="dark_mode_btn" class="hidden w-4 h-4 cursor-pointer" viewBox="0 0 24 24">
                 {{- partial "svg/sun.html" -}}
+            </svg>
+            <svg id="light_mode_btn" class="hidden w-4 h-4 cursor-pointer" viewBox="0 0 24 24">
+                {{- partial "svg/moon.html" -}}
             </svg>
         </div>
     </div>
@@ -41,18 +29,19 @@
         {{- $isHome := .IsHome -}}
         <ul class="flex">
             {{- range .Site.Menus.navbar -}}
-                {{ $navbar_item := "text-sm border-b-2 pb-1 mr-2" }}
-                {{ $item_color := "" }}
+                {{ $navbar_item := "text-sm border-b-2 pb-1 mr-2 font-medium" }}
                 {{- if $currentPage.IsMenuCurrent "navbar" . -}}
-                    {{ $item_color = delimit (slice $active_text_color $active_border_color $active_svg_color) " " }}
+                    {{/* default style */}}
+                {{- else if eq $currentUrl .URL -}}
+                    {{/* default style */}}
                 {{- else if in ($currentUrl|lower) (.URL|lower) -}}
-                    {{ $item_color = delimit (slice $insection_text_color $insection_border_color $insection_svg_color) " " }}
+                    {{ $navbar_item = printf "%s %s" $navbar_item "insection" }}
                 {{- else -}}
-                    {{ $item_color = delimit (slice $inactive_text_color $inactive_border_color $inactive_svg_color) " " }}
+                    {{ $navbar_item = printf "%s %s" $navbar_item "inactive" }}
                 {{- end -}}
 
                 {{- if .Children -}}
-                    <li class="navbar-item-dropdown {{ $navbar_item }} {{ $item_color }}">
+                    <li class="navbar-item-dropdown {{ $navbar_item }}">
                         <div class="flex items-center">
                             <a href="{{ .URL }}">{{- .Name -}}</a>
                             <svg class="w-4 h-4" viewBox="3 3 18 18">
@@ -64,7 +53,7 @@
                         </ul>
                     </li>
                 {{- else -}}
-                    <li class="navbar-item {{ $navbar_item }} {{ $item_color }}">
+                    <li class="navbar-item {{ $navbar_item }}">
                         <a href="{{ .URL }}">{{- .Name -}}</a>
                     </li>
                 {{- end -}}
@@ -85,16 +74,3 @@
 </header>
 
 <hr class="block md:hidden">
-
-<script>
-document.getElementById('navbar_btn').addEventListener('click', function () {
-    const navbar_sm = document.getElementById("navbar_sm");
-    if (navbar_sm.classList.contains("hidden")) {
-        navbar_sm.classList.remove("hidden");
-        navbar_sm.classList.add("block");
-    } else if (navbar_sm.classList.contains("block")) {
-        navbar_sm.classList.remove("block");
-        navbar_sm.classList.add("hidden");
-    }
-})
-</script>

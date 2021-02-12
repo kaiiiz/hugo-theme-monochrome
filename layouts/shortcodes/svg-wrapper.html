@@ -1,0 +1,13 @@
+{{ $icon_link := .Get 0 }}
+
+<div class="inline-block w-6">
+    {{ if $icon_link }}
+        <a class="fill-800 fill-600-hover" target="_blank" href="{{ $icon_link }}">
+            {{ .Inner | safeHTML }}
+        </a>
+    {{ else }}
+        <div class="fill-800">
+            {{ .Inner | safeHTML }}
+        </div>
+    {{ end }}
+</div>

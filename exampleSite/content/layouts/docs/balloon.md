@@ -1,6 +1,7 @@
 ---
 title: 'Balloon'
-bookcase_cover_src: 'balloon.png'
+bookcase_cover_src: 'cover/balloon.png'
+bookcase_cover_src_dark: 'cover/balloon_dark.png'
 ---
 
 Balloon is useful for demonstrating information step-by-step.
@@ -37,7 +38,27 @@ balloon_img_src: 'thanks.jpg'
 ---
 ```
 
-> default: image become dot
+> default: fallback to balloon_img_src_dark, if failed, image become dot
+
+### balloon_img_src_dark
+
+Balloon head image URL for dark mode. URL must be related to base URL. (without /)
+
+For example:
+
+```
+https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+        \_________________________________/\________/
+                    base URL              balloon_img_src
+```
+
+```yaml
+---
+balloon_img_src_dark: 'thanks.jpg'
+---
+```
+
+> default: fallback to balloon_img_src, if failed, image become dot
 
 ### balloon_circle
 
