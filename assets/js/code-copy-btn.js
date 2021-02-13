@@ -1,10 +1,10 @@
 import * as clipboard from "clipboard-polyfill/text";
 
 function registerHoverEvent(wrapper, button) {
-    wrapper.addEventListener('mouseover', function () {
+    wrapper.addEventListener('mouseenter', function () {
         button.classList.remove("hidden");
     });
-    wrapper.addEventListener('mouseout', function () {
+    wrapper.addEventListener('mouseleave', function () {
         button.classList.add("hidden");
     });
 }

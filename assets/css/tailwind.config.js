@@ -5,7 +5,11 @@ module.exports = {
     theme: {
         extend: {
             spacing: {
-                0.75: '0.2rem'
+                0.75: '0.2rem',
+                120: '30rem'
+            },
+            minHeight: {
+                10: '2.5rem'
             }
         },
         fill: {

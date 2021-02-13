@@ -1,0 +1,16 @@
+<div id="search_menu" class="hidden justify-center fixed top-0 left-0 w-full h-full z-40" style="background: rgba(0,0,0,0.75);">
+    <div class="fixed flex flex-col bg-0 w-full h-full sm:h-auto sm:top-24 sm:bottom-24 rounded-none sm:rounded-md sm:w-120 z-50">
+        <div class="flex min-h-10 shadow-md">
+            <div class="flex flex-grow">
+                <input id="search_menu_input" class="flex-grow bg-0 focus:outline-none px-4 rounded-tl-md" type="text" placeholder="Search">
+            </div>
+            <div id="search_menu_close_btn" class="flex items-center justify-center w-10 bg-100-hover rounded-tr-md cursor-pointer">
+                <svg class="w-3 h-3 bg-200-hover" viewBox="3 3 18 18">
+                    {{- partial "svg/close.html" -}}
+                </svg>
+            </div>
+        </div>
+        <div id="search_menu_results" class="flex-grow overflow-y-auto">
+        </div>
+    </div>
+</div>

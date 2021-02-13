@@ -32,16 +32,4 @@ window.addEventListener("DOMContentLoaded", function () {
         light_mode_btn.classList.add('hidden');
         dark_mode_btn.classList.remove('hidden');
     });
-
-    const translation_btn = document.getElementById("translation_btn");
-    const translation_menu = document.getElementById("translation_menu");
-    const translation_wrapper = translation_btn.parentNode;
-
-    translation_wrapper.addEventListener("mouseover", function () {
-        translation_menu.classList.remove("hidden");
-    });
-
-    translation_wrapper.addEventListener("mouseout", function () {
-        translation_menu.classList.add("hidden");
-    });
 });
