@@ -25,19 +25,30 @@ async function init() {
 
     // create index
     let id = 0;
-    const index = new FlexSearch({
-        doc: {
-            id: "id",
-            field: [
-                "title",
-                "content"
-            ]
+    const docs = {
+        id: "id",
+        field: [
+            "title",
+            "content"
+        ]
+    }
+    const ascii_index = new FlexSearch({
+        doc: docs,
+        profile: "score",
+        cache: true,
+    });
+    const nonascii_index = new FlexSearch({
+        doc: docs,
+        encode: false,
+        tokenize: function(str){
+            return str.replace(/[\x00-\x7F]/g, "").split("");
         },
-        profile: "score"
+        cache: true,
     });
     index_json.forEach(post => {
         post.id = id++;
-        index.add(post);
+        ascii_index.add(post);
+        nonascii_index.add(post);
     });
 
     const createItem = (title, permalink, content) => {
@@ -78,7 +89,11 @@ async function init() {
 
     const search = (value) => {
         clearAllItems();
-        index.search(value).forEach(post => {
+        let res = ascii_index.search(value);
+        if (res.length == 0) {
+            res = nonascii_index.search(value);
+        }
+        res.forEach(post => {
             const item = createItem(post.title, post.permalink, post.content);
             search_menu_results.appendChild(item);
         });
