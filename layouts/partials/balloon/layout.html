@@ -10,7 +10,7 @@
 
             {{ range $index, $value := (sort $pages "Params.weight" "asc") }}
                 {{ partial "balloon/title-item.html" . }}
-                {{ partial "balloon/card-item.html" (dict "context" . "last-item" (eq $index $max_idx)) }}
+                {{ partial "balloon/card-item.html" (dict "context" . "last_item" (eq $index $max_idx)) }}
             {{ end }}
         {{ else }}
             <span>There is no page under {{ .Params.balloon_resources }}. You need to specify "balloon_resources" correctly in front-matter and check the existence of posts under this folder.</span>
