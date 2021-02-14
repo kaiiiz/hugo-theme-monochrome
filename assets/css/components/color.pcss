@@ -41,6 +41,40 @@ body {
         @apply text-400 text-800-hover;
       }
     }
+
+    #dark_mode_btn,
+    #light_mode_btn,
+    #translation_btn,
+    #search_btn,
+    #search_menu_close_btn {
+      @apply fill-800 fill-600-hover;
+    }
+
+    #search_menu_wrapper {
+      @apply bg-overlay;
+
+      #search_menu {
+        @apply bg-0;
+
+        #search_menu_input {
+          @apply bg-0;
+        }
+
+        #search_menu_close_btn {
+          @apply bg-100-hover;
+        }
+
+        #search_menu_results {
+          .search-menu-result-item {
+            @apply bg-100-hover;
+          }
+        }
+      }
+    }
+
+    #translation_menu {
+      @apply bg-0 bg-100-hover;
+    }
   }
 
   img {
@@ -129,6 +163,16 @@ body {
 
   .balloon-card {
     @apply bg-white dark:bg-gray-700;
+  }
+
+  .svg-wrapper {
+    a, div {
+      @apply fill-800;
+    }
+
+    a {
+      @apply fill-600-hover;
+    }
   }
 
   footer {

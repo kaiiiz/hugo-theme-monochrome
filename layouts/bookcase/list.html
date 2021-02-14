@@ -22,7 +22,7 @@
     </div>
 
     {{ if $res }}
-        <div class="my-8 grid gap-4" style="grid-template-columns: repeat(auto-fill, 8rem);">
+        <div class="my-8 grid gap-4 grid-cols-bookcase-item">
             {{ range $res.ByWeight }}
                 {{- partial "bookcase/item.html" . -}}
             {{ end }}

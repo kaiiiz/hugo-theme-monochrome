@@ -5,20 +5,20 @@ async function init() {
     const data = fetch(params.index_url);
 
     const search_btn = document.getElementById("search_btn");
-    const search_menu = document.getElementById("search_menu");
+    const search_menu_wrapper = document.getElementById("search_menu_wrapper");
     const search_menu_close_btn = document.getElementById("search_menu_close_btn");
     const search_menu_input = document.getElementById("search_menu_input");
     const search_menu_results = document.getElementById("search_menu_results");
 
     search_btn.addEventListener("click", function () {
-        search_menu.classList.remove("hidden");
-        search_menu.classList.add("flex");
+        search_menu_wrapper.classList.remove("hidden");
+        search_menu_wrapper.classList.add("flex");
         search_menu_input.focus();
     });
 
     search_menu_close_btn.addEventListener("click", function () {
-        search_menu.classList.add("hidden");
-        search_menu.classList.remove("flex");
+        search_menu_wrapper.classList.add("hidden");
+        search_menu_wrapper.classList.remove("flex");
     });
 
     const index_json = await (await data).json();

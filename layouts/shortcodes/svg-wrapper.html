@@ -1,19 +1,17 @@
 {{ $icon_link := .Get "link" }}
 {{ $icon_name := .Get "name" }}
 
-<div class="inline-block w-6 h-6">
+<div class="inline-block w-6 h-6 svg-wrapper">
     {{ if $icon_link }}
-        <a class="fill-800 fill-600-hover" target="_blank" href="{{ $icon_link }}">
+        <a target="_blank" href="{{ $icon_link }}">
     {{ else }}
-        <div class="fill-800">
+        <div>
     {{ end }}
-
-            {{ if $icon_name }}
-                {{- partial (printf "svg/%s.html" $icon_name) -}}
-            {{ else }}
-                {{ .Inner | safeHTML }}
-            {{ end }}
-
+        {{ if $icon_name }}
+            {{- partial (printf "svg/%s.html" $icon_name) -}}
+        {{ else }}
+            {{ .Inner | safeHTML }}
+        {{ end }}
     {{ if $icon_link }}
         </a>
     {{ else }}

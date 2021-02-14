@@ -10,6 +10,10 @@ module.exports = {
             },
             minHeight: {
                 10: '2.5rem'
+            },
+            gridTemplateColumns: {
+                'bookcase-item': 'repeat(auto-fill, 8rem)',
+                'gallery-statistic': 'max-content 1fr'
             }
         },
         fill: {
@@ -75,6 +79,7 @@ module.exports = {
             },
             red: colors.rose,
             blue: colors.blue,
+            overlay: 'rgba(0,0,0,0.75)',
         }
     },
     variants: {

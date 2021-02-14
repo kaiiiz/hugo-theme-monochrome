@@ -15,7 +15,7 @@
         </div>
 
         <div class="flex items-center">
-            <div class="cursor-pointer fill-800 fill-600-hover">
+            <div class="cursor-pointer">
                 <svg id="dark_mode_btn" class="hidden w-4 h-4" viewBox="0 0 24 24">
                     {{- partial "svg/sun.html" -}}
                 </svg>
@@ -25,14 +25,14 @@
             </div>
 
             {{ if .Site.IsMultiLingual }}
-                <div class="relative flex items-center cursor-pointer fill-800 fill-600-hover text-800 text-600-hover text-xs ml-2 py-2">
+                <div class="relative flex items-center cursor-pointer text-800 text-600-hover text-xs ml-2 py-2">
                     <svg id="translation_btn" class="w-4 h-4" viewBox="0 0 24 24">
                         {{- partial "svg/earth.html" -}}
                     </svg>
                     <span class="hidden ml-1 sm:block">{{ .Site.Language.LanguageName }}</span>
                     <ul id="translation_menu" class="absolute top-full text-800 left-0 rounded hidden w-max shadow-xl z-10">
                         {{ range .AllTranslations }}
-                        <li class="px-2 py-1.5 bg-0 bg-100-hover ">
+                        <li class="px-2 py-1.5">
                             <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
                         </li>
                         {{ end }}
@@ -43,7 +43,7 @@
             {{ if (.Site.Params.siteSearch | default false) }}
                 <span class="mx-2.5 font-extralight">|</span>
 
-                <div class="relative flex items-center fill-800 fill-600-hover">
+                <div class="relative flex items-center">
                     <svg id="search_btn" class="w-4 h-4 cursor-pointer" viewBox="2 0 20 20">
                         {{- partial "svg/search.html" -}}
                     </svg>
