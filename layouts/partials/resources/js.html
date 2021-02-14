@@ -1,15 +1,8 @@
-{{/*  Options  */}}
-{{ $useZoomingJS := .Params.zooming_js | default true }}
-{{ $usePrismJS := .Site.Params.usePrism | default false }}
-{{ $useCopyBtn := .Site.Params.copyBtn | default true }}
-{{ $useGA := .Site.Params.google_analytics | default true }}
-{{ $useSiteSearch := .Site.Params.siteSearch | default false }}
-
 {{/*  Header  */}}
 {{ $bundle := slice (resources.Get "js/header.js") }}
 
 {{/*  Zooming.js  */}}
-{{ if $useZoomingJS }}
+{{ if (.Scratch.Get "params").enableZoomingJS }}
     {{ $bundle = $bundle | append (resources.Get "js/zooming.js") }}
 {{ end }}
 
@@ -27,7 +20,7 @@
 <script src="{{ $bundle.RelPermalink }}" integrity="{{- $bundle.Data.Integrity -}}"></script>
 
 {{/*  Load Site Index Data (Multilingual)  */}}
-{{ if $useSiteSearch }}
+{{ if (.Scratch.Get "params").enableSiteSearch }}
     {{ $target_path := printf "js/search-%s.js" .Site.LanguageCode }}
     {{ $index_url := "index.json" | absLangURL }}
     {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}
@@ -40,10 +33,10 @@
 
 {{/*  Load script for only page contain codeblock  */}}
 {{ if (findRE "<pre" .Content 1) }}
-    {{ if $usePrismJS }}
+    {{ if (.Scratch.Get "params").usePrismJS }}
         {{ $prism_js := resources.Get "js/prism.js" | resources.Fingerprint "sha512" }}
         <script src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}"></script>
-    {{ else if $useCopyBtn }}
+    {{ else if (.Scratch.Get "params").enableCodeCopy }}
         {{ $build_opts := dict "targetPath" "js/code-copy-btn.js" }}
         {{- if hugo.IsProduction -}}
             {{ $build_opts = merge $build_opts (dict "minify" true) -}}
@@ -54,6 +47,6 @@
 {{ end }}
 
 {{/*  Google Analytics  */}}
-{{ if $useGA }}
+{{ if (.Scratch.Get "params").gaCode }}
     {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}

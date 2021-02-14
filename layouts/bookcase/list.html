@@ -21,9 +21,9 @@
         {{ end }}
     </div>
 
-    {{ if $res }}
+    {{ with $res }}
         <div class="my-8 grid gap-4 grid-cols-bookcase-item">
-            {{ range $res.ByWeight }}
+            {{ range .ByWeight }}
                 {{- partial "bookcase/item.html" . -}}
             {{ end }}
         </div>

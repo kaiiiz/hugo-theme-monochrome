@@ -9,37 +9,34 @@ function registerHoverEvent(wrapper, button) {
     });
 }
 
-function registerClipboard(button, codeBlock) {
-    button.addEventListener('click', function () {
-        clipboard.writeText(codeBlock.innerText).then(function () {
-            /* Chrome doesn't seem to blur automatically,
-               leaving the button in a focused state. */
+function registerClipboard(button, code_block) {
+    button.addEventListener('click', async function () {
+        try {
+            await clipboard.writeText(code_block.innerText);
             button.blur();
-
             button.innerText = 'Copied!';
-
             setTimeout(function () {
                 button.innerText = 'Copy';
             }, 2000);
-        }, function (error) {
+        } catch (e) {
             button.innerText = 'Error';
-        });
+        }
     });
 }
 
 window.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+    document.querySelectorAll('pre > code').forEach((code_block) => {
         var button = document.createElement('button');
         button.className = 'copy-code-button hidden';
         button.type = 'button';
         button.innerText = 'Copy';
 
-        var pre = codeBlock.parentNode;
+        var pre = code_block.parentNode;
         if (pre.parentNode.classList.contains('highlight')) {
             var highlight = pre.parentNode;
             highlight.appendChild(button);
             registerHoverEvent(highlight, button);
-            registerClipboard(button, codeBlock);
+            registerClipboard(button, code_block);
         } else if (pre.parentNode.tagName === "TD") {
             // check is line no
             var td = pre.parentNode;
@@ -55,7 +52,7 @@ window.addEventListener("DOMContentLoaded", function () {
             if (highlight.tagName !== 'BODY') {
                 highlight.appendChild(button);
                 registerHoverEvent(highlight, button);
-                registerClipboard(button, codeBlock);
+                registerClipboard(button, code_block);
             }
         } else {
             var wrapper = document.createElement('div');
@@ -64,7 +61,7 @@ window.addEventListener("DOMContentLoaded", function () {
             wrapper.appendChild(pre);
             wrapper.appendChild(button);
             registerHoverEvent(wrapper, button);
-            registerClipboard(button, codeBlock);
+            registerClipboard(button, code_block);
         }
     });
 });

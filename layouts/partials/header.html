@@ -6,10 +6,8 @@
                 <span class="navicon"></span>
             </label>
             <a href="{{ .Site.Home.RelPermalink }}" class="font-bold text-2xl mr-auto">
-                {{- if .Site.Params.navbarTitle -}}
-                    {{- .Site.Params.navbarTitle -}}
-                {{- else -}}
-                    {{- .Site.Title -}}
+                {{- with (.Scratch.Get "params").navbarTitle }}
+                    {{ . | safeHTML }}
                 {{- end -}}
             </a>
         </div>
@@ -40,7 +38,7 @@
                 </div>
             {{ end }}
 
-            {{ if (.Site.Params.siteSearch | default false) }}
+            {{ if (.Scratch.Get "params").enableSiteSearch }}
                 <span class="mx-2.5 font-extralight">|</span>
 
                 <div class="relative flex items-center">
