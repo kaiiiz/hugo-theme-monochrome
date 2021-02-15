@@ -2,7 +2,7 @@
 title: '建置'
 ---
 
-這份文件將指引你如何安裝 hugo-theme-graytr 在你的 hugo 專案中。
+這份文件將指引你如何使用 hugo-theme-graytr 在你的 hugo 專案中。
 
 ## 建置
 

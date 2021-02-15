@@ -22,6 +22,8 @@ See [Configuration](https://kaiiiz.github.io/hugo-theme-graytr/configuration/)
 
 ## 🎁 Features
 
+**Fast by default**
+
 **Multiple layouts:**
 
 * [Balloon](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/balloon/)
@@ -51,9 +53,13 @@ See [Configuration](https://kaiiiz.github.io/hugo-theme-graytr/configuration/)
 * Open Graph
 * Twitter Card
 
+**MathJax Integration**
+
 **Shortcodes**
 
 * SVG Wrapper
+* CodePen
+* JSFiddle
 
 ## ❤️ Acknowledgement
 
@@ -63,5 +69,6 @@ See [Configuration](https://kaiiiz.github.io/hugo-theme-graytr/configuration/)
 * [lgarron/clipboard-polyfill](https://github.com/lgarron/clipboard-polyfill)
 * [nextapps-de/flexsearch](https://github.com/nextapps-de/flexsearch)
 * [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
+* [mathjax/MathJax](https://github.com/mathjax/MathJax)
 * Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com)
 * Material icons made by Google from [Material Design](https://material.io/resources/icons/)

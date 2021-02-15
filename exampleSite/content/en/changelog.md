@@ -6,15 +6,11 @@ tags: '123'
 
 ## Changelog
 
-### TODO
+### v0.6.0
 
-* Google Lighthouse
-* Better math supported
-  * MathJax
-  * Katex
-* Shortcodes
-  * jsfiddle
-  * codepen
+* Support mathjax
+* Follow the tips from Google Lighthouse
+* Add shortcodes: jsfiddle, codepen
 
 ### v0.5.0 - 2021/02/15
 

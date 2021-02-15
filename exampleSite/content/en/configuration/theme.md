@@ -66,6 +66,16 @@ If you try to put entry that aren't attached to a piece of content, or you want 
 
 ## External Library
 
+### MathJax
+
+```toml
+[params]
+enableMathJax = true
+```
+
+> default: false
+
+
 ### Zooming.js
 
 ```toml

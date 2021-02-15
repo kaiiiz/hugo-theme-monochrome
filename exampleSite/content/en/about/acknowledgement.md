@@ -18,5 +18,6 @@ gallery_statistic:
 * [lgarron/clipboard-polyfill](https://github.com/lgarron/clipboard-polyfill)
 * [nextapps-de/flexsearch](https://github.com/nextapps-de/flexsearch)
 * [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
+* [mathjax/MathJax](https://github.com/mathjax/MathJax)
 * Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com)
 * Material icons made by Google from [Material Design](https://material.io/resources/icons/)

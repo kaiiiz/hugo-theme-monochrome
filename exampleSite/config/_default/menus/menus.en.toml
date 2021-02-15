@@ -95,4 +95,16 @@
     url = "/shortcodes/svg-wrapper/"
     weight = 1
     parent = "shortcodes"
+  [[navbar]]
+    identifier = "shortcodes_codepen"
+    name = "CodePen"
+    url = "/shortcodes/codepen/"
+    weight = 2
+    parent = "shortcodes"
+  [[navbar]]
+    identifier = "shortcodes_jsfiddle"
+    name = "JSFiddle"
+    url = "/shortcodes/jsfiddle/"
+    weight = 3
+    parent = "shortcodes"
 

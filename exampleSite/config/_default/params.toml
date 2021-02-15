@@ -4,6 +4,7 @@ footer = "Copyright © 2021 by kaiiiz"
 enableZoomingJS = true
 enableTOC = true
 enableSiteSearch = true
+enableMathJax = false
 
 # Codeblock
 usePrismJS = false
