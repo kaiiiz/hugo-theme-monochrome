@@ -3,7 +3,7 @@
 
 <div class="inline-block w-6 h-6 svg-wrapper">
     {{ if $icon_link }}
-        <a target="_blank" href="{{ $icon_link }}">
+        <a rel="noopener" target="_blank" href="{{ $icon_link }}" aria-label="{{ if $icon_name }}$icon_name{{ else }}svg-wrapper{{ end }}">
     {{ else }}
         <div>
     {{ end }}

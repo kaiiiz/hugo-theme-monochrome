@@ -14,17 +14,17 @@
 
         <div class="flex items-center">
             <div class="cursor-pointer">
-                <svg id="dark_mode_btn" class="hidden w-4 h-4" viewBox="0 0 24 24">
+                <svg id="dark_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24">
                     {{- partial "svg/sun.html" -}}
                 </svg>
-                <svg id="light_mode_btn" class="hidden w-4 h-4" viewBox="0 0 24 24">
+                <svg id="light_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24">
                     {{- partial "svg/moon.html" -}}
                 </svg>
             </div>
 
             {{ if .Site.IsMultiLingual }}
                 <div id="translation_wrapper" class="relative flex items-center cursor-pointer text-xs ml-2 py-2">
-                    <svg class="w-4 h-4" viewBox="0 0 24 24">
+                    <svg width="18px" height="18px" viewBox="0 0 24 24">
                         {{- partial "svg/earth.html" -}}
                     </svg>
                     <span class="hidden ml-1 sm:block">{{ .Site.Language.LanguageName }}</span>
@@ -42,7 +42,7 @@
                 <span class="mx-2.5 font-extralight">|</span>
 
                 <div class="relative flex items-center">
-                    <svg id="search_btn" class="w-4 h-4 cursor-pointer" viewBox="2 0 20 20">
+                    <svg id="search_btn" class="cursor-pointer" width="18px" height="18px" viewBox="2 0 20 20">
                         {{- partial "svg/search.html" -}}
                     </svg>
                     {{- partial "search-menu.html" -}}
@@ -72,7 +72,7 @@
                     <li class="navbar-item-dropdown {{ $navbar_item }}">
                         <div class="flex items-center">
                             <a href="{{ .URL }}">{{- .Name -}}</a>
-                            <svg class="w-4 h-4" viewBox="3 3 18 18">
+                            <svg width="18px" height="18px" viewBox="3 3 18 18">
                                 {{- partial "svg/arrow-down.html" -}}
                             </svg>
                         </div>
