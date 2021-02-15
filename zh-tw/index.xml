@@ -47,7 +47,7 @@ https://kaiiiz.github.io/hugo-theme-graytr/about \______________________________
 資源設定 這些設定會存在在 gallery_resources 指定的目錄下的頁面
 title 圖片的標題
 1 2 3 --- title: &amp;#39;Gallery&amp;#39; --- default: 標題不會被渲染</description></item><item><title>Regular Page</title><link>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/demo/bookcase/regular-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/demo/bookcase/regular-page/</guid><description>This is a regular page in bookcase.</description></item><item><title>建置</title><link>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/setup/</guid><description>這份文件將指引你如何安裝 hugo-theme-graytr 在你的 hugo 專案中。
-快速開始 安裝 你需要 &amp;ldquo;extended&amp;rdquo; 版本的 Hugo 來得到 SASS 的支援。參考 Install Hugo 來得到更多資訊。
+建置 安裝 你需要 &amp;ldquo;extended&amp;rdquo; 版本的 Hugo 來得到 SASS 的支援。參考 Install Hugo 來得到更多資訊。
 以 Linux 為例:
 1 snap install hugo --channel=extended hugo 的版本必須為 0.78.0 以上
 建立專案 1 hugo new site &amp;lt;project name&amp;gt; 添加主題 1 2 3 cd &amp;lt;project name&amp;gt; git init git submodule add https://github.com/kaiiiz/hugo-theme-graytr.git themes/hugo-theme-graytr 安裝依賴 準備專案的 package.json (0.78.0 的新功能)
