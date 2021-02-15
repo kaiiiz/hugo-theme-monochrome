@@ -29,7 +29,7 @@
     {{ end }}
 
     {{ if (.Scratch.Get "params").enableTwitterCards }}
-        {{ template "_internal/twitter_cards.html" . }}    
+        {{ template "_internal/twitter_cards.html" . }}
     {{ end }}
 
     {{- partial "resources/css.html" . -}}

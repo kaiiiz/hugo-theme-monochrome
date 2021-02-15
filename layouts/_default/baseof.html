@@ -9,9 +9,9 @@
 {{ .Scratch.SetInMap "params" "enableTOC" (.Params.toc | default .Site.Params.enableTOC | default true) }}
 {{ .Scratch.SetInMap "params" "enableZoomingJS" (.Params.zooming_js | default .Site.Params.enableZoomingJS | default true) }}
 {{ .Scratch.SetInMap "params" "enableCodeCopy" (.Params.code_copy | default .Site.Params.enableCodeCopy | default true) }}
-{{ .Scratch.SetInMap "params" "gaCode" (.Params.ga | default .Site.GoogleAnalytics | default "") }}
-{{ .Scratch.SetInMap "params" "disqusShortName" (.Params.disqus | default .Site.DisqusShortname | default "") }}
-{{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer | default "") }}
+{{ .Scratch.SetInMap "params" "gaCode" (.Params.ga | default .Site.GoogleAnalytics) }}
+{{ .Scratch.SetInMap "params" "disqusShortName" (.Params.disqus | default .Site.DisqusShortname) }}
+{{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
 
 <!DOCTYPE html>
 <html class="h-full w-full font-sans" lang='{{ .Site.LanguageCode }}'>
