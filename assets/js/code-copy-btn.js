@@ -1,6 +1,13 @@
 import * as clipboard from "clipboard-polyfill/text";
 
 function registerHoverEvent(wrapper, button) {
+    wrapper.addEventListener("touchend", function () {
+        if (button.classList.contains("hidden")) {
+            button.classList.remove("hidden");
+        } else {
+            button.classList.add("hidden");
+        }
+    });
     wrapper.addEventListener('mouseenter', function () {
         button.classList.remove("hidden");
     });
