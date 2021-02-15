@@ -13,9 +13,9 @@
                 {{ partial "balloon/card-item.html" (dict "context" . "last_item" (eq $index $max_idx)) }}
             {{ end }}
         {{ else }}
-            <span>There is no page under {{ .Params.balloon_resources }}. You need to specify "balloon_resources" correctly in front-matter and check the existence of posts under this folder.</span>
+            <span>{{ i18n "no_page_under_resouces" (dict "resources_name" "balloon_resources" "resources_path" .Params.balloon_resources ) }}</span>
         {{ end }}
     </div>
 {{ else }}
-    <span>Resouces not found. You need to specify "balloon_resources" correctly in front-matter.</span>
+    <span>{{ i18n "resources_not_found" (dict "resources_name" "balloon_resources")}}</span>
 {{ end }}

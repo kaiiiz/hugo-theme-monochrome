@@ -60,8 +60,8 @@
             {{ end }}
         </div>
     {{ else }}
-        <span>There is no page under {{ .Params.gallery_resources }}. You need to specify "gallery_resources" correctly in front-matter and check the existence of posts under this folder.</span>
+        <span>{{ i18n "no_page_under_resouces" (dict "resources_name" "gallery_resources" "resources_path" .Params.gallery_resources ) }}</span>
     {{ end }}
 {{ else }}
-    <span>Resouces not found. You need to specify "gallery_resources" correctly in front-matter.</span>
+    <span>{{ i18n "resources_not_found" (dict "resources_name" "gallery_resources")}}</span>
 {{ end }}
