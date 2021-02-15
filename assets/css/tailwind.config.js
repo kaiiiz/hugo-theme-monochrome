@@ -52,6 +52,7 @@ module.exports = {
                 0.75: '0.2rem',
             },
             margin: {
+                '-7': '-1.75rem',
                 '-5': '-1.25rem',
             },
             width: {

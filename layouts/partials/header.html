@@ -23,12 +23,12 @@
             </div>
 
             {{ if .Site.IsMultiLingual }}
-                <div class="relative flex items-center cursor-pointer text-800 text-600-hover text-xs ml-2 py-2">
-                    <svg id="translation_btn" class="w-4 h-4" viewBox="0 0 24 24">
+                <div id="translation_wrapper" class="relative flex items-center cursor-pointer text-xs ml-2 py-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24">
                         {{- partial "svg/earth.html" -}}
                     </svg>
                     <span class="hidden ml-1 sm:block">{{ .Site.Language.LanguageName }}</span>
-                    <ul id="translation_menu" class="absolute top-full text-800 left-0 rounded hidden w-max shadow-xl z-10">
+                    <ul id="translation_menu" class="absolute top-full left-0 rounded hidden w-max shadow-xl z-10">
                         {{ range .AllTranslations }}
                         <li class="px-2 py-1.5">
                             <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>

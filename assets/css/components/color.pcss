@@ -44,7 +44,7 @@ body {
 
     #dark_mode_btn,
     #light_mode_btn,
-    #translation_btn,
+    #translation_wrapper,
     #search_btn,
     #search_menu_close_btn {
       @apply fill-800 fill-600-hover;
@@ -72,8 +72,16 @@ body {
       }
     }
 
-    #translation_menu {
-      @apply bg-0 bg-100-hover;
+    #translation_wrapper {
+      @apply text-800 text-600-hover;
+
+      #translation_menu {
+        @apply bg-0 text-800;
+
+        li {
+          @apply bg-100-hover;
+        }
+      }
     }
   }
 
