@@ -1,0 +1,1 @@
+(()=>{window.addEventListener("DOMContentLoaded",function(){let n=document.getElementById("translation_menu"),e=n.parentNode;e.addEventListener("mouseenter",function(){n.classList.remove("hidden")}),e.addEventListener("mouseleave",function(){n.classList.add("hidden")})});})();
