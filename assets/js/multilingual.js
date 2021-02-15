@@ -1,8 +1,9 @@
 window.addEventListener("DOMContentLoaded", function () {
     const translation_menu = document.getElementById("translation_menu");
+    const translation_btn = document.getElementById("translation_btn");
     const translation_wrapper = translation_menu.parentNode;
 
-    translation_wrapper.addEventListener("touchend", function () {
+    translation_btn.addEventListener("touchend", function () {
         if (translation_menu.classList.contains("hidden")) {
             translation_menu.classList.remove("hidden");
         } else {

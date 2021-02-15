@@ -24,7 +24,7 @@
 
             {{ if .Site.IsMultiLingual }}
                 <div id="translation_wrapper" class="relative flex items-center cursor-pointer text-xs ml-2 py-2">
-                    <svg width="18px" height="18px" viewBox="0 0 24 24">
+                    <svg id="translation_btn" width="18px" height="18px" viewBox="0 0 24 24">
                         {{- partial "svg/earth.html" -}}
                     </svg>
                     <span class="hidden ml-1 sm:block">{{ .Site.Language.LanguageName }}</span>
