@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文件 on Graytr</title><link>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/</link><description>Recent content in 文件 on Graytr</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><atom:link href="https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Balloon</title><link>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/balloon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/balloon/</guid><description>Balloon 可以將階段的資訊選染成卡片樣式。
+這個版型可以在列表與單頁使用
+設定 1 2 3 --- type: &amp;#39;balloon&amp;#39; --- 在 front-matter 指定 type 會改變 template 的使用順序
+balloon_resources 資源的路徑。路徑可以是絕對路徑或是相對路徑。
+Hugo 會正確的處理支援多國語言的情況
+舉例來說:
+https://kaiiiz.github.io/hugo-theme-graytr/about \________________________________/\____/ base URL balloon_resources 1 2 3 --- balloon_resources: &amp;#34;/about&amp;#34; --- default: 錯誤訊息會被渲染在頁面上
+balloon_img_src 圖片路徑，路徑必須相對於 base URL (注意沒有 / 的前綴)
+舉例來說:
+https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg \_________________________________/\________/ base URL balloon_img_src 1 2 3 --- balloon_img_src: &amp;#39;thanks.</description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/bookcase/</guid><description>Bookcase 可以為列表提供不同的樣式。
+這個版型僅可在列表使用
+設定 1 2 3 --- type: &amp;#39;bookcase&amp;#39; --- 在 front-matter 指定 type 會改變 template 的使用順序
+bookcase_list_sections 列出 subsections
+1 2 3 --- bookcase_list_sections: true --- default: true
+bookcase_list_pages 列出 pages
+1 2 3 --- bookcase_list_pages: true --- default: true
+資源設定 這些設定會存在在 balloon_resources 指定的目錄下的頁面
+. ├── books.md &amp;lt;- config is located in here!</description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/gallery/</guid><description>Gallery 可以展示圖片輔以一些相關數據與說明。
+這個版型可以在列表與單頁使用
+Configuration 1 2 3 --- type: &amp;#39;gallery&amp;#39; --- 在 front-matter 指定 type 會改變 template 的使用順序
+gallery_resources 資源的路徑。路徑可以是絕對路徑或是相對路徑。
+Hugo 會正確的處理支援多國語言的情況
+舉例來說:
+https://kaiiiz.github.io/hugo-theme-graytr/about \________________________________/\____/ base URL gallery_resources 1 2 3 --- gallery_resources: &amp;#39;/about&amp;#39; --- default: 錯誤訊息會被渲染在頁面上
+資源設定 這些設定會存在在 gallery_resources 指定的目錄下的頁面
+title 圖片的標題
+1 2 3 --- title: &amp;#39;Gallery&amp;#39; --- default: 標題不會被渲染</description></item></channel></rss>

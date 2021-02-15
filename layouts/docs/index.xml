@@ -1,19 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documents on Graytr</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/</link><description>Recent content in Documents on Graytr</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Balloon</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/balloon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/balloon/</guid><description>Balloon is useful for demonstrating information step-by-step.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documents on Graytr</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/</link><description>Recent content in Documents on Graytr</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Balloon</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/balloon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/balloon/</guid><description>Balloon is useful for demonstrating information step-by-step.
 This layout can be used on both list layout and single layout.
-Configuration In page front-matter
-1 2 3 --- type: &amp;#39;balloon&amp;#39; --- Specify type in front-matter will change the template lookup order.
-balloon_img_src Balloon head image URL. URL must be related to base URL. (without /)
-For example:
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg \_________________________________/\________/ base URL balloon_img_src 1 2 3 --- balloon_img_src: &amp;#39;thanks.</description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/bookcase/</guid><description>Bookcase layout is useful for creating another viewpoint of list contents.
+Configuration 1 2 3 --- type: &amp;#39;balloon&amp;#39; --- Specify type in front-matter will change the template lookup order.
+balloon_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)
+Hugo will handle multilingual scenario out of the box</description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/bookcase/</guid><description>Bookcase layout is useful for creating another viewpoint of list contents.
 This layout can only be used on list layout.
-Configuration In page front-matter
-1 2 3 --- type: &amp;#39;bookcase&amp;#39; --- Specify type in front-matter will change the template lookup order.
-bookcase_cover_src The cover image URL. URL must be related to base URL. (without /)
-Image ratio is 2:3 (width:height)
-For example:</description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</guid><description>Gallery layout is useful for demonstrating pictures and its statistical data.
+Configuration 1 2 3 --- type: &amp;#39;bookcase&amp;#39; --- Specify type in front-matter will change the template lookup order.
+bookcase_list_sections List subsections.
+1 2 3 --- bookcase_list_sections: true --- default: true
+bookcase_list_pages List pages.
+1 2 3 --- bookcase_list_pages: true --- default: true</description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</guid><description>Gallery layout is useful for demonstrating pictures and its statistical data.
 This layout can be used on both list layout and single layout.
-Configuration In page front-matter
-1 2 3 --- type: &amp;#39;gallery&amp;#39; --- Specify type in front-matter will change the template lookup order.
-gallery_resources Content resources. URL must relative to base URL. (with /)
-For example:
-https://kaiiiz.github.io/hugo-theme-graytr/about \________________________________/\____/ base URL gallery_resources 1 2 3 --- gallery_resources: &amp;#39;/about&amp;#39; --- default: error will occur in page</description></item></channel></rss>
+Configuration 1 2 3 --- type: &amp;#39;gallery&amp;#39; --- Specify type in front-matter will change the template lookup order.
+gallery_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)</description></item></channel></rss>
