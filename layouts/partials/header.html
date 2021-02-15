@@ -29,7 +29,7 @@
                     </svg>
                     <span class="hidden ml-1 sm:block">{{ .Site.Language.LanguageName }}</span>
                     <ul id="translation_menu" class="absolute top-full left-0 rounded hidden w-max shadow-xl z-10">
-                        {{ range .AllTranslations }}
+                        {{ range .Site.Home.AllTranslations }}
                         <li class="px-2 py-1.5">
                             <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
                         </li>
