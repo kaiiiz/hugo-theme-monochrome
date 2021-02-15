@@ -12,6 +12,7 @@
 {{ .Scratch.SetInMap "params" "gaCode" (.Params.ga | default .Site.GoogleAnalytics) }}
 {{ .Scratch.SetInMap "params" "disqusShortName" (.Params.disqus | default .Site.DisqusShortname) }}
 {{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
+{{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enableMathJax | default false) }}
 
 <!DOCTYPE html>
 <html class="h-full w-full font-sans" lang='{{ .Site.LanguageCode }}'>
