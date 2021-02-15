@@ -1,0 +1,16 @@
+baseURL = "https://kaiiiz.github.io/hugo-theme-graytr"
+languageCode = "en"
+title = "Graytr"
+theme = "hugo-theme-graytr"
+defaultContentLanguage = "en"
+
+[build]
+writeStats = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]

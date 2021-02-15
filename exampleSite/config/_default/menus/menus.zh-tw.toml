@@ -1,0 +1,98 @@
+[[navbar]]
+  identifier = "setup"
+  name = "建置"
+  url = "/zh-tw/setup/"
+  weight = 1
+[[navbar]]
+  identifier = "changelog"
+  name = "更新日誌"
+  url = "/zh-tw/changelog/"
+  weight = 2
+[[navbar]]
+  identifier = "configuration"
+  name = "配置"
+  url = "/zh-tw/configuration/"
+  weight = 3
+  [[navbar]]
+    identifier = "site_settings"
+    name = "網站設定"
+    url = "/zh-tw/configuration/site"
+    parent = "configuration"
+    weight = 1
+  [[navbar]]
+    identifier = "theme_settings"
+    name = "主題設定"
+    url = "/zh-tw/configuration/theme"
+    parent = "configuration"
+    weight = 2
+  [[navbar]]
+    identifier = "page_settings"
+    name = "頁面設定"
+    url = "/zh-tw/configuration/page"
+    parent = "configuration"
+    weight = 3
+[[navbar]]
+  identifier = "layouts"
+  name = "版型"
+  url = "/zh-tw/layouts/"
+  weight = 4
+  [[navbar]]
+    identifier = "demo"
+    name = "效果展示"
+    url = "/zh-tw/layouts/demo"
+    parent = "layouts"
+    weight = 1
+    [[navbar]]
+      identifier = "balloon_demo"
+      name = "Balloon"
+      url = "/zh-tw/layouts/demo/balloon"
+      parent = "demo"
+      weight = 1
+    [[navbar]]
+      identifier = "bookcase_demo"
+      name = "Bookcase"
+      url = "/zh-tw/layouts/demo/bookcase"
+      parent = "demo"
+      weight = 2
+    [[navbar]]
+      identifier = "gallery_demo"
+      name = "Gallery"
+      url = "/zh-tw/layouts/demo/gallery"
+      parent = "demo"
+      weight = 3
+  [[navbar]]
+    identifier = "docs"
+    name = "文件"
+    url = "/zh-tw/layouts/docs"
+    parent = "layouts"
+    weight = 2
+    [[navbar]]
+      identifier = "balloon_docs"
+      name = "Balloon"
+      url = "/zh-tw/layouts/docs/balloon"
+      parent = "docs"
+      weight = 1
+    [[navbar]]
+      identifier = "bookcase_docs"
+      name = "Bookcase"
+      url = "/zh-tw/layouts/docs/bookcase"
+      parent = "docs"
+      weight = 2
+    [[navbar]]
+      identifier = "gallery_docs"
+      name = "Gallery"
+      url = "/zh-tw/layouts/docs/gallery"
+      parent = "docs"
+      weight = 3
+[[navbar]]
+  identifier = "shortcodes"
+  name = "短代碼"
+  url = "/zh-tw/shortcodes/"
+  weight = 5
+  [[navbar]]
+    identifier = "shortcodes_svg_wrapper"
+    name = "SVG Wrapper"
+    url = "/zh-tw/shortcodes/svg-wrapper/"
+    weight = 1
+    parent = "shortcodes"
+

@@ -1,0 +1,16 @@
+navbarTitle = 'Graytr'
+footer = "Copyright © 2021 by kaiiiz"
+
+enableZoomingJS = true
+enableTOC = true
+enableSiteSearch = true
+
+# Codeblock
+usePrismJS = false
+enablePrismJSLineNo = true
+enableCodeCopy = true
+
+# SEO
+enableOpenGraph = true
+enableTwitterCards = true
+author = "kaiiiz"

@@ -36,14 +36,32 @@ See [Configuration](https://kaiiiz.github.io/hugo-theme-graytr/configuration/)
 
 **Syntax Highlighting (with copy feature)**
 
-* Chroma (built-in)
-* Prism.js
+* Chroma (server-side)
+* Prism.js (client-side)
+
+**Multilingual mode**
+
+**Site Search (powered by flexsearch)**
+
+**SEO**
+
+* Author
+* Description
+* Keywords
+* Open Graph
+* Twitter Card
+
+**Shortcodes**
+
+* SVG Wrapper
 
 ## ❤️ Acknowledgement
 
-* [Hugo](https://gohugo.io/) for awesome CMS framework written by [golang](https://golang.org/)
-* [tailwindcss](https://tailwindcss.com/) for awesome utility-first CSS framework
-* [Prism.js](https://prismjs.com/index.html)
+* [Hugo](https://gohugo.io/)
+* [tailwindcss](https://tailwindcss.com/)
+* [PrismJS/prism](https://github.com/PrismJS/prism)
 * [lgarron/clipboard-polyfill](https://github.com/lgarron/clipboard-polyfill)
+* [nextapps-de/flexsearch](https://github.com/nextapps-de/flexsearch)
+* [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
 * Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com)
 * Material icons made by Google from [Material Design](https://material.io/resources/icons/)
