@@ -1,0 +1,98 @@
+[[navbar]]
+  identifier = "setup"
+  name = "Setup"
+  url = "/setup/"
+  weight = 1
+[[navbar]]
+  identifier = "changelog"
+  name = "Changelog"
+  url = "/changelog/"
+  weight = 2
+[[navbar]]
+  identifier = "configuration"
+  name = "Configuration"
+  url = "/configuration/"
+  weight = 3
+  [[navbar]]
+    identifier = "site_settings"
+    name = "Site Settings"
+    url = "/configuration/site"
+    parent = "configuration"
+    weight = 1
+  [[navbar]]
+    identifier = "theme_settings"
+    name = "Theme Settings"
+    url = "/configuration/theme"
+    parent = "configuration"
+    weight = 2
+  [[navbar]]
+    identifier = "page_settings"
+    name = "Page Settings"
+    url = "/configuration/page"
+    parent = "configuration"
+    weight = 3
+[[navbar]]
+  identifier = "layouts"
+  name = "Layouts"
+  url = "/layouts/"
+  weight = 4
+  [[navbar]]
+    identifier = "demo"
+    name = "Demostration"
+    url = "/layouts/demo"
+    parent = "layouts"
+    weight = 1
+    [[navbar]]
+      identifier = "balloon_demo"
+      name = "Balloon"
+      url = "/layouts/demo/balloon"
+      parent = "demo"
+      weight = 1
+    [[navbar]]
+      identifier = "bookcase_demo"
+      name = "Bookcase"
+      url = "/layouts/demo/bookcase"
+      parent = "demo"
+      weight = 2
+    [[navbar]]
+      identifier = "gallery_demo"
+      name = "Gallery"
+      url = "/layouts/demo/gallery"
+      parent = "demo"
+      weight = 3
+  [[navbar]]
+    identifier = "docs"
+    name = "Documents"
+    url = "/layouts/docs"
+    parent = "layouts"
+    weight = 2
+    [[navbar]]
+      identifier = "balloon_docs"
+      name = "Balloon"
+      url = "/layouts/docs/balloon"
+      parent = "docs"
+      weight = 1
+    [[navbar]]
+      identifier = "bookcase_docs"
+      name = "Bookcase"
+      url = "/layouts/docs/bookcase"
+      parent = "docs"
+      weight = 2
+    [[navbar]]
+      identifier = "gallery_docs"
+      name = "Gallery"
+      url = "/layouts/docs/gallery"
+      parent = "docs"
+      weight = 3
+[[navbar]]
+  identifier = "shortcodes"
+  name = "Shortcodes"
+  url = "/shortcodes/"
+  weight = 5
+  [[navbar]]
+    identifier = "shortcodes_svg_wrapper"
+    name = "SVG Wrapper"
+    url = "/shortcodes/svg-wrapper/"
+    weight = 1
+    parent = "shortcodes"
+

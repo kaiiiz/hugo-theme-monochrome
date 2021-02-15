@@ -55,10 +55,10 @@ header {
       @apply relative;
 
       .navbar-dropdown {
-        @apply absolute rounded-sm hidden w-max shadow-xl z-50;
+        @apply absolute rounded-sm hidden w-max shadow-xl z-10;
 
         li {
-          @apply px-2.5 py-2 hover:shadow-inner;
+          @apply px-2.5 py-2;
         }
       }
 
@@ -68,6 +68,20 @@ header {
 
       &:hover {
         border-style: none !important;
+      }
+    }
+  }
+
+  #search_menu_results {
+    .search-menu-result-item {
+      @apply min-h-10 px-4 py-3.5;
+
+      .search-menu-result-item-title {
+        @apply font-bold;
+      }
+
+      .search-menu-result-item-content {
+        @apply text-sm text-500 overflow-ellipsis overflow-hidden whitespace-nowrap;
       }
     }
   }

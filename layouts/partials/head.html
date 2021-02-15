@@ -20,8 +20,16 @@
     <meta name="keywords" content="{{ delimit . "," }}" />
     {{ end }}
 
-    {{ with .Params.Author }}
+    {{ with (.Scratch.Get "params").author }}
     <meta name="author" content="{{ . }}" />
+    {{ end }}
+
+    {{ if (.Scratch.Get "params").enableOpenGraph }}
+        {{ template "_internal/opengraph.html" . }}
+    {{ end }}
+
+    {{ if (.Scratch.Get "params").enableTwitterCards }}
+        {{ template "_internal/twitter_cards.html" . }}
     {{ end }}
 
     {{- partial "resources/css.html" . -}}

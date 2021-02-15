@@ -1,9 +1,6 @@
-{{ $img_src := index . "img" }}
-{{ $img_style := index . "img_style" }}
-
-{{ if $img_src }}
+{{ if .img }}
     <div class="w-24 h-24">
-        <img src='{{- $img_src | absURL -}}' class="{{ $img_style }}">
+        <img src='{{- .img | absURL -}}' class="{{ .img_style }}">
     </div>
 {{ else }}
     {{ partial "balloon/dot.html" }}

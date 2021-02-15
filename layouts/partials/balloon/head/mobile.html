@@ -1,8 +1,5 @@
-{{ $img_src := index . "img" }}
-{{ $img_style := index . "img_style" }}
-
-{{ if $img_src }}
+{{ if .img }}
     <div class="w-20 h-20 my-8">
-        <img src='{{- $img_src | absURL -}}' class="{{ $img_style }}">
+        <img src='{{- .img | absURL -}}' class="{{ .img_style }}">
     </div>
 {{ end }}

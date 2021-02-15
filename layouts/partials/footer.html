@@ -1,4 +1,4 @@
-{{ with .Site.Params.footer }}
+{{ with (.Scratch.Get "params").footer }}
 <footer class="my-8 w-full text-center text-xs">
     <article>
         {{- . | safeHTML -}}

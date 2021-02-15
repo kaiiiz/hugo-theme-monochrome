@@ -1,15 +1,14 @@
-{{/*  Options  */}}
-{{ $useZoomingJS := .Params.zooming_js | default true }}
-{{ $usePrismJS := .Site.Params.usePrism | default false }}
-{{ $useCopyBtn := .Site.Params.copyBtn | default true }}
-{{ $useGA := .Site.Params.google_analytics | default true }}
-
 {{/*  Header  */}}
 {{ $bundle := slice (resources.Get "js/header.js") }}
 
 {{/*  Zooming.js  */}}
-{{ if $useZoomingJS }}
+{{ if (.Scratch.Get "params").enableZoomingJS }}
     {{ $bundle = $bundle | append (resources.Get "js/zooming.js") }}
+{{ end }}
+
+{{/*  Multilingual.js  */}}
+{{ if .Site.IsMultiLingual }}
+    {{ $bundle = $bundle | append (resources.Get "js/multilingual.js") }}
 {{ end }}
 
 {{/*  JS Bundling  */}}
@@ -20,12 +19,24 @@
 {{ $bundle = $bundle | resources.Concat "js/bundle.js" | js.Build $build_opts | resources.Fingerprint "sha512" }}
 <script src="{{ $bundle.RelPermalink }}" integrity="{{- $bundle.Data.Integrity -}}"></script>
 
-{{/*  Load script for only page content codeblock  */}}
+{{/*  Load Site Index Data (Multilingual)  */}}
+{{ if (.Scratch.Get "params").enableSiteSearch }}
+    {{ $target_path := printf "js/search-%s.js" .Site.LanguageCode }}
+    {{ $index_url := "index.json" | absLangURL }}
+    {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}
+    {{- if hugo.IsProduction -}}
+        {{ $build_opts = merge $build_opts (dict "minify" true) -}}
+    {{- end -}}
+    {{ $search_js := resources.Get "js/search.js" | js.Build $build_opts | resources.Fingerprint "sha512" }}
+    <script src="{{ $search_js.RelPermalink }}" integrity="{{- $search_js.Data.Integrity -}}"></script>
+{{ end }}
+
+{{/*  Load script for only page contain codeblock  */}}
 {{ if (findRE "<pre" .Content 1) }}
-    {{ if $usePrismJS }}
+    {{ if (.Scratch.Get "params").usePrismJS }}
         {{ $prism_js := resources.Get "js/prism.js" | resources.Fingerprint "sha512" }}
         <script src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}"></script>
-    {{ else if $useCopyBtn }}
+    {{ else if (.Scratch.Get "params").enableCodeCopy }}
         {{ $build_opts := dict "targetPath" "js/code-copy-btn.js" }}
         {{- if hugo.IsProduction -}}
             {{ $build_opts = merge $build_opts (dict "minify" true) -}}
@@ -36,6 +47,6 @@
 {{ end }}
 
 {{/*  Google Analytics  */}}
-{{ if $useGA }}
+{{ if (.Scratch.Get "params").gaCode }}
     {{ template "_internal/google_analytics_async.html" . }}
 {{ end }}

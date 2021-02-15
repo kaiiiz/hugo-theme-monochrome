@@ -23,10 +23,6 @@ body {
       }
     }
 
-    #color_scheme_toggle {
-      @apply fill-800 fill-600-hover;
-    }
-
     .navbar-item-dropdown,
     .navbar-item {
       @apply fill-800;
@@ -43,6 +39,48 @@ body {
         @apply fill-400 fill-800-hover;
         @apply border-tp border-800-hover;
         @apply text-400 text-800-hover;
+      }
+    }
+
+    #dark_mode_btn,
+    #light_mode_btn,
+    #translation_wrapper,
+    #search_btn,
+    #search_menu_close_btn {
+      @apply fill-800 fill-600-hover;
+    }
+
+    #search_menu_wrapper {
+      @apply bg-overlay;
+
+      #search_menu {
+        @apply bg-0;
+
+        #search_menu_input {
+          @apply bg-0;
+        }
+
+        #search_menu_close_btn {
+          @apply bg-100-hover;
+        }
+
+        #search_menu_results {
+          .search-menu-result-item {
+            @apply bg-100-hover;
+          }
+        }
+      }
+    }
+
+    #translation_wrapper {
+      @apply text-800 text-600-hover;
+
+      #translation_menu {
+        @apply bg-0 text-800;
+
+        li {
+          @apply bg-100-hover;
+        }
       }
     }
   }
@@ -79,7 +117,7 @@ body {
     }
 
     .copy-code-button {
-      @apply bg-0 bg-100-hover;
+      @apply bg-0 bg-100-hover text-800;
     }
 
     table {
@@ -120,7 +158,8 @@ body {
   }
 
   .bookcase-item-overlay {
-    @apply bg-300;
+    @apply bg-transparent bg-300-hover;
+    opacity: 0.25;
   }
 
   .balloon-line {
@@ -133,6 +172,16 @@ body {
 
   .balloon-card {
     @apply bg-white dark:bg-gray-700;
+  }
+
+  .svg-wrapper {
+    a, div {
+      @apply fill-800;
+    }
+
+    a {
+      @apply fill-600-hover;
+    }
   }
 
   footer {

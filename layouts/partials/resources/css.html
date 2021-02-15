@@ -1,6 +1,3 @@
-{{/*  Options  */}}
-{{ $usePrismJS := .Site.Params.usePrism | default false }}
-
 {{/*  Tailwind CSS  */}}
 {{- $styles := resources.Get "css/styles.pcss" -}}
 {{- if hugo.IsProduction -}}
@@ -14,7 +11,7 @@
 
 {{/*  Codeblock  */}}
 {{ if (findRE "<pre" .Content 1) }}
-    {{ if $usePrismJS }}
+    {{ if (.Scratch.Get "params").usePrismJS }}
         {{ $prism_css := resources.Get "css/prism.css" | resources.Minify | resources.Fingerprint "sha512" }}
         <link rel="stylesheet" href="{{- $prism_css.RelPermalink -}}" integrity="{{- $prism_css.Data.Integrity -}}">
     {{ end }}

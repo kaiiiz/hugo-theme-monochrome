@@ -1,21 +1,17 @@
 {{ $img := .Params.balloon_img_src | default .Params.balloon_img_src_dark }}
 {{ $img_dark := .Params.balloon_img_src_dark | default .Params.balloon_img_src }}
+{{ $balloon_circle := .Params.balloon_circle | default true }}
 
 {{ $img_style := "w-full" }}
-{{ if (.Params.balloon_circle | default true) }}
+{{ if $balloon_circle }}
     {{ $img_style = printf "%s %s" $img_style "rounded-full" }}
 {{ end }}
 
 {{ $content_style := slice }}
-{{ if $img }}
+{{ if or $img $img_dark }}
     {{ $content_style = $content_style | append "md:ml-4" }}
 {{ else }}
     {{ $content_style = $content_style | append "md:ml-0" }}
-{{ end }}
-{{ if $img_dark }}
-    {{ $content_style = $content_style | append "md:dark:ml-4" }}
-{{ else }}
-    {{ $content_style = $content_style | append "md:dark:ml-0" }}
 {{ end }}
 {{ $content_style = delimit $content_style " " }}
 

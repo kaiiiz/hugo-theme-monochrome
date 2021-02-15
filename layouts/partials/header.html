@@ -1,29 +1,57 @@
-<header class="my-8">
+<header class="mt-9 mb-8">
     <div class="flex justify-between items-center">
-        <input id="navbar_btn" class="hidden" type="checkbox">
-        <label for="navbar_btn" class="menu-btn block xl:hidden">
-            <span class="navicon"></span>
-        </label>
+        <div class="flex items-center">
+            <input id="navbar_btn" class="hidden" type="checkbox">
+            <label for="navbar_btn" class="menu-btn block xl:hidden">
+                <span class="navicon"></span>
+            </label>
+            <a href="{{ .Site.Home.RelPermalink }}" class="font-bold text-2xl mr-auto">
+                {{- with (.Scratch.Get "params").navbarTitle }}
+                    {{ . | safeHTML }}
+                {{- end -}}
+            </a>
+        </div>
 
-        <a href="{{ .Site.Home.RelPermalink }}" class="font-bold text-2xl mr-auto">
-        {{- if .Site.Params.navbarTitle -}}
-            {{- .Site.Params.navbarTitle -}}
-        {{- else -}}
-            {{- .Site.Title -}}
-        {{- end -}}
-        </a>
+        <div class="flex items-center">
+            <div class="cursor-pointer">
+                <svg id="dark_mode_btn" class="hidden w-4 h-4" viewBox="0 0 24 24">
+                    {{- partial "svg/sun.html" -}}
+                </svg>
+                <svg id="light_mode_btn" class="hidden w-4 h-4" viewBox="0 0 24 24">
+                    {{- partial "svg/moon.html" -}}
+                </svg>
+            </div>
 
-        <div id="color_scheme_toggle">
-            <svg id="dark_mode_btn" class="hidden w-4 h-4 cursor-pointer" viewBox="0 0 24 24">
-                {{- partial "svg/sun.html" -}}
-            </svg>
-            <svg id="light_mode_btn" class="hidden w-4 h-4 cursor-pointer" viewBox="0 0 24 24">
-                {{- partial "svg/moon.html" -}}
-            </svg>
+            {{ if .Site.IsMultiLingual }}
+                <div id="translation_wrapper" class="relative flex items-center cursor-pointer text-xs ml-2 py-2">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24">
+                        {{- partial "svg/earth.html" -}}
+                    </svg>
+                    <span class="hidden ml-1 sm:block">{{ .Site.Language.LanguageName }}</span>
+                    <ul id="translation_menu" class="absolute top-full left-0 rounded hidden w-max shadow-xl z-10">
+                        {{ range .AllTranslations }}
+                        <li class="px-2 py-1.5">
+                            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            {{ end }}
+
+            {{ if (.Scratch.Get "params").enableSiteSearch }}
+                <span class="mx-2.5 font-extralight">|</span>
+
+                <div class="relative flex items-center">
+                    <svg id="search_btn" class="w-4 h-4 cursor-pointer" viewBox="2 0 20 20">
+                        {{- partial "svg/search.html" -}}
+                    </svg>
+                    {{- partial "search-menu.html" -}}
+                </div>
+            {{ end }}
         </div>
     </div>
 
-    <nav id="navbar" class="mt-2.5 hidden xl:block">
+    <nav id="navbar" class="mt-3 hidden xl:block">
         {{- $currentPage := . -}}
         {{- $currentUrl := .RelPermalink -}}
         {{- $isHome := .IsHome -}}
@@ -70,7 +98,7 @@
                 </li>
             {{ end }}
         </ul>
+
+        <hr class="my-4">
     </nav>
 </header>
-
-<hr class="block md:hidden">
