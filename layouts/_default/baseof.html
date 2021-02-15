@@ -23,11 +23,6 @@
             <div id="content" class="my-8">
                 {{- block "content" . }}{{- end }}
             </div>
-            {{ if (.Scratch.Get "params").disqusShortName }}
-                <div class="my-8 sm:-mx-5">
-                    {{ template "_internal/disqus.html" . }}
-                </div>
-            {{ end }}
             {{- partial "footer.html" . -}}
         </main>
         {{- partial "resources/js.html" . -}}

@@ -1,0 +1,5 @@
+{{ if (.Scratch.Get "params").disqusShortName }}
+<div class="my-8 sm:-mx-5">
+    {{ template "_internal/disqus.html" . }}
+</div>
+{{ end }}
