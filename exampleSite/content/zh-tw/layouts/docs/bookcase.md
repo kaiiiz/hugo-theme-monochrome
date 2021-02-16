@@ -2,6 +2,7 @@
 title: 'Bookcase'
 bookcase_cover_src: 'cover/bookcase.png'
 bookcase_cover_src_dark: 'cover/bookcase_dark.png'
+weight: 20
 ---
 
 Bookcase 可以為列表提供不同的樣式。
@@ -107,4 +108,4 @@ weight: 3
 ---
 ```
 
-> default: 字典序排序
+> default: [預設排序](https://gohugo.io/templates/lists/#order-content)

@@ -60,6 +60,12 @@
       url = "/zh-tw/layouts/demo/gallery"
       parent = "demo"
       weight = 3
+    [[navbar]]
+      identifier = "list_demo"
+      name = "List"
+      url = "/zh-tw/layouts/demo/list"
+      parent = "demo"
+      weight = 4
   [[navbar]]
     identifier = "docs"
     name = "文件"
@@ -84,6 +90,12 @@
       url = "/zh-tw/layouts/docs/gallery"
       parent = "docs"
       weight = 3
+    [[navbar]]
+      identifier = "list_docs"
+      name = "List"
+      url = "/zh-tw/layouts/docs/list"
+      parent = "docs"
+      weight = 4
 [[navbar]]
   identifier = "shortcodes"
   name = "短代碼"
@@ -95,4 +107,41 @@
     url = "/zh-tw/shortcodes/svg-wrapper/"
     weight = 1
     parent = "shortcodes"
+  [[navbar]]
+    identifier = "shortcodes_codepen"
+    name = "CodePen"
+    url = "/zh-tw/shortcodes/codepen/"
+    weight = 2
+    parent = "shortcodes"
+  [[navbar]]
+    identifier = "shortcodes_jsfiddle"
+    name = "JSFiddle"
+    url = "/zh-tw/shortcodes/jsfiddle/"
+    weight = 3
+    parent = "shortcodes"
+  [[navbar]]
+    identifier = "shortcodes_color_block"
+    name = "Color Block"
+    url = "/zh-tw/shortcodes/color-block/"
+    weight = 4
+    parent = "shortcodes"
+  [[navbar]]
+    identifier = "shortcodes_icon_group"
+    name = "Icon Group"
+    url = "/zh-tw/shortcodes/icon-group/"
+    weight = 5
+    parent = "shortcodes"
+  [[navbar]]
+    identifier = "shortcodes_terms_cloud"
+    name = "Terms Cloud"
+    url = "/zh-tw/shortcodes/terms-cloud/"
+    weight = 6
+    parent = "shortcodes"
+[[navbar]]
+  identifier = "posts"
+  name = "文章"
+  url = "/zh-tw/posts/"
+  weight = 6
+
+
 

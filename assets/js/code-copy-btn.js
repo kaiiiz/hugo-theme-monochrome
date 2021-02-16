@@ -9,6 +9,16 @@ function registerHoverEvent(wrapper, button) {
     });
 }
 
+function registerTouchedEvent(pre, button) {
+    pre.addEventListener("touchend", function () {
+        if (button.classList.contains("hidden")) {
+            button.classList.remove("hidden");
+        } else {
+            button.classList.add("hidden");
+        }
+    });
+}
+
 function registerClipboard(button, code_block) {
     button.addEventListener('click', async function () {
         try {
@@ -36,6 +46,7 @@ window.addEventListener("DOMContentLoaded", function () {
             var highlight = pre.parentNode;
             highlight.appendChild(button);
             registerHoverEvent(highlight, button);
+            registerTouchedEvent(pre, button);
             registerClipboard(button, code_block);
         } else if (pre.parentNode.tagName === "TD") {
             // check is line no
@@ -52,6 +63,7 @@ window.addEventListener("DOMContentLoaded", function () {
             if (highlight.tagName !== 'BODY') {
                 highlight.appendChild(button);
                 registerHoverEvent(highlight, button);
+                registerTouchedEvent(pre, button);
                 registerClipboard(button, code_block);
             }
         } else {
@@ -61,6 +73,7 @@ window.addEventListener("DOMContentLoaded", function () {
             wrapper.appendChild(pre);
             wrapper.appendChild(button);
             registerHoverEvent(wrapper, button);
+            registerTouchedEvent(pre, button);
             registerClipboard(button, code_block);
         }
     });

@@ -8,4 +8,4 @@ balloon_resources: "/about"
 
 {{< svg-wrapper name="github" link="https://github.com/kaiiiz/hugo-theme-graytr" />}}
 
-這是 hugo-theme-graytr 的演示網站
+This is the demo of hugo-theme-graytr.

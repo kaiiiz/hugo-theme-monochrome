@@ -7,7 +7,7 @@ balloon_img_src: "icons/balloon.svg"
 balloon_img_src_dark: "icons/balloon_dark.svg"
 balloon_circle: false
 balloon_resources: "/about"
-weight: 1
+weight: 10
 ---
 
 Balloon layout is useful for demonstrating information step-by-step.

@@ -2,6 +2,7 @@
 title: 'Gallery'
 bookcase_cover_src: 'cover/picture.png'
 bookcase_cover_src_dark: 'cover/picture_dark.png'
+weight: 30
 ---
 
 Gallery layout is useful for demonstrating pictures and its statistical data.
@@ -136,7 +137,7 @@ weight: 3
 ---
 ```
 
-> default: sort pages by alphabetical order
+> default: [default order](https://gohugo.io/templates/lists/#order-content)
 
 ## Trick
 

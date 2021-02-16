@@ -12,23 +12,19 @@
 {{ .Scratch.SetInMap "params" "gaCode" (.Params.ga | default .Site.GoogleAnalytics) }}
 {{ .Scratch.SetInMap "params" "disqusShortName" (.Params.disqus | default .Site.DisqusShortname) }}
 {{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
+{{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enableMathJax | default false) }}
 
 <!DOCTYPE html>
 <html class="h-full w-full font-sans" lang='{{ .Site.LanguageCode }}'>
     {{- partial "head.html" . -}}
     <body class="flex flex-col items-center w-full">
-        <div class="w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6">
+        <main class="w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6">
             {{- partial "header.html" . -}}
             <div id="content" class="my-8">
                 {{- block "content" . }}{{- end }}
             </div>
-            {{ if (.Scratch.Get "params").disqusShortName }}
-                <div class="my-8 sm:-mx-5">
-                    {{ template "_internal/disqus.html" . }}
-                </div>
-            {{ end }}
             {{- partial "footer.html" . -}}
-        </div>
+        </main>
         {{- partial "resources/js.html" . -}}
     </body>
 </html>

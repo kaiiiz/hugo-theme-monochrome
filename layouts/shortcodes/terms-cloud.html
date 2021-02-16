@@ -1,0 +1,4 @@
+{{ $terms := .Get "terms" }}
+<div class="my-6">
+    {{- partial "terms-cloud.html" (index .Site.Taxonomies $terms) -}}
+</div>

@@ -3,6 +3,7 @@ languageCode = "en"
 title = "Graytr"
 theme = "hugo-theme-graytr"
 defaultContentLanguage = "en"
+enableEmoji = true
 
 [build]
 writeStats = true

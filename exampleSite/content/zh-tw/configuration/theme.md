@@ -18,7 +18,7 @@ bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 navbarTitle = "Graytr"
 ```
 
-> default: site's [`title`](/hugo-theme-graytr/configuration/site#site-title)
+> default: site's [`title`](/hugo-theme-graytr/zh-tw/configuration/site#site-title)
 
 ## Footer
 
@@ -52,7 +52,7 @@ menu: navbar
 ---
 ```
 
-預設 hugo 支援權重，可以明確指定權重來調整在 navbar 中的順序，如果有兩個權重相同的頁面，將會使用字典序排序。
+預設 hugo 支援權重，可以明確指定權重來調整在 navbar 中的順序，如果有兩個權重相同的頁面，將會套用[預設排序](https://gohugo.io/templates/lists/#order-content)。
 
 ```yaml
 ---
@@ -65,6 +65,17 @@ menu:
 更進階的 menu 應用請參考 [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu)，你也可以參考[這個網站的目錄設定](https://github.com/kaiiiz/hugo-theme-graytr/tree/main/exampleSite/config/_default/menus)。
 
 ## External Library
+
+### MathJax
+
+使用 `$` 渲染 inline 的結果, `$$` 渲染 block 的結果
+
+```toml
+[params]
+enableMathJax = true
+```
+
+> default: false
 
 ### Zooming.js
 

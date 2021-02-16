@@ -1,0 +1,22 @@
+{{ $style := .Get "style" }}
+
+{{ $bg_color := "#f0f0f0" }}
+{{ $color := "#494949" }}
+
+{{ if eq $style "error" }}
+    {{ $bg_color = "#f2dede" }}
+    {{ $color = "#a94442" }}
+{{ else if eq $style "warning" }}
+    {{ $bg_color = "#fcf8e3" }}
+    {{ $color = "#8a6d3b" }}
+{{ else if eq $style "info" }}
+    {{ $bg_color = "#d9edf7" }}
+    {{ $color = "#31708f" }}
+{{ else if eq $style "success" }}
+    {{ $bg_color = "#dff0d8" }}
+    {{ $color = "#3c763d" }}
+{{ end }}
+
+<div class="rounded p-3 my-6" style="background-color: {{ $bg_color }}; color: {{ $color }};" >
+    {{ .Inner | safeHTML }}
+</div>

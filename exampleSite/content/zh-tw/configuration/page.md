@@ -11,7 +11,7 @@ bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 
 ## Layout
 
-Graytr 內建多種不同版型。你可以根據你的需求來改變 section 或 page 的樣式，更多資訊可以查看 [Layout](/hugo-theme-graytr/layouts)。
+Graytr 內建多種不同版型。你可以根據你的需求來改變 section 或 page 的樣式，更多資訊可以查看 [Layout](/hugo-theme-graytr/zh-tw/layouts)。
 
 ## Navbar title
 
@@ -23,7 +23,7 @@ navbar_title: "Graytr"
 ---
 ```
 
-> default: theme's [`navbarTitle`](/hugo-theme-graytr/configuration/theme#navbar-title)
+> default: theme's [`navbarTitle`](/hugo-theme-graytr/zh-tw/configuration/theme#navbar-title)
 
 ## Footer
 
@@ -35,7 +35,7 @@ footer: "Copyright © 2021 by kaiiiz"
 ---
 ```
 
-> default: theme's [`footer`](/hugo-theme-graytr/configuration/theme/#footer)
+> default: theme's [`footer`](/hugo-theme-graytr/zh-tw/configuration/theme/#footer)
 
 ## Table of Contents
 
@@ -45,9 +45,19 @@ toc: false
 ---
 ```
 
-> default: theme's [`enableTOC`](/hugo-theme-graytr/configuration/theme/#table-of-contents)
+> default: theme's [`enableTOC`](/hugo-theme-graytr/zh-tw/configuration/theme/#table-of-contents)
 
 ## External library
+
+### MathJax
+
+```yaml
+---
+math: false
+---
+```
+
+> default: theme's [`enableMathJax`](/hugo-theme-graytr/zh-tw/configuration/theme/#mathjax)
 
 ### Zooming.js
 
@@ -57,7 +67,7 @@ zooming_js: false
 ---
 ```
 
-> default: theme's [`enableZoomingJS`](/hugo-theme-graytr/configuration/theme/#zoomingjs)
+> default: theme's [`enableZoomingJS`](/hugo-theme-graytr/zh-tw/configuration/theme/#zoomingjs)
 
 ### Disqus
 
@@ -67,7 +77,7 @@ disqus: false
 ---
 ```
 
-> default: site's [`disqusShortname`](/hugo-theme-graytr/configuration/site/#disqus)
+> default: site's [`disqusShortname`](/hugo-theme-graytr/zh-tw/configuration/site/#disqus)
 
 ### Google Analytics
 
@@ -77,7 +87,7 @@ ga: false
 ---
 ```
 
-> default: site's [`googleAnalytics`](/hugo-theme-graytr/configuration/site/#google-analytics)
+> default: site's [`googleAnalytics`](/hugo-theme-graytr/zh-tw/configuration/site/#google-analytics)
 
 ## Syntax Highlighting
 
@@ -89,7 +99,7 @@ code_copy: false
 ---
 ```
 
-> default: theme's [`enableCodeCopy`](/hugo-theme-graytr/configuration/theme/#using-chroma-hugo-built-in)
+> default: theme's [`enableCodeCopy`](/hugo-theme-graytr/zh-tw/configuration/theme/#using-chroma-hugo-built-in)
 
 ### Prism.js
 
@@ -99,7 +109,7 @@ prism_lineno: false
 ---
 ```
 
-> default: theme's [`enablePrismJSLineNo`](/hugo-theme-graytr/configuration/theme/#using-prismjs)
+> default: theme's [`enablePrismJSLineNo`](/hugo-theme-graytr/zh-tw/configuration/theme/#using-prismjs)
 
 ## SEO
 
@@ -111,7 +121,7 @@ author: "kaiiiz"
 ---
 ```
 
-> default: theme's [`author`](/hugo-theme-graytr/configuration/theme/#author)
+> default: theme's [`author`](/hugo-theme-graytr/zh-tw/configuration/theme/#author)
 
 ### Description
 
@@ -147,7 +157,7 @@ open_graph: false
 ---
 ```
 
-> default: theme's [`enableOpenGraph`](/hugo-theme-graytr/configuration/theme/#open-graph)
+> default: theme's [`enableOpenGraph`](/hugo-theme-graytr/zh-tw/configuration/theme/#open-graph)
 
 ### Twitter Cards
 
@@ -159,4 +169,4 @@ twitter_cards: false
 ---
 ```
 
-> default: theme's [`enableTwitterCards`](/hugo-theme-graytr/configuration/theme/#twitter-cards)
+> default: theme's [`enableTwitterCards`](/hugo-theme-graytr/zh-tw/configuration/theme/#twitter-cards)

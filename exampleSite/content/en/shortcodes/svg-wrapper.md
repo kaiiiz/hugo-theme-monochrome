@@ -1,6 +1,5 @@
 ---
 title: 'SVG Wrapper'
-date: '2021-02-12'
 bookcase_cover_src: 'cover/coding.png'
 bookcase_cover_src_dark: 'cover/coding_dark.png'
 ---
@@ -58,8 +57,6 @@ Icons from [Simple Icons](https://simple-icons.github.io/simple-icons-website/)
 
 ```html
 {{</* svg-wrapper name="github" link="https://github.com/kaiiiz/hugo-theme-graytr" */>}}
-{{</* /svg-wrapper */>}}
 ```
 
 {{< svg-wrapper name="github" link="https://github.com/kaiiiz/hugo-theme-graytr" >}}
-{{< /svg-wrapper >}}

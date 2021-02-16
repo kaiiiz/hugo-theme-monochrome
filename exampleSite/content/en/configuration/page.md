@@ -49,6 +49,16 @@ toc: false
 
 ## External library
 
+### MathJax
+
+```yaml
+---
+math: false
+---
+```
+
+> default: theme's [`enableMathJax`](/hugo-theme-graytr/configuration/theme/#mathjax)
+
 ### Zooming.js
 
 ```yaml

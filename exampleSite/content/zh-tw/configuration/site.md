@@ -37,7 +37,7 @@ baseURL = "https://kaiiiz.github.io/hugo-theme-graytr"
 
 將 `favicon.ico` 加到網站的 `static` 目錄.
 
-## External Library
+## External library
 
 ### Disqus
 

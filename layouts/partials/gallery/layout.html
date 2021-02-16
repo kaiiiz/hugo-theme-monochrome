@@ -19,7 +19,7 @@
 
                     {{ if .Params.gallery_img_src }}
                         <figure class="sm:-mx-5">
-                            {{ if $img_link }}<a target="_blank" href="{{ $img_link }}">{{ end }}
+                            {{ if $img_link }}<a target="_blank" rel="noopener" href="{{ $img_link }}">{{ end }}
                                 <img class="mx-auto" src="{{ .Params.gallery_img_src | absURL }}" alt="{{ .Title }}">
                             {{ if $img_link }}</a>{{ end }}
                             {{ with .Params.gallery_img_caption }}
@@ -34,7 +34,7 @@
 
                     {{ if .Title }}
                         <div class="mt-8 mb-4 gallery-item-title">
-                            {{ if $title_link }}<a target="_blank" href="{{ $title_link }}" class="border-b">{{ end }}
+                            {{ if $title_link }}<a target="_blank" rel="noopener" href="{{ $title_link }}" class="border-b">{{ end }}
                                 <span class="text-2xl font-bold">
                                     {{- .Title -}}
                                 </span>
