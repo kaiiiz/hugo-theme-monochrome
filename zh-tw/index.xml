@@ -61,5 +61,5 @@ terms: terms 的名字 範例 1 {{&amp;lt; terms-cloud terms=&amp;#34;tags&amp;#
 建置 安裝 你需要 &amp;ldquo;extended&amp;rdquo; 版本的 Hugo 來得到 SASS 的支援。參考 Install Hugo 來得到更多資訊。
 以 Linux 為例:
 1 snap install hugo --channel=extended hugo 的版本必須為 0.78.0 以上
-建立專案 1 hugo new site &amp;lt;project name&amp;gt; 添加主題 1 2 3 cd &amp;lt;project name&amp;gt; git init git submodule add https://github.com/kaiiiz/hugo-theme-graytr.git themes/hugo-theme-graytr 安裝依賴 準備專案的 package.json (0.78.0 的新功能)
-1 hugo mod npm pack 安裝</description></item></channel></rss>
+建立專案 1 hugo new site &amp;lt;project name&amp;gt; 添加主題 1 2 3 cd &amp;lt;project name&amp;gt; git init git submodule add https://github.com/kaiiiz/hugo-theme-graytr.git themes/hugo-theme-graytr 將 theme = &amp;quot;hugo-theme-graytr&amp;quot; 加到 config.toml
+安裝依賴 準備專案的 package.json (0.</description></item></channel></rss>
