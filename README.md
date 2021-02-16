@@ -18,7 +18,7 @@ See [kaiiiz.github.io/hugo-theme-graytr](https://kaiiiz.github.io/hugo-theme-gra
 
 ## Features
 
-1. **Clean UI with small resources.** Graytr has clean UI design and can remove unused resources in production environment. (with only 20+KB CSS)
+1. **Clean UI with small resources.** Graytr has clean UI design and can remove unused resources in production environment. (with about 20+KB CSS)
 
 2. **Responsive layout.** Adapt to different viewpoint, from desktop to mobile.
 
@@ -32,7 +32,7 @@ See [kaiiiz.github.io/hugo-theme-graytr](https://kaiiiz.github.io/hugo-theme-gra
 
 7. **Site Search.** Powered by FlexSearch.
 
-8. **SEO-ready.** Easily change your author, description, keywords, open graph, twitter card meatdata.
+8. **SEO-friendly.** Easily change your author, description, keywords, open graph, twitter card meatdata.
 
 9. **Support mathematical notation.** Powered by MathJax.
 
