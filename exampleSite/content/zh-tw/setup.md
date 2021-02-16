@@ -32,6 +32,8 @@ git init
 git submodule add https://github.com/kaiiiz/hugo-theme-graytr.git themes/hugo-theme-graytr
 ```
 
+將 `theme = "hugo-theme-graytr"` 加到 `config.toml`
+
 ### 安裝依賴
 
 準備專案的 package.json ([0.78.0](https://gohugo.io/news/0.78.0-relnotes/) 的新功能)

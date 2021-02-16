@@ -32,6 +32,8 @@ git init
 git submodule add https://github.com/kaiiiz/hugo-theme-graytr.git themes/hugo-theme-graytr
 ```
 
+Then add `theme = "hugo-theme-graytr"` to your `config.toml`
+
 ### Setup Dependencies
 
 Prepare a composite package.json file for your project. (new feature in [0.78.0](https://gohugo.io/news/0.78.0-relnotes/))
