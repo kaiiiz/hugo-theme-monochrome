@@ -37,7 +37,7 @@ baseURL = "https://kaiiiz.github.io/hugo-theme-graytr"
 
 Add `favicon.ico` to your site's static folder.
 
-## External Library
+## External library
 
 ### Disqus
 

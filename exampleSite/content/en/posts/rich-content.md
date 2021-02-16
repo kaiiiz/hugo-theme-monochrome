@@ -17,15 +17,11 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 {{< youtube ZJthWmvUzzc >}}
 
-<br>
-
 ---
 
 ## Twitter Simple Shortcode
 
 {{< twitter_simple 1085870671291310081 >}}
-
-<br>
 
 ---
 

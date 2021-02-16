@@ -52,7 +52,7 @@ menu: navbar
 ---
 ```
 
-預設 hugo 支援權重，可以明確指定權重來調整在 navbar 中的順序，如果有兩個權重相同的頁面，將會使用字典序排序。
+預設 hugo 支援權重，可以明確指定權重來調整在 navbar 中的順序，如果有兩個權重相同的頁面，將會套用[預設排序](https://gohugo.io/templates/lists/#order-content)。
 
 ```yaml
 ---
@@ -67,6 +67,8 @@ menu:
 ## External Library
 
 ### MathJax
+
+使用 `$` 渲染 inline 的結果, `$$` 渲染 block 的結果
 
 ```toml
 [params]

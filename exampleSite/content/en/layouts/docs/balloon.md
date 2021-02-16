@@ -2,6 +2,7 @@
 title: 'Balloon'
 bookcase_cover_src: 'cover/balloon.png'
 bookcase_cover_src_dark: 'cover/balloon_dark.png'
+weight: 10
 ---
 
 Balloon is useful for demonstrating information step-by-step.
@@ -116,7 +117,7 @@ weight: 3
 ---
 ```
 
-> default: sort pages by alphabetical order
+> default: [default order](https://gohugo.io/templates/lists/#order-content)
 
 ## Trick
 

@@ -1,17 +1,16 @@
 ---
 title: 'Changelog'
 toc: false
-tags: '123'
-aliases: 'changelog'
 ---
 
 ## Changelog
 
-### v0.6.0
+### v0.6.0 - 2021/02/16
 
-* Support mathjax
-* Follow the tips from Google Lighthouse
-* Add shortcodes: jsfiddle, codepen
+* Support MathJax
+* Add shortcodes: `jsfiddle`, `codepen`, `color-block`, `icon-group`, `terms-cloud`
+* Add option: `list_posts` in list layout
+* Fix: not register touchend event
 
 ### v0.5.0 - 2021/02/15
 

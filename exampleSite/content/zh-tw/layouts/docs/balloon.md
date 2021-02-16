@@ -2,6 +2,7 @@
 title: 'Balloon'
 bookcase_cover_src: 'cover/balloon.png'
 bookcase_cover_src_dark: 'cover/balloon_dark.png'
+weight: 10
 ---
 
 Balloon 可以將階段的資訊選染成卡片樣式。
@@ -116,7 +117,7 @@ weight: 3
 ---
 ```
 
-> default: 字典序排序
+> default: [預設排序](https://gohugo.io/templates/lists/#order-content)
 
 ## 技巧
 

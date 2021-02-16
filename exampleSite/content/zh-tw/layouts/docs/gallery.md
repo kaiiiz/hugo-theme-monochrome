@@ -2,6 +2,7 @@
 title: 'Gallery'
 bookcase_cover_src: 'cover/picture.png'
 bookcase_cover_src_dark: 'cover/picture_dark.png'
+weight: 30
 ---
 
 Gallery 可以展示圖片輔以一些相關數據與說明。
@@ -136,7 +137,7 @@ weight: 3
 ---
 ```
 
-> default: 字典序排序
+> default: [預設排序](https://gohugo.io/templates/lists/#order-content)
 
 ## 技巧
 

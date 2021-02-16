@@ -2,6 +2,7 @@
 title: 'Bookcase'
 bookcase_cover_src: 'cover/bookcase.png'
 bookcase_cover_src_dark: 'cover/bookcase_dark.png'
+weight: 20
 ---
 
 Bookcase layout is useful for creating another viewpoint of list contents.
@@ -107,4 +108,4 @@ weight: 3
 ---
 ```
 
-> default: sort pages by alphabetical order
+> default: [default order](https://gohugo.io/templates/lists/#order-content)

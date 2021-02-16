@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://kaiiiz.github.io/hugo-theme-graytr">
-    <img alt="Graytr" src="https://kaiiiz.github.io/hugo-theme-graytr/icons/vase.svg" width="60">
+    <img alt="Graytr" src="https://kaiiiz.github.io/hugo-theme-graytr/icons/vase.svg" width="60" height="60">
   </a>
 </p>
 
@@ -12,56 +12,32 @@
   A clean, responsive, and programmer-friendly hugo theme
 </p>
 
-## 💿 Installation
+## Demo
+
+See [kaiiiz.github.io/hugo-theme-graytr](https://kaiiiz.github.io/hugo-theme-graytr)
+
+## Features
+
+1. **Clean UI with small resources.** Graytr has clean UI design and can remove unused resources in production environment. (with only 20+KB CSS)
+2. **Responsive layout.** Adapt to different viewpoint, from desktop to mobile.
+3. **Dark mode.** Low-light UI is available.
+4. **Multiple layouts built-in.** See [Demo](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/).
+5. **Nested navbar and Multilingual mode.** Make good use of hugo's well-designed structure.
+6. **Syntax Highlighting (with copy feature).** Integrate both server-side solution (Chroma, hugo built-in) and client-side solution (Prism.js, for someone who need more languages supported).
+7. **Site Search.** Powered by FlexSearch. 
+8. **SEO-ready.** Easily change your author, description, keywords, open graph, twitter card meatdata.
+9. **MathJax Integration.**
+10. **Useful shortcodes.** See [Document](https://kaiiiz.github.io/hugo-theme-graytr/shortcodes/).
+
+## Installation
 
 See [Setup](https://kaiiiz.github.io/hugo-theme-graytr/setup)
 
-## ⚒ Configuration
+## Configuration
 
 See [Configuration](https://kaiiiz.github.io/hugo-theme-graytr/configuration/)
 
-## 🎁 Features
-
-**Fast by default**
-
-**Multiple layouts:**
-
-* [Balloon](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/balloon/)
-* [Bookcase](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/bookcase/)
-* [Gallery](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/gallery/)
-
-**Responsive Layout**
-
-**Nested Menu**
-
-**Dark mode**
-
-**Syntax Highlighting (with copy feature)**
-
-* Chroma (server-side)
-* Prism.js (client-side)
-
-**Multilingual mode**
-
-**Site Search (powered by flexsearch)**
-
-**SEO**
-
-* Author
-* Description
-* Keywords
-* Open Graph
-* Twitter Card
-
-**MathJax Integration**
-
-**Shortcodes**
-
-* SVG Wrapper
-* CodePen
-* JSFiddle
-
-## ❤️ Acknowledgement
+## Acknowledgement
 
 * [Hugo](https://gohugo.io/)
 * [tailwindcss](https://tailwindcss.com/)

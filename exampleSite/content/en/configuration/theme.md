@@ -52,7 +52,7 @@ menu: navbar
 ---
 ```
 
-Also, weighted value is supported out of the box, you can explicit assign the weight of the navbar entry, hugo will first sort the menu using weight, if there has two entries shared the same weight, the alphabetical order will be applied.
+Also, weighted value is supported out of the box, you can explicit assign the weight of the navbar entry, hugo will first sort the menu using weight, if there has two entries shared the same weight, the [default order](https://gohugo.io/templates/lists/#order-content) will be applied.
 
 ```yaml
 ---
@@ -67,6 +67,8 @@ If you try to put entry that aren't attached to a piece of content, or you want 
 ## External Library
 
 ### MathJax
+
+Use `$` to create inline result, `$$` to create block result.
 
 ```toml
 [params]

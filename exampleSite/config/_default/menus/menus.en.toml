@@ -60,6 +60,12 @@
       url = "/layouts/demo/gallery"
       parent = "demo"
       weight = 3
+    [[navbar]]
+      identifier = "list_demo"
+      name = "List"
+      url = "/layouts/demo/list"
+      parent = "demo"
+      weight = 4
   [[navbar]]
     identifier = "docs"
     name = "Documents"
@@ -84,6 +90,12 @@
       url = "/layouts/docs/gallery"
       parent = "docs"
       weight = 3
+    [[navbar]]
+      identifier = "list_docs"
+      name = "List"
+      url = "/layouts/docs/list"
+      parent = "docs"
+      weight = 4
 [[navbar]]
   identifier = "shortcodes"
   name = "Shortcodes"
@@ -107,4 +119,26 @@
     url = "/shortcodes/jsfiddle/"
     weight = 3
     parent = "shortcodes"
-
+  [[navbar]]
+    identifier = "shortcodes_color_block"
+    name = "Color Block"
+    url = "/shortcodes/color-block/"
+    weight = 4
+    parent = "shortcodes"
+  [[navbar]]
+    identifier = "shortcodes_icon_group"
+    name = "Icon Group"
+    url = "/shortcodes/icon-group/"
+    weight = 5
+    parent = "shortcodes"
+  [[navbar]]
+    identifier = "shortcodes_terms_cloud"
+    name = "Terms Cloud"
+    url = "/shortcodes/terms-cloud/"
+    weight = 6
+    parent = "shortcodes"
+[[navbar]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 6
