@@ -99,7 +99,7 @@ module.exports = {
         margin: marginAndPadding,
         padding: marginAndPadding,
         gap: theme => ({
-            1: theme('spacing.1'),
+            1.5: '0.375rem',
             2: theme('spacing.2'),
             4: theme('spacing.4'),
         }),
