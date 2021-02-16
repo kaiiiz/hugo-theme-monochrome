@@ -61,10 +61,6 @@ module.exports = {
             minHeight: {
                 10: '2.5rem',
             },
-            gridTemplateColumns: {
-                'bookcase-item': 'repeat(auto-fill, 8rem)',
-                'gallery-statistic': 'max-content 1fr',
-            }
         },
         fill: {
             'gray': gray,
@@ -95,10 +91,15 @@ module.exports = {
             },
             overlay: 'rgba(0,0,0,0.75)',
         },
-        gridTemplateColumns: {},
+        gridTemplateColumns: {
+            'svg-group': 'repeat(auto-fill, 1rem)',
+            'bookcase-item': 'repeat(auto-fill, 8rem)',
+            'gallery-statistic': 'max-content 1fr',
+        },
         margin: marginAndPadding,
         padding: marginAndPadding,
         gap: theme => ({
+            1: theme('spacing.1'),
             2: theme('spacing.2'),
             4: theme('spacing.4'),
         }),
@@ -127,7 +128,6 @@ module.exports = {
         verticalAlign: false,
         visibility: false,
         wordBreak: false,
-        gridAutoFlow: false,
         gridAutoColumns: false,
         gridColumn: false,
         gridColumnStart: false,
