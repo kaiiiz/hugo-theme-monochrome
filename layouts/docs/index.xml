@@ -11,4 +11,6 @@ bookcase_list_pages List pages.
 1 2 3 --- bookcase_list_pages: true --- default: true</description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/gallery/</guid><description>Gallery layout is useful for demonstrating pictures and its statistical data.
 This layout can be used on both list layout and single layout.
 Configuration 1 2 3 --- type: &amp;#39;gallery&amp;#39; --- Specify type in front-matter will change the template lookup order.
-gallery_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)</description></item></channel></rss>
+gallery_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)</description></item><item><title>List</title><link>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/layouts/docs/list/</guid><description>List layout is built-in section layout. Graytr add options to adjust its behavior.
+Configuration List posts You can fully customize your index page through the content of _index.md and decide whether render the default list layout by specifying list_posts.
+1 list_posts: false default: true</description></item></channel></rss>

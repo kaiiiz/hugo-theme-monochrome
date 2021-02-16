@@ -24,4 +24,6 @@ Hugo 會正確的處理支援多國語言的情況
 https://kaiiiz.github.io/hugo-theme-graytr/about \________________________________/\____/ base URL gallery_resources 1 2 3 --- gallery_resources: &amp;#39;/about&amp;#39; --- default: 錯誤訊息會被渲染在頁面上
 資源設定 這些設定會存在在 gallery_resources 指定的目錄下的頁面
 title 圖片的標題
-1 2 3 --- title: &amp;#39;Gallery&amp;#39; --- default: 標題不會被渲染</description></item></channel></rss>
+1 2 3 --- title: &amp;#39;Gallery&amp;#39; --- default: 標題不會被渲染</description></item><item><title>List</title><link>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/layouts/docs/list/</guid><description>List layout 是預設產生 section 時會套用的樣式. Graytr 提供一些參數調整它的行為。
+設定 List posts 你可以透過宣告 list_posts 來透過 _index.md 的內容完全客製化列表的樣式。
+1 list_posts: false default: true</description></item></channel></rss>

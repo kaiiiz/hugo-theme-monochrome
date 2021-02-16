@@ -3,7 +3,7 @@ Site title 網站標題
 1 title = &amp;#34;Graytr&amp;#34; Theme 設定主題的名稱（在 /themes 下的目錄名稱）
 1 theme = &amp;#34;hugo-theme-graytr&amp;#34; Base URL Hostname 與 path
 1 baseURL = &amp;#34;https://kaiiiz.github.io/hugo-theme-graytr&amp;#34; favicon 將 favicon.ico 加到網站的 static 目錄.
-External Library Disqus 1 disqusShortname = &amp;#34;xxx&amp;#34; 其他設定參考 Disqus - Internal Templates
+External library Disqus 1 disqusShortname = &amp;#34;xxx&amp;#34; 其他設定參考 Disqus - Internal Templates
 Google Analytics 1 googleAnalytics = &amp;#34;xxx&amp;#34;</description></item><item><title>主題設定</title><link>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/configuration/theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-graytr/zh-tw/configuration/theme/</guid><description>主題設定 這些設定是在網站的 toml 設定檔裡面
 Navbar title 支援 HTML
 1 2 [params] navbarTitle = &amp;#34;Graytr&amp;#34; default: site&amp;rsquo;s title
