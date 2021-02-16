@@ -1,4 +1,3 @@
-{{/*  .Data.Terms.Alphabetical  */}}
 {{ if . }}
     {{ $fontSmall := 1 }}
     {{ $fontBig := 2 }}
@@ -10,7 +9,7 @@
     {{ $termCount = sort $termCount }}
     {{ $min := int (index $termCount 0) }}
 
-    <section>
+    <div>
         {{ range . }}
             {{ $weight := math.Log (div (float .Count) $min) }}
             {{ $fontSize := add $fontSmall (mul (sub $fontBig $fontSmall) $weight) }}
@@ -20,5 +19,5 @@
                 <span style="font-size:{{ sub $fontSmall 0.2 }}rem"> ({{- .Count -}}) </span>
             </a>
         {{ end }}
-    </section>
+    </div>
 {{ end }}
