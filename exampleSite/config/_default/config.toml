@@ -1,4 +1,4 @@
-baseURL = "https://kaiiiz.github.io/hugo-theme-graytr"
+baseURL = "https://example.com"
 languageCode = "en"
 title = "Graytr"
 theme = "hugo-theme-graytr"
