@@ -34,6 +34,10 @@
 
     {{- partial "resources/css.html" . -}}
 
+    {{ if (.Scratch.Get "params").gaCode }}
+        {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
+
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
