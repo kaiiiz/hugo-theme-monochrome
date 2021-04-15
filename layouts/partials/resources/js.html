@@ -59,8 +59,3 @@
         <script src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
     {{ end }}
 {{ end }}
-
-{{/*  Google Analytics  */}}
-{{ if (.Scratch.Get "params").gaCode }}
-    {{ template "_internal/google_analytics_async.html" . }}
-{{ end }}

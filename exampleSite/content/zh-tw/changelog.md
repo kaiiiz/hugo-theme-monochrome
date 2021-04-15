@@ -5,6 +5,16 @@ toc: false
 
 ## Changelog
 
+### v0.6.2 - 2021/04/15
+
+* Fix: google search console authentication failed if ga code not in `<head>`
+* Fix: `clipboard-polyfill/text` dependency resolved issue
+
+### v0.6.1 - 2021/02/17
+
+* Fix: codepen shortcode id
+* Change baseurl to example.com in exampleSite
+
 ### v0.6.0 - 2021/02/16
 
 * Support MathJax
