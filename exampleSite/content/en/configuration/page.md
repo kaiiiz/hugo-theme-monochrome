@@ -4,7 +4,7 @@ weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
-- tag: 'v0.7.0'
+- tag: '[v0.7.0](/hugo-theme-monochrome/changelog/#v070---20210624)'
   description:
   - 'Add `changelogs` property'
   - "Update `disqus` fallback policy for none post pages"

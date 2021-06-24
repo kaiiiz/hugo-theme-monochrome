@@ -65,7 +65,7 @@ bookcase_list_pages: true
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
+        \_____________________________________/\________/
                     base URL              bookcase_cover_src
 ```
 
@@ -87,7 +87,7 @@ bookcase_cover_src: 'thanks.jpg'
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
+        \_____________________________________/\________/
                     base URL              bookcase_cover_src
 ```
 

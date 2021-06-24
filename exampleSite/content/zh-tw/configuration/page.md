@@ -4,7 +4,7 @@ weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
-- tag: 'v0.7.0'
+- tag: '[v0.7.0](/hugo-theme-monochrome/zh-tw/changelog/#v070---20210624)'
   description:
   - "新增 `changelogs` 屬性"
   - "更新對非文章頁面的 `disqus` 屬性的 fallback policy"
