@@ -14,8 +14,8 @@
 </span></code></pre></td><td style=vertical-align:top;padding:0;margin:0;border:0;width:100%><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yaml data-lang=yaml>---
 <span style=color:#f92672>type</span>: <span style=color:#e6db74>&#39;balloon&#39;</span>
 ---
-</code></pre></td></tr></table></div></div><blockquote><p>Specify <code>type</code> in front-matter will change the template lookup order.</p></blockquote><h3 id=balloon_resources>balloon_resources</h3><p>Content resources. URL can be an absolute path (with <code>/</code> prefix, relative to base URL), or relative path (without <code>/</code>, relative to current path)</p><blockquote><p>Hugo will handle multilingual scenario out of the box</p></blockquote><p>Take this page for example:</p><pre><code>https://kaiiiz.github.io/hugo-theme-monochrome/about
-        \________________________________/\____/
+</code></pre></td></tr></table></div></div><blockquote><p>Specify <code>type</code> in front-matter will change the template lookup order.</p></blockquote><h3 id=balloon_resources>balloon_resources</h3><p>Content resources. URL can be an absolute path (with <code>/</code> prefix, relative to base URL), or relative path (without <code>/</code>, relative to current path)</p><blockquote><p>Hugo will handle multilingual scenario out of the box</p></blockquote><p>For example:</p><pre><code>https://kaiiiz.github.io/hugo-theme-monochrome/about
+        \____________________________________/\____/
                     base URL           balloon_resources
 </code></pre><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
@@ -24,8 +24,8 @@
 <span style=color:#f92672>balloon_resources</span>: <span style=color:#e6db74>&#34;/about&#34;</span>
 ---
 </code></pre></td></tr></table></div></div><blockquote><p>default: error will occur in page</p></blockquote><h3 id=balloon_img_src>balloon_img_src</h3><p>Balloon head image URL. URL must be relative to base URL. (without <code>/</code> prefix)</p><p>For example:</p><pre><code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
-                    base URL              balloon_img_src
+        \_____________________________________/\________/
+                    base URL                 balloon_img_src
 </code></pre><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
@@ -33,7 +33,7 @@
 <span style=color:#f92672>balloon_img_src</span>: <span style=color:#e6db74>&#39;thanks.jpg&#39;</span>
 ---
 </code></pre></td></tr></table></div></div><blockquote><p>default: fallback to balloon_img_src_dark, if failed, image become dot</p></blockquote><h3 id=balloon_img_src_dark>balloon_img_src_dark</h3><p>Balloon head image URL for dark mode. URL must be relative to base URL. (without <code>/</code> prefix)</p><p>For example:</p><pre><code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
+        \_____________________________________/\________/
                     base URL              balloon_img_src
 </code></pre><div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
 </span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
