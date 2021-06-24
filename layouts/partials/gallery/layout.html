@@ -49,7 +49,7 @@
                     {{ end }}
 
                     {{ if .Params.gallery_statistic }}
-                        <div class="grid gap-2 grid-cols-gallery-statistic">
+                        <div class="grid gap-2 grid-cols-statistic">
                             {{ range $stat := .Params.gallery_statistic }}
                                 <div>{{ $stat.key }}</div>
                                 <div>{{ $stat.value }}</div>

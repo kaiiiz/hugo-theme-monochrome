@@ -94,7 +94,7 @@ module.exports = {
         gridTemplateColumns: {
             'svg-group': 'repeat(auto-fill, 1rem)',
             'bookcase-item': 'repeat(auto-fill, 8rem)',
-            'gallery-statistic': 'max-content 1fr',
+            'statistic': 'max-content 1fr',
         },
         margin: marginAndPadding,
         padding: marginAndPadding,
