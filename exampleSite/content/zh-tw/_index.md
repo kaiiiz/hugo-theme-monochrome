@@ -6,6 +6,6 @@ balloon_circle: false
 balloon_resources: "/about"
 ---
 
-{{< svg-wrapper name="github" link="https://github.com/kaiiiz/hugo-theme-graytr" />}}
+{{< svg-wrapper name="github" link="https://github.com/kaiiiz/hugo-theme-monochrome" />}}
 
-This is the demo of hugo-theme-graytr.
+This is the demo of hugo-theme-monochrome.

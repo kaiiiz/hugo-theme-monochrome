@@ -1,15 +1,15 @@
 {
  "comments": {
   "dependencies": {
-   "@fullhuman/postcss-purgecss": "hugo-theme-graytr",
-   "autoprefixer": "hugo-theme-graytr",
-   "clipboard-polyfill": "hugo-theme-graytr",
-   "flexsearch": "hugo-theme-graytr",
-   "postcss": "hugo-theme-graytr",
-   "postcss-cli": "hugo-theme-graytr",
-   "postcss-import": "hugo-theme-graytr",
-   "tailwindcss": "hugo-theme-graytr",
-   "zooming": "hugo-theme-graytr"
+   "@fullhuman/postcss-purgecss": "hugo-theme-monochrome",
+   "autoprefixer": "hugo-theme-monochrome",
+   "clipboard-polyfill": "hugo-theme-monochrome",
+   "flexsearch": "hugo-theme-monochrome",
+   "postcss": "hugo-theme-monochrome",
+   "postcss-cli": "hugo-theme-monochrome",
+   "postcss-import": "hugo-theme-monochrome",
+   "tailwindcss": "hugo-theme-monochrome",
+   "zooming": "hugo-theme-monochrome"
   },
   "devDependencies": {}
  },
@@ -17,7 +17,7 @@
   "@fullhuman/postcss-purgecss": "^4.0.0",
   "autoprefixer": "^10.2.4",
   "clipboard-polyfill": "^3.0.2",
-  "flexsearch": "github:nextapps-de/flexsearch",
+  "flexsearch": "^0.6.32",
   "postcss": "^8.2.5",
   "postcss-cli": "^8.3.1",
   "postcss-import": "^14.0.0",

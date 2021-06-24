@@ -15,10 +15,10 @@ HTML is available.
 
 ```toml
 [params]
-navbarTitle = "Graytr"
+navbarTitle = "Monochrome"
 ```
 
-> default: site's [`title`](/hugo-theme-graytr/configuration/site#site-title)
+> default: site's [`title`](/hugo-theme-monochrome/configuration/site#site-title)
 
 ## Footer
 
@@ -42,7 +42,7 @@ enableTOC = false
 
 ## Navbar menu
 
-Graytr uses built-in menu system supported by hugo itself. (Checkout [document](https://gohugo.io/content-management/menus) for more deatil.) By default, the menu called `navbar` is used to decide which item need to be rendered on the navbar.
+Monochrome uses built-in menu system supported by hugo itself. (Checkout [document](https://gohugo.io/content-management/menus) for more deatil.) By default, the menu called `navbar` is used to decide which item need to be rendered on the navbar.
 
 So you can simply add the following code to your page front-matter, and the menu info will be handled by hugo out of the box. ([simple method mentioned in document](https://gohugo.io/content-management/menus#simple))
 

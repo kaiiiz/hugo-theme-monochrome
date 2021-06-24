@@ -12,4 +12,4 @@ weight: 10
 
 Balloon 可以將階段的資訊選染成卡片樣式。
 
-[Go to single page demo](/hugo-theme-graytr/layouts/demo/balloon/single)
+[Go to single page demo](/hugo-theme-monochrome/layouts/demo/balloon/single)

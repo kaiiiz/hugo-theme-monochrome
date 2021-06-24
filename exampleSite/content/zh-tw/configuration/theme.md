@@ -15,10 +15,10 @@ bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 
 ```toml
 [params]
-navbarTitle = "Graytr"
+navbarTitle = "Monochrome"
 ```
 
-> default: site's [`title`](/hugo-theme-graytr/zh-tw/configuration/site#site-title)
+> default: site's [`title`](/hugo-theme-monochrome/zh-tw/configuration/site#site-title)
 
 ## Footer
 
@@ -42,7 +42,7 @@ enableTOC = false
 
 ## Navbar menu
 
-Graytr 使用 hugo 內建的 menu 系統，參考 [官方文件](https://gohugo.io/content-management/menus)。預設 `navbar` 這個 menu 會被拿來渲染到頂部。
+Monochrome 使用 hugo 內建的 menu 系統，參考 [官方文件](https://gohugo.io/content-management/menus)。預設 `navbar` 這個 menu 會被拿來渲染到頂部。
 
 最簡單的 menu 使用模式是透過將以下設定加到某個頁面中的 front-matter，hugo 即會將該頁面加入 navbar 這個 menu 中。([simple method mentioned in document](https://gohugo.io/content-management/menus#simple))
 
@@ -62,7 +62,7 @@ menu:
 ---
 ```
 
-更進階的 menu 應用請參考 [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu)，你也可以參考[這個網站的目錄設定](https://github.com/kaiiiz/hugo-theme-graytr/tree/main/exampleSite/config/_default/menus)。
+更進階的 menu 應用請參考 [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu)，你也可以參考[這個網站的目錄設定](https://github.com/kaiiiz/hugo-theme-monochrome/tree/main/exampleSite/config/_default/menus)。
 
 ## External Library
 
@@ -99,7 +99,7 @@ enableSiteSearch = true
 
 ### Chroma (server-side)
 
-參考 [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting) 來做設定。Graytr 還提供複製程式碼的功能。
+參考 [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting) 來做設定。Monochrome 還提供複製程式碼的功能。
 
 ```toml
 [params]

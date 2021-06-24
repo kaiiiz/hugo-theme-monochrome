@@ -28,7 +28,7 @@ Content resources. URL can be an absolute path (with `/` prefix, relative to bas
 Take this page for example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/about
+https://kaiiiz.github.io/hugo-theme-monochrome/about
         \________________________________/\____/
                     base URL           balloon_resources
 ```
@@ -48,7 +48,7 @@ Balloon head image URL. URL must be relative to base URL. (without `/` prefix)
 For example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
         \_________________________________/\________/
                     base URL              balloon_img_src
 ```
@@ -68,7 +68,7 @@ Balloon head image URL for dark mode. URL must be relative to base URL. (without
 For example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
         \_________________________________/\________/
                     base URL              balloon_img_src
 ```

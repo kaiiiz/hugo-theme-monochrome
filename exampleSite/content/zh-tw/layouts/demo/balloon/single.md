@@ -9,4 +9,4 @@ balloon_resources: "/about"
 
 Balloon 可以支援單頁的渲染
 
-[Go to list demo](/hugo-theme-graytr/layouts/demo/balloon)
+[Go to list demo](/hugo-theme-monochrome/layouts/demo/balloon)

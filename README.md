@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="https://kaiiiz.github.io/hugo-theme-graytr">
-    <img alt="Graytr" src="https://kaiiiz.github.io/hugo-theme-graytr/icons/vase.svg" width="60" height="60">
+  <a href="https://kaiiiz.github.io/hugo-theme-monochrome">
+    <img alt="Monochrome" src="https://kaiiiz.github.io/hugo-theme-monochrome/icons/vase.svg" width="60" height="60">
   </a>
 </p>
 
 <h2 align="center">
-  Graytr
+  Monochrome
 </h2>
 
 <p align="center">
@@ -14,17 +14,17 @@
 
 ## Demo
 
-See [kaiiiz.github.io/hugo-theme-graytr](https://kaiiiz.github.io/hugo-theme-graytr)
+See [kaiiiz.github.io/hugo-theme-monochrome](https://kaiiiz.github.io/hugo-theme-monochrome)
 
 ## Features
 
-1. **Clean UI with small resources.** Graytr has clean UI design and can remove unused resources in production environment. (with about 20+KB CSS)
+1. **Clean UI with small resources.** Monochrome has clean UI design and can remove unused resources in production environment. (with about 20+KB CSS)
 
 2. **Responsive layout.** Adapt to different viewpoint, from desktop to mobile.
 
 3. **Dark mode.** Low-light UI.
 
-4. **Multiple layouts built-in.** See [Demo](https://kaiiiz.github.io/hugo-theme-graytr/layouts/demo/).
+4. **Multiple layouts built-in.** See [Demo](https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/).
 
 5. **Nested navbar and Multilingual mode.** Make good use of hugo's well-designed structure.
 
@@ -36,15 +36,15 @@ See [kaiiiz.github.io/hugo-theme-graytr](https://kaiiiz.github.io/hugo-theme-gra
 
 9. **Support mathematical notation.** Powered by MathJax.
 
-10. **Useful shortcodes.** See [Document](https://kaiiiz.github.io/hugo-theme-graytr/shortcodes/).
+10. **Useful shortcodes.** See [Document](https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/).
 
 ## Installation
 
-See [Setup](https://kaiiiz.github.io/hugo-theme-graytr/setup)
+See [Setup](https://kaiiiz.github.io/hugo-theme-monochrome/setup)
 
 ## Configuration
 
-See [Configuration](https://kaiiiz.github.io/hugo-theme-graytr/configuration/)
+See [Configuration](https://kaiiiz.github.io/hugo-theme-monochrome/configuration/)
 
 ## Acknowledgement
 

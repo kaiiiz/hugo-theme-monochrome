@@ -14,7 +14,7 @@ These settings are important for building a website using hugo. See [All Configu
 Site title. This value will become the content of `<title>` tag in html.
 
 ```toml
-title = "Graytr"
+title = "Monochrome"
 ```
 
 ## Theme
@@ -22,7 +22,7 @@ title = "Graytr"
 Set this value to the corresponding folder name of your theme. (located by default in `/themes/THEMENAME/`)
 
 ```toml
-theme = "hugo-theme-graytr"
+theme = "hugo-theme-monochrome"
 ```
 
 ## Base URL
@@ -30,7 +30,7 @@ theme = "hugo-theme-graytr"
 Hostname (and path) to the root.
 
 ```toml
-baseURL = "https://kaiiiz.github.io/hugo-theme-graytr"
+baseURL = "https://kaiiiz.github.io/hugo-theme-monochrome"
 ```
 
 ## favicon

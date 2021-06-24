@@ -1,8 +1,8 @@
 {
-  "name": "hugo-theme-graytr",
+  "name": "hugo-theme-monochrome",
   "version": "0.1.0",
-  "description": "Garytr is a clean, responsive, and programmer-friendly hugo theme",
-  "repository": "https://github.com/kaiiiz/hugo-theme-graytr",
+  "description": "Monochrome is a clean, responsive, and programmer-friendly hugo theme",
+  "repository": "https://github.com/kaiiiz/hugo-theme-monochrome",
   "author": "kaiiiz <ukaizheng@gmail.com>",
   "license": "MIT",
   "dependencies": {
