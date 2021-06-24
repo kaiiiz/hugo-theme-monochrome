@@ -3,6 +3,11 @@ title: 'Page Settings'
 weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
+changelogs:
+- tag: 'v0.7.0'
+  description:
+  - 'Add [`changelogs`](#changelogs) property'
+  - "Update [`disqus`](#disqus) fallback policy for none post pages"
 ---
 
 # Page Settings
@@ -47,6 +52,26 @@ toc: false
 
 > default: theme's [`enableTOC`](/hugo-theme-monochrome/configuration/theme/#table-of-contents)
 
+## Changelogs
+
+```yaml
+---
+changelogs:
+- tag: '20210623'
+  description:
+  - 'changelog example 1'
+  - 'changelog example 2'
+- tag: '20210624'
+  description:
+  - 'changelog example 3'
+  - 'changelog example 4'
+---
+```
+
+date and description fields support markdown syntax.
+
+> default: None
+
 ## External library
 
 ### MathJax
@@ -77,7 +102,9 @@ disqus: false
 ---
 ```
 
-> default: site's [`disqusShortname`](/hugo-theme-monochrome/configuration/site/#disqus)
+> default for post page: site's [`disqusShortname`](/hugo-theme-monochrome/zh-tw/configuration/site/#disqus)
+> 
+> default for other pages: false
 
 ### Google Analytics
 

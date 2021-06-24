@@ -5,6 +5,7 @@ balloon_img_src_dark: "icons/vase_dark.svg"
 balloon_circle: false
 balloon_resources: "/about"
 description: "Demo site of hugo-theme-monochrome"
+zooming_js: false
 keywords:
 - hugo
 - hugo theme

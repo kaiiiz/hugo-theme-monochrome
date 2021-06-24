@@ -3,6 +3,11 @@ title: '頁面設定'
 weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
+changelogs:
+- tag: 'v0.7.0'
+  description:
+  - "新增 [`changelogs`](#changelogs) 屬性"
+  - "更新對非文章頁面的 [`disqus`](#disqus) 屬性的 fallback policy"
 ---
 
 # 頁面設定
@@ -47,6 +52,26 @@ toc: false
 
 > default: theme's [`enableTOC`](/hugo-theme-monochrome/zh-tw/configuration/theme/#table-of-contents)
 
+## Changelogs
+
+```yaml
+---
+changelogs:
+- tag: '20210623'
+  description:
+  - 'changelog example 1'
+  - 'changelog example 2'
+- tag: '20210624'
+  description:
+  - 'changelog example 3'
+  - 'changelog example 4'
+---
+```
+
+date and description 欄位支援 markdown
+
+> default: None
+
 ## External library
 
 ### MathJax
@@ -77,7 +102,9 @@ disqus: false
 ---
 ```
 
-> default: site's [`disqusShortname`](/hugo-theme-monochrome/zh-tw/configuration/site/#disqus)
+> default for post page: site's [`disqusShortname`](/hugo-theme-monochrome/zh-tw/configuration/site/#disqus)
+> 
+> default for other pages: false
 
 ### Google Analytics
 
