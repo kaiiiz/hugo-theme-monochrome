@@ -2,18 +2,18 @@
     <div class="flex justify-between items-center">
         <div class="flex items-center">
             <input id="navbar_btn" class="hidden" type="checkbox">
-            <label for="navbar_btn" class="menu-btn block xl:hidden">
+            <label for="navbar_btn" class="menu-btn mr-4 items-center flex xl:hidden">
                 <span class="navicon"></span>
             </label>
-            <a href="{{ .Site.Home.RelPermalink }}" class="font-bold text-2xl mr-auto">
+            <a href="{{ .Site.Home.RelPermalink }}" class="font-bold text-lg xl:text-2xl mr-auto">
                 {{- with (.Scratch.Get "params").navbarTitle }}
-                    {{ . | safeHTML }}
+                    {{- . | safeHTML -}}
                 {{- end -}}
             </a>
         </div>
 
         <div class="flex items-center">
-            <div class="cursor-pointer">
+            <div class="cursor-pointer ml-2">
                 <svg id="dark_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24">
                     {{- partial "svg/sun.html" -}}
                 </svg>
@@ -39,9 +39,8 @@
             {{ end }}
 
             {{ if (.Scratch.Get "params").enableSiteSearch }}
-                <span class="mx-2.5 font-extralight">|</span>
-
-                <div class="relative flex items-center">
+                <div class="ml-2 sep hidden sm:block"></div>
+                <div class="ml-2 relative flex items-center">
                     <svg id="search_btn" class="cursor-pointer" width="18px" height="18px" viewBox="2 0 20 20">
                         {{- partial "svg/search.html" -}}
                     </svg>
