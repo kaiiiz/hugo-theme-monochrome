@@ -15,4 +15,8 @@
     {{ end }}
 {{ end }}
 
+{{ if (.Params.disqus | default false) }}
+    {{- partial "disqus.html" . -}}
+{{ end }}
+
 {{ end }}
