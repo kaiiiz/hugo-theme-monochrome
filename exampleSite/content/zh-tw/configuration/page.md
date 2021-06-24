@@ -6,8 +6,8 @@ bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
 - tag: 'v0.7.0'
   description:
-  - "新增 [`changelogs`](#changelogs) 屬性"
-  - "更新對非文章頁面的 [`disqus`](#disqus) 屬性的 fallback policy"
+  - "新增 `changelogs` 屬性"
+  - "更新對非文章頁面的 `disqus` 屬性的 fallback policy"
 ---
 
 # 頁面設定
@@ -68,7 +68,7 @@ changelogs:
 ---
 ```
 
-date and description 欄位支援 markdown
+tag 與 description 欄位支援 markdown
 
 > default: None
 

@@ -6,8 +6,8 @@ bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
 - tag: 'v0.7.0'
   description:
-  - 'Add [`changelogs`](#changelogs) property'
-  - "Update [`disqus`](#disqus) fallback policy for none post pages"
+  - 'Add `changelogs` property'
+  - "Update `disqus` fallback policy for none post pages"
 ---
 
 # Page Settings
@@ -68,7 +68,7 @@ changelogs:
 ---
 ```
 
-date and description fields support markdown syntax.
+tag and description fields support markdown syntax.
 
 > default: None
 
