@@ -3,7 +3,7 @@ name: github pages
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   deploy:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: main
+          ref: dev
           token: ${{ secrets.ACCESS_TOKEN }}
           ssh-key: ${{ secrets.SSH_PRIVATE }}
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -40,7 +40,7 @@ jobs:
         run: rm -rf ./exampleSite/public/*
 
       - name: Build
-        run: hugo -s exampleSite --themesDir=../.. --minify --environment production -b https://kaiiiz.github.io/hugo-theme-graytr
+        run: hugo -s exampleSite --themesDir=../.. --minify --environment production -b https://kaiiiz.github.io/hugo-theme-monochrome
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

@@ -64,7 +64,7 @@ bookcase_list_pages: true
 舉例來說:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
         \_________________________________/\________/
                     base URL              bookcase_cover_src
 ```
@@ -86,7 +86,7 @@ bookcase_cover_src: 'thanks.jpg'
 舉例來說:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
         \_________________________________/\________/
                     base URL              bookcase_cover_src
 ```

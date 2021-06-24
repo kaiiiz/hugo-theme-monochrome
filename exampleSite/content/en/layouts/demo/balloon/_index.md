@@ -12,4 +12,4 @@ weight: 10
 
 Balloon layout is useful for demonstrating information step-by-step.
 
-[Go to single page demo](/hugo-theme-graytr/layouts/demo/balloon/single)
+[Go to single page demo](/hugo-theme-monochrome/layouts/demo/balloon/single)

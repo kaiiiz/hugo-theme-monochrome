@@ -28,7 +28,7 @@ type: 'balloon'
 舉例來說:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/about
+https://kaiiiz.github.io/hugo-theme-monochrome/about
         \________________________________/\____/
                     base URL           balloon_resources
 ```
@@ -48,7 +48,7 @@ balloon_resources: "/about"
 舉例來說:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
         \_________________________________/\________/
                     base URL              balloon_img_src
 ```
@@ -68,7 +68,7 @@ balloon_img_src: 'thanks.jpg'
 舉例來說:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
         \_________________________________/\________/
                     base URL              balloon_img_src
 ```

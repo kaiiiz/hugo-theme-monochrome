@@ -3,6 +3,11 @@ title: 'Page Settings'
 weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
+changelogs:
+- tag: 'v0.7.0'
+  description:
+  - 'Add `changelogs` property'
+  - "Update `disqus` fallback policy for none post pages"
 ---
 
 # Page Settings
@@ -11,7 +16,7 @@ These values are inside your page's front-matter.
 
 ## Layout
 
-Graytr support different types of layout. You can change the layout of section or regular page according to your needs. Checkout [Layout](/hugo-theme-graytr/layouts) for more details.
+Monochrome support different types of layout. You can change the layout of section or regular page according to your needs. Checkout [Layout](/hugo-theme-monochrome/layouts) for more details.
 
 ## Navbar title
 
@@ -19,11 +24,11 @@ HTML is available.
 
 ```yaml
 ---
-navbar_title: "Graytr"
+navbar_title: "Monochrome"
 ---
 ```
 
-> default: theme's [`navbarTitle`](/hugo-theme-graytr/configuration/theme#navbar-title)
+> default: theme's [`navbarTitle`](/hugo-theme-monochrome/configuration/theme#navbar-title)
 
 ## Footer
 
@@ -35,7 +40,7 @@ footer: "Copyright © 2021 by kaiiiz"
 ---
 ```
 
-> default: theme's [`footer`](/hugo-theme-graytr/configuration/theme/#footer)
+> default: theme's [`footer`](/hugo-theme-monochrome/configuration/theme/#footer)
 
 ## Table of Contents
 
@@ -45,7 +50,27 @@ toc: false
 ---
 ```
 
-> default: theme's [`enableTOC`](/hugo-theme-graytr/configuration/theme/#table-of-contents)
+> default: theme's [`enableTOC`](/hugo-theme-monochrome/configuration/theme/#table-of-contents)
+
+## Changelogs
+
+```yaml
+---
+changelogs:
+- tag: '20210623'
+  description:
+  - 'changelog example 1'
+  - 'changelog example 2'
+- tag: '20210624'
+  description:
+  - 'changelog example 3'
+  - 'changelog example 4'
+---
+```
+
+tag and description fields support markdown syntax.
+
+> default: None
 
 ## External library
 
@@ -57,7 +82,7 @@ math: false
 ---
 ```
 
-> default: theme's [`enableMathJax`](/hugo-theme-graytr/configuration/theme/#mathjax)
+> default: theme's [`enableMathJax`](/hugo-theme-monochrome/configuration/theme/#mathjax)
 
 ### Zooming.js
 
@@ -67,7 +92,7 @@ zooming_js: false
 ---
 ```
 
-> default: theme's [`enableZoomingJS`](/hugo-theme-graytr/configuration/theme/#zoomingjs)
+> default: theme's [`enableZoomingJS`](/hugo-theme-monochrome/configuration/theme/#zoomingjs)
 
 ### Disqus
 
@@ -77,7 +102,9 @@ disqus: false
 ---
 ```
 
-> default: site's [`disqusShortname`](/hugo-theme-graytr/configuration/site/#disqus)
+> default for post page: site's [`disqusShortname`](/hugo-theme-monochrome/zh-tw/configuration/site/#disqus)
+> 
+> default for other pages: false
 
 ### Google Analytics
 
@@ -87,7 +114,7 @@ ga: false
 ---
 ```
 
-> default: site's [`googleAnalytics`](/hugo-theme-graytr/configuration/site/#google-analytics)
+> default: site's [`googleAnalytics`](/hugo-theme-monochrome/configuration/site/#google-analytics)
 
 ## Syntax Highlighting
 
@@ -99,7 +126,7 @@ code_copy: false
 ---
 ```
 
-> default: theme's [`enableCodeCopy`](/hugo-theme-graytr/configuration/theme/#using-chroma-hugo-built-in)
+> default: theme's [`enableCodeCopy`](/hugo-theme-monochrome/configuration/theme/#using-chroma-hugo-built-in)
 
 ### Prism.js
 
@@ -109,7 +136,7 @@ prism_lineno: false
 ---
 ```
 
-> default: theme's [`enablePrismJSLineNo`](/hugo-theme-graytr/configuration/theme/#using-prismjs)
+> default: theme's [`enablePrismJSLineNo`](/hugo-theme-monochrome/configuration/theme/#using-prismjs)
 
 ## SEO
 
@@ -121,13 +148,13 @@ author: "kaiiiz"
 ---
 ```
 
-> default: theme's [`author`](/hugo-theme-graytr/configuration/theme/#author)
+> default: theme's [`author`](/hugo-theme-monochrome/configuration/theme/#author)
 
 ### Description
 
 ```yaml
 ---
-description: "Configuration of hugo-theme-graytr"
+description: "Configuration of hugo-theme-monochrome"
 ---
 ```
 
@@ -142,7 +169,7 @@ In page front-matter
 keywords:
 - hugo
 - hugo theme
-- hugo theme graytr
+- hugo theme monochrome
 ---
 ```
 
@@ -159,7 +186,7 @@ open_graph: false
 ---
 ```
 
-> default: theme's [`enableOpenGraph`](/hugo-theme-graytr/configuration/theme/#open-graph)
+> default: theme's [`enableOpenGraph`](/hugo-theme-monochrome/configuration/theme/#open-graph)
 
 ### Twitter Cards
 
@@ -171,4 +198,4 @@ twitter_cards: false
 ---
 ```
 
-> default: theme's [`enableTwitterCards`](/hugo-theme-graytr/configuration/theme/#twitter-cards)
+> default: theme's [`enableTwitterCards`](/hugo-theme-monochrome/configuration/theme/#twitter-cards)

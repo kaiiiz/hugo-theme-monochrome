@@ -14,7 +14,7 @@ bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 網站標題
 
 ```toml
-title = "Graytr"
+title = "Monochrome"
 ```
 
 ## Theme
@@ -22,7 +22,7 @@ title = "Graytr"
 設定主題的名稱（在 `/themes` 下的目錄名稱）
 
 ```toml
-theme = "hugo-theme-graytr"
+theme = "hugo-theme-monochrome"
 ```
 
 ## Base URL
@@ -30,7 +30,7 @@ theme = "hugo-theme-graytr"
 Hostname 與 path
 
 ```toml
-baseURL = "https://kaiiiz.github.io/hugo-theme-graytr"
+baseURL = "https://kaiiiz.github.io/hugo-theme-monochrome"
 ```
 
 ## favicon

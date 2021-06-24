@@ -10,7 +10,6 @@
 {{ .Scratch.SetInMap "params" "enableZoomingJS" (.Params.zooming_js | default .Site.Params.enableZoomingJS | default true) }}
 {{ .Scratch.SetInMap "params" "enableCodeCopy" (.Params.code_copy | default .Site.Params.enableCodeCopy | default true) }}
 {{ .Scratch.SetInMap "params" "gaCode" (.Params.ga | default .Site.GoogleAnalytics) }}
-{{ .Scratch.SetInMap "params" "disqusShortName" (.Params.disqus | default .Site.DisqusShortname) }}
 {{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
 {{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enableMathJax | default false) }}
 
@@ -21,7 +20,33 @@
         <main class="w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6">
             {{- partial "header.html" . -}}
             <div id="content" class="my-8">
+                {{ if .Params.changelogs }}
+                <article class="toc-wrapper my-8 p-4 border-2 rounded">
+                    <div class="font-bold mb-2">{{ i18n "changlogs" }}</div>
+                    <div class="grid gap-2 grid-cols-statistic leading-8">
+                        {{ range $log := .Params.changelogs }}
+                            <div>{{ $log.tag | markdownify }}</div>
+                            <div>
+                                {{ range $log.description }}
+                                    <div>{{ . | markdownify }}</div>
+                                {{ end }}
+                            </div>
+                        {{ end }}
+                    </div>
+                </article>
+                {{ end }}
+
                 {{- block "content" . }}{{- end }}
+
+                {{ if eq .Kind "page" }}
+                    {{ if (.Params.disqus | default .Site.DisqusShortname) }}
+                        {{- partial "disqus.html" . -}}
+                    {{ end }}
+                {{ else }}
+                    {{ if (.Params.disqus | default false) }}
+                        {{- partial "disqus.html" . -}}
+                    {{ end }}
+                {{ end }}
             </div>
             {{- partial "footer.html" . -}}
         </main>

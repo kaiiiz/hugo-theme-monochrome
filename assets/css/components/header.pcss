@@ -1,6 +1,11 @@
 header {
   .menu-btn {
-    @apply h-full mr-4;
+    @apply h-4 w-4 cursor-pointer;
+  }
+
+  .sep {
+    @apply h-3.5 border-solid border-800;
+    border-left-width: 1.5px;
   }
 
   .navicon {
@@ -16,11 +21,11 @@ header {
     }
 
     &::before {
-      top: 7px;
+      top: 6px;
     }
 
     &::after {
-      top: -7px;
+      top: -6px;
     }
   }
 

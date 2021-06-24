@@ -28,7 +28,7 @@ Content resources. URL can be an absolute path (with `/` prefix, relative to bas
 For example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/about
+https://kaiiiz.github.io/hugo-theme-monochrome/about
         \________________________________/\____/
                     base URL           gallery_resources
 ```
@@ -77,7 +77,7 @@ Image URL. URL must be relative to base URL. (without `/` prefix)
 For example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
         \_________________________________/\________/
                     base URL              gallery_img_src
 ```

@@ -64,7 +64,7 @@ The cover image URL. URL must be relative to base URL. (without `/` prefix)
 For example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
         \_________________________________/\________/
                     base URL              bookcase_cover_src
 ```
@@ -86,7 +86,7 @@ The cover image URL for dark mode. URL must be relative to base URL. (without `/
 For example:
 
 ```
-https://kaiiiz.github.io/hugo-theme-graytr/thanks.jpg
+https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
         \_________________________________/\________/
                     base URL              bookcase_cover_src
 ```

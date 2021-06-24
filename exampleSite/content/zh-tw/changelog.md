@@ -5,6 +5,15 @@ toc: false
 
 ## Changelog
 
+### v0.7.0 - 2021/06/24
+
+* Bump dependencies version
+* Add: `changelogs` property
+* Add: support disqus for index page (turn off by default)
+* Change: theme name from 'Graytr' to 'Monochrome'
+* Change: improve navbar responsiveness
+* Fix: widen the control range of navbar menu icon
+
 ### v0.6.2 - 2021/04/15
 
 * Fix: google search console authentication failed if ga code not in `<head>`

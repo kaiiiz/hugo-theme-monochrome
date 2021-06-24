@@ -2,7 +2,7 @@
 title: 'Setup'
 ---
 
-This document shows a brief guide to setup hugo-theme-graytr in your hugo project.
+This document shows a brief guide to setup hugo-theme-monochrome in your hugo project.
 
 ## Quick Start
 
@@ -16,7 +16,7 @@ Take Linux for example:
 snap install hugo --channel=extended
 ```
 
-> The minimum hugo version that hugo-theme-graytr required is `0.78.0`
+> The minimum hugo version that hugo-theme-monochrome required is `0.78.0`
 
 ### Create a New Site
 
@@ -29,10 +29,10 @@ hugo new site <project name>
 ```bash
 cd <project name>
 git init
-git submodule add https://github.com/kaiiiz/hugo-theme-graytr.git themes/hugo-theme-graytr
+git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/hugo-theme-monochrome
 ```
 
-Then add `theme = "hugo-theme-graytr"` to your `config.toml`
+Then add `theme = "hugo-theme-monochrome"` to your `config.toml`
 
 ### Setup Dependencies
 
@@ -52,7 +52,7 @@ npm install
 
 ### Setup PostCSS
 
-hugo-theme-graytr is powered by [tailwindcss](https://tailwindcss.com/). For better quality of CSS purging in production, you should add the following config to your `config.toml`, or the default settings generated from demo site will be applied.
+hugo-theme-monochrome is powered by [tailwindcss](https://tailwindcss.com/). For better quality of CSS purging in production, you should add the following config to your `config.toml`, or the default settings generated from demo site will be applied.
 
 See [CSS purging with PostCSS](https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss) for more details.
 
@@ -63,7 +63,7 @@ See [CSS purging with PostCSS](https://gohugo.io/hugo-pipes/postprocess/#css-pur
 
 ### Customize the Theme
 
-See [Configuration](/hugo-theme-graytr/configuration/).
+See [Configuration](/hugo-theme-monochrome/configuration/).
 
 ### Start the Hugo server
 
@@ -89,13 +89,13 @@ hugo --environment production --minify
 
 ### Deployment
 
-Push `/public` folder to your server. This site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-graytr/blob/main/.github/workflows/gh-pages.yml).
+Push `/public` folder to your server. This site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-monochrome/blob/main/.github/workflows/gh-pages.yml).
 
 ## Run exampleSite
 
 ```bash
-git clone https://github.com/kaiiiz/hugo-theme-graytr
-cd hugo-theme-graytr/exampleSite
+git clone https://github.com/kaiiiz/hugo-theme-monochrome
+cd hugo-theme-monochrome/exampleSite
 hugo --themesDir=../.. mod npm pack
 npm install
 hugo --themesDir=../.. server

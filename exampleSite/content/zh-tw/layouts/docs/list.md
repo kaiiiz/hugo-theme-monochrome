@@ -5,7 +5,7 @@ bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 weight: 40
 ---
 
-List layout 是預設產生 section 時會套用的樣式. Graytr 提供一些參數調整它的行為。
+List layout 是預設產生 section 時會套用的樣式. Monochrome 提供一些參數調整它的行為。
 
 ## 設定
 
