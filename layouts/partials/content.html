@@ -1,15 +1,4 @@
 {{ $enableLineNo := and (.Scratch.Get "params").usePrismJS (.Scratch.Get "params").enablePrismJSLineNo }}
 <article {{ if $enableLineNo }}class="line-numbers"{{ end }}>
-    {{ if .Params.changelogs }}
-    <div class="toc-wrapper my-8 p-4 border-2 rounded leading-6">
-        <div class="font-bold mb-2">{{ i18n "changlogs" }}</div>
-        <div class="grid gap-2 grid-cols-statistic">
-            {{ range $log := .Params.changelogs }}
-                <div>{{ $log.date | markdownify }}</div>
-                <div>{{ $log.description | markdownify }}</div>
-            {{ end }}
-        </div>
-    </div>
-    {{ end }}
     {{ .Content | safeHTML }}
 </article>
