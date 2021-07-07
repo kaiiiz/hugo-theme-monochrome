@@ -36,7 +36,7 @@ git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/hug
 
 ### 安裝依賴
 
-準備專案的 package.json ([0.80.0](https://gohugo.io/news/0.80.0-relnotes/) 的新功能)
+準備專案的 package.json
 
 ```bash
 hugo mod npm pack
