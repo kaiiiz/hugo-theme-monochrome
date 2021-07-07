@@ -62,4 +62,4 @@ terms: terms 的名字 範例 1 {{&amp;lt; terms-cloud terms=&amp;#34;tags&amp;#
 以 Linux 為例:
 1 snap install hugo --channel=extended hugo 的版本必須為 0.80.0 以上
 建立專案 1 hugo new site &amp;lt;project name&amp;gt; 添加主題 1 2 3 cd &amp;lt;project name&amp;gt; git init git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/hugo-theme-monochrome 將 theme = &amp;quot;hugo-theme-monochrome&amp;quot; 加到 config.toml
-安裝依賴 準備專案的 package.json (0.</description></item></channel></rss>
+安裝依賴 準備專案的 package.json</description></item></channel></rss>
