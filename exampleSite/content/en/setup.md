@@ -36,7 +36,7 @@ Then add `theme = "hugo-theme-monochrome"` to your `config.toml`
 
 ### Setup Dependencies
 
-Prepare a composite package.json file for your project. (new feature in [0.80.0](https://gohugo.io/news/0.80.0-relnotes/))
+Prepare a composite package.json file for your project.
 
 ```bash
 hugo mod npm pack
