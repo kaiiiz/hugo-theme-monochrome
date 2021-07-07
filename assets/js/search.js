@@ -1,5 +1,5 @@
 import * as params from '@params';
-import FlexSearch from "flexsearch";
+import {Document} from "flexsearch";
 
 async function init() {
     const data = fetch(params.index_url);
@@ -25,25 +25,21 @@ async function init() {
 
     // create index
     let id = 0;
-    const docs = {
+
+    const ascii_index = new Document({
         id: "id",
-        field: [
-            "title",
-            "content"
-        ]
-    }
-    const ascii_index = new FlexSearch({
-        doc: docs,
+        index: ["title","content"],
         profile: "score",
-        cache: true,
+        store: true,
     });
-    const nonascii_index = new FlexSearch({
-        doc: docs,
+    const nonascii_index = new Document({
+        id: "id",
+        index: ["title","content"],
         encode: false,
         tokenize: function(str){
             return str.replace(/[\x00-\x7F]/g, "").split("");
         },
-        cache: true,
+        store: true,
     });
     index_json.forEach(post => {
         post.id = id++;
@@ -89,13 +85,15 @@ async function init() {
 
     const search = (value) => {
         clearAllItems();
-        let res = ascii_index.search(value);
+        let res = ascii_index.search(value, { enrich: true });
         if (res.length == 0) {
-            res = nonascii_index.search(value);
+            res = nonascii_index.search(value, { enrich: true });
         }
-        res.forEach(post => {
-            const item = createItem(post.title, post.permalink, post.content);
-            search_menu_results.appendChild(item);
+        res.forEach(field => {
+            field['result'].forEach(post => {
+                const item = createItem(post.doc.title, post.doc.permalink, post.doc.content);
+                search_menu_results.appendChild(item);
+            })
         });
     };
 
