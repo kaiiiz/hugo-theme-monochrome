@@ -85,15 +85,24 @@ async function init() {
 
     const search = (value) => {
         clearAllItems();
-        let res = ascii_index.search(value, { enrich: true });
+        let res = ascii_index.search(value);
         if (res.length == 0) {
-            res = nonascii_index.search(value, { enrich: true });
+            res = nonascii_index.search(value);
         }
-        res.forEach(field => {
-            field['result'].forEach(post => {
-                const item = createItem(post.doc.title, post.doc.permalink, post.doc.content);
-                search_menu_results.appendChild(item);
-            })
+
+        res_id = res.reduce((acc, curr) => {
+            curr.result.forEach(x => acc.add(x));
+            return acc;
+        }, new Set());
+
+        res = Array.from(res_id).reduce((acc, id) => {
+            acc.push(ascii_index.get(id));
+            return acc;
+        }, new Array());
+
+        res.forEach(post => {
+            const item = createItem(post.title, post.permalink, post.content);
+            search_menu_results.appendChild(item);
         });
     };
 
