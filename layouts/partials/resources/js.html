@@ -41,7 +41,7 @@
     {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}
     {{ $search_js := resources.Get "js/search.js" | js.Build $build_opts }}
     {{- if hugo.IsProduction -}}
-        {{ $search_js = $search_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+        {{ $search_js = $search_js | resources.Minify | resources.Fingerprint "sha512" -}}
     {{- end -}}
     <script src="{{ $search_js.RelPermalink }}" integrity="{{- $search_js.Data.Integrity -}}"></script>
 {{ end }}

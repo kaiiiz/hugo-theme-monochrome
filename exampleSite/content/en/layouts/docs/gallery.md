@@ -29,7 +29,7 @@ For example:
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/about
-        \________________________________/\____/
+        \____________________________________/\____/
                     base URL           gallery_resources
 ```
 
@@ -78,8 +78,8 @@ For example:
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
-                    base URL              gallery_img_src
+        \_____________________________________/\________/
+                    base URL                gallery_img_src
 ```
 
 ```yaml

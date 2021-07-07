@@ -29,7 +29,7 @@ type: 'gallery'
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/about
-        \________________________________/\____/
+        \____________________________________/\____/
                     base URL           gallery_resources
 ```
 
@@ -78,7 +78,7 @@ gallery_title_link: 'https://github.com/kaiiiz'
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
+        \_____________________________________/\________/
                     base URL              gallery_img_src
 ```
 

@@ -23,7 +23,7 @@
                 {{ if .Params.changelogs }}
                 <article class="toc-wrapper my-8 p-4 border-2 rounded">
                     <div class="font-bold mb-2">{{ i18n "changlogs" }}</div>
-                    <div class="grid gap-2 grid-cols-statistic leading-8">
+                    <div class="grid gap-2 grid-cols-statistic leading-7 text-sm ml-2">
                         {{ range $log := .Params.changelogs }}
                             <div>{{ $log.tag | markdownify }}</div>
                             <div>

@@ -16,7 +16,7 @@ Take Linux for example:
 snap install hugo --channel=extended
 ```
 
-> The minimum hugo version that hugo-theme-monochrome required is `0.78.0`
+> The minimum hugo version that hugo-theme-monochrome required is `0.80.0`
 
 ### Create a New Site
 
@@ -36,7 +36,7 @@ Then add `theme = "hugo-theme-monochrome"` to your `config.toml`
 
 ### Setup Dependencies
 
-Prepare a composite package.json file for your project. (new feature in [0.78.0](https://gohugo.io/news/0.78.0-relnotes/))
+Prepare a composite package.json file for your project. (new feature in [0.80.0](https://gohugo.io/news/0.80.0-relnotes/))
 
 ```bash
 hugo mod npm pack

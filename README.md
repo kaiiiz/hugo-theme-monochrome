@@ -18,7 +18,7 @@ See [kaiiiz.github.io/hugo-theme-monochrome](https://kaiiiz.github.io/hugo-theme
 
 ## Features
 
-1. **Clean UI with small resources.** Monochrome has clean UI design and can remove unused resources in production environment. (with about 20+KB CSS)
+1. **Clean UI with small resources.** Monochrome has clean UI design and can remove unused resources in production environment.
 
 2. **Responsive layout.** Adapt to different viewpoint, from desktop to mobile.
 

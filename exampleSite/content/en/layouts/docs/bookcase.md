@@ -65,7 +65,7 @@ For example:
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
+        \_____________________________________/\________/
                     base URL              bookcase_cover_src
 ```
 
@@ -87,7 +87,7 @@ For example:
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
+        \_____________________________________/\________/
                     base URL              bookcase_cover_src
 ```
 

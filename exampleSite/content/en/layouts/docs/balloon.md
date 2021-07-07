@@ -25,11 +25,11 @@ Content resources. URL can be an absolute path (with `/` prefix, relative to bas
 
 > Hugo will handle multilingual scenario out of the box
 
-Take this page for example:
+For example:
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/about
-        \________________________________/\____/
+        \____________________________________/\____/
                     base URL           balloon_resources
 ```
 
@@ -49,8 +49,8 @@ For example:
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
-                    base URL              balloon_img_src
+        \_____________________________________/\________/
+                    base URL                 balloon_img_src
 ```
 
 ```yaml
@@ -69,7 +69,7 @@ For example:
 
 ```
 https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
-        \_________________________________/\________/
+        \_____________________________________/\________/
                     base URL              balloon_img_src
 ```
 

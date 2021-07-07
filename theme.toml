@@ -5,7 +5,7 @@ description = "Monochrome is a clean, responsive, and programmer-friendly hugo t
 homepage = "https://github.com/kaiiiz/hugo-theme-monochrome/"
 tags = ["blog", "simple", "clean", "tailwindcss", "minimal", "responsive", "customizable", "search", "dark mode", "monochromatic"]
 features = ["Clean UI with small resources", "Responsive layout", "Dark mode", "Multiple layouts built-in", "Nested navbar", "Multilingual mode", "Syntax Highlighting with copy feature", "Site Search", "SEO-friendly", "MathJax Integration", "Useful shortcodes"]
-min_version = "0.78.0"
+min_version = "0.80.0"
 
 [author]
   name = "You-Kai Zheng"

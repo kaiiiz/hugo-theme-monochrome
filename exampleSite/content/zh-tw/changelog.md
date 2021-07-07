@@ -5,6 +5,11 @@ toc: false
 
 ## Changelog
 
+### v0.7.1 - 2021/07/08
+
+* Change: adjust the style of changelogs
+* Fix: flexsearch search API issue
+
 ### v0.7.0 - 2021/06/24
 
 * Bump dependencies version

@@ -1,5 +1,5 @@
 import * as params from '@params';
-import FlexSearch from "flexsearch";
+import {Document} from "flexsearch";
 
 async function init() {
     const data = fetch(params.index_url);
@@ -25,25 +25,21 @@ async function init() {
 
     // create index
     let id = 0;
-    const docs = {
+
+    const ascii_index = new Document({
         id: "id",
-        field: [
-            "title",
-            "content"
-        ]
-    }
-    const ascii_index = new FlexSearch({
-        doc: docs,
+        index: ["title","content"],
         profile: "score",
-        cache: true,
+        store: true,
     });
-    const nonascii_index = new FlexSearch({
-        doc: docs,
+    const nonascii_index = new Document({
+        id: "id",
+        index: ["title","content"],
         encode: false,
         tokenize: function(str){
             return str.replace(/[\x00-\x7F]/g, "").split("");
         },
-        cache: true,
+        store: true,
     });
     index_json.forEach(post => {
         post.id = id++;
@@ -93,6 +89,17 @@ async function init() {
         if (res.length == 0) {
             res = nonascii_index.search(value);
         }
+
+        res_id = res.reduce((acc, curr) => {
+            curr.result.forEach(x => acc.add(x));
+            return acc;
+        }, new Set());
+
+        res = Array.from(res_id).reduce((acc, id) => {
+            acc.push(ascii_index.get(id));
+            return acc;
+        }, new Array());
+
         res.forEach(post => {
             const item = createItem(post.title, post.permalink, post.content);
             search_menu_results.appendChild(item);

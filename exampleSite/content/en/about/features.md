@@ -12,7 +12,7 @@ gallery_statistic:
   value: value3
 ---
 
-1. **Clean UI with small resources.** Monochrome has clean UI design and can remove unused resources in production environment. (with about 20+KB CSS)
+1. **Clean UI with small resources.** Monochrome has clean UI design and can remove unused resources in production environment.
 2. **Responsive layout.** Adapt to different viewpoint, from desktop to mobile.
 3. **Dark mode.** Low-light UI.
 4. **Multiple layouts built-in.** See [Demo](https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/).
