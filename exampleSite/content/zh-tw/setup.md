@@ -16,7 +16,7 @@ title: '建置'
 snap install hugo --channel=extended
 ```
 
-> hugo 的版本必須為 `0.78.0` 以上
+> hugo 的版本必須為 `0.80.0` 以上
 
 ### 建立專案
 
@@ -36,7 +36,7 @@ git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/hug
 
 ### 安裝依賴
 
-準備專案的 package.json ([0.78.0](https://gohugo.io/news/0.78.0-relnotes/) 的新功能)
+準備專案的 package.json ([0.80.0](https://gohugo.io/news/0.80.0-relnotes/) 的新功能)
 
 ```bash
 hugo mod npm pack
