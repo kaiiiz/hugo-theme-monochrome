@@ -29,16 +29,14 @@ async function init() {
     const ascii_index = new Document({
         id: "id",
         index: ["title","content"],
-        profile: "score",
+        tokenize: 'forward',
+        encode: str => str.replace(/[^\x00-\x7F]/g, "").split(" "),
         store: true,
     });
     const nonascii_index = new Document({
         id: "id",
         index: ["title","content"],
-        encode: false,
-        tokenize: function(str){
-            return str.replace(/[\x00-\x7F]/g, "").split("");
-        },
+        encode: str => str.replace(/[\x00-\x7F]/g, "").split(""),
         store: true,
     });
     index_json.forEach(post => {
@@ -85,15 +83,17 @@ async function init() {
 
     const search = (value) => {
         clearAllItems();
-        let res = ascii_index.search(value);
-        if (res.length == 0) {
-            res = nonascii_index.search(value);
+        let ascii_res = ascii_index.search(value);
+        let nonascii_res = nonascii_index.search(value);
+
+        let reduce_res_to_id = (res) => {
+            return res.reduce((acc, curr) => {
+                curr.result.forEach(x => acc.add(x));
+                return acc;
+            }, new Set());
         }
 
-        res_id = res.reduce((acc, curr) => {
-            curr.result.forEach(x => acc.add(x));
-            return acc;
-        }, new Set());
+        let res_id = new Set([...reduce_res_to_id(ascii_res), ...reduce_res_to_id(nonascii_res)])
 
         res = Array.from(res_id).reduce((acc, id) => {
             acc.push(ascii_index.get(id));
