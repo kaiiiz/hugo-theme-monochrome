@@ -3,6 +3,10 @@ title: 'Theme Settings'
 weight: 2
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
+changelogs:
+- tag: 'v0.8.0'
+  description:
+  - 'Add `enableCollapsibleTOC` and `enableCollapsibleChangelogs` properties'
 ---
 
 # Theme Configuration
@@ -39,6 +43,26 @@ enableTOC = false
 ```
 
 > default: true
+
+## Collapsible Menu
+
+To enable the collapsible TOC globally, add:
+
+```toml
+[params]
+enableCollapsibleTOC = true
+```
+
+> default: false
+
+To enable the collapsible changelogs globally, add:
+
+```toml
+[params]
+enableCollapsibleChangelogs = true
+```
+
+> default: false
 
 ## Navbar menu
 

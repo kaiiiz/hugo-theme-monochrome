@@ -4,10 +4,13 @@ weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
-- tag: '[v0.7.0](/hugo-theme-monochrome/changelog/#v070---20210624)'
+- tag: 'v0.7.0'
   description:
   - 'Add `changelogs` property'
   - "Update `disqus` fallback policy for none post pages"
+- tag: 'v0.8.0'
+  description:
+  - 'Add `collapsibleTOC` and `collapsibleChangelogs` properties'
 ---
 
 # Page Settings
@@ -52,6 +55,16 @@ toc: false
 
 > default: theme's [`enableTOC`](/hugo-theme-monochrome/configuration/theme/#table-of-contents)
 
+### Collapsible Table of Contents
+
+```yaml
+---
+collapsibleTOC: false
+---
+```
+
+> default: theme's [`enableCollapsibleTOC`](/hugo-theme-monochrome/configuration/theme/#collapsible-menu)
+
 ## Changelogs
 
 ```yaml
@@ -71,6 +84,16 @@ changelogs:
 tag and description fields support markdown syntax.
 
 > default: None
+
+### Collapsible Changelogs
+
+```yaml
+---
+collapsibleChangelogs: false
+---
+```
+
+> default: theme's [`enableCollapsibleChangelogs`](/hugo-theme-monochrome/configuration/theme/#collapsible-menu)
 
 ## External library
 

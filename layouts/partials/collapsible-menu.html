@@ -1,0 +1,33 @@
+<div class="collapsible-menu-wrapper my-8 p-4 border-2 rounded">
+    {{ if eq .enable true }}
+        <input id="collapse_btn_{{ .type }}" class="hidden collapse-btn-input" type="checkbox">
+    {{ end }}
+
+    <div class="flex justify-between">
+        <span class="font-bold">{{ i18n .type }}</span>
+        {{ if eq .enable true }}
+            <label for="collapse_btn_{{ .type }}" class="collapse-btn">
+                {{- partial "svg/arrow-right.html" -}}
+            </label>
+        {{ end }}
+    </div>
+
+    <div class="collapsible-menu text-sm ml-2">
+        {{ if eq .type "changelogs" }}
+            <article class="grid gap-2 grid-cols-statistic leading-7 mt-2">
+                {{ range $log := .context.Params.changelogs }}
+                    <div>{{ $log.tag | markdownify }}</div>
+                    <div>
+                        {{ range $log.description }}
+                            <div>{{ . | markdownify }}</div>
+                        {{ end }}
+                    </div>
+                {{ end }}
+            </article>
+        {{ else if eq .type "toc" }}
+            <div class="leading-6">
+                {{ .context.TableOfContents }}
+            </div>
+        {{ end }}
+    </div>
+</div>
