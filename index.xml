@@ -1,46 +1,1975 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/</link><description>Recent content on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/index.xml" rel="self" type="application/rss+xml"/><item><title>Site Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</guid><description>Site Configuration These settings are important for building a website using hugo. See All Configuration Settings for more details.
-Site title Site title. This value will become the content of &amp;lt;title&amp;gt; tag in html.
-1 title = &amp;#34;Monochrome&amp;#34; Theme Set this value to the corresponding folder name of your theme. (located by default in /themes/THEMENAME/)
-1 theme = &amp;#34;hugo-theme-monochrome&amp;#34; Base URL Hostname (and path) to the root.</description></item><item><title>Theme Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</guid><description>Theme Configuration These values are inside your toml config file.
-Navbar title HTML is available.
-1 2 [params] navbarTitle = &amp;#34;Monochrome&amp;#34; default: site&amp;rsquo;s title
-Footer HTML is available.
-1 2 [params] footer = &amp;#34;Copyright © 2021 by kaiiiz&amp;#34; default: footer section will not be rendered.
-Table of Contents 1 2 [params] enableTOC = false default: true</description></item><item><title>Page Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</guid><description>Page Settings These values are inside your page&amp;rsquo;s front-matter.
-Layout Monochrome support different types of layout. You can change the layout of section or regular page according to your needs. Checkout Layout for more details.
-Navbar title HTML is available.
-1 2 3 --- navbar_title: &amp;#34;Monochrome&amp;#34; --- default: theme&amp;rsquo;s navbarTitle
-Footer HTML is available.
-1 2 3 --- footer: &amp;#34;Copyright © 2021 by kaiiiz&amp;#34; --- default: theme&amp;rsquo;s footer</description></item><item><title>Balloon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/balloon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/balloon/</guid><description>Balloon is useful for demonstrating information step-by-step.
-This layout can be used on both list layout and single layout.
-Configuration 1 2 3 --- type: &amp;#39;balloon&amp;#39; --- Specify type in front-matter will change the template lookup order.
-balloon_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)
-Hugo will handle multilingual scenario out of the box</description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/bookcase/</guid><description>Bookcase layout is useful for creating another viewpoint of list contents.
-This layout can only be used on list layout.
-Configuration 1 2 3 --- type: &amp;#39;bookcase&amp;#39; --- Specify type in front-matter will change the template lookup order.
-bookcase_list_sections List subsections.
-1 2 3 --- bookcase_list_sections: true --- default: true
-bookcase_list_pages List pages.
-1 2 3 --- bookcase_list_pages: true --- default: true</description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/gallery/</guid><description>Gallery layout is useful for demonstrating pictures and its statistical data.
-This layout can be used on both list layout and single layout.
-Configuration 1 2 3 --- type: &amp;#39;gallery&amp;#39; --- Specify type in front-matter will change the template lookup order.
-gallery_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)</description></item><item><title>List</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/list/</guid><description>List layout is built-in section layout. Monochrome add options to adjust its behavior.
-Configuration List posts You can fully customize your index page through the content of _index.md and decide whether render the default list layout by specifying list_posts.
-1 list_posts: false default: true</description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post1/</guid><description>Hello world!</description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post1/</guid><description>Hello world!</description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post2/</guid><description>Hello world!</description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post2/</guid><description>Hello world!</description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post3/</guid><description>Hello world!</description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post3/</guid><description>Hello world!</description></item><item><title>Markdown Syntax Guide</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/markdown-syntax/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p></description></item><item><title>Rich Content</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p></description></item><item><title>Placeholder Text</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/placeholder-text/</guid><description>&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p></description></item><item><title>Math Typesetting</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description></item><item><title>Emoji Support</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/emoji-support/</guid><description>&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p></description></item><item><title>balloon layout single demo</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/balloon/single/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/balloon/single/</guid><description>Balloon layout can also be used in regular page.
-Go to list demo</description></item><item><title>Changelog</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</guid><description>Changelog v0.7.1 - 2021/07/08 Change: adjust the style of changelogs Fix: flexsearch search API issue v0.7.0 - 2021/06/24 Bump dependencies version Add: changelogs property Add: support disqus for index page (turn off by default) Change: theme name from &amp;lsquo;Graytr&amp;rsquo; to &amp;lsquo;Monochrome&amp;rsquo; Change: improve navbar responsiveness Fix: widen the control range of navbar menu icon v0.6.2 - 2021/04/15 Fix: google search console authentication failed if ga code not in &amp;lt;head&amp;gt; Fix: clipboard-polyfill/text dependency resolved issue v0.</description></item><item><title>CodePen</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</guid><description>CodePen Embeded codepen to page.
-Usage {{&amp;lt; codepen id=&amp;quot;&amp;quot; &amp;gt;}} Paramters:
-id: codepen id Examples 1 {{&amp;lt; codepen id=&amp;#34;Vwmpjba&amp;#34; &amp;gt;}}</description></item><item><title>Color Block</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</guid><description>Color Block A block with color
-Usage {{&amp;lt; color-block style=&amp;quot;&amp;quot; &amp;gt;}} {{&amp;lt; /color-block &amp;gt;}} Paramters:
-style: block style success info warning error Examples 1 2 3 {{&amp;lt; color-block &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world 1 2 3 {{&amp;lt; color-block style=&amp;#34;success&amp;#34; &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world 1 2 3 {{&amp;lt; color-block style=&amp;#34;info&amp;#34; &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world 1 2 3 {{&amp;lt; color-block style=&amp;#34;warning&amp;#34; &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world 1 2 3 {{&amp;lt; color-block style=&amp;#34;error&amp;#34; &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world</description></item><item><title>Icon Group</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</guid><description>Icon Group Wrap icons with grid layout
-Usage {{&amp;lt; icon-group &amp;gt;}} {{&amp;lt; /icon-group &amp;gt;}} Examples 1 2 3 4 5 {{&amp;lt; icon-group &amp;gt;}} {{&amp;lt; svg-wrapper name=&amp;#34;github&amp;#34; /&amp;gt;}} {{&amp;lt; svg-wrapper name=&amp;#34;rss&amp;#34; /&amp;gt;}} {{&amp;lt; svg-wrapper name=&amp;#34;twitter&amp;#34; /&amp;gt;}} {{&amp;lt; /icon-group &amp;gt;}}</description></item><item><title>JSFiddle</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</guid><description>JSFiddle Embeded jsfiddle to page.
-Usage {{&amp;lt; jsfiddle id=&amp;quot;&amp;quot; &amp;gt;}} Paramters:
-id: jsfiddle id Examples 1 {{&amp;lt; jsfiddle id=&amp;#34;5byh90rz&amp;#34; &amp;gt;}}</description></item><item><title>Regular Page</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/regular-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/regular-page/</guid><description>This is a regular page in bookcase.</description></item><item><title>Setup</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/setup/</guid><description>This document shows a brief guide to setup hugo-theme-monochrome in your hugo project.
-Quick Start Install Hugo You need &amp;ldquo;extended&amp;rdquo; version of hugo to support SASS. Checkout Install Hugo for more details.
-Take Linux for example:
-1 snap install hugo --channel=extended The minimum hugo version that hugo-theme-monochrome required is 0.80.0
-Create a New Site 1 hugo new site &amp;lt;project name&amp;gt; Add a Theme 1 2 3 cd &amp;lt;project name&amp;gt; git init git submodule add https://github.</description></item><item><title>SVG Wrapper</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/svg-wrapper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/svg-wrapper/</guid><description>SVG Wrapper Wrap SVG with dark/bright color styles, it&amp;rsquo;s useful for dark mode compatibility.
-Usage {{&amp;lt; svg-wrapper name=&amp;quot;&amp;quot; link=&amp;quot;&amp;quot; &amp;gt;}} svg inline {{&amp;lt; /svg-wrapper &amp;gt;}} Paramters:
-link: Render link for svg name: Use theme built-in svg Available Built-in SVG Icon from Material Design
-name svg arrow-down arrow-right earth moon sun Icons from Simple Icons</description></item><item><title>Terms Cloud</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</guid><description>Terms Cloud Render terms cloud
-Usage {{&amp;lt; terms-cloud terms=&amp;quot;&amp;quot; /&amp;gt;}} Paramters:
-terms: terms name Examples 1 {{&amp;lt; terms-cloud terms=&amp;#34;tags&amp;#34; &amp;gt;}} css (1) emoji (1) html (1) index (1) markdown (2) privacy (1) shortcodes (1) text (1)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/</link><description>Recent content on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/index.xml" rel="self" type="application/rss+xml"/><item><title>Site Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</guid><description>&lt;h1 id="site-configuration">Site Configuration&lt;/h1>
+&lt;p>These settings are important for building a website using hugo. See &lt;a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings">All Configuration Settings&lt;/a> for more details.&lt;/p>
+&lt;h2 id="site-title">Site title&lt;/h2>
+&lt;p>Site title. This value will become the content of &lt;code>&amp;lt;title&amp;gt;&lt;/code> tag in html.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">&lt;span style="color:#a6e22e">title&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;Monochrome&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="theme">Theme&lt;/h2>
+&lt;p>Set this value to the corresponding folder name of your theme. (located by default in &lt;code>/themes/THEMENAME/&lt;/code>)&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">&lt;span style="color:#a6e22e">theme&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;hugo-theme-monochrome&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="base-url">Base URL&lt;/h2>
+&lt;p>Hostname (and path) to the root.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">&lt;span style="color:#a6e22e">baseURL&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;https://kaiiiz.github.io/hugo-theme-monochrome&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="favicon">favicon&lt;/h2>
+&lt;p>Add &lt;code>favicon.ico&lt;/code> to your site&amp;rsquo;s static folder.&lt;/p>
+&lt;h2 id="external-library">External library&lt;/h2>
+&lt;h3 id="disqus">Disqus&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">&lt;span style="color:#a6e22e">disqusShortname&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;xxx&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Other settings checkout &lt;a href="https://gohugo.io/templates/internal/#disqus">Disqus - Internal Templates&lt;/a> for more details.&lt;/p>
+&lt;h3 id="google-analytics">Google Analytics&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">&lt;span style="color:#a6e22e">googleAnalytics&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;xxx&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Theme Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</guid><description>&lt;h1 id="theme-configuration">Theme Configuration&lt;/h1>
+&lt;p>These values are inside your toml config file.&lt;/p>
+&lt;h2 id="navbar-title">Navbar title&lt;/h2>
+&lt;p>HTML is available.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">navbarTitle&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;Monochrome&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: site&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/site#site-title">&lt;code>title&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="footer">Footer&lt;/h2>
+&lt;p>HTML is available.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">footer&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;Copyright © 2021 by kaiiiz&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: footer section will not be rendered.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enableTOC&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="collapsible-menu">Collapsible Menu&lt;/h2>
+&lt;p>To enable the collapsible TOC globally, add:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enableCollapsibleTOC&lt;/span> = &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: false&lt;/p>
+&lt;/blockquote>
+&lt;p>To enable the collapsible changelogs globally, add:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enableCollapsibleChangelogs&lt;/span> = &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: false&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="navbar-menu">Navbar menu&lt;/h2>
+&lt;p>Monochrome uses built-in menu system supported by hugo itself. (Checkout &lt;a href="https://gohugo.io/content-management/menus">document&lt;/a> for more deatil.) By default, the menu called &lt;code>navbar&lt;/code> is used to decide which item need to be rendered on the navbar.&lt;/p>
+&lt;p>So you can simply add the following code to your page front-matter, and the menu info will be handled by hugo out of the box. (&lt;a href="https://gohugo.io/content-management/menus#simple">simple method mentioned in document&lt;/a>)&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">menu&lt;/span>: &lt;span style="color:#ae81ff">navbar&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Also, weighted value is supported out of the box, you can explicit assign the weight of the navbar entry, hugo will first sort the menu using weight, if there has two entries shared the same weight, the &lt;a href="https://gohugo.io/templates/lists/#order-content">default order&lt;/a> will be applied.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">menu&lt;/span>:
+&lt;span style="color:#f92672">navbar&lt;/span>:
+&lt;span style="color:#f92672">weight&lt;/span>: -&lt;span style="color:#ae81ff">99&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>If you try to put entry that aren&amp;rsquo;t attached to a piece of content, or you want to organize your navbar into a single file, checkout &lt;a href="https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu">Add Non-content Entries to a Menu&lt;/a> and set these values in your toml settings file.&lt;/p>
+&lt;h2 id="external-library">External Library&lt;/h2>
+&lt;h3 id="mathjax">MathJax&lt;/h3>
+&lt;p>Use &lt;code>$&lt;/code> to create inline result, &lt;code>$$&lt;/code> to create block result.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enableMathJax&lt;/span> = &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: false&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="zoomingjs">Zooming.js&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enableZoomingJS&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="site-search">Site Search&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enableSiteSearch&lt;/span> = &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: false&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="syntax-highlighting">Syntax Highlighting&lt;/h2>
+&lt;h3 id="using-chroma-server-side">Using Chroma (server-side)&lt;/h3>
+&lt;p>See &lt;a href="https://gohugo.io/content-management/syntax-highlighting">Syntax Highlighting&lt;/a> for more details.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enableCodeCopy&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="using-prismjs-client-side">Using Prism.js (client-side)&lt;/h3>
+&lt;p>Disable markup highlight feature&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">markup&lt;/span>.&lt;span style="color:#a6e22e">highlight&lt;/span>]
+&lt;span style="color:#a6e22e">codeFences&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;span style="color:#a6e22e">lineNos&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Enable Prism.js&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">usePrismJS&lt;/span> = &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: false&lt;/p>
+&lt;/blockquote>
+&lt;p>Enable line numbers feature&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enablePrismJSLineNo&lt;/span> = &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="seo">SEO&lt;/h2>
+&lt;h3 id="author">Author&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">author&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;kaiiiz&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: not generate author &lt;code>meta&lt;/code> tag&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="open-graph">Open Graph&lt;/h3>
+&lt;p>A flag to render open graph internal template. See &lt;a href="https://gohugo.io/templates/internal#open-graph">Open Graph&lt;/a> for additional settings.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enableOpenGraph&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="twitter-cards">Twitter Cards&lt;/h3>
+&lt;p>A flag to render open twitter cards template. See &lt;a href="https://gohugo.io/templates/internal#twitter-cards">Twitter Cards&lt;/a> for additional settings.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
+&lt;span style="color:#a6e22e">enableTwitterCards&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote></description></item><item><title>Page Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</guid><description>&lt;h1 id="page-settings">Page Settings&lt;/h1>
+&lt;p>These values are inside your page&amp;rsquo;s front-matter.&lt;/p>
+&lt;h2 id="layout">Layout&lt;/h2>
+&lt;p>Monochrome support different types of layout. You can change the layout of section or regular page according to your needs. Checkout &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/layouts">Layout&lt;/a> for more details.&lt;/p>
+&lt;h2 id="navbar-title">Navbar title&lt;/h2>
+&lt;p>HTML is available.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">navbar_title&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Monochrome&amp;#34;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme#navbar-title">&lt;code>navbarTitle&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="footer">Footer&lt;/h2>
+&lt;p>HTML is available.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">footer&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Copyright © 2021 by kaiiiz&amp;#34;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#footer">&lt;code>footer&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">toc&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#table-of-contents">&lt;code>enableTOC&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="collapsible-table-of-contents">Collapsible Table of Contents&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">collapsibleTOC&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#collapsible-menu">&lt;code>enableCollapsibleTOC&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="changelogs">Changelogs&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">changelogs&lt;/span>:
+- &lt;span style="color:#f92672">tag&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;20210623&amp;#39;&lt;/span>
+&lt;span style="color:#f92672">description&lt;/span>:
+- &lt;span style="color:#e6db74">&amp;#39;changelog example 1&amp;#39;&lt;/span>
+- &lt;span style="color:#e6db74">&amp;#39;changelog example 2&amp;#39;&lt;/span>
+- &lt;span style="color:#f92672">tag&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;20210624&amp;#39;&lt;/span>
+&lt;span style="color:#f92672">description&lt;/span>:
+- &lt;span style="color:#e6db74">&amp;#39;changelog example 3&amp;#39;&lt;/span>
+- &lt;span style="color:#e6db74">&amp;#39;changelog example 4&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>tag and description fields support markdown syntax.&lt;/p>
+&lt;blockquote>
+&lt;p>default: None&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="collapsible-changelogs">Collapsible Changelogs&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">collapsibleChangelogs&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#collapsible-menu">&lt;code>enableCollapsibleChangelogs&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="external-library">External library&lt;/h2>
+&lt;h3 id="mathjax">MathJax&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">math&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#mathjax">&lt;code>enableMathJax&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="zoomingjs">Zooming.js&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">zooming_js&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#zoomingjs">&lt;code>enableZoomingJS&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="disqus">Disqus&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">disqus&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default for post page: site&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/zh-tw/configuration/site/#disqus">&lt;code>disqusShortname&lt;/code>&lt;/a>&lt;/p>
+&lt;p>default for other pages: false&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="google-analytics">Google Analytics&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">ga&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: site&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/site/#google-analytics">&lt;code>googleAnalytics&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="syntax-highlighting">Syntax Highlighting&lt;/h2>
+&lt;h3 id="chroma">Chroma&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">code_copy&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#using-chroma-hugo-built-in">&lt;code>enableCodeCopy&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="prismjs">Prism.js&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">prism_lineno&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#using-prismjs">&lt;code>enablePrismJSLineNo&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="seo">SEO&lt;/h2>
+&lt;h3 id="author">Author&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">author&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;kaiiiz&amp;#34;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#author">&lt;code>author&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="description">Description&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">description&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;Configuration of hugo-theme-monochrome&amp;#34;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: not generate description &lt;code>meta&lt;/code> tag&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="keywords">Keywords&lt;/h3>
+&lt;p>In page front-matter&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">keywords&lt;/span>:
+- &lt;span style="color:#ae81ff">hugo&lt;/span>
+- &lt;span style="color:#ae81ff">hugo theme&lt;/span>
+- &lt;span style="color:#ae81ff">hugo theme monochrome&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: not generate keywords &lt;code>meta&lt;/code> tag&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="open-graph">Open Graph&lt;/h3>
+&lt;p>A flag to render open graph internal template. See &lt;a href="https://gohugo.io/templates/internal#open-graph">Open Graph&lt;/a> for additional settings.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">open_graph&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#open-graph">&lt;code>enableOpenGraph&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="twitter-cards">Twitter Cards&lt;/h3>
+&lt;p>A flag to render open twitter cards template. See &lt;a href="https://gohugo.io/templates/internal#twitter-cards">Twitter Cards&lt;/a> for additional settings.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">twitter_cards&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#twitter-cards">&lt;code>enableTwitterCards&lt;/code>&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Balloon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/balloon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/balloon/</guid><description>&lt;p>Balloon is useful for demonstrating information step-by-step.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can be used on both list layout and single layout.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;balloon&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_resources">balloon_resources&lt;/h3>
+&lt;p>Content resources. URL can be an absolute path (with &lt;code>/&lt;/code> prefix, relative to base URL), or relative path (without &lt;code>/&lt;/code>, relative to current path)&lt;/p>
+&lt;blockquote>
+&lt;p>Hugo will handle multilingual scenario out of the box&lt;/p>
+&lt;/blockquote>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/about
+\____________________________________/\____/
+base URL balloon_resources
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_resources&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;/about&amp;#34;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: error will occur in page&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_img_src">balloon_img_src&lt;/h3>
+&lt;p>Balloon head image URL. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL balloon_img_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_img_src&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: fallback to balloon_img_src_dark, if failed, image become dot&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_img_src_dark">balloon_img_src_dark&lt;/h3>
+&lt;p>Balloon head image URL for dark mode. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL balloon_img_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_img_src_dark&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: fallback to balloon_img_src, if failed, image become dot&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_circle">balloon_circle&lt;/h3>
+&lt;p>balloon head shape can be square or circle.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_circle&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="resouces-configuration">Resouces Configuration&lt;/h2>
+&lt;p>These settings are under the resource specified in &lt;code>balloon_resources&lt;/code>.&lt;/p>
+&lt;h3 id="title">title&lt;/h3>
+&lt;p>Title of content card.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;Story before hugo&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no title&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="weight">weight&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">3&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: &lt;a href="https://gohugo.io/templates/lists/#order-content">default order&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="trick">Trick&lt;/h2>
+&lt;p>Hugo supports an amazing feature called &lt;strong>Headless Bundle&lt;/strong>, which elegantly resolved the resouces publish issue.&lt;/p>
+&lt;p>For example, if you don&amp;rsquo;t want to publish the resouces of the balloon layout, you can create a leaf bundle and specified &lt;code>headless = true&lt;/code> in &lt;code>index.md&lt;/code>&amp;rsquo;s front-matter. These resources will only be used during rendering process. In other word, no file will be generated to &lt;code>/public&lt;/code> folder.&lt;/p>
+&lt;p>Checkout &lt;a href="https://gohugo.io/content-management/page-bundles/#headless-bundle">Headless Bundle&lt;/a> for more details.&lt;/p></description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/bookcase/</guid><description>&lt;p>Bookcase layout is useful for creating another viewpoint of list contents.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can only be used on list layout.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;bookcase&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="bookcase_list_sections">bookcase_list_sections&lt;/h3>
+&lt;p>List subsections.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_list_sections&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="bookcase_list_pages">bookcase_list_pages&lt;/h3>
+&lt;p>List pages.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_list_pages&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="resouces-configuration">Resouces Configuration&lt;/h2>
+&lt;p>These parameters are located in bookcase item&amp;rsquo;s resource. For example:&lt;/p>
+&lt;pre>&lt;code>.
+├── books.md &amp;lt;- config is located in here!
+├── category
+│ └── _index.md &amp;lt;- and here!
+└── _index.md &amp;lt;- your bookcase layout
+&lt;/code>&lt;/pre>&lt;h3 id="bookcase_cover_src">bookcase_cover_src&lt;/h3>
+&lt;p>The cover image URL. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;blockquote>
+&lt;p>Image ratio is 2:3 (width:height)&lt;/p>
+&lt;/blockquote>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL bookcase_cover_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_cover_src&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: fallback to bookcase_cover_src_dark, if failed, image become empty&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="bookcase_cover_src_dark">bookcase_cover_src_dark&lt;/h3>
+&lt;p>The cover image URL for dark mode. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;blockquote>
+&lt;p>Image ratio is 2:3 (width:height)&lt;/p>
+&lt;/blockquote>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL bookcase_cover_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_cover_src_dark&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: fallback to bookcase_cover_src, if failed, image become empty&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="weight">weight&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">3&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: &lt;a href="https://gohugo.io/templates/lists/#order-content">default order&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/gallery/</guid><description>&lt;p>Gallery layout is useful for demonstrating pictures and its statistical data.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can be used on both list layout and single layout.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;gallery&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_resources">gallery_resources&lt;/h3>
+&lt;p>Content resources. URL can be an absolute path (with &lt;code>/&lt;/code> prefix, relative to base URL), or relative path (without &lt;code>/&lt;/code>, relative to current path)&lt;/p>
+&lt;blockquote>
+&lt;p>Hugo will handle multilingual scenario out of the box&lt;/p>
+&lt;/blockquote>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/about
+\____________________________________/\____/
+base URL gallery_resources
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_resources&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;/about&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: error will occur in page&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="resouces-configuration">Resouces Configuration&lt;/h2>
+&lt;p>These settings are under the resource specified in &lt;code>gallery_resources&lt;/code>.&lt;/p>
+&lt;h3 id="title">title&lt;/h3>
+&lt;p>Title of image.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;Gallery&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no title&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_title_link">gallery_title_link&lt;/h3>
+&lt;p>Link of the title.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_title_link&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;https://github.com/kaiiiz&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no title link&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_img_src">gallery_img_src&lt;/h3>
+&lt;p>Image URL. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL gallery_img_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_img_src&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no image&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_img_link">gallery_img_link&lt;/h3>
+&lt;p>Link of the image.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_img_link&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;https://github.com/kaiiiz&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no image link&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_img_caption">gallery_img_caption&lt;/h3>
+&lt;p>Caption of the image. HTML is available.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_img_caption&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;&amp;lt;span&amp;gt;Photo by &amp;lt;a href=&amp;#34;https://unsplash.com/@swimstaralex?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&amp;#34;&amp;gt;Alexander Sinn&amp;lt;/a&amp;gt; on &amp;lt;a href=&amp;#34;https://unsplash.com/s/photos/thanks?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&amp;#34;&amp;gt;Unsplash&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no figure caption under image&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_statistic">gallery_statistic&lt;/h3>
+&lt;p>Statistic of the image. The format is:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+- &lt;span style="color:#f92672">key&lt;/span>: &lt;span style="color:#ae81ff">key1&lt;/span>
+&lt;span style="color:#f92672">value&lt;/span>: &lt;span style="color:#ae81ff">value1&lt;/span>
+- &lt;span style="color:#f92672">key&lt;/span>: &lt;span style="color:#ae81ff">key2&lt;/span>
+&lt;span style="color:#f92672">value&lt;/span>: &lt;span style="color:#ae81ff">value2&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no figure caption under image&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="weight">weight&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">3&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: &lt;a href="https://gohugo.io/templates/lists/#order-content">default order&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="trick">Trick&lt;/h2>
+&lt;p>Hugo supports an amazing feature called &lt;strong>Headless Bundle&lt;/strong>, which elegantly resolved the resouces publish issue.&lt;/p>
+&lt;p>For example, if you don&amp;rsquo;t want to publish the resouces of the balloon layout, you can create a leaf bundle and specified &lt;code>headless = true&lt;/code> in &lt;code>index.md&lt;/code>&amp;rsquo;s front-matter. These resources will only be used during rendering process. In other word, no file will be generated to &lt;code>/public&lt;/code> folder.&lt;/p>
+&lt;p>Checkout &lt;a href="https://gohugo.io/content-management/page-bundles/#headless-bundle">Headless Bundle&lt;/a> for more details.&lt;/p></description></item><item><title>List</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/list/</guid><description>&lt;p>List layout is built-in section layout. Monochrome add options to adjust its behavior.&lt;/p>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;h3 id="list-posts">List posts&lt;/h3>
+&lt;p>You can fully customize your index page through the content of &lt;code>_index.md&lt;/code> and decide whether render the default list layout by specifying &lt;code>list_posts&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="color:#f92672">list_posts&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote></description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post1/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post1/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post2/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post2/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/list/post3/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/list/post3/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/markdown-syntax/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
+&lt;h2 id="headings">Headings&lt;/h2>
+&lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
+&lt;h1 id="h1">H1&lt;/h1>
+&lt;h2 id="h2">H2&lt;/h2>
+&lt;h3 id="h3">H3&lt;/h3>
+&lt;h4 id="h4">H4&lt;/h4>
+&lt;h5 id="h5">H5&lt;/h5>
+&lt;h6 id="h6">H6&lt;/h6>
+&lt;h2 id="paragraph">Paragraph&lt;/h2>
+&lt;p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p>
+&lt;p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p>
+&lt;h2 id="blockquotes">Blockquotes&lt;/h2>
+&lt;p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code>footer&lt;/code> or &lt;code>cite&lt;/code> element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p>
+&lt;h4 id="blockquote-without-attribution">Blockquote without attribution&lt;/h4>
+&lt;blockquote>
+&lt;p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+&lt;strong>Note&lt;/strong> that you can use &lt;em>Markdown syntax&lt;/em> within a blockquote.&lt;/p>
+&lt;/blockquote>
+&lt;h4 id="blockquote-with-attribution">Blockquote with attribution&lt;/h4>
+&lt;blockquote>
+&lt;p>Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;br>
+— &lt;cite>Rob Pike&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/cite>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="tables">Tables&lt;/h2>
+&lt;p>Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Name&lt;/th>
+&lt;th>Age&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>Bob&lt;/td>
+&lt;td>27&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>Alice&lt;/td>
+&lt;td>23&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h4 id="inline-markdown-within-tables">Inline Markdown within tables&lt;/h4>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Italics&lt;/th>
+&lt;th>Bold&lt;/th>
+&lt;th>Code&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;em>italics&lt;/em>&lt;/td>
+&lt;td>&lt;strong>bold&lt;/strong>&lt;/td>
+&lt;td>&lt;code>code&lt;/code>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="code-blocks">Code Blocks&lt;/h2>
+&lt;pre>&lt;code>&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code>&lt;/pre>&lt;h4 id="code-block-with-backticks">Code block with backticks&lt;/h4>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&lt;span style="color:#75715e">&amp;lt;!doctype html&amp;gt;&lt;/span>
+&amp;lt;&lt;span style="color:#f92672">html&lt;/span> &lt;span style="color:#a6e22e">lang&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;en&amp;#34;&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">charset&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">title&lt;/span>&amp;gt;Example HTML5 Document&amp;lt;/&lt;span style="color:#f92672">title&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">body&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">p&lt;/span>&amp;gt;Test&amp;lt;/&lt;span style="color:#f92672">p&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#f92672">body&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#f92672">html&lt;/span>&amp;gt;
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces&lt;/h4>
+&lt;pre>&lt;code>&amp;lt;!doctype html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+&amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&amp;rsquo;s internal highlight shortcode&lt;/h4>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">&lt;span style="color:#75715e">&amp;lt;!doctype html&amp;gt;&lt;/span>
+&amp;lt;&lt;span style="color:#f92672">html&lt;/span> &lt;span style="color:#a6e22e">lang&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;en&amp;#34;&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">meta&lt;/span> &lt;span style="color:#a6e22e">charset&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;utf-8&amp;#34;&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">title&lt;/span>&amp;gt;Example HTML5 Document&amp;lt;/&lt;span style="color:#f92672">title&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#f92672">head&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">body&lt;/span>&amp;gt;
+&amp;lt;&lt;span style="color:#f92672">p&lt;/span>&amp;gt;Test&amp;lt;/&lt;span style="color:#f92672">p&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#f92672">body&lt;/span>&amp;gt;
+&amp;lt;/&lt;span style="color:#f92672">html&lt;/span>&amp;gt;&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="list-types">List Types&lt;/h2>
+&lt;h4 id="ordered-list">Ordered List&lt;/h4>
+&lt;ol>
+&lt;li>First item&lt;/li>
+&lt;li>Second item&lt;/li>
+&lt;li>Third item&lt;/li>
+&lt;/ol>
+&lt;h4 id="unordered-list">Unordered List&lt;/h4>
+&lt;ul>
+&lt;li>List item&lt;/li>
+&lt;li>Another item&lt;/li>
+&lt;li>And another item&lt;/li>
+&lt;/ul>
+&lt;h4 id="nested-list">Nested list&lt;/h4>
+&lt;ul>
+&lt;li>Fruit
+&lt;ul>
+&lt;li>Apple&lt;/li>
+&lt;li>Orange&lt;/li>
+&lt;li>Banana&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Dairy
+&lt;ul>
+&lt;li>Milk&lt;/li>
+&lt;li>Cheese&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark&lt;/h2>
+&lt;p>&lt;abbr title="Graphics Interchange Format">GIF&lt;/abbr> is a bitmap image format.&lt;/p>
+&lt;p>H&lt;sub>2&lt;/sub>O&lt;/p>
+&lt;p>X&lt;sup>n&lt;/sup> + Y&lt;sup>n&lt;/sup> = Z&lt;sup>n&lt;/sup>&lt;/p>
+&lt;p>Press &lt;kbd>&lt;kbd>CTRL&lt;/kbd>+&lt;kbd>ALT&lt;/kbd>+&lt;kbd>Delete&lt;/kbd>&lt;/kbd> to end the session.&lt;/p>
+&lt;p>Most &lt;mark>salamanders&lt;/mark> are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk&lt;/a> during Gopherfest, November 18, 2015. &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Rich Content</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p>
+&lt;hr>
+&lt;h2 id="youtube-privacy-enhanced-shortcode">YouTube Privacy Enhanced Shortcode&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/ZJthWmvUzzc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;hr>
+&lt;h2 id="twitter-simple-shortcode">Twitter Simple Shortcode&lt;/h2>
+&lt;style type="text/css">
+.twitter-tweet {
+font: 14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+border-left: 4px solid #2b7bb9;
+padding-left: 1.5em;
+color: #555;
+}
+.twitter-tweet a {
+color: #2b7bb9;
+text-decoration: none;
+}
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+text-decoration: underline;
+}
+&lt;/style>
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br>— Jan Tschichold &lt;a href="https://t.co/gcv7SrhvJb">pic.twitter.com/gcv7SrhvJb&lt;/a>&lt;/p>&amp;mdash; Graphic Design History (@DesignReviewed) &lt;a href="https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw">January 17, 2019&lt;/a>&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="vimeo-simple-shortcode">Vimeo Simple Shortcode&lt;/h2>
+&lt;style>
+.__h_video {
+position: relative;
+padding-bottom: 56.23%;
+height: 0;
+overflow: hidden;
+width: 100%;
+background: #000;
+}
+.__h_video img {
+width: 100%;
+height: auto;
+color: #000;
+}
+.__h_video .play {
+height: 72px;
+width: 72px;
+left: 50%;
+top: 50%;
+margin-left: -36px;
+margin-top: -36px;
+position: absolute;
+cursor: pointer;
+}
+&lt;/style>
+&lt;div class="s_video_simple __h_video">
+&lt;a href="https://vimeo.com/4.8912912e&amp;#43;07" rel="noopener" target="_blank">
+&lt;img src="https://i.vimeocdn.com/video/337401969_640" srcset="https://i.vimeocdn.com/video/337401969_640 1x, https://i.vimeocdn.com/video/337401969_640 2x" alt="Sing Jan Swing - Kinetic Type">
+&lt;div class="play">&lt;svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61">&lt;circle cx="30.5" cy="30.5" r="30.5" opacity=".8" fill="#000">&lt;/circle>&lt;path d="M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z" fill="#fff">&lt;/path>&lt;/svg>&lt;/div>&lt;/a>&lt;/div></description></item><item><title>Placeholder Text</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/placeholder-text/</guid><description>&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p>
+&lt;p>Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p>
+&lt;ol>
+&lt;li>Exierant elisi ambit vivere dedere&lt;/li>
+&lt;li>Duce pollice&lt;/li>
+&lt;li>Eris modo&lt;/li>
+&lt;li>Spargitque ferrea quos palude&lt;/li>
+&lt;/ol>
+&lt;p>Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p>
+&lt;ol>
+&lt;li>Comas hunc haec pietate fetum procerum dixit&lt;/li>
+&lt;li>Post torum vates letum Tiresia&lt;/li>
+&lt;li>Flumen querellas&lt;/li>
+&lt;li>Arcanaque montibus omnes&lt;/li>
+&lt;li>Quidem et&lt;/li>
+&lt;/ol>
+&lt;h1 id="vagus-elidunt">Vagus elidunt&lt;/h1>
+&lt;p>&lt;svg class="canon" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 496 373" height="373" width="496">&lt;g fill="none">&lt;path stroke="#000" stroke-width=".75" d="M.599 372.348L495.263 1.206M.312.633l494.95 370.853M.312 372.633L247.643.92M248.502.92l246.76 370.566M330.828 123.869V1.134M330.396 1.134L165.104 124.515">&lt;/path>&lt;path stroke="#ED1C24" stroke-width=".75" d="M275.73 41.616h166.224v249.05H275.73zM54.478 41.616h166.225v249.052H54.478z">&lt;/path>&lt;path stroke="#000" stroke-width=".75" d="M.479.375h495v372h-495zM247.979.875v372">&lt;/path>&lt;ellipse cx="498.729" cy="177.625" rx=".75" ry="1.25">&lt;/ellipse>&lt;ellipse cx="247.229" cy="377.375" rx=".75" ry="1.25">&lt;/ellipse>&lt;/g>&lt;/svg>&lt;/p>
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon">The Van de Graaf Canon&lt;/a>&lt;/p>
+&lt;h2 id="mane-refeci-capiebant-unda-mulcebat">Mane refeci capiebant unda mulcebat&lt;/h2>
+&lt;p>Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong>Faces illo pepulere&lt;/strong> tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p>
+&lt;p>Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p>
+&lt;p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong>mitis temploque&lt;/strong> vocatus, inque alis, &lt;em>oculos nomen&lt;/em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong>parte&lt;/strong>.&lt;/p></description></item><item><title>Math Typesetting</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p>
+&lt;p>In this example we will be using &lt;a href="https://katex.org/">KaTeX&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>Create a partial under &lt;code>/layouts/partials/math.html&lt;/code>&lt;/li>
+&lt;li>Within this partial reference the &lt;a href="https://katex.org/docs/autorender.html">Auto-render Extension&lt;/a> or host these scripts locally.&lt;/li>
+&lt;li>Include the partial in your templates like so:&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#f92672">{{&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span> or .Params.math .Site.Params.math &lt;span style="color:#f92672">}}&lt;/span>
+&lt;span style="color:#f92672">{{&lt;/span> partial &lt;span style="color:#e6db74">&amp;#34;math.html&amp;#34;&lt;/span> . &lt;span style="color:#f92672">}}&lt;/span>
+&lt;span style="color:#f92672">{{&lt;/span> end &lt;span style="color:#f92672">}}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;ul>
+&lt;li>To enable KaTex globally set the parameter &lt;code>math&lt;/code> to &lt;code>true&lt;/code> in a project&amp;rsquo;s configuration&lt;/li>
+&lt;li>To enable KaTex on a per page basis include the parameter &lt;code>math: true&lt;/code> in content files&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Note:&lt;/strong> Use the online reference of &lt;a href="https://katex.org/docs/supported.html">Supported TeX Functions&lt;/a>&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;p>Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$&lt;/p>
+&lt;p>Block math:
+$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$&lt;/p></description></item><item><title>Emoji Support</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/emoji-support/</guid><description>&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p>
+&lt;p>The &lt;a href="https://gohugo.io/functions/emojify/">&lt;code>emojify&lt;/code>&lt;/a> function can be called directly in templates or &lt;a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes&lt;/a>.&lt;/p>
+&lt;p>To enable emoji globally, set &lt;code>enableEmoji&lt;/code> to &lt;code>true&lt;/code> in your site&amp;rsquo;s &lt;a href="https://gohugo.io/getting-started/configuration/">configuration&lt;/a> and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p>
+&lt;p>&lt;span class="nowrap">&lt;span class="emojify">🙈&lt;/span> &lt;code>🙈&lt;/code>&lt;/span> &lt;span class="nowrap">&lt;span class="emojify">🙉&lt;/span> &lt;code>🙉&lt;/code>&lt;/span> &lt;span class="nowrap">&lt;span class="emojify">🙊&lt;/span> &lt;code>🙊&lt;/code>&lt;/span>&lt;/p>
+&lt;p>The &lt;a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet&lt;/a> is a useful reference for emoji shorthand codes.&lt;/p>
+&lt;hr>
+&lt;p>&lt;strong>N.B.&lt;/strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">.emoji {
+font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+}&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>balloon layout single demo</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/balloon/single/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/balloon/single/</guid><description>&lt;p>Balloon layout can also be used in regular page.&lt;/p>
+&lt;p>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/layouts/demo/balloon">Go to list demo&lt;/a>&lt;/p></description></item><item><title>Changelog</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</guid><description>&lt;h2 id="changelog">Changelog&lt;/h2>
+&lt;h3 id="v080---20210729">v0.8.0 - 2021/07/29&lt;/h3>
+&lt;ul>
+&lt;li>Improve: flexsearch multilingual search capability&lt;/li>
+&lt;li>Improve: widen the control range of navbar menu items&lt;/li>
+&lt;li>Change: flexsearch can now search index pages&lt;/li>
+&lt;li>Change: the post content in RSS is changed from summary to full text&lt;/li>
+&lt;li>Add: collapsible TOC and Changelogs&lt;/li>
+&lt;/ul>
+&lt;h3 id="v071---20210708">v0.7.1 - 2021/07/08&lt;/h3>
+&lt;ul>
+&lt;li>Change: adjust the style of changelogs&lt;/li>
+&lt;li>Fix: flexsearch search API issue&lt;/li>
+&lt;/ul>
+&lt;h3 id="v070---20210624">v0.7.0 - 2021/06/24&lt;/h3>
+&lt;ul>
+&lt;li>Bump dependencies version&lt;/li>
+&lt;li>Add: &lt;code>changelogs&lt;/code> property&lt;/li>
+&lt;li>Add: support disqus for index page (turn off by default)&lt;/li>
+&lt;li>Change: theme name from &amp;lsquo;Graytr&amp;rsquo; to &amp;lsquo;Monochrome&amp;rsquo;&lt;/li>
+&lt;li>Change: improve navbar responsiveness&lt;/li>
+&lt;li>Fix: widen the control range of navbar menu icon&lt;/li>
+&lt;/ul>
+&lt;h3 id="v062---20210415">v0.6.2 - 2021/04/15&lt;/h3>
+&lt;ul>
+&lt;li>Fix: google search console authentication failed if ga code not in &lt;code>&amp;lt;head&amp;gt;&lt;/code>&lt;/li>
+&lt;li>Fix: &lt;code>clipboard-polyfill/text&lt;/code> dependency resolved issue&lt;/li>
+&lt;/ul>
+&lt;h3 id="v061---20210217">v0.6.1 - 2021/02/17&lt;/h3>
+&lt;ul>
+&lt;li>Fix: codepen shortcode id&lt;/li>
+&lt;li>Change baseurl to example.com in exampleSite&lt;/li>
+&lt;/ul>
+&lt;h3 id="v060---20210216">v0.6.0 - 2021/02/16&lt;/h3>
+&lt;ul>
+&lt;li>Support MathJax&lt;/li>
+&lt;li>Add shortcodes: &lt;code>jsfiddle&lt;/code>, &lt;code>codepen&lt;/code>, &lt;code>color-block&lt;/code>, &lt;code>icon-group&lt;/code>, &lt;code>terms-cloud&lt;/code>&lt;/li>
+&lt;li>Add option: &lt;code>list_posts&lt;/code> in list layout&lt;/li>
+&lt;li>Fix: not register touchend event&lt;/li>
+&lt;/ul>
+&lt;h3 id="v050---20210215">v0.5.0 - 2021/02/15&lt;/h3>
+&lt;ul>
+&lt;li>Support multilingual mode
+&lt;ul>
+&lt;li>Add i18n&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Support Open Graph, Twitter Card&lt;/li>
+&lt;li>Adjust svg-wrapper shortcode
+&lt;ul>
+&lt;li>Add some social icons: &lt;code>facebook&lt;/code>, &lt;code>github&lt;/code>, &lt;code>twitter&lt;/code>, &lt;code>rss&lt;/code>, &lt;code>mail&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Support site search (powered by flexsearch)&lt;/li>
+&lt;li>Disable unused features in tailwindcss (speedup building time)&lt;/li>
+&lt;li>Reorganize parameters&lt;/li>
+&lt;li>Remove default image to figure transformation, using built-in shortcode instead&lt;/li>
+&lt;/ul>
+&lt;h3 id="v040---20210212">v0.4.0 - 2021/02/12&lt;/h3>
+&lt;ul>
+&lt;li>Support dark mode
+&lt;ul>
+&lt;li>Add &lt;code>bookcase_cover_src_dark&lt;/code> for bookcase layout&lt;/li>
+&lt;li>Add &lt;code>balloon_img_src_dark&lt;/code> for balloon layout&lt;/li>
+&lt;li>Add shortcode: svg-wrapper&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prism.js integration (v1.23.0)&lt;/li>
+&lt;li>Code copy feature for code block&lt;/li>
+&lt;/ul>
+&lt;h3 id="v030---20210210">v0.3.0 - 2021/02/10&lt;/h3>
+&lt;ul>
+&lt;li>Support nested navbar&lt;/li>
+&lt;li>Implement default homepage layout&lt;/li>
+&lt;li>Adjust the purpose of bookcase layout&lt;/li>
+&lt;li>Remove catalog layout&lt;/li>
+&lt;/ul>
+&lt;h3 id="v020---20210209">v0.2.0 - 2021/02/09&lt;/h3>
+&lt;ul>
+&lt;li>A better responsive navbar&lt;/li>
+&lt;li>Implement default taxonomy and term layout&lt;/li>
+&lt;li>Adjust article styles&lt;/li>
+&lt;/ul>
+&lt;h3 id="v010---20210208">v0.1.0 - 2021/02/08&lt;/h3>
+&lt;p>Initial release.&lt;/p></description></item><item><title>CodePen</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</guid><description>&lt;h1 id="codepen">CodePen&lt;/h1>
+&lt;p>Embeded codepen to page.&lt;/p>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; codepen id=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;p>Paramters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>id&lt;/code>: codepen id&lt;/li>
+&lt;/ul>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">codepen&lt;/span> &lt;span style="color:#a6e22e">id&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;Vwmpjba&amp;#34;&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="Vwmpjba" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">&lt;/p>
+&lt;script async src="https://cpwebassets.codepen.io/assets/embed/ei.js">&lt;/script></description></item><item><title>Color Block</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</guid><description>&lt;h1 id="color-block">Color Block&lt;/h1>
+&lt;p>A block with color&lt;/p>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; color-block style=&amp;quot;&amp;quot; &amp;gt;}}
+{{&amp;lt; /color-block &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;p>Paramters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>style&lt;/code>: block style
+&lt;ul>
+&lt;li>success&lt;/li>
+&lt;li>info&lt;/li>
+&lt;li>warning&lt;/li>
+&lt;li>error&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">color-block&lt;/span> &amp;gt;}}
+hello world
+{{&amp;lt; /&lt;span style="color:#f92672">color-block&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="rounded p-3 my-6" style="background-color: #f0f0f0; color: #494949;" >
+hello world
+&lt;/div>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">color-block&lt;/span> &lt;span style="color:#a6e22e">style&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;success&amp;#34;&lt;/span> &amp;gt;}}
+hello world
+{{&amp;lt; /&lt;span style="color:#f92672">color-block&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="rounded p-3 my-6" style="background-color: #dff0d8; color: #3c763d;" >
+hello world
+&lt;/div>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">color-block&lt;/span> &lt;span style="color:#a6e22e">style&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;info&amp;#34;&lt;/span> &amp;gt;}}
+hello world
+{{&amp;lt; /&lt;span style="color:#f92672">color-block&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="rounded p-3 my-6" style="background-color: #d9edf7; color: #31708f;" >
+hello world
+&lt;/div>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">color-block&lt;/span> &lt;span style="color:#a6e22e">style&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;warning&amp;#34;&lt;/span> &amp;gt;}}
+hello world
+{{&amp;lt; /&lt;span style="color:#f92672">color-block&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="rounded p-3 my-6" style="background-color: #fcf8e3; color: #8a6d3b;" >
+hello world
+&lt;/div>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">color-block&lt;/span> &lt;span style="color:#a6e22e">style&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;error&amp;#34;&lt;/span> &amp;gt;}}
+hello world
+{{&amp;lt; /&lt;span style="color:#f92672">color-block&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="rounded p-3 my-6" style="background-color: #f2dede; color: #a94442;" >
+hello world
+&lt;/div></description></item><item><title>Icon Group</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</guid><description>&lt;h1 id="icon-group">Icon Group&lt;/h1>
+&lt;p>Wrap icons with grid layout&lt;/p>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; icon-group &amp;gt;}}
+{{&amp;lt; /icon-group &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;h2 id="examples">Examples&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">icon-group&lt;/span> &amp;gt;}}
+{{&amp;lt; &lt;span style="color:#f92672">svg-wrapper&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;github&amp;#34;&lt;/span> /&amp;gt;}}
+{{&amp;lt; &lt;span style="color:#f92672">svg-wrapper&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;rss&amp;#34;&lt;/span> /&amp;gt;}}
+{{&amp;lt; &lt;span style="color:#f92672">svg-wrapper&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;twitter&amp;#34;&lt;/span> /&amp;gt;}}
+{{&amp;lt; /&lt;span style="color:#f92672">icon-group&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="block my-6">
+&lt;div class="inline-grid grid-flow-col gap-1.5">
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">&lt;/path>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg width="24" height="24" viewBox="-1 -1 26 26" xmlns="http://www.w3.org/2000/svg">&lt;path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z">&lt;/path>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">&lt;path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">&lt;/path>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>JSFiddle</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</guid><description>&lt;h1 id="jsfiddle">JSFiddle&lt;/h1>
+&lt;p>Embeded jsfiddle to page.&lt;/p>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; jsfiddle id=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;p>Paramters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>id&lt;/code>: jsfiddle id&lt;/li>
+&lt;/ul>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">jsfiddle&lt;/span> &lt;span style="color:#a6e22e">id&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;5byh90rz&amp;#34;&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;iframe width="100%" height="400" src="//jsfiddle.net/5byh90rz/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0">&lt;/iframe></description></item><item><title>Regular Page</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/regular-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/bookcase/regular-page/</guid><description>&lt;p>This is a regular page in bookcase.&lt;/p></description></item><item><title>Setup</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/setup/</guid><description>&lt;p>This document shows a brief guide to setup hugo-theme-monochrome in your hugo project.&lt;/p>
+&lt;h2 id="quick-start">Quick Start&lt;/h2>
+&lt;h3 id="install-hugo">Install Hugo&lt;/h3>
+&lt;p>You need &amp;ldquo;extended&amp;rdquo; version of hugo to support SASS. Checkout &lt;a href="https://gohugo.io/getting-started/installing/">Install Hugo&lt;/a> for more details.&lt;/p>
+&lt;p>Take Linux for example:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">snap install hugo --channel&lt;span style="color:#f92672">=&lt;/span>extended
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>The minimum hugo version that hugo-theme-monochrome required is &lt;code>0.80.0&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="create-a-new-site">Create a New Site&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">hugo new site &amp;lt;project name&amp;gt;
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="add-a-theme">Add a Theme&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">cd &amp;lt;project name&amp;gt;
+git init
+git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/hugo-theme-monochrome
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Then add &lt;code>theme = &amp;quot;hugo-theme-monochrome&amp;quot;&lt;/code> to your &lt;code>config.toml&lt;/code>&lt;/p>
+&lt;h3 id="setup-dependencies">Setup Dependencies&lt;/h3>
+&lt;p>Prepare a composite package.json file for your project.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">hugo mod npm pack
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Install dependencies&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">npm install
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Remember to ignore &lt;code>node_modules&lt;/code> folder&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="setup-postcss">Setup PostCSS&lt;/h3>
+&lt;p>hugo-theme-monochrome is powered by &lt;a href="https://tailwindcss.com/">tailwindcss&lt;/a>. For better quality of CSS purging in production, you should add the following config to your &lt;code>config.toml&lt;/code>, or the default settings generated from demo site will be applied.&lt;/p>
+&lt;p>See &lt;a href="https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss">CSS purging with PostCSS&lt;/a> for more details.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">build&lt;/span>]
+&lt;span style="color:#a6e22e">writeStats&lt;/span> = &lt;span style="color:#66d9ef">true&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="customize-the-theme">Customize the Theme&lt;/h3>
+&lt;p>See &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/">Configuration&lt;/a>.&lt;/p>
+&lt;h3 id="start-the-hugo-server">Start the Hugo server&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">hugo server
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>Minify CSS and JS resources, PurgeCSS will also be applied. The minifier of JavaScript here is powered by &lt;a href="https://github.com/evanw/esbuild">ESBuild&lt;/a>.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">hugo server --environment production
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="build-static-pages">Build static pages&lt;/h3>
+&lt;p>Generate files to &lt;code>/public&lt;/code> folder, &lt;code>--minify&lt;/code> option can minify other resouces (e.g. HTML/XML/JSON&amp;hellip;).&lt;/p>
+&lt;p>See &lt;a href="https://gohugo.io/getting-started/configuration/#configure-minify">Configure Minify&lt;/a> to adjust the behavior of hugo minifier (powered by &lt;a href="https://github.com/tdewolff/minify">minify&lt;/a>).&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">hugo --environment production --minify
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="deployment">Deployment&lt;/h3>
+&lt;p>Push &lt;code>/public&lt;/code> folder to your server. This site is built by using Github Action and Github Pages. The CI script is available &lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/blob/main/.github/workflows/gh-pages.yml">here&lt;/a>.&lt;/p>
+&lt;h2 id="run-examplesite">Run exampleSite&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">git clone https://github.com/kaiiiz/hugo-theme-monochrome
+cd hugo-theme-monochrome/exampleSite
+hugo --themesDir&lt;span style="color:#f92672">=&lt;/span>../.. mod npm pack
+npm install
+hugo --themesDir&lt;span style="color:#f92672">=&lt;/span>../.. server
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>SVG Wrapper</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/svg-wrapper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/svg-wrapper/</guid><description>&lt;h1 id="svg-wrapper">SVG Wrapper&lt;/h1>
+&lt;p>Wrap SVG with dark/bright color styles, it&amp;rsquo;s useful for dark mode compatibility.&lt;/p>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; svg-wrapper name=&amp;quot;&amp;quot; link=&amp;quot;&amp;quot; &amp;gt;}}
+svg inline
+{{&amp;lt; /svg-wrapper &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;p>Paramters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>link&lt;/code>: Render link for svg&lt;/li>
+&lt;li>&lt;code>name&lt;/code>: Use theme built-in svg&lt;/li>
+&lt;/ul>
+&lt;h2 id="available-built-in-svg">Available Built-in SVG&lt;/h2>
+&lt;p>Icon from &lt;a href="https://material.io/resources/icons/">Material Design&lt;/a>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>name&lt;/th>
+&lt;th>svg&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>arrow-down&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">&lt;path d="M0 0h24v24H0z" fill="none"/>&lt;path d="M7 10l5 5 5-5z"/>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>arrow-right&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">&lt;path d="M10 17l5-5-5-5v10z"/>&lt;path d="M0 24V0h24v24H0z" fill="none"/>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>earth&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">&lt;path d="M0 0h24v24H0z" fill="none"/>&lt;path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>moon&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">&lt;g>&lt;path d="M0,0h24v24H0V0z" fill="none"/>&lt;/g>&lt;g>&lt;g>&lt;g>&lt;path d="M14,2c1.82,0,3.53,0.5,5,1.35C16.01,5.08,14,8.3,14,12s2.01,6.92,5,8.65C17.53,21.5,15.82,22,14,22C8.48,22,4,17.52,4,12 S8.48,2,14,2z"/>&lt;/g>&lt;/g>&lt;/g>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>sun&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">&lt;path d="M0 0h24v24H0z" fill="none"/>&lt;path d="M20 15.31L23.31 12 20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Icons from &lt;a href="https://simple-icons.github.io/simple-icons-website/">Simple Icons&lt;/a>&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>name&lt;/th>
+&lt;th>svg&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>github&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">&lt;/path>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>facebook&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">&lt;path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">&lt;/path>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>rss&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg width="24" height="24" viewBox="-1 -1 26 26" xmlns="http://www.w3.org/2000/svg">&lt;path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z">&lt;/path>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>twitter&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">&lt;path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z">&lt;/path>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>mail&lt;/td>
+&lt;td>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;div>
+&lt;svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">&lt;title>Gmail icon&lt;/title>&lt;path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z">&lt;/path>&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">svg-wrapper&lt;/span> &lt;span style="color:#a6e22e">link&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://github.com/kaiiiz/hugo-theme-monochrome&amp;#34;&lt;/span> &amp;gt;}}
+&amp;lt;&lt;span style="color:#f92672">svg&lt;/span> &lt;span style="color:#a6e22e">width&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;24&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">height&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;24&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">viewBox&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;0 0 24 24&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">xmlns&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;http://www.w3.org/2000/svg&amp;#34;&lt;/span>&amp;gt;&amp;lt;&lt;span style="color:#f92672">path&lt;/span> &lt;span style="color:#a6e22e">d&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12&amp;#34;&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">path&lt;/span>&amp;gt;&amp;lt;/&lt;span style="color:#f92672">svg&lt;/span>&amp;gt;
+{{&amp;lt; /&lt;span style="color:#f92672">svg-wrapper&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;a rel="noopener" target="_blank" href="https://github.com/kaiiiz/hugo-theme-monochrome" aria-label="svg-wrapper">
+&lt;svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">&lt;/path>&lt;/svg>
+&lt;/a>
+&lt;/div>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">svg-wrapper&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;github&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">link&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://github.com/kaiiiz/hugo-theme-monochrome&amp;#34;&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="inline-block w-6 h-6 svg-wrapper">
+&lt;a rel="noopener" target="_blank" href="https://github.com/kaiiiz/hugo-theme-monochrome" aria-label="$icon_name">
+&lt;svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">&lt;path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">&lt;/path>&lt;/svg>
+&lt;/a>
+&lt;/div></description></item><item><title>Terms Cloud</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</guid><description>&lt;h1 id="terms-cloud">Terms Cloud&lt;/h1>
+&lt;p>Render terms cloud&lt;/p>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; terms-cloud terms=&amp;quot;&amp;quot; /&amp;gt;}}
+&lt;/code>&lt;/pre>&lt;p>Paramters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>terms&lt;/code>: terms name&lt;/li>
+&lt;/ul>
+&lt;h2 id="examples">Examples&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">terms-cloud&lt;/span> &lt;span style="color:#a6e22e">terms&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;tags&amp;#34;&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div class="my-6">
+&lt;div>
+&lt;a class="tag-item whitespace-nowrap border-b-2 mr-1.5" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/tags/css/">
+&lt;span style="font-size:1rem">css&lt;/span>
+&lt;span style="font-size:0.8rem"> (1) &lt;/span>
+&lt;/a>
+&lt;a class="tag-item whitespace-nowrap border-b-2 mr-1.5" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/tags/emoji/">
+&lt;span style="font-size:1rem">emoji&lt;/span>
+&lt;span style="font-size:0.8rem"> (1) &lt;/span>
+&lt;/a>
+&lt;a class="tag-item whitespace-nowrap border-b-2 mr-1.5" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/tags/html/">
+&lt;span style="font-size:1rem">html&lt;/span>
+&lt;span style="font-size:0.8rem"> (1) &lt;/span>
+&lt;/a>
+&lt;a class="tag-item whitespace-nowrap border-b-2 mr-1.5" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/tags/index/">
+&lt;span style="font-size:1rem">index&lt;/span>
+&lt;span style="font-size:0.8rem"> (1) &lt;/span>
+&lt;/a>
+&lt;a class="tag-item whitespace-nowrap border-b-2 mr-1.5" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/tags/markdown/">
+&lt;span style="font-size:1.6931471805599454rem">markdown&lt;/span>
+&lt;span style="font-size:0.8rem"> (2) &lt;/span>
+&lt;/a>
+&lt;a class="tag-item whitespace-nowrap border-b-2 mr-1.5" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/tags/privacy/">
+&lt;span style="font-size:1rem">privacy&lt;/span>
+&lt;span style="font-size:0.8rem"> (1) &lt;/span>
+&lt;/a>
+&lt;a class="tag-item whitespace-nowrap border-b-2 mr-1.5" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/tags/shortcodes/">
+&lt;span style="font-size:1rem">shortcodes&lt;/span>
+&lt;span style="font-size:0.8rem"> (1) &lt;/span>
+&lt;/a>
+&lt;a class="tag-item whitespace-nowrap border-b-2 mr-1.5" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/tags/text/">
+&lt;span style="font-size:1rem">text&lt;/span>
+&lt;span style="font-size:0.8rem"> (1) &lt;/span>
+&lt;/a>
+&lt;/div>
+&lt;/div></description></item></channel></rss>

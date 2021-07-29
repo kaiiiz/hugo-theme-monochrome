@@ -1,16 +1,457 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documents on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/</link><description>Recent content in Documents on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Balloon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/balloon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/balloon/</guid><description>Balloon is useful for demonstrating information step-by-step.
-This layout can be used on both list layout and single layout.
-Configuration 1 2 3 --- type: &amp;#39;balloon&amp;#39; --- Specify type in front-matter will change the template lookup order.
-balloon_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)
-Hugo will handle multilingual scenario out of the box</description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/bookcase/</guid><description>Bookcase layout is useful for creating another viewpoint of list contents.
-This layout can only be used on list layout.
-Configuration 1 2 3 --- type: &amp;#39;bookcase&amp;#39; --- Specify type in front-matter will change the template lookup order.
-bookcase_list_sections List subsections.
-1 2 3 --- bookcase_list_sections: true --- default: true
-bookcase_list_pages List pages.
-1 2 3 --- bookcase_list_pages: true --- default: true</description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/gallery/</guid><description>Gallery layout is useful for demonstrating pictures and its statistical data.
-This layout can be used on both list layout and single layout.
-Configuration 1 2 3 --- type: &amp;#39;gallery&amp;#39; --- Specify type in front-matter will change the template lookup order.
-gallery_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)</description></item><item><title>List</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/list/</guid><description>List layout is built-in section layout. Monochrome add options to adjust its behavior.
-Configuration List posts You can fully customize your index page through the content of _index.md and decide whether render the default list layout by specifying list_posts.
-1 list_posts: false default: true</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Documents on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/</link><description>Recent content in Documents on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Balloon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/balloon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/balloon/</guid><description>&lt;p>Balloon is useful for demonstrating information step-by-step.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can be used on both list layout and single layout.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;balloon&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_resources">balloon_resources&lt;/h3>
+&lt;p>Content resources. URL can be an absolute path (with &lt;code>/&lt;/code> prefix, relative to base URL), or relative path (without &lt;code>/&lt;/code>, relative to current path)&lt;/p>
+&lt;blockquote>
+&lt;p>Hugo will handle multilingual scenario out of the box&lt;/p>
+&lt;/blockquote>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/about
+\____________________________________/\____/
+base URL balloon_resources
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_resources&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;/about&amp;#34;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: error will occur in page&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_img_src">balloon_img_src&lt;/h3>
+&lt;p>Balloon head image URL. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL balloon_img_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_img_src&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: fallback to balloon_img_src_dark, if failed, image become dot&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_img_src_dark">balloon_img_src_dark&lt;/h3>
+&lt;p>Balloon head image URL for dark mode. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL balloon_img_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_img_src_dark&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: fallback to balloon_img_src, if failed, image become dot&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_circle">balloon_circle&lt;/h3>
+&lt;p>balloon head shape can be square or circle.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_circle&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="resouces-configuration">Resouces Configuration&lt;/h2>
+&lt;p>These settings are under the resource specified in &lt;code>balloon_resources&lt;/code>.&lt;/p>
+&lt;h3 id="title">title&lt;/h3>
+&lt;p>Title of content card.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;Story before hugo&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no title&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="weight">weight&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">3&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: &lt;a href="https://gohugo.io/templates/lists/#order-content">default order&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="trick">Trick&lt;/h2>
+&lt;p>Hugo supports an amazing feature called &lt;strong>Headless Bundle&lt;/strong>, which elegantly resolved the resouces publish issue.&lt;/p>
+&lt;p>For example, if you don&amp;rsquo;t want to publish the resouces of the balloon layout, you can create a leaf bundle and specified &lt;code>headless = true&lt;/code> in &lt;code>index.md&lt;/code>&amp;rsquo;s front-matter. These resources will only be used during rendering process. In other word, no file will be generated to &lt;code>/public&lt;/code> folder.&lt;/p>
+&lt;p>Checkout &lt;a href="https://gohugo.io/content-management/page-bundles/#headless-bundle">Headless Bundle&lt;/a> for more details.&lt;/p></description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/bookcase/</guid><description>&lt;p>Bookcase layout is useful for creating another viewpoint of list contents.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can only be used on list layout.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;bookcase&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="bookcase_list_sections">bookcase_list_sections&lt;/h3>
+&lt;p>List subsections.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_list_sections&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="bookcase_list_pages">bookcase_list_pages&lt;/h3>
+&lt;p>List pages.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_list_pages&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="resouces-configuration">Resouces Configuration&lt;/h2>
+&lt;p>These parameters are located in bookcase item&amp;rsquo;s resource. For example:&lt;/p>
+&lt;pre>&lt;code>.
+├── books.md &amp;lt;- config is located in here!
+├── category
+│ └── _index.md &amp;lt;- and here!
+└── _index.md &amp;lt;- your bookcase layout
+&lt;/code>&lt;/pre>&lt;h3 id="bookcase_cover_src">bookcase_cover_src&lt;/h3>
+&lt;p>The cover image URL. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;blockquote>
+&lt;p>Image ratio is 2:3 (width:height)&lt;/p>
+&lt;/blockquote>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL bookcase_cover_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_cover_src&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: fallback to bookcase_cover_src_dark, if failed, image become empty&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="bookcase_cover_src_dark">bookcase_cover_src_dark&lt;/h3>
+&lt;p>The cover image URL for dark mode. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;blockquote>
+&lt;p>Image ratio is 2:3 (width:height)&lt;/p>
+&lt;/blockquote>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL bookcase_cover_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_cover_src_dark&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: fallback to bookcase_cover_src, if failed, image become empty&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="weight">weight&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">3&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: &lt;a href="https://gohugo.io/templates/lists/#order-content">default order&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/gallery/</guid><description>&lt;p>Gallery layout is useful for demonstrating pictures and its statistical data.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can be used on both list layout and single layout.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;gallery&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_resources">gallery_resources&lt;/h3>
+&lt;p>Content resources. URL can be an absolute path (with &lt;code>/&lt;/code> prefix, relative to base URL), or relative path (without &lt;code>/&lt;/code>, relative to current path)&lt;/p>
+&lt;blockquote>
+&lt;p>Hugo will handle multilingual scenario out of the box&lt;/p>
+&lt;/blockquote>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/about
+\____________________________________/\____/
+base URL gallery_resources
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_resources&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;/about&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: error will occur in page&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="resouces-configuration">Resouces Configuration&lt;/h2>
+&lt;p>These settings are under the resource specified in &lt;code>gallery_resources&lt;/code>.&lt;/p>
+&lt;h3 id="title">title&lt;/h3>
+&lt;p>Title of image.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;Gallery&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no title&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_title_link">gallery_title_link&lt;/h3>
+&lt;p>Link of the title.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_title_link&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;https://github.com/kaiiiz&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no title link&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_img_src">gallery_img_src&lt;/h3>
+&lt;p>Image URL. URL must be relative to base URL. (without &lt;code>/&lt;/code> prefix)&lt;/p>
+&lt;p>For example:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL gallery_img_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_img_src&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no image&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_img_link">gallery_img_link&lt;/h3>
+&lt;p>Link of the image.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_img_link&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;https://github.com/kaiiiz&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no image link&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_img_caption">gallery_img_caption&lt;/h3>
+&lt;p>Caption of the image. HTML is available.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_img_caption&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;&amp;lt;span&amp;gt;Photo by &amp;lt;a href=&amp;#34;https://unsplash.com/@swimstaralex?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&amp;#34;&amp;gt;Alexander Sinn&amp;lt;/a&amp;gt; on &amp;lt;a href=&amp;#34;https://unsplash.com/s/photos/thanks?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&amp;#34;&amp;gt;Unsplash&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no figure caption under image&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_statistic">gallery_statistic&lt;/h3>
+&lt;p>Statistic of the image. The format is:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+- &lt;span style="color:#f92672">key&lt;/span>: &lt;span style="color:#ae81ff">key1&lt;/span>
+&lt;span style="color:#f92672">value&lt;/span>: &lt;span style="color:#ae81ff">value1&lt;/span>
+- &lt;span style="color:#f92672">key&lt;/span>: &lt;span style="color:#ae81ff">key2&lt;/span>
+&lt;span style="color:#f92672">value&lt;/span>: &lt;span style="color:#ae81ff">value2&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: no figure caption under image&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="weight">weight&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">3&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: &lt;a href="https://gohugo.io/templates/lists/#order-content">default order&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="trick">Trick&lt;/h2>
+&lt;p>Hugo supports an amazing feature called &lt;strong>Headless Bundle&lt;/strong>, which elegantly resolved the resouces publish issue.&lt;/p>
+&lt;p>For example, if you don&amp;rsquo;t want to publish the resouces of the balloon layout, you can create a leaf bundle and specified &lt;code>headless = true&lt;/code> in &lt;code>index.md&lt;/code>&amp;rsquo;s front-matter. These resources will only be used during rendering process. In other word, no file will be generated to &lt;code>/public&lt;/code> folder.&lt;/p>
+&lt;p>Checkout &lt;a href="https://gohugo.io/content-management/page-bundles/#headless-bundle">Headless Bundle&lt;/a> for more details.&lt;/p></description></item><item><title>List</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/docs/list/</guid><description>&lt;p>List layout is built-in section layout. Monochrome add options to adjust its behavior.&lt;/p>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;h3 id="list-posts">List posts&lt;/h3>
+&lt;p>You can fully customize your index page through the content of &lt;code>_index.md&lt;/code> and decide whether render the default list layout by specifying &lt;code>list_posts&lt;/code>.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="color:#f92672">list_posts&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote></description></item></channel></rss>

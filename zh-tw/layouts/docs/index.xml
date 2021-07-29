@@ -1,29 +1,457 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文件 on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/</link><description>Recent content in 文件 on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Balloon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/balloon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/balloon/</guid><description>Balloon 可以將階段的資訊選染成卡片樣式。
-這個版型可以在列表與單頁使用
-設定 1 2 3 --- type: &amp;#39;balloon&amp;#39; --- 在 front-matter 指定 type 會改變 template 的使用順序
-balloon_resources 資源的路徑。路徑可以是絕對路徑或是相對路徑。
-Hugo 會正確的處理支援多國語言的情況
-舉例來說:
-https://kaiiiz.github.io/hugo-theme-monochrome/about \____________________________________/\____/ base URL balloon_resources 1 2 3 --- balloon_resources: &amp;#34;/about&amp;#34; --- default: 錯誤訊息會被渲染在頁面上
-balloon_img_src 圖片路徑，路徑必須相對於 base URL (注意沒有 / 的前綴)
-舉例來說:
-https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg \_____________________________________/\________/ base URL balloon_img_src 1 2 3 --- balloon_img_src: &amp;#39;thanks.</description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/bookcase/</guid><description>Bookcase 可以為列表提供不同的樣式。
-這個版型僅可在列表使用
-設定 1 2 3 --- type: &amp;#39;bookcase&amp;#39; --- 在 front-matter 指定 type 會改變 template 的使用順序
-bookcase_list_sections 列出 subsections
-1 2 3 --- bookcase_list_sections: true --- default: true
-bookcase_list_pages 列出 pages
-1 2 3 --- bookcase_list_pages: true --- default: true
-資源設定 這些設定會存在在 balloon_resources 指定的目錄下的頁面
-. ├── books.md &amp;lt;- config is located in here!</description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/gallery/</guid><description>Gallery 可以展示圖片輔以一些相關數據與說明。
-這個版型可以在列表與單頁使用
-Configuration 1 2 3 --- type: &amp;#39;gallery&amp;#39; --- 在 front-matter 指定 type 會改變 template 的使用順序
-gallery_resources 資源的路徑。路徑可以是絕對路徑或是相對路徑。
-Hugo 會正確的處理支援多國語言的情況
-舉例來說:
-https://kaiiiz.github.io/hugo-theme-monochrome/about \____________________________________/\____/ base URL gallery_resources 1 2 3 --- gallery_resources: &amp;#39;/about&amp;#39; --- default: 錯誤訊息會被渲染在頁面上
-資源設定 這些設定會存在在 gallery_resources 指定的目錄下的頁面
-title 圖片的標題
-1 2 3 --- title: &amp;#39;Gallery&amp;#39; --- default: 標題不會被渲染</description></item><item><title>List</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/list/</guid><description>List layout 是預設產生 section 時會套用的樣式. Monochrome 提供一些參數調整它的行為。
-設定 List posts 你可以透過宣告 list_posts 來透過 _index.md 的內容完全客製化列表的樣式。
-1 list_posts: false default: true</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文件 on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/</link><description>Recent content in 文件 on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>zh-tw</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Balloon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/balloon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/balloon/</guid><description>&lt;p>Balloon 可以將階段的資訊選染成卡片樣式。&lt;/p>
+&lt;blockquote>
+&lt;p>這個版型可以在列表與單頁使用&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="設定">設定&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;balloon&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>在 front-matter 指定 &lt;code>type&lt;/code> 會改變 template 的使用順序&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_resources">balloon_resources&lt;/h3>
+&lt;p>資源的路徑。路徑可以是絕對路徑或是相對路徑。&lt;/p>
+&lt;blockquote>
+&lt;p>Hugo 會正確的處理支援多國語言的情況&lt;/p>
+&lt;/blockquote>
+&lt;p>舉例來說:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/about
+\____________________________________/\____/
+base URL balloon_resources
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_resources&lt;/span>: &lt;span style="color:#e6db74">&amp;#34;/about&amp;#34;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 錯誤訊息會被渲染在頁面上&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_img_src">balloon_img_src&lt;/h3>
+&lt;p>圖片路徑，路徑必須相對於 base URL (注意沒有 &lt;code>/&lt;/code> 的前綴)&lt;/p>
+&lt;p>舉例來說:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL balloon_img_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_img_src&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 使用 balloon_img_src_dark 的值, 如果都沒有值，圖片會變成一個點&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_img_src_dark">balloon_img_src_dark&lt;/h3>
+&lt;p>在黑色模式下的圖片路徑，路徑必須相對於 base URL (注意沒有 &lt;code>/&lt;/code> 的前綴)&lt;/p>
+&lt;p>舉例來說:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL balloon_img_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_img_src_dark&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 使用 balloon_img_src 的值, 如果都沒有值，圖片會變成一個點&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="balloon_circle">balloon_circle&lt;/h3>
+&lt;p>是否將圖形套用圓形樣式&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">balloon_circle&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="資源設定">資源設定&lt;/h2>
+&lt;p>這些設定會存在在 &lt;code>balloon_resources&lt;/code> 指定的目錄下的頁面&lt;/p>
+&lt;h3 id="title">title&lt;/h3>
+&lt;p>單個卡片的標題&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;Story before hugo&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 沒有標題&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="weight">weight&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">3&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: &lt;a href="https://gohugo.io/templates/lists/#order-content">預設排序&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="技巧">技巧&lt;/h2>
+&lt;p>Hugo 支援 &lt;strong>Headless Bundle&lt;/strong>，可以很優雅的解決資源是否要被發布的問題。&lt;/p>
+&lt;p>舉例來說，如果你不想要 balloon 版型中的資源被發布，可以透過建立一個 leaf bundle 並在 &lt;code>index.md&lt;/code> 的 front-matter 中指定 &lt;code>headless = true&lt;/code>。這些資源將僅被使用在渲染頁面的過程，也就是說對應的目錄不會被生成到 &lt;code>/public&lt;/code> 中。&lt;/p>
+&lt;p>更多資訊請參考 &lt;a href="https://gohugo.io/content-management/page-bundles/#headless-bundle">Headless Bundle&lt;/a>&lt;/p></description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/bookcase/</guid><description>&lt;p>Bookcase 可以為列表提供不同的樣式。&lt;/p>
+&lt;blockquote>
+&lt;p>這個版型僅可在列表使用&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="設定">設定&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;bookcase&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>在 front-matter 指定 &lt;code>type&lt;/code> 會改變 template 的使用順序&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="bookcase_list_sections">bookcase_list_sections&lt;/h3>
+&lt;p>列出 subsections&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_list_sections&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="bookcase_list_pages">bookcase_list_pages&lt;/h3>
+&lt;p>列出 pages&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_list_pages&lt;/span>: &lt;span style="color:#66d9ef">true&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="資源設定">資源設定&lt;/h2>
+&lt;p>這些設定會存在在 &lt;code>balloon_resources&lt;/code> 指定的目錄下的頁面&lt;/p>
+&lt;pre>&lt;code>.
+├── books.md &amp;lt;- config is located in here!
+├── category
+│ └── _index.md &amp;lt;- and here!
+└── _index.md &amp;lt;- your bookcase layout
+&lt;/code>&lt;/pre>&lt;h3 id="bookcase_cover_src">bookcase_cover_src&lt;/h3>
+&lt;p>圖片路徑，路徑必須相對於 base URL (注意沒有 &lt;code>/&lt;/code> 的前綴)&lt;/p>
+&lt;blockquote>
+&lt;p>圖片比例：2:3 (寬:高)&lt;/p>
+&lt;/blockquote>
+&lt;p>舉例來說:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL bookcase_cover_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_cover_src&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 使用 bookcase_cover_src_dark 的值, 如果都沒有值，圖片會變成空值&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="bookcase_cover_src_dark">bookcase_cover_src_dark&lt;/h3>
+&lt;p>在黑色模式下的圖片路徑，路徑必須相對於 base URL (注意沒有 &lt;code>/&lt;/code> 的前綴)&lt;/p>
+&lt;blockquote>
+&lt;p>圖片比例：2:3 (寬:高)&lt;/p>
+&lt;/blockquote>
+&lt;p>舉例來說:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL bookcase_cover_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">bookcase_cover_src_dark&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 使用 bookcase_cover_src 的值, 如果都沒有值，圖片會變成空值&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="weight">weight&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">3&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: &lt;a href="https://gohugo.io/templates/lists/#order-content">預設排序&lt;/a>&lt;/p>
+&lt;/blockquote></description></item><item><title>Gallery</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/gallery/</guid><description>&lt;p>Gallery 可以展示圖片輔以一些相關數據與說明。&lt;/p>
+&lt;blockquote>
+&lt;p>這個版型可以在列表與單頁使用&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="configuration">Configuration&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">type&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;gallery&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>在 front-matter 指定 &lt;code>type&lt;/code> 會改變 template 的使用順序&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_resources">gallery_resources&lt;/h3>
+&lt;p>資源的路徑。路徑可以是絕對路徑或是相對路徑。&lt;/p>
+&lt;blockquote>
+&lt;p>Hugo 會正確的處理支援多國語言的情況&lt;/p>
+&lt;/blockquote>
+&lt;p>舉例來說:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/about
+\____________________________________/\____/
+base URL gallery_resources
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_resources&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;/about&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 錯誤訊息會被渲染在頁面上&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="資源設定">資源設定&lt;/h2>
+&lt;p>這些設定會存在在 &lt;code>gallery_resources&lt;/code> 指定的目錄下的頁面&lt;/p>
+&lt;h3 id="title">title&lt;/h3>
+&lt;p>圖片的標題&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;Gallery&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 標題不會被渲染&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_title_link">gallery_title_link&lt;/h3>
+&lt;p>圖片標題的連結&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_title_link&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;https://github.com/kaiiiz&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 連結不會被渲染&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_img_src">gallery_img_src&lt;/h3>
+&lt;p>圖片路徑，路徑必須相對於 base URL (注意沒有 &lt;code>/&lt;/code> 的前綴)&lt;/p>
+&lt;p>舉例來說:&lt;/p>
+&lt;pre>&lt;code>https://kaiiiz.github.io/hugo-theme-monochrome/thanks.jpg
+\_____________________________________/\________/
+base URL gallery_img_src
+&lt;/code>&lt;/pre>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_img_src&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;thanks.jpg&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 圖片不會被渲染&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_img_link">gallery_img_link&lt;/h3>
+&lt;p>圖片的連結&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_img_link&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;https://github.com/kaiiiz&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 連結不會被渲染&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_img_caption">gallery_img_caption&lt;/h3>
+&lt;p>圖片下方的小標，支援 HTML&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">gallery_img_caption&lt;/span>: &lt;span style="color:#e6db74">&amp;#39;&amp;lt;span&amp;gt;Photo by &amp;lt;a href=&amp;#34;https://unsplash.com/@swimstaralex?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&amp;#34;&amp;gt;Alexander Sinn&amp;lt;/a&amp;gt; on &amp;lt;a href=&amp;#34;https://unsplash.com/s/photos/thanks?utm_source=unsplash&amp;amp;amp;utm_medium=referral&amp;amp;amp;utm_content=creditCopyText&amp;#34;&amp;gt;Unsplash&amp;lt;/a&amp;gt;&amp;lt;/span&amp;gt;&amp;#39;&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 圖片下方的小標不會被渲染&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="gallery_statistic">gallery_statistic&lt;/h3>
+&lt;p>圖片的數據，格式為:&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+- &lt;span style="color:#f92672">key&lt;/span>: &lt;span style="color:#ae81ff">key1&lt;/span>
+&lt;span style="color:#f92672">value&lt;/span>: &lt;span style="color:#ae81ff">value1&lt;/span>
+- &lt;span style="color:#f92672">key&lt;/span>: &lt;span style="color:#ae81ff">key2&lt;/span>
+&lt;span style="color:#f92672">value&lt;/span>: &lt;span style="color:#ae81ff">value2&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: 圖片的數據不會被渲染&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="weight">weight&lt;/h3>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">3&lt;/span>
+---
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: &lt;a href="https://gohugo.io/templates/lists/#order-content">預設排序&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="技巧">技巧&lt;/h2>
+&lt;p>Hugo 支援 &lt;strong>Headless Bundle&lt;/strong>，可以很優雅的解決資源是否要被發布的問題。&lt;/p>
+&lt;p>舉例來說，如果你不想要 balloon 版型中的資源被發布，可以透過建立一個 leaf bundle 並在 &lt;code>index.md&lt;/code> 的 front-matter 中指定 &lt;code>headless = true&lt;/code>。這些資源將僅被使用在渲染頁面的過程，也就是說對應的目錄不會被生成到 &lt;code>/public&lt;/code> 中。&lt;/p>
+&lt;p>更多資訊請參考 &lt;a href="https://gohugo.io/content-management/page-bundles/#headless-bundle">Headless Bundle&lt;/a>&lt;/p></description></item><item><title>List</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/layouts/docs/list/</guid><description>&lt;p>List layout 是預設產生 section 時會套用的樣式. Monochrome 提供一些參數調整它的行為。&lt;/p>
+&lt;h2 id="設定">設定&lt;/h2>
+&lt;h3 id="list-posts">List posts&lt;/h3>
+&lt;p>你可以透過宣告 &lt;code>list_posts&lt;/code> 來透過 &lt;code>_index.md&lt;/code> 的內容完全客製化列表的樣式。&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="color:#f92672">list_posts&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
