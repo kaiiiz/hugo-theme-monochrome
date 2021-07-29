@@ -63,7 +63,7 @@ collapsibleTOC: false
 ---
 ```
 
-> default: theme's [`enableCollapsibleTOC`](/hugo-theme-monochrome/configuration/theme/#collapsible-menu)
+> default: theme's [`enableCollapsibleTOC`](/hugo-theme-monochrome/zh-tw/configuration/theme/#collapsible-menu)
 
 ## Changelogs
 
@@ -93,7 +93,7 @@ collapsibleChangelogs: false
 ---
 ```
 
-> default: theme's [`enableCollapsibleChangelogs`](/hugo-theme-monochrome/configuration/theme/#collapsible-menu)
+> default: theme's [`enableCollapsibleChangelogs`](/hugo-theme-monochrome/zh-tw/configuration/theme/#collapsible-menu)
 
 
 ## External library
