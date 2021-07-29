@@ -4,10 +4,13 @@ weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
-- tag: '[v0.7.0](/hugo-theme-monochrome/zh-tw/changelog/#v070---20210624)'
+- tag: 'v0.7.0'
   description:
   - "新增 `changelogs` 屬性"
   - "更新對非文章頁面的 `disqus` 屬性的 fallback policy"
+- tag: 'v0.8.0'
+  description:
+  - '新增 `collapsibleTOC` 及 `collapsibleChangelogs` 屬性'
 ---
 
 # 頁面設定
@@ -52,6 +55,16 @@ toc: false
 
 > default: theme's [`enableTOC`](/hugo-theme-monochrome/zh-tw/configuration/theme/#table-of-contents)
 
+### Collapsible Table of Contents
+
+```yaml
+---
+collapsibleTOC: false
+---
+```
+
+> default: theme's [`enableCollapsibleTOC`](/hugo-theme-monochrome/zh-tw/configuration/theme/#collapsible-menu)
+
 ## Changelogs
 
 ```yaml
@@ -71,6 +84,17 @@ changelogs:
 tag 與 description 欄位支援 markdown
 
 > default: None
+
+### Collapsible Changelogs
+
+```yaml
+---
+collapsibleChangelogs: false
+---
+```
+
+> default: theme's [`enableCollapsibleChangelogs`](/hugo-theme-monochrome/zh-tw/configuration/theme/#collapsible-menu)
+
 
 ## External library
 

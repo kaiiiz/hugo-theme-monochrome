@@ -62,8 +62,13 @@ header {
       .navbar-dropdown {
         @apply absolute rounded-sm hidden w-max shadow-xl z-10;
 
-        li {
+        a {
           @apply px-2.5 py-2;
+        }
+
+        a, a:visited, a:hover, a:active {
+          color: inherit;
+          fill: inherit;
         }
       }
 

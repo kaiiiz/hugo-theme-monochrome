@@ -1,17 +1,17 @@
 {{ range .Children }}
     {{ if .Children }}
         <li class="navbar-item-dropdown">
-            <div class="flex items-center justify-between">
-                <a href="{{ .URL }}">{{- .Name -}}</a>
-                    {{- partial "svg/arrow-right.html" -}}
-            </div>
+            <a class="flex items-center justify-between" href="{{ .URL }}">
+                <span>{{- .Name -}}</span>
+                {{- partial "svg/arrow-right.html" -}}
+            </a>
             <ul class="navbar-dropdown left-full top-0">
                 {{- partial "navbar/nested-desktop.html" . -}}
             </ul>
         </li>
     {{ else }}
         <li>
-            <a href="{{ .URL }}">{{- .Name -}}</a>
+            <a class="block" href="{{ .URL }}">{{- .Name -}}</a>
         </li>
     {{ end }}
 {{ end }}

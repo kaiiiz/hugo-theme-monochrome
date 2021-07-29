@@ -15,3 +15,7 @@ enableCodeCopy = true
 enableOpenGraph = true
 enableTwitterCards = true
 author = "kaiiiz"
+
+# Collapsible Menu
+enableCollapsibleTOC = false
+enableCollapsibleChangelogs = true

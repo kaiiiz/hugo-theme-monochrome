@@ -5,6 +5,14 @@ toc: false
 
 ## Changelog
 
+### v0.8.0 - 2021/07/29
+
+* Improve: flexsearch multilingual search capability
+* Improve: widen the control range of navbar menu items
+* Change: flexsearch can now search index pages
+* Change: the post content in RSS is changed from summary to full text
+* Add: collapsible TOC and Changelogs
+
 ### v0.7.1 - 2021/07/08
 
 * Change: adjust the style of changelogs

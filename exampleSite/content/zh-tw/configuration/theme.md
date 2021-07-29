@@ -3,6 +3,10 @@ title: '主題設定'
 weight: 2
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
+changelogs:
+- tag: 'v0.8.0'
+  description:
+  - '新增 `enableCollapsibleTOC` 及 `enableCollapsibleChangelogs` 屬性'
 ---
 
 # 主題設定
@@ -39,6 +43,26 @@ enableTOC = false
 ```
 
 > default: true
+
+## Collapsible Menu
+
+若要全局開啟支援折疊的 TOC:
+
+```toml
+[params]
+enableCollapsibleTOC = true
+```
+
+> default: false
+
+若要全局開啟支援折疊的 Changelogs:
+
+```toml
+[params]
+enableCollapsibleChangelogs = true
+```
+
+> default: false
 
 ## Navbar menu
 

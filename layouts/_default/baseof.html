@@ -12,6 +12,8 @@
 {{ .Scratch.SetInMap "params" "gaCode" (.Params.ga | default .Site.GoogleAnalytics) }}
 {{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
 {{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enableMathJax | default false) }}
+{{ .Scratch.SetInMap "params" "enableCollapsibleTOC" (.Params.collapsibleTOC | default .Site.Params.enableCollapsibleTOC | default false) }}
+{{ .Scratch.SetInMap "params" "enableCollapsibleChangelogs" (.Params.collapsibleChangelogs | default .Site.Params.enableCollapsibleChangelogs | default false) }}
 
 <!DOCTYPE html>
 <html class="h-full w-full font-sans" lang='{{ .Site.LanguageCode }}'>
@@ -21,19 +23,8 @@
             {{- partial "header.html" . -}}
             <div id="content" class="my-8">
                 {{ if .Params.changelogs }}
-                <article class="toc-wrapper my-8 p-4 border-2 rounded">
-                    <div class="font-bold mb-2">{{ i18n "changlogs" }}</div>
-                    <div class="grid gap-2 grid-cols-statistic leading-7 text-sm ml-2">
-                        {{ range $log := .Params.changelogs }}
-                            <div>{{ $log.tag | markdownify }}</div>
-                            <div>
-                                {{ range $log.description }}
-                                    <div>{{ . | markdownify }}</div>
-                                {{ end }}
-                            </div>
-                        {{ end }}
-                    </div>
-                </article>
+                    {{ $enableCollapsibleChangelogs := (.Scratch.Get "params").enableCollapsibleChangelogs }}
+                    {{ partial "collapsible-menu.html" (dict "type" "changelogs" "context" . "enable" $enableCollapsibleChangelogs) }}
                 {{ end }}
 
                 {{- block "content" . }}{{- end }}
