@@ -374,7 +374,7 @@
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;blockquote>
-&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#collapsible-menu">&lt;code>enableCollapsibleTOC&lt;/code>&lt;/a>&lt;/p>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/zh-tw/configuration/theme/#collapsible-menu">&lt;code>enableCollapsibleTOC&lt;/code>&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="changelogs">Changelogs&lt;/h2>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
@@ -423,7 +423,7 @@
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;blockquote>
-&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#collapsible-menu">&lt;code>enableCollapsibleChangelogs&lt;/code>&lt;/a>&lt;/p>
+&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/zh-tw/configuration/theme/#collapsible-menu">&lt;code>enableCollapsibleChangelogs&lt;/code>&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="external-library">External library&lt;/h2>
 &lt;h3 id="mathjax">MathJax&lt;/h3>
