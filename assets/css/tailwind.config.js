@@ -61,6 +61,11 @@ module.exports = {
             minHeight: {
                 10: '2.5rem',
             },
+            gridTemplateColumns: {
+                'svg-group': 'repeat(auto-fill, 1rem)',
+                'bookcase-item': 'repeat(auto-fill, 8rem)',
+                'statistic': 'max-content 1fr',
+        },
         },
         fill: {
             'gray': gray,
@@ -90,11 +95,6 @@ module.exports = {
                 600: colors.blue[600],
             },
             overlay: 'rgba(0,0,0,0.75)',
-        },
-        gridTemplateColumns: {
-            'svg-group': 'repeat(auto-fill, 1rem)',
-            'bookcase-item': 'repeat(auto-fill, 8rem)',
-            'statistic': 'max-content 1fr',
         },
         margin: marginAndPadding,
         padding: marginAndPadding,
