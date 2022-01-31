@@ -87,7 +87,7 @@ menu:
 ```
 
 ### Navbar settings in config
-If you try to put entry that aren't attached to a piece of content, or you want to organize your navbar into a single file, checkout [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu) and set these values in your toml settings file.
+If you try to put entry that aren't attached to a piece of content, or you want to organize your navbar into a single file, checkout [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu) or [Configuration file of demo site](https://github.com/kaiiiz/hugo-theme-monochrome/tree/main/exampleSite/config/_default/menus) and set these values in your toml settings file.
 
 ```toml
 [[menu.navbar]]

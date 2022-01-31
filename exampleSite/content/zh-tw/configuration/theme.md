@@ -86,7 +86,48 @@ menu:
 ---
 ```
 
-更進階的 menu 應用請參考 [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu)，你也可以參考[這個網站的目錄設定](https://github.com/kaiiiz/hugo-theme-monochrome/tree/main/exampleSite/config/_default/menus)。
+### 使用 config file 設定 navbar
+
+如果不想使用 front-matter 的方式控制 navbar，可以使用 config file 來設定。請參考 [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu)，你也可以參考[這個網站的目錄設定](https://github.com/kaiiiz/hugo-theme-monochrome/tree/main/exampleSite/config/_default/menus)。
+
+```toml
+[[menu.navbar]]
+identifier = "about"
+name = "about"
+title = "about"
+url = "/about/"
+weight = 100
+
+[[menu.navbar]]
+identifier = "series"
+name = "series"
+url = "/series/"
+weight = -100
+
+[[menu.navbar]]
+identifier = "categories"
+name = "categories"
+url = "/categories/"
+weight = 80
+```
+
+```yaml
+menu:
+  navbar:
+  - identifier: about
+    name: about
+    title: about
+    url: /about/
+    weight: 100
+  - identifier: series
+    name: series
+    url: /series/
+    weight: -100
+  - identifier: categories
+    name: categories
+    url: /categories/
+    weight: 80
+```
 
 ## External Library
 
