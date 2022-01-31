@@ -5,7 +5,8 @@
   "repository": "https://github.com/kaiiiz/hugo-theme-monochrome",
   "author": "kaiiiz <ukaizheng@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.2.6",
     "clipboard-polyfill": "^3.0.3",
@@ -15,6 +16,5 @@
     "postcss-import": "^14.0.2",
     "tailwindcss": "^2.2.4",
     "zooming": "^2.1.1"
-  },
-  "devDependencies": {}
+  }
 }
