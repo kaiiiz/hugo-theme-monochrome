@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shortcodes on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/</link><description>Recent content in Shortcodes on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>CodePen</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</guid><description>&lt;h1 id="codepen">CodePen&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shortcodes on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/</link><description>Recent content in Shortcodes on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>Breadcrumbs</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</guid><description>&lt;h1 id="breadcrumbs">Breadcrumbs&lt;/h1>
+&lt;p>Render breadcrumbs navigation&lt;/p>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; breadcrumbs /&amp;gt;}}
+&lt;/code>&lt;/pre>&lt;h2 id="examples">Examples&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">breadcrumbs&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="my-6">
+&lt;ol class="list-none m-0 p-0 font-bold">
+&lt;li class="inline">
+&lt;span>/&lt;/span>
+&lt;/li>
+&lt;li class="inline">
+&lt;a class="text-900 text-600-hover" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/shortcodes/">Shortcodes&lt;/a>
+&lt;/li>
+&lt;li class="inline">
+&lt;span>/&lt;/span>
+&lt;/li>
+&lt;li class="inline">
+&lt;a class="text-900 text-600-hover" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/shortcodes/breadcrumbs/">Breadcrumbs&lt;/a>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>CodePen</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</guid><description>&lt;h1 id="codepen">CodePen&lt;/h1>
 &lt;p>Embeded codepen to page.&lt;/p>
 &lt;h2 id="usage">Usage&lt;/h2>
 &lt;pre>&lt;code>{{&amp;lt; codepen id=&amp;quot;&amp;quot; &amp;gt;}}

@@ -446,7 +446,7 @@
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 &lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
-&lt;span style="color:#f92672">collapsibleTOC&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;span style="color:#f92672">collapsible_toc&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
 ---
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -482,7 +482,7 @@
 ---
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>tag and description fields support markdown syntax.&lt;/p>
+&lt;/div>&lt;p>tag and description both support markdown syntax.&lt;/p>
 &lt;blockquote>
 &lt;p>default: None&lt;/p>
 &lt;/blockquote>
@@ -495,7 +495,7 @@
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 &lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
-&lt;span style="color:#f92672">collapsibleChangelogs&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;span style="color:#f92672">collapsible_changelogs&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
 ---
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>

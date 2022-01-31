@@ -446,7 +446,7 @@
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 &lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
-&lt;span style="color:#f92672">collapsibleTOC&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;span style="color:#f92672">collapsible_toc&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
 ---
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -482,7 +482,7 @@
 ---
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>tag and description fields support markdown syntax.&lt;/p>
+&lt;/div>&lt;p>tag and description both support markdown syntax.&lt;/p>
 &lt;blockquote>
 &lt;p>default: None&lt;/p>
 &lt;/blockquote>
@@ -495,7 +495,7 @@
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 &lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
-&lt;span style="color:#f92672">collapsibleChangelogs&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;span style="color:#f92672">collapsible_changelogs&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
 ---
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
@@ -1110,7 +1110,8 @@ base URL gallery_img_src
 ---
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;blockquote>
+&lt;/div>&lt;p>key and value both support markdown syntax.&lt;/p>
+&lt;blockquote>
 &lt;p>default: no figure caption under image&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="weight">weight&lt;/h3>
@@ -1142,6 +1143,32 @@ base URL gallery_img_src
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 &lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="color:#f92672">list_posts&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="group-by-year">Group by year&lt;/h3>
+&lt;p>An option to control group setting.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="color:#f92672">group_by_year&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>default: true&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="show-date">Show date&lt;/h3>
+&lt;p>Show / Hide date right after the post entry.&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="color:#f92672">show_date&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;blockquote>
@@ -1449,7 +1476,35 @@ font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol,
 }&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div></description></item><item><title>balloon layout single demo</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/balloon/single/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/balloon/single/</guid><description>&lt;p>Balloon layout can also be used in regular page.&lt;/p>
-&lt;p>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/layouts/demo/balloon">Go to list demo&lt;/a>&lt;/p></description></item><item><title>Changelog</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</guid><description>&lt;h2 id="changelog">Changelog&lt;/h2>
+&lt;p>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/layouts/demo/balloon">Go to list demo&lt;/a>&lt;/p></description></item><item><title>Breadcrumbs</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</guid><description>&lt;h1 id="breadcrumbs">Breadcrumbs&lt;/h1>
+&lt;p>Render breadcrumbs navigation&lt;/p>
+&lt;h2 id="usage">Usage&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; breadcrumbs /&amp;gt;}}
+&lt;/code>&lt;/pre>&lt;h2 id="examples">Examples&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">breadcrumbs&lt;/span> &amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="my-6">
+&lt;ol class="list-none m-0 p-0 font-bold">
+&lt;li class="inline">
+&lt;span>/&lt;/span>
+&lt;/li>
+&lt;li class="inline">
+&lt;a class="text-900 text-600-hover" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/shortcodes/">Shortcodes&lt;/a>
+&lt;/li>
+&lt;li class="inline">
+&lt;span>/&lt;/span>
+&lt;/li>
+&lt;li class="inline">
+&lt;a class="text-900 text-600-hover" href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/shortcodes/breadcrumbs/">Breadcrumbs&lt;/a>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Changelog</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</guid><description>&lt;h2 id="changelog">Changelog&lt;/h2>
 &lt;h3 id="v080---20210729">v0.8.0 - 2021/07/29&lt;/h3>
 &lt;ul>
 &lt;li>Improve: flexsearch multilingual search capability&lt;/li>
