@@ -16,7 +16,7 @@
 {{ if .Site.RegularPages }}
     <div class="my-8">
         <h1 class="text-xl font-semibold my-3">{{ i18n "recent_posts" }}</h1>
-        {{- partial "list.html" (first 10 .Site.RegularPages) -}}
+        {{- partial "list.html" (dict "pages" (first 10 .Site.RegularPages)) -}}
     </div>
 {{ end }}
 
