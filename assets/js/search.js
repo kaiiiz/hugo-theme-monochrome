@@ -22,6 +22,7 @@ async function init() {
     });
 
     const index_json = await (await data).json();
+    const items_list = [];
 
     // create index
     let id = 0;
@@ -67,22 +68,21 @@ async function init() {
         return item;
     };
 
-    const clearAllItems = () => {
-        while (search_menu_results.firstChild) {
-            search_menu_results.removeChild(search_menu_results.lastChild);
-        }
+    const showAllItems = () => {
+        items_list.forEach(i => {
+            i.classList.remove("hidden");
+        });
     };
 
     const buildAllItems = () => {
-        clearAllItems();
         index_json.forEach(index_item => {
             const item = createItem(index_item.title, index_item.permalink, index_item.content);
             search_menu_results.appendChild(item);
+            items_list.push(item);
         })
     };
 
     const search = (value) => {
-        clearAllItems();
         let ascii_res = ascii_index.search(value);
         let nonascii_res = nonascii_index.search(value);
 
@@ -91,24 +91,22 @@ async function init() {
                 curr.result.forEach(x => acc.add(x));
                 return acc;
             }, new Set());
+        };
+
+        let res_id = new Set([...reduce_res_to_id(ascii_res), ...reduce_res_to_id(nonascii_res)]);
+
+        for (let i = 0; i < items_list.length; i++) {
+            if (res_id.has(i)) {
+                items_list[i].classList.remove("hidden");
+            } else {
+                items_list[i].classList.add("hidden");
+            }
         }
-
-        let res_id = new Set([...reduce_res_to_id(ascii_res), ...reduce_res_to_id(nonascii_res)])
-
-        res = Array.from(res_id).reduce((acc, id) => {
-            acc.push(ascii_index.get(id));
-            return acc;
-        }, new Array());
-
-        res.forEach(post => {
-            const item = createItem(post.title, post.permalink, post.content);
-            search_menu_results.appendChild(item);
-        });
     };
 
     search_menu_input.addEventListener("input", function () {
         if (this.value === '') {
-            buildAllItems();
+            showAllItems();
         } else {
             search(this.value);
         }
