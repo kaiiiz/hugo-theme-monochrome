@@ -160,7 +160,7 @@
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="navbar-settings-in-config">Navbar settings in config&lt;/h3>
-&lt;p>If you try to put entry that aren&amp;rsquo;t attached to a piece of content, or you want to organize your navbar into a single file, checkout &lt;a href="https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu">Add Non-content Entries to a Menu&lt;/a> and set these values in your toml settings file.&lt;/p>
+&lt;p>If you try to put entry that aren&amp;rsquo;t attached to a piece of content, or you want to organize your navbar into a single file, checkout &lt;a href="https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu">Add Non-content Entries to a Menu&lt;/a> or &lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/tree/main/exampleSite/config/_default/menus">Configuration file of demo site&lt;/a> and set these values in your toml settings file.&lt;/p>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 &lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
 &lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1

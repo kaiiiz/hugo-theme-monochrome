@@ -159,8 +159,85 @@
 ---
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>更進階的 menu 應用請參考 &lt;a href="https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu">Add Non-content Entries to a Menu&lt;/a>，你也可以參考&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/tree/main/exampleSite/config/_default/menus">這個網站的目錄設定&lt;/a>。&lt;/p>
-&lt;h2 id="external-library">External Library&lt;/h2>
+&lt;/div>&lt;h3 id="使用-config-file-設定-navbar">使用 config file 設定 navbar&lt;/h3>
+&lt;p>如果不想使用 front-matter 的方式控制 navbar，可以使用 config file 來設定。請參考 &lt;a href="https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu">Add Non-content Entries to a Menu&lt;/a>，你也可以參考&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/tree/main/exampleSite/config/_default/menus">這個網站的目錄設定&lt;/a>。&lt;/p>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[[&lt;span style="color:#a6e22e">menu&lt;/span>.&lt;span style="color:#a6e22e">navbar&lt;/span>]]
+&lt;span style="color:#a6e22e">identifier&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;about&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">name&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;about&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">title&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;about&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">url&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;/about/&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">weight&lt;/span> = &lt;span style="color:#ae81ff">100&lt;/span>
+[[&lt;span style="color:#a6e22e">menu&lt;/span>.&lt;span style="color:#a6e22e">navbar&lt;/span>]]
+&lt;span style="color:#a6e22e">identifier&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;series&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">name&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;series&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">url&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;/series/&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">weight&lt;/span> = &lt;span style="color:#ae81ff">-100&lt;/span>
+[[&lt;span style="color:#a6e22e">menu&lt;/span>.&lt;span style="color:#a6e22e">navbar&lt;/span>]]
+&lt;span style="color:#a6e22e">identifier&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;categories&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">name&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;categories&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">url&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;/categories/&amp;#34;&lt;/span>
+&lt;span style="color:#a6e22e">weight&lt;/span> = &lt;span style="color:#ae81ff">80&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="color:#f92672">menu&lt;/span>:
+&lt;span style="color:#f92672">navbar&lt;/span>:
+- &lt;span style="color:#f92672">identifier&lt;/span>: &lt;span style="color:#ae81ff">about&lt;/span>
+&lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">about&lt;/span>
+&lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#ae81ff">about&lt;/span>
+&lt;span style="color:#f92672">url&lt;/span>: &lt;span style="color:#ae81ff">/about/&lt;/span>
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">100&lt;/span>
+- &lt;span style="color:#f92672">identifier&lt;/span>: &lt;span style="color:#ae81ff">series&lt;/span>
+&lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">series&lt;/span>
+&lt;span style="color:#f92672">url&lt;/span>: &lt;span style="color:#ae81ff">/series/&lt;/span>
+&lt;span style="color:#f92672">weight&lt;/span>: -&lt;span style="color:#ae81ff">100&lt;/span>
+- &lt;span style="color:#f92672">identifier&lt;/span>: &lt;span style="color:#ae81ff">categories&lt;/span>
+&lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">categories&lt;/span>
+&lt;span style="color:#f92672">url&lt;/span>: &lt;span style="color:#ae81ff">/categories/&lt;/span>
+&lt;span style="color:#f92672">weight&lt;/span>: &lt;span style="color:#ae81ff">80&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="external-library">External Library&lt;/h2>
 &lt;h3 id="mathjax">MathJax&lt;/h3>
 &lt;p>使用 &lt;code>$&lt;/code> 渲染 inline 的結果, &lt;code>$$&lt;/code> 渲染 block 的結果&lt;/p>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
