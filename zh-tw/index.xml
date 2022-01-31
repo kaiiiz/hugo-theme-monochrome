@@ -1504,6 +1504,32 @@ font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol,
 &lt;/li>
 &lt;/ol>
 &lt;/div></description></item><item><title>Changelog</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/changelog/</guid><description>&lt;h2 id="changelog">Changelog&lt;/h2>
+&lt;h3 id="v090---20220131">v0.9.0 - 2022/01/31&lt;/h3>
+&lt;ul>
+&lt;li>Improve: search implementation
+&lt;ul>
+&lt;li>hide the mismatch objects instead of removing it while searching&lt;/li>
+&lt;li>widen the control range of search result&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Improve: gallery layout&amp;rsquo;s key and value now support markdown syntax&lt;/li>
+&lt;li>Improve: Zooming.js configuration
+&lt;ul>
+&lt;li>speed up animations&lt;/li>
+&lt;li>setup transparent background&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Change: for consistency, the names of the following parameters are changed:
+&lt;ul>
+&lt;li>page&amp;rsquo;s &lt;code>collapsibleTOC&lt;/code> =&amp;gt; &lt;code>collapsible_toc&lt;/code>&lt;/li>
+&lt;li>page&amp;rsquo;s &lt;code>collapsibleChangelogs&lt;/code> =&amp;gt; &lt;code>collapsible_changelogs&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Change: font-size of html is changed from &lt;code>18px&lt;/code> to &lt;code>16px&lt;/code>&lt;/li>
+&lt;li>Add: &lt;code>breadcrumbs&lt;/code> shortcode&lt;/li>
+&lt;li>Add: list layout properties &lt;code>group_by_year&lt;/code> and &lt;code>show_date&lt;/code>&lt;/li>
+&lt;li>Fix: terms-cloud typo (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/pull/4">#4&lt;/a>)&lt;/li>
+&lt;/ul>
 &lt;h3 id="v080---20210729">v0.8.0 - 2021/07/29&lt;/h3>
 &lt;ul>
 &lt;li>Improve: flexsearch multilingual search capability&lt;/li>
