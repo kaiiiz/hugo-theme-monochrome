@@ -5,6 +5,23 @@ toc: false
 
 ## Changelog
 
+### v0.9.0 - 2022/01/31
+
+* Improve: search implementation
+  * hide the mismatch objects instead of removing it while searching
+  * widen the control range of search result
+* Improve: gallery layout's key and value now support markdown syntax
+* Improve: Zooming.js configuration
+  * speed up animations
+  * setup transparent background
+* Change: for consistency, the names of the following parameters are changed:
+  * page's `collapsibleTOC` => `collapsible_toc`
+  * page's `collapsibleChangelogs` => `collapsible_changelogs`
+* Change: font-size of html is changed from `18px` to `16px`
+* Add: `breadcrumbs` shortcode
+* Add: list layout properties `group_by_year` and `show_date`
+* Fix: terms-cloud typo ([#4](https://github.com/kaiiiz/hugo-theme-monochrome/pull/4))
+
 ### v0.8.0 - 2021/07/29
 
 * Improve: flexsearch multilingual search capability
