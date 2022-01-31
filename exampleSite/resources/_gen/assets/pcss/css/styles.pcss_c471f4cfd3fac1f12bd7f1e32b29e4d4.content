@@ -583,7 +583,7 @@ video {
 /*! purgecss start ignore */
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .text-100 {
