@@ -127,6 +127,8 @@ Statistic of the image. The format is:
 ---
 ```
 
+key and value both support markdown syntax.
+
 > default: no figure caption under image
 
 ### weight

@@ -4,13 +4,17 @@ weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
+- tag: 'v0.9.0'
+  description:
+  - '重命名屬性 `collapsibleTOC` 為 `collapsible_toc`'
+  - '重命名屬性 `collapsibleChangelogs` 為 `collapsible_changelogs`'
+- tag: 'v0.8.0'
+  description:
+  - '新增 `collapsibleTOC` 及 `collapsibleChangelogs` 屬性'
 - tag: 'v0.7.0'
   description:
   - "新增 `changelogs` 屬性"
   - "更新對非文章頁面的 `disqus` 屬性的 fallback policy"
-- tag: 'v0.8.0'
-  description:
-  - '新增 `collapsibleTOC` 及 `collapsibleChangelogs` 屬性'
 ---
 
 # 頁面設定
@@ -59,7 +63,7 @@ toc: false
 
 ```yaml
 ---
-collapsibleTOC: false
+collapsible_toc: false
 ---
 ```
 
@@ -81,7 +85,7 @@ changelogs:
 ---
 ```
 
-tag 與 description 欄位支援 markdown
+tag 與 description 欄位皆支援 markdown 渲染。
 
 > default: None
 
@@ -89,7 +93,7 @@ tag 與 description 欄位支援 markdown
 
 ```yaml
 ---
-collapsibleChangelogs: false
+collapsible_changelogs: false
 ---
 ```
 

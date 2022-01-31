@@ -1,6 +1,5 @@
 ---
 title: 'SVG Wrapper'
-date: '2021-02-12'
 bookcase_cover_src: 'cover/coding.png'
 bookcase_cover_src_dark: 'cover/coding_dark.png'
 ---

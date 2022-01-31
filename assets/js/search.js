@@ -22,6 +22,7 @@ async function init() {
     });
 
     const index_json = await (await data).json();
+    const items_list = [];
 
     // create index
     let id = 0;
@@ -46,11 +47,11 @@ async function init() {
     });
 
     const createItem = (title, permalink, content) => {
-        const item = document.createElement("div");
-        item.className = "search-menu-result-item";
+        const item = document.createElement("a");
+        item.href = permalink;
 
-        const item_link = document.createElement("a");
-        item_link.href = permalink;
+        const item_wrapper = document.createElement("div");
+        item_wrapper.className = "search-menu-result-item";
 
         const item_title = document.createElement("div");
         item_title.className = "search-menu-result-item-title";
@@ -60,29 +61,28 @@ async function init() {
         item_content.className = "search-menu-result-item-content";
         item_content.innerHTML = content;
 
-        item_link.appendChild(item_title);
-        item_link.appendChild(item_content);
-        item.appendChild(item_link);
+        item_wrapper.appendChild(item_title);
+        item_wrapper.appendChild(item_content);
+        item.appendChild(item_wrapper);
 
         return item;
     };
 
-    const clearAllItems = () => {
-        while (search_menu_results.firstChild) {
-            search_menu_results.removeChild(search_menu_results.lastChild);
-        }
+    const showAllItems = () => {
+        items_list.forEach(i => {
+            i.classList.remove("hidden");
+        });
     };
 
     const buildAllItems = () => {
-        clearAllItems();
         index_json.forEach(index_item => {
             const item = createItem(index_item.title, index_item.permalink, index_item.content);
             search_menu_results.appendChild(item);
+            items_list.push(item);
         })
     };
 
     const search = (value) => {
-        clearAllItems();
         let ascii_res = ascii_index.search(value);
         let nonascii_res = nonascii_index.search(value);
 
@@ -91,24 +91,22 @@ async function init() {
                 curr.result.forEach(x => acc.add(x));
                 return acc;
             }, new Set());
+        };
+
+        let res_id = new Set([...reduce_res_to_id(ascii_res), ...reduce_res_to_id(nonascii_res)]);
+
+        for (let i = 0; i < items_list.length; i++) {
+            if (res_id.has(i)) {
+                items_list[i].classList.remove("hidden");
+            } else {
+                items_list[i].classList.add("hidden");
+            }
         }
-
-        let res_id = new Set([...reduce_res_to_id(ascii_res), ...reduce_res_to_id(nonascii_res)])
-
-        res = Array.from(res_id).reduce((acc, id) => {
-            acc.push(ascii_index.get(id));
-            return acc;
-        }, new Array());
-
-        res.forEach(post => {
-            const item = createItem(post.title, post.permalink, post.content);
-            search_menu_results.appendChild(item);
-        });
     };
 
     search_menu_input.addEventListener("input", function () {
         if (this.value === '') {
-            buildAllItems();
+            showAllItems();
         } else {
             search(this.value);
         }

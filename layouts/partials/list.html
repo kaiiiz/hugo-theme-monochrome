@@ -1,13 +1,21 @@
-{{- if . -}}
+{{ $show_date := .show_date | default true }}
+{{ $pages := .pages }}
+
+{{- if $pages -}}
+{{- if $show_date -}}
+    {{- $pages = $pages.ByPublishDate.Reverse -}}
+{{- end -}}
 <ul class="my-2">
-    {{ range .ByPublishDate.Reverse }}
+    {{ range $pages }}
         <li class="mb-2 leading-relaxed list-item">
             <a href="{{ .RelPermalink }}" class="text-base border-b-2">
                 {{- .Title -}}
             </a>
-            <span class="text-xs">
-                {{- .PublishDate.Format "2006/01/02" -}}
-            </span>
+            {{ if $show_date }}
+                <span class="text-xs">
+                    {{- .PublishDate.Format "2006/01/02" -}}
+                </span>
+            {{ end }}
         </li>
     {{ end }}
 </ul>

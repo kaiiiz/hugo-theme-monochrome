@@ -4,13 +4,17 @@ weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
+- tag: 'v0.9.0'
+  description:
+  - 'Rename `collapsibleTOC` to `collapsible_toc` for consistency'
+  - 'Rename `collapsibleChangelogs` to `collapsible_changelogs` for consistency'
+- tag: 'v0.8.0'
+  description:
+  - 'Add `collapsibleTOC` and `collapsibleChangelogs` properties'
 - tag: 'v0.7.0'
   description:
   - 'Add `changelogs` property'
   - "Update `disqus` fallback policy for none post pages"
-- tag: 'v0.8.0'
-  description:
-  - 'Add `collapsibleTOC` and `collapsibleChangelogs` properties'
 ---
 
 # Page Settings
@@ -59,7 +63,7 @@ toc: false
 
 ```yaml
 ---
-collapsibleTOC: false
+collapsible_toc: false
 ---
 ```
 
@@ -81,7 +85,7 @@ changelogs:
 ---
 ```
 
-tag and description fields support markdown syntax.
+tag and description both support markdown syntax.
 
 > default: None
 
@@ -89,7 +93,7 @@ tag and description fields support markdown syntax.
 
 ```yaml
 ---
-collapsibleChangelogs: false
+collapsible_changelogs: false
 ---
 ```
 

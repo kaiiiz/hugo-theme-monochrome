@@ -6,11 +6,21 @@
     </div>
 {{ end }}
 
-{{ if (.Params.list_posts | default true) }}
-    {{ range .Pages.GroupByPublishDate "2006" }}
+{{- $list_posts := .Params.list_posts | default true -}}
+{{- $group_by_year := .Params.group_by_year | default true -}}
+{{- $show_date := .Params.show_date | default true -}}
+
+{{ if $list_posts }}
+    {{ if $group_by_year }}
+        {{ range .Pages.GroupByPublishDate "2006" }}
+            <div class="mb-8">
+                <h1 class="font-bold text-2xl">{{- .Key -}}</h1>
+                {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date) -}}
+            </div>
+        {{ end }}
+    {{ else }}
         <div class="mb-8">
-            <h1 class="font-bold text-2xl">{{- .Key -}}</h1>
-            {{- partial "list.html" .Pages -}}
+            {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date) -}}
         </div>
     {{ end }}
 {{ end }}

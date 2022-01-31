@@ -101,42 +101,6 @@
   name = "短代碼"
   url = "/zh-tw/shortcodes/"
   weight = 5
-  [[navbar]]
-    identifier = "shortcodes_svg_wrapper"
-    name = "SVG Wrapper"
-    url = "/zh-tw/shortcodes/svg-wrapper/"
-    weight = 1
-    parent = "shortcodes"
-  [[navbar]]
-    identifier = "shortcodes_codepen"
-    name = "CodePen"
-    url = "/zh-tw/shortcodes/codepen/"
-    weight = 2
-    parent = "shortcodes"
-  [[navbar]]
-    identifier = "shortcodes_jsfiddle"
-    name = "JSFiddle"
-    url = "/zh-tw/shortcodes/jsfiddle/"
-    weight = 3
-    parent = "shortcodes"
-  [[navbar]]
-    identifier = "shortcodes_color_block"
-    name = "Color Block"
-    url = "/zh-tw/shortcodes/color-block/"
-    weight = 4
-    parent = "shortcodes"
-  [[navbar]]
-    identifier = "shortcodes_icon_group"
-    name = "Icon Group"
-    url = "/zh-tw/shortcodes/icon-group/"
-    weight = 5
-    parent = "shortcodes"
-  [[navbar]]
-    identifier = "shortcodes_terms_cloud"
-    name = "Terms Cloud"
-    url = "/zh-tw/shortcodes/terms-cloud/"
-    weight = 6
-    parent = "shortcodes"
 [[navbar]]
   identifier = "posts"
   name = "文章"

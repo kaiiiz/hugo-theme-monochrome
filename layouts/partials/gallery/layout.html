@@ -49,12 +49,12 @@
                     {{ end }}
 
                     {{ if .Params.gallery_statistic }}
-                        <div class="grid gap-2 grid-cols-statistic">
+                        <article class="grid gap-2 grid-cols-statistic">
                             {{ range $stat := .Params.gallery_statistic }}
-                                <div>{{ $stat.key }}</div>
-                                <div>{{ $stat.value }}</div>
+                                <div>{{ $stat.key | markdownify }}</div>
+                                <div>{{ $stat.value | markdownify }}</div>
                             {{ end }}
-                        </div>
+                        </article>
                     {{ end }}
                 </div>
             {{ end }}

@@ -1,0 +1,22 @@
+<div class="my-6">
+    <ol class="list-none m-0 p-0 font-bold">
+        {{ template "breadcrumbnav" (dict "p1" .Page "p2" .Page) }}
+    </ol>
+</div>
+
+{{ define "breadcrumbnav" }}
+    {{ if .p1.Parent }}
+        {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+    {{ else if not .p1.IsHome }}
+        {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+    {{ end }}
+
+    {{ if not .p1.IsHome }}
+        <li class="inline">
+            <span>/</span>
+        </li>
+        <li class="inline">
+            <a class="text-900 text-600-hover" href="{{ .p1.Permalink | relURL }}">{{ .p1.Title }}</a>
+        </li>
+    {{ end }}
+{{ end }}

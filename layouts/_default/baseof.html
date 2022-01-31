@@ -12,8 +12,8 @@
 {{ .Scratch.SetInMap "params" "gaCode" (.Params.ga | default .Site.GoogleAnalytics) }}
 {{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
 {{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enableMathJax | default false) }}
-{{ .Scratch.SetInMap "params" "enableCollapsibleTOC" (.Params.collapsibleTOC | default .Site.Params.enableCollapsibleTOC | default false) }}
-{{ .Scratch.SetInMap "params" "enableCollapsibleChangelogs" (.Params.collapsibleChangelogs | default .Site.Params.enableCollapsibleChangelogs | default false) }}
+{{ .Scratch.SetInMap "params" "enableCollapsibleTOC" (.Params.collapsible_toc | default .Site.Params.enableCollapsibleTOC | default false) }}
+{{ .Scratch.SetInMap "params" "enableCollapsibleChangelogs" (.Params.collapsible_changelogs | default .Site.Params.enableCollapsibleChangelogs | default false) }}
 
 <!DOCTYPE html>
 <html class="h-full w-full font-sans" lang='{{ .Site.LanguageCode }}'>
