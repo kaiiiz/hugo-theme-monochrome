@@ -47,11 +47,11 @@ async function init() {
     });
 
     const createItem = (title, permalink, content) => {
-        const item = document.createElement("div");
-        item.className = "search-menu-result-item";
+        const item = document.createElement("a");
+        item.href = permalink;
 
-        const item_link = document.createElement("a");
-        item_link.href = permalink;
+        const item_wrapper = document.createElement("div");
+        item_wrapper.className = "search-menu-result-item";
 
         const item_title = document.createElement("div");
         item_title.className = "search-menu-result-item-title";
@@ -61,9 +61,9 @@ async function init() {
         item_content.className = "search-menu-result-item-content";
         item_content.innerHTML = content;
 
-        item_link.appendChild(item_title);
-        item_link.appendChild(item_content);
-        item.appendChild(item_link);
+        item_wrapper.appendChild(item_title);
+        item_wrapper.appendChild(item_content);
+        item.appendChild(item_wrapper);
 
         return item;
     };
