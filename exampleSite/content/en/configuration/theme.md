@@ -86,7 +86,47 @@ menu:
 ---
 ```
 
+### Navbar settings in config
 If you try to put entry that aren't attached to a piece of content, or you want to organize your navbar into a single file, checkout [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu) and set these values in your toml settings file.
+
+```toml
+[[menu.navbar]]
+identifier = "about"
+name = "about"
+title = "about"
+url = "/about/"
+weight = 100
+
+[[menu.navbar]]
+identifier = "series"
+name = "series"
+url = "/series/"
+weight = -100
+
+[[menu.navbar]]
+identifier = "categories"
+name = "categories"
+url = "/categories/"
+weight = 80
+```
+
+```yaml
+menu:
+  navbar:
+  - identifier: about
+    name: about
+    title: about
+    url: /about/
+    weight: 100
+  - identifier: series
+    name: series
+    url: /series/
+    weight: -100
+  - identifier: categories
+    name: categories
+    url: /categories/
+    weight: 80
+```
 
 ## External Library
 
