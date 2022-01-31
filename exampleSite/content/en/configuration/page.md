@@ -81,7 +81,7 @@ changelogs:
 ---
 ```
 
-tag and description fields support markdown syntax.
+tag and description both support markdown syntax.
 
 > default: None
 

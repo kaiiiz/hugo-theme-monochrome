@@ -127,6 +127,8 @@ gallery_img_caption: '<span>Photo by <a href="https://unsplash.com/@swimstaralex
 ---
 ```
 
+key 及 value 皆支援 markdown 渲染。
+
 > default: 圖片的數據不會被渲染
 
 ### weight

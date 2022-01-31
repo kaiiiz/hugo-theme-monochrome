@@ -81,7 +81,7 @@ changelogs:
 ---
 ```
 
-tag 與 description 欄位支援 markdown
+tag 與 description 欄位皆支援 markdown 渲染。
 
 > default: None
 
