@@ -1,0 +1,7 @@
+"tags" = "Etiquetas"
+"recent_posts" = "Artigos recentes"
+"toc" = "Índice"
+"no_page_under_resouces" = 'Não existe página em {{ .resources_path }}. Tem de especificar "{{ .resources_name }}" corretamente em front-matter e procurar a existência de artigos nessa pasta.'
+"resources_not_found" = 'Recursos não encontrados. Tem de especificar "{{ .resources_name }}" corretamente em front-matter.'
+"search" = "Procurar"
+"changelogs" = "Registro de alterações"
