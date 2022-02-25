@@ -5,6 +5,10 @@ toc: false
 
 ## Changelog
 
+### v0.9.2 - 2022/02/25
+
+* Fix: reimplement terms-cloud to prevent size overflow (max size: 1.6 rem)
+
 ### v0.9.1 - 2022/02/25
 
 * Change: set terms-cloud max font size to 1.4 rem
