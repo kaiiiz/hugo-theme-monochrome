@@ -5,6 +5,11 @@ toc: false
 
 ## Changelog
 
+### v0.9.1 - 2022/02/25
+
+* Change: set terms-cloud max font size to 1.4 rem
+* Fix: site search url from absLangURL to relLangURL
+
 ### v0.9.0 - 2022/01/31
 
 * Improve: search implementation
