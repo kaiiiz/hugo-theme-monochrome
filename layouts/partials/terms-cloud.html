@@ -1,18 +1,21 @@
 {{ if . }}
     {{ $fontSmall := 1 }}
-    {{ $fontBig := 1.4 }}
-    {{ $termCount := slice }}
+    {{ $fontBig := 1.6 }}
+    {{ $fontSpread := sub $fontBig $fontSmall }}
 
+    {{ $termCount := slice }}
     {{ range . }}
         {{ $termCount = append .Count $termCount }}
     {{ end }}
     {{ $termCount = sort $termCount }}
+
     {{ $min := int (index $termCount 0) }}
+    {{ $max := add (int (index $termCount (sub (len $termCount) 1))) 1 }}
 
     <div>
         {{ range . }}
-            {{ $weight := math.Log (div (float .Count) $min) }}
-            {{ $fontSize := add $fontSmall (mul (sub $fontBig $fontSmall) $weight) }}
+            {{ $weight := div (sub (math.Log .Count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
+            {{ $fontSize := (add $fontSmall (mul $fontSpread $weight)) }}
 
             <a class="tag-item whitespace-nowrap border-b-2 mr-1.5" href="{{ .Page.RelPermalink }}">
                 <span style="font-size:{{ $fontSize }}rem">{{- .Page.Title -}}</span>
