@@ -1,4 +1,6 @@
-{{ $enableLineNo := and (.Scratch.Get "params").usePrismJS (.Scratch.Get "params").enablePrismJSLineNo }}
+{{ $enableLineNo := (.Scratch.Get "params").syntaxHighlight.prism.enableLineNo | default true }}
+
 <article {{ if $enableLineNo }}class="line-numbers"{{ end }}>
-    {{ .Content | safeHTML }}
+    {{ $content := .Content | replaceRE "<table>" "<table class=\"mc-table\">" }}
+    {{ $content | safeHTML }}
 </article>

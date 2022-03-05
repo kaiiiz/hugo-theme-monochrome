@@ -94,13 +94,15 @@ body {
       @apply border-200 text-900;
     }
 
+    /* Inline code style */
     code {
       @apply bg-100;
     }
 
     pre {
-      @apply bg-50;
+      @apply bg-gray-800 text-gray-200;
 
+      /* Disable inline code style */
       code {
         @apply bg-tp;
 
@@ -111,8 +113,9 @@ body {
     }
 
     .highlight {
+      /* Disable inline code style */
       code {
-        @apply text-white dark:text-white;
+        @apply bg-tp;
       }
     }
 

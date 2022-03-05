@@ -126,7 +126,6 @@ module.exports = {
         letterSpacing: false,
         userSelect: false,
         verticalAlign: false,
-        visibility: false,
         wordBreak: false,
         gridAutoColumns: false,
         gridColumn: false,

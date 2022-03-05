@@ -48,14 +48,23 @@
 
 {{/*  Load script for only page contain codeblock  */}}
 {{ if (findRE "<pre" .Content 1) }}
-    {{ if (.Scratch.Get "params").usePrismJS }}
-        {{ $prism_js := resources.Get "js/prism.js" | resources.Fingerprint "sha512" }}
-        <script src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}"></script>
-    {{ else if (.Scratch.Get "params").enableCodeCopy }}
-        {{ $code_copy_js := resources.Get "js/code-copy-btn.js" | js.Build }}
+    {{ if eq (.Scratch.Get "params").syntaxHighlight.lib "builtin" }}
+        {{ $enableCodeCopy := (.Scratch.Get "params").syntaxHighlight.builtin.enableCodeCopy | default true }}
+        {{ if $enableCodeCopy }}
+            {{ $code_copy_js := resources.Get "js/highlight/builtin-copy.js" | js.Build }}
+            {{- if hugo.IsProduction -}}
+                {{ $code_copy_js = $code_copy_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+            {{- end -}}
+            <script src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
+        {{ end }}
+    {{ else if eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js" }}
+        {{ $prism_js := resources.Get "js/highlight/prism.js"| js.Build }}
         {{- if hugo.IsProduction -}}
-            {{ $code_copy_js = $code_copy_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+            {{ $prism_js = $prism_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
         {{- end -}}
-        <script src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
+        <script src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}"></script>
+        <script>
+            Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/';
+        </script>
     {{ end }}
 {{ end }}

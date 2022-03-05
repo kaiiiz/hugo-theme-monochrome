@@ -91,15 +91,21 @@ article {
     }
   }
 
-  code {
+  code:not([class*=language-]):not(.hljs) { /* Inline code style */
     @apply rounded px-1.5 py-0.75;
   }
 
-  pre {
-    @apply overflow-auto leading-relaxed p-4 my-6 rounded;
+  pre, pre[class*=language-] {
+    @apply overflow-auto leading-normal p-4 my-6 rounded;
 
-    code {
-      @apply p-0;
+    code:not([class*=language-]):not(.hljs) { /* Disable inline code style */
+      @apply rounded-none p-0;
+    }
+  }
+
+  .code-toolbar {
+    .toolbar-item {
+      @apply mx-1;
     }
   }
 
@@ -121,8 +127,8 @@ article {
       pre {
         @apply p-0 m-0;
 
-        code {
-          @apply p-0;
+        code:not([class*=language-]):not(.hljs) { /* Disable inline code style */
+          @apply rounded-none p-0;
         }
       }
     }
@@ -134,7 +140,7 @@ article {
     top: -1.5rem;
   }
 
-  table {
+  table.mc-table {
     @apply my-6 table-auto border-collapse block overflow-x-auto;
 
     td, th {
