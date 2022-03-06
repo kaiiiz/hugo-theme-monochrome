@@ -18,6 +18,18 @@ function embedTextToEle (codeText, container, lang, lineBegin, lineEnd) {
         const codeTextSplit = codeText.split("\n");
         codeText = codeTextSplit.slice(lineBegin - 1, lineEnd).join("\n") + '\n';
     }
+
+    // Dynamically adjust padding of pre to fit in the line numbers
+    const lineBeginDigit = lineBegin.toString().length;
+    const lineEndDigit = lineEnd.toString().length;
+    if (lineBeginDigit >= 4 || lineEndDigit >= 4) {
+        emgithubPre.style.paddingLeft = "4.5rem";
+    } else if (lineBeginDigit >= 3 || lineEndDigit >= 3) {
+        emgithubPre.style.paddingLeft = "4rem";
+    } else if (lineBeginDigit >= 2 || lineEndDigit >= 2) {
+        emgithubPre.style.paddingLeft = "3.5rem";
+    }
+
     emgithubCode.classList.add(`language-${lang}`);
     emgithubCode.textContent = codeText;
     Prism.highlightAllUnder(container, true, () => {
