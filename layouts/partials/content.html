@@ -2,5 +2,9 @@
 
 <article {{ if $enableLineNo }}class="line-numbers"{{ end }}>
     {{ $content := .Content | replaceRE "<table>" "<table class=\"mc-table\">" }}
+    {{ if eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js" }}
+        {{ $content = $content | replaceRE "<pre>" "<pre class=\"language-text\">" }}
+        {{ $content = $content | replaceRE "<pre([^>]*)class=\"([^>]*)\"([^>]*)>" "<pre$1 class=\"mc-prism hide $2\" $3>" }}
+    {{ end }}
     {{ $content | safeHTML }}
 </article>

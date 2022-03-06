@@ -62,9 +62,11 @@
         {{- if hugo.IsProduction -}}
             {{ $prism_js = $prism_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
         {{- end -}}
-        <script src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}"></script>
-        <script>
-            Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/';
-        </script>
+        <script src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}" data-manual></script>
+        {{ $prism_loader_js := resources.Get "js/highlight/prism-loader.js"| js.Build }}
+        {{- if hugo.IsProduction -}}
+            {{ $prism_loader_js = $prism_loader_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+        {{- end -}}
+        <script src="{{ $prism_loader_js.RelPermalink }}" integrity="{{- $prism_loader_js.Data.Integrity -}}"></script>
     {{ end }}
 {{ end }}

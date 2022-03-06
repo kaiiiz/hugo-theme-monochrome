@@ -91,15 +91,60 @@ article {
     }
   }
 
-  code:not([class*=language-]):not(.hljs) { /* Inline code style */
+  code { /* Inline code style */
     @apply rounded px-1.5 py-0.75;
   }
 
-  pre, pre[class*=language-] {
-    @apply overflow-auto leading-normal p-4 my-6 rounded;
+  pre {
+    @apply overflow-auto leading-normal p-4 my-6 rounded-md;
 
-    code:not([class*=language-]):not(.hljs) { /* Disable inline code style */
+    code { /* Disable inline code style */
       @apply rounded-none p-0;
+    }
+  }
+
+  pre.mc-prism.hide code { /* Smooth transition for prism.js */
+    @apply opacity-0;
+  }
+
+  pre.mc-prism code { /* Smooth transition for prism.js */
+    @apply opacity-100;
+    transition: opacity 0.1s ease-in;
+  }
+
+  .emgithub-container {
+    @apply my-6;
+
+    .emgithub-code {
+      @apply flex flex-col justify-center;
+
+      .emgithub-loading {
+        @apply absolute w-8 mx-auto z-10 left-0 right-0 my-4;
+
+        &.hide {
+          @apply hidden;
+        }
+      }
+
+      .emgithub-pre {
+        @apply my-0 rounded-b-none;
+
+        &.loading {
+          min-height: 5rem;
+        }
+
+        code {
+          tab-size: inherit;
+        }
+      }
+    }
+
+    .emgithub-toolbar {
+      @apply text-xs flex flex-row justify-between p-3 pt-3 pb-2.5 rounded-b-md;
+
+      a {
+        @apply font-semibold;
+      }
     }
   }
 
@@ -127,7 +172,7 @@ article {
       pre {
         @apply p-0 m-0;
 
-        code:not([class*=language-]):not(.hljs) { /* Disable inline code style */
+        code { /* Disable inline code style */
           @apply rounded-none p-0;
         }
       }

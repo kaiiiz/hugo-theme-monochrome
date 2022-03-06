@@ -122,6 +122,7 @@ module.exports = {
         textColor: ['hover', 'dark'],
     },
     corePlugins: {
+        visibility: false,
         fontVariantNumeric: false,
         letterSpacing: false,
         userSelect: false,
@@ -144,7 +145,6 @@ module.exports = {
         skew: false,
         transitionProperty: false,
         transitionDuration: false,
-        animation: false,
         transitionDelay: false,
         textDecoration: false,
         textTransform: false,
@@ -158,7 +158,6 @@ module.exports = {
         resize: false,
         pointerEvents: false,
         placeholderOpacity: false,
-        opacity: false,
         objectPosition: false,
         maxWidth: false,
         borderOpacity: false,

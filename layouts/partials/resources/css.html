@@ -11,12 +11,9 @@
 
 {{/*  Codeblock  */}}
 {{ if (findRE "<pre" .Content 1) }}
-    {{ if eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js" }}
-        {{ $hl_css := resources.Get "css/prism.css" }}
-        {{- if hugo.IsProduction -}}
-            {{ $hl_css = $hl_css | resources.Minify | resources.Fingerprint "sha512" -}}
-        {{- end -}}
-
-        <link rel="stylesheet" href="{{- $hl_css.RelPermalink -}}" integrity="{{- $hl_css.Data.Integrity -}}">
-    {{ end }}
+    {{ $prism_css := resources.Get "css/prism.css" }}
+    {{- if hugo.IsProduction -}}
+        {{ $prism_css = $prism_css | resources.Minify | resources.Fingerprint "sha512" -}}
+    {{- end -}}
+    <link rel="stylesheet" href="{{- $prism_css.RelPermalink -}}" integrity="{{- $prism_css.Data.Integrity -}}">
 {{ end }}

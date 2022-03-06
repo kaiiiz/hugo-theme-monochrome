@@ -35,7 +35,7 @@ function registerClipboard(button, code_block) {
 }
 
 window.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('pre > code').forEach((code_block) => {
+    document.querySelectorAll('pre:not(.emgithub-pre) > code').forEach((code_block) => {
         var button = document.createElement('button');
         button.className = 'copy-code-button hidden';
         button.type = 'button';
