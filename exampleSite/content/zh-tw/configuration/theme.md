@@ -4,6 +4,9 @@ weight: 2
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
+- tag: 'v0.10.0'
+  description:
+  - '組織 Syntax Highlight 設定'
 - tag: 'v0.8.0'
   description:
   - '新增 `enableCollapsibleTOC` 及 `enableCollapsibleChangelogs` 屬性'
@@ -167,8 +170,11 @@ enableSiteSearch = true
 參考 [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting) 來做設定。Monochrome 還提供複製程式碼的功能。
 
 ```toml
-[params]
-enableCodeCopy = false
+[params.syntaxHighlight]
+lib = "builtin" # "builtin" | "prism.js"
+
+[params.syntaxHighlight.builtin]
+enableCodeCopy = false # default true
 ```
 
 > default: true
@@ -186,20 +192,12 @@ lineNos = false
 啟用 Prism.js
 
 ```toml
-[params]
-usePrismJS = true
+[params.syntaxHighlight]
+lib = "prism.js" # "builtin" | "prism.js"
+
+[params.syntaxHighlight.prism]
+enableLineNo = false # default true
 ```
-
-> default: false
-
-啟用行數功能
-
-```toml
-[params]
-enablePrismJSLineNo = true
-```
-
-> default: true
 
 ## SEO
 
