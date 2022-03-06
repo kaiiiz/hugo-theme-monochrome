@@ -1,0 +1,5 @@
+(()=>{(()=>{Prism.plugins.autoloader.languages_path="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/",d();function a(t){let e=t.querySelector(".emgithub-pre"),n=t.querySelector(".emgithub-loading");n.classList.add("hide"),e.classList.remove("hide"),e.classList.remove("loading")}function m(t,e,n,s,c){let r=e.querySelector(".emgithub-pre"),o=document.createElement("code");if(r.appendChild(o),s>0){let i=t.split(`
+`);t=i.slice(s-1,c).join(`
+`)+`
+`}o.classList.add(`language-${n}`),o.textContent=t,Prism.highlightAllUnder(e,!0,()=>{requestAnimationFrame(()=>{a(e)})})}function u(t,e){let n=e.querySelector(".emgithub-code .emgithub-pre"),s=document.createElement("code");n.appendChild(s),n.classList.remove("line-numbers"),n.classList.add("no-line-numbers"),s.textContent=t,a(e)}async function d(){let t=new URL(document.currentScript.src),e=t.searchParams,n=new URL(e.get("raw_file_url")),s=e.get("lang"),c=e.get("id"),r=Number(e.get("line_begin")),o=Number(e.get("line_end")),i=document.getElementById(c),l=await fetch(n);if(l.ok){let g=await l.text();m(g,i,s,r,o)}else u(`Failed to process ${n}
+${l.status}`,i)}})();})();

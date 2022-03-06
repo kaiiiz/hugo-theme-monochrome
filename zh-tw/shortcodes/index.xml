@@ -141,7 +141,76 @@ hello world
 &lt;/div>
 &lt;div class="rounded p-3 my-6" style="background-color: #f2dede; color: #a94442;" >
 hello world
-&lt;/div></description></item><item><title>Icon Group</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/shortcodes/icon-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/shortcodes/icon-group/</guid><description>&lt;h1 id="icon-group">Icon Group&lt;/h1>
+&lt;/div></description></item><item><title>Embed github</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/shortcodes/emgithub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/shortcodes/emgithub/</guid><description>&lt;h1 id="embed-github">Embed github&lt;/h1>
+&lt;p>直接 embed github source code 到網站中，並支援語法高亮 (Prism.js)&lt;/p>
+&lt;h2 id="使用">使用&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; emgithub target=&amp;quot;&amp;quot; lang=&amp;quot;&amp;quot; hl=&amp;quot;&amp;quot; tab_size=&amp;quot;&amp;quot; /&amp;gt;}}
+&lt;/code>&lt;/pre>&lt;p>Paramters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>target&lt;/code> (required): 合法的 github 網址，舉例來說:
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/torvalds/linux/blob/v5.4/README">https://github.com/torvalds/linux/blob/v5.4/README&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/torvalds/linux/blob/v5.4/README#L1">https://github.com/torvalds/linux/blob/v5.4/README#L1&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/torvalds/linux/blob/v5.4/README#L1-L7">https://github.com/torvalds/linux/blob/v5.4/README#L1-L7&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>lang&lt;/code> (optional): 使用何種語言做語法高亮？預設為 &lt;code>text&lt;/code>&lt;/li>
+&lt;li>&lt;code>hl&lt;/code> (optional): 行數高亮設定，細節參考 &lt;a href="https://prismjs.com/plugins/line-highlight/">Prism.js Line Highlight Plugin&lt;/a>&lt;/li>
+&lt;li>&lt;code>tab_size&lt;/code> (optional): 預設為 4&lt;/li>
+&lt;/ul>
+&lt;h2 id="範例">範例&lt;/h2>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">emgithub&lt;/span> &lt;span style="color:#a6e22e">target&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://github.com/torvalds/linux/blob/v5.4/README&amp;#34;&lt;/span> /&amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div id="emgithub_0" class="emgithub-container">
+&lt;div class="emgithub-code">
+&lt;div class="emgithub-loading">
+&lt;svg role="status" class="mr-2 w-8 h-8 text-gray-200 animate-spin fill-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+&lt;path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+&lt;/svg>
+&lt;/div>
+&lt;pre style="tab-size: 4" class="emgithub-pre line-numbers loading" data-start="0" >&lt;/pre>
+&lt;/div>
+&lt;div class="emgithub-toolbar">
+&lt;a target="_blank" href="https://github.com/torvalds/linux/blob/v5.4/README">README&lt;/a>
+&lt;a target="_blank" href="https://cdn.jsdelivr.net/gh/torvalds/linux@v5.4/README">view raw&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;script src="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/js/highlight/prism.568eb3f707f42777fa2d521d89cf01967ade152d80597f2afeeb9c9a8cb48c5880eccdc5ce38109838cc5dd7824e3b4c990e5bc0760435272a830101d5104094.js" integrity="sha512-Vo6z9wf0J3f6LVIdic8BlnreFS2AWX8q/uucmoy0jFiA7M3FzjgQmDjMXdeCTjtMmQ5bwHYENScqgwEB1RBAlA==" data-manual>&lt;/script>
+&lt;script src='https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/js/emgithub.337ff2dca793ea748a82421d4e1c151ff98f22cf211ebc27a3d7b7f36445c6c86ba871f1b1257d868e3b69ef1fbc0fef266f9a0ce6a49507548dcbf6a9d019a0.js?raw_file_url=https%3a%2f%2fcdn.jsdelivr.net%2fgh%2ftorvalds%2flinux%40v5.4%2fREADME&amp;lang=text&amp;line_begin=0&amp;line_end=0&amp;id=emgithub_0'>&lt;/script>
+&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-html" data-lang="html">{{&amp;lt; &lt;span style="color:#f92672">emgithub&lt;/span> &lt;span style="color:#a6e22e">target&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;https://github.com/torvalds/linux/blob/v5.4/arch/arm64/kernel/stacktrace.c#L171-L199&amp;#34;&lt;/span> &lt;span style="color:#a6e22e">lang&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">c&lt;/span> &lt;span style="color:#a6e22e">tab_size&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">8&lt;/span> &lt;span style="color:#a6e22e">hl&lt;/span>&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;172-173,192&amp;#34;&lt;/span> /&amp;gt;}}
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+&lt;div id="emgithub_1" class="emgithub-container">
+&lt;div class="emgithub-code">
+&lt;div class="emgithub-loading">
+&lt;svg role="status" class="mr-2 w-8 h-8 text-gray-200 animate-spin fill-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+&lt;path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+&lt;path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+&lt;/svg>
+&lt;/div>
+&lt;pre style="tab-size: 8" class="emgithub-pre line-numbers loading" data-start="171" data-line="171-172,192" data-line-offset="171">&lt;/pre>
+&lt;/div>
+&lt;div class="emgithub-toolbar">
+&lt;a target="_blank" href="https://github.com/torvalds/linux/blob/v5.4/arch/arm64/kernel/stacktrace.c#L171-L199">arch/arm64/kernel/stacktrace.c&lt;/a>
+&lt;a target="_blank" href="https://cdn.jsdelivr.net/gh/torvalds/linux@v5.4/arch/arm64/kernel/stacktrace.c">view raw&lt;/a>
+&lt;/div>
+&lt;/div>
+&lt;script src="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/js/highlight/prism.568eb3f707f42777fa2d521d89cf01967ade152d80597f2afeeb9c9a8cb48c5880eccdc5ce38109838cc5dd7824e3b4c990e5bc0760435272a830101d5104094.js" integrity="sha512-Vo6z9wf0J3f6LVIdic8BlnreFS2AWX8q/uucmoy0jFiA7M3FzjgQmDjMXdeCTjtMmQ5bwHYENScqgwEB1RBAlA==" data-manual>&lt;/script>
+&lt;script src='https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/js/emgithub.337ff2dca793ea748a82421d4e1c151ff98f22cf211ebc27a3d7b7f36445c6c86ba871f1b1257d868e3b69ef1fbc0fef266f9a0ce6a49507548dcbf6a9d019a0.js?raw_file_url=https%3a%2f%2fcdn.jsdelivr.net%2fgh%2ftorvalds%2flinux%40v5.4%2farch%2farm64%2fkernel%2fstacktrace.c&amp;lang=c&amp;line_begin=171&amp;line_end=199&amp;id=emgithub_1'>&lt;/script></description></item><item><title>Icon Group</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/shortcodes/icon-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/zh-tw/shortcodes/icon-group/</guid><description>&lt;h1 id="icon-group">Icon Group&lt;/h1>
 &lt;p>將數個 icon 透過 grid 包裝&lt;/p>
 &lt;h2 id="使用">使用&lt;/h2>
 &lt;pre>&lt;code>{{&amp;lt; icon-group &amp;gt;}}

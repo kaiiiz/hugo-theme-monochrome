@@ -288,16 +288,18 @@
 &lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
 &lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 &lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>]
-&lt;span style="color:#a6e22e">enableCodeCopy&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span>
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>.&lt;span style="color:#a6e22e">syntaxHighlight&lt;/span>]
+&lt;span style="color:#a6e22e">lib&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;builtin&amp;#34;&lt;/span> &lt;span style="color:#75715e"># &amp;#34;builtin&amp;#34; | &amp;#34;prism.js&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">params&lt;/span>.&lt;span style="color:#a6e22e">syntaxHighlight&lt;/span>.&lt;span style="color:#a6e22e">builtin&lt;/span>]
+&lt;span style="color:#a6e22e">enableCodeCopy&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span> &lt;span style="color:#75715e"># default true&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;blockquote>
-&lt;p>default: true&lt;/p>
-&lt;/blockquote>
-&lt;h3 id="using-prismjs-client-side">Using Prism.js (client-side)&lt;/h3>
+&lt;/div>&lt;h3 id="using-prismjs-client-side">Using Prism.js (client-side)&lt;/h3>
 &lt;p>Disable markup highlight feature&lt;/p>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 &lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -313,6 +315,21 @@
 &lt;/div>
 &lt;/div>&lt;p>Enable Prism.js&lt;/p>
 &lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-toml" data-lang="toml">[&lt;span style="color:#a6e22e">params&lt;/span>.&lt;span style="color:#a6e22e">syntaxHighlight&lt;/span>]
+&lt;span style="color:#a6e22e">lib&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;prism.js&amp;#34;&lt;/span> &lt;span style="color:#75715e"># &amp;#34;builtin&amp;#34; | &amp;#34;prism.js&amp;#34;&lt;/span>
+[&lt;span style="color:#a6e22e">params&lt;/span>.&lt;span style="color:#a6e22e">syntaxHighlight&lt;/span>.&lt;span style="color:#a6e22e">prism&lt;/span>]
+&lt;span style="color:#a6e22e">enableLineNo&lt;/span> = &lt;span style="color:#66d9ef">false&lt;/span> &lt;span style="color:#75715e"># default true&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
 &lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
 &lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 &lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
@@ -567,39 +584,6 @@
 &lt;/div>
 &lt;/div>&lt;blockquote>
 &lt;p>default: site&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/site/#google-analytics">&lt;code>googleAnalytics&lt;/code>&lt;/a>&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="syntax-highlighting">Syntax Highlighting&lt;/h2>
-&lt;h3 id="chroma">Chroma&lt;/h3>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
-&lt;span style="color:#f92672">code_copy&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
----
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;blockquote>
-&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#using-chroma-hugo-built-in">&lt;code>enableCodeCopy&lt;/code>&lt;/a>&lt;/p>
-&lt;/blockquote>
-&lt;h3 id="prismjs">Prism.js&lt;/h3>
-&lt;div class="highlight">&lt;div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-&lt;table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;">&lt;tr>&lt;td style="vertical-align:top;padding:0;margin:0;border:0;">
-&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-&lt;/span>&lt;span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-yaml" data-lang="yaml">---
-&lt;span style="color:#f92672">prism_lineno&lt;/span>: &lt;span style="color:#66d9ef">false&lt;/span>
----
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;blockquote>
-&lt;p>default: theme&amp;rsquo;s &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/hugo-theme-monochrome/configuration/theme/#using-prismjs">&lt;code>enablePrismJSLineNo&lt;/code>&lt;/a>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="seo">SEO&lt;/h2>
 &lt;h3 id="author">Author&lt;/h3>
