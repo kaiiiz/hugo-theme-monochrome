@@ -3,8 +3,8 @@
 
 <figure>
     <a class="relative" href="{{ .RelPermalink }}">
-        <img src="{{ $cover_src | absURL }}" class="dark:hidden w-32 h-48 rounded-md shadow-xl object-cover">
-        <img src="{{ $cover_src_dark | absURL }}" class="hidden dark:block w-32 h-48 rounded-md shadow-xl object-cover">
+        <img src="{{ $cover_src | relURL }}" class="dark:hidden w-32 h-48 rounded-md shadow-xl object-cover">
+        <img src="{{ $cover_src_dark | relURL }}" class="hidden dark:block w-32 h-48 rounded-md shadow-xl object-cover">
         <div class="bookcase-item-overlay w-32 h-48 rounded-md absolute top-0 left-0"></div>
     </a>
     <figcaption class="text-center text-sm mt-3">

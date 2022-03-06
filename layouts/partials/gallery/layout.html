@@ -20,7 +20,7 @@
                     {{ if .Params.gallery_img_src }}
                         <figure class="sm:-mx-5">
                             {{ if $img_link }}<a target="_blank" rel="noopener" href="{{ $img_link }}">{{ end }}
-                                <img class="mx-auto" src="{{ .Params.gallery_img_src | absURL }}" alt="{{ .Title }}">
+                                <img class="mx-auto" src="{{ .Params.gallery_img_src | relURL }}" alt="{{ .Title }}">
                             {{ if $img_link }}</a>{{ end }}
                             {{ with .Params.gallery_img_caption }}
                                 <figcaption class="italic text-center my-2 text-sm">
