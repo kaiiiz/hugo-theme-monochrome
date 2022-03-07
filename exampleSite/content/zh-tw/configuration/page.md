@@ -144,6 +144,28 @@ ga: false
 
 > default: site's [`googleAnalytics`](/hugo-theme-monochrome/zh-tw/configuration/site/#google-analytics)
 
+## Syntax Highlighting
+
+### Chroma
+
+```yaml
+---
+code_copy: false
+---
+```
+
+> default: theme's [`enableCodeCopy`](/hugo-theme-monochrome/zh-tw/configuration/theme/#using-chroma-hugo-built-in)
+
+### Prism.js
+
+```yaml
+---
+prism_lineno: false
+---
+```
+
+> default: theme's [`enablePrismJSLineNo`](/hugo-theme-monochrome/zh-tw/configuration/theme/#using-prismjs)
+
 ## SEO
 
 ### Author

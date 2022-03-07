@@ -4,9 +4,6 @@ weight: 2
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
-- tag: 'v0.10.0'
-  description:
-  - 'Organize syntax highlight settings'
 - tag: 'v0.8.0'
   description:
   - 'Add `enableCollapsibleTOC` and `enableCollapsibleChangelogs` properties'
@@ -170,12 +167,11 @@ enableSiteSearch = true
 See [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting) for more details.
 
 ```toml
-[params.syntaxHighlight]
-lib = "builtin" # "builtin" | "prism.js"
-
-[params.syntaxHighlight.builtin]
-enableCodeCopy = false # default true
+[params]
+enableCodeCopy = false
 ```
+
+> default: true
 
 ### Using Prism.js (client-side)
 
@@ -188,14 +184,6 @@ lineNos = false
 ```
 
 Enable Prism.js
-
-```toml
-[params.syntaxHighlight]
-lib = "prism.js" # "builtin" | "prism.js"
-
-[params.syntaxHighlight.prism]
-enableLineNo = false # default true
-```
 
 ```toml
 [params]
