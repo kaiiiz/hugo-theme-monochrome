@@ -1,0 +1,71 @@
+#TableOfContents {
+  @include text-sm;
+  line-height: 1.5rem;
+
+  ul, li {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  ul ul {
+    margin-left: .5rem;
+  }
+
+  li {
+    margin-top: .375rem;
+  }
+
+  a {
+    color: var(--color-text);
+  }
+}
+
+article#changelogs {
+  @include text-sm;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: max-content 1fr;
+  margin-top: .5rem;
+}
+
+.collapsible-menu-wrapper {
+  @include component-margin;
+  padding: 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: .25rem;
+
+  .collapse-btn {
+    cursor: pointer;
+  }
+
+  .collapse-btn::after {
+    font-family: sans-serif;
+    content: "\25B8";
+  }
+
+  .collapse-btn-input:checked ~ div > .collapse-btn::after {
+    content: "\25BE";
+  }
+
+  .collapse-btn-input ~ .collapsible-menu {
+    display: none;
+  }
+
+  .collapse-btn-input:checked ~ .collapsible-menu {
+    display: block
+  }
+
+  .collapsible-menu-type {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .collapsible-menu {
+    margin-left: .5rem;
+  }
+}

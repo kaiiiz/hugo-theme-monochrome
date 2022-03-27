@@ -9,6 +9,10 @@ main {
   padding: 1rem;
 }
 
+#content {
+  @include component-margin;
+}
+
 .hidden {
   display: none;
 }

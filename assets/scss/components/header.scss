@@ -9,7 +9,7 @@ header {
     align-items: center;
 
     a {
-      font-size: 1.5rem;
+      @include text-2xl;
       font-weight: 700;
       color: var(--color-text);
     }
@@ -49,7 +49,7 @@ header {
         }
 
         .dropdown-desc {
-          font-size: 0.875rem;
+          @include text-sm;
           margin-left: 0.35rem;
         }
       }

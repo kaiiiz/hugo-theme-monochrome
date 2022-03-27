@@ -2,6 +2,8 @@
 @import 'purecss/grids';
 @import 'purecss/grids-responsive';
 
+@import 'mixins/text';
+@import 'mixins/margin';
 @import 'color';
 @import 'vars';
 
@@ -9,3 +11,4 @@
 @import 'components/header';
 @import 'components/menus';
 @import 'components/nav';
+@import 'components/collapsible-menu';
