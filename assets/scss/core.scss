@@ -15,6 +15,11 @@ main {
   padding: 1rem;
 }
 
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: system-ui,-apple-system,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji;
+}
 
 @import 'header';
 @import 'menus';
+@import 'nav';

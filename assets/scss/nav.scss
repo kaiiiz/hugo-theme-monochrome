@@ -1,75 +1,59 @@
+#navbar {
+  margin: 1rem 0;
 
-//   .navicon {
-//     @apply block relative cursor-pointer;
-//     height: 2px;
-//     transition: background 0.2s ease-out;
-//     width: 18px;
+  > ul.pure-menu-list {
+    display: flex;
 
-//     &::before,
-//     &::after {
-//       @apply block absolute h-full w-full;
-//       content: "";
-//       transition: all 0.2s ease-out;
-//     }
+    .navbar-dropdown {
+      > a.pure-menu-link:after {
+        content: "\25BE";
+      }
 
-//     &::before {
-//       top: 6px;
-//     }
+      > ul.pure-menu-children {
+        left: 0;
+        top: 24px;
+        width: inherit;
+      }
+    }
 
-//     &::after {
-//       top: -6px;
-//     }
-//   }
+    .navbar-item {
+      margin: 0 .5rem 0 0;
+      padding-bottom: .4rem;
+      border-bottom: 2px solid transparent;
+      
+      > a.pure-menu-link {
+        padding: 0;
+        font-weight: 500;
+        color: var(--color-navbar-item-inactive);
 
-//   #navbar_btn:checked ~ .menu-btn .navicon {
-//     background: transparent;
-//   }
+        &:hover {
+          background-color: transparent;
+        }
+      }
 
-//   #navbar_btn:checked ~ .menu-btn .navicon::before,
-//   #navbar_btn:checked ~ .menu-btn .navicon::after {
-//     top: 0;
-//   }
+      &:hover {
+        border-bottom-color: var(--color-navbar-item-active);
 
-//   #navbar_btn:checked ~ .menu-btn .navicon::before {
-//     transform: rotate(-45deg);
-//   }
+        > a {
+          color: var(--color-navbar-item-active);
+        }
+      }
+    }
 
-//   #navbar_btn:checked ~ .menu-btn .navicon::after {
-//     transform: rotate(45deg);
-//   }
+    .navbar-item.active {
+      border-bottom-color: var(--color-navbar-item-active);
 
-//   #navbar_sm {
-//     @screen xl {
-//       display: none !important;
-//     }
+      > a {
+        color: var(--color-navbar-item-active);
+      }
+    }
 
-//     ul ul {
-//       @apply ml-2;
-//     }
-//   }
+    .navbar-item.insection {
+      border-bottom-color: var(--color-navbar-item-in-section);
 
-//   #navbar {
-//     .navbar-item-dropdown {
-//       @apply relative;
-
-//       .navbar-dropdown {
-//         @apply absolute rounded-sm hidden w-max shadow-xl z-10;
-
-//         a {
-//           @apply px-2.5 py-2;
-//         }
-
-//         a,
-//         a:visited,
-//         a:hover,
-//         a:active {
-//           color: inherit;
-//           fill: inherit;
-//         }
-//       }
-
-//       &:hover > .navbar-dropdown {
-//         @apply block;
-//       }
-//     }
-//   }
+      > a {
+        color: var(--color-navbar-item-in-section);
+      }
+    }
+  }
+}

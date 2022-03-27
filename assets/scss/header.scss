@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: $size-base 0;
+  margin: 1rem 0;
 
   .brand {
     display: flex;
@@ -16,7 +16,7 @@ header {
 
     #sidebar_btn {
       display: flex;
-      margin-right: $size-2xs;
+      margin-right: 0.5rem;
 
       @media (min-width: $md_min_width) {
         display: none;
@@ -49,8 +49,8 @@ header {
         }
 
         .dropdown-desc {
-          font-size: $size-sm;
-          margin-left: $size-3xs;
+          font-size: 0.875rem;
+          margin-left: 0.35rem;
         }
       }
     }

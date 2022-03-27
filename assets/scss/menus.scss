@@ -32,7 +32,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE
   padding: 0;
   margin: 0;
   height: 100%;
-  font-size: $size-sm;
+  font-size: 0.875rem;
 }
 
 .pure-menu-link, .pure-menu-heading {
@@ -91,13 +91,15 @@ https://github.com/pure-css/pure/blob/master/LICENSE
 /* Vertical Menus - show the dropdown arrow */
 
 .pure-menu-has-children > .pure-menu-link:after {
-  padding-left: $size-3xs;
+  padding-left: 0.35rem;
+  font-family: sans-serif;
   content: "\25B8";
 }
 
 /* Horizontal Menus - show the dropdown arrow */
 
 .pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after {
+  font-family: sans-serif;
   content: "\25BE";
 }
 
@@ -161,7 +163,7 @@ https://github.com/pure-css/pure/blob/master/LICENSE
 
 .pure-menu-link {
   color: var(--color-text);
-  font-size: $size-sm;
+  font-size: 0.875rem;
 }
 
 .pure-menu-children {
@@ -188,5 +190,13 @@ https://github.com/pure-css/pure/blob/master/LICENSE
 .pure-menu-link {
   &:hover, &:focus {
     background-color: var(--color-background-hover);
+  }
+}
+
+.pure-menu-selected > .pure-menu-link {
+  color: var(--color-navbar-item-active);
+
+  &:visited {
+    color: var(--color-navbar-item-active);
   }
 }
