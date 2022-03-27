@@ -1,0 +1,14 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: system-ui,-apple-system,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
