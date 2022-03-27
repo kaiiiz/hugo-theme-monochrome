@@ -1,14 +1,14 @@
 window.addEventListener("DOMContentLoaded", function () {
-    const navbar_sm = document.getElementById("navbar_sm");
-    const navbar_btn = document.getElementById('navbar_btn');
+    // const navbar_sm = document.getElementById("navbar_sm");
+    // const navbar_btn = document.getElementById('navbar_btn');
 
-    navbar_btn.addEventListener('click', function () {
-        if (navbar_sm.classList.contains("hidden")) {
-            navbar_sm.classList.remove("hidden");
-        } else {
-            navbar_sm.classList.add("hidden");
-        }
-    });
+    // navbar_btn.addEventListener('click', function () {
+    //     if (navbar_sm.classList.contains("hidden")) {
+    //         navbar_sm.classList.remove("hidden");
+    //     } else {
+    //         navbar_sm.classList.add("hidden");
+    //     }
+    // });
 
     const dark_mode_btn = document.getElementById("dark_mode_btn");
     const light_mode_btn = document.getElementById("light_mode_btn");
@@ -20,14 +20,14 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     dark_mode_btn.addEventListener('click', function () {
-        document.documentElement.classList.add('dark');
+        document.documentElement.setAttribute("data-theme", "dark");
         localStorage.theme = 'dark';
         dark_mode_btn.classList.add('hidden');
         light_mode_btn.classList.remove('hidden');
     });
 
     light_mode_btn.addEventListener('click', function () {
-        document.documentElement.classList.remove('dark');
+        document.documentElement.setAttribute("data-theme", "light");
         localStorage.theme = 'light';
         light_mode_btn.classList.add('hidden');
         dark_mode_btn.classList.remove('hidden');

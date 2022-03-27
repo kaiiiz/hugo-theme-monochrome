@@ -1,0 +1,37 @@
+<nav id="navbar">
+    {{- $currentPage := . -}}
+    {{- $currentUrl := .RelPermalink -}}
+    {{- $isHome := .IsHome -}}
+    <ul>
+        {{- range .Site.Menus.navbar -}}
+            {{ $navbar_item := "text-sm border-b-2 pb-1 mr-2 font-medium" }}
+            {{- if $currentPage.IsMenuCurrent "navbar" . -}}
+                {{/* default style */}}
+            {{- else if eq $currentUrl .URL -}}
+                {{/* default style */}}
+            {{- else if in ($currentUrl|lower) (.URL|lower) -}}
+                {{ $navbar_item = printf "%s %s" $navbar_item "insection" }}
+            {{- else -}}
+                {{ $navbar_item = printf "%s %s" $navbar_item "inactive" }}
+            {{- end -}}
+
+            {{- if .Children -}}
+                <li class="navbar-item-dropdown {{ $navbar_item }}">
+                    <div class="flex items-center">
+                        <a href="{{ .URL }}">{{- .Name -}}</a>
+                        <svg width="18px" height="18px" viewBox="3 3 18 18">
+                            {{- partial "svg/arrow-down.html" -}}
+                        </svg>
+                    </div>
+                    <ul class="navbar-dropdown mt-1.5 -ml-2.5">
+                        {{- partial "navbar/nested-desktop.html" . -}}
+                    </ul>
+                </li>
+            {{- else -}}
+                <li class="navbar-item {{ $navbar_item }}">
+                    <a href="{{ .URL }}">{{- .Name -}}</a>
+                </li>
+            {{- end -}}
+        {{- end -}}
+    </ul>
+</nav>

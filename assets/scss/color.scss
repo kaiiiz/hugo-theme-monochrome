@@ -1,0 +1,39 @@
+$gray-1000: #000;
+$gray-900: #222;
+$gray-800: #333;
+$gray-700: #444;
+$gray-600: #555;
+$gray-500: #777;
+$gray-400: #aaa;
+$gray-300: #ccc;
+$gray-200: #ddd;
+$gray-100: #e5e5e5;
+$gray-50: #f5f5f5;
+$gray-0: #fff;
+
+html[data-theme="light"] {
+  --color-text: #{$gray-900};
+  --color-background: #{$gray-0};
+  --color-background-hover: #{$gray-50};
+  --color-link: #2563eb;
+}
+
+html[data-theme="dark"] {
+  --color-text: #{$gray-100};
+  --color-background: #{$gray-800};
+  --color-background-hover: #{$gray-600};
+  --color-link: #93c5fd;
+}
+
+// Default color settings
+
+html {
+  color: var(--color-text);
+  background: var(--color-background);
+  font-size: 16px;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}

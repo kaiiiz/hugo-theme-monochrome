@@ -1,0 +1,58 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: $size-base 0;
+
+  .brand {
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+
+    #sidebar_btn {
+      display: flex;
+      margin-right: $size-2xs;
+
+      @media (min-width: $md_min_width) {
+        display: none;
+      }
+    }
+  }
+
+  .toolbox {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    > * {
+      display: flex;
+      cursor: pointer;
+    }
+
+    .dropdown-wrapper {
+      .dropdown-btn {
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+        &:hover {
+          background-color: unset;
+        }
+
+        &::after {
+          content: "";
+        }
+
+        .dropdown-desc {
+          font-size: $size-sm;
+          margin-left: $size-3xs;
+        }
+      }
+    }
+  }
+}

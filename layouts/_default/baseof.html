@@ -13,11 +13,12 @@
 {{ .Scratch.SetInMap "params" "enableCollapsibleChangelogs" (.Params.collapsible_changelogs | default .Site.Params.enableCollapsibleChangelogs | default false) }}
 
 <!DOCTYPE html>
-<html class="h-full w-full font-sans" lang='{{ .Site.LanguageCode }}'>
+<html lang='{{ .Site.LanguageCode }}'>
     {{- partial "head.html" . -}}
-    <body class="flex flex-col items-center w-full">
-        <main class="w-full sm:w-10/12 md:w-9/12 lg:w-7/12 xl:w-5/12 m-auto px-6">
+    <body class="pure-g">
+        <main class="pure-u-1 pure-u-md-3-4 pure-u-lg-1-2 pure-u-xl-3-8">
             {{- partial "header.html" . -}}
+            {{- partial "nav.html" . -}}
             <div id="content" class="my-8">
                 {{ if .Params.changelogs }}
                     {{ $enableCollapsibleChangelogs := (.Scratch.Get "params").enableCollapsibleChangelogs }}
