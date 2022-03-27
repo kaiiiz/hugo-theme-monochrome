@@ -1,9 +1,12 @@
 {{- define "content" -}}
 
-{{- partial "toc.html" . -}}
+{{ if and (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") (.Scratch.Get "params").enableTOC }}
+    {{ $enableCollapsibleTOC := (.Scratch.Get "params").enableCollapsibleTOC }}
+    {{ partial "collapsible-menu.html" (dict "type" "toc" "context" . "enable" $enableCollapsibleTOC) }}
+{{ end }}
 
 {{ if .Content }}
-    <div class="my-7">
+    <div class="component-margin">
         {{- partial "content.html" . -}}
     </div>
 {{ end }}
