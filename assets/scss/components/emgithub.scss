@@ -1,0 +1,51 @@
+.emgithub-container {
+  @include my-6;
+
+  .emgithub-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .emgithub-loading {
+      @include mx-auto;
+      @include my-4;
+      z-index: 10;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 2rem;
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    .emgithub-pre {
+      @include my-0;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+
+      &.loading {
+        min-height: 5rem;
+      }
+
+      code {
+        tab-size: inherit;
+      }
+    }
+  }
+
+  .emgithub-toolbar {
+    @include text-xs;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.75rem 0.75rem 0.625rem 0.75rem;
+    border-bottom-right-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+
+    a {
+      @include font-semibold;
+    }
+  }
+}

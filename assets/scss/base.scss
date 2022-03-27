@@ -6,10 +6,10 @@ html, button, input, select, textarea,
 main {
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
 }
 
-.component-margin {
+.content-margin {
   @include my-8;
 }
 
