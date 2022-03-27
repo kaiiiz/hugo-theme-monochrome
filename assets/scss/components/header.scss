@@ -9,7 +9,7 @@ header {
     align-items: center;
 
     a {
-      @include text-2xl;
+      @include text-3xl;
       @include font-bold;
       color: var(--color-text);
     }
