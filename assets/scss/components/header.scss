@@ -10,7 +10,7 @@ header {
 
     a {
       @include text-2xl;
-      font-weight: 700;
+      @include font-bold;
       color: var(--color-text);
     }
 

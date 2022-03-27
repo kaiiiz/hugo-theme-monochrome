@@ -30,7 +30,7 @@ article#changelogs {
 }
 
 .collapsible-menu-wrapper {
-  @include component-margin;
+  @include my-8;
   padding: 1rem;
   border: 2px solid var(--color-border);
   border-radius: .25rem;
@@ -61,7 +61,7 @@ article#changelogs {
     justify-content: space-between;
 
     span {
-      font-weight: 600;
+      @include font-semibold;
     }
   }
 

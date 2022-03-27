@@ -22,8 +22,8 @@
       border-bottom: 2px solid transparent;
       
       > a.pure-menu-link {
+        @include font-medium;
         padding: 0;
-        font-weight: 500;
         color: var(--color-navbar-item-inactive);
 
         &:hover {

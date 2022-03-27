@@ -16,6 +16,7 @@ html[data-theme="light"] {
   --color-border: #{$gray-100};
   --color-background: #{$gray-0};
   --color-background-hover: #{$gray-50};
+  --color-background-inline-code: #{$gray-50};
   --color-link: #2563eb;
   --color-navbar-item-inactive: #{$gray-300};
   --color-navbar-item-active: #{$gray-900};
@@ -27,6 +28,7 @@ html[data-theme="dark"] {
   --color-border: #{$gray-500};
   --color-background: #{$gray-800};
   --color-background-hover: #{$gray-600};
+  --color-background-inline-code: #{$gray-600};
   --color-link: #93c5fd;
   --color-navbar-item-inactive: #{$gray-400};
   --color-navbar-item-active: #{$gray-100};

@@ -50,3 +50,31 @@
   font-size: 8rem; /* 128px */
   line-height: 1;
 }
+
+@mixin font-thin {
+  font-weight: 100;
+}
+@mixin font-extralight {
+  font-weight: 200;
+}
+@mixin font-light {
+  font-weight: 300;
+}
+@mixin font-normal {
+  font-weight: 400;
+}
+@mixin font-medium {
+  font-weight: 500;
+}
+@mixin font-semibold {
+  font-weight: 600;
+}
+@mixin font-bold {
+  font-weight: 700;
+}
+@mixin font-extrabold {
+  font-weight: 800;
+}
+@mixin font-black {
+  font-weight: 900;
+}
