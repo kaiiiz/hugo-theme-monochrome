@@ -1,6 +1,6 @@
 {{ if .img }}
-    <div class="w-24 h-24">
-        <img alt="balloon_head" width="108px" height="108px" src='{{- .img | relURL -}}' class="{{ .img_style }}">
+    <div class="balloon-head-item-img">
+        <img alt="balloon_head" src='{{- .img | relURL -}}' {{ if .balloon_circle }}class="rounded"{{ end }}>
     </div>
 {{ else }}
     {{ partial "balloon/dot.html" }}

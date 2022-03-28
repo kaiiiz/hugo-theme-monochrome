@@ -1,6 +1,4 @@
 @import 'purecss/base';
-@import 'purecss/grids';
-@import 'purecss/grids-responsive';
 
 @import 'mixins/text';
 @import 'mixins/margin';
@@ -14,6 +12,7 @@
 @import 'layout/article';
 @import 'layout/bookcase';
 @import 'layout/gallery';
+@import 'layout/balloon';
 @import 'layout/list';
 @import 'components/header';
 @import 'components/footer';

@@ -58,3 +58,33 @@ img {
 .hidden {
   display: none;
 }
+
+@media screen and (min-width: $sm_min_width) {
+  main {
+    width: $sm_main_width;
+  }
+}
+
+@media screen and (min-width: $md_min_width) {
+  main {
+    width: $md_main_width;
+  }
+}
+
+@media screen and (min-width: $lg_min_width) {
+  main {
+    width: $lg_main_width;
+  }
+}
+
+@media screen and (min-width: $xl_min_width) {
+  main {
+    width: $xl_main_width;
+  }
+}
+
+@media screen and (min-width: $xxl_main_width) {
+  main {
+    width: $xxl_main_width;
+  }
+}

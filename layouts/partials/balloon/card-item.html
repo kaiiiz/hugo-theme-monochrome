@@ -1,13 +1,11 @@
-<div class="flex w-full flex-col md:flex-row">
-    <div class="w-28 relative hidden flex-col items-center md:flex">
+<div class="balloon-card-item">
+    <div class="balloon-card-item-line">
         {{ partial "balloon/line.html" false }}
         {{ partial "balloon/dot.html" }}
         {{ partial "balloon/line.html" .last_item }}
     </div>
 
-    <div class="balloon-card flex-1 rounded-md shadow-md text-sm text-left my-3 overflow-auto">
-        <div class="m-5">
-            {{- partial "content.html" .context -}}
-        </div>
+    <div class="balloon-card-item-content">
+        {{- partial "content.html" .context -}}
     </div>
 </div>

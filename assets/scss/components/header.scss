@@ -18,7 +18,7 @@ header {
       display: flex;
       margin-right: 0.5rem;
 
-      @media (min-width: $md_min_width) {
+      @media screen and (min-width: $md_min_width) {
         display: none;
       }
     }

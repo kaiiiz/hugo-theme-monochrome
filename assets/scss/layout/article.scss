@@ -170,7 +170,7 @@ article {
     @include my-4;
     text-align: center;
     
-    @media (min-width: $md_min_width) {
+    @media screen and (min-width: $md_min_width) {
       margin-left: -1.25rem;
       margin-right: -1.25rem;
     }
