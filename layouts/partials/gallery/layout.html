@@ -1,5 +1,5 @@
 {{ if .Content }}
-<div class="my-8">
+<div class="content-margin">
     {{- partial "content.html" . -}}
 </div>
 {{ end }}
@@ -9,21 +9,21 @@
     {{ $pages := $res.Resources.ByType "page" }}
 
     {{ if $pages }}
-        <div>
+        <div class="content-margin gallery-layout">
             {{ $max_idx := sub (len $pages) 1 }}
 
             {{ range $index, $value := (sort $pages "Params.weight" "asc") }}
-                <div class="mb-16 gallery-item">
+                <div class="content-margin gallery-item">
                     {{ $title_link := .Params.gallery_title_link }}
                     {{ $img_link := .Params.gallery_img_link }}
 
                     {{ if .Params.gallery_img_src }}
-                        <figure class="sm:-mx-5">
+                        <figure>
                             {{ if $img_link }}<a target="_blank" rel="noopener" href="{{ $img_link }}">{{ end }}
-                                <img class="mx-auto" src="{{ .Params.gallery_img_src | relURL }}" alt="{{ .Title }}">
+                                <img src="{{ .Params.gallery_img_src | relURL }}" alt="{{ .Title }}">
                             {{ if $img_link }}</a>{{ end }}
                             {{ with .Params.gallery_img_caption }}
-                                <figcaption class="italic text-center my-2 text-sm">
+                                <figcaption>
                                     <article>
                                         {{ . | safeHTML }}
                                     </article>
@@ -33,23 +33,21 @@
                     {{ end }}
 
                     {{ if .Title }}
-                        <div class="mt-8 mb-4 gallery-item-title">
-                            {{ if $title_link }}<a target="_blank" rel="noopener" href="{{ $title_link }}" class="border-b">{{ end }}
-                                <span class="text-2xl font-bold">
-                                    {{- .Title -}}
-                                </span>
+                        <div class="gallery-item-title">
+                            {{ if $title_link }}<a target="_blank" rel="noopener" href="{{ $title_link }}">{{ end }}
+                                <span>{{- .Title -}}</span>
                             {{ if $title_link }}</a>{{ end }}
                         </div>
                     {{ end }}
 
                     {{ if .Content }}
-                        <div class="my-4">
+                        <div class="gallery-item-content">
                             {{- partial "content.html" . -}}
                         </div>
                     {{ end }}
 
                     {{ if .Params.gallery_statistic }}
-                        <article class="grid gap-2 grid-cols-statistic">
+                        <article class="gallery-item-statistic">
                             {{ range $stat := .Params.gallery_statistic }}
                                 <div>{{ $stat.key | markdownify }}</div>
                                 <div>{{ $stat.value | markdownify }}</div>

@@ -9,6 +9,7 @@ ul.list-layout {
 
     a {
       @include list-link-item;
+      line-height: 1.7rem;
     }
 
     span {
