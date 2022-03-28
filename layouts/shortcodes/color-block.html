@@ -17,6 +17,6 @@
     {{ $color = "#3c763d" }}
 {{ end }}
 
-<div class="rounded p-3 my-6" style="background-color: {{ $bg_color }}; color: {{ $color }};" >
+<div class="color-block content-margin" style="background-color: {{ $bg_color }}; color: {{ $color }};" >
     {{ .Inner | safeHTML }}
 </div>
