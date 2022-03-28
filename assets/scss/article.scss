@@ -9,36 +9,6 @@ article {
     margin-bottom: 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @include font-bold;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  h1 {
-    @include text-3xl;
-  }
-
-  h2 {
-    @include text-2xl;
-  }
-
-  h3 {
-    @include text-xl;
-  }
-
-  h4 {
-    @include text-lg;
-  }
-
-  h5 {
-    @include text-base;
-  }
-
-  h6 {
-    @include text-sm;
-  }
-
   hr {
     @include my-8;
   }

@@ -3,10 +3,44 @@ html, button, input, select, textarea,
   font-family: system-ui,-apple-system,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji;
 }
 
+code, kbd, pre {
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
+}
+
 main {
   margin-left: auto;
   margin-right: auto;
   padding: 1.5rem 1rem 1.5rem 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  @include text-3xl;
+}
+
+h2 {
+  @include text-2xl;
+}
+
+h3 {
+  @include text-xl;
+}
+
+h4 {
+  @include text-lg;
+}
+
+h5 {
+  @include text-base;
+}
+
+h6 {
+  @include text-sm;
 }
 
 .content-margin {

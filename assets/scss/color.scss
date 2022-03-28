@@ -13,7 +13,7 @@ $gray-0: #fff;
 
 html[data-theme="light"] {
   --color-text: #{$gray-900};
-  --color-text-footer: #{$gray-500};
+  --color-text-secondary: #{$gray-500};
   --color-border: #{$gray-100};
   --color-background: #{$gray-0};
   --color-background-hover: #{$gray-50};
@@ -26,7 +26,7 @@ html[data-theme="light"] {
 
 html[data-theme="dark"] {
   --color-text: #{$gray-100};
-  --color-text-footer: #{$gray-300};
+  --color-text-secondary: #{$gray-300};
   --color-border: #{$gray-500};
   --color-background: #{$gray-800};
   --color-background-hover: #{$gray-600};

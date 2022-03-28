@@ -5,14 +5,14 @@
 {{- if $show_date -}}
     {{- $pages = $pages.ByPublishDate.Reverse -}}
 {{- end -}}
-<ul class="my-2">
+<ul class="list-layout">
     {{ range $pages }}
-        <li class="mb-2 leading-relaxed list-item">
-            <a href="{{ .RelPermalink }}" class="text-base border-b-2">
+        <li>
+            <a href="{{ .RelPermalink }}">
                 {{- .Title -}}
             </a>
             {{ if $show_date }}
-                <span class="text-xs">
+                <span>
                     {{- .PublishDate.Format "2006/01/02" -}}
                 </span>
             {{ end }}

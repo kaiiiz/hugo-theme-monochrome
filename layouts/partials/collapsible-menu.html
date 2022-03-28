@@ -12,7 +12,7 @@
 
     <div class="collapsible-menu">
         {{ if eq .type "changelogs" }}
-            <article id="changelogs">
+            <article id="collapsible_menu_changelogs">
                 {{ range $log := .context.Params.changelogs }}
                     <div>{{ $log.tag | markdownify }}</div>
                     <div>

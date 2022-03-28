@@ -1,5 +1,4 @@
 #TableOfContents {
-  @include text-sm;
   line-height: 1.5rem;
 
   ul, li {
@@ -21,8 +20,8 @@
   }
 }
 
-article#changelogs {
-  @include text-sm;
+article#collapsible_menu_changelogs {
+  line-height: 1.75rem;
   display: grid;
   gap: .5rem;
   grid-template-columns: max-content 1fr;
@@ -31,6 +30,7 @@ article#changelogs {
 
 .collapsible-menu-wrapper {
   @include my-8;
+  font-size: 0.875rem;
   padding: 1rem;
   border: 2px solid var(--color-border);
   border-radius: .25rem;

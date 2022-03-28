@@ -1,7 +1,7 @@
 {{ define "content" }}
 
 {{ if .Content }}
-    <div class="my-8">
+    <div class="content-margin">
         {{- partial "content.html" . -}}
     </div>
 {{ end }}
@@ -13,13 +13,13 @@
 {{ if $list_posts }}
     {{ if $group_by_year }}
         {{ range .Pages.GroupByPublishDate "2006" }}
-            <div class="mb-8">
-                <h1 class="font-bold text-2xl">{{- .Key -}}</h1>
+            <div class="content-margin">
+                <h1>{{- .Key -}}</h1>
                 {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date) -}}
             </div>
         {{ end }}
     {{ else }}
-        <div class="mb-8">
+        <div class="content-margin">
             {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date) -}}
         </div>
     {{ end }}
