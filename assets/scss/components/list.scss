@@ -8,12 +8,7 @@ ul.list-layout {
     display: list-item;
 
     a {
-      color: var(--color-text);
-      border-bottom: 2px solid var(--color-border);
-
-      &:hover {
-        border-bottom-color: var(--color-text-secondary);
-      }
+      @include list-link-item;
     }
 
     span {

@@ -1,15 +1,15 @@
 {{- define "content" -}}
 
 <div>
-    <h1 class="font-bold text-2xl mb-4 mt-8">{{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
     {{ with .Pages.ByPublishDate }}
-        <ul class="my-2">
+        <ul class="list-layout">
             {{ range . }}
-                <li class="mb-2 leading-relaxed list-item">
-                    <a href="{{ .RelPermalink }}" class="text-base border-b-2">
+                <li>
+                    <a href="{{ .RelPermalink }}">
                         {{- .Title -}}
                     </a>
-                    <span class="text-xs">
+                    <span>
                         {{- .PublishDate.Format "2006/01/02" -}}
                     </span>
                 </li>
