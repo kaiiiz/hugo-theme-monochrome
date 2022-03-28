@@ -1,5 +1,5 @@
-<div class="my-6">
-    <ol class="list-none m-0 p-0 font-bold">
+<div class="content-margin">
+    <ol class="breadcrumbs">
         {{ template "breadcrumbnav" (dict "p1" .Page "p2" .Page) }}
     </ol>
 </div>
@@ -12,11 +12,9 @@
     {{ end }}
 
     {{ if not .p1.IsHome }}
-        <li class="inline">
-            <span>/</span>
-        </li>
-        <li class="inline">
-            <a class="text-900 text-600-hover" href="{{ .p1.Permalink | relURL }}">{{ .p1.Title }}</a>
-        </li>
+        <li><span>/</span></li>
+        <li><a href="{{ .p1.Permalink | relURL }}">{{ .p1.Title }}</a></li>
+    {{ else }}
+        <li><a href="{{ .p1.Permalink | relURL }}">Home</a></li>
     {{ end }}
 {{ end }}
