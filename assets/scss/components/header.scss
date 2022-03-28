@@ -32,6 +32,10 @@ header {
     > * {
       display: flex;
       cursor: pointer;
+
+      :hover {
+        color: var(--color-text-secondary);
+      }
     }
 
     .dropdown-wrapper {

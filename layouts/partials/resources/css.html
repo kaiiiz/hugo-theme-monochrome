@@ -1,4 +1,3 @@
-{{/*  Tailwind CSS  */}}
 {{- $styles := resources.Get "scss/core.scss" -}}
 {{- if hugo.IsProduction -}}
     {{- $tocss_opts := dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true -}}
@@ -9,8 +8,8 @@
 {{- end -}}
 <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
 
-{{/*  Codeblock  */}}
-{{ if (findRE "<pre" .Content 1) }}
+{{/*  Prism.js style  */}}
+{{ if and (findRE "<pre" .Content 1) (eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js") }}
     {{ $prism_css := resources.Get "css/prism.css" }}
     {{- if hugo.IsProduction -}}
         {{ $prism_css = $prism_css | resources.Minify | resources.Fingerprint "sha512" -}}
