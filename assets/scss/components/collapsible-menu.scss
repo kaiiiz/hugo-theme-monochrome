@@ -61,7 +61,8 @@ article#collapsible_menu_changelogs {
     justify-content: space-between;
 
     span {
-      @include font-semibold;
+      @include font-bold;
+      line-height: 1.5rem;
     }
   }
 
