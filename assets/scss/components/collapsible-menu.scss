@@ -32,7 +32,7 @@ article#collapsible_menu_changelogs {
   @include my-8;
   font-size: 0.875rem;
   padding: 1rem;
-  border: 2px solid var(--color-border);
+  border: 2px solid var(--color-border-collapsible-menu);
   border-radius: .25rem;
 
   .collapse-btn {

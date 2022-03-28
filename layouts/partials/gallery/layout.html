@@ -13,7 +13,7 @@
             {{ $max_idx := sub (len $pages) 1 }}
 
             {{ range $index, $value := (sort $pages "Params.weight" "asc") }}
-                <div class="content-margin gallery-item">
+                <div class="gallery-item">
                     {{ $title_link := .Params.gallery_title_link }}
                     {{ $img_link := .Params.gallery_img_link }}
 
