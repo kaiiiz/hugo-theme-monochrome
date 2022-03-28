@@ -1,16 +1,16 @@
 {{ .Scratch.SetInMap "params" "syntaxHighlight" (.Site.Params.syntaxHighlight | default (dict "lib" "builtin" "builtin" (dict "enableCodeCopy" true))) }}
 {{ .Scratch.SetInMap "params" "enableSiteSearch" (.Site.Params.enableSiteSearch | default false) }}
-{{ .Scratch.SetInMap "params" "navbarTitle" (.Params.navbar_title | default .Site.Params.navbarTitle | default .Site.Title) }}
+{{ .Scratch.SetInMap "params" "navbarTitle" (.Params.navbarTitle | default .Site.Params.navbarTitle | default .Site.Title) }}
 {{ .Scratch.SetInMap "params" "author" (.Params.author | default .Site.Params.author) }}
-{{ .Scratch.SetInMap "params" "enableOpenGraph" (.Params.open_graph | default .Site.Params.enableOpenGraph | default true) }}
-{{ .Scratch.SetInMap "params" "enableTwitterCards" (.Params.twitter_cards | default .Site.Params.enableTwitterCards | default true) }}
+{{ .Scratch.SetInMap "params" "enableOpenGraph" (.Params.openGraph | default .Site.Params.enableOpenGraph | default true) }}
+{{ .Scratch.SetInMap "params" "enableTwitterCards" (.Params.twitterCards | default .Site.Params.enableTwitterCards | default true) }}
 {{ .Scratch.SetInMap "params" "enableTOC" (.Params.toc | default .Site.Params.enableTOC | default true) }}
-{{ .Scratch.SetInMap "params" "enableZoomingJS" (.Params.zooming_js | default .Site.Params.enableZoomingJS | default true) }}
+{{ .Scratch.SetInMap "params" "enableZoomingJS" (.Params.zoomingJs | default .Site.Params.enableZoomingJS | default true) }}
 {{ .Scratch.SetInMap "params" "gaCode" (.Params.ga | default .Site.GoogleAnalytics) }}
 {{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
 {{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enableMathJax | default false) }}
-{{ .Scratch.SetInMap "params" "enableCollapsibleTOC" (.Params.collapsible_toc | default .Site.Params.enableCollapsibleTOC | default false) }}
-{{ .Scratch.SetInMap "params" "enableCollapsibleChangelogs" (.Params.collapsible_changelogs | default .Site.Params.enableCollapsibleChangelogs | default false) }}
+{{ .Scratch.SetInMap "params" "enableCollapsibleTOC" (.Params.collapsibleToc | default .Site.Params.enableCollapsibleTOC | default false) }}
+{{ .Scratch.SetInMap "params" "enableCollapsibleChangelogs" (.Params.collapsibleChangelogs | default .Site.Params.enableCollapsibleChangelogs | default false) }}
 
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
