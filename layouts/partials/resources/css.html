@@ -10,7 +10,7 @@
 
 {{/*  Prism.js style  */}}
 {{ if and (findRE "<pre" .Content 1) (eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js") }}
-    {{ $prism_css := resources.Get "css/prism.css" }}
+    {{ $prism_css := resources.Get "lib/css/prism.css" }}
     {{- if hugo.IsProduction -}}
         {{ $prism_css = $prism_css | resources.Minify | resources.Fingerprint "sha512" -}}
     {{- end -}}

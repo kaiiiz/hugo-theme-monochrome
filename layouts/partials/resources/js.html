@@ -20,7 +20,7 @@
 
 {{/* MathJax */}}
 {{ if (.Scratch.Get "params").math }}
-    {{ $math_lib := resources.Get "js/lib/mathjax-v3.2.0.min.js" }}
+    {{ $math_lib := resources.Get "lib/js/mathjax-v3.2.0.min.js" }}
     {{ $math_handler := resources.Get "js/math.js" }}
     {{ $math_js := slice $math_lib $math_handler | resources.Concat "js/math.js"  }}
     {{- if hugo.IsProduction -}}
@@ -45,8 +45,19 @@
             <script defer src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
         {{ end }}
     {{ else if eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js" }}
-        {{ $prism_lib := resources.Get "js/lib/prism-v1.27.0.min.js" }}
-        {{ $prism_js := slice $prism_lib (resources.Get "js/prism.js") | resources.Concat "js/prism.js" }}
+        {{ $prism_js := slice (resources.Get "lib/js/prism-v1.27.0.min.js") }}
+
+        {{ $enableLineNo := (.Scratch.Get "params").syntaxHighlight.prism.enableLineNo | default true }}
+        {{ if $enableLineNo }}
+            {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-line-numbers-v1.27.0.min.js") }}
+        {{ end }}
+
+        {{ $enableCodeCopy := (.Scratch.Get "params").syntaxHighlight.prism.enableCodeCopy | default true }}
+        {{ if $enableCodeCopy }}
+            {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.27.0.min.js") }}
+        {{ end }}
+
+        {{ $prism_js = $prism_js | append (resources.Get "js/prism.js") | resources.Concat "js/prism.js" }}
         {{- if hugo.IsProduction -}}
             {{ $prism_js = $prism_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
         {{- else -}}
