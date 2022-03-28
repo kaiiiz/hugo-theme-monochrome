@@ -1,3 +1,5 @@
+import Zooming from './lib/zooming-v2.1.1.min.js';
+
 document.addEventListener('DOMContentLoaded', function () {
     let bgColor;
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {

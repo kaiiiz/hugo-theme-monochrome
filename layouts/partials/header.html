@@ -18,16 +18,25 @@
 
     <div class="toolbox">
         <div id="theme_tool">
-            <svg id="dark_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
                 {{- partial "svg/sun.html" -}}
             </svg>
-            <svg id="light_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24">
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
                 {{- partial "svg/moon.html" -}}
             </svg>
         </div>
 
+        {{ if (.Scratch.Get "params").enableSiteSearch }}
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+                    {{- partial "svg/search.html" -}}
+                </svg>
+                {{- partial "search-menu.html" -}}
+            </div>
+        {{ end }}
+
         {{ if .Site.IsMultiLingual }}
-            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal">
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn">
                 <ul class="pure-menu-list">
                     <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                         <div class="dropdown-btn pure-menu-link">
@@ -45,17 +54,6 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
-        {{ end }}
-
-        {{/*  TODO: site search page  */}}
-        {{ if (.Scratch.Get "params").enableSiteSearch }}
-            <div class="ml-2 sep hidden sm:block"></div>
-            <div class="ml-2 relative flex items-center">
-                <svg id="search_btn" class="cursor-pointer" width="18px" height="18px" viewBox="2 0 20 20">
-                    {{- partial "svg/search.html" -}}
-                </svg>
-                {{- partial "search-menu.html" -}}
             </div>
         {{ end }}
     </div>

@@ -29,16 +29,20 @@ header {
     align-items: center;
     column-gap: 0.5rem;
 
-    > * {
+    .toolbox-btn {
       display: flex;
       cursor: pointer;
 
-      :hover {
+      &:hover {
         color: var(--color-text-secondary);
       }
     }
 
     .dropdown-wrapper {
+      .dropdown-btn.pure-menu-link {
+        color: unset;
+      }
+
       .dropdown-btn {
         display: flex;
         align-items: center;
@@ -50,6 +54,7 @@ header {
 
         &::after {
           content: "";
+          padding: 0;
         }
 
         .dropdown-desc {

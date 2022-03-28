@@ -51,6 +51,16 @@ img {
   width: 100%;
 }
 
+input {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border: none;
+}
+
+mark {
+  background-color: var(--color-background-mark);
+}
+
 .content-margin {
   @include my-8;
 }

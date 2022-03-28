@@ -1,62 +1,70 @@
 {{/*  Header  */}}
 {{ $header_js := resources.Get "js/header.js" }}
-{{ $js := slice $header_js }}
+{{- if hugo.IsProduction -}}
+    {{ $header_js = $header_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+{{- else -}}
+    {{ $header_js = $header_js | js.Build -}}
+{{- end -}}
+<script defer src="{{ $header_js.RelPermalink }}" integrity="{{- $header_js.Data.Integrity -}}"></script>
 
 {{/*  Zooming.js  */}}
 {{ if (.Scratch.Get "params").enableZoomingJS }}
-    <script defer src="https://cdn.jsdelivr.net/npm/zooming@2.1.1/build/zooming.min.js"></script>
-    {{ $js = $js | append (resources.Get "js/zooming.js") }}
+    {{ $zooming_js := resources.Get "js/zooming.js" }}
+    {{- if hugo.IsProduction -}}
+        {{ $zooming_js = $zooming_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+    {{- else -}}
+        {{ $zooming_js = $zooming_js | js.Build -}}
+    {{- end -}}
+    <script defer src="{{ $zooming_js.RelPermalink }}" integrity="{{- $zooming_js.Data.Integrity -}}"></script>
 {{ end }}
 
 {{/* MathJax */}}
 {{ if (.Scratch.Get "params").math }}
-    <script defer id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    {{ $js = $js | append (resources.Get "js/math.js") }}
+    {{ $math_lib := resources.Get "js/lib/mathjax-v3.2.0.min.js" }}
+    {{ $math_handler := resources.Get "js/math.js" }}
+    {{ $math_js := slice $math_lib $math_handler | resources.Concat "js/math.js"  }}
+    {{- if hugo.IsProduction -}}
+        {{ $math_js = $math_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+    {{- else -}}
+        {{ $math_js = $math_js | js.Build -}}
+    {{- end -}}
+    <script defer src="{{ $math_js.RelPermalink }}" integrity="{{- $math_js.Data.Integrity -}}"></script>
 {{ end }}
-
-{{/*  Bundle javascript  */}}
-{{ $js = $js | resources.Concat "js/bundle.js" }}
-{{- if hugo.IsProduction -}}
-    {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-{{- else -}}
-    {{ $js = $js | js.Build }}
-{{- end -}}
-<script defer src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
 
 {{/*  Load script for only page contain codeblock  */}}
 {{ if (findRE "<pre" .Content 1) }}
     {{ if eq (.Scratch.Get "params").syntaxHighlight.lib "builtin" }}
         {{ $enableCodeCopy := (.Scratch.Get "params").syntaxHighlight.builtin.enableCodeCopy | default true }}
         {{ if $enableCodeCopy }}
-            {{ $code_copy_js := resources.Get "js/highlight/builtin-copy.js" | js.Build }}
+            {{ $code_copy_js := resources.Get "js/builtin-copy.js" }}
             {{- if hugo.IsProduction -}}
                 {{ $code_copy_js = $code_copy_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+            {{- else -}}
+                {{ $code_copy_js = $code_copy_js | js.Build -}}
             {{- end -}}
             <script defer src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
         {{ end }}
     {{ else if eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js" }}
-        {{ $prism_js := resources.Get "js/highlight/prism.js"| js.Build }}
+        {{ $prism_lib := resources.Get "js/lib/prism-v1.27.0.min.js" }}
+        {{ $prism_js := slice $prism_lib (resources.Get "js/prism.js") | resources.Concat "js/prism.js" }}
         {{- if hugo.IsProduction -}}
             {{ $prism_js = $prism_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+        {{- else -}}
+            {{ $prism_js = $prism_js | js.Build -}}
         {{- end -}}
         <script defer src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}" data-manual></script>
-        {{ $prism_loader_js := resources.Get "js/highlight/prism-loader.js"| js.Build }}
-        {{- if hugo.IsProduction -}}
-            {{ $prism_loader_js = $prism_loader_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-        {{- end -}}
-        <script defer src="{{ $prism_loader_js.RelPermalink }}" integrity="{{- $prism_loader_js.Data.Integrity -}}"></script>
     {{ end }}
 {{ end }}
 
-
-{{/*  TODO: Load Site Index Data (Multilingual)  */}}
 {{ if (.Scratch.Get "params").enableSiteSearch }}
     {{ $target_path := printf "js/search-%s.js" .Site.LanguageCode }}
     {{ $index_url := "index.json" | relLangURL }}
     {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}
     {{ $search_js := resources.Get "js/search.js" | js.Build $build_opts }}
     {{- if hugo.IsProduction -}}
-        {{ $search_js = $search_js | resources.Minify | resources.Fingerprint "sha512" -}}
+        {{ $search_js = $search_js | js.Build (merge $build_opts (dict "minify" true)) | resources.Fingerprint "sha512" -}}
+    {{- else -}}
+        {{ $search_js = $search_js | js.Build $build_opts -}}
     {{- end -}}
-    <script src="{{ $search_js.RelPermalink }}" integrity="{{- $search_js.Data.Integrity -}}"></script>
+    <script defer src="{{ $search_js.RelPermalink }}" integrity="{{- $search_js.Data.Integrity -}}"></script>
 {{ end }}
