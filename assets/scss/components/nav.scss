@@ -10,7 +10,7 @@
 
     .navbar-dropdown {
       > a.pure-menu-link:after {
-        content: "\25BE";
+        content: "▾";
       }
 
       > ul.pure-menu-children {

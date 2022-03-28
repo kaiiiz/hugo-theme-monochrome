@@ -93,14 +93,14 @@ https://github.com/pure-css/pure/blob/master/LICENSE
 .pure-menu-has-children > .pure-menu-link:after {
   padding-left: 0.35rem;
   font-family: sans-serif;
-  content: "\25B8";
+  content: "▸";
 }
 
 /* Horizontal Menus - show the dropdown arrow */
 
 .pure-menu-horizontal .pure-menu-has-children > .pure-menu-link:after {
   font-family: sans-serif;
-  content: "\25BE";
+  content: "▾";
 }
 
 /* scrollable menus */

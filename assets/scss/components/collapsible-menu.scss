@@ -35,34 +35,16 @@ article#collapsible_menu_changelogs {
   border: 2px solid var(--color-border-collapsible-menu);
   border-radius: .25rem;
 
-  .collapse-btn {
-    cursor: pointer;
-  }
-
-  .collapse-btn::after {
-    font-family: sans-serif;
-    content: "\25B8";
-  }
-
-  .collapse-btn-input:checked ~ div > .collapse-btn::after {
-    content: "\25BE";
-  }
-
-  .collapse-btn-input ~ .collapsible-menu {
-    display: none;
-  }
-
-  .collapse-btn-input:checked ~ .collapsible-menu {
-    display: block
-  }
-
   .collapsible-menu-type {
-    display: flex;
-    justify-content: space-between;
-
     span {
       @include font-bold;
       line-height: 1.5rem;
+    }
+  }
+
+  summary.collapsible-menu-type {
+    span {
+      margin-left: .3rem;
     }
   }
 

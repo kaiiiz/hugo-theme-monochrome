@@ -1,14 +1,20 @@
+{{- if .enable -}}
+<details class="collapsible-menu-wrapper">
+{{- else -}}
 <div class="collapsible-menu-wrapper">
-    {{ if eq .enable true }}
-        <input id="collapse_btn_{{ .type }}" class="hidden collapse-btn-input" type="checkbox">
-    {{ end }}
+{{- end -}}
 
+    {{- if .enable -}}
+    <summary class="collapsible-menu-type">
+    {{- else -}}
     <div class="collapsible-menu-type">
+    {{- end -}}
         <span>{{ i18n .type }}</span>
-        {{ if eq .enable true }}
-            <label for="collapse_btn_{{ .type }}" class="collapse-btn"></label>
-        {{ end }}
+    {{- if .enable -}}
+    </summary>
+    {{- else -}}
     </div>
+    {{- end -}}
 
     <div class="collapsible-menu">
         {{ if eq .type "changelogs" }}
@@ -26,4 +32,8 @@
             {{ .context.TableOfContents }}
         {{ end }}
     </div>
+{{- if .enable -}}
+</details>
+{{- else -}}
 </div>
+{{- end -}}

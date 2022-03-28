@@ -61,6 +61,14 @@ mark {
   background-color: var(--color-background-mark);
 }
 
+details summary {
+  cursor: zoom-in;
+}
+
+details[open] summary {
+  cursor: zoom-out;
+}
+
 .content-margin {
   @include my-8;
 }
