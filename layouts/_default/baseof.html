@@ -1,5 +1,6 @@
 {{ .Scratch.SetInMap "params" "syntaxHighlight" (.Site.Params.syntaxHighlight | default (dict "lib" "builtin" "builtin" (dict "enableCodeCopy" true))) }}
 {{ .Scratch.SetInMap "params" "enableSiteSearch" (.Site.Params.enableSiteSearch | default false) }}
+{{ .Scratch.SetInMap "params" "searchHidden" (.Params.searchHidden | default false) }}
 {{ .Scratch.SetInMap "params" "navbarTitle" (.Params.navbarTitle | default .Site.Params.navbarTitle | default .Site.Title) }}
 {{ .Scratch.SetInMap "params" "author" (.Params.author | default .Site.Params.author) }}
 {{ .Scratch.SetInMap "params" "enableOpenGraph" (.Params.openGraph | default .Site.Params.enableOpenGraph | default true) }}
