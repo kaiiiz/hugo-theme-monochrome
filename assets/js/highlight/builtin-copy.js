@@ -1,5 +1,3 @@
-import {writeText} from "clipboard-polyfill";
-
 function registerHoverEvent(wrapper, button) {
     wrapper.addEventListener('mouseenter', function () {
         button.classList.remove("hidden");
@@ -22,7 +20,7 @@ function registerTouchedEvent(pre, button) {
 function registerClipboard(button, code_block) {
     button.addEventListener('click', async function () {
         try {
-            await writeText(code_block.innerText);
+            await navigator.clipboard.writeText(code_block.innerText);
             button.blur();
             button.innerText = 'Copied!';
             setTimeout(function () {

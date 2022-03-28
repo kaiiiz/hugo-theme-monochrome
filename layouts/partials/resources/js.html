@@ -1,50 +1,27 @@
 {{/*  Header  */}}
 {{ $header_js := resources.Get "js/header.js" }}
-{{- if hugo.IsProduction -}}
-    {{ $header_js = $header_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-{{- end -}}
-<script src="{{ $header_js.RelPermalink }}" integrity="{{- $header_js.Data.Integrity -}}"></script>
+{{ $js := slice $header_js }}
 
 {{/*  Zooming.js  */}}
 {{ if (.Scratch.Get "params").enableZoomingJS }}
-    {{ $zooming_js := resources.Get "js/zooming.js" | js.Build }}
-    {{- if hugo.IsProduction -}}
-        {{ $zooming_js = $zooming_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-    {{- end -}}
-    <script src="{{ $zooming_js.RelPermalink }}" integrity="{{- $zooming_js.Data.Integrity -}}"></script>
-{{ end }}
-
-{{/*  Multilingual.js  */}}
-{{ if .Site.IsMultiLingual }}
-    {{ $multilingual_js := resources.Get "js/multilingual.js" }}
-    {{- if hugo.IsProduction -}}
-        {{ $multilingual_js = $multilingual_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-    {{- end -}}
-    <script src="{{ $multilingual_js.RelPermalink }}" integrity="{{- $multilingual_js.Data.Integrity -}}"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/zooming@2.1.1/build/zooming.min.js"></script>
+    {{ $js = $js | append (resources.Get "js/zooming.js") }}
 {{ end }}
 
 {{/* MathJax */}}
 {{ if (.Scratch.Get "params").math }}
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    {{ $math_js := resources.Get "js/math.js" }}
-    {{- if hugo.IsProduction -}}
-        {{ $math_js = $math_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-    {{- end -}}
-    <script src="{{ $math_js.RelPermalink }}" integrity="{{- $math_js.Data.Integrity -}}"></script>
+    <script defer id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    {{ $js = $js | append (resources.Get "js/math.js") }}
 {{ end }}
 
-{{/*  Load Site Index Data (Multilingual)  */}}
-{{ if (.Scratch.Get "params").enableSiteSearch }}
-    {{ $target_path := printf "js/search-%s.js" .Site.LanguageCode }}
-    {{ $index_url := "index.json" | relLangURL }}
-    {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}
-    {{ $search_js := resources.Get "js/search.js" | js.Build $build_opts }}
-    {{- if hugo.IsProduction -}}
-        {{ $search_js = $search_js | resources.Minify | resources.Fingerprint "sha512" -}}
-    {{- end -}}
-    <script src="{{ $search_js.RelPermalink }}" integrity="{{- $search_js.Data.Integrity -}}"></script>
-{{ end }}
+{{/*  Bundle javascript  */}}
+{{ $js = $js | resources.Concat "js/bundle.js" }}
+{{- if hugo.IsProduction -}}
+    {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+{{- else -}}
+    {{ $js = $js | js.Build }}
+{{- end -}}
+<script defer src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}"></script>
 
 {{/*  Load script for only page contain codeblock  */}}
 {{ if (findRE "<pre" .Content 1) }}
@@ -55,18 +32,31 @@
             {{- if hugo.IsProduction -}}
                 {{ $code_copy_js = $code_copy_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
             {{- end -}}
-            <script src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
+            <script defer src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
         {{ end }}
     {{ else if eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js" }}
         {{ $prism_js := resources.Get "js/highlight/prism.js"| js.Build }}
         {{- if hugo.IsProduction -}}
             {{ $prism_js = $prism_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
         {{- end -}}
-        <script src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}" data-manual></script>
+        <script defer src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}" data-manual></script>
         {{ $prism_loader_js := resources.Get "js/highlight/prism-loader.js"| js.Build }}
         {{- if hugo.IsProduction -}}
             {{ $prism_loader_js = $prism_loader_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
         {{- end -}}
-        <script src="{{ $prism_loader_js.RelPermalink }}" integrity="{{- $prism_loader_js.Data.Integrity -}}"></script>
+        <script defer src="{{ $prism_loader_js.RelPermalink }}" integrity="{{- $prism_loader_js.Data.Integrity -}}"></script>
     {{ end }}
+{{ end }}
+
+
+{{/*  TODO: Load Site Index Data (Multilingual)  */}}
+{{ if (.Scratch.Get "params").enableSiteSearch }}
+    {{ $target_path := printf "js/search-%s.js" .Site.LanguageCode }}
+    {{ $index_url := "index.json" | relLangURL }}
+    {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}
+    {{ $search_js := resources.Get "js/search.js" | js.Build $build_opts }}
+    {{- if hugo.IsProduction -}}
+        {{ $search_js = $search_js | resources.Minify | resources.Fingerprint "sha512" -}}
+    {{- end -}}
+    <script src="{{ $search_js.RelPermalink }}" integrity="{{- $search_js.Data.Integrity -}}"></script>
 {{ end }}
