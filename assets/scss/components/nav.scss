@@ -1,6 +1,10 @@
 #navbar {
   margin: 1rem 0;
 
+  @media screen and (max-width: $md_min_width) {
+    display: none;
+  }
+
   > ul.pure-menu-list {
     display: flex;
 
