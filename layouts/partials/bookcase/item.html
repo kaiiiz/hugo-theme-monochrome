@@ -1,13 +1,13 @@
 {{ $cover_src := .Params.bookcase_cover_src | default .Params.bookcase_cover_src_dark }}
 {{ $cover_src_dark := .Params.bookcase_cover_src_dark | default .Params.bookcase_cover_src }}
 
-<figure>
-    <a class="relative" href="{{ .RelPermalink }}">
-        <img src="{{ $cover_src | relURL }}" class="dark:hidden w-32 h-48 rounded-md shadow-xl object-cover">
-        <img src="{{ $cover_src_dark | relURL }}" class="hidden dark:block w-32 h-48 rounded-md shadow-xl object-cover">
-        <div class="bookcase-item-overlay w-32 h-48 rounded-md absolute top-0 left-0"></div>
-    </a>
-    <figcaption class="text-center text-sm mt-3">
+<div class="bookcase-item">
+    <figure>
+        <img src="{{ $cover_src | relURL }}" class="bookcase-item-img-light">
+        <img src="{{ $cover_src_dark | relURL }}" class="bookcase-item-img-dark">
+        <a href="{{ .RelPermalink }}" class="bookcase-item-overlay"></a>
+    </figure>
+    <figcaption>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </figcaption>
-</figure>
+</div>

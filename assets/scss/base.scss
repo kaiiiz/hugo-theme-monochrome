@@ -43,6 +43,10 @@ h6 {
   @include text-sm;
 }
 
+figure {
+  margin: 0;
+}
+
 .content-margin {
   @include my-8;
 }

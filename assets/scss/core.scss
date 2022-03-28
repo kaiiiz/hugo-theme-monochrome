@@ -11,12 +11,13 @@
 @import 'vars';
 
 @import 'base';
-@import 'article';
+@import 'layout/article';
+@import 'layout/bookcase';
+@import 'layout/list';
 @import 'components/header';
 @import 'components/footer';
 @import 'components/menus';
 @import 'components/nav';
 @import 'components/collapsible-menu';
 @import 'components/emgithub';
-@import 'components/list';
 @import 'components/terms-cloud';
