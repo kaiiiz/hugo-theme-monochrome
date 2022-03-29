@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://kaiiiz.github.io/hugo-theme-monochrome">
-    <img alt="Monochrome" src="https://kaiiiz.github.io/hugo-theme-monochrome/icons/vase.svg" width="60" height="60">
+    <img alt="Monochrome" src="https://github.com/kaiiiz/hugo-theme-monochrome/blob/dev/images/screenshot.png">
   </a>
 </p>
 
@@ -9,10 +9,10 @@
 </h2>
 
 <p align="center">
-  A clean, responsive, and programmer-friendly hugo theme
+  A fast, clean and responsive hugo theme
 </p>
 
-## Demo
+## Demo & Documents
 
 See [kaiiiz.github.io/hugo-theme-monochrome](https://kaiiiz.github.io/hugo-theme-monochrome)
 
