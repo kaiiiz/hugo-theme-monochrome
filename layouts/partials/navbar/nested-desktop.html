@@ -1,14 +1,22 @@
 {{ range .Children }}
     {{ if .Children }}
         <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-            <a href="{{ .URL }}" class="pure-menu-link">{{- .Name -}}</a>
+            {{ if .URL }}
+                <a href="{{ .URL }}" class="pure-menu-link">{{- .Name -}}</a>
+            {{ else }}
+                <div class="pure-menu-link">{{- .Name -}}</div>
+            {{ end }}
             <ul class="pure-menu-children">
                 {{- partial "navbar/nested-desktop.html" . -}}
             </ul>
         </li>
     {{ else }}
         <li class="pure-menu-item">
-            <a href="{{ .URL }}" class="pure-menu-link">{{- .Name -}}</a>
+            {{ if .URL }}
+                <a href="{{ .URL }}" class="pure-menu-link">{{- .Name -}}</a>
+            {{ else }}
+                <div class="pure-menu-link">{{- .Name -}}</div>
+            {{ end }}
         </li>
     {{ end }}
 {{ end }}

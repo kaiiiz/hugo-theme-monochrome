@@ -4,13 +4,23 @@
             {{ if .Children }}
                 <li>
                     <details>
-                        <summary><a href="{{ .URL }}">{{- .Name -}}</a></summary>
+                        <summary>
+                            {{ if .URL }}
+                                <span><a href="{{ .URL }}">{{- .Name -}}</a></span>
+                            {{ else }}
+                                <span>{{- .Name -}}</span>
+                            {{ end }}
+                        </summary>
                         {{- partial "navbar/nested-mobile.html" . -}}
                     </details>
                 </li>
             {{ else }}
                 <li>
-                    <a href="{{ .URL }}">{{- .Name -}}</a>
+                    {{ if .URL }}
+                        <a href="{{ .URL }}">{{- .Name -}}</a>
+                    {{ else }}
+                        <div>{{- .Name -}}</div>
+                    {{ end }}
                 </li>
             {{ end }}
         {{ end }}
