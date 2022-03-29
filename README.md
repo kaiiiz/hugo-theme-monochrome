@@ -18,25 +18,27 @@ See [kaiiiz.github.io/hugo-theme-monochrome](https://kaiiiz.github.io/hugo-theme
 
 ## Features
 
-1. **Clean UI with small resources.** Monochrome has clean UI design and can remove unused resources in production environment.
+1. **Clean UI with small resources.** Monochrome has clean UI design with ~5KB gzipped bundled CSS.
 
-2. **Responsive layout.** Adapt to different viewpoint, from desktop to mobile.
+2. **Self-Contained.** Monochrome doesn't require webpack, nodejs and other dependencies to setup or edit, just hugo.
 
-3. **Dark mode.** Low-light UI.
+3. **Responsive layout.** Adapt to different viewpoint, from desktop to mobile.
 
-4. **Multiple layouts built-in.** See [Demo](https://kaiiiz.github.io/hugo-theme-monochrome/layouts/demo/).
+4. **Support light/dark mode.** Low-light UI.
 
-5. **Nested navbar and Multilingual mode.** Make good use of hugo's well-designed structure.
+5. **Multiple layouts built-in.** Monochrome now supports 5 different layouts. See [Demo](https://kaiiiz.github.io/hugo-theme-monochrome/layouts/).
 
-6. **Syntax Highlighting (with copy feature).** Integrate both server-side solution (Chroma, hugo built-in) and client-side solution (Prism.js, for someone who need more languages supported).
+6. **Nested navbar and Multilingual mode.** Make good use of hugo's well-designed structure.
 
-7. **Site Search.** Powered by FlexSearch.
+7. **Syntax Highlighting (with copy feature).** Integrate both server-side solution (Chroma, hugo built-in) and client-side solution (Prism.js, for someone who need more languages supported).
 
-8. **SEO-friendly.** Easily change your author, description, keywords, open graph, twitter card meatdata.
+8. **Site Search with real-time matches highlight.** Powered by Fuse.js.
 
-9. **Support mathematical notation.** Powered by MathJax.
+9.  **SEO-friendly.** Easily change your author, description, keywords, open graph, twitter card meatdata.
 
-10. **Useful shortcodes.** See [Document](https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/).
+10. **Support mathematical notation.** Powered by MathJax.
+
+11. **Useful shortcodes.** See [Document](https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/).
 
 ## Installation
 
@@ -48,12 +50,8 @@ See [Configuration](https://kaiiiz.github.io/hugo-theme-monochrome/configuration
 
 ## Acknowledgement
 
-* [Hugo](https://gohugo.io/)
-* [tailwindcss](https://tailwindcss.com/)
 * [PrismJS/prism](https://github.com/PrismJS/prism)
-* [lgarron/clipboard-polyfill](https://github.com/lgarron/clipboard-polyfill)
-* [nextapps-de/flexsearch](https://github.com/nextapps-de/flexsearch)
-* [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
+* [krisk/Fuse](https://github.com/krisk/Fuse)
 * [mathjax/MathJax](https://github.com/mathjax/MathJax)
-* Icons made by [Freepik](https://www.freepik.com) from [Flaticon](https://www.flaticon.com)
-* Material icons made by Google from [Material Design](https://material.io/resources/icons/)
+* [kingdido999/zooming](https://github.com/kingdido999/zooming)
+* [feathericons/feather](https://github.com/feathericons/feather)
