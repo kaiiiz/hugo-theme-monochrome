@@ -1,17 +1,17 @@
 {{ $ctx := .ctx }}
 {{ $pages := .pages }}
 
-<div class="archives-layout content-margin">
+<div class="postcard-layout content-margin">
     {{ range ($ctx.Paginator).Pages }}
         <a href="{{ .Permalink }}">
-            <div class="archives-item">
-                <div class="archives-title">
+            <div class="postcard-item">
+                <div class="postcard-title">
                     <span>{{ .Title }}</span>
                 </div>
-                <div class="archives-summary">
+                <div class="postcard-summary">
                     <span>{{ .Summary | plainify }}</span>
                 </div>
-                <div class="archives-metadata">
+                <div class="postcard-metadata">
                     <span>{{ .Date.Format "2006/01/02" }} · {{ .CurrentSection.Title }}</span>
                 </div>
             </div>

@@ -1,9 +1,9 @@
-.archives-layout {
+.postcard-layout {
   a {
     color: var(--color-text);
   }
 
-  .archives-item {
+  .postcard-item {
     padding: 1rem;
     background-color: var(--color-background-card);
     border-radius: .375rem;
@@ -14,12 +14,12 @@
       background-color: var(--color-background-hover);
     }
 
-    .archives-title {
+    .postcard-title {
       @include text-xl;
       @include font-medium;
     }
   
-    .archives-summary {
+    .postcard-summary {
       @include text-xs;
       color: var(--color-text-secondary);
       overflow: hidden;
@@ -28,7 +28,7 @@
       margin: .5rem 0;
     }
 
-    .archives-metadata {
+    .postcard-metadata {
       @include text-xs;
       color: var(--color-text-secondary);
     }
