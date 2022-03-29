@@ -20,14 +20,13 @@
 
 {{/* MathJax */}}
 {{ if (.Scratch.Get "params").math }}
-    {{ $math_lib := resources.Get "lib/js/mathjax-v3.2.0.min.js" }}
-    {{ $math_handler := resources.Get "js/math.js" }}
-    {{ $math_js := slice $math_lib $math_handler | resources.Concat "js/math.js"  }}
+    {{ $math_js := resources.Get "js/math.js" }}
     {{- if hugo.IsProduction -}}
         {{ $math_js = $math_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
     {{- else -}}
         {{ $math_js = $math_js | js.Build -}}
     {{- end -}}
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script defer src="{{ $math_js.RelPermalink }}" integrity="{{- $math_js.Data.Integrity -}}"></script>
 {{ end }}
 
