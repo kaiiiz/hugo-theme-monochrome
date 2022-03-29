@@ -9,6 +9,14 @@ article {
     margin-bottom: 0;
   }
 
+  a {
+    border-bottom: 1px solid var(--color-text-secondary);
+
+    &:hover {
+      border-bottom-color: var(--color-text);
+    }
+  }
+
   hr {
     @include my-8;
   }

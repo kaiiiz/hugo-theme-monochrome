@@ -3,6 +3,17 @@ html, button, input, select, textarea,
   font-family: system-ui,-apple-system,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji;
 }
 
+html {
+  color: var(--color-text);
+  background: var(--color-background);
+  font-size: 16px;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 code, kbd, pre {
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
 }

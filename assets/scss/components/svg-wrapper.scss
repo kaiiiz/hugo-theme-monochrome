@@ -4,6 +4,10 @@
   height: 1.5rem;
 
   a {
-    color: var(--color-text);
+    border-bottom: 0;
+
+    &:hover {
+      color: var(--color-text-secondary);
+    }
   }
 }

@@ -14,7 +14,6 @@
   
   li.active a {
     @include font-semibold;
-    color: var(--color-text);
   }
 
   li:not(.disabled) a:hover {
