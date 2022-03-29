@@ -6,9 +6,9 @@
     </div>
 {{ end }}
 
-{{- $group_by_year := .Params.group_by_year | default true -}}
-{{- $show_date := .Params.show_date | default true -}}
-{{- $pagination := .Params.pagination | default false -}}
+{{- $group_by_year := .Params.group_by_year | default .Site.Params.list_layout.enable_group_by_year | default true -}}
+{{- $show_date := .Params.show_date | default .Site.Params.list_layout.enable_show_date | default true -}}
+{{- $pagination := .Params.pagination | default .Site.Params.list_layout.enable_pagination | default false -}}
 
 {{- $pages := .Pages -}}
 {{- if and $pagination $group_by_year -}}
