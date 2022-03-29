@@ -1,8 +1,8 @@
 {{- define "content" -}}
 
-{{ if and (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") (.Scratch.Get "params").enableTOC }}
-    {{ $enableCollapsibleTOC := (.Scratch.Get "params").enableCollapsibleTOC }}
-    {{ partial "collapsible-menu.html" (dict "type" "toc" "context" . "enable" $enableCollapsibleTOC) }}
+{{ if and (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") (.Scratch.Get "params").enable_toc }}
+    {{ $enable_collapsible_toc := (.Scratch.Get "params").enable_collapsible_toc }}
+    {{ partial "collapsible-menu.html" (dict "type" "toc" "context" . "enable" $enable_collapsible_toc) }}
 {{ end }}
 
 {{ if .Content }}

@@ -1,8 +1,8 @@
-{{ $enableLineNo := (.Scratch.Get "params").syntaxHighlight.prism.enableLineNo | default true }}
+{{ $enableLineNo := (.Scratch.Get "params").syntax_highlight.prism.enableLineNo | default true }}
 
 <article {{ if $enableLineNo }}class="line-numbers"{{ end }}>
     {{ $content := .Content | replaceRE "<table>" "<table class=\"mc-table\">" }}
-    {{ if eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js" }}
+    {{ if eq (.Scratch.Get "params").syntax_highlight.lib "prism.js" }}
         {{ $content = $content | replaceRE "<pre>" "<pre class=\"language-text\">" }}
         {{ $content = $content | replaceRE "<pre([^>]*)class=\"([^>]*)\"([^>]*)>" "<pre$1 class=\"mc-prism hide $2\" $3>" }}
     {{ end }}

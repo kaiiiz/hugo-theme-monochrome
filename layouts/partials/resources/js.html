@@ -8,7 +8,7 @@
 <script defer src="{{ $header_js.RelPermalink }}" integrity="{{- $header_js.Data.Integrity -}}"></script>
 
 {{/*  Zooming.js  */}}
-{{ if (.Scratch.Get "params").enableZoomingJS }}
+{{ if (.Scratch.Get "params").enable_zooming_js }}
     {{ $zooming_js := resources.Get "js/zooming.js" }}
     {{- if hugo.IsProduction -}}
         {{ $zooming_js = $zooming_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
@@ -33,8 +33,8 @@
 
 {{/*  Load script for only page contain codeblock  */}}
 {{ if (findRE "<pre" .Content 1) }}
-    {{ if eq (.Scratch.Get "params").syntaxHighlight.lib "builtin" }}
-        {{ $enableCodeCopy := (.Scratch.Get "params").syntaxHighlight.builtin.enableCodeCopy | default true }}
+    {{ if eq (.Scratch.Get "params").syntax_highlight.lib "builtin" }}
+        {{ $enableCodeCopy := (.Scratch.Get "params").syntax_highlight.builtin.enableCodeCopy | default true }}
         {{ if $enableCodeCopy }}
             {{ $code_copy_js := resources.Get "js/builtin-copy.js" }}
             {{- if hugo.IsProduction -}}
@@ -44,15 +44,15 @@
             {{- end -}}
             <script defer src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
         {{ end }}
-    {{ else if eq (.Scratch.Get "params").syntaxHighlight.lib "prism.js" }}
+    {{ else if eq (.Scratch.Get "params").syntax_highlight.lib "prism.js" }}
         {{ $prism_js := slice (resources.Get "lib/js/prism-v1.27.0.min.js") }}
 
-        {{ $enableLineNo := (.Scratch.Get "params").syntaxHighlight.prism.enableLineNo | default true }}
+        {{ $enableLineNo := (.Scratch.Get "params").syntax_highlight.prism.enableLineNo | default true }}
         {{ if $enableLineNo }}
             {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-line-numbers-v1.27.0.min.js") }}
         {{ end }}
 
-        {{ $enableCodeCopy := (.Scratch.Get "params").syntaxHighlight.prism.enableCodeCopy | default true }}
+        {{ $enableCodeCopy := (.Scratch.Get "params").syntax_highlight.prism.enableCodeCopy | default true }}
         {{ if $enableCodeCopy }}
             {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.27.0.min.js") }}
         {{ end }}
@@ -67,7 +67,7 @@
     {{ end }}
 {{ end }}
 
-{{ if (.Scratch.Get "params").enableSiteSearch }}
+{{ if (.Scratch.Get "params").enable_site_search }}
     {{ $target_path := printf "js/search-%s.js" .Site.LanguageCode }}
     {{ $index_url := "index.json" | relLangURL }}
     {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}

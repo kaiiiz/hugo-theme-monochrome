@@ -8,7 +8,7 @@
 
         <div>
             <a href="{{ .Site.Home.RelPermalink }}">
-                {{- with (.Scratch.Get "params").navbarTitle }}
+                {{- with (.Scratch.Get "params").navbar_title }}
                     {{- . | safeHTML -}}
                 {{- end -}}
             </a>
@@ -25,7 +25,7 @@
             </svg>
         </div>
 
-        {{ if (.Scratch.Get "params").enableSiteSearch }}
+        {{ if (.Scratch.Get "params").enable_site_search }}
             <div id="search_tool">
                 <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
                     {{- partial "svg/search.html" -}}

@@ -1,17 +1,17 @@
-{{ .Scratch.SetInMap "params" "syntaxHighlight" (.Site.Params.syntaxHighlight | default (dict "lib" "builtin" "builtin" (dict "enableCodeCopy" true))) }}
-{{ .Scratch.SetInMap "params" "enableSiteSearch" (.Site.Params.enableSiteSearch | default false) }}
-{{ .Scratch.SetInMap "params" "searchHidden" (.Params.searchHidden | default false) }}
-{{ .Scratch.SetInMap "params" "navbarTitle" (.Params.navbarTitle | default .Site.Params.navbarTitle | default .Site.Title) }}
+{{ .Scratch.SetInMap "params" "syntax_highlight" (.Site.Params.syntax_highlight | default (dict "lib" "builtin" "builtin" (dict "enableCodeCopy" true))) }}
+{{ .Scratch.SetInMap "params" "enable_site_search" (.Site.Params.enable_site_search | default false) }}
+{{ .Scratch.SetInMap "params" "search_hidden" (.Params.search_hidden | default false) }}
+{{ .Scratch.SetInMap "params" "navbar_title" (.Params.navbar_title | default .Site.Params.navbar_title | default .Site.Title) }}
 {{ .Scratch.SetInMap "params" "author" (.Params.author | default .Site.Params.author) }}
-{{ .Scratch.SetInMap "params" "enableOpenGraph" (.Params.openGraph | default .Site.Params.enableOpenGraph | default true) }}
-{{ .Scratch.SetInMap "params" "enableTwitterCards" (.Params.twitterCards | default .Site.Params.enableTwitterCards | default true) }}
-{{ .Scratch.SetInMap "params" "enableTOC" (.Params.toc | default .Site.Params.enableTOC | default true) }}
-{{ .Scratch.SetInMap "params" "enableZoomingJS" (.Params.zoomingJs | default .Site.Params.enableZoomingJS | default true) }}
-{{ .Scratch.SetInMap "params" "gaCode" (.Params.ga | default .Site.GoogleAnalytics) }}
+{{ .Scratch.SetInMap "params" "enable_open_graph" (.Params.open_graph | default .Site.Params.enable_open_graph | default true) }}
+{{ .Scratch.SetInMap "params" "enable_twitter_cards" (.Params.twitter_cards | default .Site.Params.enable_twitter_cards | default true) }}
+{{ .Scratch.SetInMap "params" "enable_toc" (.Params.toc | default .Site.Params.enable_toc | default true) }}
+{{ .Scratch.SetInMap "params" "enable_zooming_js" (.Params.zooming_js | default .Site.Params.enable_zooming_js | default true) }}
+{{ .Scratch.SetInMap "params" "ga_code" (.Params.ga | default .Site.GoogleAnalytics) }}
 {{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
-{{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enableMathJax | default false) }}
-{{ .Scratch.SetInMap "params" "enableCollapsibleTOC" (.Params.collapsibleToc | default .Site.Params.enableCollapsibleTOC | default false) }}
-{{ .Scratch.SetInMap "params" "enableCollapsibleChangelogs" (.Params.collapsibleChangelogs | default .Site.Params.enableCollapsibleChangelogs | default false) }}
+{{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enable_math | default false) }}
+{{ .Scratch.SetInMap "params" "enable_collapsible_toc" (.Params.collapsible_toc | default .Site.Params.enable_collapsible_toc | default false) }}
+{{ .Scratch.SetInMap "params" "enable_collapsible_changelogs" (.Params.collapsible_changelogs | default .Site.Params.enable_collapsible_changelogs | default false) }}
 
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
@@ -23,8 +23,8 @@
             {{- partial "sidebar.html" . -}}
             <div id="content" class="content-margin">
                 {{ if .Params.changelogs }}
-                    {{ $enableCollapsibleChangelogs := (.Scratch.Get "params").enableCollapsibleChangelogs }}
-                    {{ partial "collapsible-menu.html" (dict "type" "changelogs" "context" . "enable" $enableCollapsibleChangelogs) }}
+                    {{ $enable_collapsible_changelogs := (.Scratch.Get "params").enable_collapsible_changelogs }}
+                    {{ partial "collapsible-menu.html" (dict "type" "changelogs" "context" . "enable" $enable_collapsible_changelogs) }}
                 {{ end }}
 
                 {{- block "content" . }}{{- end }}

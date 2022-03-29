@@ -1,6 +1,6 @@
 {{- $index := slice -}}
 {{- range .Site.Pages -}}
-    {{ if and (not (.Scratch.Get "params").searchHidden) (or (.IsHome) (.IsPage) (.IsSection)) }}
+    {{ if and (not (.Scratch.Get "params").search_hidden) (or (.IsHome) (.IsPage) (.IsSection)) }}
         {{- $index = $index | append (dict "title" .Title "content" .Plain "permalink" .Permalink) -}}
     {{ end }}
 {{- end -}}
