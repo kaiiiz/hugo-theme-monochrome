@@ -1,4 +1,4 @@
-{{ .Scratch.SetInMap "params" "syntax_highlight" (.Site.Params.syntax_highlight | default (dict "lib" "builtin" "builtin" (dict "enableCodeCopy" true))) }}
+{{ .Scratch.SetInMap "params" "syntax_highlight" (.Site.Params.syntax_highlight | default (dict "lib" "builtin" "builtin" (dict "enable_code_copy" true))) }}
 {{ .Scratch.SetInMap "params" "enable_site_search" (.Site.Params.enable_site_search | default false) }}
 {{ .Scratch.SetInMap "params" "search_hidden" (.Params.search_hidden | default false) }}
 {{ .Scratch.SetInMap "params" "navbar_title" (.Params.navbar_title | default .Site.Params.navbar_title | default .Site.Title) }}
