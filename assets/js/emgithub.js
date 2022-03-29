@@ -31,7 +31,7 @@ function embedTextToEle (codeText, container, lang, lineBegin, lineEnd) {
 
     emgithubCode.classList.add(`language-${lang}`);
     emgithubCode.textContent = codeText;
-    Prism.highlightAllUnder(container, true, () => {
+    Prism.highlightAllUnder(container, false, () => {
         requestAnimationFrame(() => {
             removeMask(container);
         })
@@ -70,6 +70,5 @@ async function embed () {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-    Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/';
     embed();
 });

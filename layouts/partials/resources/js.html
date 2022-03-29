@@ -56,7 +56,7 @@
             {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.27.0.min.js") }}
         {{ end }}
 
-        {{ $prism_js = $prism_js | append (resources.Get "js/prism.js") | resources.Concat "js/prism.js" }}
+        {{ $prism_js = $prism_js | append (resources.Get "js/prism-autoloader.js") | append (resources.Get "js/prism.js") | resources.Concat "js/prism.js" }}
         {{- if hugo.IsProduction -}}
             {{ $prism_js = $prism_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
         {{- else -}}
@@ -84,6 +84,7 @@
     {{ $js := slice (resources.Get "lib/js/prism-v1.27.0.min.js") }}
     {{ $js = $js | append (resources.Get "lib/js/prism-line-numbers-v1.27.0.min.js") }}
     {{ $js = $js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.27.0.min.js") }}
+    {{ $js = $js | append (resources.Get "js/prism-autoloader.js") }}
     {{ $js = $js | resources.Concat "js/emgithub-prism.js" }}
     {{- if hugo.IsProduction -}}
         {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
