@@ -1,0 +1,24 @@
+.pagination {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline;
+    margin: 0 .1rem;
+  }
+
+  a {
+    color: var(--color-text-secondary);
+
+    &:hover {
+      color: var(--color-text);
+    }
+  }
+  
+  li.active a {
+    @include font-semibold;
+    color: var(--color-text);
+  }
+}

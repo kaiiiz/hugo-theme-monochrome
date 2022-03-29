@@ -1,0 +1,21 @@
+{{ $ctx := .ctx }}
+{{ $pages := .pages }}
+
+<div class="archives-layout content-margin">
+    {{ range ($ctx.Paginator).Pages }}
+        <a href="{{ .Permalink }}">
+            <div class="archives-item">
+                <div class="archives-title">
+                    <span>{{ .Title }}</span>
+                </div>
+                <div class="archives-summary">
+                    <span>{{ .Summary | plainify }}</span>
+                </div>
+                <div class="archives-metadata">
+                    <span>{{ .Date.Format "2006/01/02" }} · {{ .CurrentSection.Title }}</span>
+                </div>
+            </div>
+        </a>
+    {{ end }}
+    {{ template "_internal/pagination.html" $ctx }}
+</div>
