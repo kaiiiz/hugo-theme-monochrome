@@ -59,13 +59,10 @@
     </div>
 </div>
 
-{{ $prism_js := resources.Get "js/highlight/prism.js" | js.Build }}
+{{ $js := resources.Get "js/emgithub.js" }}
 {{- if hugo.IsProduction -}}
-    {{ $prism_js = $prism_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+    {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+{{- else -}}
+    {{ $js = $js | js.Build }}
 {{- end -}}
-<script src="{{ $prism_js.RelPermalink }}" integrity="{{- $prism_js.Data.Integrity -}}" data-manual></script>
-{{ $main_js := resources.Get "js/emgithub.js" | js.Build }}
-{{- if hugo.IsProduction -}}
-    {{ $main_js = $main_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
-{{- end -}}
-<script src='{{ $main_js.RelPermalink }}?raw_file_url={{ $raw_file_url }}&lang={{ $lang }}&line_begin={{ $line_range_begin }}&line_end={{ $line_range_end }}&id=emgithub_{{ .Ordinal }}'></script>
+<script defer src='{{ $js.RelPermalink }}?raw_file_url={{ $raw_file_url }}&lang={{ $lang }}&line_begin={{ $line_range_begin }}&line_end={{ $line_range_end }}&id=emgithub_{{ .Ordinal }}' integrity="{{- $js.Data.Integrity -}}"></script>

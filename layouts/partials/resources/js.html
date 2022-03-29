@@ -78,3 +78,17 @@
     {{- end -}}
     <script defer src="{{ $search_js.RelPermalink }}" integrity="{{- $search_js.Data.Integrity -}}"></script>
 {{ end }}
+
+{{/*  Load highlighter for emgithub  */}}
+{{ if .HasShortcode "emgithub" }}
+    {{ $js := slice (resources.Get "lib/js/prism-v1.27.0.min.js") }}
+    {{ $js = $js | append (resources.Get "lib/js/prism-line-numbers-v1.27.0.min.js") }}
+    {{ $js = $js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.27.0.min.js") }}
+    {{ $js = $js | resources.Concat "js/emgithub-prism.js" }}
+    {{- if hugo.IsProduction -}}
+        {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+    {{- else -}}
+        {{ $js = $js | js.Build }}
+    {{- end -}}
+    <script defer src="{{ $js.RelPermalink }}" integrity="{{- $js.Data.Integrity -}}" data-manual></script>
+{{ end }}

@@ -1,5 +1,4 @@
-Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/';
-embed();
+var currentScript = document.currentScript;
 
 function removeMask (container) {
     const emgithubPre = container.querySelector(".emgithub-pre");
@@ -52,7 +51,7 @@ function embedErrorToEle (errText, container) {
 }
 
 async function embed () {
-    const sourceURL = new URL(document.currentScript.src);
+    const sourceURL = new URL(currentScript.src);
     const params = sourceURL.searchParams;
     const rawFileURL = new URL(params.get("raw_file_url"));
     const lang = params.get("lang");
@@ -69,3 +68,8 @@ async function embed () {
         embedErrorToEle(`Failed to process ${rawFileURL}\n${response.status}`, emgithubContainer);
     }
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+    Prism.plugins.autoloader.languages_path = 'https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/components/';
+    embed();
+});

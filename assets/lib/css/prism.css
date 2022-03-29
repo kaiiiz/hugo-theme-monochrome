@@ -240,8 +240,8 @@ div.code-toolbar > .toolbar > .toolbar-item > span:focus {
   padding: inherit 0;
   margin-top: 1em; /* Same as .prism’s padding-top */
 
-  background: hsla(24, 20%, 50%, 0.08);
-  background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0));
+  background: hsla(50, 100%, 83%, 0.2);
+  /* background: linear-gradient(to right, hsla(24, 20%, 50%, 0.1) 70%, hsla(24, 20%, 50%, 0)); */
 
   pointer-events: none;
 
