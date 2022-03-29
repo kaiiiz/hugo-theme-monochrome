@@ -1126,6 +1126,18 @@ article#collapsible_menu_changelogs {
       width: 2rem; }
       .emgithub-container .emgithub-code .emgithub-loading.hide {
         display: none; }
+      .emgithub-container .emgithub-code .emgithub-loading svg {
+        width: 2rem;
+        height: 2rem;
+        animation: spin 1s linear infinite;
+        color: white;
+        fill: #969696; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
     .emgithub-container .emgithub-code .emgithub-pre {
       margin-top: 0;
       margin-bottom: 0;
@@ -1145,9 +1157,11 @@ article#collapsible_menu_changelogs {
     justify-content: space-between;
     padding: 0.75rem 0.75rem 0.625rem 0.75rem;
     border-bottom-right-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem; }
+    border-bottom-left-radius: 0.375rem;
+    background-color: #171717; }
     .emgithub-container .emgithub-toolbar a {
-      font-weight: 600; }
+      font-weight: 600;
+      color: white; }
 
 .term-item {
   color: var(--color-text);

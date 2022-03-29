@@ -44,7 +44,7 @@ See [Configuration](/hugo-theme-monochrome/configuration/).
 hugo server
 ```
 
-Minify CSS and JS resources, PurgeCSS will also be applied. The minifier of JavaScript here is powered by [ESBuild](https://github.com/evanw/esbuild).
+Minify CSS and JS resources. The minifier of JavaScript here is powered by [ESBuild](https://github.com/evanw/esbuild).
 
 ```bash
 hugo server --environment production
