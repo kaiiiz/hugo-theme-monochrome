@@ -23,7 +23,7 @@
     {{ range $pages }}
         <div class="content-margin">
             <h1>{{- .Key -}}</h1>
-            {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date) -}}
+            {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date "group_by_year" $group_by_year) -}}
         </div>
     {{ end }}
     {{ if $pagination }}
@@ -31,7 +31,7 @@
     {{ end }}
 {{ else }}
     <div class="content-margin">
-        {{- partial "list.html" (dict "pages" $pages "show_date" $show_date) -}}
+        {{- partial "list.html" (dict "pages" $pages "show_date" $show_date "group_by_year" $group_by_year) -}}
     </div>
     {{ if $pagination }}
         {{ template "_internal/pagination.html" . }}
