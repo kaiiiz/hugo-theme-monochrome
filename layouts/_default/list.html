@@ -8,18 +8,34 @@
 
 {{- $group_by_year := .Params.group_by_year | default true -}}
 {{- $show_date := .Params.show_date | default true -}}
+{{- $pagination := .Params.pagination | default false -}}
+
+{{- $pages := .Pages -}}
+{{- if and $pagination $group_by_year -}}
+    {{ $pages = (.Paginate (.Pages.GroupByPublishDate "2006")).PageGroups }}
+{{- else if and $pagination (not $group_by_year) -}}
+    {{ $pages = .Paginator.Pages }}
+{{- else if and (not $pagination) $group_by_year -}}
+    {{ $pages = .Pages.GroupByPublishDate "2006" }}
+{{- end -}}
 
 {{ if $group_by_year }}
-    {{ range .Pages.GroupByPublishDate "2006" }}
+    {{ range $pages }}
         <div class="content-margin">
             <h1>{{- .Key -}}</h1>
             {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date) -}}
         </div>
     {{ end }}
+    {{ if $pagination }}
+        {{ template "_internal/pagination.html" . }}
+    {{ end }}
 {{ else }}
     <div class="content-margin">
-        {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date) -}}
+        {{- partial "list.html" (dict "pages" $pages "show_date" $show_date) -}}
     </div>
+    {{ if $pagination }}
+        {{ template "_internal/pagination.html" . }}
+    {{ end }}
 {{ end }}
 
 {{ end }}

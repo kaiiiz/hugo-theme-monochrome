@@ -2,23 +2,32 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  text-align: center;
 
   li {
     display: inline;
     margin: 0 .1rem;
   }
 
-  a {
+  a, span {
     color: var(--color-text-secondary);
-
-    &:hover {
-      color: var(--color-text);
-    }
   }
   
   li.active a {
     @include font-semibold;
     color: var(--color-text);
+  }
+
+  li:not(.disabled) a:hover {
+    color: var(--color-text);
+  }
+
+  .disabled {
+    cursor: not-allowed;
+  }
+}
+
+.archives-layout {
+  .pagination {
+    text-align: center;
   }
 }
