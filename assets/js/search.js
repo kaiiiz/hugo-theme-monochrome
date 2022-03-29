@@ -24,6 +24,7 @@ async function init() {
         distance: 100,
         threshold: 0.3,
         ignoreLocation: true,
+        minMatchCharLength: 2,
         keys: [
             'title',
             'permalink',
@@ -117,7 +118,6 @@ async function init() {
 
     const search = (value) => {
         const results = fuse.search(value);
-        console.log(results);
 
         if (results.length == 0) {
             search_menu_results.innerHTML = '';

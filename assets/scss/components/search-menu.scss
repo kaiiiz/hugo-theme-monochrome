@@ -9,6 +9,12 @@
   z-index: 40;
   background-color: rgba(0,0,0,.75);
 
+  mark {
+    background-color: unset;
+    color: unset;
+    border-bottom: 2px solid var(--color-text);
+  }
+
   #search_menu {
     position: fixed;
     display: flex;
