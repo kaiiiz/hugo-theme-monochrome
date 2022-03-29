@@ -3,14 +3,14 @@
     <ul>
         {{- range .Site.Menus.navbar -}}
             {{- if .Children -}}
-                <li class="">
-                    <a href="{{ .URL }}">{{- .Name -}}</a>
-                    <ul>
+                <li>
+                    <details>
+                        <summary><a href="{{ .URL }}">{{- .Name -}}</a></summary>
                         {{- partial "navbar/nested-mobile.html" . -}}
-                    </ul>
+                    </details>
                 </li>
             {{- else -}}
-                <li class="">
+                <li>
                     <a href="{{ .URL }}">{{- .Name -}}</a>
                 </li>
             {{- end -}}

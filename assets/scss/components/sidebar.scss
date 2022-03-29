@@ -12,7 +12,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
   height: 100%;
   z-index: 20;
   background-color: var(--color-background);
@@ -20,6 +19,29 @@
   transform: translateX(0);
   transition: transform 0.2s;
   overflow-y: auto;
+  width: 60%;
+
+  @media screen and (min-width: $sm_min_width) {
+    width: 40%;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  summary a {
+    margin-left: .2rem;
+  }
+
+  li {
+    margin: 1.2rem;
+  }
+
+  a {
+    color: var(--color-text);
+  }
 }
 
 #sidebar.close {

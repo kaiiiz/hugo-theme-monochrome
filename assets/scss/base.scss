@@ -61,11 +61,11 @@ mark {
   background-color: var(--color-background-mark);
 }
 
-details summary {
+details > summary {
   cursor: zoom-in;
 }
 
-details[open] summary {
+details[open] > summary {
   cursor: zoom-out;
 }
 
