@@ -37,65 +37,95 @@
   url = "/layouts/"
   weight = 4
   [[navbar]]
-    identifier = "demo"
-    name = "Demostration"
-    url = "/layouts/demo"
+    identifier = "balloon"
+    name = "Balloon"
+    url = "/layouts/balloon"
     parent = "layouts"
     weight = 1
     [[navbar]]
       identifier = "balloon_demo"
-      name = "Balloon"
-      url = "/layouts/demo/balloon"
-      parent = "demo"
+      name = "Demo"
+      url = "/layouts/balloon/demo"
+      parent = "balloon"
       weight = 1
     [[navbar]]
-      identifier = "bookcase_demo"
-      name = "Bookcase"
-      url = "/layouts/demo/bookcase"
-      parent = "demo"
+      identifier = "balloon_docs"
+      name = "Document"
+      url = "/layouts/balloon/docs"
+      parent = "balloon"
       weight = 2
-    [[navbar]]
-      identifier = "gallery_demo"
-      name = "Gallery"
-      url = "/layouts/demo/gallery"
-      parent = "demo"
-      weight = 3
-    [[navbar]]
-      identifier = "list_demo"
-      name = "List"
-      url = "/layouts/demo/list"
-      parent = "demo"
-      weight = 4
   [[navbar]]
-    identifier = "docs"
-    name = "Documents"
-    url = "/layouts/docs"
+    identifier = "bookcase"
+    name = "Bookcase"
+    url = "/layouts/bookcase"
     parent = "layouts"
     weight = 2
     [[navbar]]
-      identifier = "balloon_docs"
-      name = "Balloon"
-      url = "/layouts/docs/balloon"
-      parent = "docs"
+      identifier = "bookcase_demo"
+      name = "Demo"
+      url = "/layouts/bookcase/demo"
+      parent = "bookcase"
       weight = 1
     [[navbar]]
       identifier = "bookcase_docs"
-      name = "Bookcase"
-      url = "/layouts/docs/bookcase"
-      parent = "docs"
+      name = "Document"
+      url = "/layouts/bookcase/docs"
+      parent = "bookcase"
       weight = 2
+  [[navbar]]
+    identifier = "gallery"
+    name = "Gallery"
+    url = "/layouts/gallery"
+    parent = "layouts"
+    weight = 3
+    [[navbar]]
+      identifier = "gallery_demo"
+      name = "Demo"
+      url = "/layouts/gallery/demo"
+      parent = "gallery"
+      weight = 1
     [[navbar]]
       identifier = "gallery_docs"
-      name = "Gallery"
-      url = "/layouts/docs/gallery"
-      parent = "docs"
-      weight = 3
+      name = "Document"
+      url = "/layouts/gallery/docs"
+      parent = "gallery"
+      weight = 2
+  [[navbar]]
+    identifier = "list"
+    name = "List"
+    url = "/layouts/list"
+    parent = "layouts"
+    weight = 4
+    [[navbar]]
+      identifier = "list_demo"
+      name = "Demo"
+      url = "/layouts/list/demo"
+      parent = "list"
+      weight = 1
     [[navbar]]
       identifier = "list_docs"
-      name = "List"
-      url = "/layouts/docs/list"
-      parent = "docs"
-      weight = 4
+      name = "Document"
+      url = "/layouts/list/docs"
+      parent = "list"
+      weight = 2
+  [[navbar]]
+    identifier = "postcard"
+    name = "Postcard"
+    url = "/layouts/postcard"
+    parent = "layouts"
+    weight = 5
+    [[navbar]]
+      identifier = "postcard_demo"
+      name = "Demo"
+      url = "/layouts/postcard/demo"
+      parent = "postcard"
+      weight = 1
+    [[navbar]]
+      identifier = "postcard_docs"
+      name = "Document"
+      url = "/layouts/postcard/docs"
+      parent = "postcard"
+      weight = 2
 [[navbar]]
   identifier = "shortcodes"
   name = "Shortcodes"

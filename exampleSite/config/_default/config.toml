@@ -5,9 +5,6 @@ theme = "hugo-theme-monochrome"
 defaultContentLanguage = "en"
 enableEmoji = true
 
-[build]
-writeStats = true
-
 [taxonomies]
 category = "categories"
 tag = "tags"
