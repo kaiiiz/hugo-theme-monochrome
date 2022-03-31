@@ -10,7 +10,7 @@ toc: false
 ### Added
 
 * Layout
-  * New Layout: Postcard Layout
+  * New Layout: Postcard Layout, Blank Layout
   * Support pagination for Postcard Layout and List Layout
   * Enhance list layout date format. If current list layout is grouped by year, hide list item's year.
   * Redesign default home page layout using Postcard Layout
@@ -40,18 +40,18 @@ toc: false
 
 ### Changed
 
-* Change rss content from full post to summary for smaller resource purpose
+* Change RSS content from full post to summary for smaller resource purpose
 * Change all icons to feathericons
 * Site search engine has been changed from flexsearch to fuse.js for better CJK language supports
-* All parameters name has been changed to snake_case for consistency
+* Parameter name has all been changed to snake_case for consistency
 * Theme Parameters
   * Syntax highlight settings are now grouped by `syntax_highlight`
 
 ### Removed
 
-* **All** javascript package dependencies are removed, Monochrome is now self-contained without the help of npm and become extremely easy to setup.
+* **All** javascript package dependencies are removed, Monochrome is now self-contained without the help of npm and become extremely easy to setup and modify.
 * Page Parameters
-  * Remove `list_posts` property from list layout
+  * Remove `list_posts` property from list layout, this functionality has been replaced by Blank Layout
 
 ---
 

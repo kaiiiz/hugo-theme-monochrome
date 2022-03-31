@@ -7,7 +7,7 @@ weight: 20
 
 Bookcase layout is useful for creating another viewpoint of list contents.
 
-> This layout can only be used on list layout.
+> This layout can only be used on section page (`_index.md`).
 
 ## Configuration
 

@@ -9,7 +9,7 @@ date: 2022-03-29
 
 Balloon is useful for demonstrating information step-by-step.
 
-> This layout can be used on both list layout and single layout.
+> This layout can be used on both section page (`_index.md`) and regular post (`xxx.md`).
 
 ## Configuration
 

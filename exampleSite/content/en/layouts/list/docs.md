@@ -6,7 +6,7 @@ weight: 40
 changelogs:
 ---
 
-List layout is built-in section layout. Monochrome add options to adjust its behavior.
+List layout is the built-in section layout. Monochrome add options to adjust its behavior.
 
 ## Configuration
 

@@ -9,7 +9,7 @@ weight: 30
 
 Gallery layout is useful for demonstrating pictures and its statistical data.
 
-> This layout can be used on both list layout and single layout.
+> This layout can be used on both section page and regular post.
 
 ## Configuration
 

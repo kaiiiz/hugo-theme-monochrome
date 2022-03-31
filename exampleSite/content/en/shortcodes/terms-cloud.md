@@ -6,7 +6,7 @@ bookcase_cover_src_dark: 'cover/coding_dark.png'
 
 # Terms Cloud
 
-Render terms cloud
+Render terms cloud, hugo supports `tag` and `category` terms by default, if you want to add your custom terms. Follow the instructions in the [document](https://gohugo.io/content-management/taxonomies/#configure-taxonomies).
 
 ## Usage
 
@@ -25,3 +25,9 @@ Paramters:
 ```
 
 {{< terms-cloud terms="tags" >}}
+
+```html
+{{</* terms-cloud terms="series" */>}}
+```
+
+{{< terms-cloud terms="series" >}}

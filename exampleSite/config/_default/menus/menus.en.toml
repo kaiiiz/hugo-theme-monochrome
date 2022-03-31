@@ -41,7 +41,6 @@
     name = "Balloon"
     url = "/layouts/balloon"
     parent = "layouts"
-    weight = 1
     [[navbar]]
       identifier = "balloon_demo"
       name = "Demo"
@@ -59,7 +58,6 @@
     name = "Bookcase"
     url = "/layouts/bookcase"
     parent = "layouts"
-    weight = 2
     [[navbar]]
       identifier = "bookcase_demo"
       name = "Demo"
@@ -77,7 +75,6 @@
     name = "Gallery"
     url = "/layouts/gallery"
     parent = "layouts"
-    weight = 3
     [[navbar]]
       identifier = "gallery_demo"
       name = "Demo"
@@ -95,7 +92,6 @@
     name = "List"
     url = "/layouts/list"
     parent = "layouts"
-    weight = 4
     [[navbar]]
       identifier = "list_demo"
       name = "Demo"
@@ -113,7 +109,6 @@
     name = "Postcard"
     url = "/layouts/postcard"
     parent = "layouts"
-    weight = 5
     [[navbar]]
       identifier = "postcard_demo"
       name = "Demo"
@@ -125,6 +120,23 @@
       name = "Document"
       url = "/layouts/postcard/docs"
       parent = "postcard"
+      weight = 2
+  [[navbar]]
+    identifier = "blank"
+    name = "Blank"
+    url = "/layouts/blank"
+    parent = "layouts"
+    [[navbar]]
+      identifier = "blank_demo"
+      name = "Demo"
+      url = "/layouts/blank/demo"
+      parent = "blank"
+      weight = 1
+    [[navbar]]
+      identifier = "blank_docs"
+      name = "Document"
+      url = "/layouts/blank/docs"
+      parent = "blank"
       weight = 2
 [[navbar]]
   identifier = "shortcodes"
