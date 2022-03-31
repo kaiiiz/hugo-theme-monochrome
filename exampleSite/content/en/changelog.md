@@ -14,18 +14,17 @@ toc: false
   * Support pagination for Postcard Layout and List Layout
   * Enhance list layout date format. If current list layout is grouped by year, hide list item's year.
   * Redesign default home page layout using Postcard Layout
-  * Add sidebar for better navbar responsiveness in small screen
+  * Add sidebar for better navbar responsiveness on small screen
 * New Shortcode
   * `emgithub`: directly embed github source code like gist with Prism.js syntax highlighting
 * External Library
   * Optimize Prism.js integration
     * Add smooth transition to prevent line number jittering while page rendering
     * Intergrate Prism.js autoloader to prevent huge bundle file
-    * Restyling Prism.js
   * Optimize Zooming.js integration
     * Background color is now dynamically changed based on current theme
   * Fuse.js integration
-    * Search menu can now support highlight matched text
+    * Support highlight matched text in search menu
 * New Theme Parameters
   * `list_layout.enable_group_by_year`
   * `list_layout.enable_show_date`
@@ -44,14 +43,13 @@ toc: false
 * Change all icons to feathericons
 * Site search engine has been changed from flexsearch to fuse.js for better CJK language supports
 * Parameter name has all been changed to snake_case for consistency
-* Theme Parameters
-  * Syntax highlight settings are now grouped by `syntax_highlight`
+* Syntax highlight settings are now grouped by `syntax_highlight`
+* `svg-wrapper` shortcode has been changed to `icon`
 
 ### Removed
 
 * **All** javascript package dependencies are removed, Monochrome is now self-contained without the help of npm and become extremely easy to setup and modify.
-* Page Parameters
-  * Remove `list_posts` property from list layout, this functionality has been replaced by Blank Layout
+* Remove `list_posts` property from list layout, this functionality has been replaced by Blank Layout
 
 ---
 

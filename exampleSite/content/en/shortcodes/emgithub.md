@@ -6,7 +6,7 @@ bookcase_cover_src_dark: 'cover/coding_dark.png'
 
 # Embed github
 
-Directly embed github source code to website with Prism.js syntax highlight support.
+Directly embed github source code like gist with Prism.js syntax highlight.
 
 ## Usage
 

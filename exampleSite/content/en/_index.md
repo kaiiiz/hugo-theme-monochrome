@@ -15,6 +15,6 @@ keywords:
 - programmer-friendly
 ---
 
-{{< svg-wrapper name="github" link="https://github.com/kaiiiz/hugo-theme-monochrome" />}}
+{{< icon name="github" link="https://github.com/kaiiiz/hugo-theme-monochrome" >}}
 
 This is the demo of hugo-theme-monochrome.
