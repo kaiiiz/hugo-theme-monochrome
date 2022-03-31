@@ -14,7 +14,7 @@ weight: 40
 └── post3.md
 ```
 
-Fully customized list page.
+Fully customized section page.
 
 * [post1](./post1)
 * [post2](./post2)

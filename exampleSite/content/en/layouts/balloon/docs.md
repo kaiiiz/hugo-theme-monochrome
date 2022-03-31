@@ -121,7 +121,7 @@ weight: 3
 
 > default: [default order](https://gohugo.io/templates/lists/#order-content)
 
-## Trick
+## Headless Bundle
 
 Hugo supports an amazing feature called **Headless Bundle**, which elegantly resolved the resouces publish issue.
 

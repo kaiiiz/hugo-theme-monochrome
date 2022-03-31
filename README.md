@@ -26,7 +26,7 @@ See [kaiiiz.github.io/hugo-theme-monochrome](https://kaiiiz.github.io/hugo-theme
 
 4. **Support light/dark mode.** Low-light UI.
 
-5. **Multiple layouts built-in.** Monochrome now supports 5 different layouts. See [Demo](https://kaiiiz.github.io/hugo-theme-monochrome/layouts/).
+5. **Multiple layouts built-in.** Monochrome now supports 6 different layouts. See [Demo](https://kaiiiz.github.io/hugo-theme-monochrome/layouts/).
 
 6. **Nested navbar and Multilingual mode.** Make good use of hugo's well-designed structure.
 
