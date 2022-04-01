@@ -31,6 +31,7 @@ html[data-theme="light"] {
   --color-background-inline-code: #{$gray-100};
   --color-background-card: #{$gray-0};
   --color-background-mark: #fff1a7;
+  --color-link: #2563eb;
   --color-navbar-item-inactive: #{$gray-400};
   --color-navbar-item-active: #{$gray-900};
   --color-navbar-item-in-section: #{$gray-600};
@@ -48,8 +49,21 @@ html[data-theme="dark"] {
   --color-background-inline-code: #{$gray-600};
   --color-background-card: #{$gray-700};
   --color-background-mark: #fff1a7;
+  --color-link: #93c5fd;
   --color-navbar-item-inactive: #{$gray-400};
   --color-navbar-item-active: #{$gray-100};
   --color-navbar-item-in-section: #{$gray-250};
 }
 
+// Default color settings
+
+html {
+  color: var(--color-text);
+  background: var(--color-background);
+  font-size: 16px;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}

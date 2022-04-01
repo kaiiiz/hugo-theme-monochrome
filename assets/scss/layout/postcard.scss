@@ -1,4 +1,8 @@
 .postcard-layout {
+  a {
+    color: var(--color-text);
+  }
+
   .postcard-item {
     padding: 1rem;
     background-color: var(--color-background-card);
