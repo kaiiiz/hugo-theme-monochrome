@@ -5,7 +5,7 @@ toc: false
 
 # Changelog
 
-## v1.0.0 - First Major Release (2022/03)
+## v1.0.0 - First Major Release (2022/04/01)
 
 ### Added
 
@@ -20,7 +20,7 @@ toc: false
 * External Library
   * Optimize Prism.js integration
     * Add smooth transition to prevent line number jittering while page rendering
-    * Intergrate Prism.js autoloader to prevent huge bundle file
+    * Integrate Prism.js autoloader to prevent huge bundle file
   * Optimize Zooming.js integration
     * Background color is now dynamically changed based on current theme
   * Fuse.js integration
