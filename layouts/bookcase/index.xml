@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Bookcase Layout on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/</link><description>Recent content in Bookcase Layout on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/index.xml" rel="self" type="application/rss+xml"/><item><title>Bookcase Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/docs/</guid><description>Bookcase layout is useful for creating another viewpoint of list contents.
+This layout can only be used on section page (_index.md).
+Configuration --- type: 'bookcase' --- Specify type in front-matter will change the template lookup order.
+bookcase_list_sections List subsections.
+--- bookcase_list_sections: true --- default: true
+bookcase_list_pages List pages.
+--- bookcase_list_pages: true --- default: true
+Resouces Configuration These parameters are located in bookcase item&amp;rsquo;s resource.</description></item></channel></rss>
