@@ -20,14 +20,14 @@ Wrap icons with grid layout
 
 ```html
 {{</* icon-group */>}}
-{{</* svg-wrapper name="github" /*/>}}
-{{</* svg-wrapper name="rss" /*/>}}
-{{</* svg-wrapper name="twitter" /*/>}}
+{{</* icon name="github" */>}}
+{{</* icon name="rss" */>}}
+{{</* icon name="twitter" */>}}
 {{</* /icon-group */>}}
 ```
 
 {{< icon-group >}}
-{{< svg-wrapper name="github" />}}
-{{< svg-wrapper name="rss" />}}
-{{< svg-wrapper name="twitter" />}}
+{{< icon name="github" >}}
+{{< icon name="rss" >}}
+{{< icon name="twitter" >}}
 {{< /icon-group >}}

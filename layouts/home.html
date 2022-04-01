@@ -1,23 +1,11 @@
 {{ define "content" }}
 
 {{ if .Content }}
-    <div class="my-8">
+    <div class="content-margin">
         {{- partial "content.html" . -}}
     </div>
 {{ end }}
 
-{{ if .Site.Taxonomies.tags }}
-    <div class="my-8">
-        <h1 class="text-xl font-semibold my-3">{{ i18n "tags" }}</h1>
-        {{- partial "terms-cloud.html" .Site.Taxonomies.tags.Alphabetical -}}
-    </div>
-{{ end }}
-
-{{ if .Site.RegularPages }}
-    <div class="my-8">
-        <h1 class="text-xl font-semibold my-3">{{ i18n "recent_posts" }}</h1>
-        {{- partial "list.html" (dict "pages" (first 10 .Site.RegularPages)) -}}
-    </div>
-{{ end }}
+{{ partial "postcard/layout.html" (dict "pages" .Site.RegularPages "ctx" .) }}
 
 {{ end }}

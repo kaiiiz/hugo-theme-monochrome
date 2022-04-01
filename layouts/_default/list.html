@@ -1,27 +1,40 @@
 {{ define "content" }}
 
-{{ if .Content }}
-    <div class="my-8">
+{{ if and .Content (eq .Paginator.PageNumber 1) }}
+    <div class="content-margin">
         {{- partial "content.html" . -}}
     </div>
 {{ end }}
 
-{{- $list_posts := .Params.list_posts | default true -}}
-{{- $group_by_year := .Params.group_by_year | default true -}}
-{{- $show_date := .Params.show_date | default true -}}
+{{- $group_by_year := .Params.group_by_year | default .Site.Params.list_layout.enable_group_by_year | default true -}}
+{{- $show_date := .Params.show_date | default .Site.Params.list_layout.enable_show_date | default true -}}
+{{- $pagination := .Params.pagination | default .Site.Params.list_layout.enable_pagination | default false -}}
 
-{{ if $list_posts }}
-    {{ if $group_by_year }}
-        {{ range .Pages.GroupByPublishDate "2006" }}
-            <div class="mb-8">
-                <h1 class="font-bold text-2xl">{{- .Key -}}</h1>
-                {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date) -}}
-            </div>
-        {{ end }}
-    {{ else }}
-        <div class="mb-8">
-            {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date) -}}
+{{- $pages := .Pages -}}
+{{- if and $pagination $group_by_year -}}
+    {{ $pages = (.Paginate (.Pages.GroupByPublishDate "2006")).PageGroups }}
+{{- else if and $pagination (not $group_by_year) -}}
+    {{ $pages = .Paginator.Pages }}
+{{- else if and (not $pagination) $group_by_year -}}
+    {{ $pages = .Pages.GroupByPublishDate "2006" }}
+{{- end -}}
+
+{{ if $group_by_year }}
+    {{ range $pages }}
+        <div class="content-margin">
+            <h1>{{- .Key -}}</h1>
+            {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date "group_by_year" $group_by_year) -}}
         </div>
+    {{ end }}
+    {{ if $pagination }}
+        {{ template "_internal/pagination.html" . }}
+    {{ end }}
+{{ else }}
+    <div class="content-margin">
+        {{- partial "list.html" (dict "pages" $pages "show_date" $show_date "group_by_year" $group_by_year) -}}
+    </div>
+    {{ if $pagination }}
+        {{ template "_internal/pagination.html" . }}
     {{ end }}
 {{ end }}
 

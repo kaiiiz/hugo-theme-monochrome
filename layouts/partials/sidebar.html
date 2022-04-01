@@ -1,0 +1,19 @@
+<div id="sidebar_canvas_overlay" class="hidden"></div>
+<div id="sidebar" class="close">
+    <ul>
+        {{- range .Site.Menus.navbar -}}
+            {{- if .Children -}}
+                <li>
+                    <details>
+                        <summary><a href="{{ .URL }}">{{- .Name -}}</a></summary>
+                        {{- partial "navbar/nested-mobile.html" . -}}
+                    </details>
+                </li>
+            {{- else -}}
+                <li>
+                    <a href="{{ .URL }}">{{- .Name -}}</a>
+                </li>
+            {{- end -}}
+        {{- end -}}
+    </ul>
+</div>

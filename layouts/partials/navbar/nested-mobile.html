@@ -1,10 +1,28 @@
 {{ with .Children }}
     <ul>
         {{ range . }}
-            <li class="text-sm mt-2">
-                <a href="{{ .URL }}">{{- .Name -}}</a>
-                {{- partial "navbar/nested-mobile.html" . -}}
-            </li>
+            {{ if .Children }}
+                <li>
+                    <details>
+                        <summary>
+                            {{ if .URL }}
+                                <span><a href="{{ .URL }}">{{- .Name -}}</a></span>
+                            {{ else }}
+                                <span>{{- .Name -}}</span>
+                            {{ end }}
+                        </summary>
+                        {{- partial "navbar/nested-mobile.html" . -}}
+                    </details>
+                </li>
+            {{ else }}
+                <li>
+                    {{ if .URL }}
+                        <a href="{{ .URL }}">{{- .Name -}}</a>
+                    {{ else }}
+                        <div>{{- .Name -}}</div>
+                    {{ end }}
+                </li>
+            {{ end }}
         {{ end }}
     </ul>
 {{ end }}

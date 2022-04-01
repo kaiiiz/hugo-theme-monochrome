@@ -1,0 +1,18 @@
+{{ $icon_link := .Get "link" }}
+{{ $icon_name := .Get "name" }}
+
+<div class="icon">
+    {{ if $icon_link }}
+        <a rel="noopener" target="_blank" href="{{ $icon_link }}" aria-label="{{ $icon_name }}">
+    {{ else }}
+        <div>
+    {{ end }}
+        {{ if $icon_name }}
+            {{- partial (printf "svg/%s.html" $icon_name) -}}
+        {{ end }}
+    {{ if $icon_link }}
+        </a>
+    {{ else }}
+        </div>
+    {{ end }}
+</div>

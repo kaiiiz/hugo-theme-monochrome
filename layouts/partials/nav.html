@@ -1,0 +1,38 @@
+<nav id="navbar" class="pure-menu">
+    {{- $currentPage := . -}}
+    {{- $currentUrl := .RelPermalink -}}
+    {{- $isHome := .IsHome -}}
+    <ul class="pure-menu-list">
+        {{- range .Site.Menus.navbar -}}
+            {{ $navbar_decoration := "" }}
+            {{- if $currentPage.IsMenuCurrent "navbar" . -}}
+                {{ $navbar_decoration = "active" }}
+            {{- else if eq $currentUrl .URL -}}
+                {{ $navbar_decoration = "active" }}
+            {{- else if in ($currentUrl|lower) (.URL|lower) -}}
+                {{ $navbar_decoration = "insection" }}
+            {{- end -}}
+
+            {{- if .Children -}}
+                <li class="navbar-item navbar-dropdown pure-menu-item pure-menu-has-children pure-menu-allow-hover {{ $navbar_decoration }}">
+                    {{ if .URL }}
+                        <a href="{{ .URL }}" class="pure-menu-link">{{- .Name -}}</a>
+                    {{ else }}
+                        <div class="pure-menu-link">{{- .Name -}}</div>
+                    {{ end }}
+                    <ul class="pure-menu-children">
+                        {{- partial "navbar/nested-desktop.html" . -}}
+                    </ul>
+                </li>
+            {{- else -}}
+                <li class="navbar-item pure-menu-item {{ $navbar_decoration }}">
+                    {{ if .URL }}
+                        <a href="{{ .URL }}" class="pure-menu-link">{{- .Name -}}</a>
+                    {{ else }}
+                        <div class="pure-menu-link">{{- .Name -}}</div>
+                    {{ end }}
+                </li>
+            {{- end -}}
+        {{- end -}}
+    </ul>
+</nav>

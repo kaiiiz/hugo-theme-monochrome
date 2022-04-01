@@ -1,0 +1,54 @@
+#TableOfContents {
+  line-height: 1.5rem;
+
+  ul, li {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  ul ul {
+    margin-left: .5rem;
+  }
+
+  li {
+    margin-top: .375rem;
+  }
+
+  a {
+    color: var(--color-text);
+  }
+}
+
+article#collapsible_menu_changelogs {
+  line-height: 1.75rem;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: max-content 1fr;
+  margin-top: .5rem;
+}
+
+.collapsible-menu-wrapper {
+  @include my-8;
+  font-size: 0.875rem;
+  padding: 1rem;
+  border: 2px solid var(--color-border-collapsible-menu);
+  border-radius: .25rem;
+
+  .collapsible-menu-type {
+    span {
+      @include font-bold;
+      line-height: 1.5rem;
+    }
+  }
+
+  summary.collapsible-menu-type {
+    span {
+      margin-left: .3rem;
+    }
+  }
+
+  .collapsible-menu {
+    margin-left: .5rem;
+  }
+}

@@ -1,103 +1,59 @@
-<header class="mt-9 mb-8">
-    <div class="flex justify-between items-center">
-        <div class="flex items-center">
-            <input id="navbar_btn" class="hidden" type="checkbox">
-            <label for="navbar_btn" class="menu-btn mr-4 items-center flex xl:hidden">
-                <span class="navicon"></span>
-            </label>
-            <a href="{{ .Site.Home.RelPermalink }}" class="font-bold text-lg xl:text-2xl mr-auto">
-                {{- with (.Scratch.Get "params").navbarTitle }}
+<header>
+    <div class="brand">
+        <div id="sidebar_btn">
+            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
+                {{- partial "svg/menu.html" -}}
+            </svg>
+        </div>
+
+        <div>
+            <a href="{{ .Site.Home.RelPermalink }}">
+                {{- with (.Scratch.Get "params").navbar_title }}
                     {{- . | safeHTML -}}
                 {{- end -}}
             </a>
         </div>
-
-        <div class="flex items-center">
-            <div class="cursor-pointer ml-2">
-                <svg id="dark_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24">
-                    {{- partial "svg/sun.html" -}}
-                </svg>
-                <svg id="light_mode_btn" class="hidden" width="18px" height="18px" viewBox="0 0 24 24">
-                    {{- partial "svg/moon.html" -}}
-                </svg>
-            </div>
-
-            {{ if .Site.IsMultiLingual }}
-                <div id="translation_wrapper" class="relative flex items-center cursor-pointer text-xs ml-2 py-2">
-                    <svg id="translation_btn" width="18px" height="18px" viewBox="0 0 24 24">
-                        {{- partial "svg/earth.html" -}}
-                    </svg>
-                    <span class="hidden ml-1 sm:block">{{ .Site.Language.LanguageName }}</span>
-                    <ul id="translation_menu" class="absolute top-full left-0 rounded hidden w-max shadow-xl z-10">
-                        {{ range .Site.Home.AllTranslations }}
-                        <li class="px-2 py-1.5">
-                            <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-                        </li>
-                        {{ end }}
-                    </ul>
-                </div>
-            {{ end }}
-
-            {{ if (.Scratch.Get "params").enableSiteSearch }}
-                <div class="ml-2 sep hidden sm:block"></div>
-                <div class="ml-2 relative flex items-center">
-                    <svg id="search_btn" class="cursor-pointer" width="18px" height="18px" viewBox="2 0 20 20">
-                        {{- partial "svg/search.html" -}}
-                    </svg>
-                    {{- partial "search-menu.html" -}}
-                </div>
-            {{ end }}
-        </div>
     </div>
 
-    <nav id="navbar" class="mt-3 hidden xl:block">
-        {{- $currentPage := . -}}
-        {{- $currentUrl := .RelPermalink -}}
-        {{- $isHome := .IsHome -}}
-        <ul class="flex">
-            {{- range .Site.Menus.navbar -}}
-                {{ $navbar_item := "text-sm border-b-2 pb-1 mr-2 font-medium" }}
-                {{- if $currentPage.IsMenuCurrent "navbar" . -}}
-                    {{/* default style */}}
-                {{- else if eq $currentUrl .URL -}}
-                    {{/* default style */}}
-                {{- else if in ($currentUrl|lower) (.URL|lower) -}}
-                    {{ $navbar_item = printf "%s %s" $navbar_item "insection" }}
-                {{- else -}}
-                    {{ $navbar_item = printf "%s %s" $navbar_item "inactive" }}
-                {{- end -}}
+    <div class="toolbox">
+        <div id="theme_tool">
+            <svg id="dark_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+                {{- partial "svg/sun.html" -}}
+            </svg>
+            <svg id="light_mode_btn" class="hidden toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+                {{- partial "svg/moon.html" -}}
+            </svg>
+        </div>
 
-                {{- if .Children -}}
-                    <li class="navbar-item-dropdown {{ $navbar_item }}">
-                        <div class="flex items-center">
-                            <a href="{{ .URL }}">{{- .Name -}}</a>
-                            <svg width="18px" height="18px" viewBox="3 3 18 18">
-                                {{- partial "svg/arrow-down.html" -}}
+        {{ if (.Scratch.Get "params").enable_site_search }}
+            <div id="search_tool">
+                <svg id="search_btn" class="toolbox-btn" width="18px" height="18px" viewBox="0 0 24 24">
+                    {{- partial "svg/search.html" -}}
+                </svg>
+                {{- partial "search-menu.html" -}}
+            </div>
+        {{ end }}
+
+        {{ if .Site.IsMultiLingual }}
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <div class="dropdown-btn pure-menu-link">
+                            <svg width="18px" height="18px" viewBox="0 0 24 24">
+                                {{- partial "svg/earth.html" -}}
                             </svg>
+                            <span class="dropdown-desc">{{ .Site.Language.LanguageName }}</span>
                         </div>
-                        <ul class="navbar-dropdown mt-1.5 -ml-2.5">
-                            {{- partial "navbar/nested-desktop.html" . -}}
+                        <ul class="pure-menu-children">
+                            {{ range .Site.Home.AllTranslations }}
+                            <li class="pure-menu-item">
+                                <a href="{{ .Permalink }}" class="pure-menu-link">{{ .Language.LanguageName }}</a>
+                            </li>
+                            {{ end }}
                         </ul>
                     </li>
-                {{- else -}}
-                    <li class="navbar-item {{ $navbar_item }}">
-                        <a href="{{ .URL }}">{{- .Name -}}</a>
-                    </li>
-                {{- end -}}
-            {{- end -}}
-        </ul>
-    </nav>
-
-    <nav id="navbar_sm" class="mt-2 hidden">
-        <ul>
-            {{ range .Site.Menus.navbar }}
-                <li class="text-sm mt-2">
-                    <a href="{{ .URL }}">{{- .Name -}}</a>
-                    {{- partial "navbar/nested-mobile.html" . -}}
-                </li>
-            {{ end }}
-        </ul>
-
-        <hr class="my-4">
-    </nav>
+                </ul>
+            </div>
+        {{ end }}
+    </div>
 </header>

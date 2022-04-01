@@ -1,0 +1,187 @@
+article {
+  line-height: 1.7;
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  hr {
+    @include my-8;
+  }
+
+  p {
+    overflow-wrap: break-word;
+  }
+
+  li {
+    list-style-type: disc;
+    @include my-2;
+
+    p {
+      @include my-0;
+    }
+  }
+
+  ul, ol {
+    @include my-4;
+    padding-left: 1.3rem;
+  }
+
+  ul {
+    ul, ol {
+      @include my-0;
+    }
+  }
+
+  ol {
+    li {
+      list-style-type: decimal;
+    }
+
+    ul, ol {
+      @include my-0;
+    }
+  }
+
+  blockquote {
+    @include px-4;
+    @include my-6;
+    @include mx-0;
+    border-left: 2px solid var(--color-border);
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    blockquote {
+      @include my-0;
+    }
+  }
+
+  code { /* Inline code style */
+    border-radius: .25rem;
+    padding: .2rem .375rem .2rem .375rem;
+    background-color: var(--color-background-inline-code);
+  }
+
+  pre {
+    @include my-6;
+    padding: 1rem;
+    overflow: auto;
+    border-radius: .5rem;
+    background-color: $gray-850;
+    color: $gray-50;
+
+    code { /* Disable inline code style */
+      border-radius: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
+
+  pre.mc-prism.hide code { /* Smooth transition for prism.js */
+    opacity: 0;
+  }
+
+  pre.mc-prism code { /* Smooth transition for prism.js */
+    opacity: 1;
+    transition: opacity 0.1s ease-in;
+  }
+
+  .code-toolbar {
+    .toolbar-item {
+      @include mx-1;
+    }
+  }
+
+  .highlight {
+    @include my-6;
+    position: relative;
+
+    .code-toolbar {
+      padding: 0;
+
+      pre {
+        padding: 1rem;
+        border-radius: 0.375rem;
+      }
+    }
+
+    > div,
+    > pre {
+      padding: 0.75rem;
+      border-radius: 0.375rem;
+
+      pre {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+
+        code { /* Disable inline code style */
+          border-radius: 0;
+          padding: 0;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .copy-code-button {
+    @include text-xs;
+    position: absolute;
+    right: 0;
+    height: 1.5rem;
+    top: -1.5rem;
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: var(--color-background-hover);
+    }
+  }
+
+  table.mc-table {
+    @include my-6;
+    table-layout: auto;
+    border-collapse: collapse;
+    display: block;
+    overflow-x: auto;
+
+    td, th {
+      @include px-3;
+      @include py-2;
+      border: 1px solid var(--color-border);
+    }
+  }
+
+  figure {
+    @include my-4;
+    text-align: center;
+    
+    @media screen and (min-width: $md_min_width) {
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+    }
+
+    figcaption {
+      @include my-2;
+    }
+  }
+
+  img {
+    @include mx-auto;
+  }
+}

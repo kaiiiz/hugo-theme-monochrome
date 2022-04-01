@@ -1,0 +1,46 @@
+.gallery-layout {
+  figure {
+    @media screen and (min-width: $md_min_width) {
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+    }
+
+    img {
+      @include mx-auto;
+    }
+  }
+
+  figcaption {
+    @include my-2;
+    @include text-xs;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .gallery-item {
+    margin-bottom: 4rem;
+  }
+
+  .gallery-item-title {
+    margin: 1rem 0;
+
+    a {
+      @include list-link-item;
+    }
+
+    span {
+      @include text-3xl;
+      @include font-bold;
+    }
+  }
+
+  .gallery-item-content {
+    @include my-4;
+  }
+
+  .gallery-item-statistic {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: max-content 1fr;
+  }
+}

@@ -1,0 +1,13 @@
+.icon {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  a {
+    color: var(--color-text);
+
+    &:hover {
+      color: var(--color-text-secondary);
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {{ if .img }}
-    <div class="w-20 h-20 my-8">
-        <img alt="balloon_head" width="90px" height="90px" src='{{- .img | absURL -}}' class="{{ .img_style }}">
+    <div class="balloon-head-item-img">
+        <img alt="balloon_head" src='{{- .img | relURL -}}' {{ if .balloon_circle }}class="rounded"{{ end }}>
     </div>
 {{ end }}

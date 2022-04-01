@@ -34,33 +34,6 @@ git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/hug
 
 Then add `theme = "hugo-theme-monochrome"` to your `config.toml`
 
-### Setup Dependencies
-
-Prepare a composite package.json file for your project.
-
-```bash
-hugo mod npm pack
-```
-
-Install dependencies
-
-```bash
-npm install
-```
-
-> Remember to ignore `node_modules` folder
-
-### Setup PostCSS
-
-hugo-theme-monochrome is powered by [tailwindcss](https://tailwindcss.com/). For better quality of CSS purging in production, you should add the following config to your `config.toml`, or the default settings generated from demo site will be applied.
-
-See [CSS purging with PostCSS](https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss) for more details.
-
-```toml
-[build]
-  writeStats = true
-```
-
 ### Customize the Theme
 
 See [Configuration](/hugo-theme-monochrome/configuration/).
@@ -71,7 +44,7 @@ See [Configuration](/hugo-theme-monochrome/configuration/).
 hugo server
 ```
 
-Minify CSS and JS resources, PurgeCSS will also be applied. The minifier of JavaScript here is powered by [ESBuild](https://github.com/evanw/esbuild).
+Minify CSS and JS resources. The minifier of JavaScript here is powered by [ESBuild](https://github.com/evanw/esbuild).
 
 ```bash
 hugo server --environment production
@@ -96,7 +69,5 @@ Push `/public` folder to your server. This site is built by using Github Action 
 ```bash
 git clone https://github.com/kaiiiz/hugo-theme-monochrome
 cd hugo-theme-monochrome/exampleSite
-hugo --themesDir=../.. mod npm pack
-npm install
 hugo --themesDir=../.. server
 ```

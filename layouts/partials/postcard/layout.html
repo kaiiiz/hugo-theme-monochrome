@@ -1,0 +1,38 @@
+{{ $ctx := .ctx }}
+{{ $pages := .pages }}
+
+<div class="postcard-layout content-margin">
+    {{ range ($ctx.Paginator).Pages }}
+        <a href="{{ .Permalink }}">
+            <div class="postcard-item">
+                <div class="postcard-title">
+                    <span>{{ .Title }}</span>
+                </div>
+                <div class="postcard-summary">
+                    <span>{{ .Summary | plainify }}</span>
+                </div>
+                <div class="postcard-metadata">
+                    <span>{{ .Date.Format "2006/01/02" }} · {{ template "breadcrumbtext" (dict "p1" .Page.Parent) }}</span>
+                </div>
+            </div>
+        </a>
+    {{ end }}
+    {{ template "_internal/pagination.html" $ctx }}
+</div>
+
+{{ define "breadcrumbtext" }}
+    {{ if .p1.Parent }}
+        {{ if not .p1.Parent.IsHome }}
+            {{ template "breadcrumbtext" (dict "p1" .p1.Parent)  }}
+        {{ end }}
+    {{ end }}
+
+    {{ if .p1.Parent }}
+        {{ if .p1.Parent.IsHome }}
+            <span>{{ .p1.Title }}</span>
+        {{ else }}
+            <span>/</span>
+            <span>{{ .p1.Title }}</span>
+        {{ end }}
+    {{ end }}
+{{ end }}

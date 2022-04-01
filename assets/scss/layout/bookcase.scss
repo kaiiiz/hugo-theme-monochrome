@@ -1,0 +1,54 @@
+.bookcase-layout {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 8rem);
+
+  .bookcase-item {
+    figure {
+      position: relative;
+    }
+
+    figcaption {
+      @include text-sm;
+      text-align: center;
+      margin-top: .7rem;
+
+      a {
+        color: var(--color-text);
+      }
+    }
+
+    img, .bookcase-item-overlay {
+      width: 8rem;
+      height: 12rem;
+      border-radius: 0.375rem;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      object-fit: cover;
+    }
+
+    .bookcase-item-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      opacity: 0.25;
+  
+      &:hover {
+        background-color: var(--color-background-overlay);
+      }
+    }
+  }
+}
+
+html[data-theme="light"] {
+  .bookcase-item-img-dark {
+    display: none;
+  }
+}
+
+html[data-theme="dark"] {
+  .bookcase-item-img-light {
+    display: none;
+  }
+}
+

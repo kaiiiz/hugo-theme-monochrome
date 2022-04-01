@@ -4,9 +4,6 @@ weight: 2
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
-- tag: 'v0.8.0'
-  description:
-  - 'Add `enableCollapsibleTOC` and `enableCollapsibleChangelogs` properties'
 ---
 
 # Theme Configuration
@@ -19,10 +16,8 @@ HTML is available.
 
 ```toml
 [params]
-navbarTitle = "Monochrome"
+navbar_title = "Monochrome" # default: site's `title`
 ```
-
-> default: site's [`title`](/hugo-theme-monochrome/configuration/site#site-title)
 
 ## Footer
 
@@ -30,40 +25,27 @@ HTML is available.
 
 ```toml
 [params]
-footer = "Copyright © 2021 by kaiiiz"
+footer = "Copyright © 2021 by kaiiiz" # default: None
 ```
-
-> default: footer section will not be rendered.
 
 ## Table of Contents
 
+TOC global settings.
+
 ```toml
 [params]
-enableTOC = false
+enable_toc = true # default: true
 ```
-
-> default: true
 
 ## Collapsible Menu
 
-To enable the collapsible TOC globally, add:
+Collapsible global settings.
 
 ```toml
 [params]
-enableCollapsibleTOC = true
+enable_collapsible_toc = false # default: false
+enable_collapsible_changelogs = false # default: false
 ```
-
-> default: false
-
-To enable the collapsible changelogs globally, add:
-
-```toml
-[params]
-enableCollapsibleChangelogs = true
-```
-
-> default: false
-
 ## Navbar menu
 
 Monochrome uses built-in menu system supported by hugo itself. (Checkout [document](https://gohugo.io/content-management/menus) for more deatil.) By default, the menu called `navbar` is used to decide which item need to be rendered on the navbar.
@@ -89,6 +71,8 @@ menu:
 ### Navbar settings in config
 If you try to put entry that aren't attached to a piece of content, or you want to organize your navbar into a single file, checkout [Add Non-content Entries to a Menu](https://gohugo.io/content-management/menus#add-non-content-entries-to-a-menu) or [Configuration file of demo site](https://github.com/kaiiiz/hugo-theme-monochrome/tree/main/exampleSite/config/_default/menus) and set these values in your toml settings file.
 
+toml example:
+
 ```toml
 [[menu.navbar]]
 identifier = "about"
@@ -110,6 +94,8 @@ url = "/categories/"
 weight = 80
 ```
 
+yaml example:
+
 ```yaml
 menu:
   navbar:
@@ -128,6 +114,16 @@ menu:
     weight: 80
 ```
 
+## List Layout
+
+```toml
+[params]
+  [params.list_layout]
+  enable_group_by_year = true # default: true
+  enable_show_date = true # default: true
+  enable_pagination = false # default: false
+```
+
 ## External Library
 
 ### MathJax
@@ -136,29 +132,33 @@ Use `$` to create inline result, `$$` to create block result.
 
 ```toml
 [params]
-enableMathJax = true
+enable_math = true # default: false
 ```
-
-> default: false
-
 
 ### Zooming.js
 
+Zooming.js global setting.
+
 ```toml
 [params]
-enableZoomingJS = false
+enable_zooming_js = false # default: true
 ```
-
-> default: true
 
 ### Site Search
 
+Add the following settings to config.toml:
+
 ```toml
-[params]
-enableSiteSearch = true
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 ```
 
-> default: false
+Enable site search
+
+```toml
+[params]
+enable_site_search = true # default: false
+```
 
 ## Syntax Highlighting
 
@@ -167,11 +167,12 @@ enableSiteSearch = true
 See [Syntax Highlighting](https://gohugo.io/content-management/syntax-highlighting) for more details.
 
 ```toml
-[params]
-enableCodeCopy = false
+[param]
+  [param.syntax_highlight]
+  lib = "builtin" # "builtin" | "prism.js" (default: "builtin")
+    [param.syntax_highlight.builtin]
+    enable_code_copy = true # default: true
 ```
-
-> default: true
 
 ### Using Prism.js (client-side)
 
@@ -186,20 +187,13 @@ lineNos = false
 Enable Prism.js
 
 ```toml
-[params]
-usePrismJS = true
+[param]
+  [params.syntax_highlight]
+  lib = "prism.js" # "builtin" | "prism.js" (default: "builtin")
+    [params.syntax_highlight.prism]
+    enable_code_copy = true # default: true
+    enable_line_no = true # default: true
 ```
-
-> default: false
-
-Enable line numbers feature
-
-```toml
-[params]
-enablePrismJSLineNo = true
-```
-
-> default: true
 
 ## SEO
 
@@ -207,11 +201,8 @@ enablePrismJSLineNo = true
 
 ```toml
 [params]
-author = "kaiiiz"
+author = "kaiiiz" # default: no author `meta` tag
 ```
-
-> default: not generate author `meta` tag
-
 
 ### Open Graph
 
@@ -219,10 +210,8 @@ A flag to render open graph internal template. See [Open Graph](https://gohugo.i
 
 ```toml
 [params]
-enableOpenGraph = false
+enable_open_graph = false # default: true
 ```
-
-> default: true
 
 ### Twitter Cards
 
@@ -230,7 +219,5 @@ A flag to render open twitter cards template. See [Twitter Cards](https://gohugo
 
 ```toml
 [params]
-enableTwitterCards = false
+enable_twitter_cards = false # default: true
 ```
-
-> default: true

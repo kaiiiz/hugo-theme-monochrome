@@ -1,21 +1,32 @@
-navbarTitle = 'Monochrome'
-footer = "Copyright © 2021 by kaiiiz"
-
-enableZoomingJS = true
-enableTOC = true
-enableSiteSearch = true
-enableMathJax = false
-
-# Codeblock
-usePrismJS = false
-enablePrismJSLineNo = true
-enableCodeCopy = true
-
-# SEO
-enableOpenGraph = true
-enableTwitterCards = true
+navbar_title = 'Monochrome'
+footer = "Copyright © 2021-2022 by kaiiiz"
 author = "kaiiiz"
 
+enable_zooming_js = true
+enable_toc = true
+enable_site_search = true
+enable_math = false
+
+# SEO
+enable_open_graph = true
+enable_twitter_cards = true
+
 # Collapsible Menu
-enableCollapsibleTOC = false
-enableCollapsibleChangelogs = true
+enable_collapsible_toc = false
+enable_collapsible_changelogs = true
+
+[list_layout]
+enable_group_by_year = true
+enable_show_date = true
+enable_pagination = false
+
+# syntax highlight settings
+[syntax_highlight]
+lib = "prism.js" # "builtin" | "prism.js"
+
+    [syntax_highlight.builtin]
+    enable_code_copy = true
+
+    [syntax_highlight.prism]
+    enable_code_copy = true
+    enable_line_no = false

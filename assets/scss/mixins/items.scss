@@ -1,0 +1,8 @@
+@mixin list-link-item {
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-border);
+
+  &:hover {
+    border-bottom-color: var(--color-text-secondary);
+  }
+}

@@ -3,13 +3,14 @@ unsafe= true
 
 [highlight]
 anchorLineNos = false
-codeFences = true
+codeFences = false
 guessSyntax = false
 hl_Lines = ""
 lineAnchors = ""
 lineNoStart = 1
-lineNos = true
+lineNos = false
 lineNumbersInTable = true
+noHl = false
 noClasses = true
 style = "monokai"
 tabWidth = 4

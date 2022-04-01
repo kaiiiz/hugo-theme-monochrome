@@ -1,0 +1,37 @@
+.pagination {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+    margin: 0 .1rem;
+  }
+
+  a, span {
+    color: var(--color-text-secondary);
+  }
+  
+  li.active a {
+    @include font-semibold;
+    color: var(--color-text);
+  }
+
+  li:not(.disabled) a:hover {
+    color: var(--color-text);
+
+    span {
+      color: inherit;
+    }
+  }
+
+  .disabled {
+    cursor: not-allowed;
+  }
+}
+
+.postcard-layout {
+  .pagination {
+    text-align: center;
+  }
+}

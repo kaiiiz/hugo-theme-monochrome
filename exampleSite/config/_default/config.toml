@@ -4,9 +4,7 @@ title = "Monochrome"
 theme = "hugo-theme-monochrome"
 defaultContentLanguage = "en"
 enableEmoji = true
-
-[build]
-writeStats = true
+paginate = 5
 
 [taxonomies]
 category = "categories"

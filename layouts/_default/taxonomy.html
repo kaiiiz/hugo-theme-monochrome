@@ -1,8 +1,8 @@
 {{- define "content" -}}
 
-<div>
-    <h1 class="font-bold text-2xl mb-4 mt-8">{{ .Title }}</h1>
-    <div class="my-2">
+<div class="content-margin">
+    <h1>{{ .Title }}</h1>
+    <div>
         {{- partial "terms-cloud.html" .Data.Terms.Alphabetical -}}
     </div>
 </div>

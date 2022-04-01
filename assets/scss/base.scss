@@ -1,0 +1,108 @@
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: system-ui,-apple-system,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji;
+}
+
+code, kbd, pre {
+  font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  @include text-3xl;
+}
+
+h2 {
+  @include text-2xl;
+}
+
+h3 {
+  @include text-xl;
+}
+
+h4 {
+  @include text-lg;
+}
+
+h5 {
+  @include text-base;
+}
+
+h6 {
+  @include text-sm;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+input {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  border: none;
+}
+
+mark {
+  background-color: var(--color-background-mark);
+}
+
+details > summary {
+  cursor: zoom-in;
+}
+
+details[open] > summary {
+  cursor: zoom-out;
+}
+
+.content-margin {
+  @include my-8;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: $sm_min_width) {
+  main {
+    width: $sm_main_width;
+  }
+}
+
+@media screen and (min-width: $md_min_width) {
+  main {
+    width: $md_main_width;
+  }
+}
+
+@media screen and (min-width: $lg_min_width) {
+  main {
+    width: $lg_main_width;
+  }
+}
+
+@media screen and (min-width: $xl_min_width) {
+  main {
+    width: $xl_main_width;
+  }
+}
+
+@media screen and (min-width: $xxl_main_width) {
+  main {
+    width: $xxl_main_width;
+  }
+}

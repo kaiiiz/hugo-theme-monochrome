@@ -4,17 +4,6 @@ weight: 3
 bookcase_cover_src: 'cover/catalogue.png'
 bookcase_cover_src_dark: 'cover/catalogue_dark.png'
 changelogs:
-- tag: 'v0.9.0'
-  description:
-  - 'Rename `collapsibleTOC` to `collapsible_toc` for consistency'
-  - 'Rename `collapsibleChangelogs` to `collapsible_changelogs` for consistency'
-- tag: 'v0.8.0'
-  description:
-  - 'Add `collapsibleTOC` and `collapsibleChangelogs` properties'
-- tag: 'v0.7.0'
-  description:
-  - 'Add `changelogs` property'
-  - "Update `disqus` fallback policy for none post pages"
 ---
 
 # Page Settings
@@ -35,7 +24,7 @@ navbar_title: "Monochrome"
 ---
 ```
 
-> default: theme's [`navbarTitle`](/hugo-theme-monochrome/configuration/theme#navbar-title)
+> default: theme's [`navbar_title`](/hugo-theme-monochrome/configuration/theme#navbar-title)
 
 ## Footer
 
@@ -49,6 +38,16 @@ footer: "Copyright © 2021 by kaiiiz"
 
 > default: theme's [`footer`](/hugo-theme-monochrome/configuration/theme/#footer)
 
+## Site Search
+
+Hide the page from the search result.
+
+```yaml
+search_hidden: true
+```
+
+> default: false
+
 ## Table of Contents
 
 ```yaml
@@ -57,7 +56,7 @@ toc: false
 ---
 ```
 
-> default: theme's [`enableTOC`](/hugo-theme-monochrome/configuration/theme/#table-of-contents)
+> default: theme's [`enable_toc`](/hugo-theme-monochrome/configuration/theme/#table-of-contents)
 
 ### Collapsible Table of Contents
 
@@ -67,7 +66,7 @@ collapsible_toc: false
 ---
 ```
 
-> default: theme's [`enableCollapsibleTOC`](/hugo-theme-monochrome/configuration/theme/#collapsible-menu)
+> default: theme's [`enable_collapsible_toc`](/hugo-theme-monochrome/configuration/theme/#collapsible-menu)
 
 ## Changelogs
 
@@ -97,7 +96,7 @@ collapsible_changelogs: false
 ---
 ```
 
-> default: theme's [`enableCollapsibleChangelogs`](/hugo-theme-monochrome/configuration/theme/#collapsible-menu)
+> default: theme's [`enable_collapsible_changelogs`](/hugo-theme-monochrome/configuration/theme/#collapsible-menu)
 
 ## External library
 
@@ -109,7 +108,7 @@ math: false
 ---
 ```
 
-> default: theme's [`enableMathJax`](/hugo-theme-monochrome/configuration/theme/#mathjax)
+> default: theme's [`enable_math`](/hugo-theme-monochrome/configuration/theme/#mathjax)
 
 ### Zooming.js
 
@@ -119,7 +118,7 @@ zooming_js: false
 ---
 ```
 
-> default: theme's [`enableZoomingJS`](/hugo-theme-monochrome/configuration/theme/#zoomingjs)
+> default: theme's [`enable_zooming_js`](/hugo-theme-monochrome/configuration/theme/#zooming_js)
 
 ### Disqus
 
@@ -153,17 +152,7 @@ code_copy: false
 ---
 ```
 
-> default: theme's [`enableCodeCopy`](/hugo-theme-monochrome/configuration/theme/#using-chroma-hugo-built-in)
-
-### Prism.js
-
-```yaml
----
-prism_lineno: false
----
-```
-
-> default: theme's [`enablePrismJSLineNo`](/hugo-theme-monochrome/configuration/theme/#using-prismjs)
+> default: theme's [`enable_code_copy`](/hugo-theme-monochrome/configuration/theme/#using-chroma-hugo-built-in)
 
 ## SEO
 
@@ -213,7 +202,7 @@ open_graph: false
 ---
 ```
 
-> default: theme's [`enableOpenGraph`](/hugo-theme-monochrome/configuration/theme/#open-graph)
+> default: theme's [`enable_open_graph`](/hugo-theme-monochrome/configuration/theme/#open-graph)
 
 ### Twitter Cards
 
@@ -225,4 +214,4 @@ twitter_cards: false
 ---
 ```
 
-> default: theme's [`enableTwitterCards`](/hugo-theme-monochrome/configuration/theme/#twitter-cards)
+> default: theme's [`enable_twitter_cards`](/hugo-theme-monochrome/configuration/theme/#twitter-cards)

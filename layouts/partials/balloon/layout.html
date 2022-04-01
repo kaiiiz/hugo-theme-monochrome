@@ -1,5 +1,5 @@
 {{ if .Params.balloon_resources }}
-    <div class="md:-ml-7">
+    <div class="balloon-layout">
         {{ partial "balloon/head-item.html" . }}
 
         {{ $res := .Site.GetPage .Params.balloon_resources }}

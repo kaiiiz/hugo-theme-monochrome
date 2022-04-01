@@ -1,0 +1,5 @@
+.term-item {
+  @include list-link-item;
+  margin-right: 0.375rem;
+  line-height: 1.7rem;
+}

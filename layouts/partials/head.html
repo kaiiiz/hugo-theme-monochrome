@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href='{{ "favicon.ico" | absURL }}' type="image/x-icon">
+    <link rel="shortcut icon" href='{{ "favicon.ico" | relURL }}' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         {{- if eq .Kind "home" -}}
@@ -24,26 +24,28 @@
     <meta name="author" content="{{ . }}" />
     {{ end }}
 
-    {{ if (.Scratch.Get "params").enableOpenGraph }}
+    {{ if (.Scratch.Get "params").enable_open_graph }}
         {{ template "_internal/opengraph.html" . }}
     {{ end }}
 
-    {{ if (.Scratch.Get "params").enableTwitterCards }}
+    {{ if (.Scratch.Get "params").enable_twitter_cards }}
         {{ template "_internal/twitter_cards.html" . }}
     {{ end }}
 
     {{- partial "resources/css.html" . -}}
 
-    {{ if (.Scratch.Get "params").gaCode }}
+    {{ if (.Scratch.Get "params").ga_code }}
         {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
 
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
+            document.documentElement.setAttribute("data-theme", "dark");
         } else {
-            document.documentElement.classList.remove('dark');
+            document.documentElement.setAttribute("data-theme", "light");
         }
     </script>
+
+    {{- partial "resources/js.html" . -}}
 </head>

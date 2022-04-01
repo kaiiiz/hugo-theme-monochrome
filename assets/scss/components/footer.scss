@@ -1,0 +1,6 @@
+footer {
+  @include my-4;
+  @include text-xs;
+  text-align: center;
+  color: var(--color-text-footer);
+}
