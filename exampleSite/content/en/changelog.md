@@ -5,6 +5,14 @@ toc: false
 
 # Changelog
 
+## v1.0.1 (2022/04/02)
+
+### Fixed
+
+* Fix `img` style issue, it should be `max-width` instead of `width` ([#10](https://github.com/kaiiiz/hugo-theme-monochrome/issues/10#issuecomment-1086111789))
+
+---
+
 ## v1.0.0 - First Major Release (2022/04/01)
 
 ### Added
