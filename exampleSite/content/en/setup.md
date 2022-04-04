@@ -62,7 +62,25 @@ hugo --environment production --minify
 
 ### Deployment
 
-Push `/public` folder to your server. This site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-monochrome/blob/main/.github/workflows/gh-pages.yml).
+Push `/public` folder to your server.\
+This site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-monochrome/blob/main/.github/workflows/gh-pages.yml).
+
+#### Deployment on github
+
+If you want to deploy your own site on github and you would like it to be built using Github Action and Github Pages you can follow [these instructions](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action) on the HUGO website with the only change being to uncomment the following line in Setup Hugo:
+```
+# extended: true
+```
+This is needed since Monochrome uses SCSS.\
+Otherwise the Github Action will fail with the following message:
+```
+Run hugo --minify
+Start building sites … 
+hugo v0.96.0-2fd4a7d3d6845e75f8b8ae3a2a7bd91438967bbb linux/amd64 BuildDate=2022-03-26T09:15:58Z VendorInfo=gohugoio
+Error: Error building site: TOCSS: failed to transform "scss/core.scss" (text/x-scss). Check your Hugo installation; you need the extended version to build SCSS/SASS.: this feature is not available in your current Hugo version, see https://goo.gl/YMrWcn for more information
+Total in 156 ms
+Error: Process completed with exit code 255.
+```
 
 ## Run exampleSite
 
