@@ -62,17 +62,22 @@ hugo --environment production --minify
 
 ### Deployment
 
-Push `/public` folder to your server.\
-This site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-monochrome/blob/main/.github/workflows/gh-pages.yml).
+Push `/public` folder to your server.
+
+> For reference, this site is built by using Github Action and Github Pages. The CI script is available [here](https://github.com/kaiiiz/hugo-theme-monochrome/blob/main/.github/workflows/gh-pages.yml).
 
 #### Deployment on github
 
 If you want to deploy your own site on github and you would like it to be built using Github Action and Github Pages you can follow [these instructions](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action) on the HUGO website with the only change being to uncomment the following line in Setup Hugo:
+
 ```
 # extended: true
 ```
-This is needed since Monochrome uses SCSS.\
+
+This is needed since Monochrome uses SCSS.
+
 Otherwise the Github Action will fail with the following message:
+
 ```
 Run hugo --minify
 Start building sites … 

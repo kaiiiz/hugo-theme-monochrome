@@ -74,7 +74,7 @@ gallery_title_link: 'https://github.com/kaiiiz'
 
 ### gallery_img_src
 
-Image URL. URL must be relative to base URL. (without `/` prefix)
+Image URL relative to the base URL. (with or without `/` prefix)
 
 For example:
 

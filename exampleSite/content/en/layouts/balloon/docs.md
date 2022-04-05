@@ -45,7 +45,7 @@ balloon_resources: "/about"
 
 ### balloon_img_src
 
-Balloon head image URL. URL must be relative to base URL. (without `/` prefix)
+Balloon head image URL. URL must be relative to the base URL. (without `/` prefix)
 
 For example:
 
@@ -65,7 +65,7 @@ balloon_img_src: 'thanks.jpg'
 
 ### balloon_img_src_dark
 
-Balloon head image URL for dark mode. URL must be relative to base URL. (without `/` prefix)
+Balloon head image URL for dark mode. URL must be relative to the base URL. (without `/` prefix)
 
 For example:
 
