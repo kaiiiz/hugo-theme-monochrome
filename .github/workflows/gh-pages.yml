@@ -1,6 +1,7 @@
 name: github pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -21,17 +22,6 @@ jobs:
         with:
           hugo-version: '0.80.0'
           extended: true
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-
-      - name: Composite package.json
-        run: hugo -s exampleSite --themesDir=../.. mod npm pack
-
-      - name: Setup Dependency
-        run: npm install --prefix exampleSite
 
       - name: Setup public
         run: git worktree add -B gh-pages ./exampleSite/public origin/gh-pages
