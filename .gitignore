@@ -152,3 +152,6 @@ Temporary Items
 .apdisk
 
 # End of https://www.toptal.com/developers/gitignore/api/macos
+
+# Ignore files generated from Hugo build
+/assets/jsconfig.json
