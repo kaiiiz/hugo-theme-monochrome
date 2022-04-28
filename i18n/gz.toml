@@ -1,0 +1,7 @@
+"tags" = "Etiquetas"
+"recent_posts" = "Entradas recentes"
+"toc" = "Táboa de contidos"
+"no_page_under_resouces" = 'Non hai ningunha páxina baixo {{ .resources_path }}. Precisas especificar o "{{ .resources_name }}" correctamente en front-matter e comprobar a existencia de entradas baixo esta carpeta.'
+"resources_not_found" = 'Contido non atopado. Precisas especificar "{{ .resources_name }}" correctamente en front-matter.'
+"search" = "Buscar entradas"
+"changelogs" = "Memoria de cambios"
