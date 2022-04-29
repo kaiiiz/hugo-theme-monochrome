@@ -29,6 +29,9 @@ hugo new site <project name>
 ```bash
 cd <project name>
 git init
+```
+
+```
 git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/hugo-theme-monochrome
 ```
 
@@ -75,7 +78,7 @@ This is needed since Monochrome uses SCSS.\
 Otherwise the Github Action will fail with the following message:
 ```
 Run hugo --minify
-Start building sites … 
+Start building sites …
 hugo v0.96.0-2fd4a7d3d6845e75f8b8ae3a2a7bd91438967bbb linux/amd64 BuildDate=2022-03-26T09:15:58Z VendorInfo=gohugoio
 Error: Error building site: TOCSS: failed to transform "scss/core.scss" (text/x-scss). Check your Hugo installation; you need the extended version to build SCSS/SASS.: this feature is not available in your current Hugo version, see https://goo.gl/YMrWcn for more information
 Total in 156 ms
@@ -87,5 +90,7 @@ Error: Process completed with exit code 255.
 ```bash
 git clone https://github.com/kaiiiz/hugo-theme-monochrome
 cd hugo-theme-monochrome/exampleSite
+```
+```
 hugo --themesDir=../.. server
 ```
