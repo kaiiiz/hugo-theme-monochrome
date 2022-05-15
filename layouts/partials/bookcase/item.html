@@ -1,6 +1,8 @@
 {{ $cover_src := .Params.bookcase_cover_src | default .Params.bookcase_cover_src_dark }}
 {{ $cover_src_dark := .Params.bookcase_cover_src_dark | default .Params.bookcase_cover_src }}
+{{ $hide_element := .Params.bookcase_hide | default false }}
 
+{{ if eq $hide_element false }}
 <div class="bookcase-item">
     <figure>
         <img src="{{ $cover_src | relURL }}" class="bookcase-item-img-light">
@@ -11,3 +13,4 @@
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </figcaption>
 </div>
+{{ end }}
