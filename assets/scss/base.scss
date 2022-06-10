@@ -62,11 +62,11 @@ mark {
 }
 
 details > summary {
-  cursor: zoom-in;
+  cursor: pointer;
 }
 
 details[open] > summary {
-  cursor: zoom-out;
+  cursor: pointer;
 }
 
 .content-margin {
