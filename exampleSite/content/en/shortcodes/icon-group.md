@@ -27,7 +27,7 @@ Wrap icons with grid layout
 ```
 
 {{< icon-group >}}
-{{< icon name="github" >}}
-{{< icon name="rss" >}}
-{{< icon name="twitter" >}}
+{{< icon vendor="feather" name="github" >}}
+{{< icon vendor="feather" name="rss" >}}
+{{< icon vendor="feather" name="twitter" >}}
 {{< /icon-group >}}
