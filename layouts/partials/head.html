@@ -48,4 +48,8 @@
     </script>
 
     {{- partial "resources/js.html" . -}}
+
+    {{ if fileExists "/static/user.css" -}}
+        <link rel="stylesheet" href="{{ urls.JoinPath .Site.BaseURL "user.css" }}">
+    {{- end }}
 </head>

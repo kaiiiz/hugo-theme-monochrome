@@ -221,3 +221,8 @@ A flag to render open twitter cards template. See [Twitter Cards](https://gohugo
 [params]
 enable_twitter_cards = false # default: true
 ```
+
+## Custom CSS
+
+You can override the default styles by creating a new `/static/user.css` file.
+
