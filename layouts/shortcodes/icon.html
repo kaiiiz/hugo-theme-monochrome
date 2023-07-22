@@ -1,5 +1,6 @@
-{{ $icon_link := .Get "link" }}
-{{ $icon_name := .Get "name" }}
+{{- $icon_sets := .Get "sets" -}}
+{{- $icon_link := .Get "link" -}}
+{{- $icon_name := .Get "name" -}}
 
 <div class="icon">
     {{ if $icon_link }}
@@ -7,8 +8,14 @@
     {{ else }}
         <div>
     {{ end }}
-        {{ if $icon_name }}
-            {{- partial (printf "svg/%s.html" $icon_name) -}}
+        {{ if eq $icon_sets "feather" }}
+            {{ $feature_sprite := resources.Get "lib/icns/feather-sprite-v4.29.0.svg" }}
+            <svg
+                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <use href="{{ $feature_sprite.RelPermalink }}/#{{ $icon_name }}"/>
+            </svg>
         {{ end }}
     {{ if $icon_link }}
         </a>
