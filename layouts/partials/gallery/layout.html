@@ -20,7 +20,7 @@
                     {{ if .Params.gallery_img_src }}
                         <figure>
                             {{ if $img_link }}<a target="_blank" rel="noopener" href="{{ $img_link }}">{{ end }}
-                                <img src="{{ .Params.gallery_img_src | relURL }}" alt="{{ .Title }}">
+                                <img src="{{ .Params.gallery_img_src | absURL }}" alt="{{ .Title }}">
                             {{ if $img_link }}</a>{{ end }}
                             {{ with .Params.gallery_img_caption }}
                                 <figcaption>
