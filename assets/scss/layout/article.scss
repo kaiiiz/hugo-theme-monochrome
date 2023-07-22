@@ -75,7 +75,7 @@ article {
   pre {
     @include my-6;
     padding: 1rem;
-    overflow: auto;
+    overflow-x: auto;
     border-radius: .5rem;
     background-color: $gray-850;
     color: $gray-50;
@@ -119,6 +119,7 @@ article {
     > pre {
       padding: 0.75rem;
       border-radius: 0.375rem;
+      overflow-x: auto;
 
       pre {
         padding: 0;
