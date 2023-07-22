@@ -35,7 +35,7 @@
     {{- partial "resources/css.html" . -}}
 
     {{ if (.Scratch.Get "params").ga_code }}
-        {{ template "_internal/google_analytics_async.html" . }}
+        {{ template "_internal/google_analytics.html" . }}
     {{ end }}
 
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
