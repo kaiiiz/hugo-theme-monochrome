@@ -22,6 +22,11 @@
 %balloon-item-content-base {
   display: flex;
   flex: 1 1 0%;
+  margin-left: -12px;
+
+  @media screen and (max-width: $md_min_width) {
+    margin-left: 0;
+  }
 }
 
 
@@ -66,6 +71,7 @@
 
     .balloon-head-item-content {
       @extend %balloon-item-content-base;
+      margin: 0;
       align-items: center;
 
       @media screen and (max-width: $md_min_width) {
