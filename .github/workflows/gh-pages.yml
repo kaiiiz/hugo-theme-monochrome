@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
@@ -39,3 +39,4 @@ jobs:
           deploy_key: ${{ secrets.SSH_PRIVATE }}
           publish_dir: ./exampleSite/public
           publish_branch: gh-pages
+          draft: true
