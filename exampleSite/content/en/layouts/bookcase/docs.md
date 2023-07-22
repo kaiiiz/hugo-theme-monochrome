@@ -99,6 +99,11 @@ bookcase_cover_src_dark: 'thanks.jpg'
 
 > default: fallback to bookcase_cover_src, if failed, image become empty
 
+### bookcase_cover_title
+
+The title used in the bookcase cover
+
+> default: fallback to the title of the page
 
 ### weight
 

@@ -1,5 +1,6 @@
 {{ $cover_src := .Params.bookcase_cover_src | default .Params.bookcase_cover_src_dark }}
 {{ $cover_src_dark := .Params.bookcase_cover_src_dark | default .Params.bookcase_cover_src }}
+{{ $cover_title := .Params.bookcase_cover_title | default .Title }}
 
 <div class="bookcase-item">
     <figure>
@@ -8,6 +9,6 @@
         <a href="{{ .RelPermalink }}" class="bookcase-item-overlay"></a>
     </figure>
     <figcaption>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <a href="{{ .RelPermalink }}">{{ $cover_title }}</a>
     </figcaption>
 </div>
