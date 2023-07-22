@@ -105,6 +105,12 @@ The title used in the bookcase cover
 
 > default: fallback to the title of the page
 
+### bookcase_hidden
+
+Hide this item from bookcase
+
+> default: false
+
 ### weight
 
 ```yaml

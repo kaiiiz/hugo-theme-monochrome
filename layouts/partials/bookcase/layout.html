@@ -14,7 +14,10 @@
     {{ with $res }}
         <div class="bookcase-layout content-margin">
             {{ range . }}
-                {{- partial "bookcase/item.html" . -}}
+                {{ $hidden := .Params.bookcase_hidden | default false }}
+                {{ if not $hidden -}}
+                    {{- partial "bookcase/item.html" . -}}
+                {{- end }}
             {{ end }}
         </div>
     {{ end }}
