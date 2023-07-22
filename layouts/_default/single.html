@@ -7,7 +7,7 @@
 
 {{ if .Content }}
     <div class="content-margin">
-        {{- partial "content.html" . -}}
+        {{- partial "content.html" (dict "ctx" . "content" .Content) -}}
     </div>
 {{ end }}
 

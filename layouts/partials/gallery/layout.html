@@ -1,6 +1,6 @@
 {{ if .Content }}
 <div class="content-margin">
-    {{- partial "content.html" . -}}
+    {{- partial "content.html" (dict "ctx" . "content" .Content) -}}
 </div>
 {{ end }}
 
@@ -42,7 +42,7 @@
 
                     {{ if .Content }}
                         <div class="gallery-item-content">
-                            {{- partial "content.html" . -}}
+                            {{- partial "content.html" (dict "ctx" . "content" .Content) -}}
                         </div>
                     {{ end }}
 
