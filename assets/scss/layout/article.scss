@@ -171,11 +171,6 @@ article {
     @include my-4;
     text-align: center;
     
-    @media screen and (min-width: $md_min_width) {
-      margin-left: -1.25rem;
-      margin-right: -1.25rem;
-    }
-
     figcaption {
       @include my-2;
     }
