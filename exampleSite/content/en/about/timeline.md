@@ -12,6 +12,8 @@ gallery_statistic:
   value: '*value3*'
 ---
 
+* 2023/07/23 - v2.0.0 release
+* 2022/04/02 - v1.0.1 release
 * 2022/04/01 - v1.0.0 release
 * 2022/02/25 - v0.9.2 release
 * 2022/02/25 - v0.9.1 release

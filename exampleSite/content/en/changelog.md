@@ -5,6 +5,34 @@ toc: false
 
 # Changelog
 
+## v2.0.0 (2023/07/23)
+
+- Fix
+	- Fix navbar item padding ([#15](https://github.com/kaiiiz/hugo-theme-monochrome/issues/15))
+	- Fix TOC collapse cursor style ([#25](https://github.com/kaiiiz/hugo-theme-monochrome/issues/25), [#36](https://github.com/kaiiiz/hugo-theme-monochrome/pull/36))
+	- Fix site search resource retrieval bug ([#29](https://github.com/kaiiiz/hugo-theme-monochrome/issues/29))
+	- Fix wrong variable in base.scss ([#44](https://github.com/kaiiiz/hugo-theme-monochrome/pull/44))
+	- Fix inappropriate navbar decoration for item that links to home page
+	- Fix color scheme button FOUC bug
+	- Fix twitter card text color in dark mode
+- Changed
+	- **BREAKING CHANGE** The min hugo version requirement is now `0.112.0`
+	- **BREAKING CHANGE** Support all feather icons, `vendor="feather"` is required to migrate from old shortcode ([#19](https://github.com/kaiiiz/hugo-theme-monochrome/issues/19))
+	- Images in an aritcle are centered by default ([#35](https://github.com/kaiiiz/hugo-theme-monochrome/issues/35))
+	- Upgrade dependencies
+		- Prism: v1.27.0 -> v1.29.0
+		- Fuse.js: v6.5.3 -> v6.6.2
+- New
+	- Support custom CSS ([#23](https://github.com/kaiiiz/hugo-theme-monochrome/issues/23), [#33](https://github.com/kaiiiz/hugo-theme-monochrome/issues/33))
+	- Support GA4 ([#37](https://github.com/kaiiiz/hugo-theme-monochrome/issues/37))
+	- Support custom title for bookcase item ([#32](https://github.com/kaiiiz/hugo-theme-monochrome/issues/32))
+	- Support hiding bookcase items ([#27](https://github.com/kaiiiz/hugo-theme-monochrome/issues/27))
+	- Add default color scheme setting ([#40](https://github.com/kaiiiz/hugo-theme-monochrome/issues/40))
+	- Add `bookcase` shortcode ([#34](https://github.com/kaiiiz/hugo-theme-monochrome/issues/34))
+	- Add `recent-posts` shortcode
+
+---
+
 ## v1.0.1 (2022/04/02)
 
 ### Fixed

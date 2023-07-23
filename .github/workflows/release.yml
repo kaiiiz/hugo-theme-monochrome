@@ -1,0 +1,22 @@
+name: github pages
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: dev
+          token: ${{ secrets.ACCESS_TOKEN }}
+          ssh-key: ${{ secrets.SSH_PRIVATE }}
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          draft: true

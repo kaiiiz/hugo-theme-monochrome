@@ -2,8 +2,8 @@ name: github pages
 
 on:
   push:
-    tags:
-      - "v*.*.*"
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: dev
+          ref: main
           token: ${{ secrets.ACCESS_TOKEN }}
           ssh-key: ${{ secrets.SSH_PRIVATE }}
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -39,7 +39,3 @@ jobs:
           publish_dir: ./exampleSite/public
           publish_branch: gh-pages
 
-      - name: Create Release
-        uses: ncipollo/release-action@v1
-        with:
-          draft: true

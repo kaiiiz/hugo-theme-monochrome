@@ -30,4 +30,4 @@ lib = "prism.js" # "builtin" | "prism.js"
 
     [syntax_highlight.prism]
     enable_code_copy = true
-    enable_line_no = true
+    enable_line_no = false
