@@ -6,6 +6,7 @@ ul.list-layout {
     margin-bottom: .5rem;
     line-height: 1.625;
     display: list-item;
+    list-style-type: none;
 
     a {
       @include list-link-item;
