@@ -40,6 +40,15 @@
 
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
     <script>
+        if (!('theme' in localStorage)) {
+            {{ $color_scheme := (.Scratch.Get "params").color_scheme -}}
+            {{- if eq $color_scheme "light" -}}
+            localStorage.theme = 'light';
+            {{- else if eq $color_scheme "dark" -}}
+            localStorage.theme = 'dark';
+            {{- end }}
+        }
+
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.setAttribute("data-theme", "dark");
         } else {

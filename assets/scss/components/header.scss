@@ -1,3 +1,15 @@
+html[data-theme="dark"] {
+  #dark_mode_btn {
+    display: none;
+  }
+}
+
+html[data-theme="light"] {
+  #light_mode_btn {
+    display: none;
+  }
+}
+
 header {
   display: flex;
   justify-content: space-between;

@@ -1,11 +1,9 @@
 {{/*  Header  */}}
 {{ $header_js := resources.Get "js/header.js" }}
-{{ $color_scheme := (.Scratch.Get "params").color_scheme }}
-{{ $header_build_opts := dict "params" (dict "color_scheme" $color_scheme) }}
 {{- if hugo.IsProduction -}}
-    {{ $header_js = $header_js | js.Build (merge $header_build_opts (dict "minify" true)) | resources.Fingerprint "sha512" -}}
+    {{ $header_js = $header_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
 {{- else -}}
-    {{ $header_js = $header_js | js.Build $header_build_opts -}}
+    {{ $header_js = $header_js | js.Build -}}
 {{- end -}}
 <script defer src="{{ $header_js.RelPermalink }}" integrity="{{- $header_js.Data.Integrity -}}"></script>
 
