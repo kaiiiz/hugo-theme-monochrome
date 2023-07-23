@@ -184,3 +184,14 @@ article {
     display: block;
   }
 }
+
+html[data-theme='dark'] {
+  .twitter-tweet {
+    color: var(--color-text);
+
+    a {
+      color: var(--color-link);
+    }
+  } 
+}
+
