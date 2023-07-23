@@ -1,10 +1,9 @@
 name: github pages
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
+    tags:
+      - "v*.*.*"
 
 jobs:
   deploy:
