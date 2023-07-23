@@ -29,7 +29,7 @@ jobs:
         run: rm -rf ./exampleSite/public/*
 
       - name: Build
-        run: hugo -s exampleSite --themesDir=../.. --minify --environment production -b https://kaiiiz.github.io/hugo-theme-monochrome
+        run: hugo -s exampleSite --baseURL https://kaiiiz.github.io/hugo-theme-monochrome --themesDir=../.. --minify --environment production
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
