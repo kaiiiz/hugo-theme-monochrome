@@ -1,5 +1,5 @@
 import * as params from '@params';
-import Fuse from '../lib/js/fuse-v6.5.3.min.js';
+import Fuse from '../lib/js/fuse-v6.6.2.min.js';
 
 async function init() {
     const data = fetch(params.index_url);
@@ -10,12 +10,12 @@ async function init() {
     const search_menu_input = document.getElementById("search_menu_input");
     const search_menu_results = document.getElementById("search_menu_results");
 
-    search_btn.addEventListener("click", function () {
+    search_btn.addEventListener("click", function() {
         search_menu_wrapper.classList.remove("hidden");
         search_menu_input.focus();
     });
 
-    search_menu_close_btn.addEventListener("click", function () {
+    search_menu_close_btn.addEventListener("click", function() {
         search_menu_wrapper.classList.add("hidden");
     });
 
@@ -129,7 +129,7 @@ async function init() {
         }
     };
 
-    search_menu_input.addEventListener("input", function () {
+    search_menu_input.addEventListener("input", function() {
         if (this.value === '') {
             buildAllItems();
         } else {
