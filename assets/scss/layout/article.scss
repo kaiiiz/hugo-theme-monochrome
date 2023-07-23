@@ -179,5 +179,6 @@ article {
 
   img {
     @include mx-auto;
+    display: block;
   }
 }
