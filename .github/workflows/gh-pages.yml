@@ -39,4 +39,8 @@ jobs:
           deploy_key: ${{ secrets.SSH_PRIVATE }}
           publish_dir: ./exampleSite/public
           publish_branch: gh-pages
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
           draft: true
