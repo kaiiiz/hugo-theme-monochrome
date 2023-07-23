@@ -226,3 +226,14 @@ enable_twitter_cards = false # default: true
 
 You can override the default styles by creating a new `/static/user.css` file.
 
+## Default Color Scheme
+
+You can set the default color scheme for your website
+
+```toml
+[params]
+color_scheme = "dark" # "light" or "dark"
+```
+
+> default: "light"
+

@@ -12,6 +12,7 @@
 {{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enable_math | default false) }}
 {{ .Scratch.SetInMap "params" "enable_collapsible_toc" (.Params.collapsible_toc | default .Site.Params.enable_collapsible_toc | default false) }}
 {{ .Scratch.SetInMap "params" "enable_collapsible_changelogs" (.Params.collapsible_changelogs | default .Site.Params.enable_collapsible_changelogs | default false) }}
+{{ .Scratch.SetInMap "params" "color_scheme" (.Site.Params.color_scheme | default "light") }}
 
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
