@@ -11,33 +11,34 @@ Monochrome built-in icons.
 ## Usage
 
 ```
-{{</* icon name="" link="" */>}}
+{{</* icon vendor="" name="" link="" */>}}
 ```
 
 Paramters:
 
+- `vendor`: Icon vendor (Supported value: `feather`)
 - `link`: Render link for icon
 - `name`: Icon name
 
-## Available Built-in Icons
+## Available Icons
 
 Icons from [Feather icons](https://feathericons.com/)
 
 | name     | svg                                  |
 | -------- | ------------------------------------ |
-| earth    | {{< icon name="earth" >}}    |
-| moon     | {{< icon name="moon" >}}     |
-| sun      | {{< icon name="sun" >}}      |
-| github   | {{< icon name="github" >}}   |
-| facebook | {{< icon name="facebook" >}} |
-| rss      | {{< icon name="rss" >}}      |
-| twitter  | {{< icon name="twitter" >}}  |
-| mail     | {{< icon name="mail" >}}     |
+| globe    | {{< icon vendor="feather" name="globe" >}}    |
+| moon     | {{< icon vendor="feather" name="moon" >}}     |
+| sun      | {{< icon vendor="feather" name="sun" >}}      |
+| github   | {{< icon vendor="feather" name="github" >}}   |
+| facebook | {{< icon vendor="feather" name="facebook" >}} |
+| rss      | {{< icon vendor="feather" name="rss" >}}      |
+| twitter  | {{< icon vendor="feather" name="twitter" >}}  |
+| mail     | {{< icon vendor="feather" name="mail" >}}     |
 
 ## Examples
 
 ```html
-{{</* icon name="github" link="https://github.com/kaiiiz/hugo-theme-monochrome" */>}}
+{{</* icon vendor="feather" name="github" link="https://github.com/kaiiiz/hugo-theme-monochrome" */>}}
 ```
 
-{{< icon name="github" link="https://github.com/kaiiiz/hugo-theme-monochrome" >}}
+{{< icon vendor="feather" name="github" link="https://github.com/kaiiiz/hugo-theme-monochrome" >}}

@@ -13,8 +13,8 @@
 
     {{ if not .p1.IsHome }}
         <li><span>/</span></li>
-        <li><a href="{{ .p1.Permalink | relURL }}">{{ .p1.Title }}</a></li>
+        <li><a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a></li>
     {{ else }}
-        <li><a href="{{ .p1.Permalink | relURL }}">Home</a></li>
+        <li><a href="{{ .p1.Permalink }}">Home</a></li>
     {{ end }}
 {{ end }}

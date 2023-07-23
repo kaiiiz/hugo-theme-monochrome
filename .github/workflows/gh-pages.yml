@@ -1,13 +1,14 @@
 name: github pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
@@ -19,19 +20,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.80.0'
+          hugo-version: '0.110.0'
           extended: true
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-
-      - name: Composite package.json
-        run: hugo -s exampleSite --themesDir=../.. mod npm pack
-
-      - name: Setup Dependency
-        run: npm install --prefix exampleSite
 
       - name: Setup public
         run: git worktree add -B gh-pages ./exampleSite/public origin/gh-pages
@@ -49,3 +39,4 @@ jobs:
           deploy_key: ${{ secrets.SSH_PRIVATE }}
           publish_dir: ./exampleSite/public
           publish_branch: gh-pages
+          draft: true

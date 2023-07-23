@@ -24,6 +24,6 @@
     </div>
 
     <div class="balloon-head-item-content">
-        {{- partial "content.html" . -}}
+        {{- partial "content.html" (dict "ctx" . "content" .Content) -}}
     </div>
 </div>

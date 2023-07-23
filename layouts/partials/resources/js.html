@@ -44,16 +44,16 @@
             <script defer src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
         {{ end }}
     {{ else if eq (.Scratch.Get "params").syntax_highlight.lib "prism.js" }}
-        {{ $prism_js := slice (resources.Get "lib/js/prism-v1.27.0.min.js") }}
+        {{ $prism_js := slice (resources.Get "lib/js/prism-v1.29.0.min.js") }}
 
         {{ $enable_line_no := (.Scratch.Get "params").syntax_highlight.prism.enable_line_no | default true }}
         {{ if $enable_line_no }}
-            {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-line-numbers-v1.27.0.min.js") }}
+            {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-line-numbers-v1.29.0.min.js") }}
         {{ end }}
 
         {{ $enable_code_copy := (.Scratch.Get "params").syntax_highlight.prism.enable_code_copy | default true }}
         {{ if $enable_code_copy }}
-            {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.27.0.min.js") }}
+            {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.29.0.min.js") }}
         {{ end }}
 
         {{ $prism_js = $prism_js | append (resources.Get "js/prism-autoloader.js") | append (resources.Get "js/prism.js") | resources.Concat "js/prism.js" }}
@@ -68,7 +68,7 @@
 
 {{ if (.Scratch.Get "params").enable_site_search }}
     {{ $target_path := printf "js/search-%s.js" .Site.LanguageCode }}
-    {{ $index_url := "index.json" | relLangURL }}
+    {{ $index_url := "index.json" | absLangURL }}
     {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}
     {{ $search_js := resources.Get "js/search.js" | js.Build $build_opts }}
     {{- if hugo.IsProduction -}}
@@ -81,9 +81,9 @@
 
 {{/*  Load highlighter for emgithub  */}}
 {{ if .HasShortcode "emgithub" }}
-    {{ $js := slice (resources.Get "lib/js/prism-v1.27.0.min.js") }}
-    {{ $js = $js | append (resources.Get "lib/js/prism-line-numbers-v1.27.0.min.js") }}
-    {{ $js = $js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.27.0.min.js") }}
+    {{ $js := slice (resources.Get "lib/js/prism-v1.29.0.min.js") }}
+    {{ $js = $js | append (resources.Get "lib/js/prism-line-numbers-v1.29.0.min.js") }}
+    {{ $js = $js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.29.0.min.js") }}
     {{ $js = $js | append (resources.Get "js/prism-autoloader.js") }}
     {{ $js = $js | resources.Concat "js/emgithub-prism.js" }}
     {{- if hugo.IsProduction -}}

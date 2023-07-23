@@ -1,0 +1,24 @@
+{{ $ctx := .ctx }}
+{{ $title := .title }}
+{{ $content := .content }}
+{{ $res := .res }}
+
+<div class="content-margin">
+    <div class="my-8">
+        <h1>{{ $title }}</h1>
+        {{ if $content }}
+            {{- partial "content.html" (dict "ctx" $ctx "content" $content) -}}
+        {{ end }}
+    </div>
+
+    {{ with $res }}
+        <div class="bookcase-layout content-margin">
+            {{ range . }}
+                {{ $hidden := .Params.bookcase_hidden | default false }}
+                {{ if not $hidden -}}
+                    {{- partial "bookcase/item.html" . -}}
+                {{- end }}
+            {{ end }}
+        </div>
+    {{ end }}
+</div>

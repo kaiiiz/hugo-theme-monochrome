@@ -1,7 +1,7 @@
 "tags" = "標籤"
 "recent_posts" = "最近文章"
 "toc" = "文章目錄"
-"no_page_under_resouces" = '{{ .resources_path }} 下沒有找到任何頁面. 你需要檢查 "{{ .resources_name }}" 在 front-matter 的設定是否正確並確認該目錄下是否有頁面存在'
-"resources_not_found" = '找不到資源，你需要檢查 "{{ .resources_name }}" 在 front-matter 的設定是否正確'
+"no_page_under_resouces" = '{{ .resources_path }} 下沒有找到任何頁面. 你需要檢查 "{{ .resources_name }}" 的設定是否正確並確認該目錄下是否有頁面存在'
+"resources_not_found" = '找不到資源，你需要檢查 "{{ .resources_name }}" 的設定是否正確'
 "search" = "搜索文章"
 "changelogs" = "更新日誌"

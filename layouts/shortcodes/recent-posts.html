@@ -1,0 +1,35 @@
+{{ $sortby := .Get "sortby" }}
+{{ $limit := int (.Get "limit") }}
+{{ $pages := .Site.RegularPages }}
+
+{{- if $pages -}}
+{{- if eq $sortby "publishDate" -}}
+    {{- $pages = $pages.ByPublishDate.Reverse -}}
+{{- else if eq $sortby "lastMod" -}}
+    {{- $pages = $pages.ByLastmod.Reverse -}}
+{{- else -}}
+    {{- errorf "Unsupported recent posts sort option" -}}
+{{- end -}}
+
+{{- if gt $limit 0 -}}
+{{- $pages = first $limit $pages -}}
+{{- end -}}
+
+<ul class="list-layout">
+    {{ range $pages }}
+        <li>
+            <a href="{{ .RelPermalink }}">
+                {{- .Title -}}
+            </a>
+            <span>
+            {{- if eq $sortby "publishDate" -}}
+                {{- .PublishDate.Format "2006/01/02" -}}
+            {{- else if eq $sortby "lastMod" -}}
+                {{- .Lastmod.Format "2006/01/02" -}}
+            {{- end -}}
+            </span>
+        </li>
+    {{ end }}
+</ul>
+{{- end -}}
+

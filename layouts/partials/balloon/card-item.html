@@ -6,6 +6,6 @@
     </div>
 
     <div class="balloon-card-item-content">
-        {{- partial "content.html" .context -}}
+        {{- partial "content.html" (dict "ctx" .ctx "content" .ctx.Content) -}}
     </div>
 </div>

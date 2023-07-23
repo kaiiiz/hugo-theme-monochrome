@@ -1,0 +1,25 @@
+{{ $section_name := .Get "section" }}
+
+{{ $section := .Site.GetPage $section_name }}
+{{ if not $section }}
+  {{ errorf "bookcase resource not found" }}
+{{ end }}
+
+{{ if ne $section.Kind "section" }}
+  {{ errorf "bookcase resource must be a section" }}
+{{ end }}
+
+{{ $list_sections := $section.Params.bookcase_list_sections | default true }}
+{{ $list_pages := $section.Params.bookcase_list_pages | default true }}
+
+{{ $pages := default nil }}
+{{ if and $list_sections $list_pages }}
+    {{ $pages = $section.Pages }}
+{{ else if $list_sections }}
+    {{ $pages = $section.Sections }}
+{{ else if $list_pages }}
+    {{ $pages = $section.RegularPages }}
+{{ end }}
+
+{{ partial "bookcase/layout.html" (dict "ctx" . "title" $section.Title "content" $section.Content "res" $pages) }}
+

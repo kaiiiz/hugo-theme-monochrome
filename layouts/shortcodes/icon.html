@@ -1,5 +1,6 @@
-{{ $icon_link := .Get "link" }}
-{{ $icon_name := .Get "name" }}
+{{- $icon_vendor := .Get "vendor" -}}
+{{- $icon_link := .Get "link" -}}
+{{- $icon_name := .Get "name" -}}
 
 <div class="icon">
     {{ if $icon_link }}
@@ -7,8 +8,8 @@
     {{ else }}
         <div>
     {{ end }}
-        {{ if $icon_name }}
-            {{- partial (printf "svg/%s.html" $icon_name) -}}
+        {{ if eq $icon_vendor "feather" }}
+            {{ partial "svg/feather.html" $icon_name }}
         {{ end }}
     {{ if $icon_link }}
         </a>

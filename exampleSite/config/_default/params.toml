@@ -1,6 +1,7 @@
 navbar_title = 'Monochrome'
-footer = "Copyright © 2021-2022 by kaiiiz"
+footer = "Copyright © 2021-2023 by kaiiiz"
 author = "kaiiiz"
+color_scheme = "light"
 
 enable_zooming_js = true
 enable_toc = true
@@ -29,4 +30,4 @@ lib = "prism.js" # "builtin" | "prism.js"
 
     [syntax_highlight.prism]
     enable_code_copy = true
-    enable_line_no = false
+    enable_line_no = true

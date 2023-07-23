@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href='{{ "favicon.ico" | relURL }}' type="image/x-icon">
+    <link rel="shortcut icon" href='{{ "favicon.ico" | absURL }}' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         {{- if eq .Kind "home" -}}
@@ -35,11 +35,20 @@
     {{- partial "resources/css.html" . -}}
 
     {{ if (.Scratch.Get "params").ga_code }}
-        {{ template "_internal/google_analytics_async.html" . }}
+        {{ template "_internal/google_analytics.html" . }}
     {{ end }}
 
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
     <script>
+        if (!('theme' in localStorage)) {
+            {{ $color_scheme := (.Scratch.Get "params").color_scheme -}}
+            {{- if eq $color_scheme "light" -}}
+            localStorage.theme = 'light';
+            {{- else if eq $color_scheme "dark" -}}
+            localStorage.theme = 'dark';
+            {{- end }}
+        }
+
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.setAttribute("data-theme", "dark");
         } else {
@@ -48,4 +57,8 @@
     </script>
 
     {{- partial "resources/js.html" . -}}
+
+    {{ if fileExists "/static/user.css" -}}
+        <link rel="stylesheet" href="{{ urls.JoinPath .Site.BaseURL "user.css" }}">
+    {{- end }}
 </head>

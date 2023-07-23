@@ -12,20 +12,6 @@
     {{ $res = .RegularPages }}
 {{ end }}
 
-<div class="content-margin">
-    <div class="my-8">
-        <h1>{{ .Title }}</h1>
-        {{ if .Content }}
-            {{- partial "content.html" . -}}
-        {{ end }}
-    </div>
+{{ partial "bookcase/layout.html" (dict "ctx" . "title" .Title "content" .Content "res" $res) }}
 
-    {{ with $res }}
-        <div class="bookcase-layout content-margin">
-            {{ range . }}
-                {{- partial "bookcase/item.html" . -}}
-            {{ end }}
-        </div>
-    {{ end }}
-</div>
 {{ end }}

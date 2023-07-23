@@ -31,19 +31,21 @@ article {
     padding-left: 1.3rem;
   }
 
-  ul {
-    ul, ol {
-      @include my-0;
-    }
-  }
-
   ol {
     li {
       list-style-type: decimal;
     }
+  }
 
-    ul, ol {
-      @include my-0;
+  ul, ol {
+    @include my-2;
+
+    li:first-child {
+      margin-top: 0;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -75,7 +77,7 @@ article {
   pre {
     @include my-6;
     padding: 1rem;
-    overflow: auto;
+    overflow-x: auto;
     border-radius: .5rem;
     background-color: $gray-850;
     color: $gray-50;
@@ -119,6 +121,7 @@ article {
     > pre {
       padding: 0.75rem;
       border-radius: 0.375rem;
+      overflow-x: auto;
 
       pre {
         padding: 0;
@@ -171,11 +174,6 @@ article {
     @include my-4;
     text-align: center;
     
-    @media screen and (min-width: $md_min_width) {
-      margin-left: -1.25rem;
-      margin-right: -1.25rem;
-    }
-
     figcaption {
       @include my-2;
     }
@@ -183,5 +181,17 @@ article {
 
   img {
     @include mx-auto;
+    display: block;
   }
 }
+
+html[data-theme='dark'] {
+  .twitter-tweet {
+    color: var(--color-text);
+
+    a {
+      color: var(--color-link);
+    }
+  } 
+}
+

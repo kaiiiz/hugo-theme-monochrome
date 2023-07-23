@@ -1,7 +1,7 @@
 <nav id="navbar" class="pure-menu">
     {{- $currentPage := . -}}
     {{- $currentUrl := .RelPermalink -}}
-    {{- $isHome := .IsHome -}}
+    {{- $baseURL := .Site.BaseURL }}
     <ul class="pure-menu-list">
         {{- range .Site.Menus.navbar -}}
             {{ $navbar_decoration := "" }}
@@ -9,7 +9,7 @@
                 {{ $navbar_decoration = "active" }}
             {{- else if eq $currentUrl .URL -}}
                 {{ $navbar_decoration = "active" }}
-            {{- else if in ($currentUrl|lower) (.URL|lower) -}}
+            {{- else if and (in ($currentUrl|lower) (.URL|lower)) (ne (relURL .URL) (relURL $baseURL)) -}}
                 {{ $navbar_decoration = "insection" }}
             {{- end -}}
 

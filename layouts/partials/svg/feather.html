@@ -1,0 +1,12 @@
+{{- $icon_name := . -}}
+{{- $feather_sprite := resources.Get "lib/icns/feather-sprite-v4.29.0.svg" -}}
+{{- $regex := printf `<symbol id="%s".*?>(.*?)<\/symbol>` $icon_name -}}
+{{- $path := index (index (findRESubmatch $regex $feather_sprite.Content) 0) 1 | safeHTML }}
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24" height="24" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    {{ $path }}
+</svg>
+

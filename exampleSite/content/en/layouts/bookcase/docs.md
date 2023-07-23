@@ -57,7 +57,7 @@ These parameters are located in bookcase item's resource. For example:
 
 ### bookcase_cover_src
 
-The cover image URL. URL must be relative to base URL. (without `/` prefix)
+The cover image URL relative to the base URL. (with or without `/` prefix)
 
 > Image ratio is 2:3 (width:height)
 
@@ -79,7 +79,7 @@ bookcase_cover_src: 'thanks.jpg'
 
 ### bookcase_cover_src_dark
 
-The cover image URL for dark mode. URL must be relative to base URL. (without `/` prefix)
+The dark mode cover image URL relative to the base URL. (with or without `/` prefix)
 
 > Image ratio is 2:3 (width:height)
 
@@ -99,6 +99,17 @@ bookcase_cover_src_dark: 'thanks.jpg'
 
 > default: fallback to bookcase_cover_src, if failed, image become empty
 
+### bookcase_cover_title
+
+The title used in the bookcase cover
+
+> default: fallback to the title of the page
+
+### bookcase_hidden
+
+Hide this item from bookcase
+
+> default: false
 
 ### weight
 
