@@ -1,4 +1,6 @@
-{{ $terms := .Get "terms" }}
+{{- $terms := .Get "terms" -}}
+{{- $sortby := .Get "sortby" -}}
+{{- $order := .Get "order" -}}
 <div class="content-margin">
-    {{- partial "terms-cloud.html" (index .Site.Taxonomies $terms) -}}
+    {{- partial "terms-cloud.html" (dict "terms" (index .Site.Taxonomies $terms) "sortby" $sortby "order" $order) -}}
 </div>
