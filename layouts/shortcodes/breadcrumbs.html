@@ -5,16 +5,14 @@
 </div>
 
 {{ define "breadcrumbnav" }}
-    {{ if .p1.Parent }}
-        {{ template "breadcrumbnav" (dict "p1" .p1.Parent)  }}
-    {{ else if not .p1.IsHome }}
-        {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home)  }}
-    {{ end }}
-
-    {{ if not .p1.IsHome }}
-        <li><span>/</span></li>
-        <li><a href="{{ .p1.Permalink }}">{{ .p1.Title }}</a></li>
-    {{ else }}
+    {{- if .p1.Parent -}}
+        {{- template "breadcrumbnav" (dict "p1" .p1.Parent)  -}}
+    {{- else if not .p1.IsHome -}}
+        {{- template "breadcrumbnav" (dict "p1" .p1.Site.Home) -}}
+    {{- end -}}
+    {{- if not .p1.IsHome -}}
+        <li><span>/</span></li><li><a href="{{ .p1.Permalink }}">{{- .p1.Title -}}</a></li>
+    {{- else -}}
         <li><a href="{{ .p1.Permalink }}">Home</a></li>
-    {{ end }}
+    {{- end -}}
 {{ end }}
