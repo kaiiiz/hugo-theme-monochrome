@@ -18,7 +18,7 @@ toc: false
 - Changed
 	- **BREAKING CHANGE** The minimum hugo version requirement is now `0.112.0`
 	- **BREAKING CHANGE** Support all feather icons, `vendor="feather"` is required to migrate from old shortcode ([#19](https://github.com/kaiiiz/hugo-theme-monochrome/issues/19))
-	- Images in an aritcle are centered by default ([#35](https://github.com/kaiiiz/hugo-theme-monochrome/issues/35))
+	- Images in an article are centered by default ([#35](https://github.com/kaiiiz/hugo-theme-monochrome/issues/35))
 	- Term's layout now respects the `enable_group_by_year`, `enable_show_date`, `enable_pagination` parameters
 	- Upgrade dependencies
 		- Prism: v1.27.0 -> v1.29.0
