@@ -7,7 +7,7 @@ toc: false
 
 ## v2.0.0 (2023/07/23)
 
-- Fix
+- Fixed
 	- Fix navbar item padding ([#15](https://github.com/kaiiiz/hugo-theme-monochrome/issues/15))
 	- Fix TOC collapse cursor style ([#25](https://github.com/kaiiiz/hugo-theme-monochrome/issues/25), [#36](https://github.com/kaiiiz/hugo-theme-monochrome/pull/36))
 	- Fix site search resource retrieval bug ([#29](https://github.com/kaiiiz/hugo-theme-monochrome/issues/29))
@@ -16,9 +16,10 @@ toc: false
 	- Fix color scheme button FOUC bug
 	- Fix twitter card text color in dark mode
 - Changed
-	- **BREAKING CHANGE** The min hugo version requirement is now `0.112.0`
+	- **BREAKING CHANGE** The minimum hugo version requirement is now `0.112.0`
 	- **BREAKING CHANGE** Support all feather icons, `vendor="feather"` is required to migrate from old shortcode ([#19](https://github.com/kaiiiz/hugo-theme-monochrome/issues/19))
 	- Images in an aritcle are centered by default ([#35](https://github.com/kaiiiz/hugo-theme-monochrome/issues/35))
+	- Term's layout now respects the `enable_group_by_year`, `enable_show_date`, `enable_pagination` parameters
 	- Upgrade dependencies
 		- Prism: v1.27.0 -> v1.29.0
 		- Fuse.js: v6.5.3 -> v6.6.2
@@ -30,6 +31,7 @@ toc: false
 	- Add default color scheme setting ([#40](https://github.com/kaiiiz/hugo-theme-monochrome/issues/40))
 	- Add `bookcase` shortcode ([#34](https://github.com/kaiiiz/hugo-theme-monochrome/issues/34))
 	- Add `recent-posts` shortcode
+	- Add an RSS button next to the title in the term's layout
 
 ---
 
