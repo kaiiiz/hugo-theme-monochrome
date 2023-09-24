@@ -55,3 +55,4 @@ See [Configuration](https://kaiiiz.github.io/hugo-theme-monochrome/configuration
 * [mathjax/MathJax](https://github.com/mathjax/MathJax)
 * [kingdido999/zooming](https://github.com/kingdido999/zooming)
 * [feathericons/feather](https://github.com/feathericons/feather)
+* [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
