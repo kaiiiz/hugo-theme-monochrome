@@ -79,7 +79,7 @@ article {
     padding: 1rem;
     overflow-x: auto;
     border-radius: .5rem;
-    background-color: $gray-850;
+    background-color: #272822; // from monokai
     color: $gray-50;
 
     code { /* Disable inline code style */
