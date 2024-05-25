@@ -7,7 +7,7 @@
 {{ .Scratch.SetInMap "params" "enable_twitter_cards" (.Params.twitter_cards | default .Site.Params.enable_twitter_cards | default true) }}
 {{ .Scratch.SetInMap "params" "enable_toc" (.Params.toc | default .Site.Params.enable_toc | default true) }}
 {{ .Scratch.SetInMap "params" "enable_zooming_js" (.Params.zooming_js | default .Site.Params.enable_zooming_js | default true) }}
-{{ .Scratch.SetInMap "params" "ga_code" (.Params.ga | default .Site.GoogleAnalytics) }}
+{{ .Scratch.SetInMap "params" "ga_code" (.Params.ga | default .Site.Config.Services.GoogleAnalytics.ID) }}
 {{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
 {{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enable_math | default false) }}
 {{ .Scratch.SetInMap "params" "enable_collapsible_toc" (.Params.collapsible_toc | default .Site.Params.enable_collapsible_toc | default false) }}
@@ -31,7 +31,7 @@
                 {{- block "content" . }}{{- end }}
 
                 {{ if eq .Kind "page" }}
-                    {{ if (.Params.disqus | default .Site.DisqusShortname) }}
+                    {{ if (.Params.disqus | default .Site.Config.Services.Disqus.Shortname) }}
                         {{- partial "disqus.html" . -}}
                     {{ end }}
                 {{ else }}
