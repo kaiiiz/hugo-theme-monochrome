@@ -23,6 +23,7 @@ html[data-theme="light"] {
   --color-text: #{$gray-900};
   --color-text-secondary: #{$gray-500};
   --color-text-footer: #{$gray-500};
+  --color-text-mark: #{$gray-900};
   --color-border: #{$gray-300};
   --color-border-collapsible-menu: #{$gray-200};
   --color-background: #{$gray-0};
@@ -30,7 +31,7 @@ html[data-theme="light"] {
   --color-background-overlay: #{$gray-150};
   --color-background-inline-code: #{$gray-100};
   --color-background-card: #{$gray-0};
-  --color-background-mark: #fff1a7;
+  --color-background-mark: #ffd70e;
   --color-link: #2563eb;
   --color-navbar-item-inactive: #{$gray-400};
   --color-navbar-item-active: #{$gray-900};
@@ -41,6 +42,7 @@ html[data-theme="dark"] {
   --color-text: #{$gray-150};
   --color-text-secondary: #{$gray-450};
   --color-text-footer: #{$gray-400};
+  --color-text-mark: #{$gray-900};
   --color-border: #{$gray-500};
   --color-border-collapsible-menu: #{$gray-550};
   --color-background: #{$gray-750};
@@ -48,7 +50,7 @@ html[data-theme="dark"] {
   --color-background-overlay: #{$gray-700};
   --color-background-inline-code: #{$gray-600};
   --color-background-card: #{$gray-700};
-  --color-background-mark: #fff1a7;
+  --color-background-mark: #ffd70e;
   --color-link: #93c5fd;
   --color-navbar-item-inactive: #{$gray-400};
   --color-navbar-item-active: #{$gray-100};
