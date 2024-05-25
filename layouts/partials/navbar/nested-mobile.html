@@ -3,16 +3,12 @@
         {{ range . }}
             {{ if .Children }}
                 <li>
-                    <details>
-                        <summary>
-                            {{ if .URL }}
-                                <span><a href="{{ .URL }}">{{- .Name -}}</a></span>
-                            {{ else }}
-                                <span>{{- .Name -}}</span>
-                            {{ end }}
-                        </summary>
-                        {{- partial "navbar/nested-mobile.html" . -}}
-                    </details>
+                    {{ if .URL }}
+                        <span><a href="{{ .URL }}">{{- .Name -}}</a></span>
+                    {{ else }}
+                        <span>{{- .Name -}}</span>
+                    {{ end }}
+                    {{- partial "navbar/nested-mobile.html" . -}}
                 </li>
             {{ else }}
                 <li>

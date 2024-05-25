@@ -1,8 +1,8 @@
 <header>
-    <div class="brand">
+    <div id="header_left">
         <div id="sidebar_btn">
             <input type="checkbox" id="sidebar_btn_input" class="hidden" />
-            <label for="sidebar_btn_input">
+            <label id="sidebar_btn_label" for="sidebar_btn_input">
                 <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
                     {{- partial "svg/feather.html" "menu" -}}
                 </svg>
@@ -15,10 +15,8 @@
                     {{- range .Site.Menus.navbar -}}
                         {{- if .Children -}}
                             <li>
-                                <details>
-                                    <summary><a href="{{ .URL }}">{{- .Name -}}</a></summary>
-                                    {{- partial "navbar/nested-mobile.html" . -}}
-                                </details>
+                                <a href="{{ .URL }}">{{- .Name -}}</a>
+                                {{- partial "navbar/nested-mobile.html" . -}}
                             </li>
                         {{- else -}}
                             <li>
@@ -29,13 +27,15 @@
                 </ul>
             </div>
         </div>
-
-        <div>
-            <a href="{{ .Site.Home.RelPermalink }}">
-                {{- with (.Scratch.Get "params").navbar_title }}
-                    {{- . | safeHTML -}}
-                {{- end -}}
-            </a>
+    
+        <div class="brand">
+            <div>
+                <a href="{{ .Site.Home.RelPermalink }}">
+                    {{- with (.Scratch.Get "params").navbar_title }}
+                        {{- . | safeHTML -}}
+                    {{- end -}}
+                </a>
+            </div>
         </div>
     </div>
 
