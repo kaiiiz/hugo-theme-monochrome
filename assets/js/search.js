@@ -1,8 +1,8 @@
 import * as params from '@params';
-import Fuse from '../lib/js/fuse-v6.6.2.min.js';
+import uFuzzy from '../lib/js/uFuzzy-v1.0.14.esm.js';
 
 async function init() {
-    const data = fetch(params.index_url);
+    const response = fetch(params.index_url);
 
     const search_btn = document.getElementById("search_btn");
     const search_menu_wrapper = document.getElementById("search_menu_wrapper");
@@ -10,29 +10,36 @@ async function init() {
     const search_menu_input = document.getElementById("search_menu_input");
     const search_menu_results = document.getElementById("search_menu_results");
 
-    search_btn.addEventListener("click", function() {
+    search_btn.addEventListener("click", function () {
         search_menu_wrapper.classList.remove("hidden");
         search_menu_input.focus();
     });
 
-    search_menu_close_btn.addEventListener("click", function() {
+    search_menu_close_btn.addEventListener("click", function () {
         search_menu_wrapper.classList.add("hidden");
     });
 
-    const index_json = await (await data).json();
-    const options = {
-        distance: 100,
-        threshold: 0.3,
-        ignoreLocation: true,
-        minMatchCharLength: 2,
-        keys: [
-            'title',
-            'permalink',
-            'content',
-        ],
-        includeMatches: true,
+    const data = await (await response).json();
+    const opts = {
+        unicode: true,
+        interSplit: "[^\\p{L}\\d']+",
+        intraSplit: "\\p{Ll}\\p{Lu}",
+        intraBound: "\\p{L}\\d|\\d\\p{L}|\\p{Ll}\\p{Lu}",
+        intraChars: "[\\p{L}\\d']",
+        intraContr: "'\\p{L}{1,2}\\b",
     };
-    const fuse = new Fuse(index_json, options);
+    const uf = new uFuzzy(opts);
+
+    /*
+     * data = [{'content': string, 'permalink': string, 'title': string}]
+     * => haystack = [title1, content1, title2, content2, ...]
+     * 
+     * We can use index of haystack to reverse index our data and correctly highlight the matched items
+     */
+    const haystack = [];
+    data.forEach((d) => {
+        haystack.push(d['title'], d['content']);
+    });
 
     const createItem = (title, permalink, content) => {
         return `<a href="${permalink}">
@@ -43,93 +50,111 @@ async function init() {
                 </a>`;
     };
 
-    const hlItem = (item, matches) => {
-        const highlightTitle = (text, match) => {
-            let textHl = "", ptr = 0;
-            match.forEach(idx => {
-                if (ptr < idx[0]) {
-                    textHl += text.substring(ptr, idx[0]);
-                }
-                textHl += "<mark>" + text.substring(idx[0], idx[1] + 1) + "</mark>";
-                ptr = idx[1] + 1;
-            })
-            textHl += text.substring(ptr, text.length);
-            return textHl;
-        };
-
-        const highlightContent = (text, match) => {
-            let textHl = "<mark>" + text.substring(match[0][0], match[0][1] + 1) + "</mark>";
-            let ptr = match[0][1] + 1;
-            let length = match[0][1] + 1 - match[0][0];
-            if (match[0][0] > 0) {
-                textHl = "..." + textHl;
-            }
-            for (let i = 1; i < match.length; i++) {
-                const idx = match[i];
-                if (ptr < idx[0] && (length + idx[0] - ptr) >= 100) {
-                    textHl += text.substring(ptr, ptr + (100 - length + 1)) + "...";
-                    length = 100;
-                    break;
-                }
-
-                if (ptr < idx[0]) {
-                    textHl += text.substring(ptr, idx[0]);
-                    length += idx[0] - ptr;
-                }
-                textHl += "<mark>" + text.substring(idx[0], idx[1] + 1) + "</mark>";
-                length += idx[1] + 1 - idx[0];
-                ptr = idx[1] + 1;
-                if (length >= 100) {
-                    break;
-                }
-            }
-            if (length < 100) {
-                textHl += text.substring(ptr, ptr + (100 - length));
-            }
-            if (ptr <= text.length) {
-                textHl += "...";
-            }
-            return textHl;
-        }
-
-        let itemHl = {
-            title: undefined,
-            permalink: item.permalink,
-            content: undefined,
-        };
-        matches.forEach(match => {
-            if (match.key == 'title') {
-                itemHl.title = highlightTitle(item.title, match.indices);
-            } else if (match.key == 'content') {
-                itemHl.content = highlightContent(item.content, match.indices);
-            }
-        });
-        if (itemHl.title === undefined) itemHl.title = item.title;
-        if (itemHl.content === undefined) itemHl.content = item.content;
-        return itemHl;
-    }
-
     const buildAllItems = () => {
-        search_menu_results.innerHTML = index_json.reduce((acc, curr) => {
+        search_menu_results.innerHTML = data.reduce((acc, curr) => {
             let content = (curr.content.length > 100) ? curr.content.substring(0, 100) + "..." : curr.content;
             return acc + createItem(curr.title, curr.permalink, content);
         }, "");
     };
 
-    const search = (value) => {
-        const results = fuse.search(value);
+    const mark = (part) => '<mark>' + part + '</mark>';
 
-        if (results.length == 0) {
+    const markMatched = (haystackIdx, ranges) => {
+        let marktedText = "";
+        const text = haystack[haystackIdx];
+        let prevTo = 0;
+
+        for (let i = 0; i < ranges.length; i += 2) {
+            let fr = ranges[i];
+            let to = ranges[i + 1];
+
+            marktedText = marktedText + text.substring(prevTo, fr) + mark(text.substring(fr, to));
+
+            prevTo = to;
+        }
+
+        marktedText = marktedText + text.substring(prevTo, text.length);
+
+        return marktedText;
+    }
+
+    const markMatchTruncate = (haystackIdx, ranges) => {
+        let markedText = "";
+        const text = haystack[haystackIdx];
+        const prefixContextLen = 20;
+        const suffixContextLen = 100;
+        let prevCtxTo = -1, prevTo = -1;
+
+        for (let i = 0; i < ranges.length; i += 2) {
+            /*
+             * text:---------------------
+             *            |   |   |  |
+             *            |  fr  to  |
+             *          ctxFr      ctxTo
+             */
+            let ctxFr = Math.max(ranges[i] - prefixContextLen, 0);
+            let ctxTo = Math.min(ranges[i + 1] + suffixContextLen, text.length);
+            let fr = ranges[i];
+            let to = ranges[i + 1];
+
+            if (ctxFr <= prevCtxTo) {
+                // add [prevTo, fr) as prefix context
+                markedText = markedText + text.substring(prevTo, fr);
+            } else {
+                // add "..." + [ctxFr, fr) as prefix context
+                if (ctxFr !== 0) {
+                    markedText = markedText + "...";
+                }
+                markedText = markedText + text.substring(ctxFr, fr);
+            }
+
+            markedText = markedText + mark(text.substring(fr, to));
+            prevCtxTo = ctxTo;
+            prevTo = to;
+        }
+
+        markedText = markedText + text.substring(prevTo, prevCtxTo);
+        if (prevCtxTo < text.length) {
+            markedText = markedText + "...";
+        }
+
+        return markedText;
+    }
+
+    const search = (value) => {
+        const [_, info, order] = uf.search(haystack, value);
+        const orderedMatches = [];
+        const matchesMap = new Map();
+
+        for (let i = 0; i < order.length; i++) {
+            const infoIdx = order[i];
+            const haystackIdx = info.idx[infoIdx]
+            const dataIdx = Math.floor(haystackIdx / 2);
+            const dataType = haystackIdx % 2;
+
+            if (!matchesMap.has(dataIdx)) {
+                matchesMap.set(dataIdx, orderedMatches.length);
+                orderedMatches.push({ ...data[dataIdx] });
+            }
+            const match = orderedMatches[matchesMap.get(dataIdx)];
+
+            if (dataType === 0) {
+                match['title'] = markMatched(haystackIdx, info.ranges[infoIdx]);
+            } else if (dataType === 1) {
+                match['content'] = markMatchTruncate(haystackIdx, info.ranges[infoIdx]);
+            }
+        }
+
+        if (orderedMatches.length == 0) {
             search_menu_results.innerHTML = '';
         } else {
-            search_menu_results.innerHTML = results.reduce((acc, curr) => {
-                const item = hlItem(curr.item, curr.matches);
-                return acc + createItem(item.title, item.permalink, item.content);
+            search_menu_results.innerHTML = orderedMatches.reduce((acc, curr) => {
+                return acc + createItem(curr.title, curr.permalink, curr.content);
             }, "")
         }
     };
 
-    search_menu_input.addEventListener("input", function() {
+    search_menu_input.addEventListener("input", function () {
         if (this.value === '') {
             buildAllItems();
         } else {

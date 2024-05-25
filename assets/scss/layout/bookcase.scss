@@ -23,7 +23,6 @@
       width: 8rem;
       height: 12rem;
       border-radius: 0.375rem;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
       object-fit: cover;
     }
 
@@ -45,11 +44,23 @@ html[data-theme="light"] {
   .bookcase-item-img-dark {
     display: none;
   }
+
+  .bookcase-item {
+    img, .bookcase-item-overlay {
+      box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 html[data-theme="dark"] {
   .bookcase-item-img-light {
     display: none;
+  }
+
+  .bookcase-item {
+    img, .bookcase-item-overlay {
+      box-shadow: 0 0 3px 0px rgba(135, 135, 135, 0.2);
+    }
   }
 }
 

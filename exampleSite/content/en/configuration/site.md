@@ -42,7 +42,9 @@ Add `favicon.ico` to your site's static folder.
 ### Disqus
 
 ```toml
-disqusShortname = "xxx"
+services:
+  disqus:
+    shortname: "xxx"
 ```
 
 Other settings checkout [Disqus - Internal Templates](https://gohugo.io/templates/internal/#disqus) for more details.
@@ -50,5 +52,7 @@ Other settings checkout [Disqus - Internal Templates](https://gohugo.io/template
 ### Google Analytics
 
 ```toml
-googleAnalytics = "xxx"
+services:
+  googleAnalytics:
+    id: "xxx"
 ```

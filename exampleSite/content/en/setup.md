@@ -16,7 +16,7 @@ Take Linux for example:
 snap install hugo --channel=extended
 ```
 
-> The minimum hugo version that hugo-theme-monochrome required is `0.112.0`
+> The minimum hugo version that hugo-theme-monochrome required is `0.120.0`
 
 ### Create a New Site
 

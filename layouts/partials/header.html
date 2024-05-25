@@ -1,17 +1,43 @@
 <header>
-    <div class="brand">
+    <div id="header_left">
         <div id="sidebar_btn">
-            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
-                {{- partial "svg/feather.html" "menu" -}}
-            </svg>
+            <input type="checkbox" id="sidebar_btn_input" class="hidden" />
+            <label id="sidebar_btn_label" for="sidebar_btn_input">
+                <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
+                    {{- partial "svg/feather.html" "menu" -}}
+                </svg>
+            </label>
+            <label id="sidebar_canvas_overlay_wrapper" for="sidebar_btn_input">
+                <div id="sidebar_canvas_overlay"></div>
+            </label>
+            <div id="sidebar">
+                <ul>
+                    {{- range .Site.Menus.navbar -}}
+                        <li>
+                            {{- $name := .Name }}
+                            {{- with .Identifier }}
+                                {{- with T . }}
+                                    {{- $name = . }}
+                                {{- end }}
+                            {{- end }}
+                            <a href="{{ .URL }}">{{- $name -}}</a>
+                            {{- if .Children -}}
+                                {{- partial "navbar/nested-mobile.html" . -}}
+                            {{- end -}}
+                        </li>
+                    {{- end -}}
+                </ul>
+            </div>
         </div>
-
-        <div>
-            <a href="{{ .Site.Home.RelPermalink }}">
-                {{- with (.Scratch.Get "params").navbar_title }}
-                    {{- . | safeHTML -}}
-                {{- end -}}
-            </a>
+    
+        <div class="brand">
+            <div>
+                <a href="{{ .Site.Home.RelPermalink }}">
+                    {{- with (.Scratch.Get "params").navbar_title }}
+                        {{- . | safeHTML -}}
+                    {{- end -}}
+                </a>
+            </div>
         </div>
     </div>
 
@@ -35,7 +61,7 @@
         {{ end }}
 
         {{ if .Site.IsMultiLingual }}
-            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn">
+            <div id="translation_tool" class="dropdown-wrapper pure-menu pure-menu-horizontal toolbox-btn" onclick="void(0)">
                 <ul class="pure-menu-list">
                     <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                         <div class="dropdown-btn pure-menu-link">

@@ -1,3 +1,7 @@
+#sidebar_btn_input:checked ~ #sidebar_canvas_overlay_wrapper #sidebar_canvas_overlay {
+  display: block;
+}
+
 #sidebar_canvas_overlay {
   background-color: rgba(0,0,0,.75);
   position: fixed;
@@ -6,6 +10,7 @@
   width: 100%;
   height: 100%;
   z-index: 10;
+  display: none;
 }
 
 #sidebar {
@@ -16,8 +21,8 @@
   z-index: 20;
   background-color: var(--color-background);
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transform: translateX(0);
   transition: transform 0.2s;
+  transform: translateX(-100%);
   overflow-y: auto;
   width: 60%;
 
@@ -31,10 +36,6 @@
     margin: 0;
   }
 
-  summary span {
-    margin-left: .2rem;
-  }
-
   li {
     margin: 1.2rem;
   }
@@ -44,7 +45,7 @@
   }
 }
 
-#sidebar.close {
+#sidebar_btn_input:checked ~ #sidebar {
   display: block;
-  transform: translateX(-100%);
+  transform: translateX(0);
 }

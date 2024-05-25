@@ -16,19 +16,28 @@ header {
   align-items: center;
   margin: 1rem 0;
 
-  .brand {
+  #header_left {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
-    a {
-      @include text-3xl;
-      @include font-bold;
-      color: var(--color-text);
-    }
-
-    #sidebar_btn {
+    .brand {
       display: flex;
+      align-items: center;
+  
+      a {
+        @include text-3xl;
+        @include font-bold;
+        color: var(--color-text);
+      }
+    }
+  
+    #sidebar_btn {
       margin-right: 0.5rem;
+
+      #sidebar_btn_label {
+        display: flex;
+      }
 
       @media screen and (min-width: $md_min_width) {
         display: none;
@@ -73,6 +82,21 @@ header {
           @include text-sm;
           margin-left: 0.35rem;
         }
+      }
+    }
+
+    #translation_tool {
+      .dropdown-btn .dropdown-desc {
+        display: none;
+  
+        @media screen and (min-width: $md_min_width) {
+          display: block;
+        }
+      }
+
+      .pure-menu-children {
+        left: auto;
+        right: 0;
       }
     }
   }

@@ -1,5 +1,6 @@
 article {
   line-height: 1.7;
+  width: 100%;
 
   > *:first-child {
     margin-top: 0;
@@ -51,7 +52,7 @@ article {
 
   blockquote {
     @include px-4;
-    @include my-6;
+    @include my-4;
     @include mx-0;
     border-left: 2px solid var(--color-border);
 
@@ -75,14 +76,15 @@ article {
   }
 
   pre {
-    @include my-6;
+    @include my-4;
     padding: 1rem;
     overflow-x: auto;
     border-radius: .5rem;
-    background-color: $gray-850;
+    background-color: #272822; // from monokai
     color: $gray-50;
 
     code { /* Disable inline code style */
+      display: inherit;
       border-radius: 0;
       padding: 0;
       background-color: transparent;
@@ -105,7 +107,7 @@ article {
   }
 
   .highlight {
-    @include my-6;
+    @include my-4;
     position: relative;
 
     .code-toolbar {
@@ -157,7 +159,7 @@ article {
   }
 
   table.mc-table {
-    @include my-6;
+    @include my-4;
     table-layout: auto;
     border-collapse: collapse;
     display: block;

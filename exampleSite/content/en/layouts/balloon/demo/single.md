@@ -9,4 +9,4 @@ balloon_resources: "/about"
 
 Balloon layout can also be used in regular page.
 
-[Go to list demo](/hugo-theme-monochrome/layouts/demo/balloon)
+[Go to list demo](/hugo-theme-monochrome/layouts/balloon/demo)

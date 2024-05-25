@@ -7,6 +7,9 @@
 {{ if .Params.gallery_resources }}
     {{ $res := .Site.GetPage .Params.gallery_resources }}
     {{ $pages := $res.Resources.ByType "page" }}
+    {{ if eq (len $pages) 0 }}
+      {{ $pages = $res.RegularPages }}
+    {{ end }}
 
     {{ if $pages }}
         <div class="content-margin gallery-layout">

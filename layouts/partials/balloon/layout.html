@@ -4,6 +4,9 @@
 
         {{ $res := .Site.GetPage .Params.balloon_resources }}
         {{ $pages := $res.Resources.ByType "page" }}
+        {{ if eq (len $pages) 0 }}
+          {{ $pages = $res.RegularPages }}
+        {{ end }}
 
         {{ if $pages }}
             {{ $max_idx := sub (len $pages) 1 }}

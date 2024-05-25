@@ -11,23 +11,32 @@ Render terms cloud, hugo supports `tag` and `category` terms by default, if you 
 ## Usage
 
 ```
-{{</* terms-cloud terms="" /*/>}}
+{{</* terms-cloud terms="" sortby="" order="" /*/>}}
 ```
 
 Paramters:
 
 * `terms`: terms name
+* `sortby`: `count` or `alphabetical` (default: `count`)
+* `order`: `asc` or `desc` (default: `asc`)
 
 ## Examples
-
-```html
-{{</* terms-cloud terms="tags" */>}}
-```
-
-{{< terms-cloud terms="tags" >}}
 
 ```html
 {{</* terms-cloud terms="series" */>}}
 ```
 
 {{< terms-cloud terms="series" >}}
+
+```html
+{{</* terms-cloud terms="tags" order="desc" */>}}
+```
+
+{{< terms-cloud terms="tags" order="desc" >}}
+
+```html
+{{</* terms-cloud terms="tags" sortby="alphabetical" */>}}
+```
+
+{{< terms-cloud terms="tags" sortby="alphabetical" >}}
+

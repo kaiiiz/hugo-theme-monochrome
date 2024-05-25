@@ -3,7 +3,7 @@
 <div class="content-margin">
     <h1>{{ .Title }}</h1>
     <div>
-        {{- partial "terms-cloud.html" .Data.Terms.Alphabetical -}}
+        {{- partial "terms-cloud.html" (dict "terms" .Data.Terms "sortby" "count" "order" "desc") -}}
     </div>
 </div>
 
