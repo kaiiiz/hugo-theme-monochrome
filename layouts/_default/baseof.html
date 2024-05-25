@@ -18,10 +18,10 @@
 <html lang='{{ .Site.LanguageCode }}'>
     {{- partial "head.html" . -}}
     <body>
+        {{- partial "header.html" . -}}
+        {{- partial "nav.html" . -}}
+        {{- partial "sidebar.html" . -}}
         <main>
-            {{- partial "header.html" . -}}
-            {{- partial "nav.html" . -}}
-            {{- partial "sidebar.html" . -}}
             <div id="content" class="content-margin">
                 {{ if .Params.changelogs }}
                     {{ $enable_collapsible_changelogs := (.Scratch.Get "params").enable_collapsible_changelogs }}
@@ -40,7 +40,7 @@
                     {{ end }}
                 {{ end }}
             </div>
-            {{- partial "footer.html" . -}}
         </main>
+        {{- partial "footer.html" . -}}
     </body>
 </html>
