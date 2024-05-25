@@ -1,5 +1,5 @@
 {{- $icon_name := . -}}
-{{- $sprite := resources.Get "lib/icns/simple-icons-sprite-v9.16.0.svg" -}}
+{{- $sprite := resources.Get "lib/icns/simple-icons-sprite-v11.15.0.svg" -}}
 {{- $regex := printf `<symbol id="%s".*?>(.*?)\n<\/symbol>` $icon_name -}}
 {{- $path := index (index (findRESubmatch $regex $sprite.Content) 0) 1 | safeHTML }}
 <svg
