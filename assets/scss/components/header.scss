@@ -84,5 +84,20 @@ header {
         }
       }
     }
+
+    #translation_tool {
+      .dropdown-btn .dropdown-desc {
+        display: none;
+  
+        @media screen and (min-width: $md_min_width) {
+          display: block;
+        }
+      }
+
+      .pure-menu-children {
+        left: auto;
+        right: 0;
+      }
+    }
   }
 }
