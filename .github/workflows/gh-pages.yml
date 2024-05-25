@@ -9,17 +9,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: main
-          token: ${{ secrets.ACCESS_TOKEN }}
-          ssh-key: ${{ secrets.SSH_PRIVATE }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.115.4'
+          hugo-version: '0.120.0'
           extended: true
 
       - name: Setup public
@@ -32,10 +31,9 @@ jobs:
         run: hugo -s exampleSite --baseURL https://kaiiiz.github.io/hugo-theme-monochrome --themesDir=../.. --minify --environment production
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
-          deploy_key: ${{ secrets.SSH_PRIVATE }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./exampleSite/public
           publish_branch: gh-pages
 
