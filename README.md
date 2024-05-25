@@ -32,7 +32,7 @@ See [kaiiiz.github.io/hugo-theme-monochrome](https://kaiiiz.github.io/hugo-theme
 
 7. **Syntax Highlighting (with copy feature).** Integrate both server-side solution (Chroma, hugo built-in) and client-side solution (Prism.js, for someone who need more languages supported).
 
-8. **Site Search with real-time matches highlight.** Powered by Fuse.js.
+8. **Site Search with real-time matches highlight.** Powered by uFuzzy.
 
 9.  **SEO-friendly.** Easily change your author, description, keywords, open graph, twitter card meatdata.
 
@@ -50,9 +50,15 @@ See [Configuration](https://kaiiiz.github.io/hugo-theme-monochrome/configuration
 
 ## Acknowledgement
 
-* [PrismJS/prism](https://github.com/PrismJS/prism)
-* [krisk/Fuse](https://github.com/krisk/Fuse)
-* [mathjax/MathJax](https://github.com/mathjax/MathJax)
-* [kingdido999/zooming](https://github.com/kingdido999/zooming)
-* [feathericons/feather](https://github.com/feathericons/feather)
-* [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
+* [PrismJS/prism](https://github.com/PrismJS/prism) MIT
+* [leeoniya/uFuzzy](https://github.com/leeoniya/uFuzzy) MIT
+* [mathjax/MathJax](https://github.com/mathjax/MathJax) Apache-2.0
+* [kingdido999/zooming](https://github.com/kingdido999/zooming) MIT
+* [feathericons/feather](https://github.com/feathericons/feather) MIT
+* [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons) CC0-1.0
+
+## Support
+
+If you find my work brings value to your life and would like to support its development, you can sponsor me in the following ways.
+
+<a href="https://www.buymeacoffee.com/ykzheng" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 164px !important; margin-left: 0px; margin-right: 0px;" ></a>

@@ -5,33 +5,64 @@ toc: false
 
 # Changelog
 
+## v3.0.0 (2024/05/26)
+
+- Fixed
+  - Base layout organaization for semantic elements, which may improve SEO description
+  - Fix table class parsing bug
+  - Balloon layout and Gallery layout page resources retrieval bug ([#50](https://github.com/kaiiiz/hugo-theme-monochrome/issues/50))
+  - Language dropdown menu click issue on Safari mobile ([#43](https://github.com/kaiiiz/hugo-theme-monochrome/issues/43))
+  - Fix i18n on navbar entries ([#49](https://github.com/kaiiiz/hugo-theme-monochrome/issues/49))
+- Changed
+  - **BREAKING CHANGE** The minimum hugo version requirement is now `0.120.0`. [Adjust your GoogleAnalytics and DisqusShortname settings accordingly](https://github.com/gohugoio/hugo/releases/tag/v0.120.0)
+  - Re-implement the site search function with uFuzzy, which, in my opinion, delivers significantly more accurate search results
+  - Change sidebar control to pure CSS implementation ([#47](https://github.com/kaiiiz/hugo-theme-monochrome/issues/47))
+  - Remove collapsible menu for mobile sidebar, as it is difficult to click on small screen
+  - Hide language name on mobile view
+  - Dependencies
+    - Fuse.js: removed
+    - uFuzzy: v1.0.14
+    - Mathjax: v3 -> v4.0.0-beta.6 (for better line breaking support)
+  - Styles
+    - Add border radius to image
+    - Adjust article components margin
+    - Adjust bookcase item overlay shadow style for dark mode
+    - Gallery image alignment
+    - Background filling for the line number of code block
+    - Adjust code block color
+- New
+  - Support simple icons v11.15.0
+  - Support `user_head.html` to inject custom template in `<head>` section (e.g. Google Ads etc.)
+
+---
+
 ## v2.0.0 (2023/07/23)
 
 - Fixed
-	- Fix navbar item padding ([#15](https://github.com/kaiiiz/hugo-theme-monochrome/issues/15))
-	- Fix TOC collapse cursor style ([#25](https://github.com/kaiiiz/hugo-theme-monochrome/issues/25), [#36](https://github.com/kaiiiz/hugo-theme-monochrome/pull/36))
-	- Fix site search resource retrieval bug ([#29](https://github.com/kaiiiz/hugo-theme-monochrome/issues/29))
-	- Fix wrong variable in base.scss ([#44](https://github.com/kaiiiz/hugo-theme-monochrome/pull/44))
-	- Fix inappropriate navbar decoration for item that links to home page
-	- Fix color scheme button FOUC bug
-	- Fix twitter card text color in dark mode
+  - Fix navbar item padding ([#15](https://github.com/kaiiiz/hugo-theme-monochrome/issues/15))
+  - Fix TOC collapse cursor style ([#25](https://github.com/kaiiiz/hugo-theme-monochrome/issues/25), [#36](https://github.com/kaiiiz/hugo-theme-monochrome/pull/36))
+  - Fix site search resource retrieval bug ([#29](https://github.com/kaiiiz/hugo-theme-monochrome/issues/29))
+  - Fix wrong variable in base.scss ([#44](https://github.com/kaiiiz/hugo-theme-monochrome/pull/44))
+  - Fix inappropriate navbar decoration for item that links to home page
+  - Fix color scheme button FOUC bug
+  - Fix twitter card text color in dark mode
 - Changed
-	- **BREAKING CHANGE** The minimum hugo version requirement is now `0.112.0`
-	- **BREAKING CHANGE** Support all feather icons, `vendor="feather"` is required to migrate from old shortcode ([#19](https://github.com/kaiiiz/hugo-theme-monochrome/issues/19))
-	- Images in an article are centered by default ([#35](https://github.com/kaiiiz/hugo-theme-monochrome/issues/35))
-	- Term's layout now respects the `enable_group_by_year`, `enable_show_date`, `enable_pagination` parameters
-	- Upgrade dependencies
-		- Prism: v1.27.0 -> v1.29.0
-		- Fuse.js: v6.5.3 -> v6.6.2
+  - **BREAKING CHANGE** The minimum hugo version requirement is now `0.112.0`
+  - **BREAKING CHANGE** Support all feather icons, `vendor="feather"` is required to migrate from old shortcode ([#19](https://github.com/kaiiiz/hugo-theme-monochrome/issues/19))
+  - Images in an article are centered by default ([#35](https://github.com/kaiiiz/hugo-theme-monochrome/issues/35))
+  - Term's layout now respects the `enable_group_by_year`, `enable_show_date`, `enable_pagination` parameters
+  - Upgrade dependencies
+    - Prism: v1.27.0 -> v1.29.0
+    - Fuse.js: v6.5.3 -> v6.6.2
 - New
-	- Support custom CSS ([#23](https://github.com/kaiiiz/hugo-theme-monochrome/issues/23), [#33](https://github.com/kaiiiz/hugo-theme-monochrome/issues/33))
-	- Support GA4 ([#37](https://github.com/kaiiiz/hugo-theme-monochrome/issues/37))
-	- Support custom title for bookcase item ([#32](https://github.com/kaiiiz/hugo-theme-monochrome/issues/32))
-	- Support hiding bookcase items ([#27](https://github.com/kaiiiz/hugo-theme-monochrome/issues/27))
-	- Add default color scheme setting ([#40](https://github.com/kaiiiz/hugo-theme-monochrome/issues/40))
-	- Add `bookcase` shortcode ([#34](https://github.com/kaiiiz/hugo-theme-monochrome/issues/34))
-	- Add `recent-posts` shortcode
-	- Add an RSS button next to the title in the term's layout
+  - Support custom CSS ([#23](https://github.com/kaiiiz/hugo-theme-monochrome/issues/23), [#33](https://github.com/kaiiiz/hugo-theme-monochrome/issues/33))
+  - Support GA4 ([#37](https://github.com/kaiiiz/hugo-theme-monochrome/issues/37))
+  - Support custom title for bookcase item ([#32](https://github.com/kaiiiz/hugo-theme-monochrome/issues/32))
+  - Support hiding bookcase items ([#27](https://github.com/kaiiiz/hugo-theme-monochrome/issues/27))
+  - Add default color scheme setting ([#40](https://github.com/kaiiiz/hugo-theme-monochrome/issues/40))
+  - Add `bookcase` shortcode ([#34](https://github.com/kaiiiz/hugo-theme-monochrome/issues/34))
+  - Add `recent-posts` shortcode
+  - Add an RSS button next to the title in the term's layout
 
 ---
 

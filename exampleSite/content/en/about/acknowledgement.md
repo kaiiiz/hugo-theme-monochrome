@@ -12,9 +12,9 @@ gallery_statistic:
   value: '*value3*'
 ---
 
-* [PrismJS/prism](https://github.com/PrismJS/prism)
-* [krisk/Fuse](https://github.com/krisk/Fuse)
-* [mathjax/MathJax](https://github.com/mathjax/MathJax)
-* [kingdido999/zooming](https://github.com/kingdido999/zooming)
-* [feathericons/feather](https://github.com/feathericons/feather)
-* [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons)
+* [PrismJS/prism](https://github.com/PrismJS/prism) MIT
+* [leeoniya/uFuzzy](https://github.com/leeoniya/uFuzzy) MIT
+* [mathjax/MathJax](https://github.com/mathjax/MathJax) Apache-2.0
+* [kingdido999/zooming](https://github.com/kingdido999/zooming) MIT
+* [feathericons/feather](https://github.com/feathericons/feather) MIT
+* [simple-icons/simple-icons](https://github.com/simple-icons/simple-icons) CC0-1.0
