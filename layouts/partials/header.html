@@ -13,16 +13,18 @@
             <div id="sidebar">
                 <ul>
                     {{- range .Site.Menus.navbar -}}
-                        {{- if .Children -}}
-                            <li>
-                                <a href="{{ .URL }}">{{- .Name -}}</a>
+                        <li>
+                            {{- $name := .Name }}
+                            {{- with .Identifier }}
+                                {{- with T . }}
+                                    {{- $name = . }}
+                                {{- end }}
+                            {{- end }}
+                            <a href="{{ .URL }}">{{- $name -}}</a>
+                            {{- if .Children -}}
                                 {{- partial "navbar/nested-mobile.html" . -}}
-                            </li>
-                        {{- else -}}
-                            <li>
-                                <a href="{{ .URL }}">{{- .Name -}}</a>
-                            </li>
-                        {{- end -}}
+                            {{- end -}}
+                        </li>
                     {{- end -}}
                 </ul>
             </div>
