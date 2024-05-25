@@ -1,9 +1,33 @@
 <header>
     <div class="brand">
         <div id="sidebar_btn">
-            <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
-                {{- partial "svg/feather.html" "menu" -}}
-            </svg>
+            <input type="checkbox" id="sidebar_btn_input" class="hidden" />
+            <label for="sidebar_btn_input">
+                <svg id="menu_icon" width="26px" height="26px" viewBox="0 0 24 24">
+                    {{- partial "svg/feather.html" "menu" -}}
+                </svg>
+            </label>
+            <label id="sidebar_canvas_overlay_wrapper" for="sidebar_btn_input">
+                <div id="sidebar_canvas_overlay"></div>
+            </label>
+            <div id="sidebar">
+                <ul>
+                    {{- range .Site.Menus.navbar -}}
+                        {{- if .Children -}}
+                            <li>
+                                <details>
+                                    <summary><a href="{{ .URL }}">{{- .Name -}}</a></summary>
+                                    {{- partial "navbar/nested-mobile.html" . -}}
+                                </details>
+                            </li>
+                        {{- else -}}
+                            <li>
+                                <a href="{{ .URL }}">{{- .Name -}}</a>
+                            </li>
+                        {{- end -}}
+                    {{- end -}}
+                </ul>
+            </div>
         </div>
 
         <div>
