@@ -1,5 +1,5 @@
 import * as params from '@params';
-import Fuse from '../lib/js/fuse-v6.6.2.min.js';
+import Fuse from '../lib/js/fuse-v7.0.0.min.js';
 
 async function init() {
     const data = fetch(params.index_url);
