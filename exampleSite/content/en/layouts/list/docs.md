@@ -18,7 +18,7 @@ An option to control group setting.
 group_by_year: false
 ```
 
-> default: theme's [`list_layout.enable_group_by_year`](/hugo-theme-monochrome/configuration/theme/#group-by-year)
+> default: theme's [`list_layout.enable_group_by_year`](/hugo-theme-monochrome/configuration/theme/#list-layout)
 
 ### Show date
 
@@ -28,7 +28,7 @@ Show / Hide date right after the post entry.
 show_date: false
 ```
 
-> default: theme's [`list_layout.enable_show_date`](/hugo-theme-monochrome/configuration/theme/#show-date)
+> default: theme's [`list_layout.enable_show_date`](/hugo-theme-monochrome/configuration/theme/#list-layout)
 
 ### Pagination
 
@@ -36,5 +36,4 @@ show_date: false
 pagination: false
 ```
 
-> default: theme's [`list_layout.enable_pagination`](/hugo-theme-monochrome/configuration/theme/#pagination)
-
+> default: theme's [`list_layout.enable_pagination`](/hugo-theme-monochrome/configuration/theme/#list-layout)

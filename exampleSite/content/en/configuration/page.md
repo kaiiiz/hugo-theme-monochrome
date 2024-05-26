@@ -128,7 +128,7 @@ zooming_js: false
 ---
 ```
 
-> default: theme's [`enable_zooming_js`](/hugo-theme-monochrome/configuration/theme/#zooming_js)
+> default: theme's [`enable_zooming_js`](/hugo-theme-monochrome/configuration/theme/#zoomingjs)
 
 ### Disqus
 
@@ -162,7 +162,7 @@ code_copy: false
 ---
 ```
 
-> default: theme's [`enable_code_copy`](/hugo-theme-monochrome/configuration/theme/#using-chroma-hugo-built-in)
+> default: theme's [`enable_code_copy`](/hugo-theme-monochrome/configuration/theme/#syntax-highlighting)
 
 ## SEO
 
