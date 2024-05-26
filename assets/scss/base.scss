@@ -108,3 +108,16 @@ details[open] > summary {
     width: $xxl_body_width;
   }
 }
+
+// https://github.com/mathjax/MathJax/issues/3001
+.MJX_LiveRegion {
+  background-color: transparent !important;
+}
+
+.MJX_HoverRegion{
+  background-color: transparent !important;
+}
+
+.MJX_ToolTip{
+  background-color: transparent !important;
+}
