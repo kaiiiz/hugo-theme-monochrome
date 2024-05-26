@@ -10,7 +10,7 @@ toc: false
 - Fixed
   - Remove line number of code block from the site search data
 - New
-  - Support anchor link next to header ([#18](https://github.com/kaiiiz/hugo-theme-monochrome/issues/18))
+  - Support anchor link next to header elements ([#18](https://github.com/kaiiiz/hugo-theme-monochrome/issues/18))
 
 ---
 

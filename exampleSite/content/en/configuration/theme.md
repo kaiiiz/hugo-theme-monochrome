@@ -126,7 +126,7 @@ menu:
 
 ## Header Anchor Link
 
-Render an anchor link next to the header.
+Render an anchor link next to the header element.
 
 ```toml
 [params]
