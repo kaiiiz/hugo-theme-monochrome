@@ -1,0 +1,11 @@
+{{ if (.Page.Scratch.Get "params").enable_header_anchor }}
+<h{{ .Level }} id="{{ .Anchor | safeURL }}" class="header-anchor-wrapper">{{ .Text | safeHTML }}
+  <a href="#{{ .Anchor | safeURL }}" class="header-anchor-link">
+    <svg width="16px" height="16px" viewBox="0 0 24 24">
+        {{- partial "svg/feather.html" "hash" -}}
+    </svg>
+  </a>
+</h{{ .Level }}>
+{{ else }}
+<h{{ .Level }}>{{ .Text | safeHTML }}</h{{ .Level }}>
+{{ end }}
