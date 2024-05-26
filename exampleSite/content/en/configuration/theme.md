@@ -124,6 +124,15 @@ menu:
   enable_pagination = false # default: false
 ```
 
+## Header Anchor Link
+
+Render an anchor link next to the header.
+
+```toml
+[params]
+enable_header_anchor = false # default: true
+```
+
 ## External Library
 
 ### MathJax

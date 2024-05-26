@@ -1,7 +1,7 @@
 {{- $index := slice -}}
 {{- range .Site.RegularPages -}}
     {{ if not (.Scratch.Get "params").search_hidden }}
-        {{- $index = $index | append (dict "title" .Title "content" .Plain "permalink" .Permalink) -}}
+        {{- $index = $index | append (dict "title" .Title "content" (.Content | safeHTML | replaceRE `(<div[^>]*highlight[^>]*>\s*<div[^>]*>\s*<table[^>]*>\s*<tr[^>]*>\s*<td[^>]*>\s*)(<pre[^>]*>\s*<code[^>]*>(\s*<span[^>]*>\s*.*\s*(<\/span>)+)*\s*<\/code>\s*<\/pre>)(\s*<\/td>\s*<td[^>]*>\s*<pre[^>]*>)` "$1$5" | plainify) "permalink" .Permalink) -}}
     {{ end }}
 {{- end -}}
 {{- $index | jsonify -}}

@@ -185,6 +185,15 @@ article {
     @include mx-auto;
     display: block;
   }
+
+  .header-anchor-link {
+    display: none;
+    color: var(--color-text);
+  }
+
+  .header-anchor-wrapper:hover .header-anchor-link {
+    display: inline;
+  }
 }
 
 html[data-theme='dark'] {

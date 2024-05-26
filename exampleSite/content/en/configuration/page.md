@@ -48,6 +48,16 @@ search_hidden: true
 
 > default: false
 
+## Header Anchor Link
+
+Control anchor link rendering for a single page.
+
+```yaml
+header_anchor: true
+```
+
+> default: theme's [`enable_header_anchor`](/hugo-theme-monochrome/configuration/theme/#header-anchor-link)
+
 ## Table of Contents
 
 ```yaml
@@ -128,7 +138,7 @@ disqus: false
 ---
 ```
 
-> default for post page: site's [`disqusShortname`](/hugo-theme-monochrome/zh-tw/configuration/site/#disqus)
+> default for post page: site's [`disqusShortname`](/hugo-theme-monochrome/configuration/site/#disqus)
 > 
 > default for other pages: false
 
