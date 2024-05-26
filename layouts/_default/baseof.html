@@ -39,6 +39,10 @@
                         {{- partial "disqus.html" . -}}
                     {{ end }}
                 {{ end }}
+
+                {{ if templates.Exists "partials/user_content_end.html" -}}
+                    {{ partial "partials/user_content_end.html" . }}
+                {{- end }}
             </div>
         </main>
         {{- partial "footer.html" . -}}
