@@ -5,13 +5,22 @@ toc: false
 
 # Changelog
 
+## v3.1.0 (2024/05/26)
+
+- Fixed
+  - Remove line number of code block from the site search data
+- New
+  - Support anchor link next to header ([#18](https://github.com/kaiiiz/hugo-theme-monochrome/issues/18))
+
+---
+
 ## v3.0.0 (2024/05/26)
 
 - Fixed
   - Base layout organaization for semantic elements, which may improve SEO description
   - Fix table class parsing bug
-  - Balloon layout and Gallery layout page resources retrieval bug ([#50](https://github.com/kaiiiz/hugo-theme-monochrome/issues/50))
-  - Language dropdown menu click issue on Safari mobile ([#43](https://github.com/kaiiiz/hugo-theme-monochrome/issues/43))
+  - Fix Balloon layout and Gallery layout page resources retrieval bug ([#50](https://github.com/kaiiiz/hugo-theme-monochrome/issues/50))
+  - Fix language dropdown menu click issue on Safari mobile ([#43](https://github.com/kaiiiz/hugo-theme-monochrome/issues/43))
   - Fix i18n on navbar entries ([#49](https://github.com/kaiiiz/hugo-theme-monochrome/issues/49))
 - Changed
   - **BREAKING CHANGE** The minimum hugo version requirement is now `0.120.0`. [Adjust your GoogleAnalytics and DisqusShortname settings accordingly](https://github.com/gohugoio/hugo/releases/tag/v0.120.0)
