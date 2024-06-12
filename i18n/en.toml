@@ -2,6 +2,6 @@
 "recent_posts" = "Recent Posts"
 "toc" = "Table of contents"
 "no_page_under_resouces" = 'There is no page under {{ .resources_path }}. You need to specify "{{ .resources_name }}" correctly and check the existence of posts under this folder.'
-"resources_not_found" = 'Resouces not found. You need to specify "{{ .resources_name }}" correctly.'
+"resources_not_found" = 'Resources not found. You need to specify "{{ .resources_name }}" correctly.'
 "search" = "Search Posts"
 "changelogs" = "Changelogs"
