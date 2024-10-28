@@ -1,10 +1,10 @@
 {{- $styles := resources.Get "scss/core.scss" -}}
 {{- if hugo.IsProduction -}}
     {{- $tocss_opts := dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true -}}
-    {{- $styles = $styles | resources.ToCSS $tocss_opts | resources.Minify | resources.Fingerprint "sha512" -}}
+    {{- $styles = $styles | css.Sass $tocss_opts | resources.Minify | resources.Fingerprint "sha512" -}}
 {{- else -}}
     {{- $tocss_opts := dict "targetPath" "style.css" "enableSourceMap" true -}}
-    {{- $styles = $styles | resources.ToCSS $tocss_opts -}}
+    {{- $styles = $styles | css.Sass $tocss_opts -}}
 {{- end -}}
 <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
 
