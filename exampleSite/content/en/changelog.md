@@ -5,6 +5,19 @@ toc: false
 
 # Changelog
 
+## v4.0.0 (2024/11/27)
+
+- Fixed
+  - Terms cloud overflow bug ([#57](https://github.com/kaiiiz/hugo-theme-monochrome/issues/57))
+  - Mathjax white pixels on top and bottom left of page ([#56](https://github.com/kaiiiz/hugo-theme-monochrome/issues/56))  
+- Changed
+  - **BREAING CHANGE** The minimum hugo version requirement is now `0.128.0`. [Adjust your config's `paginate` to `pagination.pagerSize` accordingly](https://github.com/gohugoio/hugo/releases/tag/v0.128.0) ([#58](https://github.com/kaiiiz/hugo-theme-monochrome/pull/58), [#59](https://github.com/kaiiiz/hugo-theme-monochrome/pull/59), [#60](https://github.com/kaiiiz/hugo-theme-monochrome/issues/60))
+- Improved
+  - Add Russian translation ([#52](https://github.com/kaiiiz/hugo-theme-monochrome/pull/52))
+  - Add French (France) translation ([#54](https://github.com/kaiiiz/hugo-theme-monochrome/pull/54))
+
+---
+
 ## v3.1.0 (2024/05/26)
 
 - Fixed
