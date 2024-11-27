@@ -61,7 +61,7 @@
 
 {{ $js := resources.Get "js/emgithub.js" }}
 {{- if hugo.IsProduction -}}
-    {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+    {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
 {{- else -}}
     {{ $js = $js | js.Build }}
 {{- end -}}
