@@ -1,7 +1,7 @@
 {{/*  Header  */}}
 {{ $header_js := resources.Get "js/header.js" }}
 {{- if hugo.IsProduction -}}
-    {{ $header_js = $header_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+    {{ $header_js = $header_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
 {{- else -}}
     {{ $header_js = $header_js | js.Build -}}
 {{- end -}}
@@ -11,7 +11,7 @@
 {{ if (.Scratch.Get "params").enable_zooming_js }}
     {{ $zooming_js := resources.Get "js/zooming.js" }}
     {{- if hugo.IsProduction -}}
-        {{ $zooming_js = $zooming_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+        {{ $zooming_js = $zooming_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
     {{- else -}}
         {{ $zooming_js = $zooming_js | js.Build -}}
     {{- end -}}
@@ -22,7 +22,7 @@
 {{ if (.Scratch.Get "params").math }}
     {{ $math_js := resources.Get "js/math.js" }}
     {{- if hugo.IsProduction -}}
-        {{ $math_js = $math_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+        {{ $math_js = $math_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
     {{- else -}}
         {{ $math_js = $math_js | js.Build -}}
     {{- end -}}
@@ -37,7 +37,7 @@
         {{ if $enable_code_copy }}
             {{ $code_copy_js := resources.Get "js/builtin-copy.js" }}
             {{- if hugo.IsProduction -}}
-                {{ $code_copy_js = $code_copy_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+                {{ $code_copy_js = $code_copy_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
             {{- else -}}
                 {{ $code_copy_js = $code_copy_js | js.Build -}}
             {{- end -}}
@@ -58,7 +58,7 @@
 
         {{ $prism_js = $prism_js | append (resources.Get "js/prism-autoloader.js") | append (resources.Get "js/prism.js") | resources.Concat "js/prism.js" }}
         {{- if hugo.IsProduction -}}
-            {{ $prism_js = $prism_js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+            {{ $prism_js = $prism_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
         {{- else -}}
             {{ $prism_js = $prism_js | js.Build -}}
         {{- end -}}
@@ -72,7 +72,7 @@
     {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}
     {{ $search_js := resources.Get "js/search.js" | js.Build $build_opts }}
     {{- if hugo.IsProduction -}}
-        {{ $search_js = $search_js | js.Build (merge $build_opts (dict "minify" true)) | resources.Fingerprint "sha512" -}}
+        {{ $search_js = $search_js | js.Build (merge $build_opts (dict "minify" true)) | resources.Fingerprint "sha256" -}}
     {{- else -}}
         {{ $search_js = $search_js | js.Build $build_opts -}}
     {{- end -}}
@@ -87,7 +87,7 @@
     {{ $js = $js | append (resources.Get "js/prism-autoloader.js") }}
     {{ $js = $js | resources.Concat "js/emgithub-prism.js" }}
     {{- if hugo.IsProduction -}}
-        {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha512" -}}
+        {{ $js = $js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
     {{- else -}}
         {{ $js = $js | js.Build }}
     {{- end -}}

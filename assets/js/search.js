@@ -2,6 +2,7 @@ import * as params from '@params';
 import uFuzzy from '../lib/js/uFuzzy-v1.0.14.esm.js';
 
 async function init() {
+    const defaultContextLen = 100;
     const response = fetch(params.index_url);
 
     const search_btn = document.getElementById("search_btn");
@@ -52,7 +53,7 @@ async function init() {
 
     const buildAllItems = () => {
         search_menu_results.innerHTML = data.reduce((acc, curr) => {
-            let content = (curr.content.length > 100) ? curr.content.substring(0, 100) + "..." : curr.content;
+            let content = (curr.content.length > defaultContextLen) ? curr.content.substring(0, defaultContextLen) + "..." : curr.content;
             return acc + createItem(curr.title, curr.permalink, content);
         }, "");
     };
@@ -126,22 +127,28 @@ async function init() {
         const orderedMatches = [];
         const matchesMap = new Map();
 
-        for (let i = 0; i < order.length; i++) {
-            const infoIdx = order[i];
-            const haystackIdx = info.idx[infoIdx]
-            const dataIdx = Math.floor(haystackIdx / 2);
-            const dataType = haystackIdx % 2;
-
-            if (!matchesMap.has(dataIdx)) {
-                matchesMap.set(dataIdx, orderedMatches.length);
-                orderedMatches.push({ ...data[dataIdx] });
-            }
-            const match = orderedMatches[matchesMap.get(dataIdx)];
-
-            if (dataType === 0) {
-                match['title'] = markMatched(haystackIdx, info.ranges[infoIdx]);
-            } else if (dataType === 1) {
-                match['content'] = markMatchTruncate(haystackIdx, info.ranges[infoIdx]);
+        if (order !== null) {
+            for (let i = 0; i < order.length; i++) {
+                const infoIdx = order[i];
+                const haystackIdx = info.idx[infoIdx]
+                const dataIdx = Math.floor(haystackIdx / 2);
+                const dataType = haystackIdx % 2;
+    
+                if (!matchesMap.has(dataIdx)) {
+                    matchesMap.set(dataIdx, orderedMatches.length);
+                    const clonedData = { ...data[dataIdx] };
+                    if (clonedData['content'].length > defaultContextLen) {
+                        clonedData['content'] = clonedData['content'].substring(0, defaultContextLen) + "...";
+                    }
+                    orderedMatches.push(clonedData);
+                }
+                const match = orderedMatches[matchesMap.get(dataIdx)];
+    
+                if (dataType === 0) {
+                    match['title'] = markMatched(haystackIdx, info.ranges[infoIdx]);
+                } else if (dataType === 1) {
+                    match['content'] = markMatchTruncate(haystackIdx, info.ranges[infoIdx]);
+                }
             }
         }
 

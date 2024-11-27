@@ -4,8 +4,10 @@ title = "Monochrome"
 theme = "hugo-theme-monochrome"
 defaultContentLanguage = "en"
 enableEmoji = true
-paginate = 5
 enableGitInfo = true
+
+[pagination]
+pagerSize = 5
 
 [taxonomies]
 category = "categories"
