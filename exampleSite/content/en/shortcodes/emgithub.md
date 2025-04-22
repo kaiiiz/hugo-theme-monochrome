@@ -14,7 +14,7 @@ Directly embed github source code like gist with Prism.js syntax highlight.
 {{</* emgithub target="" lang="" hl="" tab_size="" /*/>}}
 ```
 
-Paramters:
+Parameters:
 
 * `target` (required): A valid github file url, for example:
   * https://github.com/torvalds/linux/blob/v5.4/README

@@ -16,7 +16,7 @@
                 {{ partial "balloon/card-item.html" (dict "ctx" . "last_item" (eq $index $max_idx)) }}
             {{ end }}
         {{ else }}
-            <span>{{ i18n "no_page_under_resouces" (dict "resources_name" "balloon_resources" "resources_path" .Params.balloon_resources ) }}</span>
+            <span>{{ i18n "no_page_under_resources" (dict "resources_name" "balloon_resources" "resources_path" .Params.balloon_resources ) }}</span>
         {{ end }}
     </div>
 {{ else }}
