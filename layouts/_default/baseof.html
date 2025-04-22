@@ -32,11 +32,11 @@
 
                 {{ if eq .Kind "page" }}
                     {{ if (.Params.disqus | default .Site.Config.Services.Disqus.Shortname) }}
-                        {{- partial "disqus.html" . -}}
+                        {{- partial "disqus-wrapper.html" . -}}
                     {{ end }}
                 {{ else }}
                     {{ if (.Params.disqus | default false) }}
-                        {{- partial "disqus.html" . -}}
+                        {{- partial "disqus-wrapper.html" . -}}
                     {{ end }}
                 {{ end }}
 
