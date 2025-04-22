@@ -6,7 +6,7 @@ bookcase_cover_src_dark: 'cover/coding_dark.png'
 
 # CodePen
 
-Embeded codepen to page.
+Embedded codepen to page.
 
 ## Usage
 
@@ -14,7 +14,7 @@ Embeded codepen to page.
 {{</* codepen id="" */>}}
 ```
 
-Paramters:
+Parameters:
 
 * `id`: codepen id
 

@@ -6,7 +6,7 @@ bookcase_cover_src_dark: 'cover/coding_dark.png'
 
 # JSFiddle
 
-Embeded jsfiddle to page.
+Embedded jsfiddle to page.
 
 ## Usage
 
@@ -14,7 +14,7 @@ Embeded jsfiddle to page.
 {{</* jsfiddle id="" */>}}
 ```
 
-Paramters:
+Parameters:
 
 * `id`: jsfiddle id
 

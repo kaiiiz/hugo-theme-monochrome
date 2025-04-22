@@ -16,7 +16,7 @@ A block with color
 {{</* /color-block */>}}
 ```
 
-Paramters:
+Parameters:
 
 * `style`: block style
   * success

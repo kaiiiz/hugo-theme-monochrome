@@ -14,7 +14,7 @@ Monochrome built-in icons.
 {{</* icon vendor="" name="" link="" */>}}
 ```
 
-Paramters:
+Parameters:
 
 - `vendor`: Icon vendor (Supported value: `feather`, `simple`)
 - `link`: Render link for icon

@@ -48,7 +48,7 @@ enable_collapsible_changelogs = false # default: false
 ```
 ## Navbar menu
 
-Monochrome uses built-in menu system supported by hugo itself. (Checkout [document](https://gohugo.io/content-management/menus) for more deatil.) By default, the menu called `navbar` is used to decide which item need to be rendered on the navbar.
+Monochrome uses built-in menu system supported by hugo itself. (Checkout [document](https://gohugo.io/content-management/menus) for more details.) By default, the menu called `navbar` is used to decide which item need to be rendered on the navbar.
 
 So you can simply add the following code to your page front-matter, and the menu info will be handled by hugo out of the box. ([simple method mentioned in document](https://gohugo.io/content-management/menus#simple))
 
