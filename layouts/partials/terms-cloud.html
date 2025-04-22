@@ -1,13 +1,13 @@
 {{- $terms := .terms -}}
 {{- $sortby := .sortby | default "count" -}}
 {{- $order := .order | default "asc" -}}
-{{- if eq $sortby "count" -}}
-    {{- $terms = sort $terms "Count" $order -}}
-{{- else if eq $sortby "alphabetical" -}}
-    {{- $terms = sort $terms "Page.Title" $order -}}
-{{- end -}}
+{{- with $terms -}}
+    {{- if eq $sortby "count" -}}
+        {{- $terms = sort . "Count" $order -}}
+    {{- else if eq $sortby "alphabetical" -}}
+        {{- $terms = sort . "Page.Title" $order -}}
+    {{- end -}}
 
-{{ if $terms }}
     {{ $fontSmall := 0.875 }}
     {{ $fontBig := 1.6 }}
     {{ $fontSpread := sub $fontBig $fontSmall }}
