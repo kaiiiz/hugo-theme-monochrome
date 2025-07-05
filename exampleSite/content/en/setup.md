@@ -34,7 +34,7 @@ git init
 git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/hugo-theme-monochrome
 ```
 
-Then add `theme = "hugo-theme-monochrome"` to your `config.toml`
+Then add `theme = "hugo-theme-monochrome"` to your `hugo.toml`
 
 ### Customize the Theme
 
