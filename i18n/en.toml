@@ -5,3 +5,5 @@
 "resources_not_found" = 'Resources not found. You need to specify "{{ .resources_name }}" correctly.'
 "search" = "Search Posts"
 "changelogs" = "Changelogs"
+"dark_mode_btn_tooltip" = "Switch to dark mode"
+"light_mode_btn_tooltip" = "Switch to light mode"

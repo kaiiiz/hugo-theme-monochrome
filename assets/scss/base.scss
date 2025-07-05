@@ -7,10 +7,35 @@ code, kbd, pre {
   font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,liberation mono,courier new,monospace;
 }
 
-body {
+main {
   margin-left: auto;
   margin-right: auto;
-  padding: 1.5rem;
+  padding: 1rem 0;
+  width: $sm_main_width;
+}
+
+@media screen and (min-width: $md_min_width) {
+  main {
+    width: $md_main_width;
+  }
+}
+
+@media screen and (min-width: $lg_min_width) {
+  main {
+    width: $lg_main_width;
+  }
+}
+
+@media screen and (min-width: $xl_min_width) {
+  main {
+    width: $xl_main_width;
+  }
+}
+
+@media screen and (min-width: $xxl_min_width) {
+  main {
+    width: $xxl_main_width;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -79,34 +104,8 @@ details[open] > summary {
   display: none;
 }
 
-@media screen and (min-width: $sm_min_width) {
-  body {
-    width: $sm_body_width;
-  }
-}
-
-@media screen and (min-width: $md_min_width) {
-  body {
-    width: $md_body_width;
-  }
-}
-
-@media screen and (min-width: $lg_min_width) {
-  body {
-    width: $lg_body_width;
-  }
-}
-
-@media screen and (min-width: $xl_min_width) {
-  body {
-    width: $xl_body_width;
-  }
-}
-
-@media screen and (min-width: $xxl_min_width) {
-  body {
-    width: $xxl_body_width;
-  }
+hr {
+  border-color: var(--color-border);
 }
 
 // https://github.com/mathjax/MathJax/issues/3001

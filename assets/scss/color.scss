@@ -33,9 +33,9 @@ html[data-theme="light"] {
   --color-background-card: #{$gray-0};
   --color-background-mark: #ffd70e;
   --color-link: #2563eb;
-  --color-navbar-item-inactive: #{$gray-400};
-  --color-navbar-item-active: #{$gray-900};
-  --color-navbar-item-in-section: #{$gray-600};
+  --color-header-menu-item-inactive: #{$gray-500};
+  --color-header-menu-item-active: #{$gray-1000};
+  --color-header-menu-item-in-section: #{$gray-600};
 }
 
 html[data-theme="dark"] {
@@ -52,9 +52,9 @@ html[data-theme="dark"] {
   --color-background-card: #{$gray-700};
   --color-background-mark: #ffd70e;
   --color-link: #93c5fd;
-  --color-navbar-item-inactive: #{$gray-400};
-  --color-navbar-item-active: #{$gray-100};
-  --color-navbar-item-in-section: #{$gray-250};
+  --color-header-menu-item-inactive: #{$gray-400};
+  --color-header-menu-item-active: #{$gray-100};
+  --color-header-menu-item-in-section: #{$gray-250};
 }
 
 // Default color settings

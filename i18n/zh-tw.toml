@@ -5,3 +5,5 @@
 "resources_not_found" = '找不到資源，你需要檢查 "{{ .resources_name }}" 的設定是否正確'
 "search" = "搜索文章"
 "changelogs" = "更新日誌"
+"dark_mode_btn_tooltip" = "切換至暗色主題"
+"light_mode_btn_tooltip" = "切換至亮色主題"
