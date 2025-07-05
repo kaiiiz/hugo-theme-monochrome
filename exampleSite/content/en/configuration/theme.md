@@ -226,9 +226,9 @@ A flag to render open graph internal template. See [Open Graph](https://gohugo.i
 enable_open_graph = false # default: true
 ```
 
-### Twitter Cards
+### X (Twitter) Cards
 
-A flag to render open twitter cards template. See [Twitter Cards](https://gohugo.io/templates/internal#twitter-cards) for additional settings.
+A flag to render open X (twitter) cards template. See [X (Twitter) Cards](https://gohugo.io/templates/embedded/#x-twitter-cards) for additional settings.
 
 ```toml
 [params]

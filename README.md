@@ -34,7 +34,7 @@ See [kaiiiz.github.io/hugo-theme-monochrome](https://kaiiiz.github.io/hugo-theme
 
 8. **Site Search with real-time matches highlight.** Powered by uFuzzy.
 
-9.  **SEO-friendly.** Easily change your author, description, keywords, open graph, twitter card metadata.
+9.  **SEO-friendly.** Easily change your author, description, keywords, open graph, x (twitter) card meatdata.
 
 10. **Support mathematical notation.** Powered by MathJax.
 
