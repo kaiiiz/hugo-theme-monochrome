@@ -159,7 +159,7 @@ enable_zooming_js = false # default: true
 
 ### Site Search
 
-Add the following settings to config.toml:
+Add the following settings to hugo.toml:
 
 ```toml
 [outputs]
