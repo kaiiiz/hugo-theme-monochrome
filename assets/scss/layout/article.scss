@@ -73,6 +73,8 @@ article {
     border-radius: .25rem;
     padding: .2rem .375rem .2rem .375rem;
     background-color: var(--color-background-inline-code);
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
 
   pre {
@@ -88,6 +90,8 @@ article {
       border-radius: 0;
       padding: 0;
       background-color: transparent;
+      white-space: unset;
+      word-wrap: unset;
     }
   }
 
@@ -134,6 +138,8 @@ article {
           border-radius: 0;
           padding: 0;
           background-color: transparent;
+          white-space: unset;
+          word-wrap: unset;
         }
       }
     }
