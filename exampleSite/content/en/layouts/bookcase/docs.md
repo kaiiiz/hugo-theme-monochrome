@@ -43,7 +43,7 @@ bookcase_list_pages: true
 
 > default: true
 
-## Resouces Configuration
+## Resources Configuration
 
 These parameters are located in bookcase item's resource. For example:
 

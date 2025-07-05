@@ -25,17 +25,17 @@
     {{ end }}
 
     {{ if (.Scratch.Get "params").enable_open_graph }}
-        {{ template "_internal/opengraph.html" . }}
+        {{ partial "opengraph.html" . }}
     {{ end }}
 
     {{ if (.Scratch.Get "params").enable_twitter_cards }}
-        {{ template "_internal/twitter_cards.html" . }}
+        {{ partial "twitter_cards.html" . }}
     {{ end }}
 
     {{- partial "resources/css.html" . -}}
 
     {{ if (.Scratch.Get "params").ga_code }}
-        {{ template "_internal/google_analytics.html" . }}
+        {{ partial "google_analytics.html" . }}
     {{ end }}
 
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}

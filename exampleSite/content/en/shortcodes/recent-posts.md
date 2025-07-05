@@ -12,7 +12,7 @@ Render recent posts list
 {{</* recent-posts sortby="" limit="" */>}}
 ```
 
-Paramters:
+Parameters:
 
 * `sortby`: `publishDate` or `lastMod`
 * `limit`: positive integer, `0` means unlimited

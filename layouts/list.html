@@ -27,14 +27,14 @@
         </div>
     {{ end }}
     {{ if $pagination }}
-        {{ template "_internal/pagination.html" . }}
+        {{ partial "pagination.html" . }}
     {{ end }}
 {{ else }}
     <div class="content-margin">
         {{- partial "list.html" (dict "pages" $pages "show_date" $show_date "group_by_year" $group_by_year) -}}
     </div>
     {{ if $pagination }}
-        {{ template "_internal/pagination.html" . }}
+        {{ partial "pagination.html" . }}
     {{ end }}
 {{ end }}
 

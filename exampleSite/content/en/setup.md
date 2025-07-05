@@ -52,7 +52,7 @@ hugo server --environment production
 
 ### Build static pages
 
-Generate files to `/public` folder, `--minify` option can minify other resouces (e.g. HTML/XML/JSON...).
+Generate files to `/public` folder, `--minify` option can minify other resources (e.g. HTML/XML/JSON...).
 
 See [Configure Minify](https://gohugo.io/getting-started/configuration/#configure-minify) to adjust the behavior of hugo minifier (powered by [minify](https://github.com/tdewolff/minify)).
 
