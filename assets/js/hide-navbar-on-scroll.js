@@ -1,12 +1,15 @@
 const header = document.getElementsByTagName("header")[0];
+const dropDownMenus = document.querySelectorAll("header .pure-menu-children");
 const threshold = 100;
 
 let lastScrollY = window.scrollY;
 let isScrollHide = false;
+let isInDropdownMenu = false;
 let headerHeight = (header !== undefined) ? header.offsetHeight : 0;
+let hideTimer = null;
 
 function updateNavbarVisibility() {
-    if (isMouseNearTop || !isScrollHide) {
+    if (isMouseNearTop || !isScrollHide || isInDropdownMenu) {
         header.classList.remove('hide');
     } else {
         header.classList.add('hide');
@@ -54,3 +57,15 @@ window.addEventListener('mousemove', throttle((e) => {
   isMouseNearTop = e.clientY <= headerHeight;
   updateNavbarVisibility();
 }, 50));
+
+for (const menu of dropDownMenus) {
+    menu.addEventListener('mousemove', () => {
+        isInDropdownMenu = true;
+        updateNavbarVisibility();
+    });
+
+    menu.addEventListener('mouseleave', () => {
+        isInDropdownMenu = false;
+        updateNavbarVisibility();
+    });
+}
