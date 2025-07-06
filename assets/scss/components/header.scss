@@ -210,6 +210,11 @@ header {
   }
 
   // sidebar button
+  #sidebar_btn {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   #sidebar_btn_input:checked ~ #sidebar_canvas_overlay_wrapper #sidebar_canvas_overlay {
     display: block;
   }
