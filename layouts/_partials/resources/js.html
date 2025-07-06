@@ -38,8 +38,8 @@
     {{- else -}}
         {{ $math_js = $math_js | js.Build -}}
     {{- end -}}
+    <script src="{{ $math_js.RelPermalink }}" integrity="{{- $math_js.Data.Integrity -}}"></script>
     <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0-beta.3/tex-mml-chtml.js"></script>
-    <script defer src="{{ $math_js.RelPermalink }}" integrity="{{- $math_js.Data.Integrity -}}"></script>
 {{ end }}
 
 {{/*  Load script for only page contain codeblock  */}}
