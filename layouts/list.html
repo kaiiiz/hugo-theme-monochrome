@@ -1,6 +1,6 @@
 {{ define "content" }}
 
-{{ if and .Content (eq .Paginator.PageNumber 1) }}
+{{ if .Content }}
     <div class="content-margin">
         {{- partial "content.html" (dict "ctx" . "content" .Content) -}}
     </div>
