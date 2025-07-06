@@ -62,7 +62,10 @@ header {
       min-height: $header_height;
       display: flex;
       align-items: center;
+      justify-content: flex-end;
       gap: 0.5rem;
+      flex: 1;
+      margin-left: 0.5rem;
 
       svg {
         width: 1rem;
