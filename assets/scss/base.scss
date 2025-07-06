@@ -8,6 +8,7 @@ code, kbd, pre {
 }
 
 main {
+  @include my-8;
   margin-left: auto;
   margin-right: auto;
   width: $sm_main_width;
@@ -15,24 +16,28 @@ main {
 
 @media screen and (min-width: $md_min_width) {
   main {
+    @include my-8;
     width: $md_main_width;
   }
 }
 
 @media screen and (min-width: $lg_min_width) {
   main {
+    @include my-10;
     width: $lg_main_width;
   }
 }
 
 @media screen and (min-width: $xl_min_width) {
   main {
+    @include my-10;
     width: $xl_main_width;
   }
 }
 
 @media screen and (min-width: $xxl_min_width) {
   main {
+    @include my-10;
     width: $xxl_main_width;
   }
 }
@@ -96,7 +101,7 @@ details[open] > summary {
 }
 
 .content-margin {
-  @include my-10;
+  @include my-8;
 }
 
 .hidden {
