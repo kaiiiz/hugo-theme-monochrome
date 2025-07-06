@@ -12,7 +12,7 @@ html[data-theme="light"] {
 
 header {
   min-height: $header_height;
-  border-bottom: 0.8px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -46,7 +46,7 @@ header {
       }
     
       #sidebar_btn {
-        margin-right: 12px;
+        margin-right: 0.75rem;
 
         #sidebar_btn_label {
           display: flex;
@@ -62,22 +62,28 @@ header {
       min-height: $header_height;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 0.5rem;
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
     }
   }
 
   .header-menu-btn {
-    min-height: $header_btn_size;
+    height: $header_btn_size;
     width: $header_btn_size;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 0.4rem;
     color: var(--color-text);
     background-color: transparent;
-    border: 0.8px solid var(--color-text-secondary);
-    
+    border: 1px solid var(--color-text-secondary);
+
     &:hover {
       background-color: var(--color-background-hover);
     }
@@ -111,7 +117,7 @@ header {
 .header-menu {
   > ul.pure-menu-list {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
 
     .header-menu-dropdown {
       > .pure-menu-link:after {
@@ -120,13 +126,13 @@ header {
 
       > ul.pure-menu-children {
         left: 0;
-        top: $header_height + 1px;
+        top: calc(#{$header_height} + 2px);
         width: inherit;
       }
     }
 
     .header-menu-item {
-      height: $header_height - 1px;
+      height: $header_height;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -135,7 +141,6 @@ header {
 
       > .pure-menu-link {
         @include font-bold;
-        border-radius: 6px;
         padding: 0;
         height: $header_height;
         line-height: $header_height;
@@ -177,7 +182,7 @@ header {
 }
 
 #navbar {
-  margin-left: 24px;
+  margin-left: 1.5rem;
 
   @media screen and (max-width: $lg_min_width) {
     display: none;
@@ -186,12 +191,12 @@ header {
   > ul.pure-menu-list {
     .header-menu-item {
       > .pure-menu-link {
-        margin-top: 4px;
+        margin-top: 0.3rem;
       }
     }
   }
 }
 
 #translation_menu {
-  margin-right: 4px;
+  margin-right: 0.25rem;
 }
