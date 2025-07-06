@@ -14,7 +14,9 @@ These values are inside your page's front-matter.
 
 Monochrome support different types of layout. You can change the layout of section or regular page according to your needs. Checkout [Layout](/hugo-theme-monochrome/layouts) for more details.
 
-## Navbar title
+## Navbar
+
+### Navbar title
 
 HTML is available.
 
@@ -25,6 +27,18 @@ navbar_title: "Monochrome"
 ```
 
 > default: theme's [`navbar_title`](/hugo-theme-monochrome/configuration/theme#navbar-title)
+
+### Hide Navbar on Scroll
+
+Hide navbar on scroll
+
+```yaml
+---
+hide_navbar_on_scroll: true # false
+---
+```
+
+> default: theme's [`hide_navbar_on_scroll`](/hugo-theme-monochrome/configuration/theme#hide-navbar-on-scroll)
 
 ## Footer
 
@@ -77,6 +91,16 @@ collapsible_toc: false
 ```
 
 > default: theme's [`enable_collapsible_toc`](/hugo-theme-monochrome/configuration/theme/#collapsible-menu)
+
+### Table of Contents Position
+
+```yaml
+---
+toc_position: "right" # "top" | "right"
+---
+```
+
+> default: theme's [`toc_position`](/hugo-theme-monochrome/configuration/theme/#table-of-contents-position)
 
 ## Changelogs
 

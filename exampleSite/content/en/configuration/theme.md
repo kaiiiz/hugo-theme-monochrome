@@ -37,6 +37,15 @@ TOC global settings.
 enable_toc = true # default: true
 ```
 
+### Table of Contents Position
+
+TOC position global setting.
+
+```toml
+[params]
+toc_position = "right" # "top" | "right", default: "top"
+```
+
 ## Collapsible Menu
 
 Collapsible global settings.
@@ -112,6 +121,15 @@ menu:
     name: categories
     url: /categories/
     weight: 80
+```
+
+### Hide Navbar on Scroll
+
+Hide navbar on scroll
+
+```toml
+[params]
+hide_navbar_on_scroll = true # true | false, default: true
 ```
 
 ## List Layout
