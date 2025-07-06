@@ -190,11 +190,12 @@ header {
 
   #header_navbar {
     margin-left: 1.5rem;
+    display: none;
 
-    @media screen and (max-width: $lg_min_width) {
-      display: none;
+    @media screen and (min-width: $lg_min_width) {
+      display: block;
     }
-    
+
     > ul.pure-menu-list {
       .header-menu-item {
         > .pure-menu-link {
