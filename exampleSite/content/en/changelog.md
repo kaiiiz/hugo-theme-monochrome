@@ -5,10 +5,15 @@ toc: false
 
 # Changelog
 
-## v5.0.1 (2025/07/06)
+## v5.1.0 (2025/07/06)
 
 - Fixed
   - user's partial templates not rendering due to changes in Hugo's new template structure.
+- Changed
+  - rename config.toml to hugo.toml
+- New
+  - Support `width` and `height` parameters in icon shortcode
+  - Support `gap` parameter in icon-group shortcode
 
 ---
 
