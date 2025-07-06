@@ -41,8 +41,8 @@
                     {{ end }}
                 {{ end }}
 
-                {{ if templates.Exists "partials/user_content_end.html" -}}
-                    {{ partial "partials/user_content_end.html" . }}
+                {{ if templates.Exists "_partials/user_content_end.html" -}}
+                    {{ partial "user_content_end.html" . }}
                 {{- end }}
             </div>
         </main>
