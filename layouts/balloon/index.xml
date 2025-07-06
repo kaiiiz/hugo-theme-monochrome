@@ -1,5 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Balloon Layout on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/</link><description>Recent content in Balloon Layout on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/index.xml" rel="self" type="application/rss+xml"/><item><title>Balloon Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/docs/</link><pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/docs/</guid><description>Balloon Layout Document Balloon is useful for demonstrating information step-by-step.
-This layout can be used on both section page (_index.md) and regular post (xxx.md).
-Configuration --- type: 'balloon' --- Specify type in front-matter will change the template lookup order.
-balloon_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)
-Hugo will handle multilingual scenario out of the box</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Balloon Layout on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/</link><description>Recent content in Balloon Layout on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/index.xml" rel="self" type="application/rss+xml"/><item><title>Balloon Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/docs/</link><pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/docs/</guid><description>&lt;h1 id="balloon-layout-document" class="header-anchor-wrapper">Balloon Layout Document
+&lt;a href="#balloon-layout-document" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Balloon is useful for demonstrating information step-by-step.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can be used on both section page (&lt;code>_index.md&lt;/code>) and regular post (&lt;code>xxx.md&lt;/code>).&lt;/p>&lt;/blockquote>
+&lt;h2 id="configuration" class="header-anchor-wrapper">Configuration
+&lt;a href="#configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-yaml">---
+type: 'balloon'
+---
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p></description></item></channel></rss>

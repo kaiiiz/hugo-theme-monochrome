@@ -1,6 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>List Layout on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/</link><description>Recent content in List Layout on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/index.xml" rel="self" type="application/rss+xml"/><item><title>List Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/docs/</guid><description>List layout is the built-in section layout. Monochrome add options to adjust its behavior.
-Configuration Group by year An option to control group setting.
-group_by_year: false default: theme&amp;rsquo;s list_layout.enable_group_by_year
-Show date Show / Hide date right after the post entry.
-show_date: false default: theme&amp;rsquo;s list_layout.enable_show_date
-Pagination pagination: false default: theme&amp;rsquo;s list_layout.enable_pagination</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>List Layout on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/</link><description>Recent content in List Layout on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/index.xml" rel="self" type="application/rss+xml"/><item><title>List Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/docs/</guid><description>&lt;p>List layout is the built-in section layout. Monochrome add options to adjust its behavior.&lt;/p>
+&lt;h2 id="configuration" class="header-anchor-wrapper">Configuration
+&lt;a href="#configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;h3 id="group-by-year" class="header-anchor-wrapper">Group by year
+&lt;a href="#group-by-year" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h3>
+&lt;p>An option to control group setting.&lt;/p></description></item></channel></rss>

@@ -1,68 +1,1498 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/</link><description>Recent content on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/index.xml" rel="self" type="application/rss+xml"/><item><title>Site Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</guid><description>Site Configuration These settings are important for building a website using hugo. See All Configuration Settings for more details.
-Site title Site title. This value will become the content of &amp;lt;title&amp;gt; tag in html.
-title = &amp;quot;Monochrome&amp;quot; Theme Set this value to the corresponding folder name of your theme. (located by default in /themes/THEMENAME/)
-theme = &amp;quot;hugo-theme-monochrome&amp;quot; Base URL Hostname (and path) to the root.
-baseURL = &amp;quot;https://kaiiiz.github.io/hugo-theme-monochrome&amp;quot; favicon Add favicon.</description></item><item><title>Theme Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</guid><description>Theme Configuration These values are inside your toml config file.
-Navbar title HTML is available.
-[params] navbar_title = &amp;quot;Monochrome&amp;quot; # default: site's `title` Footer HTML is available.
-[params] footer = &amp;quot;Copyright © 2021 by kaiiiz&amp;quot; # default: None Table of Contents TOC global settings.
-[params] enable_toc = true # default: true Collapsible Menu Collapsible global settings.
-[params] enable_collapsible_toc = false # default: false enable_collapsible_changelogs = false # default: false Navbar menu Monochrome uses built-in menu system supported by hugo itself.</description></item><item><title>Page Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</guid><description>Page Settings These values are inside your page&amp;rsquo;s front-matter.
-Layout Monochrome support different types of layout. You can change the layout of section or regular page according to your needs. Checkout Layout for more details.
-Navbar title HTML is available.
---- navbar_title: &amp;quot;Monochrome&amp;quot; --- default: theme&amp;rsquo;s navbar_title
-Footer HTML is available.
---- footer: &amp;quot;Copyright © 2021 by kaiiiz&amp;quot; --- default: theme&amp;rsquo;s footer
-Site Search Hide the page from the search result.</description></item><item><title>Bookcase Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/docs/</guid><description>Bookcase layout is useful for creating another viewpoint of list contents.
-This layout can only be used on section page (_index.md).
-Configuration --- type: 'bookcase' --- Specify type in front-matter will change the template lookup order.
-bookcase_list_sections List subsections.
---- bookcase_list_sections: true --- default: true
-bookcase_list_pages List pages.
---- bookcase_list_pages: true --- default: true
-Resouces Configuration These parameters are located in bookcase item&amp;rsquo;s resource. For example:
-. ├── books.md &amp;lt;- config is located in here!</description></item><item><title>Gallery Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/gallery/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/gallery/docs/</guid><description>Gallery Layout Document Gallery layout is useful for demonstrating pictures and its statistical data.
-This layout can be used on both section page and regular post.
-Configuration --- type: 'gallery' --- Specify type in front-matter will change the template lookup order.
-gallery_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)
-Hugo will handle multilingual scenario out of the box</description></item><item><title>Blank Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/docs/</guid><description>Blank layout render only the content of _index.md, it&amp;rsquo;s useful for fully customizing your list layout.
-This layout can only be used on section page (_index.md).
-Configuration --- type: 'blank' --- Specify type in front-matter will change the template lookup order.</description></item><item><title>List Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/docs/</guid><description>List layout is the built-in section layout. Monochrome add options to adjust its behavior.
-Configuration Group by year An option to control group setting.
-group_by_year: false default: theme&amp;rsquo;s list_layout.enable_group_by_year
-Show date Show / Hide date right after the post entry.
-show_date: false default: theme&amp;rsquo;s list_layout.enable_show_date
-Pagination pagination: false default: theme&amp;rsquo;s list_layout.enable_pagination</description></item><item><title>Postcard Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/docs/</guid><description>Postcard layout show summary of regular posts, it&amp;rsquo;s useful for creating home page.
-This layout can only be used on list layout.
-Configuration --- type: 'postcard' --- Specify type in front-matter will change the template lookup order.</description></item><item><title>Balloon Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/docs/</link><pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/docs/</guid><description>Balloon Layout Document Balloon is useful for demonstrating information step-by-step.
-This layout can be used on both section page (_index.md) and regular post (xxx.md).
-Configuration --- type: 'balloon' --- Specify type in front-matter will change the template lookup order.
-balloon_resources Content resources. URL can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)
-Hugo will handle multilingual scenario out of the box</description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post1/</guid><description>Hello world!</description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post1/</guid><description>Hello world!</description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post1/</guid><description>Hello world!</description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post1/</guid><description>Hello world!</description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post2/</guid><description>Hello world!</description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post2/</guid><description>Hello world!</description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post2/</guid><description>Hello world!</description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post2/</guid><description>Hello world!</description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post3/</guid><description>Hello world!</description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post3/</guid><description>Hello world!</description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post3/</guid><description>Hello world!</description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post3/</guid><description>Hello world!</description></item><item><title>post4</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post4/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post4/</guid><description>Hello world!</description></item><item><title>post5</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post5/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post5/</guid><description>Hello world!</description></item><item><title>post6</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post6/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post6/</guid><description>Hello world!</description></item><item><title>Markdown Syntax Guide</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/markdown-syntax/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p></description></item><item><title>Rich Content</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p></description></item><item><title>Placeholder Text</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/placeholder-text/</guid><description>&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p></description></item><item><title>Math Typesetting</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description></item><item><title>Emoji Support</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/emoji-support/</guid><description>&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p></description></item><item><title>balloon layout single demo</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/demo/single/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/demo/single/</guid><description>Balloon layout can also be used in regular page.
-Go to list demo</description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/bookcase/</guid><description>Bookcase Render bookcase layout
-Usage {{&amp;lt; bookcase section=&amp;quot;&amp;quot; /&amp;gt;}} section: Content resources. Must be a section. Path can be an absolute path (with / prefix, relative to base URL), or relative path (without /, relative to current path)
-Hugo will handle multilingual scenario out of the box
-For example:
-https://kaiiiz.github.io/hugo-theme-monochrome/configuration \____________________________________/\____________/ base URL section path Examples {{&amp;lt; bookcase section=&amp;quot;/configuration&amp;quot; &amp;gt;}} Configuration These documents show some customizable values that are used in this theme.</description></item><item><title>Breadcrumbs</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</guid><description> Breadcrumbs Render breadcrumbs navigation
-Usage {{&amp;lt; breadcrumbs /&amp;gt;}} Examples {{&amp;lt; breadcrumbs &amp;gt;}} Home/Shortcodes/Breadcrumbs</description></item><item><title>Changelog</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</guid><description>Changelog v4.0.0 (2024/11/27) Fixed Terms cloud overflow bug (#57) Mathjax white pixels on top and bottom left of page (#56) Change resource fingerprint from sha512 to sha256 to prevent file name too long issue during build Changed BREAKING CHANGE The minimum hugo version requirement is now 0.128.0. Adjust your config&amp;rsquo;s paginate to pagination.pagerSize accordingly (#58, #59, #60) New Add Russian translation (#52) Add French (France) translation (#54) v3.1.0 (2024/05/26) Fixed Remove line number of code block from the site search data New Support anchor link next to header elements (#18) v3.</description></item><item><title>CodePen</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</guid><description> CodePen Embeded codepen to page.
-Usage {{&amp;lt; codepen id=&amp;quot;&amp;quot; &amp;gt;}} Paramters:
-id: codepen id Examples {{&amp;lt; codepen id=&amp;quot;Vwmpjba&amp;quot; &amp;gt;}}</description></item><item><title>Color Block</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</guid><description> Color Block A block with color
-Usage {{&amp;lt; color-block style=&amp;quot;&amp;quot; &amp;gt;}} {{&amp;lt; /color-block &amp;gt;}} Paramters:
-style: block style success info warning error Examples {{&amp;lt; color-block &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world {{&amp;lt; color-block style=&amp;quot;success&amp;quot; &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world {{&amp;lt; color-block style=&amp;quot;info&amp;quot; &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world {{&amp;lt; color-block style=&amp;quot;warning&amp;quot; &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world {{&amp;lt; color-block style=&amp;quot;error&amp;quot; &amp;gt;}} hello world {{&amp;lt; /color-block &amp;gt;}} hello world</description></item><item><title>Embed github</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/emgithub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/emgithub/</guid><description>Embed github Directly embed github source code like gist with Prism.js syntax highlight.
-Usage {{&amp;lt; emgithub target=&amp;quot;&amp;quot; lang=&amp;quot;&amp;quot; hl=&amp;quot;&amp;quot; tab_size=&amp;quot;&amp;quot; /&amp;gt;}} Paramters:
-target (required): A valid github file url, for example: https://github.com/torvalds/linux/blob/v5.4/README https://github.com/torvalds/linux/blob/v5.4/README#L1 https://github.com/torvalds/linux/blob/v5.4/README#L1-L7 lang (optional): Which language should use for syntax highlighting? text will be applied by default. hl (optional): Line highlight settings. For details, please refer Prism.js Line Highlight Plugin tab_size (optional): Default setting is 4 characters. Examples {{&amp;lt; emgithub target=&amp;quot;https://github.</description></item><item><title>Icon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon/</guid><description> Icon Monochrome built-in icons.
-Usage {{&amp;lt; icon vendor=&amp;quot;&amp;quot; name=&amp;quot;&amp;quot; link=&amp;quot;&amp;quot; &amp;gt;}} Paramters:
-vendor: Icon vendor (Supported value: feather, simple) link: Render link for icon name: Icon name Available Icons Icons from Feather icons
-name svg globe moon sun github facebook rss twitter mail Icons from Simple icons
-name svg dotenv .ENV dotnet .NET e /e/ 1001tracklists 1001Tracklists Examples {{&amp;lt; icon vendor=&amp;quot;feather&amp;quot; name=&amp;quot;github&amp;quot; link=&amp;quot;https://github.com/kaiiiz/hugo-theme-monochrome&amp;quot; &amp;gt;}} {{&amp;lt; icon vendor=&amp;quot;simple&amp;quot; name=&amp;quot;github&amp;quot; link=&amp;quot;https://github.com/kaiiiz/hugo-theme-monochrome&amp;quot; &amp;gt;}} GitHub</description></item><item><title>Icon Group</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</guid><description> Icon Group Wrap icons with grid layout
-Usage {{&amp;lt; icon-group &amp;gt;}} {{&amp;lt; /icon-group &amp;gt;}} Examples {{&amp;lt; icon-group &amp;gt;}} {{&amp;lt; icon vendor=&amp;quot;feather&amp;quot; name=&amp;quot;github&amp;quot; &amp;gt;}} {{&amp;lt; icon vendor=&amp;quot;feather&amp;quot; name=&amp;quot;rss&amp;quot; &amp;gt;}} {{&amp;lt; icon vendor=&amp;quot;feather&amp;quot; name=&amp;quot;twitter&amp;quot; &amp;gt;}} {{&amp;lt; /icon-group &amp;gt;}}</description></item><item><title>JSFiddle</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</guid><description> JSFiddle Embeded jsfiddle to page.
-Usage {{&amp;lt; jsfiddle id=&amp;quot;&amp;quot; &amp;gt;}} Paramters:
-id: jsfiddle id Examples {{&amp;lt; jsfiddle id=&amp;quot;5byh90rz&amp;quot; &amp;gt;}}</description></item><item><title>Recent Posts</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/recent-posts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/recent-posts/</guid><description> Recent Posts Render recent posts list
-Usage {{&amp;lt; recent-posts sortby=&amp;quot;&amp;quot; limit=&amp;quot;&amp;quot; &amp;gt;}} Paramters:
-sortby: publishDate or lastMod limit: positive integer, 0 means unlimited Examples {{&amp;lt; recent-posts sortby=&amp;quot;lastMod&amp;quot; limit=5 &amp;gt;}} Changelog 2024/11/27 Setup 2024/11/27 List Layout Document 2024/05/26 Page Settings 2024/05/26 Theme Settings 2024/05/26</description></item><item><title>Regular Page</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/regular-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/regular-page/</guid><description>This is a regular page in bookcase.</description></item><item><title>Setup</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/setup/</guid><description>This document shows a brief guide to setup hugo-theme-monochrome in your hugo project.
-Quick Start Install Hugo You need &amp;ldquo;extended&amp;rdquo; version of hugo to support SASS. Checkout Install Hugo for more details.
-Take Linux for example:
-snap install hugo --channel=extended The minimum hugo version that hugo-theme-monochrome required is 0.128.0
-Create a New Site hugo new site &amp;lt;project name&amp;gt; Add a Theme cd &amp;lt;project name&amp;gt; git init git submodule add https://github.com/kaiiiz/hugo-theme-monochrome.git themes/hugo-theme-monochrome Then add theme = &amp;quot;hugo-theme-monochrome&amp;quot; to your config.</description></item><item><title>Terms Cloud</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</guid><description> Terms Cloud Render terms cloud, hugo supports tag and category terms by default, if you want to add your custom terms. Follow the instructions in the document.
-Usage {{&amp;lt; terms-cloud terms=&amp;quot;&amp;quot; sortby=&amp;quot;&amp;quot; order=&amp;quot;&amp;quot; /&amp;gt;}} Paramters:
-terms: terms name sortby: count or alphabetical (default: count) order: asc or desc (default: asc) Examples {{&amp;lt; terms-cloud terms=&amp;quot;series&amp;quot; &amp;gt;}} Themes Guide (1) {{&amp;lt; terms-cloud terms=&amp;quot;tags&amp;quot; order=&amp;quot;desc&amp;quot; &amp;gt;}} Markdown (2) Css (1) Emoji (1) Html (1) Index (1) Privacy (1) Shortcodes (1) Text (1) {{&amp;lt; terms-cloud terms=&amp;quot;tags&amp;quot; sortby=&amp;quot;alphabetical&amp;quot; &amp;gt;}} Css (1) Emoji (1) Html (1) Index (1) Markdown (2) Privacy (1) Shortcodes (1) Text (1)</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/</link><description>Recent content on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/index.xml" rel="self" type="application/rss+xml"/><item><title>Site Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</guid><description>&lt;h1 id="site-configuration" class="header-anchor-wrapper">Site Configuration
+&lt;a href="#site-configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>These settings are important for building a website using hugo. See &lt;a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings">All Configuration Settings&lt;/a> for more details.&lt;/p>
+&lt;h2 id="site-title" class="header-anchor-wrapper">Site title
+&lt;a href="#site-title" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>Site title. This value will become the content of &lt;code>&amp;lt;title&amp;gt;&lt;/code> tag in html.&lt;/p></description></item><item><title>Theme Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</guid><description>&lt;h1 id="theme-configuration" class="header-anchor-wrapper">Theme Configuration
+&lt;a href="#theme-configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>These values are inside your toml config file.&lt;/p>
+&lt;h2 id="navbar-title" class="header-anchor-wrapper">Navbar title
+&lt;a href="#navbar-title" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>HTML is available.&lt;/p>
+&lt;pre>&lt;code class="language-toml">[params]
+navbar_title = &amp;quot;Monochrome&amp;quot; # default: site's `title`
+&lt;/code>&lt;/pre>
+&lt;h2 id="footer" class="header-anchor-wrapper">Footer
+&lt;a href="#footer" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>HTML is available.&lt;/p></description></item><item><title>Page Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</guid><description>&lt;h1 id="page-settings" class="header-anchor-wrapper">Page Settings
+&lt;a href="#page-settings" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>These values are inside your page&amp;rsquo;s front-matter.&lt;/p>
+&lt;h2 id="layout" class="header-anchor-wrapper">Layout
+&lt;a href="#layout" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>Monochrome support different types of layout. You can change the layout of section or regular page according to your needs. Checkout &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts">Layout&lt;/a> for more details.&lt;/p></description></item><item><title>Bookcase Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/docs/</guid><description>&lt;p>Bookcase layout is useful for creating another viewpoint of list contents.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can only be used on section page (&lt;code>_index.md&lt;/code>).&lt;/p>&lt;/blockquote>
+&lt;h2 id="configuration" class="header-anchor-wrapper">Configuration
+&lt;a href="#configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-yaml">---
+type: 'bookcase'
+---
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p>&lt;/blockquote>
+&lt;h3 id="bookcase_list_sections" class="header-anchor-wrapper">bookcase_list_sections
+&lt;a href="#bookcase_list_sections" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h3>
+&lt;p>List subsections.&lt;/p></description></item><item><title>Gallery Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/gallery/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/gallery/docs/</guid><description>&lt;h1 id="gallery-layout-document" class="header-anchor-wrapper">Gallery Layout Document
+&lt;a href="#gallery-layout-document" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Gallery layout is useful for demonstrating pictures and its statistical data.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can be used on both section page and regular post.&lt;/p>&lt;/blockquote>
+&lt;h2 id="configuration" class="header-anchor-wrapper">Configuration
+&lt;a href="#configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-yaml">---
+type: 'gallery'
+---
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p></description></item><item><title>Blank Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/docs/</guid><description>&lt;p>Blank layout render only the content of &lt;code>_index.md&lt;/code>, it&amp;rsquo;s useful for fully customizing your list layout.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can only be used on section page (&lt;code>_index.md&lt;/code>).&lt;/p>&lt;/blockquote>
+&lt;h2 id="configuration" class="header-anchor-wrapper">Configuration
+&lt;a href="#configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-yaml">---
+type: 'blank'
+---
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p>&lt;/blockquote></description></item><item><title>List Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/docs/</guid><description>&lt;p>List layout is the built-in section layout. Monochrome add options to adjust its behavior.&lt;/p>
+&lt;h2 id="configuration" class="header-anchor-wrapper">Configuration
+&lt;a href="#configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;h3 id="group-by-year" class="header-anchor-wrapper">Group by year
+&lt;a href="#group-by-year" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h3>
+&lt;p>An option to control group setting.&lt;/p></description></item><item><title>Postcard Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/docs/</guid><description>&lt;p>Postcard layout show summary of regular posts, it&amp;rsquo;s useful for creating home page.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can only be used on list layout.&lt;/p>&lt;/blockquote>
+&lt;h2 id="configuration" class="header-anchor-wrapper">Configuration
+&lt;a href="#configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-yaml">---
+type: 'postcard'
+---
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p>&lt;/blockquote></description></item><item><title>Balloon Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/docs/</link><pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/docs/</guid><description>&lt;h1 id="balloon-layout-document" class="header-anchor-wrapper">Balloon Layout Document
+&lt;a href="#balloon-layout-document" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Balloon is useful for demonstrating information step-by-step.&lt;/p>
+&lt;blockquote>
+&lt;p>This layout can be used on both section page (&lt;code>_index.md&lt;/code>) and regular post (&lt;code>xxx.md&lt;/code>).&lt;/p>&lt;/blockquote>
+&lt;h2 id="configuration" class="header-anchor-wrapper">Configuration
+&lt;a href="#configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-yaml">---
+type: 'balloon'
+---
+&lt;/code>&lt;/pre>
+&lt;blockquote>
+&lt;p>Specify &lt;code>type&lt;/code> in front-matter will change the template lookup order.&lt;/p></description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post1/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post1/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post1/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post1</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post1/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post1/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post2/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post2/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post2/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post2</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post2/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post2/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/blank/demo/post3/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/list/post3/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/list/demo/post3/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post3</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post3/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post3/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post4</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post4/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post4/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post5</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post5/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post5/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>post6</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post6/</link><pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/demo/post6/</guid><description>&lt;p>Hello world!&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/markdown-syntax/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/markdown-syntax/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p></description></item><item><title>Rich Content</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/rich-content/</link><pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/rich-content/</guid><description>&lt;p>Hugo ships with several &lt;a href="https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes">Built-in Shortcodes&lt;/a> for rich content, along with a &lt;a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config&lt;/a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p></description></item><item><title>Placeholder Text</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/placeholder-text/</link><pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/placeholder-text/</guid><description>&lt;p>Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p></description></item><item><title>Math Typesetting</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/math-typesetting/</link><pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/math-typesetting/</guid><description>&lt;p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p></description></item><item><title>Emoji Support</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/posts/emoji-support/</link><pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/posts/emoji-support/</guid><description>&lt;p>Emoji can be enabled in a Hugo project in a number of ways.&lt;/p></description></item><item><title>balloon layout single demo</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/demo/single/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/demo/single/</guid><description>&lt;p>Balloon layout can also be used in regular page.&lt;/p>
+&lt;p>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts/balloon/demo">Go to list demo&lt;/a>&lt;/p></description></item><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/bookcase/</guid><description>&lt;h1 id="bookcase" class="header-anchor-wrapper">Bookcase
+&lt;a href="#bookcase" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Render bookcase layout&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; bookcase section=&amp;quot;&amp;quot; /&amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>&lt;code>section&lt;/code>: Content resources. Must be a section. Path can be an absolute path (with &lt;code>/&lt;/code> prefix, relative to base URL), or relative path (without &lt;code>/&lt;/code>, relative to current path)&lt;/p></description></item><item><title>Breadcrumbs</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</guid><description>&lt;h1 id="breadcrumbs" class="header-anchor-wrapper">Breadcrumbs
+&lt;a href="#breadcrumbs" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Render breadcrumbs navigation&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; breadcrumbs /&amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;h2 id="examples" class="header-anchor-wrapper">Examples
+&lt;a href="#examples" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; breadcrumbs &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;div class="content-margin">
+&lt;ol class="breadcrumbs">
+&lt;li>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/">Home&lt;/a>&lt;/li>&lt;li>&lt;span>/&lt;/span>&lt;/li>&lt;li>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/">Shortcodes&lt;/a>&lt;/li>&lt;li>&lt;span>/&lt;/span>&lt;/li>&lt;li>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/">Breadcrumbs&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;/div></description></item><item><title>Changelog</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/changelog/</guid><description>&lt;h1 id="changelog" class="header-anchor-wrapper">Changelog
+&lt;a href="#changelog" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;h2 id="v500-20250706" class="header-anchor-wrapper">v5.0.0 (2025/07/06)
+&lt;a href="#v500-20250706" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fixed
+&lt;ul>
+&lt;li>Internal templates and theme structure breaking changes introduced in hugo 0.146.0 (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/68">#68&lt;/a>)&lt;/li>
+&lt;li>Fixed issue where inline code width could overflow the page body&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Changed
+&lt;ul>
+&lt;li>&lt;strong>BREAKING CHANGE&lt;/strong> The minimum hugo version requirement is now &lt;code>0.146.0&lt;/code>.&lt;/li>
+&lt;li>The font size now respects browser settings for improved accessibility. (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/66">#57&lt;/a>)&lt;/li>
+&lt;li>Redesigned navbar with compact and wide layout&lt;/li>
+&lt;li>Minor style adjustments&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New
+&lt;ul>
+&lt;li>Added support for positioning the table of contents (TOC) on the right (see &lt;code>toc_position&lt;/code> settings for details) (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/51">#51&lt;/a>)&lt;/li>
+&lt;li>Added support for auto-hiding the navbar on scroll (see &lt;code>hide_navbar_on_scroll&lt;/code> settings for details)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v400-20241127" class="header-anchor-wrapper">v4.0.0 (2024/11/27)
+&lt;a href="#v400-20241127" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fixed
+&lt;ul>
+&lt;li>Terms cloud overflow bug (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/57">#57&lt;/a>)&lt;/li>
+&lt;li>Mathjax white pixels on top and bottom left of page (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/56">#56&lt;/a>)&lt;/li>
+&lt;li>Change resource fingerprint from sha512 to sha256 to prevent file name too long issue during build&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Changed
+&lt;ul>
+&lt;li>&lt;strong>BREAKING CHANGE&lt;/strong> The minimum hugo version requirement is now &lt;code>0.128.0&lt;/code>. &lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.128.0">Adjust your config&amp;rsquo;s &lt;code>paginate&lt;/code> to &lt;code>pagination.pagerSize&lt;/code> accordingly&lt;/a> (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/pull/58">#58&lt;/a>, &lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/pull/59">#59&lt;/a>, &lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/60">#60&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New
+&lt;ul>
+&lt;li>Add Russian translation (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/pull/52">#52&lt;/a>)&lt;/li>
+&lt;li>Add French (France) translation (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/pull/54">#54&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v310-20240526" class="header-anchor-wrapper">v3.1.0 (2024/05/26)
+&lt;a href="#v310-20240526" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fixed
+&lt;ul>
+&lt;li>Remove line number of code block from the site search data&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New
+&lt;ul>
+&lt;li>Support anchor link next to header elements (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/18">#18&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v300-20240526" class="header-anchor-wrapper">v3.0.0 (2024/05/26)
+&lt;a href="#v300-20240526" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fixed
+&lt;ul>
+&lt;li>Base layout organaization for semantic elements, which may improve SEO description&lt;/li>
+&lt;li>Fix table class parsing bug&lt;/li>
+&lt;li>Fix Balloon layout and Gallery layout page resources retrieval bug (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/50">#50&lt;/a>)&lt;/li>
+&lt;li>Fix language dropdown menu click issue on Safari mobile (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/43">#43&lt;/a>)&lt;/li>
+&lt;li>Fix i18n on navbar entries (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/49">#49&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Changed
+&lt;ul>
+&lt;li>&lt;strong>BREAKING CHANGE&lt;/strong> The minimum hugo version requirement is now &lt;code>0.120.0&lt;/code>. &lt;a href="https://github.com/gohugoio/hugo/releases/tag/v0.120.0">Adjust your GoogleAnalytics and DisqusShortname settings accordingly&lt;/a>&lt;/li>
+&lt;li>Re-implement the site search function with uFuzzy, which, in my opinion, delivers significantly more accurate search results&lt;/li>
+&lt;li>Change sidebar control to pure CSS implementation (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/47">#47&lt;/a>)&lt;/li>
+&lt;li>Remove collapsible menu for mobile sidebar, as it is difficult to click on small screen&lt;/li>
+&lt;li>Hide language name on mobile view&lt;/li>
+&lt;li>Dependencies
+&lt;ul>
+&lt;li>Fuse.js: removed&lt;/li>
+&lt;li>uFuzzy: v1.0.14&lt;/li>
+&lt;li>Mathjax: v3 -&amp;gt; v4.0.0-beta.6 (for better line breaking support)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Styles
+&lt;ul>
+&lt;li>Add border radius to image&lt;/li>
+&lt;li>Adjust article components margin&lt;/li>
+&lt;li>Adjust bookcase item overlay shadow style for dark mode&lt;/li>
+&lt;li>Gallery image alignment&lt;/li>
+&lt;li>Background filling for the line number of code block&lt;/li>
+&lt;li>Adjust code block color&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New
+&lt;ul>
+&lt;li>Support simple icons v11.15.0&lt;/li>
+&lt;li>Support &lt;code>user_head.html&lt;/code> to inject custom template in &lt;code>&amp;lt;head&amp;gt;&lt;/code> section (e.g. Google Ads etc.)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v200-20230723" class="header-anchor-wrapper">v2.0.0 (2023/07/23)
+&lt;a href="#v200-20230723" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fixed
+&lt;ul>
+&lt;li>Fix navbar item padding (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/15">#15&lt;/a>)&lt;/li>
+&lt;li>Fix TOC collapse cursor style (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/25">#25&lt;/a>, &lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/pull/36">#36&lt;/a>)&lt;/li>
+&lt;li>Fix site search resource retrieval bug (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/29">#29&lt;/a>)&lt;/li>
+&lt;li>Fix wrong variable in base.scss (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/pull/44">#44&lt;/a>)&lt;/li>
+&lt;li>Fix inappropriate navbar decoration for item that links to home page&lt;/li>
+&lt;li>Fix color scheme button FOUC bug&lt;/li>
+&lt;li>Fix twitter card text color in dark mode&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Changed
+&lt;ul>
+&lt;li>&lt;strong>BREAKING CHANGE&lt;/strong> The minimum hugo version requirement is now &lt;code>0.112.0&lt;/code>&lt;/li>
+&lt;li>&lt;strong>BREAKING CHANGE&lt;/strong> Support all feather icons, &lt;code>vendor=&amp;quot;feather&amp;quot;&lt;/code> is required to migrate from old shortcode (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/19">#19&lt;/a>)&lt;/li>
+&lt;li>Images in an article are centered by default (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/35">#35&lt;/a>)&lt;/li>
+&lt;li>Term&amp;rsquo;s layout now respects the &lt;code>enable_group_by_year&lt;/code>, &lt;code>enable_show_date&lt;/code>, &lt;code>enable_pagination&lt;/code> parameters&lt;/li>
+&lt;li>Upgrade dependencies
+&lt;ul>
+&lt;li>Prism: v1.27.0 -&amp;gt; v1.29.0&lt;/li>
+&lt;li>Fuse.js: v6.5.3 -&amp;gt; v6.6.2&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New
+&lt;ul>
+&lt;li>Support custom CSS (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/23">#23&lt;/a>, &lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/33">#33&lt;/a>)&lt;/li>
+&lt;li>Support GA4 (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/37">#37&lt;/a>)&lt;/li>
+&lt;li>Support custom title for bookcase item (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/32">#32&lt;/a>)&lt;/li>
+&lt;li>Support hiding bookcase items (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/27">#27&lt;/a>)&lt;/li>
+&lt;li>Add default color scheme setting (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/40">#40&lt;/a>)&lt;/li>
+&lt;li>Add &lt;code>bookcase&lt;/code> shortcode (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/34">#34&lt;/a>)&lt;/li>
+&lt;li>Add &lt;code>recent-posts&lt;/code> shortcode&lt;/li>
+&lt;li>Add an RSS button next to the title in the term&amp;rsquo;s layout&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v101-20220402" class="header-anchor-wrapper">v1.0.1 (2022/04/02)
+&lt;a href="#v101-20220402" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;h3 id="fixed" class="header-anchor-wrapper">Fixed
+&lt;a href="#fixed" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Fix &lt;code>img&lt;/code> style issue, it should be &lt;code>max-width&lt;/code> instead of &lt;code>width&lt;/code> (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/10#issuecomment-1086111789">#10&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v100---first-major-release-20220401" class="header-anchor-wrapper">v1.0.0 - First Major Release (2022/04/01)
+&lt;a href="#v100---first-major-release-20220401" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;h3 id="added" class="header-anchor-wrapper">Added
+&lt;a href="#added" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Layout
+&lt;ul>
+&lt;li>New Layout: Postcard Layout, Blank Layout&lt;/li>
+&lt;li>Support pagination for Postcard Layout and List Layout&lt;/li>
+&lt;li>Enhance list layout date format. If current list layout is grouped by year, hide list item&amp;rsquo;s year.&lt;/li>
+&lt;li>Redesign default home page layout using Postcard Layout&lt;/li>
+&lt;li>Add sidebar for better navbar responsiveness on small screen&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New Shortcode
+&lt;ul>
+&lt;li>&lt;code>emgithub&lt;/code>: directly embed github source code like gist with Prism.js syntax highlighting&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>External Library
+&lt;ul>
+&lt;li>Optimize Prism.js integration
+&lt;ul>
+&lt;li>Add smooth transition to prevent line number jittering while page rendering&lt;/li>
+&lt;li>Integrate Prism.js autoloader to prevent huge bundle file&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Optimize Zooming.js integration
+&lt;ul>
+&lt;li>Background color is now dynamically changed based on current theme&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Fuse.js integration
+&lt;ul>
+&lt;li>Support highlight matched text in search menu&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New Theme Parameters
+&lt;ul>
+&lt;li>&lt;code>list_layout.enable_group_by_year&lt;/code>&lt;/li>
+&lt;li>&lt;code>list_layout.enable_show_date&lt;/code>&lt;/li>
+&lt;li>&lt;code>list_layout.enable_pagination&lt;/code>&lt;/li>
+&lt;li>&lt;code>syntax_highlight.lib&lt;/code>&lt;/li>
+&lt;li>&lt;code>syntax_highlight.builtin.enable_code_copy&lt;/code>&lt;/li>
+&lt;li>&lt;code>syntax_highlight.prism.enable_code_copy&lt;/code>&lt;/li>
+&lt;li>&lt;code>syntax_highlight.prism.enable_line_no&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New Page Parameters
+&lt;ul>
+&lt;li>&lt;code>search_hidden&lt;/code>: hide page from search index&lt;/li>
+&lt;li>&lt;code>pagination&lt;/code>: control pagination for List Layout&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="changed" class="header-anchor-wrapper">Changed
+&lt;a href="#changed" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Change RSS content from full post to summary for smaller resource purpose&lt;/li>
+&lt;li>Change all icons to feathericons&lt;/li>
+&lt;li>Site search engine has been changed from flexsearch to fuse.js for better CJK language supports&lt;/li>
+&lt;li>Parameter name has all been changed to snake_case for consistency&lt;/li>
+&lt;li>Syntax highlight settings are now grouped by &lt;code>syntax_highlight&lt;/code>&lt;/li>
+&lt;li>&lt;code>svg-wrapper&lt;/code> shortcode has been changed to &lt;code>icon&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h3 id="removed" class="header-anchor-wrapper">Removed
+&lt;a href="#removed" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>&lt;strong>All&lt;/strong> javascript package dependencies are removed, Monochrome is now self-contained without the help of npm and become extremely easy to setup and modify.&lt;/li>
+&lt;li>Remove &lt;code>list_posts&lt;/code> property from list layout, this functionality has been replaced by Blank Layout&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v092-20220225" class="header-anchor-wrapper">v0.9.2 (2022/02/25)
+&lt;a href="#v092-20220225" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fix: reimplement terms-cloud to prevent size overflow (max size: 1.6 rem)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v091-20220225" class="header-anchor-wrapper">v0.9.1 (2022/02/25)
+&lt;a href="#v091-20220225" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Change: set terms-cloud max font size to 1.4 rem&lt;/li>
+&lt;li>Fix: site search url from absLangURL to relLangURL&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v090-20220131" class="header-anchor-wrapper">v0.9.0 (2022/01/31)
+&lt;a href="#v090-20220131" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Improve: search implementation
+&lt;ul>
+&lt;li>hide the mismatch objects instead of removing it while searching&lt;/li>
+&lt;li>widen the control range of search result&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Improve: gallery layout&amp;rsquo;s key and value now support markdown syntax&lt;/li>
+&lt;li>Improve: Zooming.js configuration
+&lt;ul>
+&lt;li>speed up animations&lt;/li>
+&lt;li>setup transparent background&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Change: for consistency, the names of the following parameters are changed:
+&lt;ul>
+&lt;li>page&amp;rsquo;s &lt;code>collapsibleTOC&lt;/code> =&amp;gt; &lt;code>collapsible_toc&lt;/code>&lt;/li>
+&lt;li>page&amp;rsquo;s &lt;code>collapsibleChangelogs&lt;/code> =&amp;gt; &lt;code>collapsible_changelogs&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Change: font-size of html is changed from &lt;code>18px&lt;/code> to &lt;code>16px&lt;/code>&lt;/li>
+&lt;li>Add: &lt;code>breadcrumbs&lt;/code> shortcode&lt;/li>
+&lt;li>Add: list layout properties &lt;code>group_by_year&lt;/code> and &lt;code>show_date&lt;/code>&lt;/li>
+&lt;li>Fix: terms-cloud typo (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/pull/4">#4&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v080-20210729" class="header-anchor-wrapper">v0.8.0 (2021/07/29)
+&lt;a href="#v080-20210729" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Improve: flexsearch multilingual search capability&lt;/li>
+&lt;li>Improve: widen the control range of navbar menu items&lt;/li>
+&lt;li>Change: flexsearch can now search index pages&lt;/li>
+&lt;li>Change: the post content in RSS is changed from summary to full text&lt;/li>
+&lt;li>Add: collapsible TOC and Changelogs&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v071-20210708" class="header-anchor-wrapper">v0.7.1 (2021/07/08)
+&lt;a href="#v071-20210708" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Change: adjust the style of changelogs&lt;/li>
+&lt;li>Fix: flexsearch search API issue&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v070-20210624" class="header-anchor-wrapper">v0.7.0 (2021/06/24)
+&lt;a href="#v070-20210624" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Bump dependencies version&lt;/li>
+&lt;li>Add: &lt;code>changelogs&lt;/code> property&lt;/li>
+&lt;li>Add: support disqus for index page (turn off by default)&lt;/li>
+&lt;li>Change: theme name from &amp;lsquo;Graytr&amp;rsquo; to &amp;lsquo;Monochrome&amp;rsquo;&lt;/li>
+&lt;li>Change: improve navbar responsiveness&lt;/li>
+&lt;li>Fix: widen the control range of navbar menu icon&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v062-20210415" class="header-anchor-wrapper">v0.6.2 (2021/04/15)
+&lt;a href="#v062-20210415" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fix: google search console authentication failed if ga code not in &lt;code>&amp;lt;head&amp;gt;&lt;/code>&lt;/li>
+&lt;li>Fix: &lt;code>clipboard-polyfill/text&lt;/code> dependency resolved issue&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v061-20210217" class="header-anchor-wrapper">v0.6.1 (2021/02/17)
+&lt;a href="#v061-20210217" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fix: codepen shortcode id&lt;/li>
+&lt;li>Change baseurl to example.com in exampleSite&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v060-20210216" class="header-anchor-wrapper">v0.6.0 (2021/02/16)
+&lt;a href="#v060-20210216" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Support MathJax&lt;/li>
+&lt;li>Add shortcodes: &lt;code>jsfiddle&lt;/code>, &lt;code>codepen&lt;/code>, &lt;code>color-block&lt;/code>, &lt;code>icon-group&lt;/code>, &lt;code>terms-cloud&lt;/code>&lt;/li>
+&lt;li>Add option: &lt;code>list_posts&lt;/code> in list layout&lt;/li>
+&lt;li>Fix: not register touchend event&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v050-20210215" class="header-anchor-wrapper">v0.5.0 (2021/02/15)
+&lt;a href="#v050-20210215" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Support multilingual mode
+&lt;ul>
+&lt;li>Add i18n&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Support Open Graph, Twitter Card&lt;/li>
+&lt;li>Adjust svg-wrapper shortcode
+&lt;ul>
+&lt;li>Add some social icons: &lt;code>facebook&lt;/code>, &lt;code>github&lt;/code>, &lt;code>twitter&lt;/code>, &lt;code>rss&lt;/code>, &lt;code>mail&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Support site search (powered by flexsearch)&lt;/li>
+&lt;li>Disable unused features in tailwindcss (speedup building time)&lt;/li>
+&lt;li>Reorganize parameters&lt;/li>
+&lt;li>Remove default image to figure transformation, using built-in shortcode instead&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v040-20210212" class="header-anchor-wrapper">v0.4.0 (2021/02/12)
+&lt;a href="#v040-20210212" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Support dark mode
+&lt;ul>
+&lt;li>Add &lt;code>bookcase_cover_src_dark&lt;/code> for bookcase layout&lt;/li>
+&lt;li>Add &lt;code>balloon_img_src_dark&lt;/code> for balloon layout&lt;/li>
+&lt;li>Add shortcode: svg-wrapper&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Prism.js integration (v1.23.0)&lt;/li>
+&lt;li>Code copy feature for code block&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v030-20210210" class="header-anchor-wrapper">v0.3.0 (2021/02/10)
+&lt;a href="#v030-20210210" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Support nested navbar&lt;/li>
+&lt;li>Implement default homepage layout&lt;/li>
+&lt;li>Adjust the purpose of bookcase layout&lt;/li>
+&lt;li>Remove catalog layout&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v020-20210209" class="header-anchor-wrapper">v0.2.0 (2021/02/09)
+&lt;a href="#v020-20210209" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>A better responsive navbar&lt;/li>
+&lt;li>Implement default taxonomy and term layout&lt;/li>
+&lt;li>Adjust article styles&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="v010-20210208" class="header-anchor-wrapper">v0.1.0 (2021/02/08)
+&lt;a href="#v010-20210208" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>Initial release.&lt;/p></description></item><item><title>CodePen</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</guid><description>&lt;h1 id="codepen" class="header-anchor-wrapper">CodePen
+&lt;a href="#codepen" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Embedded codepen to page.&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; codepen id=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>id&lt;/code>: codepen id&lt;/li>
+&lt;/ul>
+&lt;h2 id="examples" class="header-anchor-wrapper">Examples
+&lt;a href="#examples" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; codepen id=&amp;quot;Vwmpjba&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p class="codepen" data-height="400" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="Vwmpjba" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">&lt;/p></description></item><item><title>Color Block</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</guid><description>&lt;h1 id="color-block" class="header-anchor-wrapper">Color Block
+&lt;a href="#color-block" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>A block with color&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; color-block style=&amp;quot;&amp;quot; &amp;gt;}}
+{{&amp;lt; /color-block &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>style&lt;/code>: block style
+&lt;ul>
+&lt;li>success&lt;/li>
+&lt;li>info&lt;/li>
+&lt;li>warning&lt;/li>
+&lt;li>error&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="examples" class="header-anchor-wrapper">Examples
+&lt;a href="#examples" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; color-block &amp;gt;}}
+hello world
+{{&amp;lt; /color-block &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;div class="color-block content-margin" style="background-color: #f0f0f0; color: #494949;" >
+hello world
+&lt;/div>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; color-block style=&amp;quot;success&amp;quot; &amp;gt;}}
+hello world
+{{&amp;lt; /color-block &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;div class="color-block content-margin" style="background-color: #dff0d8; color: #3c763d;" >
+hello world
+&lt;/div>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; color-block style=&amp;quot;info&amp;quot; &amp;gt;}}
+hello world
+{{&amp;lt; /color-block &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;div class="color-block content-margin" style="background-color: #d9edf7; color: #31708f;" >
+hello world
+&lt;/div>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; color-block style=&amp;quot;warning&amp;quot; &amp;gt;}}
+hello world
+{{&amp;lt; /color-block &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;div class="color-block content-margin" style="background-color: #fcf8e3; color: #8a6d3b;" >
+hello world
+&lt;/div>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; color-block style=&amp;quot;error&amp;quot; &amp;gt;}}
+hello world
+{{&amp;lt; /color-block &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;div class="color-block content-margin" style="background-color: #f2dede; color: #a94442;" >
+hello world
+&lt;/div></description></item><item><title>Embed github</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/emgithub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/emgithub/</guid><description>&lt;h1 id="embed-github" class="header-anchor-wrapper">Embed github
+&lt;a href="#embed-github" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Directly embed github source code like gist with Prism.js syntax highlight.&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; emgithub target=&amp;quot;&amp;quot; lang=&amp;quot;&amp;quot; hl=&amp;quot;&amp;quot; tab_size=&amp;quot;&amp;quot; /&amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>Parameters:&lt;/p></description></item><item><title>Icon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon/</guid><description>&lt;h1 id="icon" class="header-anchor-wrapper">Icon
+&lt;a href="#icon" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Monochrome built-in icons.&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; icon vendor=&amp;quot;&amp;quot; name=&amp;quot;&amp;quot; link=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>vendor&lt;/code>: Icon vendor (Supported value: &lt;code>feather&lt;/code>, &lt;code>simple&lt;/code>)&lt;/li>
+&lt;li>&lt;code>link&lt;/code>: Render link for icon&lt;/li>
+&lt;li>&lt;code>name&lt;/code>: Icon name&lt;/li>
+&lt;/ul>
+&lt;h2 id="available-icons" class="header-anchor-wrapper">Available Icons
+&lt;a href="#available-icons" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>Icons from &lt;a href="https://feathericons.com/">Feather icons&lt;/a>&lt;/p></description></item><item><title>Icon Group</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</guid><description>&lt;h1 id="icon-group" class="header-anchor-wrapper">Icon Group
+&lt;a href="#icon-group" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Wrap icons with grid layout&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; icon-group &amp;gt;}}
+{{&amp;lt; /icon-group &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;h2 id="examples" class="header-anchor-wrapper">Examples
+&lt;a href="#examples" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; icon-group &amp;gt;}}
+{{&amp;lt; icon vendor=&amp;quot;feather&amp;quot; name=&amp;quot;github&amp;quot; &amp;gt;}}
+{{&amp;lt; icon vendor=&amp;quot;feather&amp;quot; name=&amp;quot;rss&amp;quot; &amp;gt;}}
+{{&amp;lt; icon vendor=&amp;quot;feather&amp;quot; name=&amp;quot;twitter&amp;quot; &amp;gt;}}
+{{&amp;lt; /icon-group &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;div class="icon-group">
+&lt;div class="icon">
+&lt;div>
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">&lt;/path>
+&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;div class="icon">
+&lt;div>
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;path d="M4 11a9 9 0 0 1 9 9">&lt;/path>&lt;path d="M4 4a16 16 0 0 1 16 16">&lt;/path>&lt;circle cx="5" cy="19" r="1">&lt;/circle>
+&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;div class="icon">
+&lt;div>
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">&lt;/path>
+&lt;/svg>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>JSFiddle</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</guid><description>&lt;h1 id="jsfiddle" class="header-anchor-wrapper">JSFiddle
+&lt;a href="#jsfiddle" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Embedded jsfiddle to page.&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; jsfiddle id=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>id&lt;/code>: jsfiddle id&lt;/li>
+&lt;/ul>
+&lt;h2 id="examples" class="header-anchor-wrapper">Examples
+&lt;a href="#examples" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; jsfiddle id=&amp;quot;5byh90rz&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;iframe width="100%" height="400" src="//jsfiddle.net/5byh90rz/embedded/js,html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0">&lt;/iframe></description></item><item><title>Recent Posts</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/recent-posts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/recent-posts/</guid><description>&lt;h1 id="recent-posts" class="header-anchor-wrapper">Recent Posts
+&lt;a href="#recent-posts" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Render recent posts list&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; recent-posts sortby=&amp;quot;&amp;quot; limit=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>Parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>sortby&lt;/code>: &lt;code>publishDate&lt;/code> or &lt;code>lastMod&lt;/code>&lt;/li>
+&lt;li>&lt;code>limit&lt;/code>: positive integer, &lt;code>0&lt;/code> means unlimited&lt;/li>
+&lt;/ul>
+&lt;h2 id="examples" class="header-anchor-wrapper">Examples
+&lt;a href="#examples" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code class="language-html">{{&amp;lt; recent-posts sortby=&amp;quot;lastMod&amp;quot; limit=5 &amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;ul class="list-layout">
+&lt;li>
+&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/setup/">Setup&lt;/a>
+&lt;span>2025/07/06&lt;/span>
+&lt;/li>
+&lt;li>
+&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/changelog/">Changelog&lt;/a>
+&lt;span>2025/07/06&lt;/span>
+&lt;/li>
+&lt;li>
+&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/">Page Settings&lt;/a>
+&lt;span>2025/07/06&lt;/span>
+&lt;/li>
+&lt;li>
+&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/">Theme Settings&lt;/a>
+&lt;span>2025/07/06&lt;/span>
+&lt;/li>
+&lt;li>
+&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/">Terms Cloud&lt;/a>
+&lt;span>2025/04/22&lt;/span>
+&lt;/li>
+&lt;/ul></description></item><item><title>Regular Page</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/regular-page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/bookcase/demo/regular-page/</guid><description>&lt;p>This is a regular page in bookcase.&lt;/p></description></item><item><title>Setup</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/setup/</guid><description>&lt;h1 id="setup" class="header-anchor-wrapper">Setup
+&lt;a href="#setup" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>This document shows a brief guide to setup hugo-theme-monochrome in your hugo project.&lt;/p>
+&lt;h2 id="quick-start" class="header-anchor-wrapper">Quick Start
+&lt;a href="#quick-start" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;h3 id="install-hugo" class="header-anchor-wrapper">Install Hugo
+&lt;a href="#install-hugo" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h3>
+&lt;p>You need &amp;ldquo;extended&amp;rdquo; version of hugo to support SASS. Checkout &lt;a href="https://gohugo.io/getting-started/installing/">Install Hugo&lt;/a> for more details.&lt;/p></description></item><item><title>Terms Cloud</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</guid><description>&lt;h1 id="terms-cloud" class="header-anchor-wrapper">Terms Cloud
+&lt;a href="#terms-cloud" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>Render terms cloud, hugo supports &lt;code>tag&lt;/code> and &lt;code>category&lt;/code> terms by default, if you want to add your custom terms. Follow the instructions in the &lt;a href="https://gohugo.io/content-management/taxonomies/#configure-taxonomies">document&lt;/a>.&lt;/p>
+&lt;h2 id="usage" class="header-anchor-wrapper">Usage
+&lt;a href="#usage" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;pre>&lt;code>{{&amp;lt; terms-cloud terms=&amp;quot;&amp;quot; sortby=&amp;quot;&amp;quot; order=&amp;quot;&amp;quot; /&amp;gt;}}
+&lt;/code>&lt;/pre>
+&lt;p>Parameters:&lt;/p></description></item></channel></rss>

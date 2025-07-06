@@ -1,16 +1,99 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Configuration on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/</link><description>Recent content in Configuration on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/configuration/index.xml" rel="self" type="application/rss+xml"/><item><title>Site Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</guid><description>Site Configuration These settings are important for building a website using hugo. See All Configuration Settings for more details.
-Site title Site title. This value will become the content of &amp;lt;title&amp;gt; tag in html.
-title = &amp;quot;Monochrome&amp;quot; Theme Set this value to the corresponding folder name of your theme. (located by default in /themes/THEMENAME/)
-theme = &amp;quot;hugo-theme-monochrome&amp;quot; Base URL Hostname (and path) to the root.
-baseURL = &amp;quot;https://kaiiiz.github.io/hugo-theme-monochrome&amp;quot; favicon Add favicon.</description></item><item><title>Theme Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</guid><description>Theme Configuration These values are inside your toml config file.
-Navbar title HTML is available.
-[params] navbar_title = &amp;quot;Monochrome&amp;quot; # default: site's `title` Footer HTML is available.
-[params] footer = &amp;quot;Copyright © 2021 by kaiiiz&amp;quot; # default: None Table of Contents TOC global settings.
-[params] enable_toc = true # default: true Collapsible Menu Collapsible global settings.
-[params] enable_collapsible_toc = false # default: false enable_collapsible_changelogs = false # default: false Navbar menu Monochrome uses built-in menu system supported by hugo itself.</description></item><item><title>Page Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</guid><description>Page Settings These values are inside your page&amp;rsquo;s front-matter.
-Layout Monochrome support different types of layout. You can change the layout of section or regular page according to your needs. Checkout Layout for more details.
-Navbar title HTML is available.
---- navbar_title: &amp;quot;Monochrome&amp;quot; --- default: theme&amp;rsquo;s navbar_title
-Footer HTML is available.
---- footer: &amp;quot;Copyright © 2021 by kaiiiz&amp;quot; --- default: theme&amp;rsquo;s footer
-Site Search Hide the page from the search result.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Configuration on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/</link><description>Recent content in Configuration on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/configuration/index.xml" rel="self" type="application/rss+xml"/><item><title>Site Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</guid><description>&lt;h1 id="site-configuration" class="header-anchor-wrapper">Site Configuration
+&lt;a href="#site-configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>These settings are important for building a website using hugo. See &lt;a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings">All Configuration Settings&lt;/a> for more details.&lt;/p>
+&lt;h2 id="site-title" class="header-anchor-wrapper">Site title
+&lt;a href="#site-title" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>Site title. This value will become the content of &lt;code>&amp;lt;title&amp;gt;&lt;/code> tag in html.&lt;/p></description></item><item><title>Theme Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</guid><description>&lt;h1 id="theme-configuration" class="header-anchor-wrapper">Theme Configuration
+&lt;a href="#theme-configuration" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>These values are inside your toml config file.&lt;/p>
+&lt;h2 id="navbar-title" class="header-anchor-wrapper">Navbar title
+&lt;a href="#navbar-title" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>HTML is available.&lt;/p>
+&lt;pre>&lt;code class="language-toml">[params]
+navbar_title = &amp;quot;Monochrome&amp;quot; # default: site's `title`
+&lt;/code>&lt;/pre>
+&lt;h2 id="footer" class="header-anchor-wrapper">Footer
+&lt;a href="#footer" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>HTML is available.&lt;/p></description></item><item><title>Page Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</guid><description>&lt;h1 id="page-settings" class="header-anchor-wrapper">Page Settings
+&lt;a href="#page-settings" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h1>
+&lt;p>These values are inside your page&amp;rsquo;s front-matter.&lt;/p>
+&lt;h2 id="layout" class="header-anchor-wrapper">Layout
+&lt;a href="#layout" class="header-anchor-link">
+&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="24" height="24" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;p>Monochrome support different types of layout. You can change the layout of section or regular page according to your needs. Checkout &lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts">Layout&lt;/a> for more details.&lt;/p></description></item></channel></rss>
