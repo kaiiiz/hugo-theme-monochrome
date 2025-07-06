@@ -50,3 +50,15 @@ Parameters:
 {{< icon vendor="feather" name="rss" >}}
 {{< icon vendor="feather" name="twitter" >}}
 {{< /icon-group >}}
+
+```html
+{{</* icon-group gap="1rem" */>}}
+{{</* icon vendor="simple" name="github" width="1.75rem" height="1.75rem" */>}}
+{{</* icon vendor="simple" name="rss" width=".75rem" height=".75rem" */>}}
+{{</* /icon-group */>}}
+```
+
+{{< icon-group gap="1rem" >}}
+{{< icon vendor="simple" name="github" width="1.75rem" height="1.75rem" >}}
+{{< icon vendor="simple" name="rss" width=".75rem" height=".75rem" >}}
+{{< /icon-group >}}
