@@ -4,7 +4,7 @@
             <div id="sidebar_btn">
                 <input type="checkbox" id="sidebar_btn_input" class="hidden" />
                 <label id="sidebar_btn_label" for="sidebar_btn_input">
-                    {{- partial "svg/feather.html" "menu" -}}
+                    {{- partial "svg/feather.html" (dict "name" "menu") -}}
                 </label>
                 <label id="sidebar_canvas_overlay_wrapper" for="sidebar_btn_input">
                     <div id="sidebar_canvas_overlay"></div>
@@ -62,17 +62,17 @@
 
             <div id="theme_tool">
                 <button id="dark_mode_btn" class="header-menu-btn" title='{{ i18n "dark_mode_btn_tooltip" }}' type="button">
-                    {{- partial "svg/feather.html" "moon" -}}
+                    {{- partial "svg/feather.html" (dict "name" "moon") -}}
                 </button>
                 <button id="light_mode_btn" class="header-menu-btn" title='{{ i18n "light_mode_btn_tooltip" }}' type="button">
-                    {{- partial "svg/feather.html" "sun" -}}
+                    {{- partial "svg/feather.html" (dict "name" "sun") -}}
                 </button>
             </div>
 
             {{ if (.Scratch.Get "params").enable_site_search }}
                 <div id="search_tool">
                     <button id="search_btn" class="header-menu-btn" title='{{ i18n "search" }}' type="button">
-                        {{- partial "svg/feather.html" "search" -}}
+                        {{- partial "svg/feather.html" (dict "name" "search") -}}
                     </button>
                 </div>
             {{ end }}

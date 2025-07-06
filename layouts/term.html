@@ -20,7 +20,7 @@
             {{ if eq .MediaType.Type "application/rss+xml" }}
                 <div class="icon">
                     <a rel="noopener" target="_blank" href="{{ .Permalink | safeURL }}"> 
-                        {{ partial "svg/feather.html" "rss" }}
+                        {{ partial "svg/feather.html" (dict "name" "rss") }}
                     </a>
                 </div>
             {{ end }}
