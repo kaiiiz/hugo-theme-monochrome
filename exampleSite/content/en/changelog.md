@@ -5,6 +5,13 @@ toc: false
 
 # Changelog
 
+## v5.0.1 (2025/07/06)
+
+- Fixed
+  - user's partial templates not rendering due to changes in Hugo's new template structure.
+
+---
+
 ## v5.0.0 (2025/07/06)
 
 - Fixed

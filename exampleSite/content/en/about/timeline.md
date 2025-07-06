@@ -12,6 +12,7 @@ gallery_statistic:
   value: '*value3*'
 ---
 
+* 2025/07/06 - v5.0.1 release
 * 2025/07/06 - v5.0.0 release
 * 2024/11/27 - v4.0.0 release
 * 2024/05/26 - v3.1.0 release
