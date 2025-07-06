@@ -27,6 +27,30 @@ header {
     justify-content: space-between;
     align-items: center;
     width: $sm_header_width;
+    
+    @media screen and (min-width: $md_min_width) {
+      & {
+        width: $md_header_width;
+      }
+    }
+
+    @media screen and (min-width: $lg_min_width) {
+      & {
+        width: $lg_header_width;
+      }
+    }
+
+    @media screen and (min-width: $xl_min_width) {
+      & {
+        width: $xl_header_width;
+      }
+    }
+
+    @media screen and (min-width: $xxl_min_width) {
+      & {
+        width: $xxl_header_width;
+      }
+    }
 
     #header_left {
       min-height: $header_height;
@@ -89,31 +113,6 @@ header {
 
     &:hover {
       background-color: var(--color-background-hover);
-    }
-  }
-
-  @media screen and (min-width: $md_min_width) {
-    #header_content {
-      width: $md_header_width;
-    }
-  }
-
-  @media screen and (min-width: $lg_min_width) {
-    #header_content {
-      width: $lg_header_width;
-    }
-  }
-
-  @media screen and (min-width: $xl_min_width) {
-    #header_content {
-      width: $xl_header_width;
-    }
-  }
-
-  @media screen and (min-width: $xxl_min_width) {
-    #header_content {
-      width: $xxl_header_width;
-    }
   }
 }
 
@@ -184,7 +183,7 @@ header {
   }
 }
 
-#navbar {
+  #header_navbar {
   margin-left: 1.5rem;
 
   @media screen and (max-width: $lg_min_width) {
@@ -202,4 +201,58 @@ header {
 
 #translation_menu {
   margin-right: 0.25rem;
+  }
+
+  // sidebar button
+  #sidebar_btn_input:checked ~ #sidebar_canvas_overlay_wrapper #sidebar_canvas_overlay {
+    display: block;
+  }
+
+  #sidebar_canvas_overlay {
+    background-color: rgba(0,0,0,.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+  }
+
+  #sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 20;
+    background-color: var(--color-background);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s;
+    transform: translateX(-100%);
+    overflow-y: auto;
+    width: 60%;
+
+    @media screen and (min-width: $sm_min_width) {
+      width: 40%;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 1.2rem;
+    }
+
+    a {
+      color: var(--color-text);
+    }
+  }
+
+  #sidebar_btn_input:checked ~ #sidebar {
+    display: block;
+    transform: translateX(0);
+  }
 }
