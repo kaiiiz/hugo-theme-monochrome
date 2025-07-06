@@ -10,7 +10,6 @@ code, kbd, pre {
 main {
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem 0;
   width: $sm_main_width;
 }
 
@@ -97,7 +96,7 @@ details[open] > summary {
 }
 
 .content-margin {
-  @include my-8;
+  @include my-10;
 }
 
 .hidden {

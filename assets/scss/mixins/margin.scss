@@ -18,6 +18,10 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+@mixin my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
 
 @mixin mx-auto {
   margin-left: auto;

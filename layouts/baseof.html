@@ -12,6 +12,7 @@
 {{ .Scratch.SetInMap "params" "footer" (.Params.footer | default .Site.Params.footer) }}
 {{ .Scratch.SetInMap "params" "math" (.Params.math | default .Site.Params.enable_math | default false) }}
 {{ .Scratch.SetInMap "params" "enable_collapsible_toc" (.Params.collapsible_toc | default .Site.Params.enable_collapsible_toc | default false) }}
+{{ .Scratch.SetInMap "params" "toc_position" (.Params.toc_position | default .Site.Params.toc_position | default "top") }}
 {{ .Scratch.SetInMap "params" "enable_collapsible_changelogs" (.Params.collapsible_changelogs | default .Site.Params.enable_collapsible_changelogs | default false) }}
 {{ .Scratch.SetInMap "params" "color_scheme" (.Site.Params.color_scheme | default "light") }}
 
