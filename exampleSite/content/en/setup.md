@@ -2,6 +2,8 @@
 title: 'Setup'
 ---
 
+# Setup
+
 This document shows a brief guide to setup hugo-theme-monochrome in your hugo project.
 
 ## Quick Start
@@ -16,7 +18,7 @@ Take Linux for example:
 snap install hugo --channel=extended
 ```
 
-> The minimum hugo version that hugo-theme-monochrome required is `0.128.0`
+> The minimum hugo version that hugo-theme-monochrome required is `0.146.0`
 
 ### Create a New Site
 
@@ -52,7 +54,7 @@ hugo server --environment production
 
 ### Build static pages
 
-Generate files to `/public` folder, `--minify` option can minify other resouces (e.g. HTML/XML/JSON...).
+Generate files to `/public` folder, `--minify` option can minify other resources (e.g. HTML/XML/JSON...).
 
 See [Configure Minify](https://gohugo.io/getting-started/configuration/#configure-minify) to adjust the behavior of hugo minifier (powered by [minify](https://github.com/tdewolff/minify)).
 

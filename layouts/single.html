@@ -1,0 +1,19 @@
+{{- define "content" -}}
+
+{{ if and (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") (.Scratch.Get "params").enable_toc }}
+    {{ $toc_position := (.Scratch.Get "params").toc_position }}
+    {{ if eq $toc_position "right" }}
+        {{ partial "fixed-toc.html" (dict "context" . "position" $toc_position) }}
+    {{ else if eq $toc_position "top" }}
+        {{ $enable_collapsible_toc := (.Scratch.Get "params").enable_collapsible_toc }}
+        {{ partial "collapsible-menu.html" (dict "type" "toc" "context" . "enable" $enable_collapsible_toc) }}
+    {{ end }}
+{{ end }}
+
+{{ if .Content }}
+    <div class="content-margin">
+        {{- partial "content.html" (dict "ctx" . "content" .Content) -}}
+    </div>
+{{ end }}
+
+{{- end -}}

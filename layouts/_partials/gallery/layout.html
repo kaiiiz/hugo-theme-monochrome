@@ -61,7 +61,7 @@
             {{ end }}
         </div>
     {{ else }}
-        <span>{{ i18n "no_page_under_resouces" (dict "resources_name" "gallery_resources" "resources_path" .Params.gallery_resources ) }}</span>
+        <span>{{ i18n "no_page_under_resources" (dict "resources_name" "gallery_resources" "resources_path" .Params.gallery_resources ) }}</span>
     {{ end }}
 {{ else }}
     <span>{{ i18n "resources_not_found" (dict "resources_name" "gallery_resources")}}</span>

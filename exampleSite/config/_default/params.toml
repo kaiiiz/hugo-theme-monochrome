@@ -1,5 +1,6 @@
 navbar_title = 'Monochrome'
-footer = "Copyright © 2021-2024 by kaiiiz"
+hide_navbar_on_scroll = true
+footer = "Copyright © 2021-2025 by kaiiiz"
 author = "kaiiiz"
 color_scheme = "light"
 
@@ -16,6 +17,7 @@ enable_twitter_cards = true
 # Collapsible Menu
 enable_collapsible_toc = false
 enable_collapsible_changelogs = true
+toc_position = "right" # "top" | "right"
 
 [list_layout]
 enable_group_by_year = true

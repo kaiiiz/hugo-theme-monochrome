@@ -44,7 +44,7 @@ gallery_resources: '/about'
 > default: error will occur in page
 
 
-## Resouces Configuration
+## Resources Configuration
 
 These settings are under the resource specified in `gallery_resources`.
 
@@ -145,8 +145,8 @@ weight: 3
 
 ## Headless Bundle
 
-Hugo supports an amazing feature called **Headless Bundle**, which elegantly resolved the resouces publish issue.
+Hugo supports an amazing feature called **Headless Bundle**, which elegantly resolved the resources publish issue.
 
-For example, if you don't want to publish the resouces of the gallery layout, you can create a leaf bundle and specified `headless = true` in `index.md`'s front-matter. These resources will only be used during rendering process. In other word, no file will be generated to `/public` folder.
+For example, if you don't want to publish the resources of the gallery layout, you can create a leaf bundle and specified `headless = true` in `index.md`'s front-matter. These resources will only be used during rendering process. In other word, no file will be generated to `/public` folder.
 
 Checkout [Headless Bundle](https://gohugo.io/content-management/page-bundles/#headless-bundle) for more details.

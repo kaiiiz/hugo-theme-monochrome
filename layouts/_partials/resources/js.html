@@ -1,11 +1,23 @@
-{{/*  Header  */}}
-{{ $header_js := resources.Get "js/header.js" }}
+{{/*  Theme Switch Button  */}}
+{{ $theme_switch_js := resources.Get "js/theme-switch.js" }}
 {{- if hugo.IsProduction -}}
-    {{ $header_js = $header_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
+    {{ $theme_switch_js = $theme_switch_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
 {{- else -}}
-    {{ $header_js = $header_js | js.Build -}}
+    {{ $theme_switch_js = $theme_switch_js | js.Build -}}
 {{- end -}}
-<script defer src="{{ $header_js.RelPermalink }}" integrity="{{- $header_js.Data.Integrity -}}"></script>
+<script defer src="{{ $theme_switch_js.RelPermalink }}" integrity="{{- $theme_switch_js.Data.Integrity -}}"></script>
+
+{{/*  Hide navbar on scroll  */}}
+{{ if (.Scratch.Get "params").hide_navbar_on_scroll }}
+    {{ $hide_navbar_on_scroll_js := resources.Get "js/hide-navbar-on-scroll.js" }}
+    {{- if hugo.IsProduction -}}
+        {{ $hide_navbar_on_scroll_js = $hide_navbar_on_scroll_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
+    {{- else -}}
+        {{ $hide_navbar_on_scroll_js = $hide_navbar_on_scroll_js | js.Build -}}
+    {{- end -}}
+    <script defer src="{{ $hide_navbar_on_scroll_js.RelPermalink }}" integrity="{{- $hide_navbar_on_scroll_js.Data.Integrity -}}"></script>
+{{ end }}
+
 
 {{/*  Zooming.js  */}}
 {{ if (.Scratch.Get "params").enable_zooming_js }}
