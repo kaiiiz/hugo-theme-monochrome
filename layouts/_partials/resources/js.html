@@ -7,6 +7,18 @@
 {{- end -}}
 <script defer src="{{ $theme_switch_js.RelPermalink }}" integrity="{{- $theme_switch_js.Data.Integrity -}}"></script>
 
+{{/*  Hide navbar on scroll  */}}
+{{ if (.Scratch.Get "params").hide_navbar_on_scroll }}
+    {{ $hide_navbar_on_scroll_js := resources.Get "js/hide-navbar-on-scroll.js" }}
+    {{- if hugo.IsProduction -}}
+        {{ $hide_navbar_on_scroll_js = $hide_navbar_on_scroll_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
+    {{- else -}}
+        {{ $hide_navbar_on_scroll_js = $hide_navbar_on_scroll_js | js.Build -}}
+    {{- end -}}
+    <script defer src="{{ $hide_navbar_on_scroll_js.RelPermalink }}" integrity="{{- $hide_navbar_on_scroll_js.Data.Integrity -}}"></script>
+{{ end }}
+
+
 {{/*  Zooming.js  */}}
 {{ if (.Scratch.Get "params").enable_zooming_js }}
     {{ $zooming_js := resources.Get "js/zooming.js" }}
