@@ -21,13 +21,12 @@
     {{ $min := int (index $termCount 0) }}
     {{ $max := add (int (index $termCount (sub (len $termCount) 1))) 1 }}
 
-    <div>
+    <div class="terms-cloud">
         {{ range $terms }}
             {{ $weight := div (sub (math.Log .Count) (math.Log $min)) (sub (math.Log $max) (math.Log $min)) }}
             {{ $fontSize := (add $fontSmall (mul $fontSpread $weight)) }}
-            {{ $lineHeight := add $fontSize 0.85 }}
 
-            <a class="term-item" href="{{ .Page.RelPermalink }}" style="line-height:{{$lineHeight}}rem">
+            <a class="term-item" href="{{ .Page.RelPermalink }}">
                 <span style="font-size:{{ $fontSize }}rem">{{- .Page.Title -}}</span>
                 <span style="font-size:{{ sub $fontSmall 0.2 }}rem"> ({{- .Count -}}) </span>
             </a>

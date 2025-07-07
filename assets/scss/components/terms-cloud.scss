@@ -1,4 +1,12 @@
+.terms-cloud {
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.75rem;
+}
+
 .term-item {
   @include list-link-item;
   margin-right: 0.375rem;
+  line-height: 1rem;
 }
