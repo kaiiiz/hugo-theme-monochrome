@@ -2,14 +2,6 @@ article {
   line-height: 1.7;
   width: 100%;
 
-  > *:first-child {
-    margin-top: 0;
-  }
-
-  > *:last-child {
-    margin-bottom: 0;
-  }
-
   hr {
     @include my-8;
   }
@@ -199,6 +191,10 @@ article {
 
   .header-anchor-wrapper:hover .header-anchor-link {
     display: inline;
+  }
+
+  section {
+    @include my-4;
   }
 }
 
