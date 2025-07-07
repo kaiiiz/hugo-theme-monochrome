@@ -36,22 +36,38 @@
     {{- with .First }}
       {{- if ne $currentPageNumber .PageNumber }}
       <li class="page-item">
-        <a href="{{ .URL }}" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        <a href="{{ .URL }}" aria-label="First" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevrons-left" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
       {{- else }}
       <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevrons-left" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
       {{- end }}
     {{- end }}
 
     {{- with .Prev }}
       <li class="page-item">
-        <a href="{{ .URL }}" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+        <a href="{{ .URL }}" aria-label="Previous" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevron-left" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
     {{- else }}
       <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevron-left" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
     {{- end }}
 
@@ -65,33 +81,57 @@
     {{- range $k := seq $start $end }}
       {{- if eq $.Paginator.PageNumber $k }}
       <li class="page-item active">
-        <a aria-current="page" aria-label="Page {{ $k }}" class="page-link" role="button">{{ $k }}</a>
+        <a aria-current="page" aria-label="Page {{ $k }}" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ $k }}
+          </button>
+        </a>
       </li>
       {{- else }}
       <li class="page-item">
-        <a href="{{ (index $.Paginator.Pagers (sub $k 1)).URL }}" aria-label="Page {{ $k }}" class="page-link" role="button">{{ $k }}</a>
+        <a href="{{ (index $.Paginator.Pagers (sub $k 1)).URL }}" aria-label="Page {{ $k }}" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ $k }}
+          </button>
+        </a>
       </li>
       {{- end }}
     {{- end }}
 
     {{- with .Next }}
       <li class="page-item">
-        <a href="{{ .URL }}" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+        <a href="{{ .URL }}" aria-label="Next" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevron-right" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
     {{- else }}
       <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevron-right" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
     {{- end }}
 
     {{- with .Last }}
       {{- if ne $currentPageNumber .PageNumber }}
       <li class="page-item">
-        <a href="{{ .URL }}" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="{{ .URL }}" aria-label="Last" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevrons-right" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
       {{- else }}
       <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevrons-right" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
       {{- end }}
     {{- end }}
@@ -107,14 +147,22 @@
     {{- with .First }}
       {{- if ne $currentPageNumber .PageNumber }}
       <li class="page-item">
-        <a href="{{ .URL }}" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
+        <a href="{{ .URL }}" aria-label="First" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevrons-left" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
       {{- end }}
     {{- end }}
 
     {{- with .Prev }}
       <li class="page-item">
-        <a href="{{ .URL }}" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+        <a href="{{ .URL }}" aria-label="Previous" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevron-left" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
     {{- end }}
 
@@ -139,14 +187,22 @@
 
     {{- with .Next }}
       <li class="page-item">
-        <a href="{{ .URL }}" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+        <a href="{{ .URL }}" aria-label="Next" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevron-right" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
     {{- end }}
 
     {{- with .Last }}
       {{- if ne $currentPageNumber .PageNumber }}
       <li class="page-item">
-        <a href="{{ .URL }}" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="{{ .URL }}" aria-label="Last" class="page-link" role="button">
+          <button class="outline-button" type="button" aria-hidden="true">
+            {{ partial "svg/feather.html" (dict "name" "chevrons-right" "width" "1rem" "height" "1rem") }}
+          </button>
+        </a>
       </li>
       {{- end }}
     {{- end }}

@@ -61,17 +61,17 @@
             {{ end }}
 
             <div id="theme_tool">
-                <button id="dark_mode_btn" class="header-menu-btn" title='{{ i18n "dark_mode_btn_tooltip" }}' type="button">
+                <button id="dark_mode_btn" class="header-menu-btn outline-button" title='{{ i18n "dark_mode_btn_tooltip" }}' type="button">
                     {{- partial "svg/feather.html" (dict "name" "moon") -}}
                 </button>
-                <button id="light_mode_btn" class="header-menu-btn" title='{{ i18n "light_mode_btn_tooltip" }}' type="button">
+                <button id="light_mode_btn" class="header-menu-btn outline-button" title='{{ i18n "light_mode_btn_tooltip" }}' type="button">
                     {{- partial "svg/feather.html" (dict "name" "sun") -}}
                 </button>
             </div>
 
             {{ if (.Scratch.Get "params").enable_site_search }}
                 <div id="search_tool">
-                    <button id="search_btn" class="header-menu-btn" title='{{ i18n "search" }}' type="button">
+                    <button id="search_btn" class="header-menu-btn outline-button" title='{{ i18n "search" }}' type="button">
                         {{- partial "svg/feather.html" (dict "name" "search") -}}
                     </button>
                 </div>
