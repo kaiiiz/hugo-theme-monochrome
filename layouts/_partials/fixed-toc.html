@@ -1,3 +1,11 @@
+{{/*  ToC tracker js  */}}
+{{ $toc_tracker_js := resources.Get "js/toc-tracker.js" }}
+{{- if hugo.IsProduction -}}
+    {{ $toc_tracker_js = $toc_tracker_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
+{{- else -}}
+    {{ $toc_tracker_js = $toc_tracker_js | js.Build -}}
+{{- end -}}
+<script defer src="{{ $toc_tracker_js.RelPermalink }}" integrity="{{- $toc_tracker_js.Data.Integrity -}}"></script>
 
 <div class="collapsible-menu-wrapper {{ .position }}">
     <div class="collapsible-menu-type">

@@ -17,6 +17,14 @@
 
   a {
     color: var(--color-text);
+
+    &:hover {
+      border-bottom: 2px solid var(--color-border);
+    }
+  }
+
+  .active > a {
+    border-bottom: 2px solid var(--color-border);
   }
 }
 
