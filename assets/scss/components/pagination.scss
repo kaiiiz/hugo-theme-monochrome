@@ -8,7 +8,7 @@ $paginator_btn_size: 1.75rem;
   display: inline-flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
   gap: 0.5rem;
 
@@ -32,4 +32,8 @@ $paginator_btn_size: 1.75rem;
       background-color: transparent;
     }
   }
+}
+
+.postcard-layout .pagination {
+  justify-content: center;
 }
