@@ -22,6 +22,7 @@ toc: false
   - `gap` parameter in icon-group shortcode
   - Redesigned paginator
   - Lazy-load index.json upon search button click
+  - Fixed TOC scroll tracking
 
 ---
 
