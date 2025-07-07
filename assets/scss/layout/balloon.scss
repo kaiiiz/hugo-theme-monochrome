@@ -22,6 +22,7 @@
 %balloon-item-content-base {
   display: flex;
   flex: 1 1 0%;
+  align-items: center;
   margin-left: -12px;
 
   @media screen and (max-width: $md_min_width) {
