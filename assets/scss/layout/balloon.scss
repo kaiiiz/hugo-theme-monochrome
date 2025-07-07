@@ -29,7 +29,6 @@
   }
 }
 
-
 .balloon-layout {
   @media screen and (min-width: $md_min_width) {
     margin-left: -1.75rem;
@@ -71,12 +70,20 @@
 
     .balloon-head-item-content {
       @extend %balloon-item-content-base;
-      margin: 0;
-      align-items: center;
+      margin: 2rem 0 0 0;
 
       @media screen and (max-width: $md_min_width) {
-        justify-content: center;
-        text-align: center;
+        article {
+          text-align: center;
+
+          .icon-group {
+            justify-content: center;
+          }
+
+          .icon {
+            justify-content: center;
+          }
+        }
       }
     }
   }
