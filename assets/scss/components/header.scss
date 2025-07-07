@@ -242,6 +242,7 @@ header {
     transform: translateX(-100%);
     overflow-y: auto;
     width: 60%;
+    padding: 1.2rem;
 
     @media screen and (min-width: $sm_min_width) {
       width: 40%;
@@ -250,11 +251,23 @@ header {
     ul {
       list-style: none;
       padding-left: 0;
+      margin: 0 0 0 1.2rem;
+    }
+
+    > ul {
       margin: 0;
+
+      > li:first-child {
+        margin-top: 0;
+      }
+
+      > li:last-child {
+        margin-bottom: 0;
+      }
     }
 
     li {
-      margin: 1.2rem;
+      margin: 1.2rem 0;
     }
 
     a {
