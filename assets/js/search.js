@@ -1,20 +1,22 @@
 import * as params from '@params';
 import uFuzzy from '../lib/js/uFuzzy-v1.0.14.esm.js';
 
-async function init() {
+let initing = false;
+let inited = false;
+
+async function initIndex() {
+    if (initing || inited) {
+        return;
+    }
+    initing = true;
+
     const defaultContextLen = 100;
     const response = fetch(params.index_url);
 
-    const search_btn = document.getElementById("search_btn");
     const search_menu_wrapper = document.getElementById("search_menu_wrapper");
     const search_menu_close_btn = document.getElementById("search_menu_close_btn");
     const search_menu_input = document.getElementById("search_menu_input");
     const search_menu_results = document.getElementById("search_menu_results");
-
-    search_btn.addEventListener("click", function () {
-        search_menu_wrapper.classList.remove("hidden");
-        search_menu_input.focus();
-    });
 
     search_menu_close_btn.addEventListener("click", function () {
         search_menu_wrapper.classList.add("hidden");
@@ -170,6 +172,20 @@ async function init() {
     });
 
     buildAllItems();
+
+    inited = true;
 }
 
-window.addEventListener("DOMContentLoaded", init);
+window.addEventListener("DOMContentLoaded", () => {
+    const search_btn = document.getElementById("search_btn");
+    if (search_btn === null) {
+        console.warn("Search button not found. Search functionality will not be initialized.");
+        return;
+    }
+
+    search_btn.addEventListener("click", () => {
+        search_menu_wrapper.classList.remove("hidden");
+        search_menu_input.focus();
+        initIndex();
+    });
+});

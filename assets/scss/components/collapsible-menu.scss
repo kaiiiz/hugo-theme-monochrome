@@ -17,6 +17,14 @@
 
   a {
     color: var(--color-text);
+
+    &:hover {
+      border-bottom: 2px solid var(--color-border);
+    }
+  }
+
+  .active > a {
+    border-bottom: 2px solid var(--color-border);
   }
 }
 
@@ -63,10 +71,8 @@ article#collapsible_menu_changelogs {
   &.right {
     position: fixed;
     max-height: calc(100vh - #{$header_height + $toc_top_margin + $toc_bottom_margin});
-    width: get_collapsible_menu_width_vw($xl_main_width);
-    left: get_collapsible_menu_left_vw($xl_main_width);
+    display: none;
     top: $header_height + $toc_top_margin;
-    display: block;
     margin: 0;
     padding: 0 1rem;
     border: none;
@@ -74,15 +80,16 @@ article#collapsible_menu_changelogs {
     border-radius: 0px;
     overflow-y: auto;
 
-    @media screen and (max-width: $xl_min_width) {
-      display: none;
+    @media screen and (min-width: $xl_min_width) {
+      display: block;
+      width: get_collapsible_menu_width_vw($xl_main_width);
+      left: get_collapsible_menu_left_vw($xl_main_width);
     }
 
     @media screen and (min-width: $xxl_min_width) {
-      & {
-        width: get_collapsible_menu_width_vw($xxl_main_width);
-        left: get_collapsible_menu_left_vw($xxl_main_width);
-      }
+      display: block;
+      width: get_collapsible_menu_width_vw($xxl_main_width);
+      left: get_collapsible_menu_left_vw($xxl_main_width);
     }
   }
 }

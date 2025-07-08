@@ -177,7 +177,7 @@ enable_zooming_js = false # default: true
 
 ### Site Search
 
-Add the following settings to config.toml:
+Add the following settings to hugo.toml:
 
 ```toml
 [outputs]
@@ -270,6 +270,12 @@ color_scheme = "dark" # "light" or "dark"
 
 ## Custom head
 
-You can insert your custom code in `<head>` section using the `/layouts/partials/user_head.html` file.
+You can insert your custom code in `<head>` section using the `/layouts/_partials/user_head.html` file.
 
 This is useful for inject third-partiy libraries (e.g. Google Ads) or your custom script. 
+
+## Custom template at the end of page
+
+To insert custom content at the end of each page, create the file at: `/layouts/_partials/user_content_end.html`.
+
+This is useful for injecting custom components, such as a comment service.

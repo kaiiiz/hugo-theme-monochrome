@@ -5,9 +5,7 @@
                 <input id="search_menu_input" type="text" placeholder='{{ i18n "search" }}'>
             </div>
             <div id="search_menu_close_btn">
-                <svg width="18px" height="18px" viewBox="0 0 24 24">
-                    {{- partial "svg/feather.html" "x" -}}
-                </svg>
+                {{- partial "svg/feather.html" (dict "name" "x" "height" "1.25rem" "width" "1.25rem") -}}
             </div>
         </div>
         <div id="search_menu_results">

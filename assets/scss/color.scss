@@ -24,10 +24,13 @@ html[data-theme="light"] {
   --color-text-secondary: #{$gray-500};
   --color-text-footer: #{$gray-500};
   --color-text-mark: #{$gray-900};
+  --color-text-active: #{$gray-0};
+  --color-text-disabled: #{$gray-400};
   --color-border: #{$gray-300};
   --color-border-collapsible-menu: #{$gray-200};
   --color-background: #{$gray-0};
-  --color-background-hover: #{$gray-50};
+  --color-background-active: #{$gray-600};
+  --color-background-hover: #{$gray-100};
   --color-background-overlay: #{$gray-150};
   --color-background-inline-code: #{$gray-100};
   --color-background-card: #{$gray-0};
@@ -43,9 +46,12 @@ html[data-theme="dark"] {
   --color-text-secondary: #{$gray-450};
   --color-text-footer: #{$gray-400};
   --color-text-mark: #{$gray-900};
+  --color-text-active: #{$gray-1000};
+  --color-text-disabled: #{$gray-500};
   --color-border: #{$gray-500};
   --color-border-collapsible-menu: #{$gray-550};
   --color-background: #{$gray-750};
+  --color-background-active: #{$gray-200};
   --color-background-hover: #{$gray-600};
   --color-background-overlay: #{$gray-700};
   --color-background-inline-code: #{$gray-600};

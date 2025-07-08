@@ -8,31 +8,37 @@ code, kbd, pre {
 }
 
 main {
+  @include my-8;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2rem;
   width: $sm_main_width;
 }
 
 @media screen and (min-width: $md_min_width) {
   main {
+    margin-top: 2rem;
     width: $md_main_width;
   }
 }
 
 @media screen and (min-width: $lg_min_width) {
   main {
+    margin-top: 2rem;
     width: $lg_main_width;
   }
 }
 
 @media screen and (min-width: $xl_min_width) {
   main {
+    margin-top: 2.5rem;
     width: $xl_main_width;
   }
 }
 
 @media screen and (min-width: $xxl_min_width) {
   main {
+    margin-top: 2.5rem;
     width: $xxl_main_width;
   }
 }
@@ -96,7 +102,7 @@ details[open] > summary {
 }
 
 .content-margin {
-  @include my-10;
+  @include my-8;
 }
 
 .hidden {

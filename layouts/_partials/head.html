@@ -62,7 +62,7 @@
         <link rel="stylesheet" href="{{ urls.JoinPath .Site.BaseURL "user.css" }}">
     {{- end }}
 
-    {{ if templates.Exists "partials/user_head.html" -}}
-        {{ partial "partials/user_head.html" . }}
+    {{ if templates.Exists "_partials/user_head.html" -}}
+        {{ partial "user_head.html" . }}
     {{- end }}
 </head>

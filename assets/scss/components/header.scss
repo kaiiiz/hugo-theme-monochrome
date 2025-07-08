@@ -106,19 +106,6 @@ header {
   .header-menu-btn {
     height: $header_btn_size;
     width: $header_btn_size;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border-radius: 0.4rem;
-    color: var(--color-text);
-    background-color: transparent;
-    border: 1px solid var(--color-text-secondary);
-
-    &:hover {
-      background-color: var(--color-background-hover);
-    }
   }
 
   .header-menu {
@@ -242,6 +229,7 @@ header {
     transform: translateX(-100%);
     overflow-y: auto;
     width: 60%;
+    padding: 1.2rem;
 
     @media screen and (min-width: $sm_min_width) {
       width: 40%;
@@ -250,11 +238,23 @@ header {
     ul {
       list-style: none;
       padding-left: 0;
+      margin: 0 0 0 1.2rem;
+    }
+
+    > ul {
       margin: 0;
+
+      > li:first-child {
+        margin-top: 0;
+      }
+
+      > li:last-child {
+        margin-bottom: 0;
+      }
     }
 
     li {
-      margin: 1.2rem;
+      margin: 1.2rem 0;
     }
 
     a {

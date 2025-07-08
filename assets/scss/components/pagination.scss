@@ -1,37 +1,39 @@
+$paginator_btn_size: 1.75rem;
+
 .pagination {
+  @include text-sm;
   padding: 0;
   margin: 0;
   list-style: none;
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 
-  li {
-    display: inline;
-    margin: 0 .1rem;
+  button {
+    height: $paginator_btn_size;
+    width: $paginator_btn_size;
   }
 
-  a, span {
-    color: var(--color-text-secondary);
-  }
-  
-  li.active a {
-    @include font-semibold;
-    color: var(--color-text);
+  .page-item.active button {
+    background-color: var(--color-background-active);
+    color: var(--color-text-active);
+    border-color: var(--color-background-active);
   }
 
-  li:not(.disabled) a:hover {
-    color: var(--color-text);
-
-    span {
-      color: inherit;
-    }
-  }
-
-  .disabled {
+  .page-item.disabled button {
     cursor: not-allowed;
+    color: var(--color-text-disabled);
+    border-color: var(--color-text-disabled);
+
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
 
-.postcard-layout {
-  .pagination {
-    text-align: center;
-  }
+.postcard-layout .pagination {
+  justify-content: center;
 }

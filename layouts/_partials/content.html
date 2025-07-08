@@ -8,5 +8,17 @@
         {{ $content = $content | replaceRE "<pre>" "<pre class=\"language-text\">" }}
         {{ $content = $content | replaceRE "<pre([^>]*)class=\"([^>]*)\"([^>]*)>" "<pre$1 class=\"mc-prism hide $2\" $3>" }}
     {{ end }}
-    {{ $content | safeHTML }}
+
+    {{ $chunks := split $content "<!-- end-chunk -->" }}
+    {{ range $chunks }}
+        {{ $section_content := "" }}
+        {{ if (gt (len (findRE `<!-- begin-chunk.+?-->` .)) 0) }}
+            {{ $anchor := replaceRE `(?s).+data-anchor="(.+?)".+` "$1" . }}
+            {{ $chunk := replaceRE `(?s)<!-- begin-chunk.+?-->(.+?)(?:<!-- end-chunk -->|$)` "$1" . }}
+            {{ $section_content = printf "<section id=\"%s\">%s</section>" $anchor $chunk }}
+        {{ else if (gt (len .) 0) }}
+            {{ $section_content = printf "<section>%s</section>" . }}
+        {{ end }}
+        {{ $section_content | safeHTML }}
+    {{ end }}
 </article>

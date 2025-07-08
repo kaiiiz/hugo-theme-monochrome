@@ -50,7 +50,6 @@ window.addEventListener("scroll", throttle(() => {
 
 window.addEventListener('resize', () => {
     headerHeight = header.offsetHeight;
-    console.log("Resizing window, updating header height", headerHeight);
 });
 
 window.addEventListener('mousemove', throttle((e) => {

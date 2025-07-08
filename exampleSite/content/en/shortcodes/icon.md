@@ -19,6 +19,8 @@ Parameters:
 - `vendor`: Icon vendor (Supported value: `feather`, `simple`)
 - `link`: Render link for icon
 - `name`: Icon name
+- `width`: Icon width
+- `height`: Icon height
 
 ## Available Icons
 
@@ -57,3 +59,9 @@ Icons from [Simple icons](https://simpleicons.org/)
 ```
 
 {{< icon vendor="simple" name="github" link="https://github.com/kaiiiz/hugo-theme-monochrome" >}}
+
+```html
+{{</* icon vendor="simple" name="github" width="1rem" height="1rem" link="https://github.com/kaiiiz/hugo-theme-monochrome" */>}}
+```
+
+{{< icon vendor="simple" name="github" width="1rem" height="1rem" link="https://github.com/kaiiiz/hugo-theme-monochrome" >}}

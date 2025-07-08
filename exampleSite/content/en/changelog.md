@@ -5,6 +5,27 @@ toc: false
 
 # Changelog
 
+## v5.1.0 (2025/07/08)
+
+- Fixed
+  - User partial templates not rendering due to changes in Hugo’s template structure
+  - MathJax formulas not rendering properly when loaded with defer
+  - Balloon header content misaligned in mobile view
+  - Post count in terms-cloud wrapping incorrectly due to overflow
+- Changed
+  - Renamed config.toml to hugo.toml
+  - Display all index content on paginated list pages
+  - Expanded renderable area for sidebar components
+  - Minor style adjustments
+- New
+  - `width` and `height` parameters in icon shortcode
+  - `gap` parameter in icon-group shortcode
+  - Redesigned paginator
+  - Lazy-load index.json upon search button click
+  - Fixed TOC scroll tracking
+
+---
+
 ## v5.0.0 (2025/07/06)
 
 - Fixed

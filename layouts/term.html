@@ -20,7 +20,7 @@
             {{ if eq .MediaType.Type "application/rss+xml" }}
                 <div class="icon">
                     <a rel="noopener" target="_blank" href="{{ .Permalink | safeURL }}"> 
-                        {{ partial "svg/feather.html" "rss" }}
+                        {{ partial "svg/feather.html" (dict "name" "rss") }}
                     </a>
                 </div>
             {{ end }}
@@ -29,7 +29,7 @@
     {{ if $group_by_year }}
         {{ range $pages }}
             <div class="content-margin">
-                <h1>{{- .Key -}}</h1>
+                <h2>{{- .Key -}}</h2>
                 {{- partial "list.html" (dict "pages" .Pages "show_date" $show_date "group_by_year" $group_by_year) -}}
             </div>
         {{ end }}

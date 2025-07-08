@@ -1,6 +1,8 @@
 {{- $icon_vendor := .Get "vendor" -}}
 {{- $icon_link := .Get "link" -}}
 {{- $icon_name := .Get "name" -}}
+{{- $icon_width := .Get "width" | default "1.5rem" -}}
+{{- $icon_height := .Get "height" | default "1.5rem" -}}
 
 <div class="icon">
     {{ if $icon_link }}
@@ -9,9 +11,9 @@
         <div>
     {{ end }}
         {{ if eq $icon_vendor "feather" }}
-            {{ partial "svg/feather.html" $icon_name }}
+            {{ partial "svg/feather.html" (dict "name" $icon_name "width" $icon_width "height" $icon_height) }}
         {{ else if eq $icon_vendor "simple" }}
-            {{ partial "svg/simple.html" $icon_name }}
+            {{ partial "svg/simple.html" (dict "name" $icon_name "width" $icon_width "height" $icon_height) }}
         {{ end }}
     {{ if $icon_link }}
         </a>
