@@ -14,7 +14,7 @@ toc: false
   - Post count in terms-cloud wrapping incorrectly due to overflow
 - Changed
   - Renamed config.toml to hugo.toml
-  - Display all index content across paginated list pages
+  - Display all index content on paginated list pages
   - Expanded renderable area for sidebar components
   - Minor style adjustments
 - New
