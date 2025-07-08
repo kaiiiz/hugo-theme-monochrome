@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Postcard Layout on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/</link><description>Recent content in Postcard Layout on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/index.xml" rel="self" type="application/rss+xml"/><item><title>Postcard Layout Document</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/docs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/layouts/postcard/docs/</guid><description>&lt;p>Postcard layout show summary of regular posts, it&amp;rsquo;s useful for creating home page.&lt;/p>
 &lt;blockquote>
 &lt;p>This layout can only be used on list layout.&lt;/p>&lt;/blockquote>
-&lt;h2 id="configuration" class="header-anchor-wrapper">Configuration
+&lt;!-- end-chunk -->
+&lt;!-- begin-chunk data-anchor="configuration" -->
+&lt;h2 class="header-anchor-wrapper">Configuration
 &lt;a href="#configuration" class="header-anchor-link">
-&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
-width="24" height="24" viewBox="0 0 24 24" fill="none"
+width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
 stroke-linejoin="round">
 &lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
 &lt;/svg>
 &lt;/a>
 &lt;/h2>

@@ -1,98 +1,81 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Configuration on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/</link><description>Recent content in Configuration on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/configuration/index.xml" rel="self" type="application/rss+xml"/><item><title>Site Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</guid><description>&lt;h1 id="site-configuration" class="header-anchor-wrapper">Site Configuration
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Configuration on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/</link><description>Recent content in Configuration on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/configuration/index.xml" rel="self" type="application/rss+xml"/><item><title>Site Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/site/</guid><description>&lt;!-- end-chunk -->
+&lt;!-- begin-chunk data-anchor="site-configuration" -->
+&lt;h1 class="header-anchor-wrapper">Site Configuration
 &lt;a href="#site-configuration" class="header-anchor-link">
-&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
-width="24" height="24" viewBox="0 0 24 24" fill="none"
+width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
 stroke-linejoin="round">
 &lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
 &lt;/svg>
 &lt;/a>
 &lt;/h1>
 &lt;p>These settings are important for building a website using hugo. See &lt;a href="https://gohugo.io/getting-started/configuration/#all-configuration-settings">All Configuration Settings&lt;/a> for more details.&lt;/p>
-&lt;h2 id="site-title" class="header-anchor-wrapper">Site title
+&lt;!-- end-chunk -->
+&lt;!-- begin-chunk data-anchor="site-title" -->
+&lt;h2 class="header-anchor-wrapper">Site title
 &lt;a href="#site-title" class="header-anchor-link">
-&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
-width="24" height="24" viewBox="0 0 24 24" fill="none"
+width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
 stroke-linejoin="round">
 &lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
 &lt;/svg>
 &lt;/a>
 &lt;/h2>
-&lt;p>Site title. This value will become the content of &lt;code>&amp;lt;title&amp;gt;&lt;/code> tag in html.&lt;/p></description></item><item><title>Theme Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</guid><description>&lt;h1 id="theme-configuration" class="header-anchor-wrapper">Theme Configuration
+&lt;p>Site title. This value will become the content of &lt;code>&amp;lt;title&amp;gt;&lt;/code> tag in html.&lt;/p></description></item><item><title>Theme Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/theme/</guid><description>&lt;!-- end-chunk -->
+&lt;!-- begin-chunk data-anchor="theme-configuration" -->
+&lt;h1 class="header-anchor-wrapper">Theme Configuration
 &lt;a href="#theme-configuration" class="header-anchor-link">
-&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
-width="24" height="24" viewBox="0 0 24 24" fill="none"
+width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
 stroke-linejoin="round">
 &lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
 &lt;/svg>
 &lt;/a>
 &lt;/h1>
 &lt;p>These values are inside your toml config file.&lt;/p>
-&lt;h2 id="navbar-title" class="header-anchor-wrapper">Navbar title
+&lt;!-- end-chunk -->
+&lt;!-- begin-chunk data-anchor="navbar-title" -->
+&lt;h2 class="header-anchor-wrapper">Navbar title
 &lt;a href="#navbar-title" class="header-anchor-link">
-&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
-width="24" height="24" viewBox="0 0 24 24" fill="none"
+width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
 stroke-linejoin="round">
 &lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
 &lt;/svg>
-&lt;/svg>
 &lt;/a>
 &lt;/h2>
-&lt;p>HTML is available.&lt;/p>
-&lt;pre>&lt;code class="language-toml">[params]
-navbar_title = &amp;quot;Monochrome&amp;quot; # default: site's `title`
-&lt;/code>&lt;/pre>
-&lt;h2 id="footer" class="header-anchor-wrapper">Footer
-&lt;a href="#footer" class="header-anchor-link">
-&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
-&lt;svg
-xmlns="http://www.w3.org/2000/svg"
-width="24" height="24" viewBox="0 0 24 24" fill="none"
-stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;p>HTML is available.&lt;/p></description></item><item><title>Page Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</guid><description>&lt;h1 id="page-settings" class="header-anchor-wrapper">Page Settings
+&lt;p>HTML is available.&lt;/p></description></item><item><title>Page Settings</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/configuration/page/</guid><description>&lt;!-- end-chunk -->
+&lt;!-- begin-chunk data-anchor="page-settings" -->
+&lt;h1 class="header-anchor-wrapper">Page Settings
 &lt;a href="#page-settings" class="header-anchor-link">
-&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
-width="24" height="24" viewBox="0 0 24 24" fill="none"
+width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
 stroke-linejoin="round">
 &lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
 &lt;/svg>
 &lt;/a>
 &lt;/h1>
 &lt;p>These values are inside your page&amp;rsquo;s front-matter.&lt;/p>
-&lt;h2 id="layout" class="header-anchor-wrapper">Layout
+&lt;!-- end-chunk -->
+&lt;!-- begin-chunk data-anchor="layout" -->
+&lt;h2 class="header-anchor-wrapper">Layout
 &lt;a href="#layout" class="header-anchor-link">
-&lt;svg width="16px" height="16px" viewBox="0 0 24 24">
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
-width="24" height="24" viewBox="0 0 24 24" fill="none"
+width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
 stroke-linejoin="round">
 &lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
 &lt;/svg>
 &lt;/a>
 &lt;/h2>
