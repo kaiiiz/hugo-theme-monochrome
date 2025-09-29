@@ -6,7 +6,7 @@ homepage = "https://github.com/kaiiiz/hugo-theme-monochrome/"
 demosite = "https://kaiiiz.github.io/hugo-theme-monochrome/"
 tags = ["blog", "responsive", "dark", "light", "multilingual"]
 features = ["Clean UI with small resources", "Responsive layout", "Dark mode", "Multiple layouts built-in", "Nested navbar", "Multilingual mode", "Syntax Highlighting with copy feature", "Site Search", "SEO-friendly", "MathJax Integration", "Useful shortcodes"]
-min_version = "0.80.0"
+min_version = "0.146.0"
 
 [author]
   name = "You-Kai Zheng"
