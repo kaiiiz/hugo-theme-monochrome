@@ -2,6 +2,7 @@
 {{ .Scratch.SetInMap "params" "enable_site_search" (.Site.Params.enable_site_search | default false) }}
 {{ .Scratch.SetInMap "params" "search_hidden" (.Params.search_hidden | default false) }}
 {{ .Scratch.SetInMap "params" "navbar_title" (.Params.navbar_title | default .Site.Params.navbar_title | default .Site.Title) }}
+{{ .Scratch.SetInMap "params" "navbar_width" (.Params.navbar_width | default .Site.Params.navbar_width | default "wide") }}
 {{ .Scratch.SetInMap "params" "hide_navbar_on_scroll" (.Params.hide_navbar_on_scroll | default .Site.Params.hide_navbar_on_scroll | default true) }}
 {{ .Scratch.SetInMap "params" "author" (.Params.author | default .Site.Params.author) }}
 {{ .Scratch.SetInMap "params" "enable_open_graph" (.Params.open_graph | default .Site.Params.enable_open_graph | default true) }}

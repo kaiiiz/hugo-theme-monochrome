@@ -31,31 +31,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: $sm_header_width;
-    
-    @media screen and (min-width: $md_min_width) {
-      & {
-        width: $md_header_width;
-      }
-    }
-
-    @media screen and (min-width: $lg_min_width) {
-      & {
-        width: $lg_header_width;
-      }
-    }
-
-    @media screen and (min-width: $xl_min_width) {
-      & {
-        width: $xl_header_width;
-      }
-    }
-
-    @media screen and (min-width: $xxl_min_width) {
-      & {
-        width: $xxl_header_width;
-      }
-    }
 
     #header_left {
       min-height: $header_height;
@@ -99,6 +74,90 @@ header {
       svg {
         width: 1rem;
         height: 1rem;
+      }
+    }
+  }
+
+  #header_content.normal {
+    width: $normal_header_width_sm;
+
+    @media screen and (min-width: $md_min_width) {
+      & {
+        width: $normal_header_width_md;
+      }
+    }
+
+    @media screen and (min-width: $lg_min_width) {
+      & {
+        width: $normal_header_width_lg;
+      }
+    }
+
+    @media screen and (min-width: $xl_min_width) {
+      & {
+        width: $normal_header_width_xl;
+      }
+    }
+
+    @media screen and (min-width: $xxl_min_width) {
+      & {
+        width: $normal_header_width_xxl;
+      }
+    }
+  }
+
+  #header_content.wide {
+    width: $wide_header_width_sm;
+
+    @media screen and (min-width: $md_min_width) {
+      & {
+        width: $wide_header_width_md;
+      }
+    }
+
+    @media screen and (min-width: $lg_min_width) {
+      & {
+        width: $wide_header_width_lg;
+      }
+    }
+
+    @media screen and (min-width: $xl_min_width) {
+      & {
+        width: $wide_header_width_xl;
+      }
+    }
+
+    @media screen and (min-width: $xxl_min_width) {
+      & {
+        width: $wide_header_width_xxl;
+      }
+    }
+  }
+
+  #header_content.extra-wide {
+    width: $extra_wide_header_width_sm;
+
+    @media screen and (min-width: $md_min_width) {
+      & {
+        width: $extra_wide_header_width_md;
+      }
+    }
+
+    @media screen and (min-width: $lg_min_width) {
+      & {
+        width: $extra_wide_header_width_lg;
+      }
+    }
+
+    @media screen and (min-width: $xl_min_width) {
+      & {
+        width: $extra_wide_header_width_xl;
+      }
+    }
+
+    @media screen and (min-width: $xxl_min_width) {
+      & {
+        width: $extra_wide_header_width_xxl;
       }
     }
   }
