@@ -49,10 +49,26 @@
                         <li class="header-menu-item header-menu-dropdown pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                             <div class="pure-menu-link">{{ .Site.Language.LanguageName }}</div>
                             <ul class="pure-menu-children">
+                                {{ $pageTranslations := .Translations }}
+                                {{ $curPageLangCode := .Language.LanguageCode }}
+                                {{ $curPageRelLink := .RelPermalink }}
+
                                 {{ range .Site.Home.AllTranslations }}
-                                <li class="pure-menu-item">
-                                    <a href="{{ .Permalink }}" class="pure-menu-link">{{ .Language.LanguageName }}</a>
-                                </li>
+                                    {{ $translationLink := .RelPermalink }}
+                                    {{ if eq .Language.LanguageCode $curPageLangCode }}
+                                        {{ $translationLink = $curPageRelLink }}
+                                    {{ else }}
+                                        {{ $entryLangCode := .Language.LanguageCode }}
+                                        {{ range $pageTranslations }}
+                                            {{ if eq .Language.LanguageCode $entryLangCode }}
+                                                {{ $translationLink = .RelPermalink }}
+                                                {{ break }}
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+                                    <li class="pure-menu-item">
+                                        <a href="{{ $translationLink }}" class="pure-menu-link">{{ .Language.LanguageName }}</a>
+                                    </li>
                                 {{ end }}
                             </ul>
                         </li>
