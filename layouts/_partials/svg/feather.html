@@ -1,6 +1,6 @@
 {{- $icon_name := .name -}}
-{{- $icon_width := .width | default "1.5rem" -}}
-{{- $icon_height := .height | default "1.5rem" -}}
+{{- $icon_width := .width | default "24px" -}}
+{{- $icon_height := .height | default "24px" -}}
 {{- $feather_sprite := resources.Get "lib/icns/feather-sprite-v4.29.0.svg" -}}
 {{- $regex := printf `<symbol id="%s".*?>(.*?)<\/symbol>` $icon_name -}}
 {{- $path := index (index (findRESubmatch $regex $feather_sprite.Content) 0) 1 | safeHTML }}

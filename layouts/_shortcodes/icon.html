@@ -1,8 +1,8 @@
 {{- $icon_vendor := .Get "vendor" -}}
 {{- $icon_link := .Get "link" -}}
 {{- $icon_name := .Get "name" -}}
-{{- $icon_width := .Get "width" | default "1.5rem" -}}
-{{- $icon_height := .Get "height" | default "1.5rem" -}}
+{{- $icon_width := .Get "width" | default "24px" -}}
+{{- $icon_height := .Get "height" | default "24px" -}}
 
 <div class="icon">
     {{ if $icon_link }}

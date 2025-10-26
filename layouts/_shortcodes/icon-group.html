@@ -1,4 +1,4 @@
-{{ $gap := .Get "gap" | default "0.375rem" }}
+{{ $gap := .Get "gap" | default "6px" }}
 
 <div class="icon-group" style="gap: {{ $gap }};">
     {{ .Inner | safeHTML }}
