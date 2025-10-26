@@ -343,6 +343,27 @@ stroke-linejoin="round">
 &lt;/a>
 &lt;/h1>
 &lt;!-- end-chunk -->
+&lt;!-- begin-chunk data-anchor="v521-20251026" -->
+&lt;h2 class="header-anchor-wrapper">v5.2.1 (2025/10/26)
+&lt;a href="#v521-20251026" class="header-anchor-link">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fixed
+&lt;ul>
+&lt;li>Unexpected LanguageCode displayed in language dropdown menu&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;!-- end-chunk -->
 &lt;!-- begin-chunk data-anchor="v520-20251026" -->
 &lt;h2 class="header-anchor-wrapper">v5.2.0 (2025/10/26)
 &lt;a href="#v520-20251026" class="header-anchor-link">
