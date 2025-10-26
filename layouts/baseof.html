@@ -17,6 +17,7 @@
 {{ .Store.SetInMap "params" "toc_position" (.Params.toc_position | default .Site.Params.toc_position | default "top") }}
 {{ .Store.SetInMap "params" "enable_collapsible_changelogs" (.Params.collapsible_changelogs | default .Site.Params.enable_collapsible_changelogs | default false) }}
 {{ .Store.SetInMap "params" "color_scheme" (.Site.Params.color_scheme | default "light") }}
+{{ partial "states.html" . }}
 
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>

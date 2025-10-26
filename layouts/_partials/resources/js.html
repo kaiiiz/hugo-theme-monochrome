@@ -43,7 +43,7 @@
 {{ end }}
 
 {{/*  Load script for only page contain codeblock  */}}
-{{ if (findRE "<pre" .Content 1) }}
+{{ if (.Store.Get "states").has_pre_element }}
     {{ if eq (.Store.Get "params").syntax_highlight.lib "builtin" }}
         {{ $enable_code_copy := (.Store.Get "params").syntax_highlight.builtin.enable_code_copy | default true }}
         {{ if $enable_code_copy }}

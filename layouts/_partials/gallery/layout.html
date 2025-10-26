@@ -5,15 +5,12 @@
 {{ end }}
 
 {{ if .Params.gallery_resources }}
-    {{ $res := .Site.GetPage .Params.gallery_resources }}
-    {{ $pages := $res.Resources.ByType "page" }}
-    {{ if eq (len $pages) 0 }}
-      {{ $pages = $res.RegularPages }}
-    {{ end }}
+    {{ $pages := (.Store.Get "states").resource_pages }}
 
     {{ if $pages }}
         <div class="content-margin gallery-layout">
             {{ $max_idx := sub (len $pages) 1 }}
+            {{ $page_store := .Store }}
 
             {{ range $index, $value := (sort $pages "Params.weight" "asc") }}
                 <div class="gallery-item">
@@ -45,7 +42,7 @@
 
                     {{ if .Content }}
                         <div class="gallery-item-content">
-                            {{- partial "content.html" (dict "ctx" . "content" .Content) -}}
+                            {{- partial "content.html" (dict "ctx" . "content" .Content "store" $page_store) -}}
                         </div>
                     {{ end }}
 
