@@ -64,10 +64,10 @@
                                         {{ $hasTranslation = true }}
                                     {{ else }}
                                         {{ range $pageTranslations }}
-                                            {{ $availTransCode := .Language.LanguageCode }}
-                                            {{ if eq $availTransCode $curPageLangCode }}
+                                            {{ if eq .Language.LanguageCode $curEntryLangCode }}
                                                 {{ $translationLink = .RelPermalink }}
                                                 {{ $hasTranslation = true }}
+                                                {{ break }}
                                             {{ end }}
                                         {{ end }}
                                     {{ end }}
