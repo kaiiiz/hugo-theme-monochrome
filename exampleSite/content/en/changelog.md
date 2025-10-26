@@ -5,6 +5,13 @@ toc: false
 
 # Changelog
 
+## v5.2.1 (2025/10/26)
+
+- Fixed
+  - Unexpected LanguageCode displayed in language dropdown menu
+
+---
+
 ## v5.2.0 (2025/10/26)
 
 - Fixed
