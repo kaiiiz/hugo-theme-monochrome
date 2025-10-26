@@ -132,6 +132,20 @@ Hide navbar on scroll
 hide_navbar_on_scroll = true # true | false, default: true
 ```
 
+### Navbar width
+
+```toml
+[params]
+navbar_width = wide # normal | wide | extra-wide, default: wide
+```
+
+### Navbar language button
+
+```toml
+[params]
+navbar_show_all_languages = true # true | false, default: true
+```
+
 ## List Layout
 
 ```toml

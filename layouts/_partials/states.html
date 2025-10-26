@@ -1,0 +1,26 @@
+{{- $res_path := "" -}}
+{{- $res_pages := slice -}}
+{{- if and (eq .Type "balloon") .Params.balloon_resources -}}
+    {{- $res_path = .Params.balloon_resources -}}
+{{- else if and (eq .Type "gallery") .Params.gallery_resources -}}
+    {{- $res_path = .Params.gallery_resources -}}
+{{- end -}}
+
+{{- if $res_path -}}
+    {{- $res := .Site.GetPage $res_path -}}
+    {{- $res_pages = $res.Resources.ByType "page" -}}
+    {{- if eq (len $res_pages) 0 -}}
+        {{- $res_pages = $res.RegularPages -}}
+    {{- end -}}
+{{- end -}}
+
+{{- $res_has_pre := false -}}
+{{- range $res_pages }}
+    {{- if or (gt (len (findRE "<pre" .Content 1)) 0) (.HasShortcode "emgithub") -}}
+        {{- $res_has_pre = true -}}
+        {{- break -}}
+    {{- end -}}
+{{- end }}
+
+{{ .Store.SetInMap "states" "resource_pages" $res_pages }}
+{{ .Store.SetInMap "states" "has_pre_element" (or (gt (len (findRE "<pre" .Content 1)) 0) (.HasShortcode "emgithub") $res_has_pre) }}

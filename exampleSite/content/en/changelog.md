@@ -5,6 +5,22 @@ toc: false
 
 # Changelog
 
+## v5.2.0 (2025/10/26)
+
+- Fixed
+  - Syntax highlighting and copy button does not work in external resource layout ([#78](https://github.com/kaiiiz/hugo-theme-monochrome/issues/78))
+  - Invalid value for \<svg\> attribute width="1.5rem" ([#79](https://github.com/kaiiiz/hugo-theme-monochrome/issues/79))
+- Changed
+  - `icon` shortcode default size changed from rem to 24px
+  - `icon-group` shortcode default gap changed from rem to 6px
+- New
+  - Support language switching that redirects to the target language page instead of home page ([#81](https://github.com/kaiiiz/hugo-theme-monochrome/issues/81))
+  - Parameters:
+    - `navbar_width`
+    - `navbar_show_all_languages`: control whether to show all site languages in navbar language dropdown, default: true
+
+---
+
 ## v5.1.0 (2025/07/08)
 
 - Fixed

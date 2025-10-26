@@ -1,5 +1,5 @@
 <header>
-    <div id="header_content">
+    <div id="header_content" class="{{ (.Store.Get "params").navbar_width }}">
         <div id="header_left">
             <div id="sidebar_btn">
                 <input type="checkbox" id="sidebar_btn_input" class="hidden" />
@@ -32,7 +32,7 @@
             <div class="brand">
                 <div>
                     <a href="{{ .Site.Home.RelPermalink }}">
-                        {{- with (.Scratch.Get "params").navbar_title }}
+                        {{- with (.Store.Get "params").navbar_title }}
                             {{- . | safeHTML -}}
                         {{- end -}}
                     </a>
@@ -49,10 +49,35 @@
                         <li class="header-menu-item header-menu-dropdown pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                             <div class="pure-menu-link">{{ .Site.Language.LanguageName }}</div>
                             <ul class="pure-menu-children">
+                                {{ $pageTranslations := .Translations }}
+                                {{ $curPageLangCode := .Language.LanguageCode }}
+                                {{ $curPageRelLink := .RelPermalink }}
+                                {{ $showAllLanguage := (.Store.Get "params").navbar_show_all_languages }}
+
                                 {{ range .Site.Home.AllTranslations }}
-                                <li class="pure-menu-item">
-                                    <a href="{{ .Permalink }}" class="pure-menu-link">{{ .Language.LanguageName }}</a>
-                                </li>
+                                    {{ $translationLink := .RelPermalink }}
+                                    {{ $hasTranslation := false }}
+                                    {{ $curEntryLangCode := .Language.LanguageCode }}
+
+                                    {{ if eq $curEntryLangCode $curPageLangCode }}
+                                        {{ $translationLink = $curPageRelLink }}
+                                        {{ $hasTranslation = true }}
+                                    {{ else }}
+                                        {{ range $pageTranslations }}
+                                            {{ $availTransCode := .Language.LanguageCode }}
+                                            {{ $availTransCode }}
+                                            {{ if eq $availTransCode $curPageLangCode }}
+                                                {{ $translationLink = .RelPermalink }}
+                                                {{ $hasTranslation = true }}
+                                            {{ end }}
+                                        {{ end }}
+                                    {{ end }}
+
+                                    {{ if or $showAllLanguage $hasTranslation }}
+                                        <li class="pure-menu-item">
+                                            <a href="{{ $translationLink }}" class="pure-menu-link">{{ .Language.LanguageName }}</a>
+                                        </li>
+                                    {{ end }}
                                 {{ end }}
                             </ul>
                         </li>
@@ -69,7 +94,7 @@
                 </button>
             </div>
 
-            {{ if (.Scratch.Get "params").enable_site_search }}
+            {{ if (.Store.Get "params").enable_site_search }}
                 <div id="search_tool">
                     <button id="search_btn" class="header-menu-btn outline-button" title='{{ i18n "search" }}' type="button">
                         {{- partial "svg/feather.html" (dict "name" "search") -}}

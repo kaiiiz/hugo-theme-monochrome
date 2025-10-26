@@ -18,7 +18,7 @@ Wrap icons with grid layout
 
 Parameters:
 
-- `gap`: Gap between icons (default: `0.375rem`)
+- `gap`: Gap between icons (default: `6px`)
 
 ## Examples
 
@@ -38,27 +38,27 @@ Parameters:
 
 
 ```html
-{{</* icon-group gap="1rem" */>}}
+{{</* icon-group gap="12px" */>}}
 {{</* icon vendor="feather" name="github" */>}}
 {{</* icon vendor="feather" name="rss" */>}}
 {{</* icon vendor="feather" name="twitter" */>}}
 {{</* /icon-group */>}}
 ```
 
-{{< icon-group gap="1rem" >}}
+{{< icon-group gap="12px" >}}
 {{< icon vendor="feather" name="github" >}}
 {{< icon vendor="feather" name="rss" >}}
 {{< icon vendor="feather" name="twitter" >}}
 {{< /icon-group >}}
 
 ```html
-{{</* icon-group gap="1rem" */>}}
-{{</* icon vendor="simple" name="github" width="1.75rem" height="1.75rem" */>}}
-{{</* icon vendor="simple" name="rss" width=".75rem" height=".75rem" */>}}
+{{</* icon-group gap="12px" */>}}
+{{</* icon vendor="simple" name="github" width="48px" height="48px" */>}}
+{{</* icon vendor="simple" name="rss" width="12px" height="12px" */>}}
 {{</* /icon-group */>}}
 ```
 
-{{< icon-group gap="1rem" >}}
-{{< icon vendor="simple" name="github" width="1.75rem" height="1.75rem" >}}
-{{< icon vendor="simple" name="rss" width=".75rem" height=".75rem" >}}
+{{< icon-group gap="12px" >}}
+{{< icon vendor="simple" name="github" width="48px" height="48px" >}}
+{{< icon vendor="simple" name="rss" width="12px" height="12px" >}}
 {{< /icon-group >}}

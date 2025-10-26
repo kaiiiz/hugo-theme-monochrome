@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="{{- $styles.RelPermalink -}}" integrity="{{- $styles.Data.Integrity -}}">
 
 {{/*  Prism.js style  */}}
-{{ if or (and (findRE "<pre" .Content 1) (eq (.Scratch.Get "params").syntax_highlight.lib "prism.js")) (.HasShortcode "emgithub") }}
+{{ if or (and (.Store.Get "states").has_pre_element (eq (.Store.Get "params").syntax_highlight.lib "prism.js")) (.HasShortcode "emgithub") }}
     {{ $prism_css := resources.Get "lib/css/prism.css" }}
     {{- if hugo.IsProduction -}}
         {{ $prism_css = $prism_css | resources.Minify | resources.Fingerprint "sha256" -}}

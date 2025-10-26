@@ -19,6 +19,10 @@ enable_collapsible_toc = false
 enable_collapsible_changelogs = true
 toc_position = "right" # "top" | "right"
 
+# Navbar
+navbar_show_all_languages = true
+navbar_width = "wide" # "normal" | "wide" | "extra-wide"
+
 [list_layout]
 enable_group_by_year = true
 enable_show_date = true
