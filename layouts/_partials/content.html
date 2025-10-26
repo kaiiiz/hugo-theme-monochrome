@@ -1,6 +1,6 @@
 {{ $ctx := .ctx }}
 {{ $content := .content }}
-{{ $store := .store | default .Store }}
+{{ $store := .store | default $ctx.Store }}
 {{ $enable_line_no := ($store.Get "params").syntax_highlight.prism.enable_line_no | default true }}
 
 <article {{ if $enable_line_no }}class="line-numbers"{{ end }}>
