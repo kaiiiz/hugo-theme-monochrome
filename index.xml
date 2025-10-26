@@ -343,6 +343,45 @@ stroke-linejoin="round">
 &lt;/a>
 &lt;/h1>
 &lt;!-- end-chunk -->
+&lt;!-- begin-chunk data-anchor="v520-20251026" -->
+&lt;h2 class="header-anchor-wrapper">v5.2.0 (2025/10/26)
+&lt;a href="#v520-20251026" class="header-anchor-link">
+&lt;svg
+xmlns="http://www.w3.org/2000/svg"
+width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
+&lt;/svg>
+&lt;/a>
+&lt;/h2>
+&lt;ul>
+&lt;li>Fixed
+&lt;ul>
+&lt;li>Syntax highlighting and copy button does not work in external resource layout (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/78">#78&lt;/a>)&lt;/li>
+&lt;li>Invalid value for &amp;lt;svg&amp;gt; attribute width=&amp;ldquo;1.5rem&amp;rdquo; (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/79">#79&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Changed
+&lt;ul>
+&lt;li>&lt;code>icon&lt;/code> shortcode default size changed from rem to 24px&lt;/li>
+&lt;li>&lt;code>icon-group&lt;/code> shortcode default gap changed from rem to 6px&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>New
+&lt;ul>
+&lt;li>Support language switching that redirects to the target language page instead of home page (&lt;a href="https://github.com/kaiiiz/hugo-theme-monochrome/issues/81">#81&lt;/a>)&lt;/li>
+&lt;li>Parameters:
+&lt;ul>
+&lt;li>&lt;code>navbar_width&lt;/code>&lt;/li>
+&lt;li>&lt;code>navbar_show_all_languages&lt;/code>: control whether to show all site languages in navbar language dropdown, default: true&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;!-- end-chunk -->
 &lt;!-- begin-chunk data-anchor="v510-20250708" -->
 &lt;h2 class="header-anchor-wrapper">v5.1.0 (2025/07/08)
 &lt;a href="#v510-20250708" class="header-anchor-link">
