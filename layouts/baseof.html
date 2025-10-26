@@ -3,6 +3,7 @@
 {{ .Store.SetInMap "params" "search_hidden" (.Params.search_hidden | default false) }}
 {{ .Store.SetInMap "params" "navbar_title" (.Params.navbar_title | default .Site.Params.navbar_title | default .Site.Title) }}
 {{ .Store.SetInMap "params" "navbar_width" (.Params.navbar_width | default .Site.Params.navbar_width | default "wide") }}
+{{ .Store.SetInMap "params" "navbar_show_all_languages" (.Params.navbar_show_all_languages | default .Site.Params.navbar_show_all_languages | default true) }}
 {{ .Store.SetInMap "params" "hide_navbar_on_scroll" (.Params.hide_navbar_on_scroll | default .Site.Params.hide_navbar_on_scroll | default true) }}
 {{ .Store.SetInMap "params" "author" (.Params.author | default .Site.Params.author) }}
 {{ .Store.SetInMap "params" "enable_open_graph" (.Params.open_graph | default .Site.Params.enable_open_graph | default true) }}

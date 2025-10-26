@@ -52,23 +52,32 @@
                                 {{ $pageTranslations := .Translations }}
                                 {{ $curPageLangCode := .Language.LanguageCode }}
                                 {{ $curPageRelLink := .RelPermalink }}
+                                {{ $showAllLanguage := (.Store.Get "params").navbar_show_all_languages }}
 
                                 {{ range .Site.Home.AllTranslations }}
                                     {{ $translationLink := .RelPermalink }}
-                                    {{ if eq .Language.LanguageCode $curPageLangCode }}
+                                    {{ $hasTranslation := false }}
+                                    {{ $curEntryLangCode := .Language.LanguageCode }}
+
+                                    {{ if eq $curEntryLangCode $curPageLangCode }}
                                         {{ $translationLink = $curPageRelLink }}
+                                        {{ $hasTranslation = true }}
                                     {{ else }}
-                                        {{ $entryLangCode := .Language.LanguageCode }}
                                         {{ range $pageTranslations }}
-                                            {{ if eq .Language.LanguageCode $entryLangCode }}
+                                            {{ $availTransCode := .Language.LanguageCode }}
+                                            {{ $availTransCode }}
+                                            {{ if eq $availTransCode $curPageLangCode }}
                                                 {{ $translationLink = .RelPermalink }}
-                                                {{ break }}
+                                                {{ $hasTranslation = true }}
                                             {{ end }}
                                         {{ end }}
                                     {{ end }}
-                                    <li class="pure-menu-item">
-                                        <a href="{{ $translationLink }}" class="pure-menu-link">{{ .Language.LanguageName }}</a>
-                                    </li>
+
+                                    {{ if or $showAllLanguage $hasTranslation }}
+                                        <li class="pure-menu-item">
+                                            <a href="{{ $translationLink }}" class="pure-menu-link">{{ .Language.LanguageName }}</a>
+                                        </li>
+                                    {{ end }}
                                 {{ end }}
                             </ul>
                         </li>
