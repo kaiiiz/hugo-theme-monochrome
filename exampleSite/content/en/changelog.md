@@ -5,6 +5,13 @@ toc: false
 
 # Changelog
 
+## v5.2.2 (2025/10/26)
+
+- Fixed
+  - Wrong language entry link due to incorrect language condition
+
+---
+
 ## v5.2.1 (2025/10/26)
 
 - Fixed
