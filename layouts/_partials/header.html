@@ -65,7 +65,6 @@
                                     {{ else }}
                                         {{ range $pageTranslations }}
                                             {{ $availTransCode := .Language.LanguageCode }}
-                                            {{ $availTransCode }}
                                             {{ if eq $availTransCode $curPageLangCode }}
                                                 {{ $translationLink = .RelPermalink }}
                                                 {{ $hasTranslation = true }}
