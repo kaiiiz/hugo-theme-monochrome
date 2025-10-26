@@ -5,6 +5,13 @@ toc: false
 
 # Changelog
 
+## v5.2.3 (2025/10/26)
+
+- Fixed
+  - Incorrect context store causes prism not showing copy button on normal pre element
+
+---
+
 ## v5.2.2 (2025/10/26)
 
 - Fixed
