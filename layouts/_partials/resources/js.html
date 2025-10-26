@@ -8,7 +8,7 @@
 <script defer src="{{ $theme_switch_js.RelPermalink }}" integrity="{{- $theme_switch_js.Data.Integrity -}}"></script>
 
 {{/*  Hide navbar on scroll  */}}
-{{ if (.Scratch.Get "params").hide_navbar_on_scroll }}
+{{ if (.Store.Get "params").hide_navbar_on_scroll }}
     {{ $hide_navbar_on_scroll_js := resources.Get "js/hide-navbar-on-scroll.js" }}
     {{- if hugo.IsProduction -}}
         {{ $hide_navbar_on_scroll_js = $hide_navbar_on_scroll_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
@@ -20,7 +20,7 @@
 
 
 {{/*  Zooming.js  */}}
-{{ if (.Scratch.Get "params").enable_zooming_js }}
+{{ if (.Store.Get "params").enable_zooming_js }}
     {{ $zooming_js := resources.Get "js/zooming.js" }}
     {{- if hugo.IsProduction -}}
         {{ $zooming_js = $zooming_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
@@ -31,7 +31,7 @@
 {{ end }}
 
 {{/* MathJax */}}
-{{ if (.Scratch.Get "params").math }}
+{{ if (.Store.Get "params").math }}
     {{ $math_js := resources.Get "js/math.js" }}
     {{- if hugo.IsProduction -}}
         {{ $math_js = $math_js | js.Build (dict "minify" true) | resources.Fingerprint "sha256" -}}
@@ -44,8 +44,8 @@
 
 {{/*  Load script for only page contain codeblock  */}}
 {{ if (findRE "<pre" .Content 1) }}
-    {{ if eq (.Scratch.Get "params").syntax_highlight.lib "builtin" }}
-        {{ $enable_code_copy := (.Scratch.Get "params").syntax_highlight.builtin.enable_code_copy | default true }}
+    {{ if eq (.Store.Get "params").syntax_highlight.lib "builtin" }}
+        {{ $enable_code_copy := (.Store.Get "params").syntax_highlight.builtin.enable_code_copy | default true }}
         {{ if $enable_code_copy }}
             {{ $code_copy_js := resources.Get "js/builtin-copy.js" }}
             {{- if hugo.IsProduction -}}
@@ -55,15 +55,15 @@
             {{- end -}}
             <script defer src="{{ $code_copy_js.RelPermalink }}" integrity="{{- $code_copy_js.Data.Integrity -}}"></script>
         {{ end }}
-    {{ else if eq (.Scratch.Get "params").syntax_highlight.lib "prism.js" }}
+    {{ else if eq (.Store.Get "params").syntax_highlight.lib "prism.js" }}
         {{ $prism_js := slice (resources.Get "lib/js/prism-v1.29.0.min.js") }}
 
-        {{ $enable_line_no := (.Scratch.Get "params").syntax_highlight.prism.enable_line_no | default true }}
+        {{ $enable_line_no := (.Store.Get "params").syntax_highlight.prism.enable_line_no | default true }}
         {{ if $enable_line_no }}
             {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-line-numbers-v1.29.0.min.js") }}
         {{ end }}
 
-        {{ $enable_code_copy := (.Scratch.Get "params").syntax_highlight.prism.enable_code_copy | default true }}
+        {{ $enable_code_copy := (.Store.Get "params").syntax_highlight.prism.enable_code_copy | default true }}
         {{ if $enable_code_copy }}
             {{ $prism_js = $prism_js | append (resources.Get "lib/js/prism-copy-to-clipboard-v1.29.0.min.js") }}
         {{ end }}
@@ -78,7 +78,7 @@
     {{ end }}
 {{ end }}
 
-{{ if (.Scratch.Get "params").enable_site_search }}
+{{ if (.Store.Get "params").enable_site_search }}
     {{ $target_path := printf "js/search-%s.js" .Site.LanguageCode }}
     {{ $index_url := "index.json" | absLangURL }}
     {{ $build_opts := dict "targetPath" $target_path "params" (dict "index_url" $index_url) }}

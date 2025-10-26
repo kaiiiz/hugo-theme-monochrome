@@ -20,28 +20,28 @@
     <meta name="keywords" content="{{ delimit . "," }}" />
     {{ end }}
 
-    {{ with (.Scratch.Get "params").author }}
+    {{ with (.Store.Get "params").author }}
     <meta name="author" content="{{ . }}" />
     {{ end }}
 
-    {{ if (.Scratch.Get "params").enable_open_graph }}
+    {{ if (.Store.Get "params").enable_open_graph }}
         {{ partial "opengraph.html" . }}
     {{ end }}
 
-    {{ if (.Scratch.Get "params").enable_twitter_cards }}
+    {{ if (.Store.Get "params").enable_twitter_cards }}
         {{ partial "twitter_cards.html" . }}
     {{ end }}
 
     {{- partial "resources/css.html" . -}}
 
-    {{ if (.Scratch.Get "params").ga_code }}
+    {{ if (.Store.Get "params").ga_code }}
         {{ partial "google_analytics.html" . }}
     {{ end }}
 
     {{/*  Dark theme: inline in `head` to avoid FOUC  */}}
     <script>
         if (!('theme' in localStorage)) {
-            {{ $color_scheme := (.Scratch.Get "params").color_scheme -}}
+            {{ $color_scheme := (.Store.Get "params").color_scheme -}}
             {{- if eq $color_scheme "light" -}}
             localStorage.theme = 'light';
             {{- else if eq $color_scheme "dark" -}}

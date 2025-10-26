@@ -1,5 +1,5 @@
 <header>
-    <div id="header_content" class="{{ (.Scratch.Get "params").navbar_width }}">
+    <div id="header_content" class="{{ (.Store.Get "params").navbar_width }}">
         <div id="header_left">
             <div id="sidebar_btn">
                 <input type="checkbox" id="sidebar_btn_input" class="hidden" />
@@ -32,7 +32,7 @@
             <div class="brand">
                 <div>
                     <a href="{{ .Site.Home.RelPermalink }}">
-                        {{- with (.Scratch.Get "params").navbar_title }}
+                        {{- with (.Store.Get "params").navbar_title }}
                             {{- . | safeHTML -}}
                         {{- end -}}
                     </a>
@@ -69,7 +69,7 @@
                 </button>
             </div>
 
-            {{ if (.Scratch.Get "params").enable_site_search }}
+            {{ if (.Store.Get "params").enable_site_search }}
                 <div id="search_tool">
                     <button id="search_btn" class="header-menu-btn outline-button" title='{{ i18n "search" }}' type="button">
                         {{- partial "svg/feather.html" (dict "name" "search") -}}

@@ -1,4 +1,4 @@
-{{ with (.Scratch.Get "params").footer }}
+{{ with (.Store.Get "params").footer }}
 <footer>
     <article>
         {{- . | safeHTML -}}
