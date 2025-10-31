@@ -1,19 +1,62 @@
 {{- define "content" -}}
 
 {{ if and (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") (.Store.Get "params").enable_toc }}
-    {{ $toc_position := (.Store.Get "params").toc_position }}
-    {{ if eq $toc_position "right" }}
-        {{ partial "fixed-toc.html" (dict "context" . "position" $toc_position) }}
-    {{ else if eq $toc_position "top" }}
-        {{ $enable_collapsible_toc := (.Store.Get "params").enable_collapsible_toc }}
-        {{ partial "collapsible-menu.html" (dict "type" "toc" "context" . "enable" $enable_collapsible_toc) }}
-    {{ end }}
+{{ $toc_position := (.Store.Get "params").toc_position }}
+{{ if eq $toc_position "right" }}
+{{ partial "fixed-toc.html" (dict "context" . "position" $toc_position) }}
+{{ else if eq $toc_position "top" }}
+{{ $enable_collapsible_toc := (.Store.Get "params").enable_collapsible_toc }}
+{{ partial "collapsible-menu.html" (dict "type" "toc" "context" . "enable" $enable_collapsible_toc) }}
+{{ end }}
 {{ end }}
 
 {{ if .Content }}
-    <div class="content-margin">
-        {{- partial "content.html" (dict "ctx" . "content" .Content) -}}
-    </div>
+<div class="content-margin">
+	{{- partial "content.html" (dict "ctx" . "content" .Content) -}}
+</div>
+{{ end }}
+{{ with .Page.Params.cast }}
+<script type="module">
+import asciinemaPlayer from 'https://cdn.jsdelivr.net/npm/asciinema-player@3.12.1/+esm'
+</script>
+<div id="demo"></div>
+<script>
+
+	const newPlayer = function (theme) {
+		demo = document.getElementById('demo');
+		demo.innerHTML = ''
+		return AsciinemaPlayer.create(
+			/* . => the path (contained inside cast variable) */
+			'{{.}}',
+			/* demo => div for the player */
+			document.getElementById('demo'),
+			/* player parameters */
+			{
+				loop: false,
+				autoPlay: false, 
+				theme: theme,
+			})
+	};
+
+	xXxXx = {
+		'dark': 'monokai',
+		'light': 'solarized-light',
+	}
+	let player = newPlayer(xXxXx[document.documentElement.getAttribute("data-theme")])
+
+	window.addEventListener("DOMContentLoaded", function () {
+		const dark_mode_btn = document.getElementById("dark_mode_btn");
+		const light_mode_btn = document.getElementById("light_mode_btn");
+
+		dark_mode_btn.addEventListener('click', function () {
+			player = newPlayer(xXxXx['light'])
+		});
+
+		light_mode_btn.addEventListener('click', function () {
+			player = newPlayer(xXxXx['dark'])
+		});
+	});
+</script>
 {{ end }}
 
 {{- end -}}
