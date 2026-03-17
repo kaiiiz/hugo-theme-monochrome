@@ -20,7 +20,7 @@
     <meta name="keywords" content="{{ delimit . "," }}" />
     {{ end }}
 
-    {{ with (.Store.Get "params").author }}
+    {{ with (.Store.Get "params").author_name }}
     <meta name="author" content="{{ . }}" />
     {{ end }}
 

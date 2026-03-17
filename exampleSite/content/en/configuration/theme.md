@@ -245,8 +245,10 @@ Enable Prism.js
 ### Author
 
 ```toml
-[params]
-author = "kaiiiz" # default: no author `meta` tag
+# default: no author `meta` tag
+[params.author]
+name = "kaiiiz"
+email = "ukaizheng@gmail.com"
 ```
 
 ### Open Graph
