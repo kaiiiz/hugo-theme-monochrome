@@ -5,6 +5,7 @@ const threshold = 100;
 let lastScrollY = window.scrollY;
 let isScrollHide = false;
 let isInDropdownMenu = false;
+let isMouseNearTop = true;
 let headerHeight = (header !== undefined) ? header.offsetHeight : 0;
 let hideTimer = null;
 
