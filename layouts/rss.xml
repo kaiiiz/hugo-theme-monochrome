@@ -17,7 +17,7 @@
     <link>{{ .Permalink }}</link>
     <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
     <generator>Hugo -- gohugo.io</generator>
-    {{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
+    {{ with .Site.Language.Locale }}<language>{{.}}</language>{{end}}
     {{ partial "rss-author-tag.html" (dict "tag" "managingEditor" "email" .Site.Params.author.email "name" .Site.Params.author.name) }}
     {{ partial "rss-author-tag.html" (dict "tag" "webMaster" "email" .Site.Params.author.email "name" .Site.Params.author.name) }}
     {{ with .Site.Copyright }}<copyright>{{.}}</copyright>{{end}}
