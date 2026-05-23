@@ -1,0 +1,10 @@
+{{- $tag := .tag | default "author" -}}
+{{- $email := .email -}}
+{{- $name := .name -}}
+{{- if and $email $name -}}
+{{- printf "<%s>%s (%s)</%s>" $tag $email $name $tag | safeHTML -}}
+{{- else if $email -}}
+{{- printf "<%s>%s</%s>" $tag $email $tag | safeHTML -}}
+{{- else if $name -}}
+{{- printf "<%s>%s</%s>" $tag $name $tag | safeHTML -}}
+{{- end -}}

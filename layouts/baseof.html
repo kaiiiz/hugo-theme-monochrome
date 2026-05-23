@@ -6,6 +6,7 @@
 {{ .Store.SetInMap "params" "navbar_show_all_languages" (.Params.navbar_show_all_languages | default .Site.Params.navbar_show_all_languages | default true) }}
 {{ .Store.SetInMap "params" "hide_navbar_on_scroll" (.Params.hide_navbar_on_scroll | default .Site.Params.hide_navbar_on_scroll | default true) }}
 {{ .Store.SetInMap "params" "author_name" (.Params.author.name | default .Site.Params.author.name) }}
+{{ .Store.SetInMap "params" "author_email" (.Params.author.email | default .Site.Params.author.email) }}
 {{ .Store.SetInMap "params" "enable_open_graph" (.Params.open_graph | default .Site.Params.enable_open_graph | default true) }}
 {{ .Store.SetInMap "params" "enable_twitter_cards" (.Params.twitter_cards | default .Site.Params.enable_twitter_cards | default true) }}
 {{ .Store.SetInMap "params" "enable_toc" (.Params.toc | default .Site.Params.enable_toc | default true) }}
