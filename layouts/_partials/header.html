@@ -47,24 +47,24 @@
                 <div id="translation_menu" class="header-menu pure-menu" onclick="void(0)">
                     <ul class="pure-menu-list">
                         <li class="header-menu-item header-menu-dropdown pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                            <div class="pure-menu-link">{{ .Site.Language.LanguageName }}</div>
+                            <div class="pure-menu-link">{{ .Site.Language.Label }}</div>
                             <ul class="pure-menu-children">
                                 {{ $pageTranslations := .Translations }}
-                                {{ $curPageLangCode := .Language.LanguageCode }}
+                                {{ $curPageLangCode := .Language.Locale }}
                                 {{ $curPageRelLink := .RelPermalink }}
                                 {{ $showAllLanguage := (.Store.Get "params").navbar_show_all_languages }}
 
                                 {{ range .Site.Home.AllTranslations }}
                                     {{ $translationLink := .RelPermalink }}
                                     {{ $hasTranslation := false }}
-                                    {{ $curEntryLangCode := .Language.LanguageCode }}
+                                    {{ $curEntryLangCode := .Language.Locale }}
 
                                     {{ if eq $curEntryLangCode $curPageLangCode }}
                                         {{ $translationLink = $curPageRelLink }}
                                         {{ $hasTranslation = true }}
                                     {{ else }}
                                         {{ range $pageTranslations }}
-                                            {{ if eq .Language.LanguageCode $curEntryLangCode }}
+                                            {{ if eq .Language.Locale $curEntryLangCode }}
                                                 {{ $translationLink = .RelPermalink }}
                                                 {{ $hasTranslation = true }}
                                                 {{ break }}
@@ -74,7 +74,7 @@
 
                                     {{ if or $showAllLanguage $hasTranslation }}
                                         <li class="pure-menu-item">
-                                            <a href="{{ $translationLink }}" class="pure-menu-link">{{ .Language.LanguageName }}</a>
+                                            <a href="{{ $translationLink }}" class="pure-menu-link">{{ .Language.Label }}</a>
                                         </li>
                                     {{ end }}
                                 {{ end }}
