@@ -245,9 +245,13 @@ Enable Prism.js
 ### Author
 
 ```toml
-[params]
-author = "kaiiiz" # default: no author `meta` tag
+# default: no author `meta` tag
+[params.author]
+name = "author name"
+email = "author email"
 ```
+
+> author.email will be used in RSS feed if provided, not in html meta tags.
 
 ### Open Graph
 

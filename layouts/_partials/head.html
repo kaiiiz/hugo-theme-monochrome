@@ -12,6 +12,10 @@
         {{- end -}}
     </title>
 
+    {{- range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+    {{- end -}}
+
     {{ with .Description }}
     <meta name="description" content="{{ . }}" />
     {{ end }}
@@ -20,7 +24,7 @@
     <meta name="keywords" content="{{ delimit . "," }}" />
     {{ end }}
 
-    {{ with (.Store.Get "params").author }}
+    {{ with (.Store.Get "params").author_name }}
     <meta name="author" content="{{ . }}" />
     {{ end }}
 

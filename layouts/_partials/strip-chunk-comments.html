@@ -1,0 +1,4 @@
+{{- $content := . -}}
+{{- $content = $content | replaceRE `(?s)<!-- begin-chunk.+?-->` "" -}}
+{{- $content = $content | replaceRE `(?s)<!-- end-chunk -->` "" -}}
+{{- return $content -}}
