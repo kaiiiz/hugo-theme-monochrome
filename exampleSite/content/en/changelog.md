@@ -5,6 +5,60 @@ toc: false
 
 # Changelog
 
+## v6.0.0 (2026/05/23)
+
+### Breaking Changes
+
+- **Minimum Hugo version requirement is now `0.158.0`.**
+- **`languageCode` and `languageName` config keys are deprecated.** Use `locale` and `label` instead:
+  ```toml
+  # hugo.toml
+  locale = "en"    # was: languageCode = "en"
+
+  # languages.toml
+  [en]
+  label = "English"  # was: languageName = "English"
+  locale = "en"      # was: languageCode = "en"
+  ```
+  The following template variables are also affected:
+  - `.Language.LanguageCode` → `.Language.Locale`
+  - `.Language.LanguageName` → `.Language.Label`
+  - `.Site.Language.LanguageName` → `.Site.Language.Label`
+- **`author` parameter is now an object** supporting `name` and `email` properties. If you were using `author` as a plain string, migrate to the object format:
+  - Site config (`params.toml`):
+    ```toml
+    author.name = "author name"
+    author.email = "author@email"
+    ```
+  - Page front-matter:
+    ```yaml
+    author:
+      name: "author name"
+      email: "author@email"
+    ```
+
+### New
+
+- **Add alternative link supports (`<link rel="alternate">`) in HTML `<head>`.** ([#85](https://github.com/kaiiiz/hugo-theme-monochrome/issues/85))
+- **Per-page `author.email` support**
+  - `author.email` is used **only** in RSS feed tags (`<author>`, `<managingEditor>`, `<webMaster>`) to follow RSS 2.0 specification.
+  - The HTML SEO `<meta name="author">` tag **only** includes the name, not including the email.
+  - If only `name` is set on a page, `email` falls back to site config, and vice versa.
+
+### Changed
+
+- **RSS `<author>`, `<managingEditor>`, `<webMaster>` tags can now be overridden by page front matter `author`.** The tag is omitted entirely if no author info is available; otherwise it renders the best available combination:
+  - `email (name)` — when both are provided
+  - `email` — when only email is provided
+  - `name` — when only name is provided
+  - Fallback chain: page `[author]` > site `[params.author]`
+
+### Fixed
+
+- **RSS description no longer contains raw chunk HTML tags that were visible in feeds.**
+
+---
+
 ## v5.2.3 (2025/10/26)
 
 - Fixed

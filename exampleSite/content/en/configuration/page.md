@@ -194,7 +194,9 @@ code_copy: false
 
 ```yaml
 ---
-author: "kaiiiz"
+author:
+  name: "author name"
+  email: "author email"
 ---
 ```
 

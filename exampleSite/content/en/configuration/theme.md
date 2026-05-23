@@ -251,6 +251,8 @@ name = "author name"
 email = "author email"
 ```
 
+> author.email will be used in RSS feed if provided, not in html meta tags.
+
 ### Open Graph
 
 A flag to render open graph internal template. See [Open Graph](https://gohugo.io/templates/internal#open-graph) for additional settings.
