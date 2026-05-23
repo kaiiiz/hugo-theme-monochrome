@@ -1,7 +1,7 @@
 navbar_title = 'Monochrome'
 hide_navbar_on_scroll = true
-footer = "Copyright © 2021-2025 by kaiiiz"
-author = "kaiiiz"
+footer = "Copyright © 2021-2026 by kaiiiz"
+author.name = "kaiiiz"
 color_scheme = "light"
 
 enable_zooming_js = true
