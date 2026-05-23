@@ -1,312 +1,280 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shortcodes on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/</link><description>Recent content in Shortcodes on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/bookcase/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="bookcase" -->
-&lt;h1 class="header-anchor-wrapper">Bookcase
-&lt;a href="#bookcase" class="header-anchor-link">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shortcodes on Monochrome</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/</link><description>Recent content in Shortcodes on Monochrome</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>kaiiiz</managingEditor><webMaster>kaiiiz</webMaster><atom:link href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/index.xml" rel="self" type="application/rss+xml"/><item><title>Bookcase</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/bookcase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/bookcase/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;Bookcase
+&lt;a href="#bookcase" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>Render bookcase layout&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Render bookcase layout&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; bookcase section=&amp;quot;&amp;quot; /&amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;code>section&lt;/code>: Content resources. Must be a section. Path can be an absolute path (with &lt;code>/&lt;/code> prefix, relative to base URL), or relative path (without &lt;code>/&lt;/code>, relative to current path)&lt;/p></description></item><item><title>Breadcrumbs</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="breadcrumbs" -->
-&lt;h1 class="header-anchor-wrapper">Breadcrumbs
-&lt;a href="#breadcrumbs" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; bookcase section=&amp;quot;&amp;quot; /&amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;section&lt;/code&gt;: Content resources. Must be a section. Path can be an absolute path (with &lt;code&gt;/&lt;/code&gt; prefix, relative to base URL), or relative path (without &lt;code&gt;/&lt;/code&gt;, relative to current path)&lt;/p&gt;</description></item><item><title>Breadcrumbs</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;Breadcrumbs
+&lt;a href="#breadcrumbs" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>Render breadcrumbs navigation&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Render breadcrumbs navigation&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; breadcrumbs /&amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="examples" -->
-&lt;h2 class="header-anchor-wrapper">Examples
-&lt;a href="#examples" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; breadcrumbs /&amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Examples
+&lt;a href="#examples" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code class="language-html">{{&amp;lt; breadcrumbs &amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;div class="content-margin">
-&lt;ol class="breadcrumbs">
-&lt;li>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/">Home&lt;/a>&lt;/li>&lt;li>&lt;span>/&lt;/span>&lt;/li>&lt;li>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/">Shortcodes&lt;/a>&lt;/li>&lt;li>&lt;span>/&lt;/span>&lt;/li>&lt;li>&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/">Breadcrumbs&lt;/a>&lt;/li>
-&lt;/ol>
-&lt;/div></description></item><item><title>CodePen</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="codepen" -->
-&lt;h1 class="header-anchor-wrapper">CodePen
-&lt;a href="#codepen" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-html"&gt;{{&amp;lt; breadcrumbs &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;div class="content-margin"&gt;
+&lt;ol class="breadcrumbs"&gt;
+&lt;li&gt;&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/"&gt;Home&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;/&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/"&gt;Shortcodes&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;/&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/breadcrumbs/"&gt;Breadcrumbs&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item><item><title>CodePen</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/codepen/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;CodePen
+&lt;a href="#codepen" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>Embedded codepen to page.&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Embedded codepen to page.&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; codepen id=&amp;quot;&amp;quot; &amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;p>Parameters:&lt;/p></description></item><item><title>Color Block</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="color-block" -->
-&lt;h1 class="header-anchor-wrapper">Color Block
-&lt;a href="#color-block" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; codepen id=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;</description></item><item><title>Color Block</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/color-block/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;Color Block
+&lt;a href="#color-block" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>A block with color&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;A block with color&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; color-block style=&amp;quot;&amp;quot; &amp;gt;}}
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; color-block style=&amp;quot;&amp;quot; &amp;gt;}}
 {{&amp;lt; /color-block &amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;p>Parameters:&lt;/p></description></item><item><title>Embed github</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/emgithub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/emgithub/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="embed-github" -->
-&lt;h1 class="header-anchor-wrapper">Embed github
-&lt;a href="#embed-github" class="header-anchor-link">
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;</description></item><item><title>Embed github</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/emgithub/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/emgithub/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;Embed github
+&lt;a href="#embed-github" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>Directly embed github source code like gist with Prism.js syntax highlight.&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Directly embed github source code like gist with Prism.js syntax highlight.&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; emgithub target=&amp;quot;&amp;quot; lang=&amp;quot;&amp;quot; hl=&amp;quot;&amp;quot; tab_size=&amp;quot;&amp;quot; /&amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;p>Parameters:&lt;/p></description></item><item><title>Icon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="icon" -->
-&lt;h1 class="header-anchor-wrapper">Icon
-&lt;a href="#icon" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; emgithub target=&amp;quot;&amp;quot; lang=&amp;quot;&amp;quot; hl=&amp;quot;&amp;quot; tab_size=&amp;quot;&amp;quot; /&amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;</description></item><item><title>Icon</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;Icon
+&lt;a href="#icon" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>Monochrome built-in icons.&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Monochrome built-in icons.&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; icon vendor=&amp;quot;&amp;quot; name=&amp;quot;&amp;quot; link=&amp;quot;&amp;quot; &amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;p>Parameters:&lt;/p></description></item><item><title>Icon Group</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="icon-group" -->
-&lt;h1 class="header-anchor-wrapper">Icon Group
-&lt;a href="#icon-group" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; icon vendor=&amp;quot;&amp;quot; name=&amp;quot;&amp;quot; link=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;</description></item><item><title>Icon Group</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/icon-group/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;Icon Group
+&lt;a href="#icon-group" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>Wrap icons with grid layout&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Wrap icons with grid layout&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; icon-group &amp;gt;}}
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; icon-group &amp;gt;}}
 {{&amp;lt; /icon-group &amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;p>Parameters:&lt;/p></description></item><item><title>JSFiddle</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="jsfiddle" -->
-&lt;h1 class="header-anchor-wrapper">JSFiddle
-&lt;a href="#jsfiddle" class="header-anchor-link">
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;</description></item><item><title>JSFiddle</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/jsfiddle/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;JSFiddle
+&lt;a href="#jsfiddle" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>Embedded jsfiddle to page.&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Embedded jsfiddle to page.&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; jsfiddle id=&amp;quot;&amp;quot; &amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;p>Parameters:&lt;/p></description></item><item><title>Recent Posts</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/recent-posts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/recent-posts/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="recent-posts" -->
-&lt;h1 class="header-anchor-wrapper">Recent Posts
-&lt;a href="#recent-posts" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; jsfiddle id=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;</description></item><item><title>Recent Posts</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/recent-posts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/recent-posts/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;Recent Posts
+&lt;a href="#recent-posts" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>Render recent posts list&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Render recent posts list&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; recent-posts sortby=&amp;quot;&amp;quot; limit=&amp;quot;&amp;quot; &amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;p>Parameters:&lt;/p></description></item><item><title>Terms Cloud</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</guid><description>&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="terms-cloud" -->
-&lt;h1 class="header-anchor-wrapper">Terms Cloud
-&lt;a href="#terms-cloud" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; recent-posts sortby=&amp;quot;&amp;quot; limit=&amp;quot;&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;</description></item><item><title>Terms Cloud</title><link>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kaiiiz</author><guid>https://kaiiiz.github.io/hugo-theme-monochrome/shortcodes/terms-cloud/</guid><description>
+&lt;h1 class="header-anchor-wrapper"&gt;Terms Cloud
+&lt;a href="#terms-cloud" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h1>
-&lt;p>Render terms cloud, hugo supports &lt;code>tag&lt;/code> and &lt;code>category&lt;/code> terms by default, if you want to add your custom terms. Follow the instructions in the &lt;a href="https://gohugo.io/content-management/taxonomies/#configure-taxonomies">document&lt;/a>.&lt;/p>
-&lt;!-- end-chunk -->
-&lt;!-- begin-chunk data-anchor="usage" -->
-&lt;h2 class="header-anchor-wrapper">Usage
-&lt;a href="#usage" class="header-anchor-link">
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Render terms cloud, hugo supports &lt;code&gt;tag&lt;/code&gt; and &lt;code&gt;category&lt;/code&gt; terms by default, if you want to add your custom terms. Follow the instructions in the &lt;a href="https://gohugo.io/content-management/taxonomies/#configure-taxonomies"&gt;document&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 class="header-anchor-wrapper"&gt;Usage
+&lt;a href="#usage" class="header-anchor-link"&gt;
 &lt;svg
 xmlns="http://www.w3.org/2000/svg"
 width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
 stroke="currentColor" stroke-width="2" stroke-linecap="round"
-stroke-linejoin="round">
-&lt;line x1="4" y1="9" x2="20" y2="9">&lt;/line>&lt;line x1="4" y1="15" x2="20" y2="15">&lt;/line>&lt;line x1="10" y1="3" x2="8" y2="21">&lt;/line>&lt;line x1="16" y1="3" x2="14" y2="21">&lt;/line>
-&lt;/svg>
-&lt;/a>
-&lt;/h2>
-&lt;pre>&lt;code>{{&amp;lt; terms-cloud terms=&amp;quot;&amp;quot; sortby=&amp;quot;&amp;quot; order=&amp;quot;&amp;quot; /&amp;gt;}}
-&lt;/code>&lt;/pre>
-&lt;p>Parameters:&lt;/p></description></item></channel></rss>
+stroke-linejoin="round"&gt;
+&lt;line x1="4" y1="9" x2="20" y2="9"&gt;&lt;/line&gt;&lt;line x1="4" y1="15" x2="20" y2="15"&gt;&lt;/line&gt;&lt;line x1="10" y1="3" x2="8" y2="21"&gt;&lt;/line&gt;&lt;line x1="16" y1="3" x2="14" y2="21"&gt;&lt;/line&gt;
+&lt;/svg&gt;
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; terms-cloud terms=&amp;quot;&amp;quot; sortby=&amp;quot;&amp;quot; order=&amp;quot;&amp;quot; /&amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Parameters:&lt;/p&gt;</description></item></channel></rss>
